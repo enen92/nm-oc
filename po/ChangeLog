@@ -1,3 +1,21 @@
+2009-03-27  Priit Laes  <plaes at svn dot gnome dot org>
+
+	* et.po: Translation updated by Mattias Põldaru
+
+2009-03-24  Ignacio Casal Quinteiro  <icq@gnome.org>
+
+	 * gl.po: Updated Galician translation by Suso Baleato.
+
+2009-03-20  Inaki Larranaga Murgoitio  <dooteo@euskalgnu.org>
+
+	* LINGUAS: Added 'eu' (Basque) entry.
+	* eu.po: Add Basque translation.
+
+2009-03-19  Manoj Kumar Giri  <mgiri@redhat.com>
+
+	* or.po: Updated Oriya Translation.
+	* LINGUAS: Added Oriya (or) in the list.
+
 2009-03-14  Duarte Loreto <happyguy_pt@hotmail.com>
 
 	* pt.po: Added Portuguese translation by Filipe Gomes

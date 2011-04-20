@@ -8,6 +8,7 @@ This is a new stable release of network-manager-openconnect.  Notable changes in
 * Updated translations
 * Better handling of private keys
 * Convert to GtkBuilder; glade is no longer a build requirement
+* Use built-in auth dialog instead of that from openconnect
 
 =======================================================
 network-manager-openconnect-0.8.2

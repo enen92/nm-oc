@@ -12,7 +12,6 @@ nm_openconnect_auth_dialog_CPPFLAGS = \
 	-DICONDIR=\""$(datadir)/pixmaps"\" \
 	-DBINDIR=\""$(bindir)"\" \
 	-DG_DISABLE_DEPRECATED \
-	-DGDK_DISABLE_DEPRECATED \
 	-DGNOME_DISABLE_DEPRECATED \
 	-DGNOMELOCALEDIR=\"$(datadir)/locale\" \
 	-DVERSION=\"$(VERSION)\"

@@ -1284,7 +1284,9 @@ static void dialog_response (GtkDialog *dialog, int response, auth_ui_data *ui_d
 {
 	switch (response) {
 	case AUTH_DIALOG_RESPONSE_CANCEL:
-		write(ui_data->cancel_pipes[1], "x", 1);
+		if (write(ui_data->cancel_pipes[1], "x", 1)) {
+			/* Pfft. Not a lot we can do about it */
+		}
 		/* Fall through... */
 	case AUTH_DIALOG_RESPONSE_LOGIN:
 		ssl_box_clear(ui_data);
@@ -1448,7 +1450,13 @@ static auth_ui_data *init_ui_data (char *vpn_name)
 	ui_data->form_shown_changed = g_cond_new();
 	ui_data->cert_response_changed = g_cond_new();
 	ui_data->vpn_name = vpn_name;
-	pipe(ui_data->cancel_pipes);
+	if (pipe(ui_data->cancel_pipes)) {
+		/* This should never happen, and the world is probably about
+		   to come crashing down around our ears. But attempt to cope
+		   by just disabling the cancellation support... */
+		ui_data->cancel_pipes[0] = -1;
+		ui_data->cancel_pipes[1] = -1;
+	}
 	g_unix_set_fd_nonblocking(ui_data->cancel_pipes[0], TRUE, NULL);
 	g_unix_set_fd_nonblocking(ui_data->cancel_pipes[1], TRUE, NULL);
 

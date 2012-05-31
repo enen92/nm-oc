@@ -994,19 +994,16 @@ if (0) {
 
 	xmlconfig = get_gconf_setting(gcl, config_path, NM_OPENCONNECT_KEY_XMLCONFIG);
 	if (xmlconfig) {
-		unsigned char sha1[SHA_DIGEST_LENGTH];
-		char sha1_text[SHA_DIGEST_LENGTH * 2];
-		EVP_MD_CTX c;
-		int i;
+		GChecksum *sha1;
+		const char *sha1_text;
 
-		EVP_MD_CTX_init(&c);
-		EVP_Digest(xmlconfig, strlen(xmlconfig), sha1, NULL, EVP_sha1(), NULL);
-		EVP_MD_CTX_cleanup(&c);
+		sha1 = g_checksum_new (G_CHECKSUM_SHA1);
+		g_checksum_update (sha1, (gpointer) xmlconfig, strlen(xmlconfig));
+		sha1_text = g_checksum_get_string(sha1);
 
-		for (i = 0; i < SHA_DIGEST_LENGTH; i++)
-			sprintf(&sha1_text[i*2], "%02x", sha1[i]);
+		openconnect_set_xmlsha1 (vpninfo, (char *)sha1_text, strlen(sha1_text) + 1);
+		g_checksum_free(sha1);
 
-		openconnect_set_xmlsha1(vpninfo, sha1_text, sizeof(sha1_text));
 		parse_xmlconfig(xmlconfig);
 		g_free(xmlconfig);
 	}

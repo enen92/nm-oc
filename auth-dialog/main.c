@@ -53,6 +53,14 @@
 static GConfClient *_gcl;
 static char *_config_path;
 
+#ifndef OPENCONNECT_CHECK_VER
+#define OPENCONNECT_CHECK_VER(x,y) 0
+#endif
+
+#if !OPENCONNECT_CHECK_VER(1,5)
+#define OPENCONNECT_X509 X509
+#endif
+
 static char *lasthost;
 
 typedef struct vpnhost {
@@ -646,28 +654,40 @@ static char* get_title(const char *vpn_name)
 
 typedef struct cert_data {
 	auth_ui_data *ui_data;
-	X509 *peer_cert;
+	OPENCONNECT_X509 *peer_cert;
 	const char *reason;
 } cert_data;
 
+#if !OPENCONNECT_CHECK_VER(1,5)
+static char *openconnect_get_cert_details(struct openconnect_info *vpninfo,
+					  OPENCONNECT_X509 *cert)
+{
+        BIO *bp = BIO_new(BIO_s_mem());
+        BUF_MEM *certinfo;
+        char zero = 0;
+        char *ret;
+
+        X509_print_ex(bp, cert, 0, 0);
+        BIO_write(bp, &zero, 1);
+        BIO_get_mem_ptr(bp, &certinfo);
+
+        ret = strdup(certinfo->data);
+        BIO_free(bp);
+
+        return ret;
+}
+#endif
 
 static gboolean user_validate_cert(cert_data *data)
 {
 	auth_ui_data *ui_data = _ui_data; /* FIXME global */
-	BIO *bp = BIO_new(BIO_s_mem());
 	char *title;
-	BUF_MEM *certinfo;
-	char zero = 0;
+	char *details;
 	GtkWidget *dlg, *text, *scroll;
 	GtkTextBuffer *buffer;
 	int result;
 
-	/* There are probably better ways to do this -- getting individual
-	   elements of the cert info and formatting it nicely in the dialog
-	   box. But this will do for now... */
-	X509_print_ex(bp, data->peer_cert, 0, 0);
-	BIO_write(bp, &zero, 1);
-	BIO_get_mem_ptr(bp, &certinfo);
+	details = openconnect_get_cert_details(ui_data->vpninfo, data->peer_cert);
 
 	title = get_title(data->ui_data->vpn_name);
 	dlg = gtk_message_dialog_new(NULL, 0, GTK_MESSAGE_QUESTION,
@@ -691,7 +711,8 @@ static gboolean user_validate_cert(cert_data *data)
 
 	text = gtk_text_view_new();
 	buffer = gtk_text_view_get_buffer(GTK_TEXT_VIEW(text));
-	gtk_text_buffer_set_text(buffer, certinfo->data, -1);
+	gtk_text_buffer_set_text(buffer, details, -1);
+	free(details);
 	gtk_text_view_set_editable(GTK_TEXT_VIEW(text), 0);
 	gtk_text_view_set_cursor_visible(GTK_TEXT_VIEW(text), FALSE);
 	gtk_container_add(GTK_CONTAINER(scroll), text);
@@ -699,7 +720,6 @@ static gboolean user_validate_cert(cert_data *data)
 
 	result = gtk_dialog_run(GTK_DIALOG(dlg));
 
-	BIO_free(bp);
 	gtk_widget_destroy(dlg);
 
 	g_mutex_lock (ui_data->form_mutex);
@@ -715,7 +735,7 @@ static gboolean user_validate_cert(cert_data *data)
 
 /* runs in worker thread */
 static int validate_peer_cert(struct openconnect_info *vpninfo,
-			      X509 *peer_cert, const char *reason)
+			      OPENCONNECT_X509 *peer_cert, const char *reason)
 {
 	char *config_path = _config_path; /* FIXME global */
 	GConfClient *gcl = _gcl; /* FIXME global */
@@ -1466,8 +1486,7 @@ static auth_ui_data *init_ui_data (char *vpn_name)
 						   validate_peer_cert, write_new_config,
 						   nm_process_auth_form, write_progress);
 
-#if OPENCONNECT_API_VERSION_MAJOR > 1 || (OPENCONNECT_API_VERSION_MAJOR == 1 && OPENCONNECT_API_VERSION_MINOR >= 4)
-
+#if OPENCONNECT_CHECK_VER(1,4)
 	openconnect_set_cancel_fd (ui_data->vpninfo, ui_data->cancel_pipes[0]);
 #endif  
 

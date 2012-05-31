@@ -46,9 +46,6 @@
 
 #include "openconnect.h"
 
-#include <openssl/ssl.h>
-#include <openssl/bio.h>
-#include <openssl/ui.h>
 
 static GConfClient *_gcl;
 static char *_config_path;
@@ -59,6 +56,13 @@ static char *_config_path;
 
 #if !OPENCONNECT_CHECK_VER(1,5)
 #define OPENCONNECT_X509 X509
+#define OPENCONNECT_OPENSSL
+#endif
+
+#ifdef OPENCONNECT_OPENSSL
+#include <openssl/ssl.h>
+#include <openssl/bio.h>
+#include <openssl/ui.h>
 #endif
 
 static char *lasthost;
@@ -201,7 +205,9 @@ static void ssl_box_clear(auth_ui_data *ui_data)
 typedef struct ui_fragment_data {
 	GtkWidget *widget;
 	auth_ui_data *ui_data;
+#ifdef OPENCONNECT_OPENSSL
 	UI_STRING *uis;
+#endif
 	struct oc_form_opt *opt;
 	char *entry_text;
 	int grab_focus;
@@ -212,6 +218,7 @@ static void entry_activate_cb(GtkWidget *widget, auth_ui_data *ui_data)
 	gtk_dialog_response(GTK_DIALOG(ui_data->dialog), AUTH_DIALOG_RESPONSE_LOGIN);
 }
 
+#ifdef OPENCONNECT_OPENSSL
 static void do_check_visibility(ui_fragment_data *data, gboolean *visible)
 {
 	int min_len;
@@ -224,13 +231,14 @@ static void do_check_visibility(ui_fragment_data *data, gboolean *visible)
 	if (min_len && (!data->entry_text || strlen(data->entry_text) < min_len))
 		*visible = FALSE;
 }
-
+#endif
 static void evaluate_login_visibility(auth_ui_data *ui_data)
 {
 	gboolean visible = TRUE;
+#ifdef OPENCONNECT_OPENSSL
 	g_queue_foreach(ui_data->form_entries, (GFunc)do_check_visibility,
 			&visible);
-
+#endif
 	gtk_widget_set_sensitive (ui_data->login_button, visible);
 }
 
@@ -238,7 +246,9 @@ static void entry_changed(GtkEntry *entry, ui_fragment_data *data)
 {
 	g_free (data->entry_text);
 	data->entry_text = g_strdup(gtk_entry_get_text(entry));
+#ifdef OPENCONNECT_OPENSSL
 	evaluate_login_visibility(data->ui_data);
+#endif
 }
 
 static void do_override_label(ui_fragment_data *data, struct oc_choice *choice)
@@ -267,6 +277,7 @@ static void combo_changed(GtkComboBox *combo, ui_fragment_data *data)
 			&sopt->choices[entry]);
 }
 
+#ifdef OPENCONNECT_OPENSSL
 static gboolean ui_write_error (ui_fragment_data *data)
 {
 	ssl_box_add_error(data->ui_data, UI_get0_output_string(data->uis));
@@ -284,6 +295,7 @@ static gboolean ui_write_info (ui_fragment_data *data)
 
 	return FALSE;
 }
+#endif
 
 static gboolean ui_write_prompt (ui_fragment_data *data)
 {
@@ -292,10 +304,13 @@ static gboolean ui_write_prompt (ui_fragment_data *data)
 	int visible;
 	const char *label;
 
+#ifdef OPENCONNECT_OPENSSL
 	if (data->uis) {
 		label = UI_get0_output_string(data->uis);
 		visible = UI_get_input_flags(data->uis) & UI_INPUT_FLAG_ECHO;
-	} else {
+	} else 
+#endif
+	{
 		label = data->opt->label;
 		visible = (data->opt->type == OC_FORM_OPT_TEXT);
 	}
@@ -380,6 +395,7 @@ static gboolean ui_show (auth_ui_data *ui_data)
 	return FALSE;
 }
 
+#ifdef OPENCONNECT_OPENSSL
 /* runs in worker thread */
 static int ui_open(UI *ui)
 {
@@ -496,6 +512,7 @@ static int init_openssl_ui(void)
 	UI_set_default_method(ui_method);
 	return 0;
 }
+#endif /* OPENCONNECT_OPENSSL */
 
 static void remember_gconf_key(auth_ui_data *ui_data, char *key, char *value)
 {
@@ -740,7 +757,7 @@ static int validate_peer_cert(struct openconnect_info *vpninfo,
 	char *config_path = _config_path; /* FIXME global */
 	GConfClient *gcl = _gcl; /* FIXME global */
 	auth_ui_data *ui_data = _ui_data; /* FIXME global */
-	char fingerprint[EVP_MAX_MD_SIZE * 2 + 1];
+	char fingerprint[41];
 	char *certs_data;
 	char *key;
 	int ret = 0;
@@ -1560,7 +1577,9 @@ int main (int argc, char **argv)
 	}
 	build_main_dialog(_ui_data);
 
+#ifdef OPENCONNECT_OPENSSL
 	init_openssl_ui();
+#endif
 	openconnect_init_openssl();
 
 	if (get_gconf_autoconnect(_gcl, _config_path))

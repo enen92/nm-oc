@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: network-manager-openconnect\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-11-10 11:46+0100\n"
-"PO-Revision-Date: 2011-11-10 11:47+0100\n"
+"POT-Creation-Date: 2012-06-21 20:56+0200\n"
+"PO-Revision-Date: 2012-06-21 20:57+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -23,7 +23,16 @@ msgstr ""
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
-#: ../auth-dialog/main.c:673
+#: ../auth-dialog/main.c:670
+#, c-format
+msgid "Connect to VPN '%s'"
+msgstr "Połącz z siecią VPN \"%s\""
+
+#: ../auth-dialog/main.c:672
+msgid "Connect to VPN"
+msgstr "Połącz z siecią VPN"
+
+#: ../auth-dialog/main.c:715
 #, c-format
 msgid ""
 "Certificate from VPN server \"%s\" failed verification.\n"
@@ -34,27 +43,27 @@ msgstr ""
 "Przyczyna: %s\n"
 "Zaakceptować go?"
 
-#: ../auth-dialog/main.c:1336
+#: ../auth-dialog/main.c:1386
 msgid "VPN host"
 msgstr "Komputer VPN"
 
-#: ../auth-dialog/main.c:1356
+#: ../auth-dialog/main.c:1406
 msgid "Automatically start connecting next time"
 msgstr "Automatyczne rozpoczynanie połączenie następnym razem"
 
-#: ../auth-dialog/main.c:1373
+#: ../auth-dialog/main.c:1423
 msgid "Select a host to fetch the login form"
 msgstr "Wybór komputera, z którego pobrać login"
 
-#: ../auth-dialog/main.c:1378
+#: ../auth-dialog/main.c:1428
 msgid "Contacting host, please wait..."
 msgstr "Łączenie się z komputerem, proszę czekać..."
 
-#: ../auth-dialog/main.c:1390
+#: ../auth-dialog/main.c:1440
 msgid "_Login"
 msgstr "_Login"
 
-#: ../auth-dialog/main.c:1404
+#: ../auth-dialog/main.c:1454
 msgid "Log"
 msgstr "Dziennik"
 
@@ -83,48 +92,48 @@ msgid "Compatible with Cisco AnyConnect SSL VPN."
 msgstr "Zgodny z VPN Cisco AnyConnect SSL."
 
 #: ../properties/nm-openconnect-dialog.ui.h:1
-msgid "<b>Certificate Authentication</b>"
-msgstr "<b>Uwierzytelnianie certyfikatu</b>"
-
-#: ../properties/nm-openconnect-dialog.ui.h:2
 msgid "<b>General</b>"
 msgstr "<b>Ogólne</b>"
 
-#: ../properties/nm-openconnect-dialog.ui.h:3
-msgid "Allow Cisco Secure Desktop _trojan"
-msgstr "_Zezwolenie na trojana Cisco Secure Desktop"
-
-#: ../properties/nm-openconnect-dialog.ui.h:4
-msgid "CSD _Wrapper Script:"
-msgstr "Skrypt _wrappera CSD:"
-
-#: ../properties/nm-openconnect-dialog.ui.h:5
-msgid "Private _Key:"
-msgstr "_Klucz prywatny:"
-
-#: ../properties/nm-openconnect-dialog.ui.h:6
+#: ../properties/nm-openconnect-dialog.ui.h:2
 msgid "Select A File"
 msgstr "Wybór pliku"
 
-#: ../properties/nm-openconnect-dialog.ui.h:7
-msgid "Use _FSID for key passphrase"
-msgstr "Użycie _FSID dla hasła klucza"
-
-#: ../properties/nm-openconnect-dialog.ui.h:8
-msgid "_CA Certificate:"
-msgstr "Certyfikat _CA:"
-
-#: ../properties/nm-openconnect-dialog.ui.h:9
+#: ../properties/nm-openconnect-dialog.ui.h:3
 msgid "_Gateway:"
 msgstr "_Brama:"
 
-#: ../properties/nm-openconnect-dialog.ui.h:10
+#: ../properties/nm-openconnect-dialog.ui.h:4
 msgid "_Proxy:"
 msgstr "_Pośrednik:"
 
-#: ../properties/nm-openconnect-dialog.ui.h:11
+#: ../properties/nm-openconnect-dialog.ui.h:5
+msgid "_CA Certificate:"
+msgstr "Certyfikat _CA:"
+
+#: ../properties/nm-openconnect-dialog.ui.h:6
+msgid "Allow Cisco Secure Desktop _trojan"
+msgstr "_Zezwolenie na trojana Cisco Secure Desktop"
+
+#: ../properties/nm-openconnect-dialog.ui.h:7
+msgid "CSD _Wrapper Script:"
+msgstr "Skrypt _wrappera CSD:"
+
+#: ../properties/nm-openconnect-dialog.ui.h:8
+msgid "<b>Certificate Authentication</b>"
+msgstr "<b>Uwierzytelnianie certyfikatu</b>"
+
+#: ../properties/nm-openconnect-dialog.ui.h:9
 msgid "_User Certificate:"
 msgstr "Certyfikat _użytkownika:"
+
+#: ../properties/nm-openconnect-dialog.ui.h:10
+msgid "Private _Key:"
+msgstr "_Klucz prywatny:"
+
+#: ../properties/nm-openconnect-dialog.ui.h:11
+msgid "Use _FSID for key passphrase"
+msgstr "Użycie _FSID dla hasła klucza"
 
 #: ../src/nm-openconnect-service.c:147
 #, c-format
@@ -158,14 +167,14 @@ msgstr "Brak opcji konfiguracji VPN."
 msgid "No VPN secrets!"
 msgstr "Brak haseł VPN."
 
-#: ../src/nm-openconnect-service.c:289
+#: ../src/nm-openconnect-service.c:377
 msgid "Could not find openconnect binary."
 msgstr "Nie można odnaleźć pliku binarnego openconnect."
 
-#: ../src/nm-openconnect-service.c:301
+#: ../src/nm-openconnect-service.c:389
 msgid "No VPN gateway specified."
 msgstr "Nie podano bramy VPN."
 
-#: ../src/nm-openconnect-service.c:311
+#: ../src/nm-openconnect-service.c:399
 msgid "No WebVPN cookie provided."
 msgstr "Nie podano ciasteczka WebVPN."

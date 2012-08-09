@@ -1,4 +1,14 @@
 =======================================================
+network-manager-openconnect-0.9.6.2
+Overview of changes since network-manager-openconnect-0.9.6
+=======================================================
+
+This is a new stable release of network-manager-openconnect.  Notable changes include:
+
+* Ensure IPv6 UI components appear in the editor
+
+
+=======================================================
 network-manager-openconnect-0.9.6
 Overview of changes since network-manager-openconnect-0.9.4
 =======================================================

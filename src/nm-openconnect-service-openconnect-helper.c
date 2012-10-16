@@ -22,6 +22,10 @@
  *   Copyright © 2007 - 2008 Novell, Inc.
  */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include <glib.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -135,6 +139,7 @@ uint_to_gvalue (guint32 num)
 	return val;
 }
 
+#if HAVE_RECENT_VPN_PROPS
 static GValue *
 bool_to_gvalue (gboolean b)
 {
@@ -145,6 +150,7 @@ bool_to_gvalue (gboolean b)
 	g_value_set_boolean (val, b);
 	return val;
 }
+#endif
 
 static GValue *
 addr_to_gvalue (const char *str)
@@ -375,10 +381,13 @@ main (int argc, char *argv[])
 	val = get_routes ();
 	if (val) {
 		g_hash_table_insert (config, NM_VPN_PLUGIN_IP4_CONFIG_ROUTES, val);
+#if HAVE_RECENT_VPN_PROPS
 		/* If routes-to-include were provided, that means no default route */
 		g_hash_table_insert (config, NM_VPN_PLUGIN_IP4_CONFIG_NEVER_DEFAULT,
 		                     bool_to_gvalue (TRUE));
+#endif
 	}
+
 	/* Banner */
 	val = str_to_gvalue (getenv ("CISCO_BANNER"), TRUE);
 	if (val)

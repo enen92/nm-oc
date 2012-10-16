@@ -52,7 +52,7 @@ AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [Gettext package])
 IT_PROG_INTLTOOL([0.35])
 AM_GLIB_GNU_GETTEXT
 
-PKG_CHECK_MODULES(GTHREAD, gthread-2.0)
+PKG_CHECK_MODULES(GTHREAD, gthread-2.0 gio-unix-2.0)
 AC_SUBST(GTHREAD_CFLAGS)
 AC_SUBST(GTHREAD_LIBS)
 
@@ -84,11 +84,25 @@ if test x"$with_gnome" != xno; then
 	fi
 fi
 
+AC_MSG_CHECKING([for recent NetworkManager VPN properties])
+AC_COMPILE_IFELSE(
+	[AC_LANG_PROGRAM(
+		[[#include <NetworkManagerVPN.h>]],
+		[[printf("%s\n", NM_VPN_PLUGIN_IP4_CONFIG_NEVER_DEFAULT);]])],
+	[ac_have_recent_vpn_props=yes],
+	[ac_have_recent_vpn_props=no])
+AC_MSG_RESULT($ac_have_recent_vpn_props)
+if test "$ac_have_recent_vpn_props" = yes; then
+	AC_DEFINE(HAVE_RECENT_VPN_PROPS, 1, [Define if you have NM 0.8.6 or later])
+else
+	AC_DEFINE(HAVE_RECENT_VPN_PROPS, 0, [Define if you have NM 0.8.6 or later])
+fi
+
 PKG_CHECK_MODULES(NETWORKMANAGER,
-                  NetworkManager >= 0.8.6
-                  libnm-util >= 0.8.6
-                  libnm-glib  >= 0.8.6
-                  libnm-glib-vpn >= 0.8.6)
+                  NetworkManager >= 0.8.1
+                  libnm-util >= 0.8.1
+                  libnm-glib  >= 0.8.1
+                  libnm-glib-vpn >= 0.8.1)
 AC_SUBST(NETWORKMANAGER_CFLAGS)
 AC_SUBST(NETWORKMANAGER_LIBS)
 

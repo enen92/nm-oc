@@ -40,7 +40,50 @@
 
 #include <gtk/gtk.h>
 #include <glib/gi18n.h>
+#if GLIB_CHECK_VERSION(2,30,0)
 #include <glib-unix.h>
+#else
+#include <fcntl.h>
+
+#define G_UNIX_ERROR (g_unix_error_quark())
+GQuark g_unix_error_quark (void);
+
+GQuark
+g_unix_error_quark (void)
+{
+	return g_quark_from_static_string ("g-unix-error-quark");
+}
+
+static gboolean
+g_unix_set_fd_nonblocking (gint     fd,
+                           gboolean nonblock,
+                           GError **error)
+{
+	glong fcntl_flags;
+	fcntl_flags = fcntl (fd, F_GETFL);
+
+	if (fcntl_flags == -1) {
+		g_set_error_literal (error, G_UNIX_ERROR, errno,
+				     g_strerror (errno));
+		return FALSE;
+	}
+
+	if (nonblock) {
+		fcntl_flags |= O_NONBLOCK;
+	}
+	else {
+		fcntl_flags &= ~O_NONBLOCK;
+	}
+
+	if (fcntl (fd, F_SETFL, fcntl_flags) == -1) {
+		g_set_error_literal (error, G_UNIX_ERROR, errno,
+				     g_strerror (errno));
+		return FALSE;
+	}
+
+	return TRUE;
+}
+#endif /* GLIB_CHECK_VERSION(2,30,0) */
 
 #include "auth-dlg-settings.h"
 
@@ -1496,6 +1539,7 @@ static auth_ui_data *init_ui_data (char *vpn_name)
 		ui_data->cancel_pipes[0] = -1;
 		ui_data->cancel_pipes[1] = -1;
 	}
+
 	g_unix_set_fd_nonblocking(ui_data->cancel_pipes[0], TRUE, NULL);
 	g_unix_set_fd_nonblocking(ui_data->cancel_pipes[1], TRUE, NULL);
 

@@ -85,6 +85,8 @@ g_unix_set_fd_nonblocking (gint     fd,
 }
 #endif /* GLIB_CHECK_VERSION(2,30,0) */
 
+#include <gnome-keyring.h>
+
 #include "auth-dlg-settings.h"
 
 #include "openconnect.h"
@@ -112,6 +114,20 @@ static char *_config_path;
 #include <openssl/ui.h>
 #endif
 
+static const GnomeKeyringPasswordSchema OPENCONNECT_SCHEMA_DEF = {
+	GNOME_KEYRING_ITEM_GENERIC_SECRET,
+	{
+		{"vpn_uuid", GNOME_KEYRING_ATTRIBUTE_TYPE_STRING},
+		{"auth_id", GNOME_KEYRING_ATTRIBUTE_TYPE_STRING},
+		{"label", GNOME_KEYRING_ATTRIBUTE_TYPE_STRING},
+		{NULL, 0}
+	}
+};
+
+const GnomeKeyringPasswordSchema *OPENCONNECT_SCHEMA = &OPENCONNECT_SCHEMA_DEF;
+
+static void got_keyring_pw(GnomeKeyringResult result, const char *string, gpointer data);
+
 static char *lasthost;
 
 typedef struct vpnhost {
@@ -135,8 +151,50 @@ struct gconf_key {
 	struct gconf_key *next;
 };
 
+/* This struct holds all information we need to add a password to
+ * gnome-keyring. It’s used in success_passwords. */
+struct keyring_password {
+	char *description;
+	char *password;
+	char *vpn_uuid;
+	char *auth_id;
+	char *label;
+};
+
+static void keyring_password_free(gpointer data);
+static void keyring_store_passwords(gpointer key, gpointer value, gpointer user_data);
+
+static void keyring_password_free(gpointer data)
+{
+	struct keyring_password *kp = (struct keyring_password*)data;
+	g_free(kp->description);
+	g_free(kp->password);
+	g_free(kp->vpn_uuid);
+	g_free(kp->auth_id);
+	g_free(kp->label);
+	g_free(kp);
+}
+
+static void keyring_store_passwords(gpointer key, gpointer value, gpointer user_data)
+{
+	struct keyring_password *kp = (struct keyring_password*)value;
+	gnome_keyring_store_password_sync (
+		OPENCONNECT_SCHEMA,
+		GNOME_KEYRING_DEFAULT,
+		kp->description,
+		kp->password,
+		"vpn_uuid", kp->vpn_uuid,
+		"auth_id", kp->auth_id,
+		"label", kp->label,
+		NULL
+		);
+}
+
 typedef struct auth_ui_data {
 	char *vpn_name;
+	char *vpn_uuid;
+	GHashTable *secrets;
+	GHashTable *success_passwords;
 	struct openconnect_info *vpninfo;
 	struct gconf_key *success_keys;
 	GtkWidget *dialog;
@@ -148,6 +206,7 @@ typedef struct auth_ui_data {
 	GtkWidget *cancel_button;
 	GtkWidget *login_button;
 	GtkWidget *last_notice_icon;
+	GtkWidget *savepass;
 	GtkTextBuffer *log;
 
 	int retval;
@@ -251,6 +310,8 @@ static void ssl_box_clear(auth_ui_data *ui_data)
 
 typedef struct ui_fragment_data {
 	GtkWidget *widget;
+	GtkWidget *entry;
+	gpointer find_request;
 	auth_ui_data *ui_data;
 #ifdef OPENCONNECT_OPENSSL
 	UI_STRING *uis;
@@ -355,7 +416,7 @@ static gboolean ui_write_prompt (ui_fragment_data *data)
 	if (data->uis) {
 		label = UI_get0_output_string(data->uis);
 		visible = UI_get_input_flags(data->uis) & UI_INPUT_FLAG_ECHO;
-	} else 
+	} else
 #endif
 	{
 		label = data->opt->label;
@@ -371,6 +432,7 @@ static gboolean ui_write_prompt (ui_fragment_data *data)
 
 	entry = gtk_entry_new();
 	gtk_box_pack_end(GTK_BOX(hbox), entry, FALSE, FALSE, 0);
+	data->entry = entry;
 	if (!visible)
 		gtk_entry_set_visibility(GTK_ENTRY(entry), FALSE);
 	if (data->entry_text)
@@ -404,7 +466,7 @@ static gboolean ui_add_select (ui_fragment_data *data)
 	gtk_box_pack_end(GTK_BOX(hbox), combo, FALSE, FALSE, 0);
 	for (i = 0; i < sopt->nr_choices; i++) {
 		gtk_combo_box_append_text(GTK_COMBO_BOX(combo), sopt->choices[i].label);
-		if (data->entry_text && 
+		if (data->entry_text &&
 		    !strcmp(data->entry_text, sopt->choices[i].name)) {
 			gtk_combo_box_set_active(GTK_COMBO_BOX(combo), i);
 			g_free(data->entry_text);
@@ -412,14 +474,14 @@ static gboolean ui_add_select (ui_fragment_data *data)
 		}
 	}
 	if (gtk_combo_box_get_active(GTK_COMBO_BOX(combo)) < 0) {
-		gtk_combo_box_set_active(GTK_COMBO_BOX(combo), 0); 
+		gtk_combo_box_set_active(GTK_COMBO_BOX(combo), 0);
 		data->entry_text = sopt->choices[0].name;
 	}
 
 	if (g_queue_peek_tail(ui_data->form_entries) == data)
 		gtk_widget_grab_focus (combo);
 	g_signal_connect(G_OBJECT(combo), "changed", G_CALLBACK(combo_changed), data);
-	/* Hook up the 'show' signal to ensure that we override prompts on 
+	/* Hook up the 'show' signal to ensure that we override prompts on
 	   UI elements which may be coming later. */
 	g_signal_connect(G_OBJECT(combo), "show", G_CALLBACK(combo_changed), data);
 
@@ -527,6 +589,10 @@ static int ui_flush(UI* ui)
 	while (!g_queue_is_empty (ui_data->form_entries)) {
 		ui_fragment_data *data;
 		data = g_queue_pop_tail (ui_data->form_entries);
+
+		if (data->find_request)
+			gnome_keyring_cancel_request(data->find_request);
+
 		if (data->entry_text) {
 			UI_set_result(ui, data->uis, data->entry_text);
 		}
@@ -598,6 +664,31 @@ static char *find_form_answer(struct oc_auth_form *form, struct oc_form_opt *opt
 	return result;
 }
 
+/* Callback which is called when we got a reply from gnome-keyring for any
+ * password field. Updates the contents of the password field unless the user
+ * entered anything in the meantime. */
+static void got_keyring_pw(GnomeKeyringResult result, const char *string, gpointer userdata)
+{
+	ui_fragment_data *data = (ui_fragment_data*)userdata;
+	if (string != NULL) {
+		if (data->entry) {
+			if (!g_ascii_strcasecmp("", gtk_entry_get_text(GTK_ENTRY(data->entry)))) {
+				gtk_entry_set_text(GTK_ENTRY(data->entry), string);
+				if (gtk_widget_has_focus(data->entry))
+					gtk_editable_select_region(GTK_EDITABLE(data->entry), 0, -1);
+			}
+		} else
+			data->entry_text = g_strdup (string);
+
+		/* Mark 'Save passwords' if a password is found in keyring */
+		gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (data->ui_data->savepass), 1);
+	}
+
+	/* zero the find request so that we don’t attempt to cancel it when
+	 * closing the dialog */
+	data->find_request = NULL;
+}
+
 /* This part for processing forms from openconnect directly, rather than
    through the SSL UI abstraction (which doesn't allow 'select' options) */
 
@@ -630,7 +721,7 @@ static gboolean ui_form (struct oc_auth_form *form)
 		data = g_slice_new0 (ui_fragment_data);
 		data->ui_data = ui_data;
 		data->opt = opt;
-		
+
 		if (opt->type == OC_FORM_OPT_PASSWORD ||
 		    opt->type == OC_FORM_OPT_TEXT) {
 			g_mutex_lock (ui_data->form_mutex);
@@ -638,6 +729,18 @@ static gboolean ui_form (struct oc_auth_form *form)
 			g_mutex_unlock (ui_data->form_mutex);
 			if (opt->type != OC_FORM_OPT_PASSWORD)
 				data->entry_text = find_form_answer(form, opt);
+			else {
+				data->find_request = gnome_keyring_find_password(
+					OPENCONNECT_SCHEMA,
+					got_keyring_pw,
+					data,
+					NULL,
+					"vpn_uuid", ui_data->vpn_uuid,
+					"auth_id", form->auth_id,
+					"label", data->opt->name,
+					NULL
+					);
+			}
 
 			ui_write_prompt(data);
 		} else if (opt->type == OC_FORM_OPT_SELECT) {
@@ -650,7 +753,7 @@ static gboolean ui_form (struct oc_auth_form *form)
 		} else
 			g_slice_free (ui_fragment_data, data);
 	}
-	
+
 	return ui_show(ui_data);
 }
 
@@ -692,14 +795,28 @@ static int nm_process_auth_form (void *cbdata, struct oc_auth_form *form)
 					keyname = g_strdup_printf("form:%s:%s", form->auth_id, data->opt->name);
 					remember_gconf_key(ui_data, keyname, strdup(data->entry_text));
 				}
+
+				if (data->opt->type == OC_FORM_OPT_PASSWORD) {
+					/* store the password in gnome-keyring */
+					//int result;
+					struct keyring_password *kp = g_new(struct keyring_password, 1);
+					kp->description = g_strdup_printf(_("OpenConnect: %s: %s:%s"), ui_data->vpn_name, form->auth_id, data->opt->name);
+					kp->password = g_strdup(data->entry_text);
+					kp->vpn_uuid = g_strdup(ui_data->vpn_uuid);
+					kp->auth_id = g_strdup(form->auth_id);
+					kp->label = g_strdup(data->opt->name);
+
+					g_hash_table_insert (ui_data->success_passwords,
+							     g_strdup(kp->description), kp);
+				}
 			}
 			g_slice_free (ui_fragment_data, data);
 		}
 	}
 
-
+	ui_data->form_grabbed = 0;
 	g_mutex_unlock(ui_data->form_mutex);
-	
+
 	/* -1 = cancel,
 	 *  0 = failure,
 	 *  1 = success */
@@ -930,6 +1047,16 @@ static int get_gconf_autoconnect(GConfClient *gcl, char *config_path)
 	return ret;
 }
 
+static gboolean get_save_passwords(GHashTable *secrets)
+{
+	char *save = g_hash_table_lookup (secrets, "save_passwords");
+
+	if (save && !strcmp(save, "yes"))
+		return TRUE;
+
+	return FALSE;
+}
+
 static int parse_xmlconfig(char *xmlconfig)
 {
 	xmlDocPtr xml_doc;
@@ -1131,12 +1258,52 @@ static int write_new_config(void *cbdata, char *buf, int buflen)
 
 static void autocon_toggled(GtkWidget *widget)
 {
+	auth_ui_data *ui_data = _ui_data; /* FIXME global */
+	gchar *enabled = NULL;
 	char *config_path = _config_path; /* FIXME global */
 	GConfClient *gcl = _gcl; /* FIXME global */
-	int enabled = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(widget));
 	char *key = g_strdup_printf("%s/vpn/autoconnect", config_path);
 
 	gconf_client_set_string(gcl, key, enabled ? "yes" : "no", NULL);
+	if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON(widget)))
+		enabled = g_strdup ("yes");
+	else
+		enabled = g_strdup ("no");
+
+	g_hash_table_insert (ui_data->secrets, g_strdup ("autoconnect"), enabled);
+}
+
+/* gnome_keyring_delete_password() only deletes one matching password, so
+ * keep doing it until it doesn't succeed. The ui_data is essentially
+ * permanent anyway so no need to worry about its lifetime. */
+static void delete_next_password(GnomeKeyringResult result, gpointer data)
+{
+	auth_ui_data *ui_data = data;
+
+	if (result == GNOME_KEYRING_RESULT_OK) {
+		gnome_keyring_delete_password(OPENCONNECT_SCHEMA,
+					      delete_next_password,
+					      ui_data, NULL,
+					      "vpn_uuid", ui_data->vpn_uuid,
+					      NULL);
+	}
+}
+
+static void savepass_toggled(GtkWidget *widget, auth_ui_data *ui_data)
+{
+	gchar *enabled;
+
+	if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON(widget)))
+		enabled = g_strdup ("yes");
+	else {
+		enabled = g_strdup ("no");
+		gnome_keyring_delete_password(OPENCONNECT_SCHEMA,
+					      delete_next_password,
+					      ui_data, NULL,
+					      "vpn_uuid", ui_data->vpn_uuid,
+					      NULL);
+	}
+	g_hash_table_insert (ui_data->secrets, g_strdup ("save_passwords"), enabled);
 }
 
 static void scroll_log(GtkTextBuffer *log, GtkTextView *view)
@@ -1216,12 +1383,13 @@ static gboolean cookie_obtained(auth_ui_data *ui_data)
 		/* user has chosen a new host, start from beginning */
 		while (ui_data->success_keys) {
 			struct gconf_key *k = ui_data->success_keys;
-			
+
 			ui_data->success_keys = k->next;
 			g_free(k->key);
 			g_free(k->value);
 			g_free(k);
-		}			
+		}
+		g_hash_table_remove_all (ui_data->success_passwords);
 		connect_host(ui_data);
 		return FALSE;
 	}
@@ -1262,6 +1430,14 @@ static gboolean cookie_obtained(auth_ui_data *ui_data)
 		openconnect_clear_cookie(ui_data->vpninfo);
 		printf("\n\n");
 		fflush(stdout);
+
+		if (get_save_passwords (ui_data->secrets)) {
+			g_hash_table_foreach(
+				ui_data->success_passwords,
+				keyring_store_passwords,
+				NULL);
+		}
+
 		ui_data->retval = 0;
 
 		gtk_main_quit();
@@ -1278,7 +1454,9 @@ static gboolean cookie_obtained(auth_ui_data *ui_data)
 		g_free(k->key);
 		g_free(k->value);
 		g_free(k);
-	}			
+	}
+
+	g_hash_table_remove_all (ui_data->success_passwords);
 
 	return FALSE;
 }
@@ -1494,6 +1672,13 @@ static void build_main_dialog(auth_ui_data *ui_data)
 	gtk_widget_set_sensitive (ui_data->cancel_button, FALSE);
 	gtk_widget_show(ui_data->cancel_button);
 
+	ui_data->savepass = gtk_check_button_new_with_label(_("Save passwords"));
+	gtk_box_pack_start(GTK_BOX(hbox), ui_data->savepass, FALSE, FALSE, 0);
+	if (get_save_passwords (ui_data->secrets))
+		gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(ui_data->savepass), 1);
+	g_signal_connect(ui_data->savepass, "toggled", G_CALLBACK(savepass_toggled), ui_data);
+	gtk_widget_show(ui_data->savepass);
+
 	exp = gtk_expander_new(_("Log"));
 	gtk_box_pack_end(GTK_BOX(vbox), exp, FALSE, FALSE, 0);
 	gtk_widget_show(exp);
@@ -1519,7 +1704,7 @@ static void build_main_dialog(auth_ui_data *ui_data)
 	g_signal_connect(ui_data->log, "changed", G_CALLBACK(scroll_log), view);
 }
 
-static auth_ui_data *init_ui_data (char *vpn_name)
+static auth_ui_data *init_ui_data (char *vpn_name, char *vpn_uuid)
 {
 	auth_ui_data *ui_data;
 
@@ -1532,6 +1717,11 @@ static auth_ui_data *init_ui_data (char *vpn_name)
 	ui_data->form_shown_changed = g_cond_new();
 	ui_data->cert_response_changed = g_cond_new();
 	ui_data->vpn_name = vpn_name;
+	ui_data->vpn_uuid = vpn_uuid;
+	ui_data->secrets = g_hash_table_new_full (g_str_hash, g_str_equal,
+						  g_free, g_free);
+	ui_data->success_passwords = g_hash_table_new_full (g_str_hash, g_str_equal,
+							    g_free, keyring_password_free);
 	if (pipe(ui_data->cancel_pipes)) {
 		/* This should never happen, and the world is probably about
 		   to come crashing down around our ears. But attempt to cope
@@ -1550,7 +1740,7 @@ static auth_ui_data *init_ui_data (char *vpn_name)
 
 #if OPENCONNECT_CHECK_VER(1,4)
 	openconnect_set_cancel_fd (ui_data->vpninfo, ui_data->cancel_pipes[0]);
-#endif  
+#endif
 
 #if 0
 	ui_data->vpninfo->proxy_factory = px_proxy_factory_new();
@@ -1618,7 +1808,7 @@ int main (int argc, char **argv)
 	g_thread_init (NULL);
 	gtk_init(0, NULL);
 
-	_ui_data = init_ui_data(vpn_name);
+	_ui_data = init_ui_data(vpn_name, vpn_uuid);
 	if (get_config(vpn_uuid, _ui_data->vpninfo)) {
 		fprintf(stderr, "Failed to find VPN UUID %s in gconf\n", vpn_uuid);
 		return 1;

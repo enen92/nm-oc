@@ -6,7 +6,6 @@ nm_openconnect_auth_dialog_CPPFLAGS = \
 	$(NM_CFLAGS) \
 	$(GTHREAD_CFLAGS) \
 	$(GTK_CFLAGS) \
-	$(GCONF_CFLAGS) \
 	$(OPENCONNECT_CFLAGS) \
 	$(LIBXML_CFLAGS) \
 	$(GNOMEKEYRING_CFLAGS) \
@@ -25,7 +24,6 @@ nm_openconnect_auth_dialog_SOURCES = \
 nm_openconnect_auth_dialog_LDADD = \
 	$(GTK_LIBS) \
 	$(NM_LIBS) \
-	$(GCONF_LIBS) \
 	$(OPENCONNECT_LIBS) \
 	$(LIBXML_LIBS) \
 	$(GNOMEKEYRING_LIBS)

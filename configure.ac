@@ -88,10 +88,6 @@ if test x"$with_gnome" != xno; then
 	AC_SUBST(GNOMEKEYRING_CFLAGS)
 	AC_SUBST(GNOMEKEYRING_LIBS)
 
-	PKG_CHECK_MODULES(GCONF, gconf-2.0)
-	AC_SUBST(GCONF_CFLAGS)
-	AC_SUBST(GCONF_LIBS)
-
 	if test x"$with_authdlg" != xno; then
 		PKG_CHECK_MODULES(OPENCONNECT, openconnect >= 3.02)
 		AC_SUBST(OPENCONNECT_CFLAGS)

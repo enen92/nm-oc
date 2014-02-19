@@ -7,9 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: network-manager-openconnect nm-0-9-8\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=NetworkManager&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-12-19 15:55+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-19 13:34+0000\n"
 "PO-Revision-Date: 2013-12-28 11:30+0700\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <gnome@i15n.org>\n"
@@ -20,21 +19,21 @@ msgstr ""
 "X-Generator: Poedit 1.5.7\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../auth-dialog/main.c:762
+#: ../auth-dialog/main.c:850
 #, c-format
 msgid "OpenConnect: %s: %s:%s"
 msgstr "OpenConnect: %s: %s:%s"
 
-#: ../auth-dialog/main.c:789
+#: ../auth-dialog/main.c:880
 #, c-format
 msgid "Connect to VPN '%s'"
 msgstr "Menyambung ke VPN '%s'"
 
-#: ../auth-dialog/main.c:791
+#: ../auth-dialog/main.c:882
 msgid "Connect to VPN"
 msgstr "Menyambung ke VPN"
 
-#: ../auth-dialog/main.c:834
+#: ../auth-dialog/main.c:925
 #, c-format
 msgid ""
 "Certificate from VPN server \"%s\" failed verification.\n"
@@ -45,31 +44,31 @@ msgstr ""
 "Alasan: %s\n"
 "Anda ingin menerimanya?"
 
-#: ../auth-dialog/main.c:1504
+#: ../auth-dialog/main.c:1597
 msgid "VPN host"
 msgstr "Host VPN"
 
-#: ../auth-dialog/main.c:1524
+#: ../auth-dialog/main.c:1617
 msgid "Automatically start connecting next time"
 msgstr "Selanjutnya mulai menyambung secara otomatis"
 
-#: ../auth-dialog/main.c:1545
+#: ../auth-dialog/main.c:1638
 msgid "Select a host to fetch the login form"
 msgstr "Pilih host untuk mengambil formulir log masuk"
 
-#: ../auth-dialog/main.c:1550
+#: ../auth-dialog/main.c:1643
 msgid "Contacting host, please wait..."
 msgstr "Menghubungi host, silakan tunggu..."
 
-#: ../auth-dialog/main.c:1570
+#: ../auth-dialog/main.c:1663
 msgid "_Login"
 msgstr "_Log Masuk"
 
-#: ../auth-dialog/main.c:1584
+#: ../auth-dialog/main.c:1677
 msgid "Save passwords"
 msgstr "Simpan sandi"
 
-#: ../auth-dialog/main.c:1592
+#: ../auth-dialog/main.c:1685
 msgid "Log"
 msgstr "Log"
 
@@ -89,11 +88,11 @@ msgstr "Pilih kunci privat Anda..."
 msgid "PEM certificates (*.pem, *.crt, *.key)"
 msgstr "Sertifikat PEM (*.pem, *.crt, *.key)"
 
-#: ../properties/nm-openconnect.c:60
+#: ../properties/nm-openconnect.c:63
 msgid "Cisco AnyConnect Compatible VPN (openconnect)"
 msgstr "VPN Kompatibel AnyConnect Cisco (openconnect)"
 
-#: ../properties/nm-openconnect.c:61
+#: ../properties/nm-openconnect.c:64
 msgid "Compatible with Cisco AnyConnect SSL VPN."
 msgstr "Kompatibel dengan VPN SSL AnyConnect Cisco."
 
@@ -146,11 +145,13 @@ msgid "<b>Software Token Authentication</b>"
 msgstr "<b>Otentikasi Token Perangkat Lunak</b>"
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Token _Source:"
+#, fuzzy
+msgid "Token _Mode:"
 msgstr "_Sumber Token:"
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
-msgid "Token St_ring:"
+#, fuzzy
+msgid "Token Sec_ret:"
 msgstr "St_ring Token:"
 
 #: ../properties/nm-openconnect-dialog.ui.h:15
@@ -158,11 +159,18 @@ msgid "Disabled"
 msgstr "Dinonaktifkan"
 
 #: ../properties/nm-openconnect-dialog.ui.h:16
-msgid "Read from ~/.stokenrc"
+#, fuzzy
+msgid "RSA SecurID - read from ~/.stokenrc"
 msgstr "Membaca dari ~/.stokenrc"
 
 #: ../properties/nm-openconnect-dialog.ui.h:17
-msgid "Manually entered"
+#, fuzzy
+msgid "RSA SecurID - manually entered"
+msgstr "Dimasukkan secara manual"
+
+#: ../properties/nm-openconnect-dialog.ui.h:18
+#, fuzzy
+msgid "TOTP - manually entered"
 msgstr "Dimasukkan secara manual"
 
 #: ../src/nm-openconnect-service.c:151

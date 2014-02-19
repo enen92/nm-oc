@@ -7,9 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: network-manager-openconnect nm-0.98\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=NetworkManager&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-03-21 00:14+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-19 13:34+0000\n"
 "PO-Revision-Date: 2013-03-18 18:57+0100\n"
 "Last-Translator: Zdeněk Hataš <zdenek.hatas@gmail.com>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
@@ -21,21 +20,21 @@ msgstr ""
 "X-Poedit-Language: Czech\n"
 "X-Poedit-Country: CZECH REPUBLIC\n"
 
-#: ../auth-dialog/main.c:770
+#: ../auth-dialog/main.c:850
 #, c-format
 msgid "OpenConnect: %s: %s:%s"
 msgstr "OpenConnect: %s: %s:%s"
 
-#: ../auth-dialog/main.c:797
+#: ../auth-dialog/main.c:880
 #, c-format
 msgid "Connect to VPN '%s'"
 msgstr "Připojit k VPN „%s“"
 
-#: ../auth-dialog/main.c:799
+#: ../auth-dialog/main.c:882
 msgid "Connect to VPN"
 msgstr "Připojit k VPN"
 
-#: ../auth-dialog/main.c:842
+#: ../auth-dialog/main.c:925
 #, c-format
 msgid ""
 "Certificate from VPN server \"%s\" failed verification.\n"
@@ -46,31 +45,31 @@ msgstr ""
 "Důvod: %s\n"
 "Chcete jej přijmout?"
 
-#: ../auth-dialog/main.c:1512
+#: ../auth-dialog/main.c:1597
 msgid "VPN host"
 msgstr "Server VPN"
 
-#: ../auth-dialog/main.c:1532
+#: ../auth-dialog/main.c:1617
 msgid "Automatically start connecting next time"
 msgstr "Příště připojit automaticky"
 
-#: ../auth-dialog/main.c:1553
+#: ../auth-dialog/main.c:1638
 msgid "Select a host to fetch the login form"
 msgstr "Zvolte stroj pro získání přihlášovacího formuláře"
 
-#: ../auth-dialog/main.c:1558
+#: ../auth-dialog/main.c:1643
 msgid "Contacting host, please wait..."
 msgstr "Spojení je navazováno, čekejte prosím…"
 
-#: ../auth-dialog/main.c:1578
+#: ../auth-dialog/main.c:1663
 msgid "_Login"
 msgstr "Přih_lásit se"
 
-#: ../auth-dialog/main.c:1592
+#: ../auth-dialog/main.c:1677
 msgid "Save passwords"
 msgstr "Uložit hesla"
 
-#: ../auth-dialog/main.c:1600
+#: ../auth-dialog/main.c:1685
 msgid "Log"
 msgstr "Záznam"
 
@@ -90,11 +89,11 @@ msgstr "Zvolte svůj soukromý klíč…"
 msgid "PEM certificates (*.pem, *.crt, *.key)"
 msgstr "Certifikáty PEM (*.pem, *.crt, *.key)"
 
-#: ../properties/nm-openconnect.c:60
+#: ../properties/nm-openconnect.c:63
 msgid "Cisco AnyConnect Compatible VPN (openconnect)"
 msgstr "VPN kompatibilní s Cisco AnyConnect (openconnect)"
 
-#: ../properties/nm-openconnect.c:61
+#: ../properties/nm-openconnect.c:64
 msgid "Compatible with Cisco AnyConnect SSL VPN."
 msgstr "Kompatibilní s Cisco AnyConnect SSL VPN."
 
@@ -147,11 +146,13 @@ msgid "<b>Software Token Authentication</b>"
 msgstr "<b>Softwarový autentizační token </b>"
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Token _Source:"
+#, fuzzy
+msgid "Token _Mode:"
 msgstr "_Zdroj tokenu:"
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
-msgid "Token St_ring:"
+#, fuzzy
+msgid "Token Sec_ret:"
 msgstr "Ře_tězec tokenu:"
 
 #: ../properties/nm-openconnect-dialog.ui.h:15
@@ -159,11 +160,18 @@ msgid "Disabled"
 msgstr "Zakázáno"
 
 #: ../properties/nm-openconnect-dialog.ui.h:16
-msgid "Read from ~/.stokenrc"
+#, fuzzy
+msgid "RSA SecurID - read from ~/.stokenrc"
 msgstr "Číst ze ~/.stokenrc"
 
 #: ../properties/nm-openconnect-dialog.ui.h:17
-msgid "Manually entered"
+#, fuzzy
+msgid "RSA SecurID - manually entered"
+msgstr "Zadáno ručně"
+
+#: ../properties/nm-openconnect-dialog.ui.h:18
+#, fuzzy
+msgid "TOTP - manually entered"
 msgstr "Zadáno ručně"
 
 #: ../src/nm-openconnect-service.c:151
@@ -3057,5 +3065,5 @@ msgstr "Nepodařilo se zpracovat URL serveru „%s“\n"
 msgid "Only https:// permitted for server URL\n"
 msgstr "Pro URL serveru je povoleno pouze https://\n"
 
-msgid "Private key type (PKCS#12 / TPM / PEM)"
-msgstr "Typ soukromého klíče (PKCS#12 / TPM / PEM)"
+#~ msgid "Private key type (PKCS#12 / TPM / PEM)"
+#~ msgstr "Typ soukromého klíče (PKCS#12 / TPM / PEM)"

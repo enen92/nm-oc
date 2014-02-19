@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: network-manager-openconnect master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=NetworkManager&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-03-14 19:46+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-19 13:34+0000\n"
 "PO-Revision-Date: 2013-03-15 16:51+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
@@ -16,27 +16,28 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n%100==4 ? 3 : 0);\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
+"%100==4 ? 3 : 0);\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-Language: Slovenian\n"
 "X-Poedit-Country: SLOVENIA\n"
 
-#: ../auth-dialog/main.c:748
+#: ../auth-dialog/main.c:850
 #, c-format
 msgid "OpenConnect: %s: %s:%s"
 msgstr "OpenConnect: %s: %s:%s"
 
-#: ../auth-dialog/main.c:775
+#: ../auth-dialog/main.c:880
 #, c-format
 msgid "Connect to VPN '%s'"
 msgstr "Poveži v omrežje VPN '%s'"
 
-#: ../auth-dialog/main.c:777
+#: ../auth-dialog/main.c:882
 msgid "Connect to VPN"
 msgstr "Poveži v omrežje VPN"
 
-#: ../auth-dialog/main.c:820
+#: ../auth-dialog/main.c:925
 #, c-format
 msgid ""
 "Certificate from VPN server \"%s\" failed verification.\n"
@@ -47,31 +48,31 @@ msgstr ""
 "Vzrokn: %s\n"
 "Ali želite potrdilo vseeno sprejeti?"
 
-#: ../auth-dialog/main.c:1477
+#: ../auth-dialog/main.c:1597
 msgid "VPN host"
 msgstr "Gostitelj VPN"
 
-#: ../auth-dialog/main.c:1497
+#: ../auth-dialog/main.c:1617
 msgid "Automatically start connecting next time"
 msgstr "Naslednjič samodejno poveži"
 
-#: ../auth-dialog/main.c:1514
+#: ../auth-dialog/main.c:1638
 msgid "Select a host to fetch the login form"
 msgstr "Izbor gostitelja za pridobivanje obrazca prijave"
 
-#: ../auth-dialog/main.c:1519
+#: ../auth-dialog/main.c:1643
 msgid "Contacting host, please wait..."
 msgstr "Prijavljanje ..."
 
-#: ../auth-dialog/main.c:1531
+#: ../auth-dialog/main.c:1663
 msgid "_Login"
 msgstr "_Prijava"
 
-#: ../auth-dialog/main.c:1545
+#: ../auth-dialog/main.c:1677
 msgid "Save passwords"
 msgstr "Shrani gesla"
 
-#: ../auth-dialog/main.c:1553
+#: ../auth-dialog/main.c:1685
 msgid "Log"
 msgstr "Dnevnik"
 
@@ -91,11 +92,11 @@ msgstr "Izbor zasebnega ključa ..."
 msgid "PEM certificates (*.pem, *.crt, *.key)"
 msgstr "Potrdila PEM (*.pem, *.crt, *.key)"
 
-#: ../properties/nm-openconnect.c:60
+#: ../properties/nm-openconnect.c:63
 msgid "Cisco AnyConnect Compatible VPN (openconnect)"
 msgstr "Združljivo s Cisco AnyConnect VPN (openconnect)"
 
-#: ../properties/nm-openconnect.c:61
+#: ../properties/nm-openconnect.c:64
 msgid "Compatible with Cisco AnyConnect SSL VPN."
 msgstr "Združljivo s Cisco AnyConnect SSL VPN."
 
@@ -148,11 +149,13 @@ msgid "<b>Software Token Authentication</b>"
 msgstr "<b>Overitev programskega žetona</b>"
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Token _Source:"
+#, fuzzy
+msgid "Token _Mode:"
 msgstr "_Vir žetona:"
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
-msgid "Token St_ring:"
+#, fuzzy
+msgid "Token Sec_ret:"
 msgstr "_Niz žetona:"
 
 #: ../properties/nm-openconnect-dialog.ui.h:15
@@ -160,17 +163,25 @@ msgid "Disabled"
 msgstr "Onemogočeno"
 
 #: ../properties/nm-openconnect-dialog.ui.h:16
-msgid "Read from ~/.stokenrc"
+#, fuzzy
+msgid "RSA SecurID - read from ~/.stokenrc"
 msgstr "Preberi iz ~/.stokenrc"
 
 #: ../properties/nm-openconnect-dialog.ui.h:17
-msgid "Manually entered"
+#, fuzzy
+msgid "RSA SecurID - manually entered"
+msgstr "Ročno vpisano"
+
+#: ../properties/nm-openconnect-dialog.ui.h:18
+#, fuzzy
+msgid "TOTP - manually entered"
 msgstr "Ročno vpisano"
 
 #: ../src/nm-openconnect-service.c:151
 #, c-format
 msgid "invalid integer property '%s' or out of range [%d -> %d]"
-msgstr "neveljavna lastnost celega števila '%s', ki je izven območja [%d -> %d]"
+msgstr ""
+"neveljavna lastnost celega števila '%s', ki je izven območja [%d -> %d]"
 
 #: ../src/nm-openconnect-service.c:161
 #, c-format
@@ -216,8 +227,12 @@ msgid "Enable verbose debug logging (may expose passwords)"
 msgstr "Omogoči podrobno beleženje razhroščevanja (lahko razkrije gesla)"
 
 #: ../src/nm-openconnect-service.c:664
-msgid "nm-openconnect-service provides integrated Cisco AnyConnect SSL VPN capability to NetworkManager."
-msgstr "Storitev nm-openconnect-service omogoča vgrajeno podporo za Cisco AnyConnect SSL VPN v program NetworkManager."
+msgid ""
+"nm-openconnect-service provides integrated Cisco AnyConnect SSL VPN "
+"capability to NetworkManager."
+msgstr ""
+"Storitev nm-openconnect-service omogoča vgrajeno podporo za Cisco AnyConnect "
+"SSL VPN v program NetworkManager."
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/xml.c#l53
 #: ../openconnect-strings.txt:14
@@ -274,7 +289,9 @@ msgstr "Gostitelj \"%s\" vključuje uporabniško skupino \"%s\".\n"
 #: ../openconnect-strings.txt:42
 #, c-format
 msgid "Host \"%s\" not listed in config; treating as raw hostname\n"
-msgstr "Gostitelj \"%s\" v datoteki config ni naveden; obravnavan bo kot neoblikovano ime gostitelja\n"
+msgstr ""
+"Gostitelj \"%s\" v datoteki config ni naveden; obravnavan bo kot "
+"neoblikovano ime gostitelja\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l185
 #: ../openconnect-strings.txt:45
@@ -312,7 +329,8 @@ msgid ""
 "WARNING: No DTLS support in this binary. Performance will be impaired.\n"
 msgstr ""
 "\n"
-"OPOZORILO: V tej izvajalni datoteki DTLS ni podprt. Delovanje bo zato okrnjeno.\n"
+"OPOZORILO: V tej izvajalni datoteki DTLS ni podprt. Delovanje bo zato "
+"okrnjeno.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l231
 #: ../openconnect-strings.txt:67
@@ -472,7 +490,9 @@ msgstr "Nastavi omejitev vrste paketov na LEN paketov"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l264
 #: ../openconnect-strings.txt:159
 msgid "Shell command line for using a vpnc-compatible config script"
-msgstr "Ukazna vrstica v lupini za uporabo prilagoditvenega skripta, združljivega z vpnc"
+msgstr ""
+"Ukazna vrstica v lupini za uporabo prilagoditvenega skripta, združljivega z "
+"vpnc"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l265
 #: ../openconnect-strings.txt:162
@@ -677,8 +697,10 @@ msgid ""
 "Disabling all HTTP connection re-use due to --no-http-keepalive option.\n"
 "If this helps, please report to <openconnect-devel@lists.infradead.org>.\n"
 msgstr ""
-"Zaradi uporabe možnosti --no-http-keepalive je onemogočena ponovna uporaba povezav HTTP.\n"
-"V kolikor možnost deluje, pošljite poročilo na <openconnect-devel@lists.infradead.org>.\n"
+"Zaradi uporabe možnosti --no-http-keepalive je onemogočena ponovna uporaba "
+"povezav HTTP.\n"
+"V kolikor možnost deluje, pošljite poročilo na <openconnect-devel@lists."
+"infradead.org>.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l651
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l665
@@ -755,7 +777,9 @@ msgstr "Vzpostavljena je povezava s %s kot %s%s%s, z uporabo %s\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l859
 #: ../openconnect-strings.txt:322
 msgid "No --script argument provided; DNS and routing are not configured\n"
-msgstr "Ni navedenega argumenta --script; Vrednosti DNS in nastavitve preusmerjanja niso nastavljene.\n"
+msgstr ""
+"Ni navedenega argumenta --script; Vrednosti DNS in nastavitve preusmerjanja "
+"niso nastavljene.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l861
 #: ../openconnect-strings.txt:325
@@ -854,7 +878,8 @@ msgstr "Ni mogoče odpreti datoteke ~/.stokenrc.\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l1242
 #: ../openconnect-strings.txt:377
 msgid "OpenConnect was not built with soft token support\n"
-msgstr "Program OpenConnect ni izgrajen s podporo za uporabniški prstni odtis\n"
+msgstr ""
+"Program OpenConnect ni izgrajen s podporo za uporabniški prstni odtis\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l1245
 #: ../openconnect-strings.txt:380
@@ -891,8 +916,10 @@ msgid ""
 "Use the --no-dtls command line option to avoid this message\n"
 msgstr ""
 "Predmet SSL_set_session() je spodletel s staro različico protokola 0x%x\n"
-"Ali je v uporabi različica programa OpenSSL, ki je starejša od različice 0.9.8m?\n"
-"Za več podrobnosti si oglejte http://rt.openssl.org/Ticket/Display.html?id=1751\n"
+"Ali je v uporabi različica programa OpenSSL, ki je starejša od različice "
+"0.9.8m?\n"
+"Za več podrobnosti si oglejte http://rt.openssl.org/Ticket/Display.html?"
+"id=1751\n"
 "Z uporabo zastavice --no-dtls v argumentu ukaza, se izognete temu sporočilu\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/dtls.c#l235
@@ -903,7 +930,9 @@ msgstr "Povezava DTLS je vzpostavljena (z uporabo OpenSSL)\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/dtls.c#l273
 #: ../openconnect-strings.txt:405
 msgid "Your OpenSSL is older than the one you built against, so DTLS may fail!"
-msgstr "Različica OpenSSL je starejša kot tisti, s katero je bil program izgrajen, zato lahko DTLS spodleti!"
+msgstr ""
+"Različica OpenSSL je starejša kot tisti, s katero je bil program izgrajen, "
+"zato lahko DTLS spodleti!"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/dtls.c#l322
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/dtls.c#l326
@@ -1072,7 +1101,8 @@ msgstr "Pošlji DPD DTLS\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/dtls.c#l807
 #: ../openconnect-strings.txt:501
 msgid "Failed to send DPD request. Expect disconnect\n"
-msgstr "Pošiljanje zahteve DPD je spodletelo. Pričakujte prekinitev povezave.\n"
+msgstr ""
+"Pošiljanje zahteve DPD je spodletelo. Pričakujte prekinitev povezave.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/dtls.c#l820
 #: ../openconnect-strings.txt:504
@@ -1082,7 +1112,8 @@ msgstr "Pošlji KEEPALIVE DTLS\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/dtls.c#l825
 #: ../openconnect-strings.txt:507
 msgid "Failed to send keepalive request. Expect disconnect\n"
-msgstr "Pošiljanje zahteve KEEPALIVE je spodletelo. Pričakujte prekinitev povezave.\n"
+msgstr ""
+"Pošiljanje zahteve KEEPALIVE je spodletelo. Pričakujte prekinitev povezave.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/dtls.c#l854
 #: ../openconnect-strings.txt:510
@@ -1100,7 +1131,8 @@ msgstr "Prejeta napaka pisanja DTLS: %s. Opravilo bo povrnjeno na SSL.\n"
 #: ../openconnect-strings.txt:516
 #, c-format
 msgid "Sent DTLS packet of %d bytes; DTLS send returned %d\n"
-msgstr "Poslan je bil paket DTLS dolžine %d bajtov; vrnjen paket DTLS pa je %d\n"
+msgstr ""
+"Poslan je bil paket DTLS dolžine %d bajtov; vrnjen paket DTLS pa je %d\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/dtls.c#l891
 #: ../openconnect-strings.txt:519
@@ -1194,13 +1226,16 @@ msgstr "Ni prejetega nobenega naslova IP. Opravilo je preklicano.\n"
 #: ../openconnect-strings.txt:569
 #, c-format
 msgid "Reconnect gave different Legacy IP address (%s != %s)\n"
-msgstr "S ponovno povezavo je pridobljen drugačen opuščen naslov IP (%s != %s)\n"
+msgstr ""
+"S ponovno povezavo je pridobljen drugačen opuščen naslov IP (%s != %s)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/cstp.c#l450
 #: ../openconnect-strings.txt:572
 #, c-format
 msgid "Reconnect gave different Legacy IP netmask (%s != %s)\n"
-msgstr "S ponovno povezavo je pridobljena drugačna opuščena maska omrežja IP (%s != %s)\n"
+msgstr ""
+"S ponovno povezavo je pridobljena drugačna opuščena maska omrežja IP (%s != "
+"%s)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/cstp.c#l458
 #: ../openconnect-strings.txt:575
@@ -1212,7 +1247,8 @@ msgstr "S ponovno povezavo je pridobljen drugačen naslov IPv6 (%s != %s)\n"
 #: ../openconnect-strings.txt:578
 #, c-format
 msgid "Reconnect gave different IPv6 netmask (%s != %s)\n"
-msgstr "S ponovno povezavo je pridobljena drugačna maska omrežja IPv6 (%s != %s)\n"
+msgstr ""
+"S ponovno povezavo je pridobljena drugačna maska omrežja IPv6 (%s != %s)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/cstp.c#l486
 #: ../openconnect-strings.txt:581
@@ -1251,7 +1287,9 @@ msgstr "Prejet je stisnjen paket podatkov velikosti %ld bajtov\n"
 #: ../openconnect-strings.txt:599
 #, c-format
 msgid "SSL read error %d (server probably closed connection); reconnecting.\n"
-msgstr "Napaka branja SSL %d (strežnik je najverjetneje zaprl povezavo); sledi ponovna povezava.\n"
+msgstr ""
+"Napaka branja SSL %d (strežnik je najverjetneje zaprl povezavo); sledi "
+"ponovna povezava.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/cstp.c#l661
 #: ../openconnect-strings.txt:602
@@ -1334,7 +1372,9 @@ msgstr "Protokol CSTP zahteva ponovno preverjanje ključa\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/cstp.c#l871
 #: ../openconnect-strings.txt:644
 msgid "CSTP Dead Peer Detection detected dead peer!\n"
-msgstr "Zaznava mrtvih omrežnih soležnikov CSTP je zaznala mrtvega omrežnega soležnika!\n"
+msgstr ""
+"Zaznava mrtvih omrežnih soležnikov CSTP je zaznala mrtvega omrežnega "
+"soležnika!\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/cstp.c#l883
 #: ../openconnect-strings.txt:647
@@ -1473,7 +1513,8 @@ msgstr "Ni mogoče ustvariti nove naprave tun"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/tun.c#l545
 #: ../openconnect-strings.txt:719
 msgid "Failed to put tun file descriptor into message-discard mode"
-msgstr "Podajanje opisnika datoteke TUN v načunu izločanja sporočil je spodletela."
+msgstr ""
+"Podajanje opisnika datoteke TUN v načunu izločanja sporočil je spodletela."
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/tun.c#l580
 #: ../openconnect-strings.txt:722
@@ -1581,7 +1622,8 @@ msgstr "Vnos šifrirnega gesla PKCS#12:"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/openssl.c#l442
 #: ../openconnect-strings.txt:784
 msgid "Parse PKCS#12 failed (wrong passphrase?)\n"
-msgstr "Razčlenjevanje PKCS#12 je spodletelo (je navedeno pravo šifrirno geslo?)\n"
+msgstr ""
+"Razčlenjevanje PKCS#12 je spodletelo (je navedeno pravo šifrirno geslo?)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/openssl.c#l449
 #: ../openconnect-strings.txt:787
@@ -1646,7 +1688,8 @@ msgstr "Ta različica programa OpenConnect je izgrajena brez podpore za TPM\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/openssl.c#l587
 #: ../openconnect-strings.txt:823
 msgid "Failed to reload X509 cert for expiry check\n"
-msgstr "Ponovno nalaganje potrdila X509 za preverjane preteklosti je spodletelo.\n"
+msgstr ""
+"Ponovno nalaganje potrdila X509 za preverjane preteklosti je spodletelo.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/openssl.c#l621
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/gnutls.c#l264
@@ -1750,7 +1793,8 @@ msgstr "Ni zadetkov za altname '%s'\n"
 #: ../openconnect-strings.txt:881
 #, c-format
 msgid "Certificate has GEN_IPADD altname with bogus length %d\n"
-msgstr "Potrdilo ima določena drugotna imena GEN_IPADD z nedovoljeno dolžino %d\n"
+msgstr ""
+"Potrdilo ima določena drugotna imena GEN_IPADD z nedovoljeno dolžino %d\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/openssl.c#l1006
 #: ../openconnect-strings.txt:884
@@ -2166,8 +2210,11 @@ msgstr "Določanje seznama preklicev potrdil je spodletelo: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/gnutls.c#l1475
 #: ../openconnect-strings.txt:1106
-msgid "WARNING: GnuTLS returned incorrect issuer certs; authentication may fail!\n"
-msgstr "OPOZORILO: program GnuTLS je vrnil nepravilno potrdilo izdajatelja; overitev bo najverjetneje spodletela!\n"
+msgid ""
+"WARNING: GnuTLS returned incorrect issuer certs; authentication may fail!\n"
+msgstr ""
+"OPOZORILO: program GnuTLS je vrnil nepravilno potrdilo izdajatelja; overitev "
+"bo najverjetneje spodletela!\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/gnutls.c#l1496
 #: ../openconnect-strings.txt:1110
@@ -2311,7 +2358,9 @@ msgstr "Koda PIN:"
 #: ../openconnect-strings.txt:1188
 #, c-format
 msgid "Failed to SHA1 input data for signing: %s\n"
-msgstr "Preverjanje razpršila SHA1 vhodnih podatkov za podpisovanje je spodletelo: %s\n"
+msgstr ""
+"Preverjanje razpršila SHA1 vhodnih podatkov za podpisovanje je spodletelo: "
+"%s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/gnutls_tpm.c#l111
 #: ../openconnect-strings.txt:1191
@@ -2640,10 +2689,13 @@ msgstr ""
 #: ../openconnect-strings.txt:1367
 msgid ""
 "Error: Server asked us to download and run a 'Cisco Secure Desktop' trojan.\n"
-"This facility is disabled by default for security reasons, so you may wish to enable it.\n"
+"This facility is disabled by default for security reasons, so you may wish "
+"to enable it.\n"
 msgstr ""
-"Napaka: strežnik zahteva prejem in zagon trojanskega datoteke 'Cisco Secure Desktop'.\n"
-"Ta možnost je iz varnostnih razlogov privzeto onemogočena. Če želite možnost uporabljati, jo omogočite.\n"
+"Napaka: strežnik zahteva prejem in zagon trojanskega datoteke 'Cisco Secure "
+"Desktop'.\n"
+"Ta možnost je iz varnostnih razlogov privzeto onemogočena. Če želite možnost "
+"uporabljati, jo omogočite.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/http.c#l529
 #: ../openconnect-strings.txt:1373
@@ -2699,7 +2751,8 @@ msgstr "Razčlenjevanje preusmeritvenega naslova URL '%s' je spodletelo: %s\n"
 #: ../openconnect-strings.txt:1399
 #, c-format
 msgid "Cannot follow redirection to non-https URL '%s'\n"
-msgstr "Preusmeritvi na naslov URL '%s', ki ni vrste HTTPS, ni mogoče slediti\n"
+msgstr ""
+"Preusmeritvi na naslov URL '%s', ki ni vrste HTTPS, ni mogoče slediti\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/http.c#l800
 #: ../openconnect-strings.txt:1402
@@ -2790,7 +2843,8 @@ msgstr "Napaka branja odziva auth s posredniškega strežnika SOCKS: %s\n"
 #: ../openconnect-strings.txt:1450
 #, c-format
 msgid "Unexpected auth response from SOCKS proxy: %02x %02x\n"
-msgstr "Nepričakovan odziv povezave posredniškega strežnika SOCKS: %02x %02x...\n"
+msgstr ""
+"Nepričakovan odziv povezave posredniškega strežnika SOCKS: %02x %02x...\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/http.c#l1300
 #: ../openconnect-strings.txt:1453
@@ -2814,7 +2868,8 @@ msgstr "Poslana je zahteva povezave s posredniškim strežnikom SOCKS %s:%d\n"
 #: ../openconnect-strings.txt:1462
 #, c-format
 msgid "Error writing connect request to SOCKS proxy: %s\n"
-msgstr "Napaka zapisovanja zahtev povezave s posredniškim strežnikom SOCKS: %s\n"
+msgstr ""
+"Napaka zapisovanja zahtev povezave s posredniškim strežnikom SOCKS: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/http.c#l1333
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/http.c#l1366
@@ -2827,7 +2882,8 @@ msgstr "Napaka branja odzivov povezave s posredniškega strežnika SOCKS: %s\n"
 #: ../openconnect-strings.txt:1469
 #, c-format
 msgid "Unexpected connect response from SOCKS proxy: %02x %02x...\n"
-msgstr "Nepričakovan odziv povezave posredniškega strežnika SOCKS: %02x %02x...\n"
+msgstr ""
+"Nepričakovan odziv povezave posredniškega strežnika SOCKS: %02x %02x...\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/http.c#l1359
 #: ../openconnect-strings.txt:1472
@@ -3015,7 +3071,9 @@ msgstr "Zahtevana je potrditev za ustvarjanje NASLEDNJE kode žetona.\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/auth.c#l1009
 #: ../openconnect-strings.txt:1576
 msgid "Server is rejecting the soft token; switching to manual entry\n"
-msgstr "Strežnik zavrača uporabniški prstni odtis; preklopljen bo način za ročni vnos.\n"
+msgstr ""
+"Strežnik zavrača uporabniški prstni odtis; preklopljen bo način za ročni "
+"vnos.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/auth.c#l1038
 #: ../openconnect-strings.txt:1579
@@ -3032,4 +3090,3 @@ msgstr "Napaka med razčlenjevanjem naslova URL strežnika '%s'\n"
 #: ../openconnect-strings.txt:1585
 msgid "Only https:// permitted for server URL\n"
 msgstr "Za strežniški naslov URL je dovoljen le protokol https://\n"
-

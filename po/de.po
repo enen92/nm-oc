@@ -8,9 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: NetworkManager-openconnect\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=NetworkManager&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-04-25 10:13+0000\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-19 13:34+0000\n"
 "PO-Revision-Date: 2013-06-19 10:46+0200\n"
 "Last-Translator: Christian Kirbach <christian.kirbach@gmail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
@@ -23,21 +22,21 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Gtranslator 2.91.6\n"
 
-#: ../auth-dialog/main.c:770
+#: ../auth-dialog/main.c:850
 #, c-format
 msgid "OpenConnect: %s: %s:%s"
 msgstr "OpenConnect: %s: %s:%s"
 
-#: ../auth-dialog/main.c:797
+#: ../auth-dialog/main.c:880
 #, c-format
 msgid "Connect to VPN '%s'"
 msgstr "Mit VPN »%s« verbinden"
 
-#: ../auth-dialog/main.c:799
+#: ../auth-dialog/main.c:882
 msgid "Connect to VPN"
 msgstr "Mit einem VPN verbinden"
 
-#: ../auth-dialog/main.c:842
+#: ../auth-dialog/main.c:925
 #, c-format
 msgid ""
 "Certificate from VPN server \"%s\" failed verification.\n"
@@ -48,31 +47,31 @@ msgstr ""
 "Grund: %s\n"
 "Wollen Sie es akzeptieren?"
 
-#: ../auth-dialog/main.c:1512
+#: ../auth-dialog/main.c:1597
 msgid "VPN host"
 msgstr "VPN-Rechner"
 
-#: ../auth-dialog/main.c:1532
+#: ../auth-dialog/main.c:1617
 msgid "Automatically start connecting next time"
 msgstr "Verbindung beim nächsten Mal automatisch starten"
 
-#: ../auth-dialog/main.c:1553
+#: ../auth-dialog/main.c:1638
 msgid "Select a host to fetch the login form"
 msgstr "Rechner zum Holen des Anmeldeformulars wählen"
 
-#: ../auth-dialog/main.c:1558
+#: ../auth-dialog/main.c:1643
 msgid "Contacting host, please wait..."
 msgstr "Rechner wird kontaktiert, bitte warten …"
 
-#: ../auth-dialog/main.c:1578
+#: ../auth-dialog/main.c:1663
 msgid "_Login"
 msgstr "_Anmelden"
 
-#: ../auth-dialog/main.c:1592
+#: ../auth-dialog/main.c:1677
 msgid "Save passwords"
 msgstr "Passwörter speichern"
 
-#: ../auth-dialog/main.c:1600
+#: ../auth-dialog/main.c:1685
 msgid "Log"
 msgstr "Protokoll"
 
@@ -92,11 +91,11 @@ msgstr "Geheimen Schlüssel wählen …"
 msgid "PEM certificates (*.pem, *.crt, *.key)"
 msgstr "PEM-Zertifikate (*.pem, *.crt, *.key)"
 
-#: ../properties/nm-openconnect.c:60
+#: ../properties/nm-openconnect.c:63
 msgid "Cisco AnyConnect Compatible VPN (openconnect)"
 msgstr "Zu Cisco AnyConnect kompatible VPN-Verbindung (openconnect)"
 
-#: ../properties/nm-openconnect.c:61
+#: ../properties/nm-openconnect.c:64
 msgid "Compatible with Cisco AnyConnect SSL VPN."
 msgstr "Kompatibel zu Cisco AnyConnect SSL VPN."
 
@@ -150,11 +149,13 @@ msgid "<b>Software Token Authentication</b>"
 msgstr "<b>Legitimierung über Software-Token</b>"
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Token _Source:"
+#, fuzzy
+msgid "Token _Mode:"
 msgstr "Token-Quelle:"
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
-msgid "Token St_ring:"
+#, fuzzy
+msgid "Token Sec_ret:"
 msgstr "Token-_Zeichenkette:"
 
 #: ../properties/nm-openconnect-dialog.ui.h:15
@@ -162,11 +163,18 @@ msgid "Disabled"
 msgstr "Deaktiviert"
 
 #: ../properties/nm-openconnect-dialog.ui.h:16
-msgid "Read from ~/.stokenrc"
+#, fuzzy
+msgid "RSA SecurID - read from ~/.stokenrc"
 msgstr "Aus ~/.stokenrc gelesen"
 
 #: ../properties/nm-openconnect-dialog.ui.h:17
-msgid "Manually entered"
+#, fuzzy
+msgid "RSA SecurID - manually entered"
+msgstr "Manuell eingegeben"
+
+#: ../properties/nm-openconnect-dialog.ui.h:18
+#, fuzzy
+msgid "TOTP - manually entered"
 msgstr "Manuell eingegeben"
 
 #: ../src/nm-openconnect-service.c:151

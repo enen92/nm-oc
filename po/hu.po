@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: networkmanager-openconnect master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-21 01:11+0100\n"
+"POT-Creation-Date: 2014-02-19 13:34+0000\n"
 "PO-Revision-Date: 2013-03-21 01:14+0100\n"
 "Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
 "Language-Team: Hungarian <gnome at fsf dot hu>\n"
@@ -19,21 +19,21 @@ msgstr ""
 "X-Generator: Lokalize 1.4\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
-#: ../auth-dialog/main.c:748
+#: ../auth-dialog/main.c:850
 #, c-format
 msgid "OpenConnect: %s: %s:%s"
 msgstr "OpenConnect: %s: %s:%s"
 
-#: ../auth-dialog/main.c:775
+#: ../auth-dialog/main.c:880
 #, c-format
 msgid "Connect to VPN '%s'"
 msgstr "Csatlakozás „%s” VPN-hez"
 
-#: ../auth-dialog/main.c:777
+#: ../auth-dialog/main.c:882
 msgid "Connect to VPN"
 msgstr "Csatlakozás VPN-hez"
 
-#: ../auth-dialog/main.c:820
+#: ../auth-dialog/main.c:925
 #, c-format
 msgid ""
 "Certificate from VPN server \"%s\" failed verification.\n"
@@ -44,31 +44,31 @@ msgstr ""
 "%s\n"
 "Elfogadja ennek ellenére?"
 
-#: ../auth-dialog/main.c:1477
+#: ../auth-dialog/main.c:1597
 msgid "VPN host"
 msgstr "VPN kiszolgáló"
 
-#: ../auth-dialog/main.c:1497
+#: ../auth-dialog/main.c:1617
 msgid "Automatically start connecting next time"
 msgstr "A kapcsolat automatikus felépítése a jövőben"
 
-#: ../auth-dialog/main.c:1514
+#: ../auth-dialog/main.c:1638
 msgid "Select a host to fetch the login form"
 msgstr "A bejelentkezéshez válasszon kiszolgálót"
 
-#: ../auth-dialog/main.c:1519
+#: ../auth-dialog/main.c:1643
 msgid "Contacting host, please wait..."
 msgstr "Kapcsolódás a kiszolgálóhoz…"
 
-#: ../auth-dialog/main.c:1531
+#: ../auth-dialog/main.c:1663
 msgid "_Login"
 msgstr "_Bejelentkezés"
 
-#: ../auth-dialog/main.c:1545
+#: ../auth-dialog/main.c:1677
 msgid "Save passwords"
 msgstr "Jelszavak mentése"
 
-#: ../auth-dialog/main.c:1553
+#: ../auth-dialog/main.c:1685
 msgid "Log"
 msgstr "Napló"
 
@@ -88,11 +88,11 @@ msgstr "Válassza ki a személyes kulcsát…"
 msgid "PEM certificates (*.pem, *.crt, *.key)"
 msgstr "PEM tanúsítványok (*.pem, *.crt, *.key)"
 
-#: ../properties/nm-openconnect.c:60
+#: ../properties/nm-openconnect.c:63
 msgid "Cisco AnyConnect Compatible VPN (openconnect)"
 msgstr "Cisco AnyConnect-kompatibilis VPN (openconnect)"
 
-#: ../properties/nm-openconnect.c:61
+#: ../properties/nm-openconnect.c:64
 msgid "Compatible with Cisco AnyConnect SSL VPN."
 msgstr "Kompatibilis a Cisco AnyConnect SSL VPN-nel"
 
@@ -145,11 +145,13 @@ msgid "<b>Software Token Authentication</b>"
 msgstr "<b>Szoftveres token hitelesítése</b>"
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Token _Source:"
+#, fuzzy
+msgid "Token _Mode:"
 msgstr "Token _forrása:"
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
-msgid "Token St_ring:"
+#, fuzzy
+msgid "Token Sec_ret:"
 msgstr "Token _karakterlánc:"
 
 #: ../properties/nm-openconnect-dialog.ui.h:15
@@ -157,11 +159,18 @@ msgid "Disabled"
 msgstr "Kikapcsolva"
 
 #: ../properties/nm-openconnect-dialog.ui.h:16
-msgid "Read from ~/.stokenrc"
+#, fuzzy
+msgid "RSA SecurID - read from ~/.stokenrc"
 msgstr "Olvasás a ~/.stokenrc fájlból"
 
 #: ../properties/nm-openconnect-dialog.ui.h:17
-msgid "Manually entered"
+#, fuzzy
+msgid "RSA SecurID - manually entered"
+msgstr "Saját kezűleg megadott"
+
+#: ../properties/nm-openconnect-dialog.ui.h:18
+#, fuzzy
+msgid "TOTP - manually entered"
 msgstr "Saját kezűleg megadott"
 
 #: ../src/nm-openconnect-service.c:151
@@ -220,8 +229,8 @@ msgid ""
 "nm-openconnect-service provides integrated Cisco AnyConnect SSL VPN "
 "capability to NetworkManager."
 msgstr ""
-"Az nm-openconnect-service integrált Cisco AnyConnect SSL VPN "
-"képességet biztosít a Hálózatkezelőnek."
+"Az nm-openconnect-service integrált Cisco AnyConnect SSL VPN képességet "
+"biztosít a Hálózatkezelőnek."
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/xml.c#l53
 #: ../openconnect-strings.txt:14
@@ -3013,4 +3022,3 @@ msgstr ""
 #: ../openconnect-strings.txt:1585
 msgid "Only https:// permitted for server URL\n"
 msgstr ""
-

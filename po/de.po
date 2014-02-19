@@ -2069,7 +2069,7 @@ msgstr "Nicht unterstützter PEM-Verschlüsselungstyp: %s\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/gnutls.c#l738
 #: ../openconnect-strings.txt:1024
 msgid "Invalid salt in encrypted PEM file\n"
-msgstr ""
+msgstr "Ungültiges Salt in der verschlüsselten PEM-Datei\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/gnutls.c#l762
 #: ../openconnect-strings.txt:1027
@@ -2409,14 +2409,14 @@ msgstr "TPM Hash-Signatur schlug fehl: %s\n"
 #: ../openconnect-strings.txt:1203
 #, c-format
 msgid "Error decoding TSS key blob: %s\n"
-msgstr ""
+msgstr "Fehler beim Dekodieren der TSS-Schlüssel-Daten: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/gnutls_tpm.c#l164
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/gnutls_tpm.c#l175
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/gnutls_tpm.c#l188
 #: ../openconnect-strings.txt:1208
 msgid "Error in TSS key blob\n"
-msgstr ""
+msgstr "Fehler in den TSS-Schlüssel-Daten\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/gnutls_tpm.c#l195
 #: ../openconnect-strings.txt:1211

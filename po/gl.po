@@ -22,16 +22,16 @@ msgstr ""
 #: ../auth-dialog/main.c:850
 #, c-format
 msgid "OpenConnect: %s: %s:%s"
-msgstr ""
+msgstr "OpenConnect: %s: %s:%s"
 
 #: ../auth-dialog/main.c:880
 #, c-format
 msgid "Connect to VPN '%s'"
-msgstr ""
+msgstr "Conectarse a VPN '%s'"
 
 #: ../auth-dialog/main.c:882
 msgid "Connect to VPN"
-msgstr ""
+msgstr "Conectarse a unha VPN"
 
 #: ../auth-dialog/main.c:925
 #, c-format
@@ -66,7 +66,7 @@ msgstr "_Inicio de sesión"
 
 #: ../auth-dialog/main.c:1677
 msgid "Save passwords"
-msgstr ""
+msgstr "Gardar contrasinais"
 
 #: ../auth-dialog/main.c:1685
 msgid "Log"
@@ -148,27 +148,27 @@ msgstr "<b>Certificado de utenticación</b>"
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
 msgid "Token _Mode:"
-msgstr ""
+msgstr "_Modo do token:"
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
 msgid "Token Sec_ret:"
-msgstr ""
+msgstr "Toke seg_redo:"
 
 #: ../properties/nm-openconnect-dialog.ui.h:15
 msgid "Disabled"
-msgstr ""
+msgstr "Desactivado"
 
 #: ../properties/nm-openconnect-dialog.ui.h:16
 msgid "RSA SecurID - read from ~/.stokenrc"
-msgstr ""
+msgstr "RSA SecurID - ler desde ~/.stokenrc"
 
 #: ../properties/nm-openconnect-dialog.ui.h:17
 msgid "RSA SecurID - manually entered"
-msgstr ""
+msgstr "RSA SecurID - fornecido manualmente"
 
 #: ../properties/nm-openconnect-dialog.ui.h:18
 msgid "TOTP - manually entered"
-msgstr ""
+msgstr "TOTP - fornecido manualmente"
 
 #: ../src/nm-openconnect-service.c:151
 #, c-format
@@ -212,74 +212,80 @@ msgstr "Non se forneceu ningunha cookie WebVPN."
 
 #: ../src/nm-openconnect-service.c:640
 msgid "Don't quit when VPN connection terminates"
-msgstr ""
+msgstr "Non saír cando unha conexión VPN remata."
 
 #: ../src/nm-openconnect-service.c:641
 msgid "Enable verbose debug logging (may expose passwords)"
 msgstr ""
+"Activar o modo detallado de rexistro de depuración (pode mostrar "
+"contrasinais en claro)."
 
 #: ../src/nm-openconnect-service.c:664
 msgid ""
 "nm-openconnect-service provides integrated Cisco AnyConnect SSL VPN "
 "capability to NetworkManager."
 msgstr ""
+"nm-openconnect-service fornece a integración entre Cisco AnyConnect SSL VPN "
+"con NetworkManager."
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/xml.c#l53
 #: ../openconnect-strings.txt:14
 msgid "Open XML config file"
-msgstr ""
+msgstr "Abrir ficheiro de configuración XML"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/xml.c#l54
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/xml.c#l90
 #: ../openconnect-strings.txt:18
 #, c-format
 msgid "Treating host \"%s\" as a raw hostname\n"
-msgstr ""
+msgstr "Tratando equipo «%s» como un nome de equipo en bruto\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/xml.c#l60
 #: ../openconnect-strings.txt:21
 msgid "fstat XML config file"
-msgstr ""
+msgstr "fstat o ficheiro de configuración XML"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/xml.c#l67
 #: ../openconnect-strings.txt:24
 msgid "mmap XML config file"
-msgstr ""
+msgstr "mmap o ficheiro de configuración XML"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/xml.c#l73
 #: ../openconnect-strings.txt:27
 msgid "Failed to SHA1 existing file\n"
-msgstr ""
+msgstr "Produciuse un fallo ao xerar o SHA1 do ficheiro existente\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/xml.c#l81
 #: ../openconnect-strings.txt:30
 #, c-format
 msgid "XML config file SHA1: %s\n"
-msgstr ""
+msgstr "SHA1 do ficheiro de configuración XML: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/xml.c#l88
 #: ../openconnect-strings.txt:33
 #, c-format
 msgid "Failed to parse XML config file %s\n"
-msgstr ""
+msgstr "Produciuse un erro ao analizar o ficheiro de configuración XML %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/xml.c#l125
 #: ../openconnect-strings.txt:36
 #, c-format
 msgid "Host \"%s\" has address \"%s\"\n"
-msgstr ""
+msgstr "O equipo «%s» ten o enderezo «%s»\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/xml.c#l134
 #: ../openconnect-strings.txt:39
 #, c-format
 msgid "Host \"%s\" has UserGroup \"%s\"\n"
-msgstr ""
+msgstr "O equipo «%s» ten o UserGroup «%s»\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/xml.c#l148
 #: ../openconnect-strings.txt:42
 #, c-format
 msgid "Host \"%s\" not listed in config; treating as raw hostname\n"
 msgstr ""
+"O equipo «%s» non está na lista de config; tratándoo como un nome de equipo "
+"en plano\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l185
 #: ../openconnect-strings.txt:45
@@ -287,26 +293,28 @@ msgid ""
 "For assistance with OpenConnect, please see the web page at\n"
 " http://www.infradead.org/openconnect/mail.html\n"
 msgstr ""
+"Para asistencia técnica con OpenConnect, vexa a páxina web en \n"
+"http://www.infradead.org/openconnect/mail.html\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l194
 #: ../openconnect-strings.txt:50
 msgid "Using OpenSSL. Features present:"
-msgstr ""
+msgstr "Ao usar OpenSSL. Existen estas características:"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l196
 #: ../openconnect-strings.txt:53
 msgid "Using GnuTLS. Features present:"
-msgstr ""
+msgstr "Ao usar GnuTLS. Existen estas características:"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l205
 #: ../openconnect-strings.txt:56
 msgid "OpenSSL ENGINE not present"
-msgstr ""
+msgstr "MOTOR OpenSSL non presente"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l221
 #: ../openconnect-strings.txt:59
 msgid "using OpenSSL"
-msgstr ""
+msgstr "usando OpenSSL"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l225
 #: ../openconnect-strings.txt:62
@@ -314,11 +322,14 @@ msgid ""
 "\n"
 "WARNING: No DTLS support in this binary. Performance will be impaired.\n"
 msgstr ""
+"\n"
+"AVISO: non existe compatibilidade con DTLS. O rendemento pode verse "
+"perxudicado.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l231
 #: ../openconnect-strings.txt:67
 msgid "Usage:  openconnect [options] <server>\n"
-msgstr ""
+msgstr "Uso: openconnect [opcións] <servidor>\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l232
 #: ../openconnect-strings.txt:70
@@ -326,57 +337,57 @@ msgstr ""
 msgid ""
 "Open client for Cisco AnyConnect VPN, version %s\n"
 "\n"
-msgstr ""
+msgstr "Abrir cliente para Cisco AnyConnect VPN, versión %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l234
 #: ../openconnect-strings.txt:75
 msgid "Read options from config file"
-msgstr ""
+msgstr "Ler opcións desde un ficheiro de configuración"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l235
 #: ../openconnect-strings.txt:78
 msgid "Continue in background after startup"
-msgstr ""
+msgstr "Continuar en segundo plano despois do inicio"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l236
 #: ../openconnect-strings.txt:81
 msgid "Write the daemon's PID to this file"
-msgstr ""
+msgstr "Escribir o PID do daemon neste ficheiro"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l237
 #: ../openconnect-strings.txt:84
 msgid "Use SSL client certificate CERT"
-msgstr ""
+msgstr "Usar o certificado CERT do cliente SSL"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l238
 #: ../openconnect-strings.txt:87
 msgid "Warn when certificate lifetime < DAYS"
-msgstr ""
+msgstr "Avisar cando a vida do certificado < DÍAS"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l239
 #: ../openconnect-strings.txt:90
 msgid "Use SSL private key file KEY"
-msgstr ""
+msgstr "Usar ficheiro de chave privada SSL KEY"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l240
 #: ../openconnect-strings.txt:93
 msgid "Use WebVPN cookie COOKIE"
-msgstr ""
+msgstr "Usar WebVPN cookie COOKIE"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l241
 #: ../openconnect-strings.txt:96
 msgid "Read cookie from standard input"
-msgstr ""
+msgstr "Ler cookie desde a entrada estándar"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l242
 #: ../openconnect-strings.txt:99
 msgid "Enable compression (default)"
-msgstr ""
+msgstr "Activar compresión (predeterminado)"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l243
 #: ../openconnect-strings.txt:102
 msgid "Disable compression"
-msgstr ""
+msgstr "Desactivar compresión"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l244
 #: ../openconnect-strings.txt:105
@@ -386,82 +397,82 @@ msgstr ""
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l245
 #: ../openconnect-strings.txt:108
 msgid "Set login usergroup"
-msgstr ""
+msgstr "Estabelecer o grupo de usuario de inicio de sesión"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l246
 #: ../openconnect-strings.txt:111
 msgid "Display help text"
-msgstr ""
+msgstr "Mostrar o texto de axuda"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l247
 #: ../openconnect-strings.txt:114
 msgid "Use IFNAME for tunnel interface"
-msgstr ""
+msgstr "Usar IFNAME para a interface de túnel"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l248
 #: ../openconnect-strings.txt:117
 msgid "Use syslog for progress messages"
-msgstr ""
+msgstr "Usar syslog para as mensaxes de progreso"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l249
 #: ../openconnect-strings.txt:120
 msgid "Drop privileges after connecting"
-msgstr ""
+msgstr "Quitar privilexios despois de conectarse"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l250
 #: ../openconnect-strings.txt:123
 msgid "Drop privileges during CSD execution"
-msgstr ""
+msgstr "Quitar privilexios durante a execución de CSD"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l251
 #: ../openconnect-strings.txt:126
 msgid "Run SCRIPT instead of CSD binary"
-msgstr ""
+msgstr "Executar SCRIPT no lugar do binario CSD"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l252
 #: ../openconnect-strings.txt:129
 msgid "Request MTU from server"
-msgstr ""
+msgstr "Solicitar MTU desde o servidor"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l253
 #: ../openconnect-strings.txt:132
 msgid "Indicate path MTU to/from server"
-msgstr ""
+msgstr "Indica a ruta MTU ao/desde o servidor"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l254
 #: ../openconnect-strings.txt:135
 msgid "Set key passphrase or TPM SRK PIN"
-msgstr ""
+msgstr "Estabelecer a frase de paso da chave ou PIN do TPM SRK"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l255
 #: ../openconnect-strings.txt:138
 msgid "Key passphrase is fsid of file system"
-msgstr ""
+msgstr "A frase de paso da chave é o fsid do sistema de ficheiros"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l256
 #: ../openconnect-strings.txt:141
 msgid "Set proxy server"
-msgstr ""
+msgstr "Estabelecer servidor proxy"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l257
 #: ../openconnect-strings.txt:144
 msgid "Disable proxy"
-msgstr ""
+msgstr "Desactivar proxy"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l258
 #: ../openconnect-strings.txt:147
 msgid "Use libproxy to automatically configure proxy"
-msgstr ""
+msgstr "Usar libproxy para configurar automaticamente o proxy"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l260
 #: ../openconnect-strings.txt:150
 msgid "(NOTE: libproxy disabled in this build)"
-msgstr ""
+msgstr "(NOTA: libproxy desactivado para esta compilación)"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l262
 #: ../openconnect-strings.txt:153
 msgid "Less output"
-msgstr ""
+msgstr "Menos saída"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l263
 #: ../openconnect-strings.txt:156
@@ -476,42 +487,42 @@ msgstr ""
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l265
 #: ../openconnect-strings.txt:162
 msgid "default"
-msgstr ""
+msgstr "predeterminado"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l266
 #: ../openconnect-strings.txt:165
 msgid "Pass traffic to 'script' program, not tun"
-msgstr ""
+msgstr "Pasar o tráfico ao programa «script», non tun"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l267
 #: ../openconnect-strings.txt:168
 msgid "Set login username"
-msgstr ""
+msgstr "Estabelecer o nome de usuario de inicio de sesión"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l268
 #: ../openconnect-strings.txt:171
 msgid "Report version number"
-msgstr ""
+msgstr "Informar do número de versión"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l269
 #: ../openconnect-strings.txt:174
 msgid "More output"
-msgstr ""
+msgstr "Máis saída"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l270
 #: ../openconnect-strings.txt:177
 msgid "XML config file"
-msgstr ""
+msgstr "Ficheiro de configuración XML"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l271
 #: ../openconnect-strings.txt:180
 msgid "Choose authentication login selection"
-msgstr ""
+msgstr "Escoller selección da autenticación do inicio de sesión "
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l272
 #: ../openconnect-strings.txt:183
 msgid "Authenticate only and print login info"
-msgstr ""
+msgstr "Só autenticar e imprimir a información de inicio de sesión"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l273
 #: ../openconnect-strings.txt:186
@@ -526,12 +537,12 @@ msgstr ""
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l275
 #: ../openconnect-strings.txt:192
 msgid "Cert file for server verification"
-msgstr ""
+msgstr "Ficheiro de certificado para a verificación do servidor"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l276
 #: ../openconnect-strings.txt:195
 msgid "Do not ask for IPv6 connectivity"
-msgstr ""
+msgstr "Non preguntar pola conectividade de IPv6"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l277
 #: ../openconnect-strings.txt:198
@@ -541,32 +552,32 @@ msgstr ""
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l278
 #: ../openconnect-strings.txt:201
 msgid "Disable DTLS"
-msgstr ""
+msgstr "Desactivar DTLS"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l279
 #: ../openconnect-strings.txt:204
 msgid "Disable HTTP connection re-use"
-msgstr ""
+msgstr "Desactivar a reutilización da conexión HTTP"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l280
 #: ../openconnect-strings.txt:207
 msgid "Disable password/SecurID authentication"
-msgstr ""
+msgstr "Desactivar a autenticación por contrasinal/SecurID"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l281
 #: ../openconnect-strings.txt:210
 msgid "Do not require server SSL cert to be valid"
-msgstr ""
+msgstr "Non requirir que o certificado SSL do servidor sexa válido"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l282
 #: ../openconnect-strings.txt:213
 msgid "Do not expect user input; exit if it is required"
-msgstr ""
+msgstr "Non agardar entrada do usuario; saír se se require"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l283
 #: ../openconnect-strings.txt:216
 msgid "Read password from standard input"
-msgstr ""
+msgstr "Ler contrasinal da entrada estándar"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l284
 #: ../openconnect-strings.txt:219
@@ -581,17 +592,17 @@ msgstr ""
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l288
 #: ../openconnect-strings.txt:225
 msgid "Connection retry timeout in seconds"
-msgstr ""
+msgstr "Tempo de espera do reintento de conexión en segundos"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l289
 #: ../openconnect-strings.txt:228
 msgid "Server's certificate SHA1 fingerprint"
-msgstr ""
+msgstr "Pegada dixital SHA1 do certificado do servidor"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l290
 #: ../openconnect-strings.txt:231
 msgid "HTTP header User-Agent: field"
-msgstr ""
+msgstr "Campo da cabeceira HTTP User-Agent:"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l291
 #: ../openconnect-strings.txt:234
@@ -601,41 +612,42 @@ msgstr ""
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l292
 #: ../openconnect-strings.txt:237
 msgid "Set local port for DTLS datagrams"
-msgstr ""
+msgstr "Estabelecer o porto local para os datagramas de DTLS"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l303
 #: ../openconnect-strings.txt:240
 msgid "Allocation failure for string from stdin\n"
-msgstr ""
+msgstr "Fallo de asignación para a cadea desde stdin\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l307
 #: ../openconnect-strings.txt:243
 msgid "fgets (stdin)"
-msgstr ""
+msgstr "fgets (stdin)"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l370
 #: ../openconnect-strings.txt:246
 #, c-format
 msgid "Failed to get line from config file: %s\n"
 msgstr ""
+"Produciuse un fallo ao obter a liña desde o ficheiro de configuración: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l410
 #: ../openconnect-strings.txt:249
 #, c-format
 msgid "Unrecognised option at line %d: '%s'\n"
-msgstr ""
+msgstr "Opción non recoñecida na liña %d: «%s»\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l420
 #: ../openconnect-strings.txt:252
 #, c-format
 msgid "Option '%s' does not take an argument at line %d\n"
-msgstr ""
+msgstr "A opción «%s» non recolle un argumento na liña %d\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l424
 #: ../openconnect-strings.txt:255
 #, c-format
 msgid "Option '%s' requires an argument at line %d\n"
-msgstr ""
+msgstr "A opción «%s» require un argumento na liña %d\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l460
 #: ../openconnect-strings.txt:258
@@ -644,29 +656,32 @@ msgid ""
 "WARNING: This version of openconnect is %s but\n"
 " the libopenconnect library is %s\n"
 msgstr ""
+"AVISO: Esta versión de openconnect é %s pero a biblioteca libopenconnect é "
+"%s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l469
 #: ../openconnect-strings.txt:263
 msgid "Failed to allocate vpninfo structure\n"
-msgstr ""
+msgstr "Produciuse un fallo na asignación da estrutura vpninfo.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l508
 #: ../openconnect-strings.txt:266
 msgid "Cannot use 'config' option inside config file\n"
 msgstr ""
+"Non foi posíbel usar a opción «config» dendo do ficheiro de configuración\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l513
 #: ../openconnect-strings.txt:269
 #, c-format
 msgid "Cannot open config file '%s': %s\n"
-msgstr ""
+msgstr "Non é posíbel abrir o ficheiro de configuración «%s»: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l601
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l608
 #: ../openconnect-strings.txt:273
 #, c-format
 msgid "MTU %d too small\n"
-msgstr ""
+msgstr "MTU %d demasiado pequeno\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l629
 #: ../openconnect-strings.txt:276
@@ -680,106 +695,109 @@ msgstr ""
 #: ../openconnect-strings.txt:282
 #, c-format
 msgid "Invalid user \"%s\"\n"
-msgstr ""
+msgstr "Usuario «%s» non válido\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l683
 #: ../openconnect-strings.txt:285
 msgid "Queue length zero not permitted; using 1\n"
-msgstr ""
+msgstr "Non se permite a lonxitude cola cero; usando 1\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l694
 #: ../openconnect-strings.txt:288
 #, c-format
 msgid "OpenConnect version %s\n"
-msgstr ""
+msgstr "OpenConnect versión %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l720
 #: ../openconnect-strings.txt:291
 #, c-format
 msgid "Invalid OS identity \"%s\"\n"
-msgstr ""
+msgstr "Identidade do SO «%s» non válida\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l731
 #: ../openconnect-strings.txt:294
 msgid "Too many arguments on command line\n"
-msgstr ""
+msgstr "Demasiados argumentos na liña de ordes\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l734
 #: ../openconnect-strings.txt:297
 msgid "No server specified\n"
-msgstr ""
+msgstr "Non se especificou ningún servidor\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l747
 #: ../openconnect-strings.txt:300
 msgid "This version of openconnect was built without libproxy support\n"
 msgstr ""
+"Esta versión de openconnect foi compilada sen compatibilidade para libproxy\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l804
 #: ../openconnect-strings.txt:303
 msgid "Failed to obtain WebVPN cookie\n"
-msgstr ""
+msgstr "Produciuse un fallo ao obter a cookie de WebVPN\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l828
 #: ../openconnect-strings.txt:306
 msgid "Creating SSL connection failed\n"
-msgstr ""
+msgstr "Produciuse un fallo na creación da conexión SSL\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l833
 #: ../openconnect-strings.txt:309
 msgid "Set up tun device failed\n"
-msgstr ""
+msgstr "Produciuse un fallo na configuración do dispositivo tun\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l839
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/http.c#l565
 #: ../openconnect-strings.txt:313
 #, c-format
 msgid "Failed to set uid %ld\n"
-msgstr ""
+msgstr "Produciuse un fallo ao estabelecer o uid %ld\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l846
 #: ../openconnect-strings.txt:316
 msgid "Set up DTLS failed; using SSL instead\n"
-msgstr ""
+msgstr "Produciuse un fallo na configuración de DTLS; usando SSL no lugar\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l849
 #: ../openconnect-strings.txt:319
 #, c-format
 msgid "Connected %s as %s%s%s, using %s\n"
-msgstr ""
+msgstr "Conectado %s como %s%s%s, usando %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l859
 #: ../openconnect-strings.txt:322
 msgid "No --script argument provided; DNS and routing are not configured\n"
 msgstr ""
+"Non se forneceu ningún argumento --script; DNS o enrutado non están "
+"configurados\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l861
 #: ../openconnect-strings.txt:325
 msgid "See http://www.infradead.org/openconnect/vpnc-script.html\n"
-msgstr ""
+msgstr "Vexa http://www.infradead.org/openconnect/vpnc-script.html\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l873
 #: ../openconnect-strings.txt:328
 #, c-format
 msgid "Failed to open '%s' for write: %s\n"
-msgstr ""
+msgstr "Produciuse un erro ao abrir «%s» para escritura: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l884
 #: ../openconnect-strings.txt:331
 #, c-format
 msgid "Continuing in background; pid %d\n"
-msgstr ""
+msgstr "Continuando en segundo plando; pid %d\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l906
 #: ../openconnect-strings.txt:334
 #, c-format
 msgid "Failed to open %s for write: %s\n"
-msgstr ""
+msgstr "Produciuse un erro ao abrir %s para escritura: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l914
 #: ../openconnect-strings.txt:337
 #, c-format
 msgid "Failed to write config to %s: %s\n"
-msgstr ""
+msgstr "Produciuse un fallo ao escribir a configuración en %s: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l1008
 #: ../openconnect-strings.txt:340
@@ -789,43 +807,47 @@ msgid ""
 "Certificate from VPN server \"%s\" failed verification.\n"
 "Reason: %s\n"
 msgstr ""
+"\n"
+"Non foi posíbel verificar o certificado do servidor VPN «%s».\n"
+"Razón: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l1014
 #: ../openconnect-strings.txt:346
 #, c-format
 msgid "Enter '%s' to accept, '%s' to abort; anything else to view: "
 msgstr ""
+"Escriba «%s» para aceptar, «%s» para abortar; calquera outra cousa para ver: "
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l1015
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l1022
 #: ../openconnect-strings.txt:350
 msgid "yes"
-msgstr ""
+msgstr "si"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l1015
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l1033
 #: ../openconnect-strings.txt:354
 msgid "no"
-msgstr ""
+msgstr "non"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l1039
 #: ../openconnect-strings.txt:357
 #, c-format
 msgid "SHA1 fingerprint: %s\n"
-msgstr ""
+msgstr "Pegada dixital SHA1: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l1089
 #: ../openconnect-strings.txt:360
 #, c-format
 msgid "Auth choice \"%s\" not available\n"
-msgstr ""
+msgstr "Elección de autenticación «%s» non dispoñíbel\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l1102
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l1150
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l1177
 #: ../openconnect-strings.txt:365
 msgid "User input required in non-interactive mode\n"
-msgstr ""
+msgstr "Entrada de usuario requirida no modo non-interactivo\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l1133
 #: ../openconnect-strings.txt:368
@@ -836,12 +858,12 @@ msgstr ""
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l1236
 #: ../openconnect-strings.txt:371
 msgid "Soft token string is invalid\n"
-msgstr ""
+msgstr "A cadea do token de software non é válida\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l1239
 #: ../openconnect-strings.txt:374
 msgid "Can't open ~/.stokenrc file\n"
-msgstr ""
+msgstr "Non é posíbel abrir o ficheiro ~/.stokenrc\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l1242
 #: ../openconnect-strings.txt:377
@@ -851,12 +873,12 @@ msgstr ""
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l1245
 #: ../openconnect-strings.txt:380
 msgid "General failure in libstoken\n"
-msgstr ""
+msgstr "Fallo xeran en libstoken\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/dtls.c#l145
 #: ../openconnect-strings.txt:383
 msgid "Initialise DTLSv1 CTX failed\n"
-msgstr ""
+msgstr "Produciuse un fallo ao inicializar DTLSv1 CTX\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/dtls.c#l157
 #: ../openconnect-strings.txt:386

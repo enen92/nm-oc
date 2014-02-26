@@ -2,14 +2,15 @@
 # Copyright (C) 2009 network-manager-openconnect's COPYRIGHT HOLDER
 # This file is distributed under the same license as the network-manager-openconnect package.
 #
-# Matej Urbančič <mateju@svn.gnome.org>, 2008 - 2013.
+# Matej Urbančič <mateju@svn.gnome.org>, 2008-2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: network-manager-openconnect master\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-19 13:34+0000\n"
-"PO-Revision-Date: 2013-03-15 16:51+0100\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=NetworkManager&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-02-26 11:06+0000\n"
+"PO-Revision-Date: 2014-02-26 19:42+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
@@ -20,8 +21,6 @@ msgstr ""
 "%100==4 ? 3 : 0);\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Generator: Poedit 1.5.4\n"
-"X-Poedit-Language: Slovenian\n"
-"X-Poedit-Country: SLOVENIA\n"
 
 #: ../auth-dialog/main.c:850
 #, c-format
@@ -149,33 +148,28 @@ msgid "<b>Software Token Authentication</b>"
 msgstr "<b>Overitev programskega žetona</b>"
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-#, fuzzy
 msgid "Token _Mode:"
-msgstr "_Vir žetona:"
+msgstr "_Način žetona:"
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
-#, fuzzy
 msgid "Token Sec_ret:"
-msgstr "_Niz žetona:"
+msgstr "_Skrivnost žetona:"
 
 #: ../properties/nm-openconnect-dialog.ui.h:15
 msgid "Disabled"
 msgstr "Onemogočeno"
 
 #: ../properties/nm-openconnect-dialog.ui.h:16
-#, fuzzy
 msgid "RSA SecurID - read from ~/.stokenrc"
-msgstr "Preberi iz ~/.stokenrc"
+msgstr "RSA SecurID - preberi iz ~/.stokenrc"
 
 #: ../properties/nm-openconnect-dialog.ui.h:17
-#, fuzzy
 msgid "RSA SecurID - manually entered"
-msgstr "Ročno vpisano"
+msgstr "RSA SecurID - ročno vpisano"
 
 #: ../properties/nm-openconnect-dialog.ui.h:18
-#, fuzzy
 msgid "TOTP - manually entered"
-msgstr "Ročno vpisano"
+msgstr "TOTP - ročno vpisano"
 
 #: ../src/nm-openconnect-service.c:151
 #, c-format
@@ -592,7 +586,7 @@ msgstr "Preberi geslo s standardnega dovoda"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l284
 #: ../openconnect-strings.txt:219
 msgid "Use software token to generate password"
-msgstr "Uporabi uporabniški prstni odtis za ustvarjanje gesla"
+msgstr "Uporabi programski žeton za ustvarjanje gesla"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l286
 #: ../openconnect-strings.txt:222
@@ -878,8 +872,7 @@ msgstr "Ni mogoče odpreti datoteke ~/.stokenrc.\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l1242
 #: ../openconnect-strings.txt:377
 msgid "OpenConnect was not built with soft token support\n"
-msgstr ""
-"Program OpenConnect ni izgrajen s podporo za uporabniški prstni odtis\n"
+msgstr "Program OpenConnect ni izgrajen s podporo za žetone\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l1245
 #: ../openconnect-strings.txt:380
@@ -1947,7 +1940,7 @@ msgstr "Pisanje v vtič SSL je spodletelo: %s\n"
 #: ../openconnect-strings.txt:966
 #, c-format
 msgid "Failed to read from SSL socket: %s"
-msgstr "Branje z vtiča SSL je spodletelo: %s"
+msgstr "Branje iz vtiča SSL je spodletelo: %s"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/gnutls.c#l176
 #: ../openconnect-strings.txt:969
@@ -3090,3 +3083,57 @@ msgstr "Napaka med razčlenjevanjem naslova URL strežnika '%s'\n"
 #: ../openconnect-strings.txt:1585
 msgid "Only https:// permitted for server URL\n"
 msgstr "Za strežniški naslov URL je dovoljen le protokol https://\n"
+
+#~ msgid "Dump HTTP authentication traffic (implies --verbose"
+#~ msgstr ""
+#~ "Zapiši pretok podatkov overitve HTTP (omogoči podroben izpis z zastavico "
+#~ "--verbose"
+
+#~ msgid "Do not attempt XML POST authentication"
+#~ msgstr "Ne izvajaj overitev preko XML POST"
+
+#~ msgid "Software token type: rsa or totp"
+#~ msgstr "Vrsta programskega žetona: rsa ali totp"
+
+#~ msgid "Software token secret"
+#~ msgstr "Skrivnost programskega žetona"
+
+#~ msgid "(NOTE: libstoken (RSA SecurID) disabled in this build)"
+#~ msgstr ""
+#~ "(Opomba: knjižnica libstoken (RSA SecurID) je v tej izgradnji onemogočena)"
+
+#~ msgid "(NOTE: liboath (TOTP) disabled in this build)"
+#~ msgstr "(Opomba: knjižnica liboath (TOTP) je v tej izgradnji onemogočena)"
+
+#~ msgid "Invalid software token mode \"%s\"\n"
+#~ msgstr "Neveljaven način programskega žetona \"%s\"\n"
+
+#~ msgid "OpenConnect was not built with liboath support\n"
+#~ msgstr "Program OpenConnect ni izgrajen s podporo za liboath\n"
+
+#~ msgid "General failure in liboath\n"
+#~ msgstr "Splošna napaka v knjižnici liboath.\n"
+
+#~ msgid "Server requested SSL client certificate after one was provided\n"
+#~ msgstr ""
+#~ "Strežnik je zahteval potrdilo odjemalca SSL, ko je bilo že posredovano\n"
+
+#~ msgid ""
+#~ "Try the --no-xmlpost option. If that works, please report as an "
+#~ "OpenConnect bug\n"
+#~ msgstr ""
+#~ "Poskusite nastavitev --no-xmlpost. Če deluje, poročajte o hrošču "
+#~ "OpenConnect\n"
+
+#~ msgid "Server requested SSL client certificate; none was configured\n"
+#~ msgstr ""
+#~ "Strežnik je zahteval potrdilo odjemalca SSL; nobeno ni nastavljeno\n"
+
+#~ msgid "Received <client-cert-request> when not expected.\n"
+#~ msgstr "Prejet <client-cert-request>, ko ni bil pričakovan.\n"
+
+#~ msgid "Generating OATH TOTP token code\n"
+#~ msgstr "Poteka ustvarjanje kode žetona OATH TOTP.\n"
+
+#~ msgid "Unable to generate OATH TOTP token code: %s\n"
+#~ msgstr "Ustvarjanje kode žetona OATH TOTP je spodletelo: %s\n"

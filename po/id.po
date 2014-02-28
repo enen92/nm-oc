@@ -2,14 +2,15 @@
 # Copyright (C) 2009 THE network-manager-openconnect'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the network-manager-openconnect package.
 #
-# Andika Triwidada <andika@gmail.com>, 2009, 2010, 2011, 2012, 2013.
+# Andika Triwidada <andika@gmail.com>, 2009, 2010, 2011, 2012, 2013, 2014.
 # Dirgita <dirgitadevina@yahoo.co.id>, 2011.
 msgid ""
 msgstr ""
 "Project-Id-Version: network-manager-openconnect nm-0-9-8\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-19 13:34+0000\n"
-"PO-Revision-Date: 2013-12-28 11:30+0700\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=NetworkManager&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-02-27 23:08+0000\n"
+"PO-Revision-Date: 2014-02-28 11:00+0700\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <gnome@i15n.org>\n"
 "Language: id\n"
@@ -145,33 +146,28 @@ msgid "<b>Software Token Authentication</b>"
 msgstr "<b>Otentikasi Token Perangkat Lunak</b>"
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-#, fuzzy
 msgid "Token _Mode:"
-msgstr "_Sumber Token:"
+msgstr "_Mode Token:"
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
-#, fuzzy
 msgid "Token Sec_ret:"
-msgstr "St_ring Token:"
+msgstr "_Rahasia Token:"
 
 #: ../properties/nm-openconnect-dialog.ui.h:15
 msgid "Disabled"
 msgstr "Dinonaktifkan"
 
 #: ../properties/nm-openconnect-dialog.ui.h:16
-#, fuzzy
 msgid "RSA SecurID - read from ~/.stokenrc"
-msgstr "Membaca dari ~/.stokenrc"
+msgstr "RSA SecurID - baca dari ~/.stokenrc"
 
 #: ../properties/nm-openconnect-dialog.ui.h:17
-#, fuzzy
 msgid "RSA SecurID - manually entered"
-msgstr "Dimasukkan secara manual"
+msgstr "RSA SecurID - dimasukkan secara manual"
 
 #: ../properties/nm-openconnect-dialog.ui.h:18
-#, fuzzy
 msgid "TOTP - manually entered"
-msgstr "Dimasukkan secara manual"
+msgstr "TOTP - dimasukkan secara manual"
 
 #: ../src/nm-openconnect-service.c:151
 #, c-format

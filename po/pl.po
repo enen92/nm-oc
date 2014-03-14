@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: network-manager-openconnect\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-19 20:35+0100\n"
-"PO-Revision-Date: 2014-02-19 20:38+0100\n"
+"POT-Creation-Date: 2014-03-14 17:12+0100\n"
+"PO-Revision-Date: 2014-03-14 17:13+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -51,31 +51,43 @@ msgstr ""
 "Przyczyna: %s\n"
 "Zaakceptować go?"
 
+#: ../auth-dialog/main.c:1572
+msgid "_Close"
+msgstr "Za_mknij"
+
 #: ../auth-dialog/main.c:1597
 msgid "VPN host"
 msgstr "Komputer VPN"
 
-#: ../auth-dialog/main.c:1617
+#: ../auth-dialog/main.c:1608
+msgid "C_onnect"
+msgstr "P_ołącz"
+
+#: ../auth-dialog/main.c:1615
 msgid "Automatically start connecting next time"
 msgstr "Automatyczne rozpoczynanie połączenie następnym razem"
 
-#: ../auth-dialog/main.c:1638
+#: ../auth-dialog/main.c:1636
 msgid "Select a host to fetch the login form"
 msgstr "Wybór komputera, z którego pobrać login"
 
-#: ../auth-dialog/main.c:1643
+#: ../auth-dialog/main.c:1641
 msgid "Contacting host, please wait..."
 msgstr "Łączenie się z komputerem, proszę czekać..."
 
-#: ../auth-dialog/main.c:1663
+#: ../auth-dialog/main.c:1661
 msgid "_Login"
 msgstr "_Login"
 
-#: ../auth-dialog/main.c:1677
+#: ../auth-dialog/main.c:1667
+msgid "_Cancel"
+msgstr "_Anuluj"
+
+#: ../auth-dialog/main.c:1673
 msgid "Save passwords"
 msgstr "Zapisywanie haseł"
 
-#: ../auth-dialog/main.c:1685
+#: ../auth-dialog/main.c:1681
 msgid "Log"
 msgstr "Dziennik"
 

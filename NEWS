@@ -1,4 +1,18 @@
 =======================================================
+network-manager-openconnect-0.9.8.6
+Overview of changes since network-manager-openconnect-0.9.8.4
+=======================================================
+
+This is a new stable release of network-manager-openconnect.  Notable changes include:
+
+* Updated translations
+* Add support for OpenConnect 6.0
+* Allow alpha-numeric software token secrets instead of only numeric ones
+* Add support for TOTP tokens
+* Hide irrelevant options from the auth dialog
+* Show correct options when user selects a different auth group
+
+=======================================================
 network-manager-openconnect-0.9.8.4
 Overview of changes since network-manager-openconnect-0.9.8.2
 =======================================================

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: network-manager-openconnect nm-0.98\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=NetworkManager&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-02-20 11:10+0000\n"
+"POT-Creation-Date: 2014-03-15 23:09+0000\n"
 "PO-Revision-Date: 2013-03-18 18:57+0100\n"
 "Last-Translator: Zdeněk Hataš <zdenek.hatas@gmail.com>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
@@ -46,31 +46,43 @@ msgstr ""
 "Důvod: %s\n"
 "Chcete jej přijmout?"
 
+#: ../auth-dialog/main.c:1572
+msgid "_Close"
+msgstr "_Zavřít"
+
 #: ../auth-dialog/main.c:1597
 msgid "VPN host"
 msgstr "Server VPN"
 
-#: ../auth-dialog/main.c:1617
+#: ../auth-dialog/main.c:1608
+msgid "C_onnect"
+msgstr "Přip_ojit"
+
+#: ../auth-dialog/main.c:1615
 msgid "Automatically start connecting next time"
 msgstr "Příště připojit automaticky"
 
-#: ../auth-dialog/main.c:1638
+#: ../auth-dialog/main.c:1636
 msgid "Select a host to fetch the login form"
 msgstr "Zvolte stroj pro získání přihlášovacího formuláře"
 
-#: ../auth-dialog/main.c:1643
+#: ../auth-dialog/main.c:1641
 msgid "Contacting host, please wait..."
 msgstr "Spojení je navazováno, čekejte prosím…"
 
-#: ../auth-dialog/main.c:1663
+#: ../auth-dialog/main.c:1661
 msgid "_Login"
 msgstr "Přih_lásit se"
 
-#: ../auth-dialog/main.c:1677
+#: ../auth-dialog/main.c:1667
+msgid "_Cancel"
+msgstr "_Zrušit"
+
+#: ../auth-dialog/main.c:1673
 msgid "Save passwords"
 msgstr "Uložit hesla"
 
-#: ../auth-dialog/main.c:1685
+#: ../auth-dialog/main.c:1681
 msgid "Log"
 msgstr "Záznam"
 

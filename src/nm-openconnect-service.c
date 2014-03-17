@@ -18,7 +18,7 @@
  *   Copyright © 2008 - 2009 Intel Corporation.
  *
  * Based on nm-vpnc-service.c:
- *   Copyright © 2005 - 2008 Red Hat, Inc.
+ *   Copyright © 2005 - 2014 Red Hat, Inc.
  *   Copyright © 2007 - 2008 Novell, Inc.
  */
 
@@ -42,6 +42,7 @@
 #include <grp.h>
 #include <locale.h>
 #include <glib/gi18n.h>
+#include <gio/gio.h>
 
 #include <nm-setting-vpn.h>
 #include "nm-openconnect-service.h"
@@ -597,9 +598,18 @@ nm_openconnect_plugin_class_init (NMOPENCONNECTPluginClass *openconnect_class)
 NMOPENCONNECTPlugin *
 nm_openconnect_plugin_new (void)
 {
-	return (NMOPENCONNECTPlugin *) g_object_new (NM_TYPE_OPENCONNECT_PLUGIN,
-	                                             NM_VPN_PLUGIN_DBUS_SERVICE_NAME, NM_DBUS_SERVICE_OPENCONNECT,
-	                                             NULL);
+	NMOPENCONNECTPlugin *plugin;
+	GError *error = NULL;
+
+	plugin = g_initable_new (NM_TYPE_OPENCONNECT_PLUGIN, NULL, &error,
+	                         NM_VPN_PLUGIN_DBUS_SERVICE_NAME, NM_DBUS_SERVICE_OPENCONNECT,
+	                         NULL);
+	if (!plugin) {
+		g_warning ("%s", error->message);
+		g_error_free (error);
+	}
+
+	return plugin;
 }
 
 static void

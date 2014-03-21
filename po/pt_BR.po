@@ -1,18 +1,18 @@
 # Brazilian Portuguese Translation of Network-manager-openconnect
 # Copyright (C) 2014 NETWORK-MANAGER-OPENCONNECT'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the network-manager-openconnect package.
-# Enrico Nicoletto <liverig@gmail.com>, 2008, 2014.
 # Antonio Fernandes C. Neto <fernandes@pelivre.org>, 2010.
 # Djavan Fagundes <djavan@comum.org>, 2011.
 # Rafael Ferreira <rafael.f.f1@gmail.com>, 2013.
+# Enrico Nicoletto <liverig@gmail.com>, 2008, 2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: network-manager-openconnect\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=NetworkManager&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-02-21 11:07+0000\n"
-"PO-Revision-Date: 2014-02-21 10:53-0300\n"
+"POT-Creation-Date: 2014-03-20 23:14+0000\n"
+"PO-Revision-Date: 2014-03-20 21:09-0300\n"
 "Last-Translator: Enrico Nicoletto <liverig@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
@@ -47,31 +47,44 @@ msgstr ""
 "Razão: %s\n"
 "Você deseja aceitá-lo?"
 
+#: ../auth-dialog/main.c:1572
+msgid "_Close"
+msgstr "Fec_har"
+
 #: ../auth-dialog/main.c:1597
 msgid "VPN host"
 msgstr "Host VPN"
 
-#: ../auth-dialog/main.c:1617
+#: ../auth-dialog/main.c:1608
+#| msgid "Connect to VPN"
+msgid "C_onnect"
+msgstr "_Conectar"
+
+#: ../auth-dialog/main.c:1615
 msgid "Automatically start connecting next time"
 msgstr "Iniciar conexão automaticamente na próxima vez"
 
-#: ../auth-dialog/main.c:1638
+#: ../auth-dialog/main.c:1636
 msgid "Select a host to fetch the login form"
 msgstr "Selecione uma máquina para obter o formulário de login"
 
-#: ../auth-dialog/main.c:1643
+#: ../auth-dialog/main.c:1641
 msgid "Contacting host, please wait..."
 msgstr "Contactando máquina, por favor, aguarde..."
 
-#: ../auth-dialog/main.c:1663
+#: ../auth-dialog/main.c:1661
 msgid "_Login"
 msgstr "_Login"
 
-#: ../auth-dialog/main.c:1677
+#: ../auth-dialog/main.c:1667
+msgid "_Cancel"
+msgstr "Cance_lar"
+
+#: ../auth-dialog/main.c:1673
 msgid "Save passwords"
 msgstr "Salvar senhas"
 
-#: ../auth-dialog/main.c:1685
+#: ../auth-dialog/main.c:1681
 msgid "Log"
 msgstr "Registro"
 

@@ -5,7 +5,7 @@
 # Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2009, 2010, 2014.
 msgid ""
 msgstr ""
-"Project-Id-Version: network-manager-openconnect master\n"
+"Project-Id-Version: network-manager-openconnect nm-0-9-8\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-18 12:18+0200\n"
 "PO-Revision-Date: 2014-05-18 12:23+0200\n"

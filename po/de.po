@@ -8,19 +8,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: NetworkManager-openconnect\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-19 13:34+0000\n"
-"PO-Revision-Date: 2013-06-19 10:46+0200\n"
-"Last-Translator: Christian Kirbach <christian.kirbach@gmail.com>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=NetworkManager&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2014-05-27 09:59+0000\n"
+"PO-Revision-Date: 2014-05-29 20:10+0100\n"
+"Last-Translator: Benjamin Steinwender <b@stbe.at>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: German\n"
-"X-Poedit-Country: GERMANY\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Poedit 1.6.5\n"
 
 #: ../auth-dialog/main.c:850
 #, c-format
@@ -47,31 +46,43 @@ msgstr ""
 "Grund: %s\n"
 "Wollen Sie es akzeptieren?"
 
+#: ../auth-dialog/main.c:1572
+msgid "_Close"
+msgstr "S_chließen"
+
 #: ../auth-dialog/main.c:1597
 msgid "VPN host"
 msgstr "VPN-Rechner"
 
-#: ../auth-dialog/main.c:1617
+#: ../auth-dialog/main.c:1608
+msgid "C_onnect"
+msgstr "_Verbinden"
+
+#: ../auth-dialog/main.c:1615
 msgid "Automatically start connecting next time"
 msgstr "Verbindung beim nächsten Mal automatisch starten"
 
-#: ../auth-dialog/main.c:1638
+#: ../auth-dialog/main.c:1636
 msgid "Select a host to fetch the login form"
 msgstr "Rechner zum Holen des Anmeldeformulars wählen"
 
-#: ../auth-dialog/main.c:1643
+#: ../auth-dialog/main.c:1641
 msgid "Contacting host, please wait..."
 msgstr "Rechner wird kontaktiert, bitte warten …"
 
-#: ../auth-dialog/main.c:1663
+#: ../auth-dialog/main.c:1661
 msgid "_Login"
 msgstr "_Anmelden"
 
-#: ../auth-dialog/main.c:1677
+#: ../auth-dialog/main.c:1667
+msgid "_Cancel"
+msgstr "A_bbrechen"
+
+#: ../auth-dialog/main.c:1673
 msgid "Save passwords"
 msgstr "Passwörter speichern"
 
-#: ../auth-dialog/main.c:1685
+#: ../auth-dialog/main.c:1681
 msgid "Log"
 msgstr "Protokoll"
 
@@ -149,33 +160,28 @@ msgid "<b>Software Token Authentication</b>"
 msgstr "<b>Legitimierung über Software-Token</b>"
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-#, fuzzy
 msgid "Token _Mode:"
-msgstr "Token-Quelle:"
+msgstr "Token-Modus:"
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
-#, fuzzy
 msgid "Token Sec_ret:"
-msgstr "Token-_Zeichenkette:"
+msgstr "Token-_Geheimnis:"
 
 #: ../properties/nm-openconnect-dialog.ui.h:15
 msgid "Disabled"
 msgstr "Deaktiviert"
 
 #: ../properties/nm-openconnect-dialog.ui.h:16
-#, fuzzy
 msgid "RSA SecurID - read from ~/.stokenrc"
-msgstr "Aus ~/.stokenrc gelesen"
+msgstr "RSA SecurID - gelesen von ~/.stokenrc"
 
 #: ../properties/nm-openconnect-dialog.ui.h:17
-#, fuzzy
 msgid "RSA SecurID - manually entered"
-msgstr "Manuell eingegeben"
+msgstr "RSA SecurID - manuell eingegeben"
 
 #: ../properties/nm-openconnect-dialog.ui.h:18
-#, fuzzy
 msgid "TOTP - manually entered"
-msgstr "Manuell eingegeben"
+msgstr "TOTP - manuell eingegeben"
 
 #: ../src/nm-openconnect-service.c:151
 #, c-format

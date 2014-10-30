@@ -48,20 +48,6 @@
 
 #include "openconnect.h"
 
-#if OPENCONNECT_API_VERSION_MAJOR == 1
-#define openconnect_vpninfo_new openconnect_vpninfo_new_with_cbdata
-#define openconnect_init_ssl openconnect_init_openssl
-#endif
-
-#ifndef OPENCONNECT_CHECK_VER
-#define OPENCONNECT_CHECK_VER(x,y) 0
-#endif
-
-#if !OPENCONNECT_CHECK_VER(1,5)
-#define OPENCONNECT_X509 X509
-#define OPENCONNECT_OPENSSL
-#endif
-
 #if !OPENCONNECT_CHECK_VER(2,1)
 #define __openconnect_set_token_mode(...) -EOPNOTSUPP
 #elif !OPENCONNECT_CHECK_VER(2,2)
@@ -101,12 +87,6 @@
 #define openconnect_free_cert_info(v, x) free(x)
 #define OC3DUP(x)			g_strdup(x)
 #define write_config_const		/* */
-#endif
-
-#ifdef OPENCONNECT_OPENSSL
-#include <openssl/ssl.h>
-#include <openssl/bio.h>
-#include <openssl/ui.h>
 #endif
 
 static const GnomeKeyringPasswordSchema OPENCONNECT_SCHEMA_DEF = {
@@ -319,9 +299,6 @@ typedef struct ui_fragment_data {
 	GtkWidget *entry;
 	gpointer find_request;
 	auth_ui_data *ui_data;
-#ifdef OPENCONNECT_OPENSSL
-	UI_STRING *uis;
-#endif
 	struct oc_form_opt *opt;
 	char *entry_text;
 	int initial_selection;
@@ -333,27 +310,9 @@ static void entry_activate_cb(GtkWidget *widget, auth_ui_data *ui_data)
 	gtk_dialog_response(GTK_DIALOG(ui_data->dialog), AUTH_DIALOG_RESPONSE_LOGIN);
 }
 
-#ifdef OPENCONNECT_OPENSSL
-static void do_check_visibility(ui_fragment_data *data, gboolean *visible)
-{
-	int min_len;
-
-	if (!data->uis)
-		return;
-
-	min_len = UI_get_result_minsize(data->uis);
-
-	if (min_len && (!data->entry_text || strlen(data->entry_text) < min_len))
-		*visible = FALSE;
-}
-#endif
 static void evaluate_login_visibility(auth_ui_data *ui_data)
 {
 	gboolean visible = TRUE;
-#ifdef OPENCONNECT_OPENSSL
-	g_queue_foreach(ui_data->form_entries, (GFunc)do_check_visibility,
-			&visible);
-#endif
 	gtk_widget_set_sensitive (ui_data->login_button, visible);
 }
 
@@ -361,9 +320,6 @@ static void entry_changed(GtkEntry *entry, ui_fragment_data *data)
 {
 	g_free (data->entry_text);
 	data->entry_text = g_strdup(gtk_entry_get_text(entry));
-#ifdef OPENCONNECT_OPENSSL
-	evaluate_login_visibility(data->ui_data);
-#endif
 }
 
 static void do_override_label(ui_fragment_data *data, struct oc_choice *choice)
@@ -405,26 +361,6 @@ static void combo_changed(GtkComboBox *combo, ui_fragment_data *data)
 			FORMCHOICE(sopt, entry));
 }
 
-#ifdef OPENCONNECT_OPENSSL
-static gboolean ui_write_error (ui_fragment_data *data)
-{
-	ssl_box_add_error(data->ui_data, UI_get0_output_string(data->uis));
-
-	g_slice_free (ui_fragment_data, data);
-
-	return FALSE;
-}
-
-static gboolean ui_write_info (ui_fragment_data *data)
-{
-	ssl_box_add_info(data->ui_data, UI_get0_output_string(data->uis));
-
-	g_slice_free (ui_fragment_data, data);
-
-	return FALSE;
-}
-#endif
-
 static gboolean ui_write_prompt (ui_fragment_data *data)
 {
 	auth_ui_data *ui_data = _ui_data; /* FIXME global */
@@ -432,16 +368,8 @@ static gboolean ui_write_prompt (ui_fragment_data *data)
 	int visible;
 	const char *label;
 
-#ifdef OPENCONNECT_OPENSSL
-	if (data->uis) {
-		label = UI_get0_output_string(data->uis);
-		visible = UI_get_input_flags(data->uis) & UI_INPUT_FLAG_ECHO;
-	} else 
-#endif
-	{
-		label = data->opt->label;
-		visible = (data->opt->type == OC_FORM_OPT_TEXT);
-	}
+	label = data->opt->label;
+	visible = (data->opt->type == OC_FORM_OPT_TEXT);
 
 #if GTK_CHECK_VERSION(3,1,6)
 	hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
@@ -537,128 +465,6 @@ static gboolean ui_show (auth_ui_data *ui_data)
 
 	return FALSE;
 }
-
-#ifdef OPENCONNECT_OPENSSL
-/* runs in worker thread */
-static int ui_open(UI *ui)
-{
-	auth_ui_data *ui_data = _ui_data; /* FIXME global */
-
-	UI_add_user_data(ui, ui_data);
-
-	return 1;
-}
-
-/* runs in worker thread */
-static int ui_write(UI *ui, UI_STRING *uis)
-{
-	auth_ui_data *ui_data;
-	ui_fragment_data *data;
-
-	ui_data = UI_get0_user_data(ui);
-
-	/* return if a new host has been selected */
-	if (ui_data->cancelled) {
-		return 1;
-	}
-
-	data = g_slice_new0 (ui_fragment_data);
-	data->ui_data = ui_data;
-	data->uis = uis;
-
-	switch(UI_get_string_type(uis)) {
-	case UIT_ERROR:
-		g_idle_add ((GSourceFunc)ui_write_error, data);
-		break;
-
-	case UIT_INFO:
-		g_idle_add ((GSourceFunc)ui_write_info, data);
-		break;
-
-	case UIT_PROMPT:
-	case UIT_VERIFY:
-		g_mutex_lock (ui_data->form_mutex);
-		g_queue_push_head(ui_data->form_entries, data);
-		g_mutex_unlock (ui_data->form_mutex);
-
-		g_idle_add ((GSourceFunc)ui_write_prompt, data);
-		break;
-
-	case UIT_BOOLEAN:
-		/* FIXME */
-	case UIT_NONE:
-	default:
-		g_slice_free (ui_fragment_data, data);
-	}
-	return 1;
-}
-
-/* runs in worker thread */
-static int ui_flush(UI* ui)
-{
-	auth_ui_data *ui_data;
-	int response;
-
-	ui_data = UI_get0_user_data(ui);
-
-	g_idle_add((GSourceFunc)ui_show, ui_data);
-	g_mutex_lock(ui_data->form_mutex);
-	/* wait for ui to show */
-	while (!ui_data->form_shown) {
-		g_cond_wait(ui_data->form_shown_changed, ui_data->form_mutex);
-	}
-	ui_data->form_shown = FALSE;
-
-	if (!ui_data->cancelled) {
-		/* wait for form submission or cancel */
-		while (!ui_data->form_retval) {
-			g_cond_wait(ui_data->form_retval_changed, ui_data->form_mutex);
-		}
-		response = GPOINTER_TO_INT (ui_data->form_retval);
-		ui_data->form_retval = NULL;
-	} else
-		response = AUTH_DIALOG_RESPONSE_CANCEL;
-
-	/* set entry results and free temporary data structures */
-	while (!g_queue_is_empty (ui_data->form_entries)) {
-		ui_fragment_data *data;
-		data = g_queue_pop_tail (ui_data->form_entries);
-		if (data->entry_text) {
-			UI_set_result(ui, data->uis, data->entry_text);
-		}
-		if (data->find_request) {
-			gnome_keyring_cancel_request(data->find_request);
-		}
-		g_slice_free (ui_fragment_data, data);
-	}
-	ui_data->form_grabbed = 0;
-	g_mutex_unlock(ui_data->form_mutex);
-
-	/* -1 = cancel,
-	 *  0 = failure,
-	 *  1 = success */
-	return (response == AUTH_DIALOG_RESPONSE_LOGIN ? 1 : -1);
-}
-
-/* runs in worker thread */
-static int ui_close(UI *ui)
-{
-	return 1;
-}
-
-static int init_openssl_ui(void)
-{
-	UI_METHOD *ui_method = UI_create_method("OpenConnect VPN UI (gtk)");
-
-	UI_method_set_opener(ui_method, ui_open);
-	UI_method_set_flusher(ui_method, ui_flush);
-	UI_method_set_writer(ui_method, ui_write);
-	UI_method_set_closer(ui_method, ui_close);
-
-	UI_set_default_method(ui_method);
-	return 0;
-}
-#endif /* OPENCONNECT_OPENSSL */
 
 static char *find_form_answer(GHashTable *secrets, struct oc_auth_form *form,
 			      struct oc_form_opt *opt)
@@ -1901,9 +1707,6 @@ int main (int argc, char **argv)
 
 	build_main_dialog(_ui_data);
 
-#ifdef OPENCONNECT_OPENSSL
-	init_openssl_ui();
-#endif
 	openconnect_init_ssl();
 
 	/* Start connecting now if there's only one host. Or if configured to */

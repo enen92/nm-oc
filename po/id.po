@@ -9,32 +9,32 @@ msgstr ""
 "Project-Id-Version: network-manager-openconnect nm-0-9-8\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=NetworkManager&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-03-14 15:32+0000\n"
-"PO-Revision-Date: 2014-03-14 23:10+0700\n"
+"POT-Creation-Date: 2014-12-07 23:12+0000\n"
+"PO-Revision-Date: 2014-12-08 17:01+0700\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <gnome@i15n.org>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.7\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../auth-dialog/main.c:850
+#: ../auth-dialog/main.c:669
 #, c-format
 msgid "OpenConnect: %s: %s:%s"
 msgstr "OpenConnect: %s: %s:%s"
 
-#: ../auth-dialog/main.c:880
+#: ../auth-dialog/main.c:699
 #, c-format
 msgid "Connect to VPN '%s'"
 msgstr "Menyambung ke VPN '%s'"
 
-#: ../auth-dialog/main.c:882
+#: ../auth-dialog/main.c:701
 msgid "Connect to VPN"
 msgstr "Menyambung ke VPN"
 
-#: ../auth-dialog/main.c:925
+#: ../auth-dialog/main.c:741
 #, c-format
 msgid ""
 "Certificate from VPN server \"%s\" failed verification.\n"
@@ -45,44 +45,43 @@ msgstr ""
 "Alasan: %s\n"
 "Anda ingin menerimanya?"
 
-#: ../auth-dialog/main.c:1572
+#: ../auth-dialog/main.c:1414
 msgid "_Close"
 msgstr "_Tutup"
 
-#: ../auth-dialog/main.c:1597
+#: ../auth-dialog/main.c:1439
 msgid "VPN host"
 msgstr "Host VPN"
 
-#: ../auth-dialog/main.c:1608
-#| msgid "Connect to VPN"
+#: ../auth-dialog/main.c:1450
 msgid "C_onnect"
 msgstr "S_ambung"
 
-#: ../auth-dialog/main.c:1615
+#: ../auth-dialog/main.c:1457
 msgid "Automatically start connecting next time"
 msgstr "Selanjutnya mulai menyambung secara otomatis"
 
-#: ../auth-dialog/main.c:1636
+#: ../auth-dialog/main.c:1478
 msgid "Select a host to fetch the login form"
 msgstr "Pilih host untuk mengambil formulir log masuk"
 
-#: ../auth-dialog/main.c:1641
+#: ../auth-dialog/main.c:1483
 msgid "Contacting host, please wait..."
 msgstr "Menghubungi host, silakan tunggu..."
 
-#: ../auth-dialog/main.c:1661
+#: ../auth-dialog/main.c:1503
 msgid "_Login"
 msgstr "_Log Masuk"
 
-#: ../auth-dialog/main.c:1667
+#: ../auth-dialog/main.c:1509
 msgid "_Cancel"
 msgstr "_Batal"
 
-#: ../auth-dialog/main.c:1673
+#: ../auth-dialog/main.c:1515
 msgid "Save passwords"
 msgstr "Simpan sandi"
 
-#: ../auth-dialog/main.c:1681
+#: ../auth-dialog/main.c:1523
 msgid "Log"
 msgstr "Log"
 
@@ -182,6 +181,10 @@ msgstr "RSA SecurID - dimasukkan secara manual"
 msgid "TOTP - manually entered"
 msgstr "TOTP - dimasukkan secara manual"
 
+#: ../properties/nm-openconnect-dialog.ui.h:19
+msgid "HOTP - manually entered"
+msgstr "HOTP - dimasukkan secara manual"
+
 #: ../src/nm-openconnect-service.c:151
 #, c-format
 msgid "invalid integer property '%s' or out of range [%d -> %d]"
@@ -232,11 +235,11 @@ msgstr "Fungsikan pencatatan log awakutu rinci (mungkin mengungkap kata sandi)"
 
 #: ../src/nm-openconnect-service.c:664
 msgid ""
-"nm-openconnect-service provides integrated Cisco AnyConnect SSL VPN "
-"capability to NetworkManager."
+"nm-openconnect-service provides integrated Cisco AnyConnect SSL VPN capability to "
+"NetworkManager."
 msgstr ""
-"nm-openconnect-service menyediakan kapabilitas VPN SSL Cisco AnyConnect yang "
-"terintegrasi untuk NetworkManager."
+"nm-openconnect-service menyediakan kapabilitas VPN SSL Cisco AnyConnect yang terintegrasi "
+"untuk NetworkManager."
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/xml.c#l53
 #: ../openconnect-strings.txt:14
@@ -293,9 +296,7 @@ msgstr "Host \"%s\" memiliki UserGroup \"%s\"\n"
 #: ../openconnect-strings.txt:42
 #, c-format
 msgid "Host \"%s\" not listed in config; treating as raw hostname\n"
-msgstr ""
-"Host \"%s\" tidak terdaftar dalam konfig; memperlakukan sebagai nama host "
-"mentah\n"
+msgstr "Host \"%s\" tidak terdaftar dalam konfig; memperlakukan sebagai nama host mentah\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l185
 #: ../openconnect-strings.txt:45
@@ -698,10 +699,8 @@ msgid ""
 "Disabling all HTTP connection re-use due to --no-http-keepalive option.\n"
 "If this helps, please report to <openconnect-devel@lists.infradead.org>.\n"
 msgstr ""
-"Mematikan penggunaan ulang semua koneksi HTTP karena opsi --no-http-"
-"keepalive.\n"
-"Bila ini membantu, harap laporkan ke <openconnect-devel@lists.infradead."
-"org>.\n"
+"Mematikan penggunaan ulang semua koneksi HTTP karena opsi --no-http-keepalive.\n"
+"Bila ini membantu, harap laporkan ke <openconnect-devel@lists.infradead.org>.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l651
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l665
@@ -826,8 +825,7 @@ msgstr ""
 #, c-format
 msgid "Enter '%s' to accept, '%s' to abort; anything else to view: "
 msgstr ""
-"Masukkan '%s' untuk menerima, '%s' untuk menggugurkan; sebarang yang lain "
-"untuk menilik:"
+"Masukkan '%s' untuk menerima, '%s' untuk menggugurkan; sebarang yang lain untuk menilik:"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l1015
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/main.c#l1022
@@ -929,8 +927,8 @@ msgstr "Terjalin koneksi DTLS (memakai OpenSSL)\n"
 #: ../openconnect-strings.txt:405
 msgid "Your OpenSSL is older than the one you built against, so DTLS may fail!"
 msgstr ""
-"OpenSSL Anda lebih tua daripada yang Anda pakai untuk membangun, sehingga "
-"DTLS mungkin gagal!"
+"OpenSSL Anda lebih tua daripada yang Anda pakai untuk membangun, sehingga DTLS mungkin "
+"gagal!"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/dtls.c#l322
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/dtls.c#l326
@@ -1278,8 +1276,7 @@ msgstr "Menerima paket data terkompresi %ld byte\n"
 #: ../openconnect-strings.txt:599
 #, c-format
 msgid "SSL read error %d (server probably closed connection); reconnecting.\n"
-msgstr ""
-"Galat baca SSL %d (server mungkin menutup koneksi); menyambung ulang.\n"
+msgstr "Galat baca SSL %d (server mungkin menutup koneksi); menyambung ulang.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/cstp.c#l661
 #: ../openconnect-strings.txt:602
@@ -2194,11 +2191,9 @@ msgstr "Pengaturan daftar pencabutan sertifikat gagal: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/gnutls.c#l1475
 #: ../openconnect-strings.txt:1106
-msgid ""
-"WARNING: GnuTLS returned incorrect issuer certs; authentication may fail!\n"
+msgid "WARNING: GnuTLS returned incorrect issuer certs; authentication may fail!\n"
 msgstr ""
-"PERINGATAN: GnuTLS mengembalikan sert penerbit yang tak benar; otentikasi "
-"mungkin gagal!\n"
+"PERINGATAN: GnuTLS mengembalikan sert penerbit yang tak benar; otentikasi mungkin gagal!\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/gnutls.c#l1496
 #: ../openconnect-strings.txt:1110
@@ -2671,13 +2666,12 @@ msgstr ""
 #: ../openconnect-strings.txt:1367
 msgid ""
 "Error: Server asked us to download and run a 'Cisco Secure Desktop' trojan.\n"
-"This facility is disabled by default for security reasons, so you may wish "
-"to enable it.\n"
+"This facility is disabled by default for security reasons, so you may wish to enable it.\n"
 msgstr ""
-"Galat: Server meminta kita untuk mengunduh dan menjalankan suatu trojan "
-"'Cisco Secure Desktop'.\n"
-"Fasilitas ini dinonaktifkan secara baku untuk alasan keamanan, maka Anda "
-"mungkin ingin memfungsikannya.\n"
+"Galat: Server meminta kita untuk mengunduh dan menjalankan suatu trojan 'Cisco Secure "
+"Desktop'.\n"
+"Fasilitas ini dinonaktifkan secara baku untuk alasan keamanan, maka Anda mungkin ingin "
+"memfungsikannya.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/0e323daff0:/http.c#l529
 #: ../openconnect-strings.txt:1373

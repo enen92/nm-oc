@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: network-manager-openconnect nm-0.98\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=NetworkManager&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-03-15 23:09+0000\n"
+"POT-Creation-Date: 2014-12-12 11:12+0000\n"
 "PO-Revision-Date: 2013-03-18 18:57+0100\n"
 "Last-Translator: Zdeněk Hataš <zdenek.hatas@gmail.com>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
@@ -21,21 +21,21 @@ msgstr ""
 "X-Poedit-Language: Czech\n"
 "X-Poedit-Country: CZECH REPUBLIC\n"
 
-#: ../auth-dialog/main.c:850
+#: ../auth-dialog/main.c:669
 #, c-format
 msgid "OpenConnect: %s: %s:%s"
 msgstr "OpenConnect: %s: %s:%s"
 
-#: ../auth-dialog/main.c:880
+#: ../auth-dialog/main.c:699
 #, c-format
 msgid "Connect to VPN '%s'"
 msgstr "Připojit k VPN „%s“"
 
-#: ../auth-dialog/main.c:882
+#: ../auth-dialog/main.c:701
 msgid "Connect to VPN"
 msgstr "Připojit k VPN"
 
-#: ../auth-dialog/main.c:925
+#: ../auth-dialog/main.c:741
 #, c-format
 msgid ""
 "Certificate from VPN server \"%s\" failed verification.\n"
@@ -46,43 +46,43 @@ msgstr ""
 "Důvod: %s\n"
 "Chcete jej přijmout?"
 
-#: ../auth-dialog/main.c:1572
+#: ../auth-dialog/main.c:1414
 msgid "_Close"
 msgstr "_Zavřít"
 
-#: ../auth-dialog/main.c:1597
+#: ../auth-dialog/main.c:1439
 msgid "VPN host"
 msgstr "Server VPN"
 
-#: ../auth-dialog/main.c:1608
+#: ../auth-dialog/main.c:1450
 msgid "C_onnect"
 msgstr "Přip_ojit"
 
-#: ../auth-dialog/main.c:1615
+#: ../auth-dialog/main.c:1457
 msgid "Automatically start connecting next time"
 msgstr "Příště připojit automaticky"
 
-#: ../auth-dialog/main.c:1636
+#: ../auth-dialog/main.c:1478
 msgid "Select a host to fetch the login form"
 msgstr "Zvolte stroj pro získání přihlášovacího formuláře"
 
-#: ../auth-dialog/main.c:1641
+#: ../auth-dialog/main.c:1483
 msgid "Contacting host, please wait..."
 msgstr "Spojení je navazováno, čekejte prosím…"
 
-#: ../auth-dialog/main.c:1661
+#: ../auth-dialog/main.c:1503
 msgid "_Login"
 msgstr "Přih_lásit se"
 
-#: ../auth-dialog/main.c:1667
+#: ../auth-dialog/main.c:1509
 msgid "_Cancel"
 msgstr "_Zrušit"
 
-#: ../auth-dialog/main.c:1673
+#: ../auth-dialog/main.c:1515
 msgid "Save passwords"
 msgstr "Uložit hesla"
 
-#: ../auth-dialog/main.c:1681
+#: ../auth-dialog/main.c:1523
 msgid "Log"
 msgstr "Záznam"
 
@@ -181,6 +181,10 @@ msgstr "RSA SecurID – zadáno ručně"
 #: ../properties/nm-openconnect-dialog.ui.h:18
 msgid "TOTP - manually entered"
 msgstr "TOTP – zadáno ručně"
+
+#: ../properties/nm-openconnect-dialog.ui.h:19
+msgid "HOTP - manually entered"
+msgstr "HOTP – zadáno ručně"
 
 #: ../src/nm-openconnect-service.c:151
 #, c-format

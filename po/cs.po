@@ -495,7 +495,7 @@ msgstr "rozbalení se nepodařilo\n"
 #: ../openconnect-strings.txt:152
 #, c-format
 msgid "Received compressed data packet of %ld bytes\n"
-msgstr "Přijat komprimovaný paket dat %d bajtů\n"
+msgstr "Přijat komprimovaný paket dat %ld bajtů\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/cstp.c#l683
 #: ../openconnect-strings.txt:155

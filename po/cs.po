@@ -2,20 +2,20 @@
 # Copyright (C) 2008, 2009, 2010, 2011 the author(s) of network-manager-openconnect.
 # This file is distributed under the same license as the network-manager-openconnect package.
 #
-# Zdeněk Hataš <zdenek.hatas@gmail.com>, 2009, 2010, 2011, 2012, 2013, 2014.
+# Zdeněk Hataš <zdenek.hatas@gmail.com>, 2009, 2010, 2011, 2012, 2013, 2014, 2015.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: network-manager-openconnect\n"
+"Project-Id-Version: network-manager-openconnect nm-1.0\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=NetworkManager&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-12-12 21:43+0000\n"
-"PO-Revision-Date: 2014-03-09 16:28+0100\n"
+"POT-Creation-Date: 2014-12-18 22:03+0000\n"
+"PO-Revision-Date: 2015-01-18 12:05+0100\n"
 "Last-Translator: Zdeněk Hataš <zdenek.hatas@gmail.com>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Poedit 1.5.4\n"
@@ -314,18 +314,18 @@ msgstr "Žádáno heslo ale nastaveno „--no-passwd“\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/auth.c#l822
 #: ../openconnect-strings.txt:53
 msgid "Failed to generate OTP tokencode; disabling token\n"
-msgstr ""
+msgstr "Selhalo generování kódu OTP tokenu, deaktivuje se token\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/compat.c#l206
 #: ../openconnect-strings.txt:56
 #, c-format
 msgid "(error 0x%x)"
-msgstr ""
+msgstr "(chyba 0x%x)"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/compat.c#l209
 #: ../openconnect-strings.txt:59
 msgid "(Error while describing error!)"
-msgstr ""
+msgstr "(Chyba při popisování chyby)"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/compat.c#l232
 #: ../openconnect-strings.txt:62
@@ -349,17 +349,19 @@ msgstr "TCP_MAXSEG %d\n"
 msgid ""
 "CRITICAL ERROR: DTLS master secret is uninitialised. Please report this.\n"
 msgstr ""
+"KRITICKÁ CHYBA: Hlavní klíč DTLSDTLS je neinicializovaný. Nahlaste to "
+"prosím.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/cstp.c#l216
 #: ../openconnect-strings.txt:75
 msgid "Error creating HTTPS CONNECT request\n"
-msgstr ""
+msgstr "Chyba při vytváření požadavku HTTPS CONNECT\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/cstp.c#l228
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/http.c#l353
 #: ../openconnect-strings.txt:79
 msgid "Error fetching HTTPS response\n"
-msgstr "Chyba při natahování odpovědi HTTPS\n"
+msgstr "Chyba při získávání odpovědi HTTPS\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/cstp.c#l235
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/http.c#l633
@@ -409,7 +411,7 @@ msgstr "X-DTLS-Sezení-ID ne 64 znaků; je: „%s“\n"
 #: ../openconnect-strings.txt:107
 #, c-format
 msgid "Unknown CSTP-Content-Encoding %s\n"
-msgstr "Neznámé kódování-obsahu-CSTP %s\n"
+msgstr "Neznámé kódování obsahu CSTP %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/cstp.c#l446
 #: ../openconnect-strings.txt:110
@@ -425,7 +427,7 @@ msgstr "Nepřijata žádná adresa IP. Ruší se\n"
 #: ../openconnect-strings.txt:116
 #, c-format
 msgid "IPv6 configuration received but MTU %d is too small.\n"
-msgstr ""
+msgstr "Konfigurace IPv6 byla získána, ale MTU %d je příliš malé.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/cstp.c#l465
 #: ../openconnect-strings.txt:119
@@ -461,17 +463,17 @@ msgstr "CSTP spojeno. DPD %d, (udržet naživu) Keepalive %d\n"
 #: ../openconnect-strings.txt:134
 #, c-format
 msgid "CSTP Ciphersuite: %s\n"
-msgstr ""
+msgstr "Šifrování CSTP: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/cstp.c#l556
 #: ../openconnect-strings.txt:137
 msgid "Compression setup failed\n"
-msgstr "Nastavení zabalení se nezdařilo\n"
+msgstr "Nastavení komprimace se nezdařilo\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/cstp.c#l564
 #: ../openconnect-strings.txt:140
 msgid "Allocation of deflate buffer failed\n"
-msgstr "Přidělení deflate vyrovnávací paměti se nezdařilo\n"
+msgstr "Přidělení vyrovnávací paměti pro sbalení se nezdařilo\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/cstp.c#l608
 #: ../openconnect-strings.txt:143
@@ -482,18 +484,18 @@ msgstr "Doba platnosti cookie vypršela, sezení se ukončuje\n"
 #: ../openconnect-strings.txt:146
 #, c-format
 msgid "sleep %ds, remaining timeout %ds\n"
-msgstr "spánek %ds, zbývající oddechový čas %ds\n"
+msgstr "spánek %d s, zbývající oddechový čas %d s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/cstp.c#l647
 #: ../openconnect-strings.txt:149
 msgid "inflate failed\n"
-msgstr "nafouknutí se nepodařilo\n"
+msgstr "rozbalení se nepodařilo\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/cstp.c#l664
 #: ../openconnect-strings.txt:152
 #, c-format
 msgid "Received compressed data packet of %ld bytes\n"
-msgstr "Přijat zabalený paket dat %ld bytů\n"
+msgstr "Přijat komprimovaný paket dat %d bajtů\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/cstp.c#l683
 #: ../openconnect-strings.txt:155
@@ -546,7 +548,7 @@ msgstr "Obdrženo CSTP Keepalive\n"
 #: ../openconnect-strings.txt:179
 #, c-format
 msgid "Received uncompressed data packet of %d bytes\n"
-msgstr "Přijat nezabalený paket dat %d bytů\n"
+msgstr "Přijat nezabalený paket dat %d bajtů\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/cstp.c#l821
 #: ../openconnect-strings.txt:182
@@ -574,7 +576,7 @@ msgstr "Neznámý paket %02x %02x %02x %02x %02x %02x %02x %02x\n"
 #: ../openconnect-strings.txt:194
 #, c-format
 msgid "SSL wrote too few bytes! Asked for %d, sent %d\n"
-msgstr "SSL napsalo příliš mnoho bytů! Požádáno o %d, posláno %d\n"
+msgstr "SSL napsalo příliš mnoho bajtů! Požádáno o %d, posláno %d\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/cstp.c#l914
 #: ../openconnect-strings.txt:197
@@ -610,19 +612,19 @@ msgstr "Poslat CSTP Keepalive\n"
 #: ../openconnect-strings.txt:215
 #, c-format
 msgid "deflate failed %d\n"
-msgstr "deflate se nezdařilo %d\n"
+msgstr "Dekomprimace deflate se nezdařila %d\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/cstp.c#l1010
 #: ../openconnect-strings.txt:218
 #, c-format
 msgid "Sending compressed data packet of %d bytes\n"
-msgstr "Posílá se zabalený paket dat %d bytů\n"
+msgstr "Posílá se komprimovaný paket dat %d bajtů\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/cstp.c#l1022
 #: ../openconnect-strings.txt:221
 #, c-format
 msgid "Sending uncompressed data packet of %d bytes\n"
-msgstr "Posílá se nezabalený paket dat %d bytů\n"
+msgstr "Posílá se nekomprimovaný paket dat %d bajtů\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/cstp.c#l1062
 #: ../openconnect-strings.txt:224
@@ -633,7 +635,7 @@ msgstr "Poslat BYE paket: %s\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/digest.c#l242
 #: ../openconnect-strings.txt:227
 msgid "Attempting Digest authentication to proxy\n"
-msgstr ""
+msgstr "Pokus o ověření k proxy metodou Digest\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/dtls.c#l125
 #: ../openconnect-strings.txt:230
@@ -742,12 +744,12 @@ msgstr "Navázání DTLS se nezdařilo: %s\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/dtls.c#l456
 #: ../openconnect-strings.txt:286
 msgid "(Is a firewall preventing you from sending UDP packets?)\n"
-msgstr ""
+msgstr "(Firewall vám nedovoluje odesílání paketů UDP?)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/dtls.c#l477
 #: ../openconnect-strings.txt:289
 msgid "DTLS connection attempted with an existing fd\n"
-msgstr "Pokus o DTLS připojení s existujícím fd\n"
+msgstr "Pokus o připojení DTLS s existujícím fd\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/dtls.c#l483
 #: ../openconnect-strings.txt:292
@@ -807,7 +809,7 @@ msgstr "Pokus o nové spojení DTLS\n"
 #: ../openconnect-strings.txt:323
 #, c-format
 msgid "Received DTLS packet 0x%02x of %d bytes\n"
-msgstr "Přijat DTLS paket 0x%02x %dd bytů\n"
+msgstr "Přijat paket DTLS 0x%02x z %d bajtů\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/dtls.c#l744
 #: ../openconnect-strings.txt:326
@@ -887,7 +889,7 @@ msgstr "DTLS obdrželo chybu v zápisu: %s. Vrací se k SSL\n"
 #: ../openconnect-strings.txt:368
 #, c-format
 msgid "Sent DTLS packet of %d bytes; DTLS send returned %d\n"
-msgstr "Odesláno %d bytů v paketu DTLS ; odeslání DTLS vrátilo %d\n"
+msgstr "Odesláno %d bajtů v paketu DTLS ; odeslání DTLS vrátilo %d\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/dtls.c#l908
 #: ../openconnect-strings.txt:371
@@ -1087,10 +1089,8 @@ msgstr "Vložte heslovou frázi k PEM:"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/gnutls.c#l934
 #: ../openconnect-strings.txt:483
-#, fuzzy
-#| msgid "This binary built without PKCS#11 support\n"
 msgid "This binary built without system key support\n"
-msgstr "Program byl sestaven bez podpory PKCS#11\n"
+msgstr "Program byl sestaven bez podpory systémového klíče\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/gnutls.c#l941
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/openssl.c#l740
@@ -1168,16 +1168,15 @@ msgstr "Chyba importu systémového klíče %s: %s\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/gnutls.c#l1221
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/gnutls.c#l1249
 #: ../openconnect-strings.txt:527
-#, fuzzy, c-format
-#| msgid "Using PKCS#11 key %s\n"
+#, c-format
 msgid "Trying PKCS#11 key URL %s\n"
-msgstr "Používá se PKCS#11 klíč %s\n"
+msgstr "Zkouší se adresa URL klíče PKCS#11 %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/gnutls.c#l1136
 #: ../openconnect-strings.txt:530
 #, c-format
 msgid "Error initialising PKCS#11 key structure: %s\n"
-msgstr "Chyba inicializace PKCS#11 struktury klíče: %s\n"
+msgstr "Chyba inicializace struktury klíče PKCS#11: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/gnutls.c#l1261
 #: ../openconnect-strings.txt:533
@@ -1189,7 +1188,7 @@ msgstr "Chyba importu PKCS#11 URL %s: %s\n"
 #: ../openconnect-strings.txt:536
 #, c-format
 msgid "Using PKCS#11 key %s\n"
-msgstr "Používá se PKCS#11 klíč %s\n"
+msgstr "Používá se klíč PKCS#11 %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/gnutls.c#l1283
 #: ../openconnect-strings.txt:539
@@ -1330,10 +1329,8 @@ msgstr "Chyba při importu certifikátu serveru\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/gnutls.c#l1907
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l1569
 #: ../openconnect-strings.txt:615
-#, fuzzy
-#| msgid "Could not calculate SHA1 of server's certificate\n"
 msgid "Could not calculate hash of server's certificate\n"
-msgstr "Nelze vypočítat SHA1 certifikátu serveru\n"
+msgstr "Nelze vypočítat haš certifikátu serveru\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/gnutls.c#l1912
 #: ../openconnect-strings.txt:618
@@ -1593,17 +1590,17 @@ msgstr "Nastavení PIN klíče selhalo: %s\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/gssapi.c#l73
 #: ../openconnect-strings.txt:758
 msgid "Error importing GSSAPI name for authentication:\n"
-msgstr ""
+msgstr "Chyba importu jména GSSAPI pro ověření:\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/gssapi.c#l121
 #: ../openconnect-strings.txt:761
 msgid "Error generating GSSAPI response:\n"
-msgstr ""
+msgstr "Chyba generování odpovědi GSSAPI:\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/gssapi.c#l137
 #: ../openconnect-strings.txt:764
 msgid "Attempting GSSAPI authentication to proxy\n"
-msgstr ""
+msgstr "Pokus o ověření k proxy metodou GSSAPI\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/gssapi.c#l183
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/gssapi.c#l240
@@ -1611,104 +1608,104 @@ msgstr ""
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/sspi.c#l245
 #: ../openconnect-strings.txt:770
 msgid "GSSAPI authentication completed\n"
-msgstr ""
+msgstr "Ověření GSSAPI dokončeno\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/gssapi.c#l194
 #: ../openconnect-strings.txt:773
 #, c-format
 msgid "GSSAPI token too large (%zd bytes)\n"
-msgstr ""
+msgstr "Příliš dlouhý token GSSAPI (%zd bajtů)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/gssapi.c#l208
 #: ../openconnect-strings.txt:776
 #, c-format
 msgid "Sending GSSAPI token of %zu bytes\n"
-msgstr ""
+msgstr "Odesílá se %zu bajtů tokenu GSSAPI\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/gssapi.c#l213
 #: ../openconnect-strings.txt:779
 #, c-format
 msgid "Failed to send GSSAPI authentication token to proxy: %s\n"
-msgstr ""
+msgstr "Selhalo odeslání autentizačního tokenu GSSAPI na proxy: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/gssapi.c#l221
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/gssapi.c#l248
 #: ../openconnect-strings.txt:783
 #, c-format
 msgid "Failed to receive GSSAPI authentication token from proxy: %s\n"
-msgstr ""
+msgstr "Selhalo získání autentizačního tokenu GSSAPI z proxy: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/gssapi.c#l227
 #: ../openconnect-strings.txt:786
 msgid "SOCKS server reported GSSAPI context failure\n"
-msgstr ""
+msgstr "Server SOCKS ohlásil selhání kontextu GSSAPI\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/gssapi.c#l231
 #: ../openconnect-strings.txt:789
 #, c-format
 msgid "Unknown GSSAPI status response (0x%02x) from SOCKS server\n"
-msgstr ""
+msgstr "Neznámý stavový kód GSSAPI odpovědi (0x%02x) od serveru SOCKS\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/gssapi.c#l252
 #: ../openconnect-strings.txt:792
 #, c-format
 msgid "Got GSSAPI token of %zu bytes: %02x %02x %02x %02x\n"
-msgstr ""
+msgstr "Získán token GSSAPI, %zu bajtů: %02x %02x %02x %02x\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/gssapi.c#l279
 #: ../openconnect-strings.txt:795
 #, c-format
 msgid "Sending GSSAPI protection negotiation of %zu bytes\n"
-msgstr ""
+msgstr "Posílá se vyjednání ochrany GSSAPI %zu bajtů\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/gssapi.c#l284
 #: ../openconnect-strings.txt:798
 #, c-format
 msgid "Failed to send GSSAPI protection response to proxy: %s\n"
-msgstr ""
+msgstr "Selhalo poslání odpovědi na ochranu GSSAPI k proxy: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/gssapi.c#l292
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/gssapi.c#l302
 #: ../openconnect-strings.txt:802
 #, c-format
 msgid "Failed to receive GSSAPI protection response from proxy: %s\n"
-msgstr ""
+msgstr "Selhalo získání odpovědi GSSAPI ochrany z proxy: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/gssapi.c#l307
 #: ../openconnect-strings.txt:805
 #, c-format
 msgid "Got GSSAPI protection response of %zu bytes: %02x %02x %02x %02x\n"
-msgstr ""
+msgstr "Získána odpověd GSSAPI ochrany %zu bajtů: %02x %02x %02x %02x\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/gssapi.c#l317
 #: ../openconnect-strings.txt:808
 #, c-format
 msgid "Invalid GSSAPI protection response from proxy (%zu bytes)\n"
-msgstr ""
+msgstr "Neplatná odpověď GSSAPI ochrany z proxy (%zu bajtů)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/gssapi.c#l326
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/sspi.c#l405
 #: ../openconnect-strings.txt:812
 msgid "SOCKS proxy demands message integrity, which is not supported\n"
-msgstr ""
+msgstr "Prosy SOCKS požaduje integritu zprávy, která není podporována\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/gssapi.c#l330
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/sspi.c#l409
 #: ../openconnect-strings.txt:816
 msgid "SOCKS proxy demands message confidentiality, which is not supported\n"
-msgstr ""
+msgstr "Proxy SOCKS požaduje důvěrnost zprávy, která není podporována\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/gssapi.c#l334
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/sspi.c#l413
 #: ../openconnect-strings.txt:820
 #, c-format
 msgid "SOCKS proxy demands protection unknown type 0x%02x\n"
-msgstr ""
+msgstr "Proxy SOCKS požaduje neznámý typ ochrany 0x%02x\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/http.c#l297
 #: ../openconnect-strings.txt:823
 msgid "No memory for allocating cookies\n"
-msgstr "Žádná paměť pro přidělení sušenek\n"
+msgstr "Žádná paměť pro přidělení cookies\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/http.c#l363
 #: ../openconnect-strings.txt:826
@@ -1792,12 +1789,12 @@ msgstr "Tělo HTTP 1.0 nelze přijmout bez zavření spojení\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/http.c#l627
 #: ../openconnect-strings.txt:869
 msgid "Not downloading XML profile because SHA1 already matches\n"
-msgstr ""
+msgstr "Profil XML se nenahrává, protože SHA1 již souhlasí\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/http.c#l650
 #: ../openconnect-strings.txt:872
 msgid "Failed to send GET request for new config\n"
-msgstr "Selhalo odeslání požadavku GET pro novou konfiguraci\n"
+msgstr "Selhalo odeslání požadavku GET pro nové nastavení\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/http.c#l674
 #: ../openconnect-strings.txt:875
@@ -1807,7 +1804,7 @@ msgstr "Stažený soubor s nastavením neodpovídá zamýšlenému SHA1\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/http.c#l679
 #: ../openconnect-strings.txt:878
 msgid "Downloaded new XML profile\n"
-msgstr ""
+msgstr "Nahrán nový profil XML\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/http.c#l690
 #: ../openconnect-strings.txt:881
@@ -1847,7 +1844,7 @@ msgstr "Pokus o spuštění trojského skriptu CSD.\n"
 #: ../openconnect-strings.txt:900
 #, c-format
 msgid "Temporary directory '%s' is not writable: %s\n"
-msgstr ""
+msgstr "Do dočasné složky „%s“ nelze zapsat: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/http.c#l747
 #: ../openconnect-strings.txt:903
@@ -1994,11 +1991,12 @@ msgstr "Typ adresy nepodporován"
 #: ../openconnect-strings.txt:981
 msgid "SOCKS server requested username/password but we have none\n"
 msgstr ""
+"Server SOCKS požadoval uživatelské jméno/heslo, ale žádné není k dispozici\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/http.c#l1635
 #: ../openconnect-strings.txt:984
 msgid "Username and password for SOCKS authentication must be < 255 bytes\n"
-msgstr ""
+msgstr "Uživatelské jméno/heslo pro ověření SOCKS musí být < 255 bajtů\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/http.c#l1650
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/http.c#l1706
@@ -2024,40 +2022,40 @@ msgstr "Neočekávaná odpověď týkající se ověřen z proxy SOCKS: %02x %02
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/http.c#l1671
 #: ../openconnect-strings.txt:999
 msgid "Authenticated to SOCKS server using password\n"
-msgstr ""
+msgstr "Ověřeno vůči serveru SOCKS s použitím hesla\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/http.c#l1675
 #: ../openconnect-strings.txt:1002
 msgid "Password authentication to SOCKS server failed\n"
-msgstr ""
+msgstr "Ověření vůči serveru SOCKS pomocí hesla selhalo\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/http.c#l1731
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/http.c#l1738
 #: ../openconnect-strings.txt:1006
 msgid "SOCKS server requested GSSAPI authentication\n"
-msgstr ""
+msgstr "Server SOCSKS požadoval ověření GSSAPI\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/http.c#l1744
 #: ../openconnect-strings.txt:1009
 msgid "SOCKS server requested password authentication\n"
-msgstr ""
+msgstr "Server SOCKS požadoval ověření heslem\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/http.c#l1751
 #: ../openconnect-strings.txt:1012
 msgid "SOCKS server requires authentication\n"
-msgstr ""
+msgstr "Server SOCKS požaduje ověření\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/http.c#l1753
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/http.c#l1993
 #: ../openconnect-strings.txt:1016
 msgid "This version of OpenConnect was built without GSSAPI support\n"
-msgstr ""
+msgstr "Tato verze OpenConnect byla sestavena bez podpory GSSAPI\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/http.c#l1758
 #: ../openconnect-strings.txt:1019
 #, c-format
 msgid "SOCKS server requested unknown authentication type %02x\n"
-msgstr ""
+msgstr "Server SOCKS požadoval neznámý typ ověření %02x\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/http.c#l1764
 #: ../openconnect-strings.txt:1022
@@ -2106,16 +2104,17 @@ msgstr "Neočekávaný typ adresy %02x v odpovědi spojení SOCKS\n"
 #: ../openconnect-strings.txt:1044
 msgid "Proxy requested Basic authentication which is disabled by default\n"
 msgstr ""
+"Proxy vyžaduje ověření Basic, které je ale ve výchozím nastavení zakázáno\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/http.c#l1983
 #: ../openconnect-strings.txt:1047
 msgid "Attempting HTTP Basic authentication to proxy\n"
-msgstr ""
+msgstr "Pokus o ověření k proxy metodou HTTP Basic\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/http.c#l2030
 #: ../openconnect-strings.txt:1050
 msgid "No more authentication methods to try\n"
-msgstr ""
+msgstr "Žádná další ověřovací metoda k vyzkoušení\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/http.c#l2115
 #: ../openconnect-strings.txt:1053
@@ -2161,25 +2160,25 @@ msgstr "Pro URL serveru je povoleno pouze https://\n"
 #: ../openconnect-strings.txt:1074
 #, c-format
 msgid "CommandLineToArgvW() failed: %s\n"
-msgstr ""
+msgstr "Volání CommandLineToArgvW() selhalo: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l321
 #: ../openconnect-strings.txt:1077
 msgid "Fatal error in command line handling\n"
-msgstr ""
+msgstr "Kritická chyba při zpracování příkazové řádky\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l357
 #: ../openconnect-strings.txt:1080
 #, c-format
 msgid "ReadConsole() failed: %s\n"
-msgstr ""
+msgstr "Selhala funkce ReadConsole(): %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l370
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l383
 #: ../openconnect-strings.txt:1084
 #, c-format
 msgid "Error converting console input: %s\n"
-msgstr ""
+msgstr "Chyba konverze vstupu konzole: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l377
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l613
@@ -2193,6 +2192,8 @@ msgid ""
 "For assistance with OpenConnect, please see the web page at\n"
 "  http://www.infradead.org/openconnect/mail.html\n"
 msgstr ""
+"Pro pomoc s OpenConnect se prosím obraťte na webové stránky\n"
+"  http://www.infradead.org/openconnect/mail.html\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l553
 #: ../openconnect-strings.txt:1096
@@ -2377,7 +2378,7 @@ msgstr "Nastavit proxy server"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l721
 #: ../openconnect-strings.txt:1202
 msgid "Set proxy authentication methods"
-msgstr ""
+msgstr "Nastavit ověřovací metodu proxy"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l722
 #: ../openconnect-strings.txt:1205
@@ -2508,7 +2509,7 @@ msgstr "Nepožadovat, aby byl certifikát SSL serveru platný"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l751
 #: ../openconnect-strings.txt:1280
 msgid "Disable default system certificate authorities"
-msgstr ""
+msgstr "Zakázat výchozí systémové certifikační autority"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l752
 #: ../openconnect-strings.txt:1283
@@ -2548,10 +2549,8 @@ msgstr "(POZNÁMKA: knihovna liboath (TOTP, HOTP) je v tomto sestavení vypnuta)
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l764
 #: ../openconnect-strings.txt:1304
-#, fuzzy
-#| msgid "(NOTE: libproxy disabled in this build)"
 msgid "(NOTE: Yubikey OATH disabled in this build)"
-msgstr "(POZNÁMKA: libproxy je v tomto sestavení vypnuta)"
+msgstr "(POZNÁMKA: podpora Yubikey OATH je pro toto sestavení vypnuta)"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l766
 #: ../openconnect-strings.txt:1307
@@ -2615,6 +2614,9 @@ msgid ""
 "         support but you appear to be using the legacy character\n"
 "         set \"%s\". Expect strangeness.\n"
 msgstr ""
+"POZOR: Tato verze openconnect byla sestavena bez podpory\n"
+"         iconv. Vypadá to, že používáte zastaralou znakovou sadu\n"
+"         „%s“. Je třeba očekávat neobvyklé chování.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l969
 #: ../openconnect-strings.txt:1343
@@ -2766,32 +2768,32 @@ msgstr "Pokračuje se na pozadí; PID %d\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l1462
 #: ../openconnect-strings.txt:1424
 msgid "User requested reconnect\n"
-msgstr ""
+msgstr "Uživatel požadoval opětovné připojení\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l1470
 #: ../openconnect-strings.txt:1427
 msgid "Cookie was rejected on reconnection; exiting.\n"
-msgstr ""
+msgstr "Cookie byla odmítnuta při opětovném připojení, končí se.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l1474
 #: ../openconnect-strings.txt:1430
 msgid "Session terminated by server; exiting.\n"
-msgstr ""
+msgstr "Sezení bylo uzavřeno serverem; končí se.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l1478
 #: ../openconnect-strings.txt:1433
 msgid "User cancelled (SIGINT); exiting.\n"
-msgstr ""
+msgstr "Přerušeno uživatelem (SIGINT); končí se.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l1482
 #: ../openconnect-strings.txt:1436
 msgid "User detached from session (SIGHUP); exiting.\n"
-msgstr ""
+msgstr "Uživatel se odpojil od sezení (SIGHUP); končí se.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l1486
 #: ../openconnect-strings.txt:1439
 msgid "Unknown error; exiting.\n"
-msgstr ""
+msgstr "Neznámá chyba; končí se.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l1505
 #: ../openconnect-strings.txt:1442
@@ -2846,7 +2848,7 @@ msgstr "Ano"
 #: ../openconnect-strings.txt:1468
 #, c-format
 msgid "Server key hash: %s\n"
-msgstr ""
+msgstr "Haš serverového klíče: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l1662
 #: ../openconnect-strings.txt:1471
@@ -2869,13 +2871,13 @@ msgstr "Vyžadován uživatelský vstup v neinteraktivním režimu\n"
 #: ../openconnect-strings.txt:1480
 #, c-format
 msgid "Failed to open token file for write: %s\n"
-msgstr ""
+msgstr "Selhalo otevření souboru tokenu pro zápis: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l1861
 #: ../openconnect-strings.txt:1483
 #, c-format
 msgid "Failed to write token: %s\n"
-msgstr ""
+msgstr "Selhal zápis tokenu: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l1906
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l1927
@@ -2910,24 +2912,19 @@ msgstr "Obecné selhání v knihovně liboath\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l1944
 #: ../openconnect-strings.txt:1505
-#, fuzzy
-#| msgid "Key not found"
 msgid "Yubikey token not found\n"
-msgstr "Klíč nebyl nalezen"
+msgstr "Token Yubikey nebyl nalezen\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l1947
 #: ../openconnect-strings.txt:1508
-#, fuzzy
-#| msgid "OpenConnect was not built with libstoken support\n"
 msgid "OpenConnect was not built with Yubikey support\n"
-msgstr "OpenConnect nebyl sestaven s podporou libstoken\n"
+msgstr "OpenConnect nebyl sestaven s podporou Yubikey\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l1950
 #: ../openconnect-strings.txt:1511
-#, fuzzy, c-format
-#| msgid "general failure"
+#, c-format
 msgid "General Yubikey failure: %s\n"
-msgstr "Obecné selhání"
+msgstr "Obecné selhání Yubikey: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/mainloop.c#l182
 #: ../openconnect-strings.txt:1514
@@ -2952,35 +2949,35 @@ msgstr "Funkce WaitForMultipleObjects selhala: %s\n"
 #: ../openconnect-strings.txt:1525
 #, c-format
 msgid "InitializeSecurityContext() failed: %lx\n"
-msgstr ""
+msgstr "Volání InitializeSecurityContext() selhalo: %lx\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/ntlm.c#l110
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/sspi.c#l48
 #: ../openconnect-strings.txt:1529
 #, c-format
 msgid "AcquireCredentialsHandle() failed: %lx\n"
-msgstr ""
+msgstr "Volání AcquireCredentialsHandle() selhalo: %lx\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/ntlm.c#l235
 #: ../openconnect-strings.txt:1532
 msgid "Error communicating with ntlm_auth helper\n"
-msgstr ""
+msgstr "Chyba při komunikaci s pomocným modulem ntlm_auth\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/ntlm.c#l251
 #: ../openconnect-strings.txt:1535
 msgid "Attempting HTTP NTLM authentication to proxy (single-sign-on)\n"
-msgstr ""
+msgstr "Probíhá pokus o ověření HTTP NTLM k proxy (single-sign-on)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/ntlm.c#l1011
 #: ../openconnect-strings.txt:1538
 #, c-format
 msgid "Attempting HTTP NTLMv%d authentication to proxy\n"
-msgstr ""
+msgstr "Probíhá pokus o ověření HTTP NTLMv%d k proxy\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/oath.c#l114
 #: ../openconnect-strings.txt:1541
 msgid "This version of OpenConnect was built without PSKC support\n"
-msgstr ""
+msgstr "Tato verze OpenConnect byla sestavena bez podpory PSKC\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/oath.c#l240
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/oath.c#l268
@@ -3032,7 +3029,7 @@ msgstr "Nelze vygenerovat kód tokenu OATH HOTP: %s\n"
 #: ../openconnect-strings.txt:1574
 #, c-format
 msgid "ERROR: %s() called with invalid UTF-8 for '%s' argument\n"
-msgstr ""
+msgstr "CHYBA:%s() voláno s neplatným UTF-8 u argumentu „%s“\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/openssl.c#l116
 #: ../openconnect-strings.txt:1577
@@ -3049,7 +3046,7 @@ msgstr "Selhalo čtení ze soketu SSL\n"
 #: ../openconnect-strings.txt:1584
 #, c-format
 msgid "Unhandled SSL UI request type %d\n"
-msgstr ""
+msgstr "Neobsloužený požadavek SSL UI typu %d\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/openssl.c#l393
 #: ../openconnect-strings.txt:1587
@@ -3061,12 +3058,12 @@ msgstr "Heslo PEM je příliš dlouhé (%d >= %d)\n"
 #: ../openconnect-strings.txt:1590
 #, c-format
 msgid "Extra cert from %s: '%s'\n"
-msgstr "Zvláštní osvědčení od %s: '%s'\n"
+msgstr "Zvláštní osvědčení od %s: „%s“\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/openssl.c#l474
 #: ../openconnect-strings.txt:1593
 msgid "Parse PKCS#12 failed (see above errors)\n"
-msgstr "Zpracování PKCS#12 se nezdařilo (podívejte se na chyby výše)\n"
+msgstr "Zpracování PKCS#12 se nezdařilo (viz chyby výše)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/openssl.c#l489
 #: ../openconnect-strings.txt:1596
@@ -3081,7 +3078,7 @@ msgstr "PKCS#12 neobsahoval žádný soukromý klíč!"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/openssl.c#l503
 #: ../openconnect-strings.txt:1602
 msgid "PKCS#12"
-msgstr ""
+msgstr "PKCS#12"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/openssl.c#l521
 #: ../openconnect-strings.txt:1605
@@ -3123,17 +3120,18 @@ msgstr "Nahrání osvědčení se nezdařilo\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/openssl.c#l633
 #: ../openconnect-strings.txt:1627
 msgid "Failed to install certificate in OpenSSL context\n"
-msgstr ""
+msgstr "Selhala instalace certifikátu v kontextu OpenSSL\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/openssl.c#l655
 #: ../openconnect-strings.txt:1630
 msgid "Failed to process all supporting certs. Trying anyway...\n"
 msgstr ""
+"Selhalo zpracování všech podpůrných certifikátů. Přesto se pokračuje…\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/openssl.c#l668
 #: ../openconnect-strings.txt:1633
 msgid "PEM file"
-msgstr ""
+msgstr "Soubor PEM"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/openssl.c#l697
 #: ../openconnect-strings.txt:1636
@@ -3175,7 +3173,7 @@ msgstr "Nepodařilo se otevřít soubor soukromý klíč %s: %s\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/openssl.c#l846
 #: ../openconnect-strings.txt:1657
 msgid "Loading private key failed\n"
-msgstr ""
+msgstr "Nahrávání soukromého klíče selhalo\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/openssl.c#l867
 #: ../openconnect-strings.txt:1660
@@ -3357,6 +3355,7 @@ msgstr "getaddrinfo selhalo pro hostitele „%s“: %s\n"
 #: ../openconnect-strings.txt:1752
 msgid "Reconnecting to DynDNS server using previously cached IP address\n"
 msgstr ""
+"Opětovné připojení k DynDNS serveru s použitím IP adresy z mezipaměti\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/ssl.c#l273
 #: ../openconnect-strings.txt:1755
@@ -3378,7 +3377,7 @@ msgstr "Nepodařilo se přidělit skladiště sockaddr\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/ssl.c#l327
 #: ../openconnect-strings.txt:1764
 msgid "Forgetting non-functional previous peer address\n"
-msgstr ""
+msgstr "Zapomíná se nefunkční adresa předchozího protějšku\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/ssl.c#l337
 #: ../openconnect-strings.txt:1767
@@ -3390,7 +3389,7 @@ msgstr "Nepodařilo se spojit se s hostitelem %s\n"
 #: ../openconnect-strings.txt:1770
 #, c-format
 msgid "Reconnecting to proxy %s\n"
-msgstr ""
+msgstr "Opětovné připojení k proxy %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/ssl.c#l427
 #: ../openconnect-strings.txt:1773
@@ -3401,13 +3400,13 @@ msgstr "statvfs: %s\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/ssl.c#l455
 #: ../openconnect-strings.txt:1776
 msgid "Could not obtain file system ID for passphrase\n"
-msgstr ""
+msgstr "K heslu nebylo možné získat ID souborového systému\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/ssl.c#l466
 #: ../openconnect-strings.txt:1779
 #, c-format
 msgid "Failed to open private key file '%s': %s\n"
-msgstr ""
+msgstr "Selhalo otevření souboru se soukromým klíčem „%s“: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/ssl.c#l494
 #: ../openconnect-strings.txt:1782
@@ -3474,104 +3473,104 @@ msgstr "Neznámá chyba"
 #: ../openconnect-strings.txt:1818
 #, c-format
 msgid "openconnect_fopen_utf8() used with unsupported mode '%s'\n"
-msgstr ""
+msgstr "openconnect_fopen_utf8() použit s nepodporovaným režimem „%s“\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/sspi.c#l198
 #: ../openconnect-strings.txt:1821
 #, c-format
 msgid "SSPI token too large (%ld bytes)\n"
-msgstr ""
+msgstr "Token SSPI je příliš dlouhý (%ld bajtů)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/sspi.c#l212
 #: ../openconnect-strings.txt:1824
 #, c-format
 msgid "Sending SSPI token of %lu bytes\n"
-msgstr ""
+msgstr "Odesílá se token SSPI délky %lu bajtů\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/sspi.c#l217
 #: ../openconnect-strings.txt:1827
 #, c-format
 msgid "Failed to send SSPI authentication token to proxy: %s\n"
-msgstr ""
+msgstr "Selhalo odeslání ověřovacího tokenu SSPI na proxy: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/sspi.c#l225
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/sspi.c#l253
 #: ../openconnect-strings.txt:1831
 #, c-format
 msgid "Failed to receive SSPI authentication token from proxy: %s\n"
-msgstr ""
+msgstr "Selhalo získání ověřovacího tokenu SSPI od proxy: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/sspi.c#l231
 #: ../openconnect-strings.txt:1834
 msgid "SOCKS server reported SSPI context failure\n"
-msgstr ""
+msgstr "Server SOCKS ohlásil selhání kontextu SSPI\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/sspi.c#l235
 #: ../openconnect-strings.txt:1837
 #, c-format
 msgid "Unknown SSPI status response (0x%02x) from SOCKS server\n"
-msgstr ""
+msgstr "Neznámý stavový kód odpovědi SSPI (0x%02x) od serveru SOCKS\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/sspi.c#l257
 #: ../openconnect-strings.txt:1840
 #, c-format
 msgid "Got SSPI token of %lu bytes: %02x %02x %02x %02x\n"
-msgstr ""
+msgstr "Získán token SSPI délky %lu bajtů: %02x %02x %02x %02x\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/sspi.c#l273
 #: ../openconnect-strings.txt:1843
 #, c-format
 msgid "QueryContextAttributes() failed: %lx\n"
-msgstr ""
+msgstr "Volání QueryContextAttributes() selhalo: %lx\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/sspi.c#l309
 #: ../openconnect-strings.txt:1846
 #, c-format
 msgid "EncryptMessage() failed: %lx\n"
-msgstr ""
+msgstr "Volání EncryptMessage() selhalo: %lx\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/sspi.c#l321
 #: ../openconnect-strings.txt:1849
 #, c-format
 msgid "EncryptMessage() result too large (%lu + %lu + %lu)\n"
-msgstr ""
+msgstr "Výsledek volání EncryptMessage() je příliš dlouhý (%lu + %lu + %lu)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/sspi.c#l347
 #: ../openconnect-strings.txt:1852
 #, c-format
 msgid "Sending SSPI protection negotiation of %u bytes\n"
-msgstr ""
+msgstr "Posílá se vyjednání ochrany SSPI v délce %u bajtů\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/sspi.c#l352
 #: ../openconnect-strings.txt:1855
 #, c-format
 msgid "Failed to send SSPI protection response to proxy: %s\n"
-msgstr ""
+msgstr "Selhalo odeslání odpovědi ochrany SSPI na proxy: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/sspi.c#l360
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/sspi.c#l370
 #: ../openconnect-strings.txt:1859
 #, c-format
 msgid "Failed to receive SSPI protection response from proxy: %s\n"
-msgstr ""
+msgstr "Selhalo získání odpovědi ochrany SSPI z proxy: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/sspi.c#l375
 #: ../openconnect-strings.txt:1862
 #, c-format
 msgid "Got SSPI protection response of %d bytes: %02x %02x %02x %02x\n"
-msgstr ""
+msgstr "Získána odpověď ochrany SSPI v délce %d bajtů: %02x %02x %02x %02x\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/sspi.c#l391
 #: ../openconnect-strings.txt:1865
 #, c-format
 msgid "DecryptMessage failed: %lx\n"
-msgstr ""
+msgstr "Volání DecryptMessage() selhalo: %lx\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/sspi.c#l396
 #: ../openconnect-strings.txt:1868
 #, c-format
 msgid "Invalid SSPI protection response from proxy (%lu bytes)\n"
-msgstr ""
+msgstr "Neplatná odpověď ochrany SSPI od proxy (%lu bajtů)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/stoken.c#l77
 #: ../openconnect-strings.txt:1871
@@ -3618,7 +3617,7 @@ msgstr "Inicializace softwarového tokenu byla úspěšná.\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/stoken.c#l185
 #: ../openconnect-strings.txt:1897
 msgid "Enter software token PIN."
-msgstr ""
+msgstr "Zadejte PIN softwarového tokenu."
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/stoken.c#l189
 #: ../openconnect-strings.txt:1900
@@ -3692,7 +3691,7 @@ msgstr "Selhalo nastavení stavu média TAP: %s\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/tun-win32.c#l249
 #: ../openconnect-strings.txt:1936
 msgid "TAP device aborted connectivity. Disconnecting.\n"
-msgstr ""
+msgstr "Zařízení TAP přerušilo spojení. Odpojuje se.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/tun-win32.c#l254
 #: ../openconnect-strings.txt:1939
@@ -3710,7 +3709,7 @@ msgstr "Úplně selhalo čtení z TAP zařízení: %s\n"
 #: ../openconnect-strings.txt:1945
 #, c-format
 msgid "Wrote %ld bytes to tun\n"
-msgstr "Do tun zapsáno %ld bytů\n"
+msgstr "Do tun zapsáno %ld bajtů\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/tun-win32.c#l301
 #: ../openconnect-strings.txt:1948
@@ -3721,7 +3720,7 @@ msgstr "Čeká se na zápis do tun…\n"
 #: ../openconnect-strings.txt:1951
 #, c-format
 msgid "Wrote %ld bytes to tun after waiting\n"
-msgstr "Po čekání zapsáno %ld bytů do tun\n"
+msgstr "Po čekání zapsáno %ld bajtů do tun\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/tun-win32.c#l311
 #: ../openconnect-strings.txt:1954
@@ -3805,35 +3804,30 @@ msgstr ""
 #: ../openconnect-strings.txt:1997
 #, c-format
 msgid "Invalid interface name '%s'; must match 'utun%%d' or 'tun%%d'\n"
-msgstr "Nepatný název rozhraní „%s“; musí být ve tvaru „utun%%d“ nebo „tun%%d“\n"
+msgstr "Nepatný název rozhraní „%s“; musí odpovídat „utun%%d“ nebo „tun%%d“\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/tun.c#l316
 #: ../openconnect-strings.txt:2000
-#, fuzzy, c-format
-#| msgid "Failed to write to SSL socket: %s\n"
+#, c-format
 msgid "Failed to open SYSPROTO_CONTROL socket: %s\n"
-msgstr "Nepodařilo se zapsat do soketu SSL: %s\n"
+msgstr "Selhalo otevření soketu SYSPROTO_CONTROL: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/tun.c#l325
 #: ../openconnect-strings.txt:2003
-#, fuzzy, c-format
-#| msgid "Failed to write config to %s: %s\n"
+#, c-format
 msgid "Failed to query utun control id: %s\n"
-msgstr "Nepodařilo se zapsat nastavení do %s: %s\n"
+msgstr "Selhal dotaz na utun control_id: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/tun.c#l343
 #: ../openconnect-strings.txt:2006
-#, fuzzy
-#| msgid "Failed to open tun device: %s\n"
 msgid "Failed to allocate utun device name\n"
-msgstr "Nepodařilo se otevřít zařízení tun: %s\n"
+msgstr "Nepodařilo se alokovat název zařízení utun\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/tun.c#l354
 #: ../openconnect-strings.txt:2009
-#, fuzzy, c-format
-#| msgid "Failed to connect to host %s\n"
+#, c-format
 msgid "Failed to connect utun unit: %s\n"
-msgstr "Nepodařilo se spojit se s hostitelem %s\n"
+msgstr "Selhalo připojení jednotky utun: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/tun.c#l373
 #: ../openconnect-strings.txt:2012
@@ -3895,25 +3889,25 @@ msgstr "Selhal zápis příchozího paketu: %s\n"
 #: ../openconnect-strings.txt:2042
 #, c-format
 msgid "Failed to open %s: %s\n"
-msgstr ""
+msgstr "Selhalo otevření %s: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/xml.c#l52
 #: ../openconnect-strings.txt:2045
 #, c-format
 msgid "Failed to fstat() %s: %s\n"
-msgstr ""
+msgstr "Selhalo volání fstat() %s: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/xml.c#l62
 #: ../openconnect-strings.txt:2048
 #, c-format
 msgid "Failed to allocate %d bytes for %s\n"
-msgstr ""
+msgstr "Selhala alokace %d bajtů pro %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/xml.c#l70
 #: ../openconnect-strings.txt:2051
 #, c-format
 msgid "Failed to read %s: %s\n"
-msgstr ""
+msgstr "Selhalo čtení %s: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/xml.c#l124
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/xml.c#l148
@@ -3960,64 +3954,58 @@ msgstr ""
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/yubikey.c#l80
 #: ../openconnect-strings.txt:2076
-#, fuzzy, c-format
-#| msgid "Failed to open %s for write: %s\n"
+#, c-format
 msgid "Failed to send \"%s\" to ykneo-oath applet: %s\n"
-msgstr "Nepodařilo se otevřít %s pro zápis: %s\n"
+msgstr "Nepodařilo se odeslat „%s“ do apletu ykneo-oath: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/yubikey.c#l87
 #: ../openconnect-strings.txt:2079
 #, c-format
 msgid "Invalid short response to \"%s\" from ykneo-oath applet\n"
-msgstr ""
+msgstr "Neplatná krátká odpověď na „%s“ od apletu ykneo-oath\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/yubikey.c#l106
 #: ../openconnect-strings.txt:2082
-#, fuzzy, c-format
-#| msgid "Failed to write config to %s: %s\n"
+#, c-format
 msgid "Failure response to \"%s\": %04x\n"
-msgstr "Nepodařilo se zapsat nastavení do %s: %s\n"
+msgstr "Selhala odpověď „%s“: %04x\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/yubikey.c#l158
 #: ../openconnect-strings.txt:2085
 msgid "select applet command"
-msgstr ""
+msgstr "příkaz volby apletu"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/yubikey.c#l169
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/yubikey.c#l368
 #: ../openconnect-strings.txt:2089
 msgid "Unrecognised response from ykneo-oath applet\n"
-msgstr ""
+msgstr "Nerozpoznaná odpověď od apletu ykneo-oath\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/yubikey.c#l185
 #: ../openconnect-strings.txt:2092
 #, c-format
 msgid "Found ykneo-oath applet v%d.%d.%d.\n"
-msgstr ""
+msgstr "Nalezen aplet ykneo-oath v%d.%d.%d.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/yubikey.c#l206
 #: ../openconnect-strings.txt:2095
-#, fuzzy
-#| msgid "PIN required for %s"
 msgid "PIN required for Yubikey OATH applet"
-msgstr "Požadován PIN pro %s"
+msgstr "Aplet Yubikey OATH vyžaduje PIN"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/yubikey.c#l211
 #: ../openconnect-strings.txt:2098
 msgid "Yubikey PIN:"
-msgstr ""
+msgstr "Yubikey PIN:"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/yubikey.c#l233
 #: ../openconnect-strings.txt:2101
-#, fuzzy
-#| msgid "Failed to parse server response\n"
 msgid "Failed to calculate Yubikey unlock response\n"
-msgstr "Nepodařilo se zpracovat odpověď serveru\n"
+msgstr "Nepodařilo se vypočítat odemykací odpověď Yubikey\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/yubikey.c#l249
 #: ../openconnect-strings.txt:2104
 msgid "unlock command"
-msgstr ""
+msgstr "příkaz odemčení"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/yubikey.c#l286
 #: ../openconnect-strings.txt:2107
@@ -4028,178 +4016,86 @@ msgstr "Vytvoření kontextu PC/SC selhalo: %s\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/yubikey.c#l291
 #: ../openconnect-strings.txt:2110
 msgid "Established PC/SC context\n"
-msgstr ""
+msgstr "Vytvořen kontext PCS/SC\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/yubikey.c#l297
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/yubikey.c#l309
 #: ../openconnect-strings.txt:2114
-#, fuzzy, c-format
-#| msgid "Failed to read from SSL socket: %s\n"
+#, c-format
 msgid "Failed to query reader list: %s\n"
-msgstr "Nepodařilo se číst ze soketu SSL: %s\n"
+msgstr "Selhal dotaz do seznamu čteček: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/yubikey.c#l336
 #: ../openconnect-strings.txt:2117
-#, fuzzy, c-format
-#| msgid "Failed to change to CSD home directory '%s': %s\n"
+#, c-format
 msgid "Failed to connect to PC/SC reader '%s': %s\n"
-msgstr "Nepodařilo se provést změnu na domovskou složku CSD „%s“: %s\n"
+msgstr "Selhalo připojení k čtečce PC/SC „%s“: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/yubikey.c#l341
 #: ../openconnect-strings.txt:2120
-#, fuzzy, c-format
-#| msgid "Connected to HTTPS on %s\n"
+#, c-format
 msgid "Connected PC/SC reader '%s'\n"
-msgstr "Spojeno s HTTPS na %s\n"
+msgstr "Připojena čtečka PC/SC „%s“\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/yubikey.c#l346
 #: ../openconnect-strings.txt:2123
-#, fuzzy, c-format
-#| msgid "Failed to obtain TAP driver version: %s\n"
+#, c-format
 msgid "Failed to obtain exclusive access to reader '%s': %s\n"
-msgstr "Nepodařilo se získat verzi ovladače TAP: %s\n"
+msgstr "Selhal pokus o získání výhradního přístupu ke čtečce „%s“: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/yubikey.c#l356
 #: ../openconnect-strings.txt:2126
 msgid "list keys command"
-msgstr ""
+msgstr "příkaz seznamu klíčů"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/yubikey.c#l389
 #: ../openconnect-strings.txt:2129
 #, c-format
 msgid "Found %s/%s key '%s' on '%s'\n"
-msgstr ""
+msgstr "Nalezeno %s/%s klíčů „%s“ v „%s“\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/yubikey.c#l406
 #: ../openconnect-strings.txt:2132
 #, c-format
 msgid ""
 "Token '%s' not found on Yubikey '%s'. Searching for another Yubikey...\n"
-msgstr ""
+msgstr "Token „%s“ nebyl na Yubikey „%s“ nalezen. Hledá se jiný Yubikey…\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/yubikey.c#l455
 #: ../openconnect-strings.txt:2136
-#, fuzzy
-#| msgid "Server is rejecting the soft token; switching to manual entry\n"
 msgid "Server is rejecting the Yubikey token; switching to manual entry\n"
-msgstr "Server odmítá softwarový token; přepíná se na ruční vstup\n"
+msgstr "Server odmítá token Yubikey; přepíná se na ruční vstup\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/yubikey.c#l510
 #: ../openconnect-strings.txt:2139
-#, fuzzy
-#| msgid "Generating RSA token code\n"
 msgid "Generating Yubikey token code\n"
-msgstr "Generuje se kód tokenu RSA\n"
+msgstr "Generuje se kód tokenu Yubikey\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/yubikey.c#l515
 #: ../openconnect-strings.txt:2142
-#, fuzzy, c-format
-#| msgid "Failed to assign policy to key: %s\n"
+#, c-format
 msgid "Failed to obtain exclusive access to Yubikey: %s\n"
-msgstr "Selhalo přiřazení politiky klíči: %s\n"
+msgstr "Selhal pokus o získání výhradního přístupu k Yubikey: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/yubikey.c#l561
 #: ../openconnect-strings.txt:2145
 msgid "calculate command"
-msgstr ""
+msgstr "příkaz výpočtu"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/yubikey.c#l569
 #: ../openconnect-strings.txt:2148
 msgid "Unrecognised response from Yubikey when generating tokencode\n"
+msgstr "Nerozpoznaná odpověď od Yubikey při generování kódu tokenu\n"
+
+msgid "SHA1 fingerprint: %s\n"
+msgstr "Otisk prstu SHA1: %s\n"
+
+msgid ""
+"Try the --no-xmlpost option. If that works, please report as an OpenConnect "
+"bug\n"
 msgstr ""
+"Zkuste volbu --no-xmlpost. Pokud funguje, nahlaste to prosím jako chybu "
+"OpenConnect\n"
 
-#~ msgid "SHA1 fingerprint: %s\n"
-#~ msgstr "Otisk prstu SHA1: %s\n"
-
-#~ msgid "Extra cert from PKCS#12: '%s'\n"
-#~ msgstr "Zvláštní osvědčení od PKCS#12: „%s“\n"
-
-#~ msgid "Failed to reload X509 cert for expiry check\n"
-#~ msgstr "Nepodařilo se znovunahrát osvědčení X509 pro prověření vypršení\n"
-
-#~ msgid ""
-#~ "Try the --no-xmlpost option. If that works, please report as an "
-#~ "OpenConnect bug\n"
-#~ msgstr ""
-#~ "Zkuste volbu --no-xmlpost. Pokud funguje, nahlaste to prosím jako chybu "
-#~ "OpenConnect\n"
-
-#~ msgid "Parse PKCS#12 failed (wrong passphrase?)\n"
-#~ msgstr "Zpracování PKCS#12 se nezdařilo (chybné heslo?)\n"
-
-#~ msgid "Ignoring non-matching TAP interface \"%s\""
-#~ msgstr "Neodpovídající rozhraní TAP „%s“ je ignorováno"
-
-#~ msgid "Unexpected continuation line after CONNECT response: '%s'\n"
-#~ msgstr "Neočekávaný pokračovací řádek po odpovědi SPOJENÍ: „%s“\n"
-
-#~ msgid "Failed to read proxy response\n"
-#~ msgstr "Nepodařilo se přečíst odpověď proxy\n"
-
-#~ msgid "Proxy CONNECT request failed: %s\n"
-#~ msgstr "Požadavek na SPOJENÍ proxy se nezdařil: %s\n"
-
-#~ msgid "Failed to parse proxy response '%s'\n"
-#~ msgstr "Nepodařilo se zpracovat odpověď proxy „%s“\n"
-
-#~ msgid "Error fetching proxy response\n"
-#~ msgstr "Chyba při natahování spojení proxy\n"
-
-#~ msgid "Caught signal: %s\n"
-#~ msgstr "Zachycen signál: %s\n"
-
-#~ msgid ""
-#~ "WARNING: This version of openconnect is %s but\n"
-#~ " the libopenconnect library is %s\n"
-#~ msgstr ""
-#~ "POZOR: openconnect je ve verzi %s,\n"
-#~ "ale verze knihovny libopenconnect je %s\n"
-
-#~ msgid ""
-#~ "For assistance with OpenConnect, please see the web page at\n"
-#~ " http://www.infradead.org/openconnect/mail.html\n"
-#~ msgstr ""
-#~ "Pro pomoc s OpenConnect se obraťe na webové stránky\n"
-#~ " http://www.infradead.org/openconnect/mail.html\n"
-
-#~ msgid "Failed to read XML config file: %s\n"
-#~ msgstr "Selhalo zpracování souboru s nastavením ve formátu XML: %s \n"
-
-#~ msgid "Failed to allocate %lu bytes for XML config file\n"
-#~ msgstr ""
-#~ "Nepodařilo se alokovat %lu bytů paměti pro soubor s nastavením ve formátu "
-#~ "XML\n"
-
-#~ msgid "Failed to fstat() XML config file: %s\n"
-#~ msgstr ""
-#~ "Selhala funkce fstat() nad souborem s nastavením ve formátu XML: %s\n"
-
-#~ msgid "Failed to open XML config file: %s\n"
-#~ msgstr "Selhalo otevření souboru s nastavením ve formátu XML: %s\n"
-
-#~ msgid "Failed to write to TAP device: %lx\n"
-#~ msgstr "Nepodařilo se zapsat do zařízení TAP: %lx\n"
-
-#~ msgid "Failed to complete read from TAP device: %lx\n"
-#~ msgstr "Úplně selhalo čtení z TAP zařízení: %lx\n"
-
-#~ msgid "Failed to read from TAP device: %lx\n"
-#~ msgstr "Nepodařilo se číst ze zařízení TAP:  %lx\n"
-
-#~ msgid "Failed to set TAP media status: %lx\n"
-#~ msgstr "Selhalo nastavení stavu média TAP: %lx\n"
-
-#~ msgid "Failed to set TAP IP addresses: %lx\n"
-#~ msgstr "Selhalo nastavení IP adresy TAP: %lx\n"
-
-#~ msgid "Failed to obtain TAP driver version: %lx\n"
-#~ msgstr "Nepodařilo se získat verzi ovladače TAP: %lx\n"
-
-#~ msgid "Read PKCS#12 failed\n"
-#~ msgstr "Čtení PKCS#12 se nezdařilo\n"
-
-#~ msgid "WaitForMultipleObjects failed: %lx\n"
-#~ msgstr "Funkce WaitForMultipleObjects selhala: %lx\n"
-
-#~ msgid "Failed to import PKCS#12 file: %s\n"
-#~ msgstr "Selhal import souboru PKCS#12: %s\n"
+msgid "Caught signal: %s\n"
+msgstr "Zachycen signál: %s\n"

@@ -1,4 +1,17 @@
 =======================================================
+network-manager-openconnect-0.9.10.2
+Overview of changes since network-manager-openconnect-0.9.10
+=======================================================
+
+This is a new stable release of network-manager-openconnect.  Notable changes include:
+
+* Updated translations
+* HOTP (HMAC-based One Time Password) token support has been added
+* Support for libopenconnect.so.4 has been added
+* Support for libopenconnect.so.1 has been dropped
+
+
+=======================================================
 network-manager-openconnect-0.9.10
 Overview of changes since network-manager-openconnect-0.9.8
 =======================================================

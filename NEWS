@@ -1,4 +1,14 @@
 =======================================================
+network-manager-openconnect-1.0.2
+Overview of changes since network-manager-openconnect-1.0
+=======================================================
+
+This is a new stable release of network-manager-openconnect.  Notable changes include:
+
+* Added Bosnian translation
+* Updated Basque, German, Czech, Serbian, Indonesian, Swedish and Hungarian translations
+
+=======================================================
 network-manager-openconnect-1.0
 Overview of changes since network-manager-openconnect-0.9.10
 =======================================================

@@ -1,5 +1,8 @@
 plugindir = $(libdir)/NetworkManager
-plugin_LTLIBRARIES = libnm-openconnect-properties.la libnm-openconnect-properties-old.la
+plugin_LTLIBRARIES = libnm-openconnect-properties.la
+if WITH_LIBNM_GLIB
+plugin_LTLIBRARIES += libnm-openconnect-properties-old.la
+endif
 
 libnm_openconnect_properties_la_SOURCES = \
 	auth-helpers.c \

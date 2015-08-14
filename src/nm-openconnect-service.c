@@ -596,9 +596,18 @@ nm_openconnect_plugin_class_init (NMOpenconnectPluginClass *openconnect_class)
 NMOpenconnectPlugin *
 nm_openconnect_plugin_new (void)
 {
-	return (NMOpenconnectPlugin *) g_object_new (NM_TYPE_OPENCONNECT_PLUGIN,
-	                                             NM_VPN_SERVICE_PLUGIN_DBUS_SERVICE_NAME, NM_DBUS_SERVICE_OPENCONNECT,
-	                                             NULL);
+	NMOpenconnectPlugin *plugin;
+	GError *error = NULL;
+
+	plugin = (NMOpenconnectPlugin *) g_initable_new (NM_TYPE_OPENCONNECT_PLUGIN, NULL, &error,
+	                                                 NM_VPN_SERVICE_PLUGIN_DBUS_SERVICE_NAME, NM_DBUS_SERVICE_OPENCONNECT,
+	                                                 NULL);
+	if (!plugin) {
+		g_warning ("Failed to initialize a plugin instance: %s", error->message);
+		g_error_free (error);
+	}
+
+	return plugin;
 }
 
 static void

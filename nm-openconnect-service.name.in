@@ -4,8 +4,8 @@ service=org.freedesktop.NetworkManager.openconnect
 program=@LIBEXECDIR@/nm-openconnect-service
 
 [libnm]
-plugin=@PLUGINDIR@/libnm-openconnect-properties
+plugin=@PLUGINDIR@/libnm-vpn-plugin-openconnect
 
 [GNOME]
 auth-dialog=@LIBEXECDIR@/nm-openconnect-auth-dialog
-properties=@PLUGINDIR@/libnm-openconnect-properties-old
+properties=@PLUGINDIR@/libnm-openconnect-properties

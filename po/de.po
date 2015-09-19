@@ -11,16 +11,16 @@ msgstr ""
 "Project-Id-Version: NetworkManager-openconnect\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=NetworkManager&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-01-13 11:13+0000\n"
-"PO-Revision-Date: 2015-01-27 21:13+0100\n"
-"Last-Translator: Benjamin Steinwender <b@stbe.at>\n"
+"POT-Creation-Date: 2015-09-02 11:13+0000\n"
+"PO-Revision-Date: 2015-09-05 22:07+0100\n"
+"Last-Translator: Christian Kirbach <christian.kirbach@gmail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.7.1\n"
+"X-Generator: Poedit 1.7.5\n"
 
 #: ../auth-dialog/main.c:660
 #, c-format
@@ -2906,20 +2906,18 @@ msgstr "Allgemeiner Fehler in liboath\n"
 #: ../openconnect-strings.txt:1505
 #, fuzzy
 msgid "Yubikey token not found\n"
-msgstr "Yubikey Token konnte nicht gefunden werden\n"
+msgstr "Yubikey-Token nicht gefunden\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l1947
 #: ../openconnect-strings.txt:1508
-#, fuzzy
 msgid "OpenConnect was not built with Yubikey support\n"
-msgstr "OpenConnect wurde ohne Unterstützung für libstoken erstellt\n"
+msgstr "OpenConnect wurde ohne Unterstützung für Yubikey erstellt\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l1950
 #: ../openconnect-strings.txt:1511
-#, fuzzy, c-format
-#| msgid "general failure"
+#, c-format
 msgid "General Yubikey failure: %s\n"
-msgstr "Allgemeiner Fehler in libstoken\n"
+msgstr "Allgemeiner Fehler in Yubikey: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/mainloop.c#l182
 #: ../openconnect-strings.txt:1514
@@ -3348,7 +3346,7 @@ msgstr "getaddrinfo für Rechner »%s« gescheitert: %s\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/ssl.c#l342
 #: ../openconnect-strings.txt:1752
 msgid "Reconnecting to DynDNS server using previously cached IP address\n"
-msgstr ""
+msgstr "Neue Verbindung zum DynDNS-Server mit zuvor gesicherter IP-Adresse\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/ssl.c#l273
 #: ../openconnect-strings.txt:1755
@@ -3563,7 +3561,7 @@ msgstr "DecryptMessage schlug fehl: %lx\n"
 #: ../openconnect-strings.txt:1868
 #, c-format
 msgid "Invalid SSPI protection response from proxy (%lu bytes)\n"
-msgstr ""
+msgstr "Ungültige SSPI-Schutzantwort von Proxy (%lu Byte)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/stoken.c#l77
 #: ../openconnect-strings.txt:1871
@@ -3819,10 +3817,9 @@ msgstr "Öffnen des tun-Geräts ist gescheitert: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/tun.c#l354
 #: ../openconnect-strings.txt:2009
-#, fuzzy, c-format
-#| msgid "Failed to connect to host %s\n"
+#, c-format
 msgid "Failed to connect utun unit: %s\n"
-msgstr "Verbindung zum Server %s fehlgeschlagen\n"
+msgstr "Verbindung zur utun-Einheit fehlgeschlagen: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/tun.c#l373
 #: ../openconnect-strings.txt:2012
@@ -4030,10 +4027,9 @@ msgstr "Anfragen der Leserliste ist fehlgeschlagen: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/yubikey.c#l336
 #: ../openconnect-strings.txt:2117
-#, fuzzy, c-format
-#| msgid "Failed to change to CSD home directory '%s': %s\n"
+#, c-format
 msgid "Failed to connect to PC/SC reader '%s': %s\n"
-msgstr "Wechseln in den Ordner »%s« der CSD-Datei schlug fehl: %s\n"
+msgstr "Verbindung zum PC/SC-Leser »%s« fehlgeschlagen: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/yubikey.c#l341
 #: ../openconnect-strings.txt:2120
@@ -4067,10 +4063,8 @@ msgstr ""
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/yubikey.c#l455
 #: ../openconnect-strings.txt:2136
-#, fuzzy
-#| msgid "Server is rejecting the soft token; switching to manual entry\n"
 msgid "Server is rejecting the Yubikey token; switching to manual entry\n"
-msgstr "Server hat den Soft-Token abgewiesen, es wird zur manuellen Eingabe gewechselt\n"
+msgstr "Server hat den Yubikey-Token abgewiesen, es wird zur manuellen Eingabe gewechselt\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/yubikey.c#l510
 #: ../openconnect-strings.txt:2139

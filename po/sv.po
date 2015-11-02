@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: network-manager-openconnect\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=NetworkManager&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-05-01 22:59+0000\n"
-"PO-Revision-Date: 2015-03-21 11:16+0100\n"
-"Last-Translator: Josef Andersson <josef.andersson@fripost.org>\n"
+"POT-Creation-Date: 2015-10-26 13:49+0000\n"
+"PO-Revision-Date: 2015-11-03 00:53+0100\n"
+"Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.8.6\n"
 "X-Project-Style: gnome\n"
 
 #: ../auth-dialog/main.c:660
@@ -490,10 +490,9 @@ msgstr "dekomprimering misslyckades\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/cstp.c#l664
 #: ../openconnect-strings.txt:152
-#, fuzzy, c-format
-#| msgid "Received uncompressed data packet of %d bytes\n"
+#, c-format
 msgid "Received compressed data packet of %ld bytes\n"
-msgstr "Mottog dekomprimerade datapaket av %d byte\n"
+msgstr "Mottog komprimerat datapaket på %ld byte\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/cstp.c#l683
 #: ../openconnect-strings.txt:155
@@ -612,10 +611,9 @@ msgstr "dekomprimering misslyckades %d\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/cstp.c#l1010
 #: ../openconnect-strings.txt:218
-#, fuzzy, c-format
-#| msgid "Sending uncompressed data packet of %d bytes\n"
+#, c-format
 msgid "Sending compressed data packet of %d bytes\n"
-msgstr "Skickar okomprimerade datapaket på %d byte\n"
+msgstr "Skickar komprimerat datapaket på %d byte\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/cstp.c#l1022
 #: ../openconnect-strings.txt:221
@@ -764,30 +762,25 @@ msgstr "Ingen DTLS när ansluten via proxy\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/dtls.c#l504
 #: ../openconnect-strings.txt:301
-#, fuzzy
-#| msgid "Open UDP socket"
 msgid "Open UDP socket for DTLS:"
-msgstr "Öppna UDP-uttag (socket)"
+msgstr "Öppna UDP-uttag för DTLS:"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/dtls.c#l535
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/dtls.c#l664
 #: ../openconnect-strings.txt:305
-#, fuzzy, c-format
-#| msgid "Unknown protocol family %d. Cannot use UDP transport\n"
+#, c-format
 msgid "Unknown protocol family %d. Cannot do DTLS\n"
-msgstr "Okänd protokollfamilj %d. Kan inte skapa UDP-transport\n"
+msgstr "Okänd protokollfamilj %d. Kan inte utföra DTLS\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/dtls.c#l543
 #: ../openconnect-strings.txt:308
-#, fuzzy
-#| msgid "Bind UDP socket"
 msgid "Bind UDP socket for DTLS"
-msgstr "Bind UDP-uttag (socket)"
+msgstr "Bind UDP-uttag för DTLS"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/dtls.c#l550
 #: ../openconnect-strings.txt:311
 msgid "UDP (DTLS) connect:\n"
-msgstr ""
+msgstr "anslutning till UDP (DTLS):\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/dtls.c#l616
 #: ../openconnect-strings.txt:314
@@ -2541,10 +2534,8 @@ msgstr "(OBS: libstoken (RSA SecurID) inaktiverat i detta bygge)"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l761
 #: ../openconnect-strings.txt:1301
-#, fuzzy
-#| msgid "(NOTE: libproxy disabled in this build)"
 msgid "(NOTE: liboath (TOTP,HOTP) disabled in this build)"
-msgstr "(OBS: libproxy inaktiverad i detta bygge)"
+msgstr "(OBS: liboath (TOTP,HOTP) inaktiverat i detta bygge)"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l764
 #: ../openconnect-strings.txt:1304
@@ -2736,10 +2727,9 @@ msgstr "Misslyckades med att ställa in DTLS, använder SSL istället\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l1410
 #: ../openconnect-strings.txt:1409
-#, fuzzy, c-format
-#| msgid "Connected %s as %s%s%s, using %s%s\n"
+#, c-format
 msgid "Connected %s as %s%s%s, using %s\n"
-msgstr "Anslöt %s som %s%s%s, använder %s%s\n"
+msgstr "Anslöt %s som %s%s%s, använder %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/main.c#l1420
 #: ../openconnect-strings.txt:1412
@@ -3009,10 +2999,9 @@ msgstr "Genererar OATH TOTP tokenkod\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/oath.c#l301
 #: ../openconnect-strings.txt:1564
-#, fuzzy, c-format
-#| msgid "Generating OATH TOTP token code\n"
+#, c-format
 msgid "Unable to generate OATH TOTP token code: %s\n"
-msgstr "Genererar OATH TOTP tokenkod\n"
+msgstr "Kan inte generera OATH TOTP tokenkod: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/oath.c#l405
 #: ../openconnect-strings.txt:1567
@@ -3021,10 +3010,9 @@ msgstr "Genererar OATH HOTP tokenkod\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/oath.c#l422
 #: ../openconnect-strings.txt:1570
-#, fuzzy, c-format
-#| msgid "Generating OATH HOTP token code\n"
+#, c-format
 msgid "Unable to generate OATH HOTP token code: %s\n"
-msgstr "Genererar OATH HOTP tokenkod\n"
+msgstr "Kan inte generera OATH HOTP tokenkod: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/openconnect-internal.h#l768
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/openconnect-internal.h#l776
@@ -3329,15 +3317,13 @@ msgstr "Uttagsanslutning (socket connect) avbruten\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/ssl.c#l154
 #: ../openconnect-strings.txt:1739
-#, fuzzy, c-format
-#| msgid "Failed to reconnect to proxy %s\n"
+#, c-format
 msgid "Failed to reconnect to proxy %s\n"
 msgstr "Misslyckades med att återansluta till proxy %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/ssl.c#l158
 #: ../openconnect-strings.txt:1742
-#, fuzzy, c-format
-#| msgid "Failed to connect to host %s\n"
+#, c-format
 msgid "Failed to reconnect to host %s\n"
 msgstr "Misslyckades med att ansluta till värd %s\n"
 
@@ -3795,10 +3781,9 @@ msgstr "Misslyckades med att öppna tun-enhet: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/tun.c#l243
 #: ../openconnect-strings.txt:1994
-#, fuzzy, c-format
-#| msgid "fork failed: %s\n"
+#, c-format
 msgid "TUNSETIFF failed: %s\n"
-msgstr "gren (fork) misslyckades: %s\n"
+msgstr "TUNSETIFF misslyckades: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/216939c93f:/tun.c#l307
 #: ../openconnect-strings.txt:1997

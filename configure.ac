@@ -1,6 +1,9 @@
 AC_PREREQ(2.52)
 
-AC_INIT(NetworkManager-openconnect, 1.0.5, dcbw@redhat.com, NetworkManager-openconnect)
+AC_INIT(NetworkManager-openconnect,
+        1.0.5,
+        https://bugzilla.gnome.org/enter_bug.cgi?product=NetworkManager,
+        NetworkManager-openconnect)
 AM_INIT_AUTOMAKE([subdir-objects no-dist-gzip dist-bzip2])
 AM_MAINTAINER_MODE
 

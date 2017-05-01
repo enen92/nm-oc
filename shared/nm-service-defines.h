@@ -47,5 +47,6 @@
 #define NM_OPENCONNECT_KEY_CSD_WRAPPER "csd_wrapper"
 #define NM_OPENCONNECT_KEY_TOKEN_MODE "stoken_source"
 #define NM_OPENCONNECT_KEY_TOKEN_SECRET "stoken_string"
+#define NM_OPENCONNECT_KEY_REPORTED_OS "reported_os"
 
 #endif /* __NM_SERVICE_DEFINES_H__ */

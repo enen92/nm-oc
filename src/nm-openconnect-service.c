@@ -93,6 +93,7 @@ static const ValidProperty valid_properties[] = {
 	{ NM_OPENCONNECT_KEY_CSD_WRAPPER, G_TYPE_STRING, 0, 0 },
 	{ NM_OPENCONNECT_KEY_TOKEN_MODE,  G_TYPE_STRING, 0, 0 },
 	{ NM_OPENCONNECT_KEY_TOKEN_SECRET, G_TYPE_STRING, 0, 0 },
+	{ NM_OPENCONNECT_KEY_REPORTED_OS, G_TYPE_STRING, 0, 0 },
 	{ NULL,                           G_TYPE_NONE, 0, 0 }
 };
 

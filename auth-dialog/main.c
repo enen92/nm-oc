@@ -1025,6 +1025,7 @@ static int get_config (auth_ui_data *ui_data,
 	char *csd;
 	char *sslkey, *cert;
 	char *csd_wrapper;
+	char *reported_os;
 	char *pem_passphrase_fsid;
 	char *cafile;
 	char *token_mode;
@@ -1094,6 +1095,10 @@ static int get_config (auth_ui_data *ui_data,
 
 		openconnect_setup_csd(vpninfo, getuid(), 1, OC3DUP (csd_wrapper));
 	}
+
+	reported_os = g_hash_table_lookup (options, NM_OPENCONNECT_KEY_REPORTED_OS);
+	if (reported_os && reported_os[0])
+		openconnect_set_reported_os(vpninfo, reported_os);
 
 	proxy = g_hash_table_lookup (options, NM_OPENCONNECT_KEY_PROXY);
 	if (proxy && proxy[0] && openconnect_set_http_proxy(vpninfo, OC3DUP (proxy)))

@@ -367,36 +367,37 @@ notify_plugin_info_set (NMVpnEditorPlugin *plugin,
 
 	g_strfreev (priv->supported_protocols);
 
+	{
 #if OPENCONNECT_CHECK_VER(5,5)
-	struct oc_vpn_proto *protos, *p;
+		struct oc_vpn_proto *protos, *p;
 
-	if ((i = openconnect_get_supported_protocols(&protos)) < 0)
-		priv->supported_protocols = g_new0(gchar *, 1);
-	else {
-		priv->supported_protocols = g_new0(gchar *, i+1);
-		for (i=0, p=protos; p && p->name; p++) {
-			priv->supported_protocols[i] = g_strdup(p->name);
+		if ((i = openconnect_get_supported_protocols(&protos)) < 0)
+			priv->supported_protocols = g_new0(gchar *, 1);
+		else {
+			priv->supported_protocols = g_new0(gchar *, i+1);
+			for (i=0, p=protos; p && p->name; p++) {
+				priv->supported_protocols[i] = g_strdup(p->name);
+			}
+			openconnect_free_supported_protocols(protos);
 		}
-		openconnect_free_supported_protocols(protos);
-	}
-
 #else
-	const char *supported_protocols = nm_vpn_plugin_info_lookup_property (plugin_info, "openconnect", "supported-protocols");
+		const char *supported_protocols = nm_vpn_plugin_info_lookup_property (plugin_info, "openconnect", "supported-protocols");
 
-	priv->supported_protocols = supported_protocols
-	    ? g_strsplit_set (supported_protocols, ",", -1)
-	    : g_new0 (char *, 1);
+		priv->supported_protocols = supported_protocols
+		    ? g_strsplit_set (supported_protocols, ",", -1)
+		    : g_new0 (char *, 1);
 
-	/*remove empty entries and whitespace */
-	for (i = 0, j = 0; priv->supported_protocols[j]; j++) {
-		g_strstrip (priv->supported_protocols[j]);
-		if (priv->supported_protocols[j][0] == '\0')
-			g_free (priv->supported_protocols[j]);
-		else
-			priv->supported_protocols[i++] = priv->supported_protocols[j];
-	}
-	priv->supported_protocols[i] = NULL;
+		/*remove empty entries and whitespace */
+		for (i = 0, j = 0; priv->supported_protocols[j]; j++) {
+			g_strstrip (priv->supported_protocols[j]);
+			if (priv->supported_protocols[j][0] == '\0')
+				g_free (priv->supported_protocols[j]);
+			else
+				priv->supported_protocols[i++] = priv->supported_protocols[j];
+		}
+		priv->supported_protocols[i] = NULL;
 #endif
+	}
 }
 
 static char **

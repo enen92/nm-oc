@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: network-manager-openconnect\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-21 17:07+0200\n"
-"PO-Revision-Date: 2017-05-21 17:08+0200\n"
+"POT-Creation-Date: 2017-07-02 17:58+0200\n"
+"PO-Revision-Date: 2017-07-02 17:59+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -66,7 +66,7 @@ msgstr "<b>Certyfikat może być nieprawidłowy lub niezaufany.</b>\n"
 msgid "<b>Reason: "
 msgstr "<b>Przyczyna: "
 
-#: ../auth-dialog/main.c:814 ../auth-dialog/main.c:1566
+#: ../auth-dialog/main.c:814 ../auth-dialog/main.c:1571
 msgid "_Cancel"
 msgstr "_Anuluj"
 
@@ -78,39 +78,39 @@ msgstr "Wiem, co robię"
 msgid "Connect anyway"
 msgstr "Połącz mimo to"
 
-#: ../auth-dialog/main.c:1489
+#: ../auth-dialog/main.c:1494
 msgid "_Close"
 msgstr "Za_mknij"
 
-#: ../auth-dialog/main.c:1506
+#: ../auth-dialog/main.c:1511
 msgid "VPN host"
 msgstr "Komputer VPN"
 
-#: ../auth-dialog/main.c:1517
+#: ../auth-dialog/main.c:1522
 msgid "C_onnect"
 msgstr "P_ołącz"
 
-#: ../auth-dialog/main.c:1524
+#: ../auth-dialog/main.c:1529
 msgid "Automatically start connecting next time"
 msgstr "Automatyczne rozpoczynanie połączenie następnym razem"
 
-#: ../auth-dialog/main.c:1543
+#: ../auth-dialog/main.c:1548
 msgid "Select a host to fetch the login form"
 msgstr "Wybór komputera, z którego pobrać login"
 
-#: ../auth-dialog/main.c:1548
+#: ../auth-dialog/main.c:1553
 msgid "Contacting host, please wait…"
 msgstr "Łączenie się z komputerem, proszę czekać…"
 
-#: ../auth-dialog/main.c:1560
+#: ../auth-dialog/main.c:1565
 msgid "_Login"
 msgstr "Za_loguj"
 
-#: ../auth-dialog/main.c:1572
+#: ../auth-dialog/main.c:1577
 msgid "Save passwords"
 msgstr "Zapisywanie haseł"
 
-#: ../auth-dialog/main.c:1580
+#: ../auth-dialog/main.c:1585
 msgid "Log"
 msgstr "Dziennik"
 
@@ -163,60 +163,64 @@ msgid "CSD _Wrapper Script:"
 msgstr "Skrypt _wrappera CSD:"
 
 #: ../properties/nm-openconnect-dialog.ui.h:9
+msgid "Reported OS:"
+msgstr "Zgłaszany system operacyjny:"
+
+#: ../properties/nm-openconnect-dialog.ui.h:10
 msgid "Certificate Authentication"
 msgstr "Uwierzytelnianie certyfikatu"
 
-#: ../properties/nm-openconnect-dialog.ui.h:10
+#: ../properties/nm-openconnect-dialog.ui.h:11
 msgid "_User Certificate:"
 msgstr "Certyfikat _użytkownika:"
 
-#: ../properties/nm-openconnect-dialog.ui.h:11
+#: ../properties/nm-openconnect-dialog.ui.h:12
 msgid "Private _Key:"
 msgstr "_Klucz prywatny:"
 
-#: ../properties/nm-openconnect-dialog.ui.h:12
+#: ../properties/nm-openconnect-dialog.ui.h:13
 msgid "Use _FSID for key passphrase"
 msgstr "Użycie _FSID dla hasła klucza"
 
-#: ../properties/nm-openconnect-dialog.ui.h:13
+#: ../properties/nm-openconnect-dialog.ui.h:14
 msgid "Prevent user from manually accepting invalid certificates"
 msgstr ""
 "Uniemożliwienie użytkownikowi ręcznego przyjmowania nieprawidłowych "
 "certyfikatów"
 
-#: ../properties/nm-openconnect-dialog.ui.h:14
+#: ../properties/nm-openconnect-dialog.ui.h:15
 msgid "Software Token Authentication"
 msgstr "Uwierzytelnianie tokenem programowym"
 
-#: ../properties/nm-openconnect-dialog.ui.h:15
+#: ../properties/nm-openconnect-dialog.ui.h:16
 msgid "Token _Mode:"
 msgstr "_Tryb tokena:"
 
-#: ../properties/nm-openconnect-dialog.ui.h:16
+#: ../properties/nm-openconnect-dialog.ui.h:17
 msgid "Token Sec_ret:"
 msgstr "_Hasło tokena:"
 
-#: ../properties/nm-openconnect-dialog.ui.h:17
+#: ../properties/nm-openconnect-dialog.ui.h:18
 msgid "Disabled"
 msgstr "Wyłączone"
 
-#: ../properties/nm-openconnect-dialog.ui.h:18
+#: ../properties/nm-openconnect-dialog.ui.h:19
 msgid "RSA SecurID — read from ~/.stokenrc"
 msgstr "SecurID RSA — odczytywanie z ~/.stokenrc"
 
-#: ../properties/nm-openconnect-dialog.ui.h:19
+#: ../properties/nm-openconnect-dialog.ui.h:20
 msgid "RSA SecurID — manually entered"
 msgstr "SecurID RSA — wprowadzane ręcznie"
 
-#: ../properties/nm-openconnect-dialog.ui.h:20
+#: ../properties/nm-openconnect-dialog.ui.h:21
 msgid "TOTP — manually entered"
 msgstr "TOTP — wprowadzane ręcznie"
 
-#: ../properties/nm-openconnect-dialog.ui.h:21
+#: ../properties/nm-openconnect-dialog.ui.h:22
 msgid "HOTP — manually entered"
 msgstr "HOTP — wprowadzane ręcznie"
 
-#: ../properties/nm-openconnect-dialog.ui.h:22
+#: ../properties/nm-openconnect-dialog.ui.h:23
 msgid "Yubikey OATH"
 msgstr "OATH Yubikey"
 
@@ -236,24 +240,24 @@ msgstr "VPN zgodny z Cisco AnyConnect (openconnect)"
 msgid "Compatible with Cisco AnyConnect SSL VPN."
 msgstr "Zgodny z VPN Cisco AnyConnect SSL."
 
-#: ../properties/nm-openconnect-editor-plugin.c:436
+#: ../properties/nm-openconnect-editor-plugin.c:449
 msgid "Juniper Network Connect (openconnect)"
 msgstr "Juniper Network Connect (openconnect)"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/library.c#l129
-#: ../properties/nm-openconnect-editor-plugin.c:437
+#: ../properties/nm-openconnect-editor-plugin.c:450
 #: ../openconnect-strings.txt:1384
 msgid "Compatible with Juniper Network Connect / Pulse Secure SSL VPN"
 msgstr "Zgodny z VPN SSL Juniper Network Connect/Pulse Secure"
 
 #. we don't know this protocol by name, but it's configured in the .name file,
 #. * so just take it.
-#: ../properties/nm-openconnect-editor-plugin.c:441
+#: ../properties/nm-openconnect-editor-plugin.c:454
 #, c-format
 msgid "Openconnect VPN (%s)"
 msgstr "VPN OpenConnect (%s)"
 
-#: ../properties/nm-openconnect-editor-plugin.c:442
+#: ../properties/nm-openconnect-editor-plugin.c:455
 #, c-format
 msgid "Openconnect SSL VPN with %s protocol"
 msgstr "VPN SSL OpenConnect z protokołem %s"
@@ -316,64 +320,64 @@ msgstr "nie można wczytać generatora %s z wtyczki: %s"
 msgid "unknown error creating editor instance"
 msgstr "nieznany błąd podczas tworzenia wystąpienia edytora"
 
-#: ../src/nm-openconnect-service.c:178
+#: ../src/nm-openconnect-service.c:179
 #, c-format
 msgid "invalid integer property “%s” or out of range [%d -> %d]"
 msgstr ""
 "nieprawidłowa własność liczby całkowitej „%s” lub jest poza zakresem [%d -> "
 "%d]"
 
-#: ../src/nm-openconnect-service.c:188
+#: ../src/nm-openconnect-service.c:189
 #, c-format
 msgid "invalid boolean property “%s” (not yes or no)"
 msgstr ""
 "nieprawidłowa własność zmiennej logicznej „%s” (nie wynosi „yes” lub „no”)"
 
-#: ../src/nm-openconnect-service.c:195
+#: ../src/nm-openconnect-service.c:196
 #, c-format
 msgid "unhandled property “%s” type %s"
 msgstr "nieobsługiwana własność „%s” typu „%s”"
 
-#: ../src/nm-openconnect-service.c:208
+#: ../src/nm-openconnect-service.c:209
 #, c-format
 msgid "property “%s” invalid or not supported"
 msgstr "własność „%s” jest nieprawidłowa lub nieobsługiwana"
 
-#: ../src/nm-openconnect-service.c:224
+#: ../src/nm-openconnect-service.c:225
 msgid "No VPN configuration options."
 msgstr "Brak opcji konfiguracji VPN."
 
-#: ../src/nm-openconnect-service.c:242
+#: ../src/nm-openconnect-service.c:243
 msgid "No VPN secrets!"
 msgstr "Brak haseł VPN."
 
-#: ../src/nm-openconnect-service.c:410
+#: ../src/nm-openconnect-service.c:411
 msgid "Could not find openconnect binary."
 msgstr "Nie można odnaleźć pliku binarnego openconnect."
 
-#: ../src/nm-openconnect-service.c:422
+#: ../src/nm-openconnect-service.c:423
 msgid "No VPN gateway specified."
 msgstr "Nie podano bramy VPN."
 
-#: ../src/nm-openconnect-service.c:432
+#: ../src/nm-openconnect-service.c:433
 msgid "No WebVPN cookie provided."
 msgstr "Nie podano ciasteczka WebVPN."
 
-#: ../src/nm-openconnect-service.c:692
+#: ../src/nm-openconnect-service.c:693
 msgid "Don’t quit when VPN connection terminates"
 msgstr "Bez kończenia działania, kiedy połączenie VPN zostaje zakończone"
 
-#: ../src/nm-openconnect-service.c:693
+#: ../src/nm-openconnect-service.c:694
 msgid "Enable verbose debug logging (may expose passwords)"
 msgstr ""
 "Włącza zapisywanie większej liczby komunikatów debugowania w dzienniku (może "
 "ujawnić hasła)"
 
-#: ../src/nm-openconnect-service.c:694
+#: ../src/nm-openconnect-service.c:695
 msgid "D-Bus name to use for this instance"
 msgstr "Nazwa D-Bus dla tego wystąpienia"
 
-#: ../src/nm-openconnect-service.c:717
+#: ../src/nm-openconnect-service.c:718
 msgid ""
 "nm-openconnect-service provides integrated Cisco AnyConnect SSL VPN "
 "capability to NetworkManager."

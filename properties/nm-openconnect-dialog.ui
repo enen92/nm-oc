@@ -463,6 +463,7 @@
                       <object class="GtkLabel" id="label1">
                         <property name="visible">True</property>
                         <property name="label" translatable="yes">Reported OS:</property>
+                        <property name="tooltip_text" translatable="yes">Common values: linux linux-64 win mac-intel android apple-ios</property>
                         <property name="use_underline">True</property>
                         <property name="use_markup">False</property>
                         <property name="justify">GTK_JUSTIFY_LEFT</property>

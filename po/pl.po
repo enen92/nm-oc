@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: network-manager-openconnect\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-07-02 17:58+0200\n"
-"PO-Revision-Date: 2017-07-02 17:59+0200\n"
+"POT-Creation-Date: 2017-07-09 17:37+0200\n"
+"PO-Revision-Date: 2017-07-09 17:38+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -167,60 +167,65 @@ msgid "Reported OS:"
 msgstr "Zgłaszany system operacyjny:"
 
 #: ../properties/nm-openconnect-dialog.ui.h:10
+msgid "Common values: linux linux-64 win mac-intel android apple-ios"
+msgstr ""
+"Często używane wartości: linux, linux-64, win, mac-intel, android, apple-ios"
+
+#: ../properties/nm-openconnect-dialog.ui.h:11
 msgid "Certificate Authentication"
 msgstr "Uwierzytelnianie certyfikatu"
 
-#: ../properties/nm-openconnect-dialog.ui.h:11
+#: ../properties/nm-openconnect-dialog.ui.h:12
 msgid "_User Certificate:"
 msgstr "Certyfikat _użytkownika:"
 
-#: ../properties/nm-openconnect-dialog.ui.h:12
+#: ../properties/nm-openconnect-dialog.ui.h:13
 msgid "Private _Key:"
 msgstr "_Klucz prywatny:"
 
-#: ../properties/nm-openconnect-dialog.ui.h:13
+#: ../properties/nm-openconnect-dialog.ui.h:14
 msgid "Use _FSID for key passphrase"
 msgstr "Użycie _FSID dla hasła klucza"
 
-#: ../properties/nm-openconnect-dialog.ui.h:14
+#: ../properties/nm-openconnect-dialog.ui.h:15
 msgid "Prevent user from manually accepting invalid certificates"
 msgstr ""
 "Uniemożliwienie użytkownikowi ręcznego przyjmowania nieprawidłowych "
 "certyfikatów"
 
-#: ../properties/nm-openconnect-dialog.ui.h:15
+#: ../properties/nm-openconnect-dialog.ui.h:16
 msgid "Software Token Authentication"
 msgstr "Uwierzytelnianie tokenem programowym"
 
-#: ../properties/nm-openconnect-dialog.ui.h:16
+#: ../properties/nm-openconnect-dialog.ui.h:17
 msgid "Token _Mode:"
 msgstr "_Tryb tokena:"
 
-#: ../properties/nm-openconnect-dialog.ui.h:17
+#: ../properties/nm-openconnect-dialog.ui.h:18
 msgid "Token Sec_ret:"
 msgstr "_Hasło tokena:"
 
-#: ../properties/nm-openconnect-dialog.ui.h:18
+#: ../properties/nm-openconnect-dialog.ui.h:19
 msgid "Disabled"
 msgstr "Wyłączone"
 
-#: ../properties/nm-openconnect-dialog.ui.h:19
+#: ../properties/nm-openconnect-dialog.ui.h:20
 msgid "RSA SecurID — read from ~/.stokenrc"
 msgstr "SecurID RSA — odczytywanie z ~/.stokenrc"
 
-#: ../properties/nm-openconnect-dialog.ui.h:20
+#: ../properties/nm-openconnect-dialog.ui.h:21
 msgid "RSA SecurID — manually entered"
 msgstr "SecurID RSA — wprowadzane ręcznie"
 
-#: ../properties/nm-openconnect-dialog.ui.h:21
+#: ../properties/nm-openconnect-dialog.ui.h:22
 msgid "TOTP — manually entered"
 msgstr "TOTP — wprowadzane ręcznie"
 
-#: ../properties/nm-openconnect-dialog.ui.h:22
+#: ../properties/nm-openconnect-dialog.ui.h:23
 msgid "HOTP — manually entered"
 msgstr "HOTP — wprowadzane ręcznie"
 
-#: ../properties/nm-openconnect-dialog.ui.h:23
+#: ../properties/nm-openconnect-dialog.ui.h:24
 msgid "Yubikey OATH"
 msgstr "OATH Yubikey"
 

@@ -605,7 +605,7 @@ real_disconnect (NMVpnServicePlugin   *plugin,
 	NMOpenconnectPluginPrivate *priv = NM_OPENCONNECT_PLUGIN_GET_PRIVATE (plugin);
 
 	if (priv->pid) {
-		if (kill (priv->pid, SIGTERM) == 0)
+		if (kill (priv->pid, SIGINT) == 0)
 			g_timeout_add (2000, ensure_killed, GINT_TO_POINTER (priv->pid));
 		else
 			kill (priv->pid, SIGKILL);

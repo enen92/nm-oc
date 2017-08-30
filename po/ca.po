@@ -1322,7 +1322,7 @@ msgstr "Rebuda la sonda DPD MTU (%u bytes)\n"
 #: ../openconnect-strings.txt:524
 #, c-format
 msgid "Detected MTU of %d bytes (was %d)\n"
-msgstr "S'ha detectat MTP de %d bytes (era %d)\n"
+msgstr "S'ha detectat MTU de %d bytes (era %d)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/dtls.c#l742
 #: ../openconnect-strings.txt:527

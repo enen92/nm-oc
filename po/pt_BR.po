@@ -9,18 +9,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: network-manager-openconnect\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=Networ"
-"kManager&keywords=I18N+L10N&component=VPN: openconnect\n"
-"POT-Creation-Date: 2017-05-14 23:48+0000\n"
-"PO-Revision-Date: 2017-06-25 13:03-0200\n"
-"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
+"product=NetworkManager&keywords=I18N+L10N&component=VPN: openconnect\n"
+"POT-Creation-Date: 2017-09-18 12:18+0000\n"
+"PO-Revision-Date: 2017-10-04 16:57-0300\n"
+"Last-Translator: Isaac Ferreira Filho <isaacmob@riseup.net>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Virtaal 1.0.0-beta1\n"
+"X-Generator: Poedit 2.0.4\n"
 "X-Project-Style: gnome\n"
 
 #: ../appdata/network-manager-openconnect.metainfo.xml.in.h:1
@@ -69,7 +69,7 @@ msgstr "<b>O certificado pode ser inválido ou não ser confiável</b>\n"
 msgid "<b>Reason: "
 msgstr "<b>Motivo: "
 
-#: ../auth-dialog/main.c:814 ../auth-dialog/main.c:1566
+#: ../auth-dialog/main.c:814 ../auth-dialog/main.c:1571
 msgid "_Cancel"
 msgstr "_Cancelar"
 
@@ -81,39 +81,39 @@ msgstr "Eu realmente sei o que estou fazendo"
 msgid "Connect anyway"
 msgstr "Conectar mesmo assim"
 
-#: ../auth-dialog/main.c:1489
+#: ../auth-dialog/main.c:1494
 msgid "_Close"
 msgstr "_Fechar"
 
-#: ../auth-dialog/main.c:1506
+#: ../auth-dialog/main.c:1511
 msgid "VPN host"
 msgstr "Host VPN"
 
-#: ../auth-dialog/main.c:1517
+#: ../auth-dialog/main.c:1522
 msgid "C_onnect"
 msgstr "C_onectar"
 
-#: ../auth-dialog/main.c:1524
+#: ../auth-dialog/main.c:1529
 msgid "Automatically start connecting next time"
 msgstr "Iniciar conexão automaticamente na próxima vez"
 
-#: ../auth-dialog/main.c:1543
+#: ../auth-dialog/main.c:1548
 msgid "Select a host to fetch the login form"
 msgstr "Selecione uma máquina para obter o formulário de início de sessão"
 
-#: ../auth-dialog/main.c:1548
+#: ../auth-dialog/main.c:1553
 msgid "Contacting host, please wait…"
 msgstr "Contactando máquina, por favor, aguarde…"
 
-#: ../auth-dialog/main.c:1560
+#: ../auth-dialog/main.c:1565
 msgid "_Login"
 msgstr "_Início de sessão"
 
-#: ../auth-dialog/main.c:1572
+#: ../auth-dialog/main.c:1577
 msgid "Save passwords"
 msgstr "Salvar senhas"
 
-#: ../auth-dialog/main.c:1580
+#: ../auth-dialog/main.c:1585
 msgid "Log"
 msgstr "Registro"
 
@@ -166,58 +166,66 @@ msgid "CSD _Wrapper Script:"
 msgstr "Script _wrapper de CSD:"
 
 #: ../properties/nm-openconnect-dialog.ui.h:9
+msgid "Reported OS:"
+msgstr "SO relatado:"
+
+#: ../properties/nm-openconnect-dialog.ui.h:10
+msgid "Common values: linux linux-64 win mac-intel android apple-ios"
+msgstr "Valores comuns: linux linux-64 win mac-intel android apple-ios"
+
+#: ../properties/nm-openconnect-dialog.ui.h:11
 msgid "Certificate Authentication"
 msgstr "Certificado de autenticação"
 
-#: ../properties/nm-openconnect-dialog.ui.h:10
+#: ../properties/nm-openconnect-dialog.ui.h:12
 msgid "_User Certificate:"
 msgstr "Certificado do _usuário:"
 
-#: ../properties/nm-openconnect-dialog.ui.h:11
+#: ../properties/nm-openconnect-dialog.ui.h:13
 msgid "Private _Key:"
 msgstr "C_have privada:"
 
-#: ../properties/nm-openconnect-dialog.ui.h:12
+#: ../properties/nm-openconnect-dialog.ui.h:14
 msgid "Use _FSID for key passphrase"
 msgstr "Usar _FSID como frase secreta da chave"
 
-#: ../properties/nm-openconnect-dialog.ui.h:13
+#: ../properties/nm-openconnect-dialog.ui.h:15
 msgid "Prevent user from manually accepting invalid certificates"
 msgstr "Evitar que o usuário aceite manualmente certificados inválidos"
 
-#: ../properties/nm-openconnect-dialog.ui.h:14
+#: ../properties/nm-openconnect-dialog.ui.h:16
 msgid "Software Token Authentication"
 msgstr "Autenticação por token de software"
 
-#: ../properties/nm-openconnect-dialog.ui.h:15
+#: ../properties/nm-openconnect-dialog.ui.h:17
 msgid "Token _Mode:"
 msgstr "_Modo do token:"
 
-#: ../properties/nm-openconnect-dialog.ui.h:16
+#: ../properties/nm-openconnect-dialog.ui.h:18
 msgid "Token Sec_ret:"
 msgstr "Seg_redo do token:"
 
-#: ../properties/nm-openconnect-dialog.ui.h:17
+#: ../properties/nm-openconnect-dialog.ui.h:19
 msgid "Disabled"
 msgstr "Desabilitado"
 
-#: ../properties/nm-openconnect-dialog.ui.h:18
+#: ../properties/nm-openconnect-dialog.ui.h:20
 msgid "RSA SecurID — read from ~/.stokenrc"
 msgstr "RSA SecurID — lido de ~/.stokenrc"
 
-#: ../properties/nm-openconnect-dialog.ui.h:19
+#: ../properties/nm-openconnect-dialog.ui.h:21
 msgid "RSA SecurID — manually entered"
 msgstr "RSA SecurID — inserido manualmente"
 
-#: ../properties/nm-openconnect-dialog.ui.h:20
+#: ../properties/nm-openconnect-dialog.ui.h:22
 msgid "TOTP — manually entered"
 msgstr "TOTP — inserido manualmente"
 
-#: ../properties/nm-openconnect-dialog.ui.h:21
+#: ../properties/nm-openconnect-dialog.ui.h:23
 msgid "HOTP — manually entered"
 msgstr "HOTP — inserido manualmente"
 
-#: ../properties/nm-openconnect-dialog.ui.h:22
+#: ../properties/nm-openconnect-dialog.ui.h:24
 msgid "Yubikey OATH"
 msgstr "OATH de Yubikey"
 
@@ -237,24 +245,24 @@ msgstr "VPN Compatível com Cisco AnyConnect (openconnect)"
 msgid "Compatible with Cisco AnyConnect SSL VPN."
 msgstr "Compatível com Cisco AnyConnect SSL VPN."
 
-#: ../properties/nm-openconnect-editor-plugin.c:436
+#: ../properties/nm-openconnect-editor-plugin.c:449
 msgid "Juniper Network Connect (openconnect)"
 msgstr "Juniper Network Connect (openconnect)"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/library.c#l129
-#: ../properties/nm-openconnect-editor-plugin.c:437
+#: ../properties/nm-openconnect-editor-plugin.c:450
 #: ../openconnect-strings.txt:1384
 msgid "Compatible with Juniper Network Connect / Pulse Secure SSL VPN"
 msgstr "Compatível com Juniper Network Connect / Pulse Secure SSL VPN"
 
 #. we don't know this protocol by name, but it's configured in the .name file,
 #. * so just take it.
-#: ../properties/nm-openconnect-editor-plugin.c:441
+#: ../properties/nm-openconnect-editor-plugin.c:454
 #, c-format
 msgid "Openconnect VPN (%s)"
 msgstr "Openconnect VPN (%s)"
 
-#: ../properties/nm-openconnect-editor-plugin.c:442
+#: ../properties/nm-openconnect-editor-plugin.c:455
 #, c-format
 msgid "Openconnect SSL VPN with %s protocol"
 msgstr "Openconnect SSL VPN com protocolo %s"
@@ -319,59 +327,59 @@ msgstr "não foi possível carregar fábrica %s do plug-in: %s"
 msgid "unknown error creating editor instance"
 msgstr "erro desconhecido ao criar instância de editor"
 
-#: ../src/nm-openconnect-service.c:178
+#: ../src/nm-openconnect-service.c:179
 #, c-format
 msgid "invalid integer property “%s” or out of range [%d -> %d]"
 msgstr "propriedade do inteiro “%s” inválido ou fora do intervalo [%d -> %d]"
 
-#: ../src/nm-openconnect-service.c:188
+#: ../src/nm-openconnect-service.c:189
 #, c-format
 msgid "invalid boolean property “%s” (not yes or no)"
 msgstr "propriedade do booleano “%s” inválido (não sim ou não)"
 
-#: ../src/nm-openconnect-service.c:195
+#: ../src/nm-openconnect-service.c:196
 #, c-format
 msgid "unhandled property “%s” type %s"
 msgstr "propriedade “%s” não-manipulada, tipo %s"
 
-#: ../src/nm-openconnect-service.c:208
+#: ../src/nm-openconnect-service.c:209
 #, c-format
 msgid "property “%s” invalid or not supported"
 msgstr "propriedade “%s” inválida ou sem suporte"
 
-#: ../src/nm-openconnect-service.c:224
+#: ../src/nm-openconnect-service.c:225
 msgid "No VPN configuration options."
 msgstr "Sem opções de configuração de VPN."
 
-#: ../src/nm-openconnect-service.c:242
+#: ../src/nm-openconnect-service.c:243
 msgid "No VPN secrets!"
 msgstr "Nenhum segredo de VPN!"
 
-#: ../src/nm-openconnect-service.c:410
+#: ../src/nm-openconnect-service.c:411
 msgid "Could not find openconnect binary."
 msgstr "Não foi possível encontrar binário do openconnect."
 
-#: ../src/nm-openconnect-service.c:422
+#: ../src/nm-openconnect-service.c:423
 msgid "No VPN gateway specified."
 msgstr "Nenhum gateway VPN especificado."
 
-#: ../src/nm-openconnect-service.c:432
+#: ../src/nm-openconnect-service.c:433
 msgid "No WebVPN cookie provided."
 msgstr "Nenhum cookie WebVPN fornecido."
 
-#: ../src/nm-openconnect-service.c:692
+#: ../src/nm-openconnect-service.c:693
 msgid "Don’t quit when VPN connection terminates"
 msgstr "Não sair até que a conexão com a VPN termine"
 
-#: ../src/nm-openconnect-service.c:693
+#: ../src/nm-openconnect-service.c:694
 msgid "Enable verbose debug logging (may expose passwords)"
 msgstr "Habilitar registro de depuração detalhado (pode expôr senhas)"
 
-#: ../src/nm-openconnect-service.c:694
+#: ../src/nm-openconnect-service.c:695
 msgid "D-Bus name to use for this instance"
 msgstr "Nome D-Bus a ser usado para esta instância"
 
-#: ../src/nm-openconnect-service.c:717
+#: ../src/nm-openconnect-service.c:718
 msgid ""
 "nm-openconnect-service provides integrated Cisco AnyConnect SSL VPN "
 "capability to NetworkManager."
@@ -1191,7 +1199,7 @@ msgstr "TOS isso: %d, TOS último: %d\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/dtls.c#l423
 #: ../openconnect-strings.txt:467
 msgid "UDP setsockopt"
-msgstr "setsockopt UDP"
+msgstr "UDP setsockopt"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/dtls.c#l454
 #: ../openconnect-strings.txt:470
@@ -2835,19 +2843,16 @@ msgstr "Há suporte apenas a proxy http ou socks(5)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/library.c#l112
 #: ../openconnect-strings.txt:1375
-#| msgid "Cisco AnyConnect Compatible VPN (openconnect)"
 msgid "Cisco AnyConnect or openconnect"
 msgstr "Cisco AnyConnect ou openconnect"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/library.c#l113
 #: ../openconnect-strings.txt:1378
-#| msgid "Compatible with Cisco AnyConnect SSL VPN."
 msgid "Compatible with Cisco AnyConnect SSL VPN, as well as ocserv"
 msgstr "Compatível com Cisco AnyConnect SSL VPN, bem como ocserv"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/library.c#l128
 #: ../openconnect-strings.txt:1381
-#| msgid "Juniper/Pulse Network Connect"
 msgid "Juniper Network Connect"
 msgstr "Juniper Network Connect"
 
@@ -2956,9 +2961,6 @@ msgstr "OpenSSL ENGINE não presente"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l642
 #: ../openconnect-strings.txt:1444
-#| msgid ""
-#| "\n"
-#| "WARNING: No DTLS support in this binary. Performance will be impaired.\n"
 msgid ""
 "WARNING: This binary lacks DTLS and/or ESP support. Performance will be "
 "impaired.\n"
@@ -2974,13 +2976,11 @@ msgstr "Protocolos com suporte:"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l654
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l670
 #: ../openconnect-strings.txt:1453
-#| msgid "default"
 msgid " (default)"
 msgstr " (padrão)"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l667
 #: ../openconnect-strings.txt:1456
-#| msgid "_VPN Protocol:"
 msgid ""
 "\n"
 "    Set VPN protocol:\n"
@@ -3018,9 +3018,6 @@ msgstr "Uso:  openconnect [opções] <servidor>\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l788
 #: ../openconnect-strings.txt:1476
 #, c-format
-#| msgid ""
-#| "Open client for Cisco AnyConnect VPN, version %s\n"
-#| "\n"
 msgid ""
 "Open client for multiple VPN protocols, version %s\n"
 "\n"
@@ -3111,7 +3108,7 @@ msgstr "Prefixa marca de tempo nas mensagens de progresso"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l810
 #: ../openconnect-strings.txt:1529
 msgid "copy TOS / TCLASS when using DTLS"
-msgstr "Copia TOS / TCLASS ao usar DTLS"
+msgstr "copia TOS / TCLASS ao usar DTLS"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l812
 #: ../openconnect-strings.txt:1532
@@ -4184,13 +4181,11 @@ msgstr "Enviado pacote de controle com capacidade de ESP\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/oncp.c#l1282
 #: ../openconnect-strings.txt:2126
-#| msgid "Reconnect failed\n"
 msgid "Logout failed.\n"
 msgstr "Desconexão falhou\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/oncp.c#l1284
 #: ../openconnect-strings.txt:2129
-#| msgid "Soft token init was successful.\n"
 msgid "Logout successful.\n"
 msgstr "Desconexão feita com sucesso.\n"
 

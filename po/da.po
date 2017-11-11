@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: network-manager-openconnect\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=NetworkManager&keywords=I18N+L10N&component=VPN: openconnect\n"
-"POT-Creation-Date: 2017-07-07 09:20+0000\n"
+"POT-Creation-Date: 2017-11-02 12:04+0000\n"
 "PO-Revision-Date: 2017-10-23 19:46+0200\n"
 "Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
 "Language-Team: Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
@@ -56,7 +56,7 @@ msgstr "OpenConnect: %s: %s:%s"
 #: ../auth-dialog/main.c:714
 #, c-format
 msgid "Connect to VPN “%s”"
-msgstr "Forbind til VPN \"%s\""
+msgstr "Forbind til VPN “%s”"
 
 #: ../auth-dialog/main.c:716
 msgid "Connect to VPN"
@@ -161,7 +161,7 @@ msgstr "_CA-certifikat:"
 # Oversætter ikke Cisco Secure Desktop, da forkortelsen CSD optræder mange gange
 #: ../properties/nm-openconnect-dialog.ui.h:7
 msgid "Allow Cisco Secure Desktop _trojan"
-msgstr "Tillad \"Cisco Secure Desktop tro_jan\""
+msgstr "Tillad “Cisco Secure Desktop tro_jan”"
 
 #: ../properties/nm-openconnect-dialog.ui.h:8
 msgid "CSD _Wrapper Script:"
@@ -273,13 +273,13 @@ msgstr "Openconnect SSL VPN med %s-protokol"
 #: ../shared/nm-utils/nm-shared-utils.c:185
 #, c-format
 msgid "object class '%s' has no property named '%s'"
-msgstr "objektklassen \"%s\" har ingen egenskab ved navn \"%s\""
+msgstr "objektklassen “%s” har ingen egenskab ved navn “%s”"
 
 # streng også i de andre moduler
 #: ../shared/nm-utils/nm-shared-utils.c:192
 #, c-format
 msgid "property '%s' of object class '%s' is not writable"
-msgstr "egenskaben \"%s\" for objektklassen \"%s\" er skrivebeskyttet"
+msgstr "egenskaben “%s” for objektklassen “%s” er skrivebeskyttet"
 
 # streng også i de andre moduler
 #: ../shared/nm-utils/nm-shared-utils.c:199
@@ -287,7 +287,7 @@ msgstr "egenskaben \"%s\" for objektklassen \"%s\" er skrivebeskyttet"
 msgid ""
 "construct property \"%s\" for object '%s' can't be set after construction"
 msgstr ""
-"construct-egenskaben \"%s\" for objektet \"%s\" kan ikke angives efter "
+"construct-egenskaben “%s” for objektet “%s” kan ikke angives efter "
 "konstruktion"
 
 # streng også i de andre moduler
@@ -295,7 +295,7 @@ msgstr ""
 #, c-format
 msgid "'%s::%s' is not a valid property name; '%s' is not a GObject subtype"
 msgstr ""
-"\"%s::%s\" er ikke et gyldigt egenskabsnavn; \"%s\" er ikke en undertype af "
+"“%s::%s” er ikke et gyldigt egenskabsnavn; “%s” er ikke en undertype af "
 "GObjekt"
 
 # streng også i de andre moduler
@@ -303,8 +303,7 @@ msgstr ""
 #, c-format
 msgid "unable to set property '%s' of type '%s' from value of type '%s'"
 msgstr ""
-"kan ikke angive egenskaben \"%s\" af type \"%s\" ud fra værdien af typen \"%s"
-"\""
+"kan ikke angive egenskaben “%s” af type “%s” ud fra værdien af typen “%s”"
 
 # streng også i de andre moduler
 #: ../shared/nm-utils/nm-shared-utils.c:227
@@ -313,14 +312,14 @@ msgid ""
 "value \"%s\" of type '%s' is invalid or out of range for property '%s' of "
 "type '%s'"
 msgstr ""
-"værdien \"%s\" af typen \"%s\" er ugyldig eller uden for intervallet for "
-"egenskaben \"%s\" af typen \"%s\""
+"værdien “%s” af typen “%s” er ugyldig eller uden for intervallet for "
+"egenskaben “%s” af typen “%s”"
 
 # streng også i de andre moduler
 #: ../shared/nm-utils/nm-vpn-plugin-utils.c:80
 #, c-format
 msgid "missing plugin file \"%s\""
-msgstr "manglende udvidelsesmodulfil \"%s\""
+msgstr "manglende udvidelsesmodulfil “%s”"
 
 # streng også i de andre moduler
 #: ../shared/nm-utils/nm-vpn-plugin-utils.c:86
@@ -342,22 +341,22 @@ msgstr "ukendt fejl i forsøget på at danne redigeringsinstans"
 #: ../src/nm-openconnect-service.c:179
 #, c-format
 msgid "invalid integer property “%s” or out of range [%d -> %d]"
-msgstr "ugyldig heltalsegenskab \"%s\" eller uden for interval [%d -> %d]"
+msgstr "ugyldig heltalsegenskab “%s” eller uden for interval [%d -> %d]"
 
 #: ../src/nm-openconnect-service.c:189
 #, c-format
 msgid "invalid boolean property “%s” (not yes or no)"
-msgstr "ugyldig boolesk egenskab \"%s\" (ikke ja eller nej)"
+msgstr "ugyldig boolesk egenskab “%s” (ikke ja eller nej)"
 
 #: ../src/nm-openconnect-service.c:196
 #, c-format
 msgid "unhandled property “%s” type %s"
-msgstr "egenskaben \"%s\" type %s er ikke håndteret"
+msgstr "egenskaben “%s” type %s er ikke håndteret"
 
 #: ../src/nm-openconnect-service.c:209
 #, c-format
 msgid "property “%s” invalid or not supported"
-msgstr "egenskaben \"%s\" er ugyldig eller ikke understøttet"
+msgstr "egenskaben “%s” er ugyldig eller ikke understøttet"
 
 #: ../src/nm-openconnect-service.c:225
 msgid "No VPN configuration options."
@@ -403,32 +402,32 @@ msgstr ""
 #: ../openconnect-strings.txt:14
 #, c-format
 msgid "Ignoring unknown form submit item '%s'\n"
-msgstr "Ignorerer ukendt indsend-element \"%s\" i formular\n"
+msgstr "Ignorerer ukendt indsend-element “%s” i formular\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/auth-juniper.c#l147
 #: ../openconnect-strings.txt:17
 #, c-format
 msgid "Ignoring unknown form input type '%s'\n"
-msgstr "Ignorerer ukendt inputtype \"%s\" i formular\n"
+msgstr "Ignorerer ukendt inputtype “%s” i formular\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/auth-juniper.c#l157
 #: ../openconnect-strings.txt:20
 #, c-format
 msgid "Discarding duplicate option '%s'\n"
-msgstr "Kasserer duplikeret indstilling \"%s\"\n"
+msgstr "Kasserer duplikeret indstilling “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/auth-juniper.c#l230
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/auth.c#l408
 #: ../openconnect-strings.txt:24
 #, c-format
 msgid "Cannot handle form method='%s', action='%s'\n"
-msgstr "Kan ikke håndtere formularmetode=\"%s\", handling=\"%s\"\n"
+msgstr "Kan ikke håndtere formularmetode=“%s”, handling=“%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/auth-juniper.c#l261
 #: ../openconnect-strings.txt:27
 #, c-format
 msgid "Unknown textarea field: '%s'\n"
-msgstr "Ukendt tekstområdefelt: \"%s\"\n"
+msgstr "Ukendt tekstområdefelt: “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/auth-juniper.c#l329
 #: ../openconnect-strings.txt:30
@@ -514,7 +513,7 @@ msgstr "Stødte på formular uden ID\n"
 #: ../openconnect-strings.txt:75
 #, c-format
 msgid "Unknown form ID '%s'\n"
-msgstr "Ukendt formular-ID \"%s\"\n"
+msgstr "Ukendt formular-ID “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/auth-juniper.c#l686
 #: ../openconnect-strings.txt:78
@@ -578,12 +577,12 @@ msgstr "Modtog <client-cert-request>, selvom det ikke forventedes.\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/auth.c#l597
 #: ../openconnect-strings.txt:112
 msgid "XML response has no \"auth\" node\n"
-msgstr "XML-svar har ingen \"auth\"-knude\n"
+msgstr "XML-svar har ingen “auth”-knude\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/auth.c#l630
 #: ../openconnect-strings.txt:115
 msgid "Asked for password but '--no-passwd' set\n"
-msgstr "Bad om adgangskode, men \"--no-passwd\" angivet\n"
+msgstr "Bad om adgangskode, men “--no-passwd” angivet\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/auth.c#l915
 #: ../openconnect-strings.txt:118
@@ -619,8 +618,8 @@ msgid ""
 "Error: Running the 'Cisco Secure Desktop' trojan on this platform is not yet "
 "implemented.\n"
 msgstr ""
-"Fejl: Kørsel af \"Cisco Secure Desktop trojan\" er endnu ikke understøttet "
-"på denne platform\n"
+"Fejl: Kørsel af “Cisco Secure Desktop trojan” er endnu ikke understøttet på "
+"denne platform\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/auth.c#l991
 #: ../openconnect-strings.txt:140
@@ -638,8 +637,8 @@ msgid ""
 "This facility is disabled by default for security reasons, so you may wish "
 "to enable it.\n"
 msgstr ""
-"Fejl: Serveren bad os om at downloade og køre en \"Cisco Secure Desktop "
-"trojan\".\n"
+"Fejl: Serveren bad os om at downloade og køre en “Cisco Secure Desktop "
+"trojan”.\n"
 "Af sikkerhedsgrunde er denne funktion som standard deaktiveret, så du vil "
 "måske aktivere den.\n"
 
@@ -652,7 +651,7 @@ msgstr "Prøver at køre Linux CSD-trojanskript.\n"
 #: ../openconnect-strings.txt:154
 #, c-format
 msgid "Temporary directory '%s' is not writable: %s\n"
-msgstr "Den midlertidige mappe \"%s\" er skrivebeskyttet: %s\n"
+msgstr "Den midlertidige mappe “%s” er skrivebeskyttet: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/auth.c#l1040
 #: ../openconnect-strings.txt:157
@@ -697,7 +696,7 @@ msgstr "Ugyldigt bruger-uid=%ld: %s\n"
 #: ../openconnect-strings.txt:178
 #, c-format
 msgid "Failed to change to CSD home directory '%s': %s\n"
-msgstr "Kunne ikke skifte til CSD-hjemmemappe \"%s\": %s\n"
+msgstr "Kunne ikke skifte til CSD-hjemmemappe “%s”: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/auth.c#l1118
 #: ../openconnect-strings.txt:181
@@ -706,7 +705,7 @@ msgid ""
 "\t Use command line option \"--csd-user\"\n"
 msgstr ""
 "Advarsel: Du kører usikker CSD-kode med administratorrettigheder (root)\n"
-"\t Brug kommandolinjetilvalget \"--csd-user\"\n"
+"\t Brug kommandolinjetilvalget “--csd-user”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/auth.c#l1163
 #: ../openconnect-strings.txt:186
@@ -739,7 +738,7 @@ msgstr "XML POST aktiveret\n"
 #: ../openconnect-strings.txt:201
 #, c-format
 msgid "Refreshing %s after 1 second...\n"
-msgstr "Opdaterer %s efter 1 sekund ...\n"
+msgstr "Opdaterer %s efter 1 sekund …\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/compat.c#l207
 #: ../openconnect-strings.txt:204
@@ -822,13 +821,13 @@ msgstr "<elided>"
 #: ../openconnect-strings.txt:247
 #, c-format
 msgid "X-DTLS-Session-ID not 64 characters; is: \"%s\"\n"
-msgstr "X-DTLS-Session-ID er ikke 64 tegn; er: \"%s\"\n"
+msgstr "X-DTLS-Session-ID er ikke 64 tegn; er: “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/cstp.c#l433
 #: ../openconnect-strings.txt:250
 #, c-format
 msgid "X-DTLS-Session-ID is invalid; is: \"%s\"\n"
-msgstr "X-DTLS-Session-ID er ugyldig; er: \"%s\"\n"
+msgstr "X-DTLS-Session-ID er ugyldig; er: “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/cstp.c#l451
 #: ../openconnect-strings.txt:253
@@ -988,7 +987,7 @@ msgstr "Modtog ukomprimeret datapakke på %d byte\n"
 #: ../openconnect-strings.txt:337
 #, c-format
 msgid "Received server disconnect: %02x '%s'\n"
-msgstr "Modtog serverafbrydelse: %02x \"%s\"\n"
+msgstr "Modtog serverafbrydelse: %02x “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/cstp.c#l977
 #: ../openconnect-strings.txt:340
@@ -1083,7 +1082,7 @@ msgstr "Forsøger Digest-godkendelse til proxy\n"
 #: ../openconnect-strings.txt:394
 #, c-format
 msgid "Attempting Digest authentication to server '%s'\n"
-msgstr "Forsøger Digest-godkendelse til serveren \"%s\"\n"
+msgstr "Forsøger Digest-godkendelse til serveren “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/dtls.c#l93
 #: ../openconnect-strings.txt:397
@@ -1201,7 +1200,7 @@ msgstr "Kunne ikke sende keepalive-forespørgsel; forvent afbrydelse\n"
 #: ../openconnect-strings.txt:461
 #, c-format
 msgid "Unknown packet (len %d) received: %02x %02x %02x %02x...\n"
-msgstr "Ukendt pakke (længde %d) modtaget: %02x %02x %02x %02x...\n"
+msgstr "Ukendt pakke (længde %d) modtaget: %02x %02x %02x %02x …\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/dtls.c#l419
 #: ../openconnect-strings.txt:464
@@ -1504,7 +1503,7 @@ msgstr "Kunne ikke initialisere DTLS: %s\n"
 #: ../openconnect-strings.txt:619
 #, c-format
 msgid "Failed to set DTLS priority: '%s': %s\n"
-msgstr "Kunne ikke angive DTLS-prioritet: \"%s\": %s\n"
+msgstr "Kunne ikke angive DTLS-prioritet: “%s”: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/gnutls-dtls.c#l198
 #: ../openconnect-strings.txt:622
@@ -1534,7 +1533,7 @@ msgstr "Kunne ikke angive DTLS PSK-legitimationsoplysninger: %s\n"
 #: ../openconnect-strings.txt:634
 #, c-format
 msgid "Unknown DTLS parameters for requested CipherSuite '%s'\n"
-msgstr "Ukendte DTLS-parametre til forespurgt CipherSuite \"%s\"\n"
+msgstr "Ukendte DTLS-parametre til forespurgt CipherSuite “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/gnutls-dtls.c#l281
 #: ../openconnect-strings.txt:637
@@ -1722,7 +1721,7 @@ msgstr "Klientcertifikatet udløber snart den"
 #: ../openconnect-strings.txt:740
 #, c-format
 msgid "Failed to load item '%s' from keystore: %s\n"
-msgstr "Kunne ikke indlæse elementet \"%s\" fra nøglelageret: %s\n"
+msgstr "Kunne ikke indlæse elementet “%s” fra nøglelageret: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/gnutls.c#l415
 #: ../openconnect-strings.txt:743
@@ -1821,7 +1820,7 @@ msgstr "Ikke-understøttet PEM-krypteringstype: %s\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/gnutls.c#l868
 #: ../openconnect-strings.txt:794
 msgid "Invalid salt in encrypted PEM file\n"
-msgstr "Ugyldig \"salt\" i krypteret PEM-fil\n"
+msgstr "Ugyldig “salt” i krypteret PEM-fil\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/gnutls.c#l892
 #: ../openconnect-strings.txt:797
@@ -2054,7 +2053,7 @@ msgstr "Fandt ikke et SSL-certifikat, der matcher privat nøgle\n"
 #: ../openconnect-strings.txt:921
 #, c-format
 msgid "Using client certificate '%s'\n"
-msgstr "Anvender klientcertifikatet \"%s\"\n"
+msgstr "Anvender klientcertifikatet “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/gnutls.c#l1682
 #: ../openconnect-strings.txt:924
@@ -2086,7 +2085,7 @@ msgstr "Fik ingen udsteder fra PKCS#11\n"
 #: ../openconnect-strings.txt:938
 #, c-format
 msgid "Got next CA '%s' from PKCS11\n"
-msgstr "Fik næste CA \"%s\" fra PKCS#11\n"
+msgstr "Fik næste CA “%s” fra PKCS#11\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/gnutls.c#l1803
 #: ../openconnect-strings.txt:941
@@ -2097,7 +2096,7 @@ msgstr "Kunne ikke allokere hukommelse til understøttelse af certifikater\n"
 #: ../openconnect-strings.txt:944
 #, c-format
 msgid "Adding supporting CA '%s'\n"
-msgstr "Tilføjer understøttende CA \"%s\"\n"
+msgstr "Tilføjer understøttende CA “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/gnutls.c#l1854
 #: ../openconnect-strings.txt:947
@@ -2216,7 +2215,7 @@ msgstr "Kunne ikke læse certifikater i CA-filen: %s\n"
 #: ../openconnect-strings.txt:1014
 #, c-format
 msgid "Failed to open CA file '%s': %s\n"
-msgstr "Kunne ikke åbne CA-filen \"%s\": %s\n"
+msgstr "Kunne ikke åbne CA-filen “%s”: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/gnutls.c#l2320
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/openssl.c#l1710
@@ -2228,7 +2227,7 @@ msgstr "Indlæsning af certifikat mislykkedes. Afbryder.\n"
 #: ../openconnect-strings.txt:1021
 #, c-format
 msgid "Failed to set TLS priority string (\"%s\"): %s\n"
-msgstr "Kunne ikke angive TLS-prioritetsstreng (\"%s\"): %s\n"
+msgstr "Kunne ikke angive TLS-prioritetsstreng (“%s”): %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/gnutls.c#l2403
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/openssl.c#l1827
@@ -2435,7 +2434,7 @@ msgstr "Forsøger GSSAPI-godkendelse til proxy\n"
 #: ../openconnect-strings.txt:1135
 #, c-format
 msgid "Attempting GSSAPI authentication to server '%s'\n"
-msgstr "Forsøger GSSAPI-godkendelse til serveren \"%s\"\n"
+msgstr "Forsøger GSSAPI-godkendelse til serveren “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/gssapi.c#l200
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/gssapi.c#l256
@@ -2546,7 +2545,7 @@ msgstr "Forsøger basal HTTP-godkendelse til proxy\n"
 #: ../openconnect-strings.txt:1197
 #, c-format
 msgid "Attempting HTTP Basic authentication to server '%s'\n"
-msgstr "Forsøger basal HTTP-godkendelse til serveren \"%s\"\n"
+msgstr "Forsøger basal HTTP-godkendelse til serveren “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/http-auth.c#l200
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/http.c#l1209
@@ -2566,8 +2565,7 @@ msgstr "Proxy kræver basal godkendelse, hvilket som standard er deaktiveret\n"
 msgid ""
 "Server '%s' requested Basic authentication which is disabled by default\n"
 msgstr ""
-"Serveren \"%s\" kræver basal godkendelse, hvilket som standard er "
-"deaktiveret\n"
+"Serveren “%s” kræver basal godkendelse, hvilket som standard er deaktiveret\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/http-auth.c#l256
 #: ../openconnect-strings.txt:1211
@@ -2583,7 +2581,7 @@ msgstr "Ingen hukommelse til allokering af cookier\n"
 #: ../openconnect-strings.txt:1217
 #, c-format
 msgid "Failed to parse HTTP response '%s'\n"
-msgstr "Kunne ikke fortolke HTTP-svaret \"%s\"\n"
+msgstr "Kunne ikke fortolke HTTP-svaret “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/http.c#l386
 #: ../openconnect-strings.txt:1220
@@ -2600,7 +2598,7 @@ msgstr "Der opstod en fejl under behandling af HTTP-svar\n"
 #: ../openconnect-strings.txt:1226
 #, c-format
 msgid "Ignoring unknown HTTP response line '%s'\n"
-msgstr "Ignorerer ukendt HTTP-svarlinje \"%s\"\n"
+msgstr "Ignorerer ukendt HTTP-svarlinje “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/http.c#l421
 #: ../openconnect-strings.txt:1229
@@ -2664,13 +2662,13 @@ msgstr "Kan ikke modtage HTTP 1.0-indhold uden afsluttende forbindelse\n"
 #: ../openconnect-strings.txt:1260
 #, c-format
 msgid "Failed to parse redirected URL '%s': %s\n"
-msgstr "Kunne ikke fortolke omdirigeret URL \"%s\": %s\n"
+msgstr "Kunne ikke fortolke omdirigeret URL “%s”: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/http.c#l718
 #: ../openconnect-strings.txt:1263
 #, c-format
 msgid "Cannot follow redirection to non-https URL '%s'\n"
-msgstr "Kan ikke følge omdirigering til ikke-https-URL \"%s\"\n"
+msgstr "Kan ikke følge omdirigering til ikke-https-URL “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/http.c#l746
 #: ../openconnect-strings.txt:1266
@@ -2824,7 +2822,7 @@ msgstr ""
 #: ../openconnect-strings.txt:1348
 #, c-format
 msgid "Unexpected connect response from SOCKS proxy: %02x %02x...\n"
-msgstr "Uventet forbindelsesanmodning fra SOCKS-proxy: %02x %02x...\n"
+msgstr "Uventet forbindelsesanmodning fra SOCKS-proxy: %02x %02x …\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/http.c#l1257
 #: ../openconnect-strings.txt:1351
@@ -2866,7 +2864,7 @@ msgstr "Proxy CONNECT-anmodning mislykkedes: %d\n"
 #: ../openconnect-strings.txt:1369
 #, c-format
 msgid "Unknown proxy type '%s'\n"
-msgstr "Ukendt proxytype \"%s\"\n"
+msgstr "Ukendt proxytype “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/http.c#l1427
 #: ../openconnect-strings.txt:1372
@@ -2892,7 +2890,7 @@ msgstr "Juniper Network Connect"
 #: ../openconnect-strings.txt:1387
 #, c-format
 msgid "Unknown VPN protocol '%s'\n"
-msgstr "Ukendt VPN-protokol \"%s\"\n"
+msgstr "Ukendt VPN-protokol “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/library.c#l205
 #: ../openconnect-strings.txt:1390
@@ -2903,7 +2901,7 @@ msgstr "Bygget mod SSL-bibliotek uden understøttelse af Cisco DTLS\n"
 #: ../openconnect-strings.txt:1393
 #, c-format
 msgid "Failed to parse server URL '%s'\n"
-msgstr "Kunne ikke fortolke server-URL \"%s\"\n"
+msgstr "Kunne ikke fortolke server-URL “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/library.c#l619
 #: ../openconnect-strings.txt:1396
@@ -3029,7 +3027,7 @@ msgstr "fgets (stdin)"
 #: ../openconnect-strings.txt:1464
 #, c-format
 msgid "Cannot process this executable path \"%s\""
-msgstr "Kan ikke behandle den eksekverbare sti \"%s\""
+msgstr "Kan ikke behandle den eksekverbare sti “%s”"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l754
 #: ../openconnect-strings.txt:1467
@@ -3040,7 +3038,7 @@ msgstr "Allokering af vpnc-skriptsti mislykkedes\n"
 #: ../openconnect-strings.txt:1470
 #, c-format
 msgid "Override hostname '%s' to '%s'\n"
-msgstr "Tilsidesæt værtsnavn \"%s\" til \"%s\"\n"
+msgstr "Tilsidesæt værtsnavn “%s” til “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l787
 #: ../openconnect-strings.txt:1473
@@ -3231,7 +3229,7 @@ msgstr "standard"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l833
 #: ../openconnect-strings.txt:1583
 msgid "Pass traffic to 'script' program, not tun"
-msgstr "Videresend trafik til \"skriptprogram\" og ikke til tun"
+msgstr "Videresend trafik til “skriptprogram” og ikke til tun"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l835
 #: ../openconnect-strings.txt:1586
@@ -3382,7 +3380,7 @@ msgstr "Brug IP når der forbindes til VÆRT"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l868
 #: ../openconnect-strings.txt:1673
 msgid "OS type (linux,linux-64,win,...) to report"
-msgstr "OS-type (linux,linux-64,win,...) som rapporteres"
+msgstr "OS-type (linux,linux-64,win, …) som rapporteres"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l869
 #: ../openconnect-strings.txt:1676
@@ -3404,31 +3402,31 @@ msgstr "Kunne ikke få linje fra konfigurationsfil: %s\n"
 #: ../openconnect-strings.txt:1685
 #, c-format
 msgid "Unrecognised option at line %d: '%s'\n"
-msgstr "Genkendte ikke tilvalget i linje %d: \"%s\"\n"
+msgstr "Genkendte ikke tilvalget i linje %d: “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l1003
 #: ../openconnect-strings.txt:1688
 #, c-format
 msgid "Option '%s' does not take an argument at line %d\n"
-msgstr "Tilvalget \"%s\" tager ikke et argument i linje %d\n"
+msgstr "Tilvalget “%s” tager ikke et argument i linje %d\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l1007
 #: ../openconnect-strings.txt:1691
 #, c-format
 msgid "Option '%s' requires an argument at line %d\n"
-msgstr "Tilvalget \"%s\" kræver et argument i linje %d\n"
+msgstr "Tilvalget “%s” kræver et argument i linje %d\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l1032
 #: ../openconnect-strings.txt:1694
 #, c-format
 msgid "Invalid user \"%s\": %s\n"
-msgstr "Ugyldig bruger \"%s\": %s\n"
+msgstr "Ugyldig bruger “%s”: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l1042
 #: ../openconnect-strings.txt:1697
 #, c-format
 msgid "Invalid user ID \"%d\": %s\n"
-msgstr "Ugyldigt bruger-ID \"%d\": %s\n"
+msgstr "Ugyldigt bruger-ID “%d”: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l1094
 #: ../openconnect-strings.txt:1700
@@ -3440,7 +3438,7 @@ msgid ""
 msgstr ""
 "ADVARSEL: Denne version af openconnect blev bygget uden\n"
 "          understøttelse af iconv, men det lader til, du bruger det\n"
-"          forældede tegnsæt \"%s\". Forvent mærkværdigheder.\n"
+"          forældede tegnsæt “%s”. Forvent mærkværdigheder.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l1101
 #: ../openconnect-strings.txt:1706
@@ -3460,24 +3458,24 @@ msgstr "Kunne ikke allokere vpninfo-struktur\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l1166
 #: ../openconnect-strings.txt:1714
 msgid "Cannot use 'config' option inside config file\n"
-msgstr "Kan ikke brug tilvalget \"config\" inde i konfigurationsfilen\n"
+msgstr "Kan ikke brug tilvalget “config” inde i konfigurationsfilen\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l1174
 #: ../openconnect-strings.txt:1717
 #, c-format
 msgid "Cannot open config file '%s': %s\n"
-msgstr "Kan ikke åbne konfigurationsfilen \"%s\": %s\n"
+msgstr "Kan ikke åbne konfigurationsfilen “%s”: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l1190
 #: ../openconnect-strings.txt:1720
 #, c-format
 msgid "Invalid compression mode '%s'\n"
-msgstr "Ugyldig komprimeringstilstand \"%s\"\n"
+msgstr "Ugyldig komprimeringstilstand “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l1211
 #: ../openconnect-strings.txt:1723
 msgid "Missing colon in resolve option\n"
-msgstr "Manglende kolon i tilvalget \"resolve\"\n"
+msgstr "Manglende kolon i tilvalget “resolve”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l1216
 #: ../openconnect-strings.txt:1726
@@ -3527,13 +3525,13 @@ msgstr "OpenConnect version %s\n"
 #: ../openconnect-strings.txt:1749
 #, c-format
 msgid "Invalid software token mode \"%s\"\n"
-msgstr "Ugyldig tilstand \"%s\" for softwaresymbol\n"
+msgstr "Ugyldig tilstand “%s” for softwaresymbol\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l1416
 #: ../openconnect-strings.txt:1752
 #, c-format
 msgid "Invalid OS identity \"%s\"\n"
-msgstr "Ugyldig OS-identitet \"%s\"\n"
+msgstr "Ugyldig OS-identitet “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l1449
 #: ../openconnect-strings.txt:1755
@@ -3592,7 +3590,7 @@ msgstr "Se http://www.infradead.org/openconnect/vpnc-script.html\n"
 #: ../openconnect-strings.txt:1785
 #, c-format
 msgid "Failed to open '%s' for write: %s\n"
-msgstr "Kunne ikke åbne \"%s\" til skrivning: %s\n"
+msgstr "Kunne ikke åbne “%s” til skrivning: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l1624
 #: ../openconnect-strings.txt:1788
@@ -3657,7 +3655,7 @@ msgid ""
 "Reason: %s\n"
 msgstr ""
 "\n"
-"Certifikatet fra VPN-serveren \"%s\" kunne ikke bekræftes.\n"
+"Certifikatet fra VPN-serveren “%s” kunne ikke bekræftes.\n"
 "Årsag: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l1773
@@ -3679,8 +3677,8 @@ msgstr "    --servercert %s\n"
 #, c-format
 msgid "Enter '%s' to accept, '%s' to abort; anything else to view: "
 msgstr ""
-"Indtast \"%s\" for at acceptere, \"%s\" for at afbryde eller alt andet for "
-"at vise: "
+"Indtast “%s” for at acceptere, “%s” for at afbryde eller alt andet for at "
+"vise: "
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l1780
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l1798
@@ -3704,13 +3702,13 @@ msgstr "Servernøglens hash: %s\n"
 #: ../openconnect-strings.txt:1845
 #, c-format
 msgid "Auth choice \"%s\" matches multiple options\n"
-msgstr "Godkendelsesvalget \"%s\" matcher flere muligheder\n"
+msgstr "Godkendelsesvalget “%s” matcher flere muligheder\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l1844
 #: ../openconnect-strings.txt:1848
 #, c-format
 msgid "Auth choice \"%s\" not available\n"
-msgstr "Godkendelsesvalget \"%s\" er ikke tilgængeligt\n"
+msgstr "Godkendelsesvalget “%s” er ikke tilgængeligt\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/main.c#l1865
 #: ../openconnect-strings.txt:1851
@@ -3832,7 +3830,7 @@ msgstr "Forsøger HTTP NTLM-godkendelse til proxy (single-sign-on)\n"
 #: ../openconnect-strings.txt:1918
 #, c-format
 msgid "Attempting HTTP NTLM authentication to server '%s' (single-sign-on)\n"
-msgstr "Forsøger HTTP NTLM-godkendelse til serveren \"%s\" (single-sign-on)\n"
+msgstr "Forsøger HTTP NTLM-godkendelse til serveren “%s” (single-sign-on)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/ntlm.c#l978
 #: ../openconnect-strings.txt:1921
@@ -3844,7 +3842,7 @@ msgstr "Forsøger HTTP NTLMv%d-godkendelse til proxy\n"
 #: ../openconnect-strings.txt:1924
 #, c-format
 msgid "Attempting HTTP NTLMv%d authentication to server '%s'\n"
-msgstr "Forsøger HTTP NTLMv%d-godkendelse til serveren \"%s\"\n"
+msgstr "Forsøger HTTP NTLMv%d-godkendelse til serveren “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/oath.c#l97
 #: ../openconnect-strings.txt:1927
@@ -3882,7 +3880,7 @@ msgstr "OK til generering af NEXT-symbolkode\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/stoken.c#l282
 #: ../openconnect-strings.txt:1950
 msgid "Server is rejecting the soft token; switching to manual entry\n"
-msgstr "Server afviser det \"bløde\" symbol; skifter til manuel indtastning\n"
+msgstr "Server afviser det “bløde” symbol; skifter til manuel indtastning\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/oath.c#l419
 #: ../openconnect-strings.txt:1953
@@ -3898,7 +3896,7 @@ msgstr "Genererer OATH HOTP-symbolkode\n"
 #: ../openconnect-strings.txt:1959
 #, c-format
 msgid "Invalid cookie '%s'\n"
-msgstr "Ugyldig cookie \"%s\"\n"
+msgstr "Ugyldig cookie “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/oncp.c#l176
 #: ../openconnect-strings.txt:1962
@@ -4225,7 +4223,7 @@ msgstr "Logout lykkedes.\n"
 #: ../openconnect-strings.txt:2133
 #, c-format
 msgid "ERROR: %s() called with invalid UTF-8 for '%s' argument\n"
-msgstr "FEJL: %s() kaldt med ugyldig UTF-8 for argumentet \"%s\"\n"
+msgstr "FEJL: %s() kaldt med ugyldig UTF-8 for argumentet “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/openssl-dtls.c#l94
 #: ../openconnect-strings.txt:2136
@@ -4401,26 +4399,26 @@ msgstr "Ukendt fejl under login til PKCS#11-symbol\n"
 #: ../openconnect-strings.txt:2232
 #, c-format
 msgid "Logged in to PKCS#11 slot '%s'\n"
-msgstr "Logget på til PKCS#11-pladsen \"%s\"\n"
+msgstr "Logget på til PKCS#11-pladsen “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/openssl-pkcs11.c#l300
 #: ../openconnect-strings.txt:2235
 #, c-format
 msgid "Failed to enumerate certs in PKCS#11 slot '%s'\n"
-msgstr "Kunne ikke optælle certifikater i PKCS#11-pladsen \"%s\"\n"
+msgstr "Kunne ikke optælle certifikater i PKCS#11-pladsen “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/openssl-pkcs11.c#l306
 #: ../openconnect-strings.txt:2238
 #, c-format
 msgid "Found %d certs in slot '%s'\n"
-msgstr "Fandt %d certifikater i pladsen \"%s\"\n"
+msgstr "Fandt %d certifikater i pladsen “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/openssl-pkcs11.c#l342
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/openssl-pkcs11.c#l565
 #: ../openconnect-strings.txt:2242
 #, c-format
 msgid "Failed to parse PKCS#11 URI '%s'\n"
-msgstr "Kunne ikke fortolke PKCS#11-URI'en \"%s\"\n"
+msgstr "Kunne ikke fortolke PKCS#11-URI'en “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/openssl-pkcs11.c#l349
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/openssl-pkcs11.c#l575
@@ -4433,13 +4431,13 @@ msgstr "Kunne ikke optælle PKCS#11-pladser\n"
 #: ../openconnect-strings.txt:2250
 #, c-format
 msgid "Logging in to PKCS#11 slot '%s'\n"
-msgstr "Logger på til PKCS#11-pladsen \"%s\"\n"
+msgstr "Logger på til PKCS#11-pladsen “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/openssl-pkcs11.c#l393
 #: ../openconnect-strings.txt:2253
 #, c-format
 msgid "Failed to find PKCS#11 cert '%s'\n"
-msgstr "Kunne ikke finde PKCS#11-certifikatet \"%s\"\n"
+msgstr "Kunne ikke finde PKCS#11-certifikatet “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/openssl-pkcs11.c#l401
 #: ../openconnect-strings.txt:2256
@@ -4456,13 +4454,13 @@ msgstr "Kunne ikke installere certifikatet i OpenSLL-kontekst\n"
 #: ../openconnect-strings.txt:2263
 #, c-format
 msgid "Failed to enumerate keys in PKCS#11 slot '%s'\n"
-msgstr "Kunne ikke optælle nøgler i PKCS#11-pladsen \"%s\"\n"
+msgstr "Kunne ikke optælle nøgler i PKCS#11-pladsen “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/openssl-pkcs11.c#l464
 #: ../openconnect-strings.txt:2266
 #, c-format
 msgid "Found %d keys in slot '%s'\n"
-msgstr "Fandt %d nøgler i pladsen \"%s\"\n"
+msgstr "Fandt %d nøgler i pladsen “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/openssl-pkcs11.c#l497
 #: ../openconnect-strings.txt:2269
@@ -4494,7 +4492,7 @@ msgstr "Kunne ikke underskrive eksempeldata til validering af EC-nøgle\n"
 #: ../openconnect-strings.txt:2285
 #, c-format
 msgid "Failed to find PKCS#11 key '%s'\n"
-msgstr "Anvender PKCS#11-nøglen \"%s\"\n"
+msgstr "Anvender PKCS#11-nøglen “%s”\n"
 
 # Google translate og microsoft har instantiere. Det er ikke i RO, men bruges inden for programmering og sprogteori (iflg. google-søgning).
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/openssl-pkcs11.c#l649
@@ -4555,7 +4553,7 @@ msgstr "PEM-adgangskode for lang (%d ≥ %d)\n"
 #: ../openconnect-strings.txt:2317
 #, c-format
 msgid "Extra cert from %s: '%s'\n"
-msgstr "Ekstra certifikat fra %s: \"%s\"\n"
+msgstr "Ekstra certifikat fra %s: “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/openssl.c#l582
 #: ../openconnect-strings.txt:2320
@@ -4629,7 +4627,7 @@ msgstr "PEM-fil"
 #: ../openconnect-strings.txt:2360
 #, c-format
 msgid "Failed to create BIO for keystore item '%s'\n"
-msgstr "Kunne ikke oprette BIO for nøglelagerelementet \"%s\"\n"
+msgstr "Kunne ikke oprette BIO for nøglelagerelementet “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/openssl.c#l830
 #: ../openconnect-strings.txt:2363
@@ -4679,19 +4677,19 @@ msgstr "Kunne ikke konvertere PKCS#8 til OpenSSL EVP_PKEY\n"
 #: ../openconnect-strings.txt:2390
 #, c-format
 msgid "Failed to identify private key type in '%s'\n"
-msgstr "Kunne ikke bestemme privat nøgletype i \"%s\"\n"
+msgstr "Kunne ikke bestemme privat nøgletype i “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/openssl.c#l1232
 #: ../openconnect-strings.txt:2393
 #, c-format
 msgid "Matched DNS altname '%s'\n"
-msgstr "Matchede DNS-altnavn \"%s\"\n"
+msgstr "Matchede DNS-altnavn “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/openssl.c#l1239
 #: ../openconnect-strings.txt:2396
 #, c-format
 msgid "No match for altname '%s'\n"
-msgstr "Intet match for DNS-altnavn \"%s\"\n"
+msgstr "Intet match for DNS-altnavn “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/openssl.c#l1253
 #: ../openconnect-strings.txt:2399
@@ -4704,37 +4702,37 @@ msgstr "Certifikatet har GEN_IPADD-altnavn med falsk længde %d\n"
 #: ../openconnect-strings.txt:2403
 #, c-format
 msgid "Matched %s address '%s'\n"
-msgstr "Matchede %s-adresse \"%s\"\n"
+msgstr "Matchede %s-adresse “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/openssl.c#l1271
 #: ../openconnect-strings.txt:2406
 #, c-format
 msgid "No match for %s address '%s'\n"
-msgstr "Intet match for %s-adresse \"%s\"\n"
+msgstr "Intet match for %s-adresse “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/openssl.c#l1313
 #: ../openconnect-strings.txt:2409
 #, c-format
 msgid "URI '%s' has non-empty path; ignoring\n"
-msgstr "URI'en \"%s\" har ikke-tom sti; ignorerer\n"
+msgstr "URI'en “%s” har ikke-tom sti; ignorerer\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/openssl.c#l1318
 #: ../openconnect-strings.txt:2412
 #, c-format
 msgid "Matched URI '%s'\n"
-msgstr "Matchede URI \"%s\"\n"
+msgstr "Matchede URI “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/openssl.c#l1329
 #: ../openconnect-strings.txt:2415
 #, c-format
 msgid "No match for URI '%s'\n"
-msgstr "Intet match for URI \"%s\"\n"
+msgstr "Intet match for URI “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/openssl.c#l1344
 #: ../openconnect-strings.txt:2418
 #, c-format
 msgid "No altname in peer cert matched '%s'\n"
-msgstr "Intet altnavn i peercertifikatet matchede \"%s\"\n"
+msgstr "Intet altnavn i peercertifikatet matchede “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/openssl.c#l1352
 #: ../openconnect-strings.txt:2421
@@ -4757,13 +4755,13 @@ msgstr "Uoverensstemmelse i peercertifikats emnenavn ('%s' != '%s')\n"
 #: ../openconnect-strings.txt:2431
 #, c-format
 msgid "Matched peer certificate subject name '%s'\n"
-msgstr "Matchede peercertifikats emnenavn \"%s\"\n"
+msgstr "Matchede peercertifikats emnenavn “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/openssl.c#l1480
 #: ../openconnect-strings.txt:2434
 #, c-format
 msgid "Extra cert from cafile: '%s'\n"
-msgstr "Ekstra certifikat fra ca-fil: \"%s\"\n"
+msgstr "Ekstra certifikat fra ca-fil: “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/openssl.c#l1618
 #: ../openconnect-strings.txt:2437
@@ -4789,13 +4787,13 @@ msgstr "SSL-certifikat og nøgle passer ikke sammen\n"
 #: ../openconnect-strings.txt:2449
 #, c-format
 msgid "Failed to read certs from CA file '%s'\n"
-msgstr "Kunne ikke læse certifikater fra CA-fil \"%s\"\n"
+msgstr "Kunne ikke læse certifikater fra CA-fil “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/openssl.c#l1783
 #: ../openconnect-strings.txt:2452
 #, c-format
 msgid "Failed to open CA file '%s'\n"
-msgstr "Kunne ikke åbne CA-filen \"%s\"\n"
+msgstr "Kunne ikke åbne CA-filen “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/openssl.c#l1843
 #: ../openconnect-strings.txt:2455
@@ -4811,32 +4809,32 @@ msgstr "Kunne ikke beregne OATH HMAC\n"
 #: ../openconnect-strings.txt:2461
 #, c-format
 msgid "Discard bad split include: \"%s\"\n"
-msgstr "Forkast ugyldigt opdelt inkludér: \"%s\"\n"
+msgstr "Forkast ugyldigt opdelt inkludér: “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/script.c#l106
 #: ../openconnect-strings.txt:2464
 #, c-format
 msgid "Discard bad split exclude: \"%s\"\n"
-msgstr "Forkast ugyldigt opdelt ekskludér: \"%s\"\n"
+msgstr "Forkast ugyldigt opdelt ekskludér: “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/script.c#l513
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/script.c#l561
 #: ../openconnect-strings.txt:2468
 #, c-format
 msgid "Failed to spawn script '%s' for %s: %s\n"
-msgstr "Kunne ikke kalde skriptet \"%s\" for %s: %s\n"
+msgstr "Kunne ikke kalde skriptet “%s” for %s: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/script.c#l568
 #: ../openconnect-strings.txt:2471
 #, c-format
 msgid "Script '%s' exited abnormally (%x)\n"
-msgstr "Skriptet \"%s\" afsluttede unormalt (%x)\n"
+msgstr "Skriptet “%s” afsluttede unormalt (%x)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/script.c#l576
 #: ../openconnect-strings.txt:2474
 #, c-format
 msgid "Script '%s' returned error %d\n"
-msgstr "Skriptet \"%s\" returnerede fejl %d\n"
+msgstr "Skriptet “%s” returnerede fejl %d\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/ssl.c#l99
 #: ../openconnect-strings.txt:2477
@@ -4919,7 +4917,7 @@ msgstr "Kunne ikke oprette forbindelse til værten %s\n"
 #: ../openconnect-strings.txt:2517
 #, c-format
 msgid "Reconnecting to proxy %s\n"
-msgstr "Genopretter forbindelse til proxyen \"%s\"\n"
+msgstr "Genopretter forbindelse til proxyen “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/ssl.c#l527
 #: ../openconnect-strings.txt:2520
@@ -4936,7 +4934,7 @@ msgstr "Kunne ikke opnå filsystem-ID for adgangsfrase\n"
 #: ../openconnect-strings.txt:2526
 #, c-format
 msgid "Failed to open private key file '%s': %s\n"
-msgstr "Kunne ikke åbne den private nøglefil \"%s\": %s\n"
+msgstr "Kunne ikke åbne den private nøglefil “%s”: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/ssl.c#l594
 #: ../openconnect-strings.txt:2529
@@ -5003,8 +5001,7 @@ msgstr "Ukendt fejl"
 #: ../openconnect-strings.txt:2565
 #, c-format
 msgid "openconnect_fopen_utf8() used with unsupported mode '%s'\n"
-msgstr ""
-"openconnect_fopen_utf8() anvendt med ikke-understøttet tilstand \"%s\"\n"
+msgstr "openconnect_fopen_utf8() anvendt med ikke-understøttet tilstand “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/ssl.c#l920
 #: ../openconnect-strings.txt:2568
@@ -5161,7 +5158,7 @@ msgstr "Adgangskode:"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/stoken.c#l118
 #: ../openconnect-strings.txt:2648
 msgid "User bypassed soft token.\n"
-msgstr "Bruger omgik \"blødt\" symbol.\n"
+msgstr "Bruger omgik “blødt” symbol.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/stoken.c#l124
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/stoken.c#l209
@@ -5183,7 +5180,7 @@ msgstr "Ukorrekt enheds-ID eller adgangskode; prøv igen.\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/stoken.c#l142
 #: ../openconnect-strings.txt:2662
 msgid "Soft token init was successful.\n"
-msgstr "Initiering af \"blødt\" symbol lykkedes.\n"
+msgstr "Initiering af “blødt” symbol lykkedes.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/stoken.c#l185
 #: ../openconnect-strings.txt:2665
@@ -5214,7 +5211,7 @@ msgstr "Fejl i forsøget på at tilgå netværkskortenes registernøgle\n"
 #: ../openconnect-strings.txt:2680
 #, c-format
 msgid "Ignoring non-matching TAP interface \"%s\"\n"
-msgstr "Ignorerer ikke-matchende TAP-grænseflade \"%s\"\n"
+msgstr "Ignorerer ikke-matchende TAP-grænseflade “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/tun-win32.c#l154
 #: ../openconnect-strings.txt:2683
@@ -5359,7 +5356,7 @@ msgstr "Kunne ikke oprette ny tun"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/tun.c#l151
 #: ../openconnect-strings.txt:2757
 msgid "Failed to put tun file descriptor into message-discard mode"
-msgstr "Kunne ikke placere tunfildeskriptor i \"message-discard\"-tilstand"
+msgstr "Kunne ikke placere tunfildeskriptor i “message-discard”-tilstand"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/tun.c#l183
 #: ../openconnect-strings.txt:2760
@@ -5404,8 +5401,7 @@ msgstr ""
 #: ../openconnect-strings.txt:2781
 #, c-format
 msgid "Invalid interface name '%s'; must match 'utun%%d' or 'tun%%d'\n"
-msgstr ""
-"Ugyldigt grænsefladenavn \"%s\"; skal matche \"utun%%d\" eller \"tun%%d\"\n"
+msgstr "Ugyldigt grænsefladenavn “%s”; skal matche “utun%%d” eller “tun%%d”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/tun.c#l331
 #: ../openconnect-strings.txt:2784
@@ -5434,13 +5430,13 @@ msgstr "Kunne ikke tilslutte utun-enhed: %s\n"
 #: ../openconnect-strings.txt:2796
 #, c-format
 msgid "Invalid interface name '%s'; must match 'tun%%d'\n"
-msgstr "Ugyldigt grænsefladenavn \"%s\"; skal matche \"utun%%d\"\n"
+msgstr "Ugyldigt grænsefladenavn “%s”; skal matche “utun%%d”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/tun.c#l398
 #: ../openconnect-strings.txt:2799
 #, c-format
 msgid "Cannot open '%s': %s\n"
-msgstr "Kan ikke åbne \"%s\": %s\n"
+msgstr "Kan ikke åbne “%s”: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/tun.c#l437
 #: ../openconnect-strings.txt:2802
@@ -5509,7 +5505,7 @@ msgstr "Kunne ikke læse %s: %s\n"
 #: ../openconnect-strings.txt:2836
 #, c-format
 msgid "Treating host \"%s\" as a raw hostname\n"
-msgstr "Behandler værten \"%s\" som et råt (raw) værtsnavn\n"
+msgstr "Behandler værten “%s” som et råt (raw) værtsnavn\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/xml.c#l131
 #: ../openconnect-strings.txt:2839
@@ -5532,39 +5528,39 @@ msgstr "Kunne ikke fortolke XML-konfigurationsfilen %s\n"
 #: ../openconnect-strings.txt:2848
 #, c-format
 msgid "Host \"%s\" has address \"%s\"\n"
-msgstr "Værten \"%s\" har adressen \"%s\"\n"
+msgstr "Værten “%s” har adressen “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/xml.c#l194
 #: ../openconnect-strings.txt:2851
 #, c-format
 msgid "Host \"%s\" has UserGroup \"%s\"\n"
-msgstr "Værten \"%s\" har brugergruppen (UserGroup) \"%s\"\n"
+msgstr "Værten “%s” har brugergruppen (UserGroup) “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/xml.c#l208
 #: ../openconnect-strings.txt:2854
 #, c-format
 msgid "Host \"%s\" not listed in config; treating as raw hostname\n"
 msgstr ""
-"Værten \"%s\" er ikke opført i konfigurationen; betragter det som råt (raw) "
+"Værten “%s” er ikke opført i konfigurationen; betragter det som råt (raw) "
 "værtsnavn\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/yubikey.c#l80
 #: ../openconnect-strings.txt:2857
 #, c-format
 msgid "Failed to send \"%s\" to ykneo-oath applet: %s\n"
-msgstr "Kunne ikke sende \"%s\" til ykneo-oath-applet: %s\n"
+msgstr "Kunne ikke sende “%s” til ykneo-oath-applet: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/yubikey.c#l87
 #: ../openconnect-strings.txt:2860
 #, c-format
 msgid "Invalid short response to \"%s\" from ykneo-oath applet\n"
-msgstr "Ugyldigt kort svar til \"%s\" fra  ykneo-oath-applet\n"
+msgstr "Ugyldigt kort svar til “%s” fra  ykneo-oath-applet\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/yubikey.c#l104
 #: ../openconnect-strings.txt:2863
 #, c-format
 msgid "Failure response to \"%s\": %04x\n"
-msgstr "Fejlsvar til \"%s\": %04x\n"
+msgstr "Fejlsvar til “%s”: %04x\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/yubikey.c#l158
 #: ../openconnect-strings.txt:2866
@@ -5596,7 +5592,7 @@ msgstr "Yubikey-PIN:"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/yubikey.c#l239
 #: ../openconnect-strings.txt:2882
 msgid "Failed to calculate Yubikey unlock response\n"
-msgstr "Kunne ikke beregne Yubikey \"lås op\"-svar\n"
+msgstr "Kunne ikke beregne Yubikey “lås op”-svar\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/yubikey.c#l256
 #: ../openconnect-strings.txt:2885
@@ -5630,19 +5626,19 @@ msgstr "Kunne ikke søge i læserliste: %s\n"
 #: ../openconnect-strings.txt:2901
 #, c-format
 msgid "Failed to connect to PC/SC reader '%s': %s\n"
-msgstr "Kunne ikke forbinde til PC/SC-læseren \"%s\": %s\n"
+msgstr "Kunne ikke forbinde til PC/SC-læseren “%s”: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/yubikey.c#l383
 #: ../openconnect-strings.txt:2904
 #, c-format
 msgid "Connected PC/SC reader '%s'\n"
-msgstr "Forbundet til PC/SC-læseren \"%s\"\n"
+msgstr "Forbundet til PC/SC-læseren “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/yubikey.c#l388
 #: ../openconnect-strings.txt:2907
 #, c-format
 msgid "Failed to obtain exclusive access to reader '%s': %s\n"
-msgstr "Kunne ikke opnå eksklusiv adgang til læseren \"%s\": %s\n"
+msgstr "Kunne ikke opnå eksklusiv adgang til læseren “%s”: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/yubikey.c#l398
 #: ../openconnect-strings.txt:2910
@@ -5653,7 +5649,7 @@ msgstr "vis nøglekommandoer"
 #: ../openconnect-strings.txt:2913
 #, c-format
 msgid "Found %s/%s key '%s' on '%s'\n"
-msgstr "Fandt %s/%s-nøglen \"%s\" på \"%s\"\n"
+msgstr "Fandt %s/%s-nøglen “%s” på “%s”\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/yubikey.c#l448
 #: ../openconnect-strings.txt:2916
@@ -5661,8 +5657,7 @@ msgstr "Fandt %s/%s-nøglen \"%s\" på \"%s\"\n"
 msgid ""
 "Token '%s' not found on Yubikey '%s'. Searching for another Yubikey...\n"
 msgstr ""
-"Token \"%s\" blev ikke fundet på Yubikey \"%s\". Leder efter en anden "
-"Yubikey …\n"
+"Token “%s” blev ikke fundet på Yubikey “%s”. Leder efter en anden Yubikey …\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/df273812d1:/yubikey.c#l497
 #: ../openconnect-strings.txt:2920
@@ -5695,6 +5690,6 @@ msgstr "Svaret fra Yubikey, da symbolkoden blev oprettet, blev ikke genkendt\n"
 #~ "Reason: %s\n"
 #~ "Do you want to accept it?"
 #~ msgstr ""
-#~ "Certifikat fra VPN-server \"%s\" fejlede verificering.\n"
+#~ "Certifikat fra VPN-server “%s” fejlede verificering.\n"
 #~ "Årsag: %s\n"
 #~ "Ønsker du at acceptere den?"

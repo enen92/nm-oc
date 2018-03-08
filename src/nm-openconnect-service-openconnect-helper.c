@@ -519,6 +519,9 @@ main (int argc, char *argv[])
 	else
 		helper_failed (proxy, "VPN Gateway");
 
+	val = g_variant_new_boolean (TRUE);
+	g_variant_builder_add (&builder, "{sv}", NM_VPN_PLUGIN_CAN_PERSIST, val);
+
 	/* Tunnel device */
 	val = str_to_gvariant (getenv ("TUNDEV"), FALSE);
 	if (val)

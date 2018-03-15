@@ -9,16 +9,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: networkmanager-openconnect master\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-13 15:35+0000\n"
-"PO-Revision-Date: 2018-03-08 22:07+0100\n"
-"Last-Translator: Gabor Kelemen <kelemeng at ubuntu dot com>\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
+"product=NetworkManager&keywords=I18N+L10N&component=VPN: openconnect\n"
+"POT-Creation-Date: 2018-03-13 15:39+0000\n"
+"PO-Revision-Date: 2018-03-14 11:16+0100\n"
+"Last-Translator: Meskó Balázs <meskobalazs@fedoraproject.org>\n"
 "Language-Team: Hungarian <openscope at googlegroups dot com>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Poedit 2.0.6\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../appdata/network-manager-openconnect.metainfo.xml.in.h:1
@@ -114,6 +115,277 @@ msgstr "Jelszavak mentése"
 #: ../auth-dialog/main.c:1585
 msgid "Log"
 msgstr "Napló"
+
+#: ../properties/auth-helpers.c:58
+msgid "Choose a Certificate Authority certificate…"
+msgstr "Válasszon hitelesítésszolgáltatói tanúsítványt…"
+
+#: ../properties/auth-helpers.c:74
+msgid "Choose your personal certificate…"
+msgstr "Válassza ki a személyes tanúsítványát…"
+
+#: ../properties/auth-helpers.c:90
+msgid "Choose your private key…"
+msgstr "Válassza ki a személyes kulcsát…"
+
+#: ../properties/auth-helpers.c:250
+msgid "PEM certificates (*.pem, *.crt, *.key)"
+msgstr "PEM tanúsítványok (*.pem, *.crt, *.key)"
+
+#: ../properties/nm-openconnect-dialog.ui.h:1
+msgid "General"
+msgstr "Általános"
+
+#: ../properties/nm-openconnect-dialog.ui.h:2
+msgid "Select A File"
+msgstr "Válasszon ki egy fájlt"
+
+#: ../properties/nm-openconnect-dialog.ui.h:3
+msgid "_VPN Protocol:"
+msgstr "_VPN Protokoll:"
+
+#: ../properties/nm-openconnect-dialog.ui.h:4
+msgid "_Gateway:"
+msgstr "Á_tjáró:"
+
+#: ../properties/nm-openconnect-dialog.ui.h:5
+msgid "_Proxy:"
+msgstr "_Proxy:"
+
+#: ../properties/nm-openconnect-dialog.ui.h:6
+msgid "CA C_ertificate:"
+msgstr "_CA tanúsítvány:"
+
+#: ../properties/nm-openconnect-dialog.ui.h:7
+msgid "Allow Cisco Secure Desktop _trojan"
+msgstr "A Cisco Secure Desktop _trójai engedélyezése"
+
+#: ../properties/nm-openconnect-dialog.ui.h:8
+msgid "CSD _Wrapper Script:"
+msgstr "_CSD átalakító parancsfájl:"
+
+#: ../properties/nm-openconnect-dialog.ui.h:9
+msgid "Reported OS:"
+msgstr "Jelentett OS:"
+
+#: ../properties/nm-openconnect-dialog.ui.h:10
+msgid "Common values: linux linux-64 win mac-intel android apple-ios"
+msgstr "Gyakori értékek: linux linux-64 win mac-intel android apple-ios"
+
+#: ../properties/nm-openconnect-dialog.ui.h:11
+msgid "Certificate Authentication"
+msgstr "Tanúsítvány hitelesítése"
+
+#: ../properties/nm-openconnect-dialog.ui.h:12
+msgid "_User Certificate:"
+msgstr "F_elhasználói tanúsítvány:"
+
+#: ../properties/nm-openconnect-dialog.ui.h:13
+msgid "Private _Key:"
+msgstr "S_zemélyes kulcs:"
+
+#: ../properties/nm-openconnect-dialog.ui.h:14
+msgid "Use _FSID for key passphrase"
+msgstr "_FSID használata a kulcs jelszavához"
+
+#: ../properties/nm-openconnect-dialog.ui.h:15
+msgid "Prevent user from manually accepting invalid certificates"
+msgstr ""
+"Felhasználó megakadályozása érvénytelen tanúsítványok kézi elfogadásában"
+
+#: ../properties/nm-openconnect-dialog.ui.h:16
+msgid "Software Token Authentication"
+msgstr "Szoftveres token hitelesítése"
+
+#: ../properties/nm-openconnect-dialog.ui.h:17
+msgid "Token _Mode:"
+msgstr "Token _mód:"
+
+#: ../properties/nm-openconnect-dialog.ui.h:18
+msgid "Token Sec_ret:"
+msgstr "Token _titok:"
+
+#: ../properties/nm-openconnect-dialog.ui.h:19
+msgid "Disabled"
+msgstr "Kikapcsolva"
+
+#: ../properties/nm-openconnect-dialog.ui.h:20
+msgid "RSA SecurID — read from ~/.stokenrc"
+msgstr "RSA SecurID - beolvasás a ~/.stokenrc fájlból"
+
+#: ../properties/nm-openconnect-dialog.ui.h:21
+msgid "RSA SecurID — manually entered"
+msgstr "RSA SecurID - kézzel megadott"
+
+#: ../properties/nm-openconnect-dialog.ui.h:22
+msgid "TOTP — manually entered"
+msgstr "TOTP - kézzel megadott"
+
+#: ../properties/nm-openconnect-dialog.ui.h:23
+msgid "HOTP — manually entered"
+msgstr "HOTP - kézzel megadott"
+
+#: ../properties/nm-openconnect-dialog.ui.h:24
+msgid "Yubikey OATH"
+msgstr "Yubikey OATH"
+
+#: ../properties/nm-openconnect-editor.c:237
+msgid "Cisco AnyConnect"
+msgstr "Cisco AnyConnect"
+
+#: ../properties/nm-openconnect-editor.c:243
+msgid "Juniper/Pulse Network Connect"
+msgstr "Juniper/Pulse hálózati csatlakozás"
+
+#: ../properties/nm-openconnect-editor-plugin.c:56
+msgid "Cisco AnyConnect Compatible VPN (openconnect)"
+msgstr "Cisco AnyConnect-kompatibilis VPN (openconnect)"
+
+#: ../properties/nm-openconnect-editor-plugin.c:57
+msgid "Compatible with Cisco AnyConnect SSL VPN."
+msgstr "Kompatibilis a Cisco AnyConnect SSL VPN-nel."
+
+#: ../properties/nm-openconnect-editor-plugin.c:449
+msgid "Juniper Network Connect (openconnect)"
+msgstr "Juniper hálózati csatlakozás (openconnect)"
+
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/497b3dd7a8:/library.c#l129
+#: ../properties/nm-openconnect-editor-plugin.c:450
+#: ../openconnect-strings.txt:1390
+msgid "Compatible with Juniper Network Connect / Pulse Secure SSL VPN"
+msgstr "Kompatibilis a Juniper hálózati csatlakozás / Pulse Secure SSL VPN-nel"
+
+#. we don't know this protocol by name, but it's configured in the .name file,
+#. * so just take it.
+#: ../properties/nm-openconnect-editor-plugin.c:454
+#, c-format
+msgid "Openconnect VPN (%s)"
+msgstr "Openconnect VPN (%s)"
+
+#: ../properties/nm-openconnect-editor-plugin.c:455
+#, c-format
+msgid "Openconnect SSL VPN with %s protocol"
+msgstr "Openconnect SSL VPN %s protokollal"
+
+#: ../shared/nm-utils/nm-shared-utils.c:185
+#, c-format
+msgid "object class '%s' has no property named '%s'"
+msgstr "a(z) „%s” objektumosztálynak nincs „%s” nevű tulajdonsága"
+
+#: ../shared/nm-utils/nm-shared-utils.c:192
+#, c-format
+msgid "property '%s' of object class '%s' is not writable"
+msgstr "„%2$s” osztály „%1$s” tulajdonsága nem írható"
+
+#: ../shared/nm-utils/nm-shared-utils.c:199
+#, c-format
+msgid ""
+"construct property \"%s\" for object '%s' can't be set after construction"
+msgstr ""
+"„%2$s” objektum „%1$s” konstuktortulajdonsága nem állítható be a létrehozás "
+"után"
+
+#: ../shared/nm-utils/nm-shared-utils.c:207
+#, c-format
+msgid "'%s::%s' is not a valid property name; '%s' is not a GObject subtype"
+msgstr "„%s::%s” nem érvényes tulajdonságnév, „%s” nem egy GObject résztípus"
+
+#: ../shared/nm-utils/nm-shared-utils.c:216
+#, c-format
+msgid "unable to set property '%s' of type '%s' from value of type '%s'"
+msgstr ""
+"nem állítható be „%2$s” típusú „%1$s” tulajdonság „%3$s” típusú értékre"
+
+#: ../shared/nm-utils/nm-shared-utils.c:227
+#, c-format
+msgid ""
+"value \"%s\" of type '%s' is invalid or out of range for property '%s' of "
+"type '%s'"
+msgstr ""
+"a(z) „%2$s” típusú „%1$s” érték érvénytelen vagy kívül esik a tartományon "
+"„%4$s” típusú „%3$s” tulajdonsághoz"
+
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:80
+#, c-format
+msgid "missing plugin file \"%s\""
+msgstr "hiányzó bővítményfájl: „%s”"
+
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:86
+#, c-format
+msgid "cannot load editor plugin: %s"
+msgstr "nem tölthető be a szerkesztőbővítmény: %s"
+
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:95
+#, c-format
+msgid "cannot load factory %s from plugin: %s"
+msgstr "nem tölthető be a(z) %s factory a bővítményből: %s"
+
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:121
+msgid "unknown error creating editor instance"
+msgstr "ismeretlen hiba a szerkesztőpéldány létrehozásakor"
+
+#: ../src/nm-openconnect-service.c:179
+#, c-format
+msgid "invalid integer property “%s” or out of range [%d -> %d]"
+msgstr ""
+"érvénytelen, vagy a(z) %2$d…%3$d tartományon kívüli egész érték: „%1$s”"
+
+#: ../src/nm-openconnect-service.c:189
+#, c-format
+msgid "invalid boolean property “%s” (not yes or no)"
+msgstr "érvénytelen logikai érték: „%s” (érvényes értékek: yes, no)"
+
+#: ../src/nm-openconnect-service.c:196
+#, c-format
+msgid "unhandled property “%s” type %s"
+msgstr "kezeletlen %2$s típusú tulajdonság: „%1$s”"
+
+#: ../src/nm-openconnect-service.c:209
+#, c-format
+msgid "property “%s” invalid or not supported"
+msgstr "érvénytelen vagy nem támogatott tulajdonság: „%s”"
+
+#: ../src/nm-openconnect-service.c:225
+msgid "No VPN configuration options."
+msgstr "Nincsenek VPN-beállítások."
+
+#: ../src/nm-openconnect-service.c:243
+msgid "No VPN secrets!"
+msgstr "Nincs VPN-titok!"
+
+#: ../src/nm-openconnect-service.c:411
+msgid "Could not find openconnect binary."
+msgstr "Nem található az openconnect program."
+
+#: ../src/nm-openconnect-service.c:423
+msgid "No VPN gateway specified."
+msgstr "Nincs megadva VPN-átjáró."
+
+#: ../src/nm-openconnect-service.c:433
+msgid "No WebVPN cookie provided."
+msgstr "Nincs WebVPN süti megadva."
+
+#: ../src/nm-openconnect-service.c:693
+msgid "Don’t quit when VPN connection terminates"
+msgstr "Ne lépjen ki, ha a VPN-kapcsolat megszakad"
+
+#: ../src/nm-openconnect-service.c:694
+msgid "Enable verbose debug logging (may expose passwords)"
+msgstr ""
+"Részletes hibakeresési naplózás engedélyezése (jelszavak is a naplóba "
+"kerülhetnek)"
+
+#: ../src/nm-openconnect-service.c:695
+msgid "D-Bus name to use for this instance"
+msgstr "A példányhoz használandó D-Bus név"
+
+#: ../src/nm-openconnect-service.c:718
+msgid ""
+"nm-openconnect-service provides integrated Cisco AnyConnect SSL VPN "
+"capability to NetworkManager."
+msgstr ""
+"Az nm-openconnect-service integrált Cisco AnyConnect SSL VPN képességet "
+"biztosít a Hálózatkezelőnek."
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/497b3dd7a8:/auth-juniper.c#l143
 #: ../openconnect-strings.txt:14
@@ -1067,25 +1339,25 @@ msgstr ""
 #: ../openconnect-strings.txt:537
 #, c-format
 msgid "Discarding ancient ESP packet with seq %u (expected %<PRIu64>)\n"
-msgstr "Régi ESP csomag eldobása %u sorszámmal (várt érték: %<PRIu64>)\n"
+msgstr "A(z) %u sorszámú régi ESP csomag eldobása (várt érték: %<PRIu64>)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/497b3dd7a8:/esp-seqno.c#l109
 #: ../openconnect-strings.txt:540
 #, c-format
 msgid "Tolerating ancient ESP packet with seq %u (expected %<PRIu64>)\n"
-msgstr ""
+msgstr "A(z) %u sorszámú régi ESP csomag eltűrése (várt érték: %<PRIu64>)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/497b3dd7a8:/esp-seqno.c#l118
 #: ../openconnect-strings.txt:543
 #, c-format
 msgid "Discarding replayed ESP packet with seq %u\n"
-msgstr "Megismételt ESP csomag eldobása %u sorszámmal\n"
+msgstr "A(z) %u sorszámú megismételt ESP csomag eldobása\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/497b3dd7a8:/esp-seqno.c#l123
 #: ../openconnect-strings.txt:546
 #, c-format
 msgid "Tolerating replayed ESP packet with seq %u\n"
-msgstr ""
+msgstr "A(z) %u sorszámú megismételt ESP csomag eltűrése\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/497b3dd7a8:/esp-seqno.c#l136
 #: ../openconnect-strings.txt:549
@@ -2612,12 +2884,6 @@ msgstr ""
 #: ../openconnect-strings.txt:1387
 msgid "Juniper Network Connect"
 msgstr "Juniper hálózati csatlakozás"
-
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/497b3dd7a8:/library.c#l129
-#: ../openconnect-strings.txt:1390
-#: ../properties/nm-openconnect-editor-plugin.c:450
-msgid "Compatible with Juniper Network Connect / Pulse Secure SSL VPN"
-msgstr "Kompatibilis a Juniper hálózati csatlakozás / Pulse Secure SSL VPN-nel"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/497b3dd7a8:/library.c#l185
 #: ../openconnect-strings.txt:1393
@@ -5443,271 +5709,6 @@ msgstr "kiszámítás parancs"
 #: ../openconnect-strings.txt:2944
 msgid "Unrecognised response from Yubikey when generating tokencode\n"
 msgstr "Azonosítatlan válasz a Yubikey-től a tokenkód előállításakor\n"
-
-#: ../properties/auth-helpers.c:58
-msgid "Choose a Certificate Authority certificate…"
-msgstr "Válasszon hitelesítésszolgáltatói tanúsítványt…"
-
-#: ../properties/auth-helpers.c:74
-msgid "Choose your personal certificate…"
-msgstr "Válassza ki a személyes tanúsítványát…"
-
-#: ../properties/auth-helpers.c:90
-msgid "Choose your private key…"
-msgstr "Válassza ki a személyes kulcsát…"
-
-#: ../properties/auth-helpers.c:250
-msgid "PEM certificates (*.pem, *.crt, *.key)"
-msgstr "PEM tanúsítványok (*.pem, *.crt, *.key)"
-
-#: ../properties/nm-openconnect-dialog.ui.h:1
-msgid "General"
-msgstr "Általános"
-
-#: ../properties/nm-openconnect-dialog.ui.h:2
-msgid "Select A File"
-msgstr "Válasszon ki egy fájlt"
-
-#: ../properties/nm-openconnect-dialog.ui.h:3
-msgid "_VPN Protocol:"
-msgstr "_VPN Protokoll:"
-
-#: ../properties/nm-openconnect-dialog.ui.h:4
-msgid "_Gateway:"
-msgstr "Á_tjáró:"
-
-#: ../properties/nm-openconnect-dialog.ui.h:5
-msgid "_Proxy:"
-msgstr "_Proxy:"
-
-#: ../properties/nm-openconnect-dialog.ui.h:6
-msgid "CA C_ertificate:"
-msgstr "_CA tanúsítvány:"
-
-#: ../properties/nm-openconnect-dialog.ui.h:7
-msgid "Allow Cisco Secure Desktop _trojan"
-msgstr "A Cisco Secure Desktop _trójai engedélyezése"
-
-#: ../properties/nm-openconnect-dialog.ui.h:8
-msgid "CSD _Wrapper Script:"
-msgstr "_CSD átalakító parancsfájl:"
-
-#: ../properties/nm-openconnect-dialog.ui.h:9
-msgid "Reported OS:"
-msgstr "Jelentett OS:"
-
-#: ../properties/nm-openconnect-dialog.ui.h:10
-msgid "Common values: linux linux-64 win mac-intel android apple-ios"
-msgstr "Gyakori értékek: linux linux-64 win mac-intel android apple-ios"
-
-#: ../properties/nm-openconnect-dialog.ui.h:11
-msgid "Certificate Authentication"
-msgstr "Tanúsítvány hitelesítése"
-
-#: ../properties/nm-openconnect-dialog.ui.h:12
-msgid "_User Certificate:"
-msgstr "F_elhasználói tanúsítvány:"
-
-#: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Private _Key:"
-msgstr "S_zemélyes kulcs:"
-
-#: ../properties/nm-openconnect-dialog.ui.h:14
-msgid "Use _FSID for key passphrase"
-msgstr "_FSID használata a kulcs jelszavához"
-
-#: ../properties/nm-openconnect-dialog.ui.h:15
-msgid "Prevent user from manually accepting invalid certificates"
-msgstr ""
-"Felhasználó megakadályozása érvénytelen tanúsítványok kézi elfogadásában"
-
-#: ../properties/nm-openconnect-dialog.ui.h:16
-msgid "Software Token Authentication"
-msgstr "Szoftveres token hitelesítése"
-
-#: ../properties/nm-openconnect-dialog.ui.h:17
-msgid "Token _Mode:"
-msgstr "Token _mód:"
-
-#: ../properties/nm-openconnect-dialog.ui.h:18
-msgid "Token Sec_ret:"
-msgstr "Token _titok:"
-
-#: ../properties/nm-openconnect-dialog.ui.h:19
-msgid "Disabled"
-msgstr "Kikapcsolva"
-
-#: ../properties/nm-openconnect-dialog.ui.h:20
-msgid "RSA SecurID — read from ~/.stokenrc"
-msgstr "RSA SecurID - beolvasás a ~/.stokenrc fájlból"
-
-#: ../properties/nm-openconnect-dialog.ui.h:21
-msgid "RSA SecurID — manually entered"
-msgstr "RSA SecurID - kézzel megadott"
-
-#: ../properties/nm-openconnect-dialog.ui.h:22
-msgid "TOTP — manually entered"
-msgstr "TOTP - kézzel megadott"
-
-#: ../properties/nm-openconnect-dialog.ui.h:23
-msgid "HOTP — manually entered"
-msgstr "HOTP - kézzel megadott"
-
-#: ../properties/nm-openconnect-dialog.ui.h:24
-msgid "Yubikey OATH"
-msgstr "Yubikey OATH"
-
-#: ../properties/nm-openconnect-editor-plugin.c:56
-msgid "Cisco AnyConnect Compatible VPN (openconnect)"
-msgstr "Cisco AnyConnect-kompatibilis VPN (openconnect)"
-
-#: ../properties/nm-openconnect-editor-plugin.c:57
-msgid "Compatible with Cisco AnyConnect SSL VPN."
-msgstr "Kompatibilis a Cisco AnyConnect SSL VPN-nel."
-
-#: ../properties/nm-openconnect-editor-plugin.c:449
-msgid "Juniper Network Connect (openconnect)"
-msgstr "Juniper hálózati csatlakozás (openconnect)"
-
-#. we don't know this protocol by name, but it's configured in the .name file,
-#. * so just take it.
-#: ../properties/nm-openconnect-editor-plugin.c:454
-#, c-format
-msgid "Openconnect VPN (%s)"
-msgstr "Openconnect VPN (%s)"
-
-#: ../properties/nm-openconnect-editor-plugin.c:455
-#, c-format
-msgid "Openconnect SSL VPN with %s protocol"
-msgstr "Openconnect SSL VPN %s protokollal"
-
-#: ../properties/nm-openconnect-editor.c:237
-msgid "Cisco AnyConnect"
-msgstr "Cisco AnyConnect"
-
-#: ../properties/nm-openconnect-editor.c:243
-msgid "Juniper/Pulse Network Connect"
-msgstr "Juniper/Pulse hálózati csatlakozás"
-
-#: ../shared/nm-utils/nm-shared-utils.c:185
-#, c-format
-msgid "object class '%s' has no property named '%s'"
-msgstr "a(z) „%s” objektumosztálynak nincs „%s” nevű tulajdonsága"
-
-#: ../shared/nm-utils/nm-shared-utils.c:192
-#, c-format
-msgid "property '%s' of object class '%s' is not writable"
-msgstr "„%2$s” osztály „%1$s” tulajdonsága nem írható"
-
-#: ../shared/nm-utils/nm-shared-utils.c:199
-#, c-format
-msgid ""
-"construct property \"%s\" for object '%s' can't be set after construction"
-msgstr ""
-"„%2$s” objektum „%1$s” konstuktortulajdonsága nem állítható be a létrehozás "
-"után"
-
-#: ../shared/nm-utils/nm-shared-utils.c:207
-#, c-format
-msgid "'%s::%s' is not a valid property name; '%s' is not a GObject subtype"
-msgstr "„%s::%s” nem érvényes tulajdonságnév, „%s” nem egy GObject résztípus"
-
-#: ../shared/nm-utils/nm-shared-utils.c:216
-#, c-format
-msgid "unable to set property '%s' of type '%s' from value of type '%s'"
-msgstr ""
-"nem állítható be „%2$s” típusú „%1$s” tulajdonság „%3$s” típusú értékre"
-
-#: ../shared/nm-utils/nm-shared-utils.c:227
-#, c-format
-msgid ""
-"value \"%s\" of type '%s' is invalid or out of range for property '%s' of "
-"type '%s'"
-msgstr ""
-"a(z) „%2$s” típusú „%1$s” érték érvénytelen vagy kívül esik a tartományon "
-"„%4$s” típusú „%3$s” tulajdonsághoz"
-
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:80
-#, c-format
-msgid "missing plugin file \"%s\""
-msgstr "hiányzó bővítményfájl: „%s”"
-
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:86
-#, c-format
-msgid "cannot load editor plugin: %s"
-msgstr "nem tölthető be a szerkesztőbővítmény: %s"
-
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:95
-#, c-format
-msgid "cannot load factory %s from plugin: %s"
-msgstr "nem tölthető be a(z) %s factory a bővítményből: %s"
-
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:121
-msgid "unknown error creating editor instance"
-msgstr "ismeretlen hiba a szerkesztőpéldány létrehozásakor"
-
-#: ../src/nm-openconnect-service.c:179
-#, c-format
-msgid "invalid integer property “%s” or out of range [%d -> %d]"
-msgstr ""
-"érvénytelen, vagy a(z) %2$d…%3$d tartományon kívüli egész érték: „%1$s”"
-
-#: ../src/nm-openconnect-service.c:189
-#, c-format
-msgid "invalid boolean property “%s” (not yes or no)"
-msgstr "érvénytelen logikai érték: „%s” (érvényes értékek: yes, no)"
-
-#: ../src/nm-openconnect-service.c:196
-#, c-format
-msgid "unhandled property “%s” type %s"
-msgstr "kezeletlen %2$s típusú tulajdonság: „%1$s”"
-
-#: ../src/nm-openconnect-service.c:209
-#, c-format
-msgid "property “%s” invalid or not supported"
-msgstr "érvénytelen vagy nem támogatott tulajdonság: „%s”"
-
-#: ../src/nm-openconnect-service.c:225
-msgid "No VPN configuration options."
-msgstr "Nincsenek VPN-beállítások."
-
-#: ../src/nm-openconnect-service.c:243
-msgid "No VPN secrets!"
-msgstr "Nincs VPN-titok!"
-
-#: ../src/nm-openconnect-service.c:411
-msgid "Could not find openconnect binary."
-msgstr "Nem található az openconnect program."
-
-#: ../src/nm-openconnect-service.c:423
-msgid "No VPN gateway specified."
-msgstr "Nincs megadva VPN-átjáró."
-
-#: ../src/nm-openconnect-service.c:433
-msgid "No WebVPN cookie provided."
-msgstr "Nincs WebVPN süti megadva."
-
-#: ../src/nm-openconnect-service.c:693
-msgid "Don’t quit when VPN connection terminates"
-msgstr "Ne lépjen ki, ha a VPN-kapcsolat megszakad"
-
-#: ../src/nm-openconnect-service.c:694
-msgid "Enable verbose debug logging (may expose passwords)"
-msgstr ""
-"Részletes hibakeresési naplózás engedélyezése (jelszavak is a naplóba "
-"kerülhetnek)"
-
-#: ../src/nm-openconnect-service.c:695
-msgid "D-Bus name to use for this instance"
-msgstr "A példányhoz használandó D-Bus név"
-
-#: ../src/nm-openconnect-service.c:718
-msgid ""
-"nm-openconnect-service provides integrated Cisco AnyConnect SSL VPN "
-"capability to NetworkManager."
-msgstr ""
-"Az nm-openconnect-service integrált Cisco AnyConnect SSL VPN képességet "
-"biztosít a Hálózatkezelőnek."
 
 #~ msgid "Failed to open CONIN$: %s\n"
 #~ msgstr "Nem sikerült a CONIN$ megnyitása: %s\n"

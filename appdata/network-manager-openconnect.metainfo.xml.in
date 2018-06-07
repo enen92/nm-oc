@@ -29,7 +29,7 @@
 
   <screenshots>
     <screenshot type="default">
-      <image width="800" height="734">https://git.gnome.org/browse/network-manager-openconnect/plain/appdata/openconnect.png</image>
+      <image width="800" height="734">https://gitlab.gnome.org/GNOME/NetworkManager-openconnect/raw/master/appdata/openconnect.png</image>
     </screenshot>
   </screenshots>
 

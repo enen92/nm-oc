@@ -18,6 +18,28 @@ AM_CPPFLAGS = \
 
 ###############################################################################
 
+noinst_LTLIBRARIES = libnm-openconnect-csd-service-dbus.la
+
+nodist_libnm_openconnect_csd_service_dbus_la_SOURCES = \
+	nm-openconnect-csd-service-dbus.c \
+	nm-openconnect-csd-service-dbus.h
+
+libnm_openconnect_csd_service_dbus_la_CPPFLAGS = \
+	$(cppflags) \
+	$(filter-out -DGLIB_VERSION_MAX_ALLOWED%,$(AM_CPPFLAGS))
+
+nm-openconnect-csd-service-dbus.h: nm-openconnect-csd-service.xml
+	$(AM_V_GEN) gdbus-codegen \
+		--generate-c-code $(basename $@) \
+		--c-namespace NMDBus \
+		--interface-prefix org.freedesktop.NetworkManager \
+		$<
+
+nm-openconnect-csd-service-dbus.c: nm-openconnect-csd-service-dbus.h
+	@true
+
+###############################################################################
+
 nm_openconnect_service_SOURCES = \
 	$(top_srcdir)/shared/nm-utils/nm-shared-utils.c \
 	$(top_srcdir)/shared/nm-utils/nm-shared-utils.h \
@@ -42,4 +64,14 @@ nm_openconnect_service_openconnect_helper_LDADD = \
 
 ###############################################################################
 
-CLEANFILES = *~
+BUILT_SOURCES = \
+	nm-openconnect-csd-service-dbus.h \
+	nm-openconnect-csd-service-dbus.c
+
+CLEANFILES = \
+	nm-openconnect-csd-service-dbus.h \
+	nm-openconnect-csd-service-dbus.c \
+	*~
+
+EXTRA_DIST = \
+	nm-openconnect-csd-service.xml

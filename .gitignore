@@ -33,6 +33,8 @@ appdata/network-manager-openconnect.metainfo.xml
 nm-openconnect-service.name
 src/nm-openconnect-service
 src/nm-openconnect-service-openconnect-helper
+src/nm-openconnect-csd-service-dbus.c
+src/nm-openconnect-csd-service-dbus.h
 auth-dialog/nm-openconnect-auth-dialog
 
 /NetworkManager-openconnect*.tar*

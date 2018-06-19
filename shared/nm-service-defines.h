@@ -30,6 +30,7 @@
 #define NM_DBUS_SERVICE_OPENCONNECT    "org.freedesktop.NetworkManager.openconnect"
 #define NM_DBUS_INTERFACE_OPENCONNECT  "org.freedesktop.NetworkManager.openconnect"
 #define NM_DBUS_PATH_OPENCONNECT       "/org/freedesktop/NetworkManager/openconnect"
+#define NM_DBUS_PATH_OPENCONNECT_CSD   "/org/freedesktop/NetworkManager/openconnect/Csd"
 
 #define NM_OPENCONNECT_KEY_GATEWAY "gateway"
 #define NM_OPENCONNECT_KEY_COOKIE "cookie"

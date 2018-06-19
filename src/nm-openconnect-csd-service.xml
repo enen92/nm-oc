@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<node name="/">
+  <!--
+      org.freedesktop.NetworkManager.openconnect.Csd:
+      @short_description: Interface to running 'Cisco Secure Desktop' trojan scripts
+
+  -->
+
+  <interface name="org.freedesktop.NetworkManager.openconnect.Csd">
+    <!--
+        Run:
+        @arguments: arguments to the CSD script
+        @output: Standard output from the CSD script
+        @return_code: Return code from the CSD scripts
+
+        This is called by the csd-wrapper to ask the service to handle the CSD script.
+        The service is supposed to make sure the CSD is run by an agent in a desktop session.
+
+    -->
+    <method name="Run">
+      <arg name="arguments" type="as" direction="in" />
+      <arg name="output" type="ay" direction="out" />
+      <arg name="return_code" type="i" direction="out" />
+    </method>
+  </interface>
+</node>

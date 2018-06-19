@@ -1,5 +1,6 @@
 libexec_PROGRAMS = \
 	nm-openconnect-service \
+	nm-openconnect-service-csd-wrapper \
 	nm-openconnect-service-openconnect-helper
 
 AM_CPPFLAGS = \
@@ -37,6 +38,17 @@ nm-openconnect-csd-service-dbus.h: nm-openconnect-csd-service.xml
 
 nm-openconnect-csd-service-dbus.c: nm-openconnect-csd-service-dbus.h
 	@true
+
+###############################################################################
+
+nm_openconnect_service_csd_wrapper_SOURCES = \
+	nm-openconnect-service-csd-wrapper.c \
+	nm-openconnect-service.h \
+	$(NULL)
+
+nm_openconnect_service_csd_wrapper_LDADD = \
+	libnm-openconnect-csd-service-dbus.la \
+	$(GLIB_LIBS)
 
 ###############################################################################
 

@@ -50,4 +50,6 @@
 #define NM_OPENCONNECT_KEY_TOKEN_SECRET "stoken_string"
 #define NM_OPENCONNECT_KEY_REPORTED_OS "reported_os"
 
+#define NM_OPENCONNECT_HINT_TAG_CSD "x-openconnect-csd:"
+
 #endif /* __NM_SERVICE_DEFINES_H__ */

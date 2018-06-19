@@ -1684,6 +1684,7 @@ static struct option long_options[] = {
 	{"name", 1, 0, 'n'},
 	{"service", 1, 0, 's'},
 	{"allow-interaction", 0, 0, 'i'},
+	{"hint", 1, 0, 't'},
 	{NULL, 0, 0, 0},
 };
 
@@ -1713,8 +1714,11 @@ int main (int argc, char **argv)
 	GThread *init_thread;
 	gchar *key, *value;
 	int opt;
+	GPtrArray *csd_arguments;
 
-	while ((opt = getopt_long(argc, argv, "ru:n:s:i", long_options, NULL))) {
+	csd_arguments = g_ptr_array_new ();
+
+	while ((opt = getopt_long(argc, argv, "ru:n:s:it:", long_options, NULL))) {
 		if (opt < 0)
 			break;
 
@@ -1737,6 +1741,11 @@ int main (int argc, char **argv)
 
 		case 's':
 			vpn_service = optarg;
+			break;
+
+		case 't':
+			if (strncmp (optarg, NM_OPENCONNECT_HINT_TAG_CSD, sizeof (NM_OPENCONNECT_HINT_TAG_CSD) - 1) == 0)
+				g_ptr_array_add (csd_arguments, optarg + sizeof (NM_OPENCONNECT_HINT_TAG_CSD) - 1);
 			break;
 
 		default:
@@ -1770,40 +1779,72 @@ int main (int argc, char **argv)
 		return 1;
 	}
 
-	gtk_init(0, NULL);
+	if (csd_arguments->len) {
+		char *csd_wrapper;
+		gchar *output = NULL;
+		gint status = 0;
+		GError *error = NULL;
 
-	_ui_data = init_ui_data(vpn_name, options, secrets, vpn_uuid);
-	if (get_config(_ui_data, options, secrets)) {
-		fprintf(stderr, "Failed to find VPN UUID %s\n", vpn_uuid);
-		return 1;
-	}
+		csd_wrapper = g_hash_table_lookup (options, NM_OPENCONNECT_KEY_CSD_WRAPPER);
+		if (!csd_wrapper) {
+			fprintf (stderr, "No CSD wrapper set\n");
+			return 1;
+		}
+
+		csd_arguments->pdata[0] = csd_wrapper;
+		g_ptr_array_add (csd_arguments, NULL);
+
+		if (!g_spawn_sync (NULL, (gchar **) csd_arguments->pdata, NULL, G_SPAWN_DEFAULT, NULL, NULL, &output, NULL, &status, &error)) {
+			fprintf (stderr, "Failed to spawn CSD wrapper: %s\n", error->message);
+			g_error_free (error);
+			return 1;
+		}
+
+		g_print ("csd:output\n");
+		g_print ("%s\n", g_strescape (output, NULL));
+		g_print ("csd:status\n");
+		g_print ("%d\n", status);
+		g_free (output);
+
+	} else {
+		gtk_init(0, NULL);
+
+		_ui_data = init_ui_data(vpn_name, options, secrets, vpn_uuid);
+		if (get_config(_ui_data, options, secrets)) {
+			fprintf(stderr, "Failed to find VPN UUID %s\n", vpn_uuid);
+			return 1;
+		}
 
 #if OPENCONNECT_CHECK_VER(3,4)
-	openconnect_set_token_callbacks (_ui_data->vpninfo, _ui_data, NULL, update_token);
+		openconnect_set_token_callbacks (_ui_data->vpninfo, _ui_data, NULL, update_token);
 #endif
 
-	build_main_dialog(_ui_data);
+		build_main_dialog(_ui_data);
 
-	openconnect_init_ssl();
+		openconnect_init_ssl();
 
-	/* These can't be done until token password handled */
-	gtk_widget_set_sensitive (_ui_data->combo, FALSE);
-	gtk_widget_set_sensitive (_ui_data->connect_button, FALSE);
+		/* These can't be done until token password handled */
+		gtk_widget_set_sensitive (_ui_data->combo, FALSE);
+		gtk_widget_set_sensitive (_ui_data->connect_button, FALSE);
 
-	init_thread = g_thread_new("init_connection", (GThreadFunc)init_connection, _ui_data);
-	g_thread_unref(init_thread);
+		init_thread = g_thread_new("init_connection", (GThreadFunc)init_connection, _ui_data);
+		g_thread_unref(init_thread);
 
-	gtk_window_present(GTK_WINDOW(_ui_data->dialog));
-	gtk_main();
+		gtk_window_present(GTK_WINDOW(_ui_data->dialog));
+		gtk_main();
 
-	if (!g_hash_table_size (_ui_data->secrets))
-		return 0;
+		if (!g_hash_table_size (_ui_data->secrets))
+			return 0;
 
-	/* Dump all secrets to stdout */
-	g_hash_table_iter_init (&iter, _ui_data->secrets);
-	while (g_hash_table_iter_next (&iter, (gpointer *)&key,
-				       (gpointer *)&value))
-		printf("%s\n%s\n", key, value);
+		/* Dump all secrets to stdout */
+		g_hash_table_iter_init (&iter, _ui_data->secrets);
+		while (g_hash_table_iter_next (&iter, (gpointer *)&key,
+					       (gpointer *)&value))
+			printf("%s\n%s\n", key, value);
+	}
+
+	g_ptr_array_unref (csd_arguments);
+
 	printf("\n\n");
 	fflush(stdout);
 

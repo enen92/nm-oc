@@ -10,6 +10,7 @@ plugin=@PLUGINDIR@/libnm-vpn-plugin-openconnect.so
 [GNOME]
 auth-dialog=@LIBEXECDIR@/nm-openconnect-auth-dialog
 properties=@PLUGINDIR@/libnm-openconnect-properties
+supports-hints=true
 
 [openconnect]
 supported-protocols=anyconnect,nc

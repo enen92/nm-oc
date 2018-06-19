@@ -42,6 +42,7 @@
 #include <grp.h>
 #include <locale.h>
 
+#include "nm-openconnect-csd-service-dbus.h"
 #include "nm-utils/nm-shared-utils.h"
 #include "nm-utils/nm-vpn-plugin-macros.h"
 
@@ -49,11 +50,17 @@
 # define DIST_VERSION VERSION
 #endif
 
-G_DEFINE_TYPE (NMOpenconnectPlugin, nm_openconnect_plugin, NM_TYPE_VPN_SERVICE_PLUGIN)
+static void nm_openconnect_plugin_initable_iface_init (GInitableIface *iface);
+
+G_DEFINE_TYPE_WITH_CODE (NMOpenconnectPlugin, nm_openconnect_plugin, NM_TYPE_VPN_SERVICE_PLUGIN,
+                         G_IMPLEMENT_INTERFACE (G_TYPE_INITABLE, nm_openconnect_plugin_initable_iface_init));
 
 typedef struct {
 	GPid pid;
 	char *tun_name;
+	gboolean csd_can_run;
+	NMDBusOpenconnectCsd *csd_skeleton;
+	GDBusMethodInvocation *csd_invocation;
 } NMOpenconnectPluginPrivate;
 
 #define NM_OPENCONNECT_PLUGIN_GET_PRIVATE(o) (G_TYPE_INSTANCE_GET_PRIVATE ((o), NM_TYPE_OPENCONNECT_PLUGIN, NMOpenconnectPluginPrivate))
@@ -70,6 +77,7 @@ static const char *openconnect_binary_paths[] =
 };
 
 #define NM_OPENCONNECT_HELPER_PATH LIBEXECDIR"/nm-openconnect-service-openconnect-helper"
+#define NM_OPENCONNECT_CSD_WRAPPER_PATH LIBEXECDIR"/nm-openconnect-service-csd-wrapper"
 
 typedef struct {
 	const char *name;
@@ -393,6 +401,7 @@ nm_openconnect_start_openconnect_binary (NMOpenconnectPlugin *plugin,
 	GSource *openconnect_watch;
 	gint	stdin_fd;
 	const char *props_vpn_gw, *props_cookie, *props_cacert, *props_mtu, *props_gwcert, *props_proxy;
+	const char *props_csd_enable;
 	const char *protocol;
 
 	/* Find openconnect */
@@ -478,6 +487,15 @@ nm_openconnect_start_openconnect_binary (NMOpenconnectPlugin *plugin,
 	g_ptr_array_add (openconnect_argv, (gpointer) "--script");
 	g_ptr_array_add (openconnect_argv, (gpointer) NM_OPENCONNECT_HELPER_PATH);
 
+	props_csd_enable = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_CSD_ENABLE);
+	if (props_csd_enable && !strcmp (props_csd_enable, "yes")) {
+		/* Use our shim wrapper, that would forward eventual CSD runs to the service,
+		 * that in turn can handled them as secret requests (forward to the auth helper
+		 * in the unprivileged user session. */
+		g_ptr_array_add (openconnect_argv, (gpointer) "--csd-wrapper");
+		g_ptr_array_add (openconnect_argv, (gpointer) NM_OPENCONNECT_CSD_WRAPPER_PATH);
+	}
+
 	priv->tun_name = create_persistent_tundev ();
 	if (priv->tun_name) {
 		g_ptr_array_add (openconnect_argv, (gpointer) "--interface");
@@ -522,11 +540,83 @@ nm_openconnect_start_openconnect_binary (NMOpenconnectPlugin *plugin,
 
 	return 0;
 }
+
 static gboolean
-real_connect (NMVpnServicePlugin   *plugin,
-              NMConnection  *connection,
-              GError       **error)
+handle_csd_run (NMDBusOpenconnectCsd *object,
+                GDBusMethodInvocation *invocation,
+                const gchar *const *arg_arguments,
+                gpointer user_data)
 {
+	NMOpenconnectPluginPrivate *priv = NM_OPENCONNECT_PLUGIN_GET_PRIVATE (user_data);
+	GPtrArray *hints;
+	int i;
+
+	if (!priv->csd_can_run) {
+		g_dbus_method_invocation_return_error (invocation,
+		                                       NM_VPN_PLUGIN_ERROR,
+		                                       NM_VPN_PLUGIN_ERROR_FAILED,
+		                                       _("CSD can't be used on non-interactive connections"));
+		return TRUE;
+	}
+
+	if (priv->csd_invocation) {
+		g_dbus_method_invocation_return_error (invocation,
+		                                       NM_VPN_PLUGIN_ERROR,
+		                                       NM_VPN_PLUGIN_ERROR_FAILED,
+		                                       _("CSD script is already being run"));
+		return TRUE;
+	}
+
+	hints = g_ptr_array_new_with_free_func (g_free);
+
+	for (i = 0; arg_arguments[i]; i++) {
+		g_ptr_array_add (hints, g_strdup_printf ("%s%s",
+		                                         NM_OPENCONNECT_HINT_TAG_CSD,
+		                                         arg_arguments[i]));
+	}
+	g_ptr_array_add (hints, NULL);
+
+	priv->csd_invocation = invocation;
+	nm_vpn_service_plugin_secrets_required (NM_VPN_SERVICE_PLUGIN (user_data),
+	                                        "CSD Script Run",
+	                                        (const char **) hints->pdata);
+
+	g_ptr_array_unref (hints);
+
+	return TRUE;
+}
+
+static void
+dispose (GObject *object)
+{
+	NMOpenconnectPluginPrivate *priv = NM_OPENCONNECT_PLUGIN_GET_PRIVATE (object);
+	GDBusInterfaceSkeleton *skeleton = NULL;
+
+	if (priv->csd_skeleton) {
+		skeleton = G_DBUS_INTERFACE_SKELETON (priv->csd_skeleton);
+		if (g_dbus_interface_skeleton_get_object_path (skeleton))
+			g_dbus_interface_skeleton_unexport (skeleton);
+		g_signal_handlers_disconnect_by_func (skeleton, handle_csd_run, object);
+	}
+
+	if (priv->csd_invocation) {
+		g_dbus_method_invocation_return_error (priv->csd_invocation,
+		                                       NM_VPN_PLUGIN_ERROR,
+		                                       NM_VPN_PLUGIN_ERROR_FAILED,
+		                                       _("CSD script was not serviced"));
+		priv->csd_invocation = NULL;
+	}
+
+	G_OBJECT_CLASS (nm_openconnect_plugin_parent_class)->dispose (object);
+}
+
+static gboolean
+real_connect_interactive (NMVpnServicePlugin  *plugin,
+                          NMConnection        *connection,
+                          GVariant            *details,
+                          GError             **error)
+{
+	NMOpenconnectPluginPrivate *priv = NM_OPENCONNECT_PLUGIN_GET_PRIVATE (plugin);
 	NMSettingVpn *s_vpn;
 	gint openconnect_fd = -1;
 
@@ -540,12 +630,23 @@ real_connect (NMVpnServicePlugin   *plugin,
 	if (_LOGD_enabled ())
 		nm_connection_dump (connection);
 
+	if (details)
+		priv->csd_can_run = TRUE;
+
 	openconnect_fd = nm_openconnect_start_openconnect_binary (NM_OPENCONNECT_PLUGIN (plugin), s_vpn, error);
 	if (!openconnect_fd)
 		return TRUE;
 
  out:
 	return FALSE;
+}
+
+static gboolean
+real_connect (NMVpnServicePlugin  *plugin,
+              NMConnection        *connection,
+              GError             **error)
+{
+	return real_connect_interactive (plugin, connection, NULL, error);
 }
 
 static gboolean
@@ -588,6 +689,38 @@ real_need_secrets (NMVpnServicePlugin *plugin,
 }
 
 static gboolean
+real_new_secrets (NMVpnServicePlugin *plugin,
+                  NMConnection *connection,
+                  GError **error)
+{
+	NMOpenconnectPluginPrivate *priv = NM_OPENCONNECT_PLUGIN_GET_PRIVATE (plugin);
+	NMSettingVpn *s_vpn;
+	const char *csd_output;
+	const char *csd_status;
+	char *output;
+
+	s_vpn = nm_connection_get_setting_vpn (connection);
+	g_assert (s_vpn);
+
+	csd_output = nm_setting_vpn_get_secret (s_vpn, "csd:output");
+	csd_status = nm_setting_vpn_get_secret (s_vpn, "csd:status");
+
+	if (priv->csd_invocation && csd_output && csd_status) {
+		output = g_strcompress (csd_output);
+		nmdbus_openconnect_csd_complete_run (priv->csd_skeleton, priv->csd_invocation, output, atoi (csd_status));
+		priv->csd_invocation = NULL;
+		g_free (output);
+		return TRUE;
+	}
+
+	g_set_error (error,
+		     NM_VPN_PLUGIN_ERROR,
+		     NM_VPN_PLUGIN_ERROR_FAILED,
+		     _("Can't accept new secrets if already connected"));
+	return FALSE;
+}
+
+static gboolean
 ensure_killed (gpointer data)
 {
 	int pid = GPOINTER_TO_INT (data);
@@ -603,6 +736,8 @@ real_disconnect (NMVpnServicePlugin   *plugin,
                  GError       **err)
 {
 	NMOpenconnectPluginPrivate *priv = NM_OPENCONNECT_PLUGIN_GET_PRIVATE (plugin);
+
+	priv->csd_can_run = FALSE;
 
 	if (priv->pid) {
 		if (kill (priv->pid, SIGINT) == 0)
@@ -630,11 +765,55 @@ nm_openconnect_plugin_class_init (NMOpenconnectPluginClass *openconnect_class)
 
 	g_type_class_add_private (object_class, sizeof (NMOpenconnectPluginPrivate));
 
+	object_class->dispose = dispose;
+
 	/* virtual methods */
-	parent_class->connect    = real_connect;
-	parent_class->need_secrets = real_need_secrets;
-	parent_class->disconnect = real_disconnect;
+	parent_class->connect_interactive = real_connect_interactive;
+	parent_class->connect             = real_connect;
+	parent_class->need_secrets        = real_need_secrets;
+	parent_class->new_secrets         = real_new_secrets;
+	parent_class->disconnect          = real_disconnect;
 }
+
+static GInitableIface *ginitable_parent_iface = NULL;
+
+static gboolean
+init_sync (GInitable *object, GCancellable *cancellable, GError **error)
+{
+	NMOpenconnectPluginPrivate *priv = NM_OPENCONNECT_PLUGIN_GET_PRIVATE (object);
+	GDBusConnection *connection;
+
+	if (!ginitable_parent_iface->init (object, cancellable, error))
+		return FALSE;
+
+	connection = nm_vpn_service_plugin_get_connection (NM_VPN_SERVICE_PLUGIN (object)),
+	priv->csd_skeleton = nmdbus_openconnect_csd_skeleton_new ();
+	if (!g_dbus_interface_skeleton_export (G_DBUS_INTERFACE_SKELETON (priv->csd_skeleton),
+	                                       connection,
+	                                       NM_DBUS_PATH_OPENCONNECT_CSD,
+	                                       error)) {
+		g_prefix_error (error, _("Failed to export the helper interface: "));
+		g_object_unref (connection);
+		return FALSE;
+	}
+
+	g_dbus_connection_register_object (connection, NM_DBUS_PATH_OPENCONNECT_CSD,
+	                                   nmdbus_openconnect_csd_interface_info (),
+	                                   NULL, NULL, NULL, NULL);
+
+	g_signal_connect (priv->csd_skeleton, "handle-run", G_CALLBACK (handle_csd_run), object);
+
+	g_object_unref (connection);
+	return TRUE;
+}
+
+static void
+nm_openconnect_plugin_initable_iface_init (GInitableIface *iface)
+{
+	ginitable_parent_iface = g_type_interface_peek_parent (iface);
+	iface->init = init_sync;
+}
+
 
 NMOpenconnectPlugin *
 nm_openconnect_plugin_new (const char *bus_name)

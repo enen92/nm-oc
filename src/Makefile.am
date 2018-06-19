@@ -60,6 +60,7 @@ nm_openconnect_service_SOURCES = \
 	$(NULL)
 
 nm_openconnect_service_LDADD = \
+	libnm-openconnect-csd-service-dbus.la \
 	$(GLIB_LIBS) \
 	$(LIBNM_LIBS)
 

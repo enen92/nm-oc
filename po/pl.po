@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: network-manager-openconnect\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-03 15:05+0200\n"
-"PO-Revision-Date: 2018-06-03 15:08+0200\n"
+"POT-Creation-Date: 2018-06-24 18:54+0200\n"
+"PO-Revision-Date: 2018-06-24 18:55+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -155,12 +155,12 @@ msgid "CA C_ertificate:"
 msgstr "C_ertyfikat CA:"
 
 #: ../properties/nm-openconnect-dialog.ui.h:7
-msgid "Allow Cisco Secure Desktop _trojan"
-msgstr "_Zezwolenie na trojana Cisco Secure Desktop"
+msgid "Allow security scanner _trojan (CSD)"
+msgstr "_Zezwolenie na trojana skanera zabezpieczeń (CSD)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:8
-msgid "CSD _Wrapper Script:"
-msgstr "Skrypt _wrappera CSD:"
+msgid "Trojan (CSD) _Wrapper Script:"
+msgstr "Skrypt _wrappera trojana (CSD):"
 
 #: ../properties/nm-openconnect-dialog.ui.h:9
 msgid "Reported OS:"
@@ -237,32 +237,52 @@ msgstr "Cisco AnyConnect"
 msgid "Juniper/Pulse Network Connect"
 msgstr "Juniper/Pulse Network Connect"
 
-#: ../properties/nm-openconnect-editor-plugin.c:56
+#: ../properties/nm-openconnect-editor-plugin.c:57
+#: ../properties/nm-openconnect-editor-plugin.c:60
+msgid "Multi-protocol VPN client (openconnect)"
+msgstr "Wieloprotokołowy klient VPN (openconnect)"
+
+#: ../properties/nm-openconnect-editor-plugin.c:58
+msgid ""
+"Compatible with Cisco AnyConnect, Juniper Network Connect and Junos Pulse, "
+"and PAN GlobalProtect SSL VPNs."
+msgstr ""
+"Zgodny z VPN Cisco AnyConnect, Juniper Network Connect i Junos Pulse oraz "
+"PAN GlobalProtect SSL."
+
+#: ../properties/nm-openconnect-editor-plugin.c:61
+msgid ""
+"Compatible with Cisco AnyConnect and Juniper Network Connect and Junos Pulse "
+"SSL VPNs."
+msgstr ""
+"Zgodny z VPN Cisco AnyConnect oraz Juniper Network Connect i Junos Pulse SSL."
+
+#: ../properties/nm-openconnect-editor-plugin.c:63
 msgid "Cisco AnyConnect Compatible VPN (openconnect)"
 msgstr "VPN zgodny z Cisco AnyConnect (openconnect)"
 
-#: ../properties/nm-openconnect-editor-plugin.c:57
+#: ../properties/nm-openconnect-editor-plugin.c:64
 msgid "Compatible with Cisco AnyConnect SSL VPN."
 msgstr "Zgodny z VPN Cisco AnyConnect SSL."
 
-#: ../properties/nm-openconnect-editor-plugin.c:449
+#: ../properties/nm-openconnect-editor-plugin.c:457
 msgid "Juniper Network Connect (openconnect)"
 msgstr "Juniper Network Connect (openconnect)"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/library.c#l129
-#: ../properties/nm-openconnect-editor-plugin.c:450
+#: ../properties/nm-openconnect-editor-plugin.c:458
 #: ../openconnect-strings.txt:1575
 msgid "Compatible with Juniper Network Connect / Pulse Secure SSL VPN"
 msgstr "Zgodny z VPN Juniper Network Connect/Pulse Secure SSL"
 
 #. we don't know this protocol by name, but it's configured in the .name file,
 #. * so just take it.
-#: ../properties/nm-openconnect-editor-plugin.c:454
+#: ../properties/nm-openconnect-editor-plugin.c:462
 #, c-format
 msgid "Openconnect VPN (%s)"
 msgstr "VPN OpenConnect (%s)"
 
-#: ../properties/nm-openconnect-editor-plugin.c:455
+#: ../properties/nm-openconnect-editor-plugin.c:463
 #, c-format
 msgid "Openconnect SSL VPN with %s protocol"
 msgstr "VPN SSL OpenConnect z protokołem %s"

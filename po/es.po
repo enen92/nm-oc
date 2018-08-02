@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: network-manager-openconnect.HEAD\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/NetworkManager-"
 "openconnect/issues\n"
-"POT-Creation-Date: 2018-06-18 13:57+0000\n"
-"PO-Revision-Date: 2018-08-01 11:25+0200\n"
+"POT-Creation-Date: 2018-08-01 10:51+0000\n"
+"PO-Revision-Date: 2018-08-02 11:08+0200\n"
 "Last-Translator: Rodrigo <rodhos92@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "Language: es\n"
@@ -160,12 +160,10 @@ msgid "CA C_ertificate:"
 msgstr "Certificado _CA:"
 
 #: ../properties/nm-openconnect-dialog.ui.h:7
-#| msgid "Allow Cisco Secure Desktop _trojan"
 msgid "Allow security scanner _trojan (CSD)"
 msgstr "Permitir el escaneo de seguridad _troyano (CSD)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:8
-#| msgid "CSD _Wrapper Script:"
 msgid "Trojan (CSD) _Wrapper Script:"
 msgstr "Script _envolvente de troyano (CSD):"
 
@@ -243,13 +241,11 @@ msgstr "Juniper/Pulse Network Connect"
 
 #: ../properties/nm-openconnect-editor-plugin.c:57
 #: ../properties/nm-openconnect-editor-plugin.c:60
-#| msgid "Juniper Network Connect (openconnect)"
 msgid "Multi-protocol VPN client (openconnect)"
 msgstr "Cliente VPN multi-protocolo (openconnect)"
 
 # Son nombres de programas para conectar a VPNs
 #: ../properties/nm-openconnect-editor-plugin.c:58
-#| msgid "Compatible with Juniper Network Connect / Pulse Secure SSL VPN"
 msgid ""
 "Compatible with Cisco AnyConnect, Juniper Network Connect and Junos Pulse, "
 "and PAN GlobalProtect SSL VPNs."
@@ -258,7 +254,6 @@ msgstr ""
 "Pulse, y PAN GlobalProtect SSL."
 
 #: ../properties/nm-openconnect-editor-plugin.c:61
-#| msgid "Compatible with Juniper Network Connect / Pulse Secure SSL VPN"
 msgid ""
 "Compatible with Cisco AnyConnect and Juniper Network Connect and Junos Pulse "
 "SSL VPNs."
@@ -423,7 +418,6 @@ msgstr "Introduzca su usuario y contraseña"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/auth-globalprotect.c#l67
 #: ../openconnect-strings.txt:17
-#| msgid "User name:"
 msgid "Username: "
 msgstr "Usuario:"
 
@@ -434,7 +428,6 @@ msgstr "Desafío"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/auth-globalprotect.c#l75
 #: ../openconnect-strings.txt:23
-#| msgid "Password:"
 msgid "Password"
 msgstr "Contraseña"
 
@@ -476,7 +469,6 @@ msgstr "%d servidores de puerta de enlace disponibles:\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/auth-globalprotect.c#l288
 #: ../openconnect-strings.txt:44
 #, c-format
-#| msgid "HTTP body %s (%d)\n"
 msgid "  %s (%s)\n"
 msgstr "  %s (%s)\n"
 
@@ -496,13 +488,11 @@ msgstr ""
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/auth-globalprotect.c#l500
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/oncp.c#l1303
 #: ../openconnect-strings.txt:56
-#| msgid "Reconnect failed\n"
 msgid "Logout failed.\n"
 msgstr "Falló al cerrar sesión.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/auth-globalprotect.c#l502
 #: ../openconnect-strings.txt:59
-#| msgid "Soft token init was successful.\n"
 msgid "Logout successful\n"
 msgstr "Sesión cerrada con éxito\n"
 
@@ -938,10 +928,10 @@ msgstr "X-DTLS-Session no es de 64 caracteres; es: «%s»\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/cstp.c#l433
 #: ../openconnect-strings.txt:299
-#, fuzzy, c-format
+#, c-format
 #| msgid "X-DTLS-Session-ID not 64 characters; is: \"%s\"\n"
 msgid "X-DTLS-Session-ID is invalid; is: \"%s\"\n"
-msgstr "X-DTLS-Session no es de 64 caracteres; es: «%s»\n"
+msgstr "X-DTLS-Session-ID no es válido; es: «%s»\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/cstp.c#l451
 #: ../openconnect-strings.txt:302
@@ -1321,16 +1311,19 @@ msgstr "Falló al enviar petición de keepalive. Espere para desconectar\n"
 msgid "Unknown packet (len %d) received: %02x %02x %02x %02x...\n"
 msgstr "Se recibió un paquete desconocido (len %d): %02x %02x %02x %02x…\n"
 
+# TOS = Type of service
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/dtls.c#l441
 #: ../openconnect-strings.txt:521
 #, c-format
 msgid "TOS this: %d, TOS last: %d\n"
-msgstr ""
+msgstr "TOS este: %d, TOS último: %d\n"
 
+# setsockopt - set the socket options
+# Es una función y por tanto la dejo sin traducir
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/dtls.c#l445
 #: ../openconnect-strings.txt:524
 msgid "UDP setsockopt"
-msgstr ""
+msgstr "UDP setsockopt"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/dtls.c#l476
 #: ../openconnect-strings.txt:527
@@ -1356,31 +1349,34 @@ msgstr "Envió paquete DTLS de %d bytes; el envío DTLS devolvió %d\n"
 msgid "Initiating IPv4 MTU detection (min=%d, max=%d)\n"
 msgstr "Iniciando la detección de IPv4 MTU (min=%d, max=%d)\n"
 
+# Unidad máxima de transferencia (Maximum Transmission Unit - MTU)
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/dtls.c#l553
 #: ../openconnect-strings.txt:539
-#, fuzzy
 #| msgid "Too long time in MTU detect loop; bailing out.\n"
 msgid "Too long time in MTU detect loop; assuming negotiated MTU.\n"
-msgstr "Demasiado tiempo en detectar el bucle MTU; liberando.\n"
+msgstr ""
+"Demasiado tiempo en el bucle de detección de la MTU; suponiendo la MTU "
+"acordada.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/dtls.c#l557
 #: ../openconnect-strings.txt:542
 #, c-format
 msgid "Too long time in MTU detect loop; MTU set to %d.\n"
-msgstr "Demasiado tiempo en detectar el bucle MTU; MTU establecido a %d.\n"
+msgstr ""
+"Demasiado tiempo en el bucle de detección de la MTU; MTU establecida a %d.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/dtls.c#l566
 #: ../openconnect-strings.txt:545
 #, c-format
 msgid "Sending MTU DPD probe (%u bytes, min=%u, max=%u)\n"
-msgstr ""
+msgstr "Enviando sonda DPD MTU (%u bytes, min=%u, max=%u)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/dtls.c#l570
 #: ../openconnect-strings.txt:548
-#, fuzzy, c-format
+#, c-format
 #| msgid "Failed to send DPD request (%d): %s\n"
 msgid "Failed to send DPD request (%d %d)\n"
-msgstr "Falló al enviar la solicitud DPD (%d): %s\n"
+msgstr "Falló al enviar la solicitud DPD (%d %d)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/dtls.c#l584
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/dtls.c#l692
@@ -1392,16 +1388,17 @@ msgstr ""
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/dtls.c#l596
 #: ../openconnect-strings.txt:555
-#, fuzzy, c-format
+#, c-format
 #| msgid "Sent start; waiting for response from TNCC\n"
 msgid "Timeout while waiting for DPD response; trying %d\n"
-msgstr "Envío iniciado; esperando respuesta por parte de TNCC\n"
+msgstr "Se agotó el tiempo al esperar una respuesta del DPD; intentando %d\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/dtls.c#l603
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/dtls.c#l684
 #: ../openconnect-strings.txt:559
 msgid "Timeout while waiting for DPD response; resending probe.\n"
 msgstr ""
+"Se agotó el tiempo al esperar una respuesta del DPD; reenviando la sonda.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/dtls.c#l610
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/dtls.c#l711
@@ -1412,10 +1409,10 @@ msgstr "Falló al recibir la solicitud DPD (%d)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/dtls.c#l615
 #: ../openconnect-strings.txt:566
-#, fuzzy, c-format
+#, c-format
 #| msgid "Detected MTU of %d bytes (was %d)\n"
 msgid "Received MTU DPD probe (%u bytes of %u)\n"
-msgstr "Detectado MTU de %d bytes (eran %d)\n"
+msgstr "Sonda DPD MTU recibida (%u bytes de %u)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/dtls.c#l653
 #: ../openconnect-strings.txt:569
@@ -1424,10 +1421,10 @@ msgstr "Iniciando detección de MTU IPv6\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/dtls.c#l668
 #: ../openconnect-strings.txt:572
-#, fuzzy, c-format
+#, c-format
 #| msgid "Sending SSPI token of %lu bytes\n"
 msgid "Sending MTU DPD probe (%u bytes)\n"
-msgstr "Enviando testigo SSPI de %lu bytes\n"
+msgstr "Enviando sonda DPD MTU (%u bytes)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/dtls.c#l672
 #: ../openconnect-strings.txt:575
@@ -1437,10 +1434,10 @@ msgstr "Falló al enviar la solicitud DPD (%d)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/dtls.c#l697
 #: ../openconnect-strings.txt:578
-#, fuzzy, c-format
+#, c-format
 #| msgid "Received ESP packet of %d bytes\n"
 msgid "Received MTU DPD probe (%u bytes)\n"
-msgstr "Paquete ESP recibido de %d bytes\n"
+msgstr "Sonda DPD MTU recibida (%u bytes)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/dtls.c#l761
 #: ../openconnect-strings.txt:581
@@ -1478,11 +1475,11 @@ msgstr ""
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/esp-seqno.c#l109
 #: ../openconnect-strings.txt:597
-#, fuzzy, c-format
+#, c-format
 #| msgid "Discarding ancient ESP packet with seq %u (expected %<PRIu64>)\n"
 msgid "Tolerating ancient ESP packet with seq %u (expected %<PRIu64>)\n"
 msgstr ""
-"Descartando paquete ESP antiguo con la secuencia %u (se esperaba %<PRIu64>)\n"
+"Permitiendo paquete ESP antiguo con la secuencia %u (se esperaba %<PRIu64>)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/esp-seqno.c#l118
 #: ../openconnect-strings.txt:600
@@ -1492,10 +1489,10 @@ msgstr "Descartando paquete ESP repetido con la secuencia %u\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/esp-seqno.c#l123
 #: ../openconnect-strings.txt:603
-#, fuzzy, c-format
+#, c-format
 #| msgid "Discarding replayed ESP packet with seq %u\n"
 msgid "Tolerating replayed ESP packet with seq %u\n"
-msgstr "Descartando paquete ESP repetido con la secuencia %u\n"
+msgstr "Permitiendo paquete ESP repetido con la secuencia %u\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/esp-seqno.c#l136
 #: ../openconnect-strings.txt:606
@@ -1547,10 +1544,10 @@ msgstr "Paquete ESP recibido de %d bytes\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/esp.c#l157
 #: ../openconnect-strings.txt:631
-#, fuzzy, c-format
+#, c-format
 #| msgid "Received ESP packet with invalid SPI 0x%08x\n"
 msgid "Received ESP packet from old SPI 0x%x, seq %u\n"
-msgstr "Paquete ESP recibido con SPI no válido 0x%08x\n"
+msgstr "Paquete ESP recibido desde el SPI antiguo 0x%x, secuencia %u\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/esp.c#l163
 #: ../openconnect-strings.txt:634
@@ -1628,10 +1625,11 @@ msgstr "Falló al enviar el paquete ESP: %s\n"
 msgid "Sent ESP packet of %d bytes\n"
 msgstr "Enviando paquete ESP de %d bytes\n"
 
+# Defer = posponer, aplazar, diferir
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/gnutls-dtls.c#l166
 #: ../openconnect-strings.txt:676
 msgid "Deferring DTLS resumption until CSTP generates a PSK\n"
-msgstr ""
+msgstr "Aplazando la reanudación de DTLS hasta que CSTP genere un PSK\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/gnutls-dtls.c#l174
 #: ../openconnect-strings.txt:679
@@ -1652,10 +1650,10 @@ msgstr "Falló al establecer la prioridad DTLS: «%s»: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/gnutls-dtls.c#l204
 #: ../openconnect-strings.txt:688
-#, fuzzy, c-format
+#, c-format
 #| msgid "Failed to allocate %d bytes for %s\n"
 msgid "Failed to allocate credentials: %s\n"
-msgstr "Falló al reservar %d bytes para %s\n"
+msgstr "Falló al asignar las credenciales: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/gnutls-dtls.c#l217
 #: ../openconnect-strings.txt:691
@@ -1671,10 +1669,10 @@ msgstr "Falló al establecer la clave DTLS %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/gnutls-dtls.c#l239
 #: ../openconnect-strings.txt:697
-#, fuzzy, c-format
+#, c-format
 #| msgid "Failed to set DTLS priority: %s\n"
 msgid "Failed to set DTLS PSK credentials: %s\n"
-msgstr "Falló al establecer la prioridad DTLS: %s\n"
+msgstr "Falló al establecer las credenciales DTLS PSK: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/gnutls-dtls.c#l272
 #: ../openconnect-strings.txt:700
@@ -1698,23 +1696,25 @@ msgstr "Falló al establecer los parámetros de sesión: %s\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/gnutls-dtls.c#l336
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/openssl-dtls.c#l484
 #: ../openconnect-strings.txt:710
-#, fuzzy, c-format
+#, c-format
 #| msgid "MTU %d too small\n"
 msgid "Peer MTU %d too small to allow DTLS\n"
-msgstr "MTU %d demasiado pequeña\n"
+msgstr "El par MTU %d es demasiado pequeño para permitir DTLS\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/gnutls-dtls.c#l345
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/openssl-dtls.c#l495
 #: ../openconnect-strings.txt:714
 #, c-format
 msgid "DTLS MTU reduced to %d\n"
-msgstr ""
+msgstr "DTLS MTU reducido a %d\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/gnutls-dtls.c#l355
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/openssl-dtls.c#l504
 #: ../openconnect-strings.txt:718
 msgid "DTLS session resume failed; possible MITM attack. Disabling DTLS.\n"
 msgstr ""
+"No se ha podido reanudar la sesión DTLS; posible ataque MITM. Desactivando "
+"DTLS.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/gnutls-dtls.c#l368
 #: ../openconnect-strings.txt:721

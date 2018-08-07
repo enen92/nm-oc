@@ -6,18 +6,18 @@
 # Javier Mazorra Rodríguez <mazi.debian@gmail.com>, 2012, 2013.
 # facundo Dario Illanes <fdillanes@gmail.com>, 2013.
 # Ignacio Acevedo Carrera <zourer@gmail.com>, 2016.
-# Rodrigo <rodhos92@gmail.com>, 2018.
 # Daniel Mustieles <daniel.mustieles@gmail.com>, 2011, 2012, 2013, 2014, 2015, 2016, 2018.
+# Rodrigo <rodhos92@gmail.com>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: network-manager-openconnect.HEAD\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/NetworkManager-"
 "openconnect/issues\n"
-"POT-Creation-Date: 2018-08-06 07:35+0000\n"
-"PO-Revision-Date: 2018-08-06 14:59+0200\n"
-"Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
-"Language-Team: es <gnome-es-list@gnome.org>\n"
+"POT-Creation-Date: 2018-08-06 13:08+0000\n"
+"PO-Revision-Date: 2018-08-07 11:24+0200\n"
+"Last-Translator: Rodrigo <rodhos92@gmail.com>\n"
+"Language-Team: Español <gnome-es-list@gnome.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3793,21 +3793,19 @@ msgstr "Tipo de SO (linux, linux-64, win...) que informar"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/main.c#l880
 #: ../openconnect-strings.txt:1889
 msgid "Trojan binary (CSD) execution"
-msgstr ""
+msgstr "Ejecución de binario troyano (CSD)"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/main.c#l881
 #: ../openconnect-strings.txt:1892
-#, fuzzy
 #| msgid "Drop privileges during CSD execution"
 msgid "Drop privileges during trojan execution"
-msgstr "Revocar privilegios durante la ejecución CSD"
+msgstr "Revocar privilegios durante la ejecución del troyano"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/main.c#l882
 #: ../openconnect-strings.txt:1895
-#, fuzzy
 #| msgid "Run SCRIPT instead of CSD binary"
 msgid "Run SCRIPT instead of trojan binary"
-msgstr "Ejecutar SCRIPT en lugar de binario CSD"
+msgstr "Ejecutar SCRIPT en lugar del binario troyano"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/main.c#l885
 #: ../openconnect-strings.txt:1898
@@ -3951,6 +3949,8 @@ msgid ""
 "The --no-cert-check option was insecure and has been removed.\n"
 "Fix your server's certificate or use --servercert to trust it.\n"
 msgstr ""
+"La opción --no-cert-check era insegura y se ha quitado.\n"
+"Repare su certificado del servidor o use --servercert para confiarlo.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/main.c#l1390
 #: ../openconnect-strings.txt:1974
@@ -4579,10 +4579,9 @@ msgstr "Error al negociar las claves ESP\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/oncp.c#l813
 #: ../openconnect-strings.txt:2315
-#, fuzzy
 #| msgid "Error creating oNCP negotiation request\n"
 msgid "oNCP negotiation request outgoing:\n"
-msgstr "Error al crear la solicitud de negociación oNCP\n"
+msgstr "Solicitud de negociación oNCP saliente:\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/oncp.c#l866
 #: ../openconnect-strings.txt:2318
@@ -4667,12 +4666,15 @@ msgstr "Sesión cerrada con éxito.\n"
 msgid "ERROR: %s() called with invalid UTF-8 for '%s' argument\n"
 msgstr "Error: llamada a %s() con UTF-8 no válido para el argumento «%s»\n"
 
+# Overhead = exceso de bits, bits por encima de lo que hubiera sido sin DTLS
+#
+# DTLS = un protocolo que proporciona privacidad en las comunicaciones para protocolos de datagramas
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/openssl-dtls.c#l94
 #: ../openconnect-strings.txt:2364
-#, fuzzy, c-format
+#, c-format
 #| msgid "Failed to allocate %d bytes for %s\n"
 msgid "Unable to calculate DTLS overhead for %s\n"
-msgstr "Falló al reservar %d bytes para %s\n"
+msgstr "No se puede calcular el exceso para %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/openssl-dtls.c#l216
 #: ../openconnect-strings.txt:2367
@@ -4693,14 +4695,13 @@ msgstr "Falló al inicializar la sesión DTLSv1\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/openssl-dtls.c#l270
 #: ../openconnect-strings.txt:2376
 msgid "PSK callback\n"
-msgstr ""
+msgstr "Retrollamada PSK\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/openssl-dtls.c#l287
 #: ../openconnect-strings.txt:2379
-#, fuzzy
 #| msgid "Failed to create SSL_SESSION ASN.1 for OpenSSL: %s\n"
 msgid "Failed to create app-identity extension for OpenSSL\n"
-msgstr "Falló al crear SSL_SESSION ASN.1 para OpenSSL: %s\n"
+msgstr "Falló al crear la extensión app-identity para OpenSSL\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/openssl-dtls.c#l352
 #: ../openconnect-strings.txt:2382
@@ -4710,7 +4711,7 @@ msgstr "Falló al inicializar DTLSv1 CTX\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/openssl-dtls.c#l365
 #: ../openconnect-strings.txt:2385
 msgid "Set DTLS CTX version failed\n"
-msgstr ""
+msgstr "Falló al establecer la versión de CTX de DTLS\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/openssl-dtls.c#l382
 #: ../openconnect-strings.txt:2388
@@ -4883,7 +4884,7 @@ msgstr "Sesión iniciada en la ranura PKCS#11 «%s»\n"
 #: ../openconnect-strings.txt:2481
 #, c-format
 msgid "Failed to find PKCS#11 cert '%s'\n"
-msgstr ""
+msgstr "No se pudo encontrar el certificado PKCS#11 «%s»\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/openssl-pkcs11.c#l401
 #: ../openconnect-strings.txt:2484
@@ -4911,34 +4912,34 @@ msgstr "Encontradas %d claves en la ranura «%s»\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/openssl-pkcs11.c#l497
 #: ../openconnect-strings.txt:2497
 msgid "Certificate has no public key\n"
-msgstr ""
+msgstr "El certificado no tiene clave pública\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/openssl-pkcs11.c#l503
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/openssl-pkcs11.c#l526
 #: ../openconnect-strings.txt:2501
 msgid "Certificate does not match private key\n"
-msgstr ""
+msgstr "El certificado no coincide con la clave privada\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/openssl-pkcs11.c#l506
 #: ../openconnect-strings.txt:2504
 msgid "Checking EC key matches cert\n"
-msgstr ""
+msgstr "Comprobando que la clave EC coincide con el certificado\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/openssl-pkcs11.c#l510
 #: ../openconnect-strings.txt:2507
 msgid "Failed to allocate signature buffer\n"
-msgstr ""
+msgstr "Falló al asignar el búfer de firma\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/openssl-pkcs11.c#l520
 #: ../openconnect-strings.txt:2510
 msgid "Failed to sign dummy data to validate EC key\n"
-msgstr ""
+msgstr "Falló al firmar los datos de prueba para validar la clave EC\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/openssl-pkcs11.c#l638
 #: ../openconnect-strings.txt:2513
 #, c-format
 msgid "Failed to find PKCS#11 key '%s'\n"
-msgstr ""
+msgstr "No se pudo encontrar la clave PKCS#11 «%s»\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/openssl-pkcs11.c#l649
 #: ../openconnect-strings.txt:2516
@@ -5116,7 +5117,7 @@ msgstr "Falló al cargar la clave privada\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/openssl.c#l1056
 #: ../openconnect-strings.txt:2615
 msgid "Failed to convert PKCS#8 to OpenSSL EVP_PKEY\n"
-msgstr ""
+msgstr "Falló al convertir PKCS#8 a OpenSSL EVP_PKEY\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/openssl.c#l1073
 #: ../openconnect-strings.txt:2618
@@ -5221,12 +5222,12 @@ msgstr "<error>"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/openssl.c#l1679
 #: ../openconnect-strings.txt:2671
 msgid "Create TLSv1 CTX failed\n"
-msgstr ""
+msgstr "Falló al crear el CTX TLSv1\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/openssl.c#l1698
 #: ../openconnect-strings.txt:2674
 msgid "SSL certificate and key do not match\n"
-msgstr ""
+msgstr "El certificado SSL y la clave no coinciden\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/openssl.c#l1743
 #: ../openconnect-strings.txt:2677
@@ -5674,6 +5675,8 @@ msgid ""
 "GetAdapterIndex() failed: %s\n"
 "Falling back to GetAdaptersInfo()\n"
 msgstr ""
+"GetAdapterIndex() ha fallado: %s\n"
+"Volviendo a GetAdaptersInfo()\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/2f913bc25d:/tun-win32.c#l200
 #: ../openconnect-strings.txt:2919

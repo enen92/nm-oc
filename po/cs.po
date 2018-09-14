@@ -2625,7 +2625,7 @@ msgstr ""
 #: ../openconnect-strings.txt:1243
 #, c-format
 msgid "Got inappropriate HTTP GET-tunnel response: %.*s\n"
-msgstr "Obdržena nevhodná odpověď HTTP GET-tunnel: %s\n"
+msgstr "Obdržena nevhodná odpověď HTTP GET-tunnel: %.*s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/b4ad3a67f2:/gpst.c#l863
 #: ../openconnect-strings.txt:1246

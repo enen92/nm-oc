@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: network-manager-openconnect\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/NetworkManager-"
 "openconnect/issues\n"
-"POT-Creation-Date: 2018-08-15 23:02+0000\n"
+"POT-Creation-Date: 2018-09-14 13:50+0000\n"
 "PO-Revision-Date: 2018-04-26 18:05+0200\n"
 "Last-Translator: Zdeněk Hataš <zdenek.hatas@gmail.com>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
@@ -162,10 +162,8 @@ msgid "Allow security scanner _trojan (CSD)"
 msgstr "Povolit _trojského koně Cisco Secure Desktop"
 
 #: ../properties/nm-openconnect-dialog.ui.h:8
-#, fuzzy
-#| msgid "CSD _Wrapper Script:"
 msgid "Trojan (CSD) _Wrapper Script:"
-msgstr "CSD _obalující skript:"
+msgstr "_Obalující skript trojského koně (CSD):"
 
 #: ../properties/nm-openconnect-dialog.ui.h:9
 msgid "Reported OS:"
@@ -241,26 +239,24 @@ msgstr "Juniper/Pulse Network Connect"
 
 #: ../properties/nm-openconnect-editor-plugin.c:57
 #: ../properties/nm-openconnect-editor-plugin.c:60
-#, fuzzy
-#| msgid "Juniper Network Connect (openconnect)"
 msgid "Multi-protocol VPN client (openconnect)"
-msgstr "Juniper Network Connect (openconnect)"
+msgstr "Víceprotokolový klient VPN (openconnect)"
 
 #: ../properties/nm-openconnect-editor-plugin.c:58
-#, fuzzy
-#| msgid "Compatible with Juniper Network Connect / Pulse Secure SSL VPN"
 msgid ""
 "Compatible with Cisco AnyConnect, Juniper Network Connect and Junos Pulse, "
 "and PAN GlobalProtect SSL VPNs."
-msgstr "Kompatibilní s  Juniper Network Connect / Pulse Secure SSL VPN"
+msgstr ""
+"Kompatibilní s VPN Cisco AnyConnect, Juniper Network Connect a Junos Pulse, "
+"a PAN GlobalProtect SSL"
 
 #: ../properties/nm-openconnect-editor-plugin.c:61
-#, fuzzy
-#| msgid "Compatible with Juniper Network Connect / Pulse Secure SSL VPN"
 msgid ""
 "Compatible with Cisco AnyConnect and Juniper Network Connect and Junos Pulse "
 "SSL VPNs."
-msgstr "Kompatibilní s  Juniper Network Connect / Pulse Secure SSL VPN"
+msgstr ""
+"Kompatibilní s VPN Cisco AnyConnect a Juniper Network Connect a Junos Pulse "
+"SSL."
 
 #: ../properties/nm-openconnect-editor-plugin.c:63
 msgid "Cisco AnyConnect Compatible VPN (openconnect)"
@@ -708,7 +704,7 @@ msgid ""
 "Error: Running the 'Cisco Secure Desktop' trojan on this platform is not yet "
 "implemented.\n"
 msgstr ""
-"Chyba: Spuštění „Cisco Secure Desktop“ není na této platformě ještě "
+"Chyba: Spuštění „Cisco Secure Desktop“ není na této platformě zatím "
 "implementováno.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/b4ad3a67f2:/auth.c#l991
@@ -2584,32 +2580,24 @@ msgstr "Zakázáno"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/b4ad3a67f2:/gpst.c#l631
 #: ../openconnect-strings.txt:1225
-#, fuzzy
-#| msgid "No IP address received. Aborting\n"
 msgid "No ESP keys received"
-msgstr "Nepřijata žádná adresa IP. Ruší se\n"
+msgstr "Nebyl přijat žádný klíč ESP"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/b4ad3a67f2:/gpst.c#l633
 #: ../openconnect-strings.txt:1228
-#, fuzzy
-#| msgid "Ignoring ESP keys since ESP support not available in this build\n"
 msgid "ESP support not available in this build"
-msgstr ""
-"Klíče ESP jsou ignorovány, protože v tomto sestavení chybí podpora ESP\n"
+msgstr "Podpora ESP není v tomto sestavení k dispozici"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/b4ad3a67f2:/gpst.c#l637
 #: ../openconnect-strings.txt:1231
-#, fuzzy, c-format
-#| msgid "No MTU received. Aborting\n"
+#, c-format
 msgid "No MTU received. Calculated %d for %s%s\n"
-msgstr "Nepřijato žádné MTU. Ruší se\n"
+msgstr "Nebylo přijato žádné MTU. Vypočítáno %d pro %s%s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/b4ad3a67f2:/gpst.c#l683
 #: ../openconnect-strings.txt:1234
-#, fuzzy
-#| msgid "Connected to HTTPS on %s\n"
 msgid "Connecting to HTTPS tunnel endpoint ...\n"
-msgstr "Spojeno s HTTPS na %s\n"
+msgstr "Připojuje se koncový bod tunelu HTTPS…\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/b4ad3a67f2:/gpst.c#l705
 #: ../openconnect-strings.txt:1237
@@ -2639,15 +2627,11 @@ msgstr ""
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/b4ad3a67f2:/gpst.c#l873
 #: ../openconnect-strings.txt:1253
-#, fuzzy
-#| msgid ""
-#| "Error: Running the 'Cisco Secure Desktop' trojan on this platform is not "
-#| "yet implemented.\n"
 msgid ""
 "Error: Running the 'HIP Report' script on this platform is not yet "
 "implemented.\n"
 msgstr ""
-"Chyba: Spuštění „Cisco Secure Desktop“ není na této platformě ještě "
+"Chyba: Spuštění skriptu „HIP Report“ není na této platformě zatím "
 "implementováno.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/b4ad3a67f2:/gpst.c#l895
@@ -2693,20 +2677,18 @@ msgstr ""
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/b4ad3a67f2:/gpst.c#l990
 #: ../openconnect-strings.txt:1279
 msgid "ESP tunnel connected; exiting HTTPS mainloop.\n"
-msgstr ""
+msgstr "Tunel ESP byl připojen, opouští se hlavní smyčka HTTPS.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/b4ad3a67f2:/gpst.c#l1006
 #: ../openconnect-strings.txt:1282
-#, fuzzy
-#| msgid "Failed to connect utun unit: %s\n"
 msgid "Failed to connect ESP tunnel; using HTTPS instead.\n"
-msgstr "Selhalo připojení jednotky utun: %s\n"
+msgstr "Selhalo připojení tunelu ESP, místo něj se použije HTTPS.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/b4ad3a67f2:/gpst.c#l1042
 #: ../openconnect-strings.txt:1285
 #, c-format
 msgid "Packet receive error: %s\n"
-msgstr ""
+msgstr "Chyba při příjmu paketu: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/b4ad3a67f2:/gpst.c#l1063
 #: ../openconnect-strings.txt:1288
@@ -2747,7 +2729,7 @@ msgstr ""
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/b4ad3a67f2:/gpst.c#l1100
 #: ../openconnect-strings.txt:1308
 msgid "Unknown packet. Header dump follows:\n"
-msgstr ""
+msgstr "Neznámý paket. Zde je výpis hlavičky:\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/b4ad3a67f2:/gpst.c#l1148
 #: ../openconnect-strings.txt:1311
@@ -2768,10 +2750,9 @@ msgstr "Poslat požadavek GPST DPD/keepalive\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/b4ad3a67f2:/gpst.c#l1193
 #: ../openconnect-strings.txt:1320
-#, fuzzy, c-format
-#| msgid "Sending uncompressed data packet of %d bytes\n"
+#, c-format
 msgid "Sending data packet of %d bytes\n"
-msgstr "Posílá se nekomprimovaný datový paket %d bajtů\n"
+msgstr "Posílá se datový paket délky %d B\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/b4ad3a67f2:/gssapi.c#l75
 #: ../openconnect-strings.txt:1323
@@ -3719,10 +3700,8 @@ msgstr "Zjistit MTU cesty na/z serveru"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/b4ad3a67f2:/main.c#l866
 #: ../openconnect-strings.txt:1861
-#, fuzzy
-#| msgid "Enable compression (default)"
 msgid "Enable stateful compression (default is stateless only)"
-msgstr "Povolit komprimaci (výchozí)"
+msgstr "Povolit stavovou komprimaci (výchozí je jen bezstavová)"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/b4ad3a67f2:/main.c#l867
 #: ../openconnect-strings.txt:1864
@@ -3796,7 +3775,7 @@ msgstr "Spusit SCRIPT místo programu CSD"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/b4ad3a67f2:/main.c#l885
 #: ../openconnect-strings.txt:1903
 msgid "Server bugs"
-msgstr ""
+msgstr "Chyby serveru"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/b4ad3a67f2:/main.c#l886
 #: ../openconnect-strings.txt:1906
@@ -3996,10 +3975,9 @@ msgstr "Nastavení UDP selhalo; bude použito SSL\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/b4ad3a67f2:/main.c#l1607
 #: ../openconnect-strings.txt:2012
-#, fuzzy, c-format
-#| msgid "Connected as %s%s%s, using %s%s\n"
+#, c-format
 msgid "Connected as %s%s%s, using SSL%s%s, with %s%s%s %s\n"
-msgstr "Spojeno jako %s%s%s, pomocí %s%s\n"
+msgstr "Spojeno jako %s%s%s, pomocí SSL%s%s, s %s%s%s %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/b4ad3a67f2:/main.c#l1613
 #: ../openconnect-strings.txt:2015

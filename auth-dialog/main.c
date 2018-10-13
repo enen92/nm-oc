@@ -1026,6 +1026,9 @@ static int get_config (auth_ui_data *ui_data,
 	char *sslkey, *cert;
 	char *csd_wrapper;
 	char *reported_os;
+#if OPENCONNECT_CHECK_VER(5,5)
+	char *key_pass;
+#endif
 	char *pem_passphrase_fsid;
 	char *cafile;
 	char *token_mode;
@@ -1108,6 +1111,12 @@ static int get_config (auth_ui_data *ui_data,
 	sslkey = g_hash_table_lookup (options, NM_OPENCONNECT_KEY_PRIVKEY);
 	openconnect_set_client_cert (vpninfo, OC3DUP (cert), OC3DUP (sslkey));
 
+#if OPENCONNECT_CHECK_VER(5,5)
+	key_pass = g_hash_table_lookup (options,
+					      NM_OPENCONNECT_KEY_KEY_PASS);
+	if (key_pass)
+		openconnect_set_key_password(vpninfo, key_pass);
+#endif
 	pem_passphrase_fsid = g_hash_table_lookup (options,
 						   NM_OPENCONNECT_KEY_PEM_PASSPHRASE_FSID);
 	if (pem_passphrase_fsid && cert && !strcmp(pem_passphrase_fsid, "yes"))

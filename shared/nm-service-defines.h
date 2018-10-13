@@ -38,6 +38,7 @@
 #define NM_OPENCONNECT_KEY_USERCERT "usercert"
 #define NM_OPENCONNECT_KEY_CACERT "cacert"
 #define NM_OPENCONNECT_KEY_PRIVKEY "userkey"
+#define NM_OPENCONNECT_KEY_KEY_PASS "key_pass"
 #define NM_OPENCONNECT_KEY_MTU "mtu"
 #define NM_OPENCONNECT_KEY_PEM_PASSPHRASE_FSID "pem_passphrase_fsid"
 #define NM_OPENCONNECT_KEY_PREVENT_INVALID_CERT "prevent_invalid_cert"

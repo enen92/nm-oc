@@ -166,6 +166,8 @@ static const char *pem_dsa_key_begin = "-----BEGIN DSA PRIVATE KEY-----";
 static const char *pem_key_begin = "-----BEGIN PRIVATE KEY-----";
 static const char *pem_enc_key_begin = "-----BEGIN ENCRYPTED PRIVATE KEY-----";
 static const char *pem_tss_keyblob_begin = "-----BEGIN TSS KEY BLOB-----";
+static const char *pem_tss2_keyblob_begin = "-----BEGIN TSS2 KEY BLOB-----";
+static const char *pem_tss2_privkey_begin = "-----BEGIN TSS2 PRIVATE KEY-----";
 static const char *pem_cert_begin = "-----BEGIN CERTIFICATE-----";
 
 static gboolean
@@ -226,6 +228,16 @@ tls_default_filter (const GtkFileFilterInfo *filter_info, gpointer data)
 	}
 
 	if (find_tag (pem_tss_keyblob_begin, (const char *) contents, bytes_read)) {
+		show = TRUE;
+		goto out;
+	}
+
+	if (find_tag (pem_tss2_keyblob_begin, (const char *) contents, bytes_read)) {
+		show = TRUE;
+		goto out;
+	}
+
+	if (find_tag (pem_tss2_privkey_begin, (const char *) contents, bytes_read)) {
 		show = TRUE;
 		goto out;
 	}

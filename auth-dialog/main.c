@@ -956,7 +956,8 @@ static int parse_xmlconfig(gchar *xmlconfig)
 	}
 
 	xml_doc = xmlReadMemory(xmlconfig, strlen(xmlconfig), "noname.xml", NULL, 0);
-
+	if (!xml_doc)
+		return -EIO;
 	xml_node = xmlDocGetRootElement(xml_doc);
 	for (xml_node = xml_node->children; xml_node; xml_node = xml_node->next) {
                 if (xml_node->type == XML_ELEMENT_NODE &&

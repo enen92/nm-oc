@@ -1079,7 +1079,7 @@ static int get_config (auth_ui_data *ui_data,
 
 	protocol = g_hash_table_lookup (options, NM_OPENCONNECT_KEY_PROTOCOL);
 #if OPENCONNECT_CHECK_VER(5,1)
-	if (openconnect_set_protocol(vpninfo, protocol))
+	if (protocol && openconnect_set_protocol(vpninfo, protocol))
 #else
 	if (protocol && strcmp(protocol, "anyconnect"))
 #endif

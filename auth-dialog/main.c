@@ -1636,7 +1636,8 @@ static auth_ui_data *init_ui_data (char *vpn_name, GHashTable *options, GHashTab
 							  g_free, g_free);
 	ui_data->success_passwords = g_hash_table_new_full (g_str_hash, g_str_equal,
 							  g_free, keyring_password_free);
-	ui_data->autosubmit = AUTOSUBMIT_LIMIT;
+	if (get_save_passwords (secrets))
+		ui_data->autosubmit = AUTOSUBMIT_LIMIT;
 
 	if (pipe(ui_data->cancel_pipes)) {
 		/* This should never happen, and the world is probably about

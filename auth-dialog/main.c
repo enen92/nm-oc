@@ -28,7 +28,6 @@
 #include <string.h>
 #include <errno.h>
 #include <unistd.h>
-#define _GNU_SOURCE
 #include <getopt.h>
 
 #include <libxml/parser.h>

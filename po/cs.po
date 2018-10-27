@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: network-manager-openconnect\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/NetworkManager-"
 "openconnect/issues\n"
-"POT-Creation-Date: 2018-10-13 13:45+0000\n"
+"POT-Creation-Date: 2018-10-24 13:30+0000\n"
 "PO-Revision-Date: 2018-04-26 18:05+0200\n"
 "Last-Translator: Zdeněk Hataš <zdenek.hatas@gmail.com>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
@@ -45,73 +45,73 @@ msgstr ""
 msgid "The NetworkManager Developers"
 msgstr "Vývojáři NetworkManageru"
 
-#: ../auth-dialog/main.c:684
+#: ../auth-dialog/main.c:683
 #, c-format
 msgid "OpenConnect: %s: %s:%s"
 msgstr "OpenConnect: %s: %s:%s"
 
-#: ../auth-dialog/main.c:714
+#: ../auth-dialog/main.c:713
 #, c-format
 msgid "Connect to VPN “%s”"
 msgstr "Připojit k VPN „%s“"
 
-#: ../auth-dialog/main.c:716
+#: ../auth-dialog/main.c:715
 msgid "Connect to VPN"
 msgstr "Připojit k VPN"
 
-#: ../auth-dialog/main.c:793
+#: ../auth-dialog/main.c:792
 msgid "<b>The certificate may be invalid or untrusted!</b>\n"
 msgstr "<b>Certifikát je buď nedůvěryhodný nebo neplatný</b>\n"
 
-#: ../auth-dialog/main.c:794
+#: ../auth-dialog/main.c:793
 msgid "<b>Reason: "
 msgstr "<b>Důvod:"
 
-#: ../auth-dialog/main.c:814 ../auth-dialog/main.c:1571
+#: ../auth-dialog/main.c:813 ../auth-dialog/main.c:1580
 msgid "_Cancel"
 msgstr "_Zrušit"
 
-#: ../auth-dialog/main.c:824
+#: ../auth-dialog/main.c:823
 msgid "I really know what I am doing"
 msgstr "Opravdu vím co dělám"
 
-#: ../auth-dialog/main.c:833
+#: ../auth-dialog/main.c:832
 msgid "Connect anyway"
 msgstr "Přesto připojit"
 
-#: ../auth-dialog/main.c:1494
+#: ../auth-dialog/main.c:1503
 msgid "_Close"
 msgstr "_Zavřít"
 
-#: ../auth-dialog/main.c:1511
+#: ../auth-dialog/main.c:1520
 msgid "VPN host"
 msgstr "Server VPN"
 
-#: ../auth-dialog/main.c:1522
+#: ../auth-dialog/main.c:1531
 msgid "C_onnect"
 msgstr "Přip_ojit"
 
-#: ../auth-dialog/main.c:1529
+#: ../auth-dialog/main.c:1538
 msgid "Automatically start connecting next time"
 msgstr "Příště připojit automaticky"
 
-#: ../auth-dialog/main.c:1548
+#: ../auth-dialog/main.c:1557
 msgid "Select a host to fetch the login form"
 msgstr "Zvolte stroj pro získání přihlášovacího formuláře"
 
-#: ../auth-dialog/main.c:1553
+#: ../auth-dialog/main.c:1562
 msgid "Contacting host, please wait…"
 msgstr "Spojení je navazováno, čekejte prosím…"
 
-#: ../auth-dialog/main.c:1565
+#: ../auth-dialog/main.c:1574
 msgid "_Login"
 msgstr "Přih_lásit se"
 
-#: ../auth-dialog/main.c:1577
+#: ../auth-dialog/main.c:1586
 msgid "Save passwords"
 msgstr "Uložit hesla"
 
-#: ../auth-dialog/main.c:1585
+#: ../auth-dialog/main.c:1594
 msgid "Log"
 msgstr "Záznam"
 
@@ -127,7 +127,7 @@ msgstr "Zvolte svůj osobní certifikát…"
 msgid "Choose your private key…"
 msgstr "Zvolte svůj soukromý klíč…"
 
-#: ../properties/auth-helpers.c:250
+#: ../properties/auth-helpers.c:262
 msgid "PEM certificates (*.pem, *.crt, *.key)"
 msgstr "Certifikáty PEM (*.pem, *.crt, *.key)"
 
@@ -322,78 +322,83 @@ msgid ""
 "type '%s'"
 msgstr "hodnota „%s“ typu „%s“ je mimo rozsah vlastnosti „%s“ typu „%s“"
 
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:80
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:69
+#, c-format
+msgid "unable to get editor plugin name: %s"
+msgstr "nelze zjistit název zásuvného modulu editoru: %s"
+
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:103
 #, c-format
 msgid "missing plugin file \"%s\""
 msgstr "chybějící soubor zásuvného modulu „%s“"
 
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:86
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:109
 #, c-format
 msgid "cannot load editor plugin: %s"
 msgstr "nelze načíst editor zásuvného modulu: %s"
 
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:95
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:118
 #, c-format
 msgid "cannot load factory %s from plugin: %s"
 msgstr "nelze načíst generátor %s ze zásuvného modulu: %s"
 
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:121
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:144
 msgid "unknown error creating editor instance"
 msgstr "neznámá chyba vytváření instance editoru"
 
-#: ../src/nm-openconnect-service.c:179
+#: ../src/nm-openconnect-service.c:180
 #, c-format
 msgid "invalid integer property “%s” or out of range [%d -> %d]"
 msgstr "celočíselná vlastnost „%s“ je neplatná nebo mimo rozsah [%d -> %d]"
 
-#: ../src/nm-openconnect-service.c:189
+#: ../src/nm-openconnect-service.c:190
 #, c-format
 msgid "invalid boolean property “%s” (not yes or no)"
 msgstr "pravdivostní vlastnost „%s“ je neplatná (není ano či ne)"
 
-#: ../src/nm-openconnect-service.c:196
+#: ../src/nm-openconnect-service.c:197
 #, c-format
 msgid "unhandled property “%s” type %s"
 msgstr "neošetřená vlastnost „%s“ typu %s"
 
-#: ../src/nm-openconnect-service.c:209
+#: ../src/nm-openconnect-service.c:210
 #, c-format
 msgid "property “%s” invalid or not supported"
 msgstr "vlastnost „%s“ není platná nebo podorovaná"
 
-#: ../src/nm-openconnect-service.c:225
+#: ../src/nm-openconnect-service.c:226
 msgid "No VPN configuration options."
 msgstr "Žádné volby nastavení VPN."
 
-#: ../src/nm-openconnect-service.c:243
+#: ../src/nm-openconnect-service.c:244
 msgid "No VPN secrets!"
 msgstr "Žádná hesla VPN!"
 
-#: ../src/nm-openconnect-service.c:411
+#: ../src/nm-openconnect-service.c:412
 msgid "Could not find openconnect binary."
 msgstr "Nelze nalézt program openconnect."
 
-#: ../src/nm-openconnect-service.c:423
+#: ../src/nm-openconnect-service.c:424
 msgid "No VPN gateway specified."
 msgstr "Nebyla zadána žádná brána VPN."
 
-#: ../src/nm-openconnect-service.c:433
+#: ../src/nm-openconnect-service.c:434
 msgid "No WebVPN cookie provided."
 msgstr "Nebyla poskytnuta žádná cookie WebVPN."
 
-#: ../src/nm-openconnect-service.c:693
+#: ../src/nm-openconnect-service.c:694
 msgid "Don’t quit when VPN connection terminates"
 msgstr "Neukončovat během ukončování spojení VPN"
 
-#: ../src/nm-openconnect-service.c:694
+#: ../src/nm-openconnect-service.c:695
 msgid "Enable verbose debug logging (may expose passwords)"
 msgstr "Povolit podrobný ladicí výpis (může prozradit hesla)"
 
-#: ../src/nm-openconnect-service.c:695
+#: ../src/nm-openconnect-service.c:696
 msgid "D-Bus name to use for this instance"
 msgstr "Název použitý v D-Bus pro tuto instanci"
 
-#: ../src/nm-openconnect-service.c:718
+#: ../src/nm-openconnect-service.c:719
 msgid ""
 "nm-openconnect-service provides integrated Cisco AnyConnect SSL VPN "
 "capability to NetworkManager."
@@ -412,12 +417,12 @@ msgstr ""
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/auth-globalprotect.c#l110
 #: ../openconnect-strings.txt:19
 msgid "Please enter your username and password"
-msgstr ""
+msgstr "Zadejte prosím uživatelské jméno a heslo"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/auth-globalprotect.c#l119
 #: ../openconnect-strings.txt:22
 msgid "Username"
-msgstr ""
+msgstr "Uživatelské jméno"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/auth-globalprotect.c#l134
 #: ../openconnect-strings.txt:25
@@ -433,7 +438,7 @@ msgstr ""
 #: ../openconnect-strings.txt:31
 #, c-format
 msgid "GlobalProtect login returned %s=%s (expected %s)\n"
-msgstr ""
+msgstr "Přihlášení GlobalProtect vrátilo %s=%s (očekáváné %s)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/auth-globalprotect.c#l266
 #: ../openconnect-strings.txt:34
@@ -445,12 +450,12 @@ msgstr ""
 #: ../openconnect-strings.txt:37
 #, c-format
 msgid "GlobalProtect login returned %s=%s\n"
-msgstr ""
+msgstr "Přihlášení GlobalProtect vrátilo %s=%s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/auth-globalprotect.c#l315
 #: ../openconnect-strings.txt:40
 msgid "Please select GlobalProtect gateway."
-msgstr ""
+msgstr "Vyberte prosím bránu GlobalProtect"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/auth-globalprotect.c#l325
 #: ../openconnect-strings.txt:43
@@ -459,9 +464,9 @@ msgstr ""
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/auth-globalprotect.c#l379
 #: ../openconnect-strings.txt:46
-#, c-format
+#,fuzzy , c-format
 msgid "%d gateway servers available:\n"
-msgstr ""
+msgstr "K dispozici je %d serverů s bránami:\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/auth-globalprotect.c#l400
 #: ../openconnect-strings.txt:49
@@ -479,7 +484,7 @@ msgstr "Selhalo generování kódu OTP tokenu, deaktivuje se token\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/auth-globalprotect.c#l575
 #: ../openconnect-strings.txt:57
 msgid "Server is neither a GlobalProtect portal nor a gateway.\n"
-msgstr ""
+msgstr "Server není ani brána, ani portál GlobalProtect.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/auth-globalprotect.c#l627
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/oncp.c#l1266
@@ -2623,18 +2628,18 @@ msgstr ""
 #: ../openconnect-strings.txt:1251
 #, c-format
 msgid "TPM2 Esys_TR_SetAuth failed: 0x%x\n"
-msgstr "Selhalo volání funkce Esys_TR_SetAuth pro TPM2: 0x%x\n"
+msgstr "Selhalo volání funkce Esys_TR_SetAuth z TPM2: 0x%x\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gnutls_tpm2_esys.c#l220
 #: ../openconnect-strings.txt:1254
 msgid "TPM2 Esys_CreatePrimary owner auth failed\n"
-msgstr ""
+msgstr "Selhalo ověření vlastníka při volání Esys_CreatePrimary z TPM2\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gnutls_tpm2_esys.c#l225
 #: ../openconnect-strings.txt:1257
 #, c-format
 msgid "TPM2 Esys_CreatePrimary failed: 0x%x\n"
-msgstr "Selhalo volání funkce Esys_CreatePrimary pro TPM2: 0x%x\n"
+msgstr "Selhalo volání funkce Esys_CreatePrimary z TPM2: 0x%x\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gnutls_tpm2_esys.c#l244
 #: ../openconnect-strings.txt:1260
@@ -2645,7 +2650,7 @@ msgstr "Ustavuje se spojení s TPM.\n"
 #: ../openconnect-strings.txt:1263
 #, c-format
 msgid "TPM2 Esys_Initialize failed: 0x%x\n"
-msgstr "Selhalo volání funkce Esys_Initialize pro TPM2: 0x%x\n"
+msgstr "Selhalo volání funkce Esys_Initialize z TPM2: 0x%x\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gnutls_tpm2_esys.c#l257
 #: ../openconnect-strings.txt:1266
@@ -2657,7 +2662,7 @@ msgstr ""
 #: ../openconnect-strings.txt:1270
 #, c-format
 msgid "TPM2 Esys_Startup failed: 0x%x\n"
-msgstr "Selhalo volání funkce Esys_Startup pro TPM2: 0x%x\n"
+msgstr "Selhalo volání funkce Esys_Startup z TPM2: 0x%x\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gnutls_tpm2_esys.c#l273
 #: ../openconnect-strings.txt:1273
@@ -2668,10 +2673,8 @@ msgstr ""
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gnutls_tpm2_esys.c#l293
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gnutls_tpm2_ibm.c#l286
 #: ../openconnect-strings.txt:1277
-#, fuzzy
-#| msgid "Enter TPM key PIN:"
 msgid "Enter TPM2 parent key password:"
-msgstr "Zadat PIN  TPM klíče: "
+msgstr "Zadejte heslo rodičovského klíče TPM2:"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gnutls_tpm2_esys.c#l307
 #: ../openconnect-strings.txt:1280
@@ -2682,26 +2685,28 @@ msgstr "Načítají se binární data klíče TPM2, rodič %x.\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gnutls_tpm2_esys.c#l315
 #: ../openconnect-strings.txt:1283
 msgid "TPM2 Esys_Load auth failed\n"
-msgstr ""
+msgstr "Selhalo ověření při volání Esys_Load z TPM2\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gnutls_tpm2_esys.c#l321
 #: ../openconnect-strings.txt:1286
 #, c-format
 msgid "TPM2 Esys_Load failed: 0x%x\n"
-msgstr "Selhalo volání funkce Esys_Load pro TPM2: 0x%x\n"
+msgstr "Selhalo volání funkce Esys_Load z TPM2: 0x%x\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gnutls_tpm2_esys.c#l330
 #: ../openconnect-strings.txt:1289
 #, c-format
 msgid "TPM2 Esys_FlushContext for generated primary failed: 0x%x\n"
 msgstr ""
+"Selhalo volání Esys_FlushContext z TPM2 pro vygenerování primárního klíče: "
+"0x%x\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gnutls_tpm2_esys.c#l360
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gnutls_tpm2_ibm.c#l371
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gnutls_tpm2_ibm.c#l458
 #: ../openconnect-strings.txt:1294
 msgid "Enter TPM2 key password:"
-msgstr "Zadaejte heslo klíče TPM2:"
+msgstr "Zadejte heslo klíče TPM2:"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gnutls_tpm2_esys.c#l392
 #: ../openconnect-strings.txt:1297
@@ -2712,7 +2717,7 @@ msgstr "Podpisová funkce TPM2 RSA požadovala %d bajtů.\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gnutls_tpm2_esys.c#l411
 #: ../openconnect-strings.txt:1300
 msgid "TPM2 Esys_RSA_Decrypt auth failed\n"
-msgstr ""
+msgstr "Selhalo ověření při volání Esys_RSA_Decrypt z TPM2\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gnutls_tpm2_esys.c#l417
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gnutls_tpm2_esys.c#l497
@@ -2730,10 +2735,8 @@ msgstr "Podpisová funkce TPM2 EC požadovala %d bajtů.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gnutls_tpm2_esys.c#l491
 #: ../openconnect-strings.txt:1311
-#, fuzzy
-#| msgid "TPM hash signature failed: %s\n"
 msgid "TPM2 Esys_Sign auth failed\n"
-msgstr "Podpisový haš TPM selhal: %s\n"
+msgstr "Selhalo ověření pří volání Esys_Sign z TPM2\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gnutls_tpm2_esys.c#l529
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gnutls_tpm2_ibm.c#l493
@@ -2812,12 +2815,13 @@ msgid ""
 "Gateway address in config XML (%s) differs from external gateway address "
 "(%s).\n"
 msgstr ""
+"Adresa brány v nastavení XML (%s) se liší od adresy externí brány (%s).\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gpst.c#l544
 #: ../openconnect-strings.txt:1356
 #, c-format
 msgid "GlobalProtect config sent ipsec-mode=%s (expected esp-tunnel)\n"
-msgstr ""
+msgstr "Nastavení GlobalProtect poslalo ipsec-mode=%s (očekáváno esp-tunnel)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gpst.c#l553
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/oncp.c#l835
@@ -2877,6 +2881,9 @@ msgid ""
 "You need to provide a --csd-wrapper argument with the HIP report submission "
 "script.\n"
 msgstr ""
+"VAROVÁNÍ: Server si požádal o zaslání hlášení HIP s md5sum %s.\n"
+"Bez jeho zaslání může připojení VPN zůstat vypnuté nebo fungovat jen omezeně.\n"
+"Je potřeba zadat argument --csd-wrapper s odesílacím skriptem hlášení HIP.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gpst.c#l858
 #: ../openconnect-strings.txt:1394
@@ -2902,12 +2909,12 @@ msgstr "Skript HIP „%s“ vrátil nenulový stav: %d\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gpst.c#l891
 #: ../openconnect-strings.txt:1405
 msgid "HIP report submission failed.\n"
-msgstr "Odeslání oznámení HIP selhalo.\n"
+msgstr "Odeslání hlášení HIP selhalo.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gpst.c#l893
 #: ../openconnect-strings.txt:1408
 msgid "HIP report submitted successfully.\n"
-msgstr "Oznámení HIP bylo úspěšně odesláno.\n"
+msgstr "Hlášení HIP bylo úspěšně odesláno.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gpst.c#l921
 #: ../openconnect-strings.txt:1411
@@ -2918,12 +2925,12 @@ msgstr "Selhalo spuštění skriptu HIP %s\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gpst.c#l945
 #: ../openconnect-strings.txt:1414
 msgid "Gateway says HIP report submission is needed.\n"
-msgstr "Brána říká, že je zapotřebí odeslat oznámení HIP.\n"
+msgstr "Brána říká, že je zapotřebí odeslat hlášení HIP.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gpst.c#l951
 #: ../openconnect-strings.txt:1417
 msgid "Gateway says no HIP report submission is needed.\n"
-msgstr "Brána říká, že není zapotřebí odeslat oznámení HIP.\n"
+msgstr "Brána říká, že není zapotřebí odeslat hlášení HIP.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gpst.c#l978
 #: ../openconnect-strings.txt:1420
@@ -2986,15 +2993,13 @@ msgstr "Neznámý paket. Zde je výpis hlavičky:\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gpst.c#l1136
 #: ../openconnect-strings.txt:1452
-#, fuzzy
-#| msgid "CSTP rekey due\n"
 msgid "GlobalProtect rekey due\n"
-msgstr "Naplánování znovuzanesení CSTP\n"
+msgstr "Důvod obnovy klíče GLobalProtect\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gpst.c#l1141
 #: ../openconnect-strings.txt:1455
 msgid "GPST Dead Peer Detection detected dead peer!\n"
-msgstr "Odhalování GPST mrtvého protějšku odhalilo mrtvý protějšek!\n"
+msgstr "Odhalování mrtvého protějšku GPST odhalilo mrtvý protějšek!\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/gpst.c#l1161
 #: ../openconnect-strings.txt:1458
@@ -3660,10 +3665,8 @@ msgstr "Zobrazit text s nápovědou"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/main.c#l794
 #: ../openconnect-strings.txt:1831
-#, fuzzy
-#| msgid "Certificate Authentication"
 msgid "Authentication"
-msgstr "Autentizace certifikátem"
+msgstr "Ověření"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/main.c#l795
 #: ../openconnect-strings.txt:1834
@@ -3818,17 +3821,13 @@ msgstr "Nastavit místní port pro datagramy DTLS a ESP"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/main.c#l834
 #: ../openconnect-strings.txt:1924
-#, fuzzy
-#| msgid "GSSAPI authentication completed\n"
 msgid "Authentication (two-phase)"
-msgstr "Ověření GSSAPI dokončeno\n"
+msgstr "Ověření (dvoufázové)"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/main.c#l835
 #: ../openconnect-strings.txt:1927
-#, fuzzy
-#| msgid "Use WebVPN cookie COOKIE"
 msgid "Use authentication cookie COOKIE"
-msgstr "Použít WebVPN cookie COOKIE"
+msgstr "Použít ověřovací cookie COOKIE"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/main.c#l836
 #: ../openconnect-strings.txt:1930
@@ -4018,10 +4017,8 @@ msgstr "Zahodit oprávnění při spuštění trojana"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/main.c#l886
 #: ../openconnect-strings.txt:2041
-#, fuzzy
-#| msgid "Run SCRIPT instead of CSD binary"
 msgid "Run SCRIPT instead of trojan binary"
-msgstr "Spusit SCRIPT místo programu CSD"
+msgstr "Spusit SCRIPT místo programu trojan"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/main.c#l889
 #: ../openconnect-strings.txt:2044
@@ -4888,10 +4885,8 @@ msgstr "Nelze vypočítat režii DTLS pro %s\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/openssl-dtls.c#l210
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/openssl-dtls.c#l269
 #: ../openconnect-strings.txt:2519
-#, fuzzy
-#| msgid "Failed to generate random keys for ESP:\n"
 msgid "Failed to generate random key\n"
-msgstr "Selhalo generování náhodných klíčů pro ESP:\n"
+msgstr "Selhalo generování náhodných klíčů\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/openssl-dtls.c#l232
 #: ../openconnect-strings.txt:2522
@@ -4960,10 +4955,8 @@ msgstr ""
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/openssl-dtls.c#l482
 #: ../openconnect-strings.txt:2559
-#, fuzzy
-#| msgid "LZ4 decompression failed\n"
 msgid "SSL_set_session() failed\n"
-msgstr "Selhala dekomprimace LZ4\n"
+msgstr "Selhalo volání SSL_set_session()\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/71d6599879:/openssl-dtls.c#l555
 #: ../openconnect-strings.txt:2562

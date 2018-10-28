@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NetworkManager-openconnect\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-14 17:58+0200\n"
-"PO-Revision-Date: 2018-10-14 17:59+0200\n"
+"POT-Creation-Date: 2018-10-28 17:52+0100\n"
+"PO-Revision-Date: 2018-10-28 17:53+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -44,37 +44,37 @@ msgstr "Zgodne z sieciami opartymi na Cisco AnyConnect, Juniper i ocserv."
 msgid "The NetworkManager Developers"
 msgstr "Programiści projektu NetworkManager"
 
-#: ../auth-dialog/main.c:684
+#: ../auth-dialog/main.c:683
 #, c-format
 msgid "OpenConnect: %s: %s:%s"
 msgstr "OpenConnect: %s: %s:%s"
 
-#: ../auth-dialog/main.c:714
+#: ../auth-dialog/main.c:713
 #, c-format
 msgid "Connect to VPN “%s”"
 msgstr "Połącz z siecią VPN „%s”"
 
-#: ../auth-dialog/main.c:716
+#: ../auth-dialog/main.c:715
 msgid "Connect to VPN"
 msgstr "Połącz z siecią VPN"
 
-#: ../auth-dialog/main.c:793
+#: ../auth-dialog/main.c:792
 msgid "<b>The certificate may be invalid or untrusted!</b>\n"
 msgstr "<b>Certyfikat może być nieprawidłowy lub niezaufany.</b>\n"
 
-#: ../auth-dialog/main.c:794
+#: ../auth-dialog/main.c:793
 msgid "<b>Reason: "
 msgstr "<b>Przyczyna: "
 
-#: ../auth-dialog/main.c:814 ../auth-dialog/main.c:1580
+#: ../auth-dialog/main.c:813 ../auth-dialog/main.c:1580
 msgid "_Cancel"
 msgstr "_Anuluj"
 
-#: ../auth-dialog/main.c:824
+#: ../auth-dialog/main.c:823
 msgid "I really know what I am doing"
 msgstr "Wiem, co robię"
 
-#: ../auth-dialog/main.c:833
+#: ../auth-dialog/main.c:832
 msgid "Connect anyway"
 msgstr "Połącz mimo to"
 
@@ -326,22 +326,27 @@ msgstr ""
 "wartość „%s” typu „%s” jest nieprawidłowa lub spoza zakresu dla właściwości "
 "„%s” typu „%s”"
 
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:80
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:69
+#, c-format
+msgid "unable to get editor plugin name: %s"
+msgstr "nie można uzyskać nazwy wtyczki edytora: %s"
+
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:103
 #, c-format
 msgid "missing plugin file \"%s\""
 msgstr "brak pliku wtyczki „%s”"
 
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:86
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:109
 #, c-format
 msgid "cannot load editor plugin: %s"
 msgstr "nie można wczytać wtyczki edytora: %s"
 
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:95
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:118
 #, c-format
 msgid "cannot load factory %s from plugin: %s"
 msgstr "nie można wczytać generatora %s z wtyczki: %s"
 
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:121
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:144
 msgid "unknown error creating editor instance"
 msgstr "nieznany błąd podczas tworzenia wystąpienia edytora"
 

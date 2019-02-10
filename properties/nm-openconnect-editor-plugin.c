@@ -380,7 +380,7 @@ notify_plugin_info_set (NMVpnEditorPlugin *plugin,
                         NMVpnPluginInfo *plugin_info)
 {
 	OpenconnectEditorPluginPrivate *priv = OPENCONNECT_EDITOR_PLUGIN_GET_PRIVATE (plugin);
-	guint i, j;
+	guint i;
 
 	if (!plugin_info)
 		return;
@@ -402,6 +402,7 @@ notify_plugin_info_set (NMVpnEditorPlugin *plugin,
 		}
 #else
 		const char *supported_protocols = nm_vpn_plugin_info_lookup_property (plugin_info, "openconnect", "supported-protocols");
+		guint j;
 
 		priv->supported_protocols = supported_protocols
 		    ? g_strsplit_set (supported_protocols, ",", -1)

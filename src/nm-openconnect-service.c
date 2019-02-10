@@ -388,11 +388,12 @@ nm_openconnect_start_openconnect_binary (NMOpenconnectPlugin *plugin,
                                          GError **error)
 {
 	NMOpenconnectPluginPrivate *priv = NM_OPENCONNECT_PLUGIN_GET_PRIVATE (plugin);
-	GPid	pid;
+	GPid pid;
 	const char **openconnect_binary = NULL;
 	GPtrArray *openconnect_argv;
 	GSource *openconnect_watch;
-	gint	stdin_fd;
+	gint stdin_fd;
+	char csd_user_arg[60];
 	const char *props_vpn_gw, *props_cookie, *props_cacert, *props_mtu, *props_gwcert, *props_proxy;
 	const char *props_csd_enable, *props_csd_wrapper;
 	const char *protocol;
@@ -489,7 +490,7 @@ nm_openconnect_start_openconnect_binary (NMOpenconnectPlugin *plugin,
 		g_ptr_array_add (openconnect_argv, (gpointer) "--csd-wrapper");
 		g_ptr_array_add (openconnect_argv, (gpointer) props_csd_wrapper);
 		g_ptr_array_add (openconnect_argv, (gpointer) "--csd-user");
-		g_ptr_array_add (openconnect_argv, (gpointer) g_strdup_printf ("%d", gl.tun_owner));
+		g_ptr_array_add (openconnect_argv, (gpointer) nm_sprintf_buf (csd_user_arg, "%d", gl.tun_owner));
 	}
 
 	priv->tun_name = create_persistent_tundev ();

@@ -490,7 +490,13 @@ nm_openconnect_start_openconnect_binary (NMOpenconnectPlugin *plugin,
 	props_csd_enable = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_CSD_ENABLE);
 	props_csd_wrapper = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_CSD_WRAPPER);
 	if (props_csd_enable && !strcmp (props_csd_enable, "yes") && props_csd_wrapper) {
-		if (priv->tun_name) {
+		/* TODO: disable passing the script to openconnect.
+		 *
+		 * As we have priv->tun_name, openconnect will run as an unpriviledged user NM_OPENCONNECT_USER.
+		 * However, it is still not safe to run untrusted scripts provided by the user.
+		 *
+		 * This needs a different solution, for now, just log a warning. */
+		if (FALSE && priv->tun_name) {
 			/* Replicate the CSD parameters used in the authentication phase, for
 			   supported protocols which may need to invoke the security trojan ("CSD")
 			   in the tunnel/connection phase. */

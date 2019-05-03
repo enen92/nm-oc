@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NetworkManager-openconnect\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-12 12:52+0100\n"
-"PO-Revision-Date: 2019-01-12 12:53+0100\n"
+"POT-Creation-Date: 2019-05-03 12:59+0200\n"
+"PO-Revision-Date: 2019-05-03 13:00+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -265,24 +265,32 @@ msgstr "VPN zgodny z Cisco AnyConnect (openconnect)"
 msgid "Compatible with Cisco AnyConnect SSL VPN."
 msgstr "Zgodny z VPN Cisco AnyConnect SSL."
 
-#: ../properties/nm-openconnect-editor-plugin.c:457
+#: ../properties/nm-openconnect-editor-plugin.c:458
 msgid "Juniper Network Connect (openconnect)"
 msgstr "Juniper Network Connect (openconnect)"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/9e38400d8d:/library.c#l130
-#: ../properties/nm-openconnect-editor-plugin.c:458
+#: ../properties/nm-openconnect-editor-plugin.c:459
 #: ../openconnect-strings.txt:1730
 msgid "Compatible with Juniper Network Connect / Pulse Secure SSL VPN"
 msgstr "Zgodny z VPN Juniper Network Connect/Pulse Secure SSL"
 
+#: ../properties/nm-openconnect-editor-plugin.c:461
+msgid "PAN GlobalProtect (openconnect)"
+msgstr "PAN GlobalProtect (openconnect)"
+
+#: ../properties/nm-openconnect-editor-plugin.c:462
+msgid "Compatible with PAN GlobalProtect SSL VPN"
+msgstr "Zgodny z VPN PAN GlobalProtect SSL"
+
 #. we don't know this protocol by name, but it's configured in the .name file,
 #. * so just take it.
-#: ../properties/nm-openconnect-editor-plugin.c:462
+#: ../properties/nm-openconnect-editor-plugin.c:466
 #, c-format
 msgid "Openconnect VPN (%s)"
 msgstr "VPN OpenConnect (%s)"
 
-#: ../properties/nm-openconnect-editor-plugin.c:463
+#: ../properties/nm-openconnect-editor-plugin.c:467
 #, c-format
 msgid "Openconnect SSL VPN with %s protocol"
 msgstr "VPN SSL OpenConnect z protokołem %s"
@@ -381,33 +389,33 @@ msgstr "Brak opcji konfiguracji VPN."
 msgid "No VPN secrets!"
 msgstr "Brak haseł VPN."
 
-#: ../src/nm-openconnect-service.c:413
+#: ../src/nm-openconnect-service.c:414
 msgid "Could not find openconnect binary."
 msgstr "Nie można odnaleźć pliku binarnego openconnect."
 
-#: ../src/nm-openconnect-service.c:425
+#: ../src/nm-openconnect-service.c:426
 msgid "No VPN gateway specified."
 msgstr "Nie podano bramy VPN."
 
-#: ../src/nm-openconnect-service.c:435
+#: ../src/nm-openconnect-service.c:436
 msgid "No WebVPN cookie provided."
 msgstr "Nie podano ciasteczka WebVPN."
 
-#: ../src/nm-openconnect-service.c:707
+#: ../src/nm-openconnect-service.c:719
 msgid "Don’t quit when VPN connection terminates"
 msgstr "Bez kończenia działania, kiedy połączenie VPN zostaje zakończone"
 
-#: ../src/nm-openconnect-service.c:708
+#: ../src/nm-openconnect-service.c:720
 msgid "Enable verbose debug logging (may expose passwords)"
 msgstr ""
 "Włącza zapisywanie większej liczby komunikatów debugowania w dzienniku (może "
 "ujawnić hasła)"
 
-#: ../src/nm-openconnect-service.c:709
+#: ../src/nm-openconnect-service.c:721
 msgid "D-Bus name to use for this instance"
 msgstr "Nazwa D-Bus dla tego wystąpienia"
 
-#: ../src/nm-openconnect-service.c:732
+#: ../src/nm-openconnect-service.c:744
 msgid ""
 "nm-openconnect-service provides integrated Cisco AnyConnect SSL VPN "
 "capability to NetworkManager."

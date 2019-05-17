@@ -8,21 +8,22 @@
 # Ignacio Acevedo Carrera <zourer@gmail.com>, 2016.
 # Daniel Mustieles <daniel.mustieles@gmail.com>, 2011, 2012, 2013, 2014, 2015, 2016, 2018.
 # Rodrigo <rodhos92@gmail.com>, 2018-2019.
+# Rodrigo Lledó <rodhos92@gmail.com>, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: network-manager-openconnect.HEAD\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/NetworkManager-"
 "openconnect/issues\n"
-"POT-Creation-Date: 2019-01-10 13:23+0000\n"
-"PO-Revision-Date: 2019-03-03 22:06+0100\n"
-"Last-Translator: Rodrigo <rodhos92@gmail.com>\n"
+"POT-Creation-Date: 2019-05-02 13:52+0000\n"
+"PO-Revision-Date: 2019-05-16 19:29+0200\n"
+"Last-Translator: Rodrigo Lledó <rodhos92@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Gtranslator 3.30.1\n"
+"X-Generator: Gtranslator 3.32.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../appdata/network-manager-openconnect.metainfo.xml.in.h:1
@@ -269,24 +270,34 @@ msgstr "Compatible con VPN Cisco AnyConnect (openconnect)"
 msgid "Compatible with Cisco AnyConnect SSL VPN."
 msgstr "Compatible con VPN Cisco AnyConnect SSL."
 
-#: ../properties/nm-openconnect-editor-plugin.c:457
+#: ../properties/nm-openconnect-editor-plugin.c:458
 msgid "Juniper Network Connect (openconnect)"
 msgstr "Juniper Network Connect (openconnect)"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/9e38400d8d:/library.c#l130
-#: ../properties/nm-openconnect-editor-plugin.c:458
+#: ../properties/nm-openconnect-editor-plugin.c:459
 #: ../openconnect-strings.txt:1730
 msgid "Compatible with Juniper Network Connect / Pulse Secure SSL VPN"
 msgstr "Compatible con Juniper Network Connect / Pulse Secure SSL VPN"
 
+#: ../properties/nm-openconnect-editor-plugin.c:461
+#| msgid "Juniper Network Connect (openconnect)"
+msgid "PAN GlobalProtect (openconnect)"
+msgstr "PAN GlobalProtect (openconnect)"
+
+#: ../properties/nm-openconnect-editor-plugin.c:462
+#| msgid "Compatible with Palo Alto Networks (PAN) GlobalProtect SSL VPN"
+msgid "Compatible with PAN GlobalProtect SSL VPN"
+msgstr "Compatible con PAN GlobalProtect SSL VPN"
+
 #. we don't know this protocol by name, but it's configured in the .name file,
 #. * so just take it.
-#: ../properties/nm-openconnect-editor-plugin.c:462
+#: ../properties/nm-openconnect-editor-plugin.c:466
 #, c-format
 msgid "Openconnect VPN (%s)"
 msgstr "Openconnect VPN (%s)"
 
-#: ../properties/nm-openconnect-editor-plugin.c:463
+#: ../properties/nm-openconnect-editor-plugin.c:467
 #, c-format
 msgid "Openconnect SSL VPN with %s protocol"
 msgstr "Openconnect SSL VPN con protocolo %s"
@@ -383,32 +394,32 @@ msgstr "No hay opciones de configuración de VPN."
 msgid "No VPN secrets!"
 msgstr "No hay secretos VPN."
 
-#: ../src/nm-openconnect-service.c:413
+#: ../src/nm-openconnect-service.c:414
 msgid "Could not find openconnect binary."
 msgstr "No se pudo encontrar el binario «openconnect»."
 
-#: ../src/nm-openconnect-service.c:425
+#: ../src/nm-openconnect-service.c:426
 msgid "No VPN gateway specified."
 msgstr "No se especificó ninguna puerta de enlace."
 
-#: ../src/nm-openconnect-service.c:435
+#: ../src/nm-openconnect-service.c:436
 msgid "No WebVPN cookie provided."
 msgstr "No se proporcionó una cookie WebVPN."
 
-#: ../src/nm-openconnect-service.c:707
+#: ../src/nm-openconnect-service.c:719
 msgid "Don’t quit when VPN connection terminates"
 msgstr "No salir cuando finaliza la conexión VPN"
 
-#: ../src/nm-openconnect-service.c:708
+#: ../src/nm-openconnect-service.c:720
 msgid "Enable verbose debug logging (may expose passwords)"
 msgstr ""
 "Activar el registro detallado de depuración (puede exponer las contraseñas)"
 
-#: ../src/nm-openconnect-service.c:709
+#: ../src/nm-openconnect-service.c:721
 msgid "D-Bus name to use for this instance"
 msgstr "Nombre de D-Bus que usar para esta instancia"
 
-#: ../src/nm-openconnect-service.c:732
+#: ../src/nm-openconnect-service.c:744
 msgid ""
 "nm-openconnect-service provides integrated Cisco AnyConnect SSL VPN "
 "capability to NetworkManager."
@@ -586,17 +597,12 @@ msgstr "Se recibió respuesta fallida %s de TNCC\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/9e38400d8d:/auth-juniper.c#l445
 #: ../openconnect-strings.txt:107
-#| msgid ""
-#| "TNCC response: -->\n"
-#| "%s\n"
-#| "<--\n"
 msgid "TNCC response 200 OK\n"
 msgstr "Respuesta TNCC 200 OK\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/9e38400d8d:/auth-juniper.c#l452
 #: ../openconnect-strings.txt:110
 #, c-format
-#| msgid "Unexpected continuation line after CONNECT response: '%s'\n"
 msgid "Second line of TNCC response: '%s'\n"
 msgstr "Segunda línea de la respuesta TNCC: «%s»\n"
 
@@ -609,7 +615,6 @@ msgstr "Se ha obtenido una nueva cookie DSPREAUTH de TNCC: %s\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/9e38400d8d:/auth-juniper.c#l471
 #: ../openconnect-strings.txt:116
 #, c-format
-#| msgid "Unexpected continuation line after CONNECT response: '%s'\n"
 msgid "Unexpected non-empty line from TNCC after DSPREAUTH cookie: '%s'\n"
 msgstr ""
 "Línea no vacía inesperada de TNCC después de la cookie DSPREAUTH: «%s»\n"
@@ -2604,7 +2609,6 @@ msgstr "Falló al decodificar la clave TPM2 ASN.1: %s\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/9e38400d8d:/gnutls_tpm2.c#l225
 #: ../openconnect-strings.txt:1215
 #, c-format
-#| msgid "Failed to parse TPM2 key parent: %s\n"
 msgid "Failed to parse TPM2 key type OID: %s\n"
 msgstr "Falló al analizar el tipo de OID de la clave TPM2: %s\n"
 
@@ -2764,14 +2768,12 @@ msgstr "TPM2 Esys_FlushContext para el primario generado falló: 0x%x\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/9e38400d8d:/gnutls_tpm2_ibm.c#l362
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/9e38400d8d:/gnutls_tpm2_ibm.c#l449
 #: ../openconnect-strings.txt:1303
-#| msgid "Enter TPM key PIN:"
 msgid "Enter TPM2 key password:"
 msgstr "Introduzca la contraseña de la clave TPM2:"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/9e38400d8d:/gnutls_tpm2_esys.c#l395
 #: ../openconnect-strings.txt:1306
 #, c-format
-#| msgid "TPM sign function called for %d bytes.\n"
 msgid "TPM2 RSA sign function called for %d bytes.\n"
 msgstr "Función de firma TPM2 RSA llamada para %d bytes.\n"
 
@@ -2784,7 +2786,6 @@ msgstr "La autenticación de TPM2 Esys_RSA_Decrypt falló\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/9e38400d8d:/gnutls_tpm2_esys.c#l500
 #: ../openconnect-strings.txt:1313
 #, c-format
-#| msgid "Failed to generate DTLS key: %s\n"
 msgid "TPM2 failed to generate RSA signature: 0x%x\n"
 msgstr "TPM2 falló al generar la firma RSA: 0x%x\n"
 
@@ -2792,13 +2793,11 @@ msgstr "TPM2 falló al generar la firma RSA: 0x%x\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/9e38400d8d:/gnutls_tpm2_ibm.c#l404
 #: ../openconnect-strings.txt:1317
 #, c-format
-#| msgid "TPM sign function called for %d bytes.\n"
 msgid "TPM2 EC sign function called for %d bytes.\n"
 msgstr "Función de firma TPM2 EC llamada para %d bytes.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/9e38400d8d:/gnutls_tpm2_esys.c#l494
 #: ../openconnect-strings.txt:1320
-#| msgid "TPM hash signature failed: %s\n"
 msgid "TPM2 Esys_Sign auth failed\n"
 msgstr "Falló la autenticación de TPM2 Esys_Sign\n"
 
@@ -2813,7 +2812,6 @@ msgstr "Gestor padre de TPM2 no válido 0x%08x\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/9e38400d8d:/gnutls_tpm2_ibm.c#l501
 #: ../openconnect-strings.txt:1328
 #, c-format
-#| msgid "Failed to load TPM private key\n"
 msgid "Failed to import TPM2 private key data: 0x%x\n"
 msgstr "Falló al importar los datos de la clave privada TPM2: 0x%x\n"
 
@@ -2821,7 +2819,6 @@ msgstr "Falló al importar los datos de la clave privada TPM2: 0x%x\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/9e38400d8d:/gnutls_tpm2_ibm.c#l511
 #: ../openconnect-strings.txt:1332
 #, c-format
-#| msgid "Failed to load TPM SRK key: %s\n"
 msgid "Failed to import TPM2 public key data: 0x%x\n"
 msgstr "Falló al importar los datos de la clave pública TPM2: 0x%x\n"
 
@@ -2829,7 +2826,6 @@ msgstr "Falló al importar los datos de la clave pública TPM2: 0x%x\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/9e38400d8d:/gnutls_tpm2_ibm.c#l522
 #: ../openconnect-strings.txt:1336
 #, c-format
-#| msgid "Unsupported PEM encryption type: %s\n"
 msgid "Unsupported TPM2 key type %d\n"
 msgstr "Tipo de clave TPM2 no soportado %d\n"
 
@@ -3783,7 +3779,6 @@ msgstr "Elegir autenticación de selección de inicio de sesión"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/9e38400d8d:/main.c#l806
 #: ../openconnect-strings.txt:1858
-#| msgid "Set proxy authentication methods"
 msgid "Provide authentication form responses"
 msgstr "Proporcionar autenticación a partir de las respuestas"
 
@@ -4108,7 +4103,6 @@ msgstr "cadena de versión informada durante la autenticación"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/9e38400d8d:/main.c#l890
 #: ../openconnect-strings.txt:2050
-#| msgid "default"
 msgid "default:"
 msgstr "predeterminado:"
 
@@ -4387,7 +4381,6 @@ msgstr "Sesión terminada por el servidor; saliendo.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/9e38400d8d:/main.c#l1698
 #: ../openconnect-strings.txt:2201
-#| msgid "User cancelled (SIGINT); exiting.\n"
 msgid "User cancelled (SIGINT/SIGTERM); exiting.\n"
 msgstr "Cancelado por el usuario (SIGINT/SIGTERM); saliendo.\n"
 
@@ -5007,7 +5000,6 @@ msgstr "No se puede calcular el exceso para %s\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/9e38400d8d:/openssl-dtls.c#l210
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/9e38400d8d:/openssl-dtls.c#l269
 #: ../openconnect-strings.txt:2537
-#| msgid "Failed to generate random keys for ESP:\n"
 msgid "Failed to generate random key\n"
 msgstr "Falló al generar la clave aleatoria\n"
 
@@ -5060,7 +5052,6 @@ msgstr "Falló al establecer la lista de cifrado DTLS\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/9e38400d8d:/openssl-dtls.c#l439
 #: ../openconnect-strings.txt:2567
 #, c-format
-#| msgid "Set DTLS cipher list failed\n"
 msgid "DTLS cipher '%s' not found\n"
 msgstr "Cifrado DTLS «%s» no encontrado\n"
 
@@ -5080,7 +5071,6 @@ msgstr ""
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/9e38400d8d:/openssl-dtls.c#l493
 #: ../openconnect-strings.txt:2577
-#| msgid "LZ4 decompression failed\n"
 msgid "SSL_set_session() failed\n"
 msgstr "SSL_set_session() falló\n"
 

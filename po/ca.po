@@ -124,7 +124,7 @@ msgid ""
 "SAML login is required via %s to this URL:\n"
 "\t%s"
 msgstr ""
-"Cal l'usuari SAML via %s per aquesta URL:\n"
+"Cal l'usuari SAML via %s per aquest URL:\n"
 "\t%s"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/auth-globalprotect.c#l110
@@ -2381,7 +2381,7 @@ msgstr "S'està creant la clau primària sota la jerarquia %s. \n"
 #: ../openconnect-strings.txt:1264
 #, c-format
 msgid "Enter TPM2 %s hierarchy password:"
-msgstr "Entreu la contrasenya de jerarquia %s TPM2:"
+msgstr "Introduïu la contrasenya de jerarquia %s TPM2:"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/gnutls_tpm2_esys.c#l209
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/gnutls_tpm2_esys.c#l303
@@ -2441,7 +2441,7 @@ msgstr "Ha fallat Esys_TR_FromTPMPublic  per gestionar 0x%x: 0x%x \n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/gnutls_tpm2_ibm.c#l278
 #: ../openconnect-strings.txt:1295
 msgid "Enter TPM2 parent key password:"
-msgstr "Entreu la contrasenya de la clau pare TPM2:"
+msgstr "Introduïu la contrasenya de la clau pare TPM2:"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/gnutls_tpm2_esys.c#l309
 #: ../openconnect-strings.txt:1298
@@ -2473,7 +2473,7 @@ msgstr "Ha fallat Esys_FlushContext TPM2 per al primari generat:  0x%x \n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/gnutls_tpm2_ibm.c#l450
 #: ../openconnect-strings.txt:1312
 msgid "Enter TPM2 key password:"
-msgstr "Entreu la contrasenya TPM2:"
+msgstr "Introduïu la contrasenya TPM2:"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/gnutls_tpm2_esys.c#l395
 #: ../openconnect-strings.txt:1315
@@ -4760,7 +4760,7 @@ msgstr "La inicialització de la sessió DTLSv1 ha fallat\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/openssl-dtls.c#l275
 #: ../openconnect-strings.txt:2558
 msgid "Too large application ID size\n"
-msgstr "La mida de la identificador és massa gran\n"
+msgstr "La mida de l'identificador és massa gran\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/openssl-dtls.c#l308
 #: ../openconnect-strings.txt:2561
@@ -4803,7 +4803,7 @@ msgid ""
 "Use the --no-dtls command line option to avoid this message\n"
 msgstr ""
 "SSL_set_session() ha fallat amb un protocol antic amb versió 0x%x\n"
-"Esteu utilitzant una versió de OpenSSL més vella que 0.9.8m?\n"
+"Esteu utilitzant una versió d'OpenSSL més vella que 0.9.8m?\n"
 "Consulteu http://rt.openssl.org/Ticket/Display.html?id=1751\n"
 "Useu l'opció --no-dtls a la línia d'ordres per evitar aquest missatge\n"
 
@@ -5614,7 +5614,7 @@ msgstr "EncryptMessage() ha fallat: %lx\n"
 #: ../openconnect-strings.txt:3024
 #, c-format
 msgid "EncryptMessage() result too large (%lu + %lu + %lu)\n"
-msgstr "El EncryptMessage() ha resultat massa gran (%lu + %lu + %lu)\n"
+msgstr "L'EncryptMessage() ha resultat massa gran (%lu + %lu + %lu)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/sspi.c#l350
 #: ../openconnect-strings.txt:3027
@@ -6427,7 +6427,7 @@ msgid ""
 "value \"%s\" of type '%s' is invalid or out of range for property '%s' of "
 "type '%s'"
 msgstr ""
-"el valor «%s» de tipus «%s» no és vàlid o esta fora de rang per a la "
+"el valor «%s» de tipus «%s» no és vàlid o està fora de rang per a la "
 "propietat «%s» de tipus «%s»"
 
 #: ../shared/nm-utils/nm-vpn-plugin-utils.c:69

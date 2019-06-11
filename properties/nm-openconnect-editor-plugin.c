@@ -92,24 +92,43 @@ struct oc_vpn_proto {
         const char *description;
         unsigned int flags;
 };
-#endif /* !OPENCONNECT_CHECK_VER(5,5) */
 
-static struct oc_vpn_proto old_protos[] = {
-	{
-		.name = "anyconnect",
-		.pretty_name = N_("Cisco AnyConnect or openconnect"),
-		.description = N_("Compatible with Cisco AnyConnect SSL VPN, as well as ocserv"),
-		.flags = OC_PROTO_PROXY | OC_PROTO_CSD | OC_PROTO_AUTH_CERT | OC_PROTO_AUTH_OTP | OC_PROTO_AUTH_STOKEN,
-	},
-#if OPENCONNECT_CHECK_VER(5,1)
-	{
-		.name = "nc",
-		.pretty_name = N_("Juniper Network Connect"),
-		.description = N_("Compatible with Juniper Network Connect"),
-		.flags = OC_PROTO_PROXY | OC_PROTO_CSD | OC_PROTO_AUTH_CERT | OC_PROTO_AUTH_OTP,
-	}
+static int openconnect_get_supported_protocols(struct oc_vpn_proto **protos)
+{
+	struct oc_vpn_proto *pr;
+
+	*protos = pr = calloc(sizeof(*pr), 2);
+	if (!pr)
+		return -ENOMEM;
+
+	pr[0].name = "anyconnect";
+	pr[0].pretty_name = _("Cisco AnyConnect or openconnect");
+	pr[0].description = _("Compatible with Cisco AnyConnect SSL VPN, as well as ocserv");
+	pr[0].flags = OC_PROTO_PROXY | OC_PROTO_CSD | OC_PROTO_AUTH_CERT | OC_PROTO_AUTH_OTP | OC_PROTO_AUTH_STOKEN;
+
+	pr[1].name = "nc";
+	pr[1].pretty_name = _("Juniper Network Connect");
+	pr[1].description = _("Compatible with Juniper Network Connect");
+	pr[1].flags = OC_PROTO_PROXY | OC_PROTO_CSD | OC_PROTO_AUTH_CERT | OC_PROTO_AUTH_OTP;
+
+	/* Newer protocols like GlobalProtect and Pulse only came after
+	 * the openconnect_get_supported_protocols() API, so we don't need
+	 * hard-coded knowledge about those. */
+
+#if OPENCONNECT_CHECK_VER(5,2)
+	/* OpenConnect v7.05 (API 5.2) onwards had nc support. */
+	return 2;
+#else
+	/* Before that, only AnyConnect. */
+	return 1;
 #endif
-};
+}
+
+static void openconnect_free_supported_protocols(struct oc_vpn_proto *protos)
+{
+	free(protos);
+}
+#endif /* !OPENCONNECT_CHECK_VER(5,5) */
 
 typedef struct {
 	int nr_supported_protocols;
@@ -417,18 +436,12 @@ notify_plugin_info_set (NMVpnEditorPlugin *plugin,
 	if (!plugin_info)
 		return;
 
-#if OPENCONNECT_CHECK_VER(5,5)
-	if (priv->supported_protocols && priv->supported_protocols != old_protos) {
-		openconnect_free_supported_protocols(priv->supported_protocols);
-		priv->supported_protocols = NULL;
-	}
+	openconnect_free_supported_protocols(priv->supported_protocols);
+	priv->supported_protocols = NULL;
 
 	priv->nr_supported_protocols = openconnect_get_supported_protocols(&priv->supported_protocols);
 	if (priv->nr_supported_protocols > 0)
 		return;
-#endif
-	priv->supported_protocols = old_protos;
-	priv->nr_supported_protocols = sizeof(old_protos) / sizeof(old_protos[0]);
 }
 
 static char **
@@ -467,8 +480,8 @@ _vt_impl_get_service_add_detail (NMVpnEditorPlugin *plugin,
 
 		if (!nm_streq (add_detail, p->name))
 			continue;
-		NM_SET_OUT (out_pretty_name, g_strdup_printf("%s (OpenConnect)", _(p->pretty_name)));
-		NM_SET_OUT (out_description, g_strdup (_(p->description)));
+		NM_SET_OUT (out_pretty_name, g_strdup_printf("%s (OpenConnect)", p->pretty_name));
+		NM_SET_OUT (out_description, g_strdup (p->description));
 
 		if (i) {
 			NM_SET_OUT (out_add_detail_key, g_strdup (add_detail ? NM_OPENCONNECT_KEY_PROTOCOL : NULL));
@@ -547,12 +560,8 @@ openconnect_editor_plugin_dispose (GObject *object)
 	OpenconnectEditorPlugin *plugin = OPENCONNECT_EDITOR_PLUGIN (object);
 	OpenconnectEditorPluginPrivate *priv = OPENCONNECT_EDITOR_PLUGIN_GET_PRIVATE (plugin);
 
-#if OPENCONNECT_CHECK_VER(5,5)
-	if (priv->supported_protocols && priv->supported_protocols != old_protos) {
-		openconnect_free_supported_protocols(priv->supported_protocols);
-		priv->supported_protocols = NULL;
-	}
-#endif
+	openconnect_free_supported_protocols(priv->supported_protocols);
+	priv->supported_protocols = NULL;
 
 	G_OBJECT_CLASS (openconnect_editor_plugin_parent_class)->dispose (object);
 }

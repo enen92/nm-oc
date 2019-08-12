@@ -45,7 +45,7 @@ msgstr "Compatible amb xarxes basades en Cisco AnyConnect, Juniper o ocserv."
 
 #: ../appdata/network-manager-openconnect.metainfo.xml.in.h:5
 msgid "The NetworkManager Developers"
-msgstr "Els desenvolupadors del NetworkManager"
+msgstr "L'equip de desenvolupament del NetworkManager"
 
 #: ../auth-dialog/main.c:683
 #, c-format
@@ -130,7 +130,7 @@ msgstr ""
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/auth-globalprotect.c#l110
 #: ../openconnect-strings.txt:19
 msgid "Please enter your username and password"
-msgstr "Entreu el vostre nom d'usuari i contrasenya"
+msgstr "Introduïu el vostre nom d'usuari i contrasenya"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/auth-globalprotect.c#l119
 #: ../openconnect-strings.txt:22
@@ -478,7 +478,7 @@ msgid ""
 "Error: Server asked us to run CSD hostscan.\n"
 "You need to provide a suitable --csd-wrapper argument.\n"
 msgstr ""
-"Error: El servidor us ha preguntat per executar l'escànner d'amfitrions "
+"Error: El servidor us ha preguntat per executar l'escàner d'amfitrions "
 "CSD.\n"
 "Cal que proporcioneu un argument «--csd-wrapper» adequat.\n"
 
@@ -1566,7 +1566,7 @@ msgstr "Ha fallat l'enviament SSL: %s\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/gnutls.c#l315
 #: ../openconnect-strings.txt:809
 msgid "Could not extract expiration time of certificate\n"
-msgstr "No es pot extraure el temps caducitat del certificat\n"
+msgstr "No es pot extraure la data de caducitat del certificat\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/gnutls.c#l320
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/openssl.c#l1592
@@ -2405,7 +2405,7 @@ msgstr "Ha fallat Esys_CreatePrimary TPM2: 0x%x \n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/gnutls_tpm2_esys.c#l245
 #: ../openconnect-strings.txt:1278
 msgid "Establishing connection with TPM.\n"
-msgstr "Connexió establida amb TPM, \n"
+msgstr "Connexió establida amb TPM.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/gnutls_tpm2_esys.c#l250
 #: ../openconnect-strings.txt:1281
@@ -2413,7 +2413,6 @@ msgstr "Connexió establida amb TPM, \n"
 msgid "TPM2 Esys_Initialize failed: 0x%x\n"
 msgstr ""
 "Ha fallat Esys_Initialize TPM2:  0x%x \n"
-"\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/gnutls_tpm2_esys.c#l258
 #: ../openconnect-strings.txt:1284
@@ -3719,7 +3718,7 @@ msgstr "Menys sortida"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l863
 #: ../openconnect-strings.txt:1987
 msgid "Dump HTTP authentication traffic (implies --verbose)"
-msgstr "Bolca el trafic d'autenticació HTTP (implica --verbose)"
+msgstr "Bolca el trànsit d'autenticació HTTP (implica --verbose)"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l864
 #: ../openconnect-strings.txt:1990
@@ -3751,7 +3750,7 @@ msgstr "per defecte"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l871
 #: ../openconnect-strings.txt:2005
 msgid "Pass traffic to 'script' program, not tun"
-msgstr "Passa el tràfic a l'«script» del programa, no al controlador de xarxa"
+msgstr "Passa el trànsit a l'«script» del programa, no al controlador de xarxa"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l874
 #: ../openconnect-strings.txt:2008
@@ -5255,7 +5254,7 @@ msgstr "Error en analitzar el nom de l'assumpte al certificat del parell\n"
 #: ../openconnect-strings.txt:2834
 #, c-format
 msgid "Peer cert subject mismatch ('%s' != '%s')\n"
-msgstr "L'assumpte del certificat del parell no coincideix ('%s' != '%s')\n"
+msgstr "L'assumpte del certificat del parell no coincideix («%s» != «%s»)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/openssl.c#l1355
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/openssl.c#l1389
@@ -6056,7 +6055,7 @@ msgstr "Error en analitzar el fitxer de configuració XML %s\n"
 #: ../openconnect-strings.txt:3256
 #, c-format
 msgid "Host \"%s\" has address \"%s\"\n"
-msgstr "L'amfitrió \"%s\" té l'adreça \"%s\"\n"
+msgstr "L'amfitrió «%s» té l'adreça «%s»\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/xml.c#l194
 #: ../openconnect-strings.txt:3259

@@ -3425,7 +3425,7 @@ msgstr "Protocols suportats:"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l675
 #: ../openconnect-strings.txt:1814
 msgid " (default)"
-msgstr "(per defecte)"
+msgstr " (per defecte)"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l672
 #: ../openconnect-strings.txt:1817
@@ -4301,7 +4301,7 @@ msgstr "Sense treball que fer; dormint durant %d ms...\n"
 #: ../openconnect-strings.txt:2310
 #, c-format
 msgid "WaitForMultipleObjects failed: %s\n"
-msgstr "EsperantMultiplesObjectes ha fallat: %s\n"
+msgstr "WaitForMultipleObjects ha fallat: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/ntlm.c#l87
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/sspi.c#l114
@@ -4309,14 +4309,14 @@ msgstr "EsperantMultiplesObjectes ha fallat: %s\n"
 #: ../openconnect-strings.txt:2315
 #, c-format
 msgid "InitializeSecurityContext() failed: %lx\n"
-msgstr "InicialitzaContextSeguretat() ha fallat:  %lx\n"
+msgstr "InitializeSecurityContext() ha fallat:  %lx\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/ntlm.c#l113
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/sspi.c#l48
 #: ../openconnect-strings.txt:2319
 #, c-format
 msgid "AcquireCredentialsHandle() failed: %lx\n"
-msgstr "GestorCredencialAdquirides() ha fallat:  %lx\n"
+msgstr "AcquireCredentialsHandle() ha fallat:  %lx\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/ntlm.c#l246
 #: ../openconnect-strings.txt:2322

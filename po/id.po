@@ -7,8 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: network-manager-openconnect master\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-18 18:52+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/NetworkManager-"
+"openconnect/issues\n"
+"POT-Creation-Date: 2019-05-18 17:54+0000\n"
 "PO-Revision-Date: 2018-03-16 11:28+0700\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <gnome@i15n.org>\n"
@@ -113,6 +114,301 @@ msgstr "Simpan sandi"
 #: ../auth-dialog/main.c:1594
 msgid "Log"
 msgstr "Log"
+
+#: ../properties/auth-helpers.c:58
+msgid "Choose a Certificate Authority certificate…"
+msgstr "Pilih sebuah sertifikat Certificate Authority…"
+
+#: ../properties/auth-helpers.c:74
+msgid "Choose your personal certificate…"
+msgstr "Pilih sertifikat pribadi Anda…"
+
+#: ../properties/auth-helpers.c:90
+msgid "Choose your private key…"
+msgstr "Pilih kunci privat Anda…"
+
+#: ../properties/auth-helpers.c:262
+msgid "PEM certificates (*.pem, *.crt, *.key)"
+msgstr "Sertifikat PEM (*.pem, *.crt, *.key)"
+
+#: ../properties/nm-openconnect-dialog.ui.h:1
+msgid "General"
+msgstr "Umum"
+
+#: ../properties/nm-openconnect-dialog.ui.h:2
+msgid "Select A File"
+msgstr "Pilih Berkas"
+
+#: ../properties/nm-openconnect-dialog.ui.h:3
+msgid "_VPN Protocol:"
+msgstr "Protokol _VPN:"
+
+#: ../properties/nm-openconnect-dialog.ui.h:4
+msgid "_Gateway:"
+msgstr "_Gateway:"
+
+#: ../properties/nm-openconnect-dialog.ui.h:5
+msgid "_Proxy:"
+msgstr "_Proksi:"
+
+#: ../properties/nm-openconnect-dialog.ui.h:6
+msgid "CA C_ertificate:"
+msgstr "S_ertifikat CA:"
+
+#: ../properties/nm-openconnect-dialog.ui.h:7
+msgid "Allow security scanner _trojan (CSD)"
+msgstr ""
+
+#: ../properties/nm-openconnect-dialog.ui.h:8
+msgid "Trojan (CSD) _Wrapper Script:"
+msgstr ""
+
+#: ../properties/nm-openconnect-dialog.ui.h:9
+msgid "Reported OS:"
+msgstr "OS yang dilaporkan:"
+
+#: ../properties/nm-openconnect-dialog.ui.h:10
+msgid "Common values: linux linux-64 win mac-intel android apple-ios"
+msgstr "Nilai umum: linux linux-64 win mac-intel android apple-ios"
+
+#: ../properties/nm-openconnect-dialog.ui.h:11
+msgid "Certificate Authentication"
+msgstr "Autentikasi Sertifikat"
+
+#: ../properties/nm-openconnect-dialog.ui.h:12
+msgid "_User Certificate:"
+msgstr "Sertifikat Pengg_una:"
+
+#: ../properties/nm-openconnect-dialog.ui.h:13
+msgid "Private _Key:"
+msgstr "_Kunci Pribadi:"
+
+#: ../properties/nm-openconnect-dialog.ui.h:14
+msgid "Use _FSID for key passphrase"
+msgstr "Gunakan _FSID untuk sandi kunci"
+
+#: ../properties/nm-openconnect-dialog.ui.h:15
+msgid "Prevent user from manually accepting invalid certificates"
+msgstr "Mencegah pengguna menerima sertifikat yang tidak valid secara manual"
+
+#: ../properties/nm-openconnect-dialog.ui.h:16
+msgid "Software Token Authentication"
+msgstr "Autentikasi Token Perangkat Lunak"
+
+#: ../properties/nm-openconnect-dialog.ui.h:17
+msgid "Token _Mode:"
+msgstr "_Mode Token:"
+
+#: ../properties/nm-openconnect-dialog.ui.h:18
+msgid "Token Sec_ret:"
+msgstr "_Rahasia Token:"
+
+#: ../properties/nm-openconnect-dialog.ui.h:19
+msgid "Disabled"
+msgstr "Dinonaktifkan"
+
+#: ../properties/nm-openconnect-dialog.ui.h:20
+msgid "RSA SecurID — read from ~/.stokenrc"
+msgstr "RSA SecurID — baca dari ~/.stokenrc"
+
+#: ../properties/nm-openconnect-dialog.ui.h:21
+msgid "RSA SecurID — manually entered"
+msgstr "RSA SecurID — dimasukkan secara manual"
+
+#: ../properties/nm-openconnect-dialog.ui.h:22
+msgid "TOTP — manually entered"
+msgstr "TOTP — dimasukkan secara manual"
+
+#: ../properties/nm-openconnect-dialog.ui.h:23
+msgid "HOTP — manually entered"
+msgstr "HOTP — dimasukkan secara manual"
+
+#: ../properties/nm-openconnect-dialog.ui.h:24
+msgid "Yubikey OATH"
+msgstr "OATH YubiKey"
+
+#: ../properties/nm-openconnect-editor.c:237
+msgid "Cisco AnyConnect"
+msgstr "AnyConnect Cisco"
+
+#: ../properties/nm-openconnect-editor.c:243
+msgid "Juniper/Pulse Network Connect"
+msgstr "Juniper/Pulse Network Connect"
+
+#: ../properties/nm-openconnect-editor-plugin.c:57
+#: ../properties/nm-openconnect-editor-plugin.c:60
+msgid "Multi-protocol VPN client (openconnect)"
+msgstr ""
+
+#: ../properties/nm-openconnect-editor-plugin.c:58
+msgid ""
+"Compatible with Cisco AnyConnect, Juniper Network Connect and Junos Pulse, "
+"and PAN GlobalProtect SSL VPNs."
+msgstr ""
+
+#: ../properties/nm-openconnect-editor-plugin.c:61
+msgid ""
+"Compatible with Cisco AnyConnect and Juniper Network Connect and Junos Pulse "
+"SSL VPNs."
+msgstr ""
+
+#: ../properties/nm-openconnect-editor-plugin.c:63
+msgid "Cisco AnyConnect Compatible VPN (openconnect)"
+msgstr "VPN Kompatibel AnyConnect Cisco (openconnect)"
+
+#: ../properties/nm-openconnect-editor-plugin.c:64
+msgid "Compatible with Cisco AnyConnect SSL VPN."
+msgstr "Kompatibel dengan VPN SSL AnyConnect Cisco."
+
+#: ../properties/nm-openconnect-editor-plugin.c:458
+msgid "Juniper Network Connect (openconnect)"
+msgstr "Juniper Network Connect (openconnect)"
+
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/library.c#l130
+#: ../properties/nm-openconnect-editor-plugin.c:459
+#: ../openconnect-strings.txt:1739
+msgid "Compatible with Juniper Network Connect / Pulse Secure SSL VPN"
+msgstr "Kompatibel dengan VPN SSL Juniper Network Connect / Pulse Secure"
+
+#: ../properties/nm-openconnect-editor-plugin.c:461
+msgid "PAN GlobalProtect (openconnect)"
+msgstr ""
+
+#: ../properties/nm-openconnect-editor-plugin.c:462
+msgid "Compatible with PAN GlobalProtect SSL VPN"
+msgstr ""
+
+#. we don't know this protocol by name, but it's configured in the .name file,
+#. * so just take it.
+#: ../properties/nm-openconnect-editor-plugin.c:466
+#, c-format
+msgid "Openconnect VPN (%s)"
+msgstr "VPN OpenConnect (%s)"
+
+#: ../properties/nm-openconnect-editor-plugin.c:467
+#, c-format
+msgid "Openconnect SSL VPN with %s protocol"
+msgstr "VPN SSL Openconnect dengan protokol %s"
+
+#: ../shared/nm-utils/nm-shared-utils.c:185
+#, c-format
+msgid "object class '%s' has no property named '%s'"
+msgstr "kelas objek '%s' tak punya properti bernama '%s'"
+
+#: ../shared/nm-utils/nm-shared-utils.c:192
+#, c-format
+msgid "property '%s' of object class '%s' is not writable"
+msgstr "properti '%s' dari kelas objek '%s' tidak dapat ditulisi"
+
+#: ../shared/nm-utils/nm-shared-utils.c:199
+#, c-format
+msgid ""
+"construct property \"%s\" for object '%s' can't be set after construction"
+msgstr ""
+"properti construct \"%s\" untuk objek '%s' tak bisa ditata setelah konstruksi"
+
+#: ../shared/nm-utils/nm-shared-utils.c:207
+#, c-format
+msgid "'%s::%s' is not a valid property name; '%s' is not a GObject subtype"
+msgstr "'%s::%s' bukan nama properti yang valid; '%s' bukan subtipe GObject"
+
+#: ../shared/nm-utils/nm-shared-utils.c:216
+#, c-format
+msgid "unable to set property '%s' of type '%s' from value of type '%s'"
+msgstr "tak bisa menata properti '%s' bertipe '%s' dari nilai bertipe '%s'"
+
+#: ../shared/nm-utils/nm-shared-utils.c:227
+#, c-format
+msgid ""
+"value \"%s\" of type '%s' is invalid or out of range for property '%s' of "
+"type '%s'"
+msgstr ""
+"nilai \"%s\" bertipe '%s' tak valid atau di luar jangkauan untuk properti "
+"'%s' bertipe '%s'"
+
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:69
+#, c-format
+msgid "unable to get editor plugin name: %s"
+msgstr ""
+
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:103
+#, c-format
+msgid "missing plugin file \"%s\""
+msgstr "kurang berkas pengaya \"%s\""
+
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:109
+#, c-format
+msgid "cannot load editor plugin: %s"
+msgstr "tak bisa memuat pengaya penyunting: %s"
+
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:118
+#, c-format
+msgid "cannot load factory %s from plugin: %s"
+msgstr "tak bisa memuat pabrik %s dari pengaya: %s"
+
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:144
+msgid "unknown error creating editor instance"
+msgstr "kesalahan tak diketahui saat membuat instansi penyunting"
+
+#: ../src/nm-openconnect-service.c:180
+#, c-format
+msgid "invalid integer property “%s” or out of range [%d -> %d]"
+msgstr "properti integer \"%s\" tidak valid atau diluar jangkauan [%d -> %d]"
+
+#: ../src/nm-openconnect-service.c:190
+#, c-format
+msgid "invalid boolean property “%s” (not yes or no)"
+msgstr "properti bool \"%s\" tidak valid (bukan yes atau no)"
+
+#: ../src/nm-openconnect-service.c:197
+#, c-format
+msgid "unhandled property “%s” type %s"
+msgstr "properti \"%s\" jenis %s tidak ditangani"
+
+#: ../src/nm-openconnect-service.c:210
+#, c-format
+msgid "property “%s” invalid or not supported"
+msgstr "properti \"%s\" tidak valid atau tidak didukung"
+
+#: ../src/nm-openconnect-service.c:226
+msgid "No VPN configuration options."
+msgstr "Tak ada opsi konfigurasi VPN."
+
+#: ../src/nm-openconnect-service.c:244
+msgid "No VPN secrets!"
+msgstr "Tak ada rahasia VPN!"
+
+#: ../src/nm-openconnect-service.c:414
+msgid "Could not find openconnect binary."
+msgstr "Tak bisa temukan biner openconnect."
+
+#: ../src/nm-openconnect-service.c:426
+msgid "No VPN gateway specified."
+msgstr "Gateway VPN tak dinyatakan."
+
+#: ../src/nm-openconnect-service.c:436
+msgid "No WebVPN cookie provided."
+msgstr "Tak diberikan cookie WebVPN."
+
+#: ../src/nm-openconnect-service.c:719
+msgid "Don’t quit when VPN connection terminates"
+msgstr "Jangan keluar ketika koneksi VPN berakhir"
+
+#: ../src/nm-openconnect-service.c:720
+msgid "Enable verbose debug logging (may expose passwords)"
+msgstr "Fungsikan pencatatan log awakutu rinci (mungkin mengungkap kata sandi)"
+
+#: ../src/nm-openconnect-service.c:721
+msgid "D-Bus name to use for this instance"
+msgstr "Nama D-Bus untuk dipakai bagi instansi ini"
+
+#: ../src/nm-openconnect-service.c:744
+msgid ""
+"nm-openconnect-service provides integrated Cisco AnyConnect SSL VPN "
+"capability to NetworkManager."
+msgstr ""
+"nm-openconnect-service menyediakan kapabilitas VPN SSL Cisco AnyConnect yang "
+"terintegrasi untuk NetworkManager."
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/auth-globalprotect.c#l108
 #: ../openconnect-strings.txt:14
@@ -891,13 +1187,13 @@ msgstr "Kirim paket BYE: %s\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/digest.c#l252
 #: ../openconnect-strings.txt:457
 msgid "Attempting Digest authentication to proxy\n"
-msgstr "Mencoba otentikasi digest ke proksi\n"
+msgstr "Mencoba autentikasi digest ke proksi\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/digest.c#l255
 #: ../openconnect-strings.txt:460
 #, c-format
 msgid "Attempting Digest authentication to server '%s'\n"
-msgstr "Mencoba otentikasi Digest ke server '%s'\n"
+msgstr "Mencoba autentikasi Digest ke server '%s'\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/dtls.c#l113
 #: ../openconnect-strings.txt:463
@@ -1204,7 +1500,7 @@ msgstr "Tipe enkripsi ESP %s kunci 0x%s\n"
 #: ../openconnect-strings.txt:624
 #, c-format
 msgid "ESP authentication type %s key 0x%s\n"
-msgstr "Otentikasi ESP tipe %s kunci 0x%s\n"
+msgstr "Autentikasi ESP tipe %s kunci 0x%s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/esp.c#l87
 #: ../openconnect-strings.txt:627
@@ -1907,7 +2203,7 @@ msgstr "Gagal mengalokasikan memori untuk sertifikat\n"
 msgid ""
 "WARNING: GnuTLS returned incorrect issuer certs; authentication may fail!\n"
 msgstr ""
-"PERINGATAN: GnuTLS mengembalikan sert penerbit yang tak benar; otentikasi "
+"PERINGATAN: GnuTLS mengembalikan sert penerbit yang tak benar; autentikasi "
 "mungkin gagal!\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/gnutls.c#l1648
@@ -2729,7 +3025,7 @@ msgstr ""
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/gssapi.c#l75
 #: ../openconnect-strings.txt:1482
 msgid "Error importing GSSAPI name for authentication:\n"
-msgstr "Galat saat mengimpor nama GSSAPI untuk otentikasi\n"
+msgstr "Galat saat mengimpor nama GSSAPI untuk autentikasi\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/gssapi.c#l128
 #: ../openconnect-strings.txt:1485
@@ -2739,13 +3035,13 @@ msgstr "Galat saat menjangkitkan respons GSSAPI\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/gssapi.c#l145
 #: ../openconnect-strings.txt:1488
 msgid "Attempting GSSAPI authentication to proxy\n"
-msgstr "Mencoba otentikasi GSSAPI ke proksi\n"
+msgstr "Mencoba autentikasi GSSAPI ke proksi\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/gssapi.c#l148
 #: ../openconnect-strings.txt:1491
 #, c-format
 msgid "Attempting GSSAPI authentication to server '%s'\n"
-msgstr "Mencoba otentikasi GSSAPI ke server '%s'\n"
+msgstr "Mencoba autentikasi GSSAPI ke server '%s'\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/gssapi.c#l200
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/gssapi.c#l256
@@ -2753,7 +3049,7 @@ msgstr "Mencoba otentikasi GSSAPI ke server '%s'\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/sspi.c#l249
 #: ../openconnect-strings.txt:1497
 msgid "GSSAPI authentication completed\n"
-msgstr "Otentikasi GSSAPI telah lengkap\n"
+msgstr "Autentikasi GSSAPI telah lengkap\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/gssapi.c#l211
 #: ../openconnect-strings.txt:1500
@@ -2771,14 +3067,14 @@ msgstr "Sedang mengirim token GSSAPI berukuran %zu byte\n"
 #: ../openconnect-strings.txt:1506
 #, c-format
 msgid "Failed to send GSSAPI authentication token to proxy: %s\n"
-msgstr "Gagal mengirim token otentikasi GSSAPI ke proksi: %s\n"
+msgstr "Gagal mengirim token autentikasi GSSAPI ke proksi: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/gssapi.c#l237
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/gssapi.c#l264
 #: ../openconnect-strings.txt:1510
 #, c-format
 msgid "Failed to receive GSSAPI authentication token from proxy: %s\n"
-msgstr "Gagal menerima token otentikasi GSSAPI dari proksi: %s\n"
+msgstr "Gagal menerima token autentikasi GSSAPI dari proksi: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/gssapi.c#l243
 #: ../openconnect-strings.txt:1513
@@ -2850,13 +3146,13 @@ msgstr "Proksi SOCKS menuntuk proteksi yang tak dikenal bertipe 0x%02x\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/http-auth.c#l184
 #: ../openconnect-strings.txt:1550
 msgid "Attempting HTTP Basic authentication to proxy\n"
-msgstr "Mencoba otentikasi Dasar HTTP ke proksi\n"
+msgstr "Mencoba autentikasi Dasar HTTP ke proksi\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/http-auth.c#l186
 #: ../openconnect-strings.txt:1553
 #, c-format
 msgid "Attempting HTTP Basic authentication to server '%s'\n"
-msgstr "Mencoba otentikasi Dasar HTTP ke server '%s'\n"
+msgstr "Mencoba autentikasi Dasar HTTP ke server '%s'\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/http-auth.c#l200
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/http.c#l1165
@@ -2867,19 +3163,19 @@ msgstr "Versi OpenConnect ini dibangun tanpa dukungan GSSAPI\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/http-auth.c#l240
 #: ../openconnect-strings.txt:1560
 msgid "Proxy requested Basic authentication which is disabled by default\n"
-msgstr "Proksi meminta otentikasi Dasar yang secara baku dinonaktifkan\n"
+msgstr "Proksi meminta autentikasi Dasar yang secara baku dinonaktifkan\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/http-auth.c#l243
 #: ../openconnect-strings.txt:1563
 #, c-format
 msgid ""
 "Server '%s' requested Basic authentication which is disabled by default\n"
-msgstr "Server '%s' meminta otentikasi Dasar yang secara baku dinonaktifkan\n"
+msgstr "Server '%s' meminta autentikasi Dasar yang secara baku dinonaktifkan\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/http-auth.c#l256
 #: ../openconnect-strings.txt:1567
 msgid "No more authentication methods to try\n"
-msgstr "Tak ada lagi metoda otentikasi yang dapat dicoba\n"
+msgstr "Tak ada lagi metoda autentikasi yang dapat dicoba\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/http.c#l319
 #: ../openconnect-strings.txt:1570
@@ -2918,7 +3214,7 @@ msgstr "Cookie yang tak valid ditawarkan: %s\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/http.c#l454
 #: ../openconnect-strings.txt:1588
 msgid "SSL certificate authentication failed\n"
-msgstr "Otentikasi sertifikat SSL gagal\n"
+msgstr "Autentikasi sertifikat SSL gagal\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/http.c#l485
 #: ../openconnect-strings.txt:1591
@@ -3043,7 +3339,7 @@ msgstr "Server SOCKS meminta nama pengguna/sandi tapi kami tak punya\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/http.c#l1047
 #: ../openconnect-strings.txt:1659
 msgid "Username and password for SOCKS authentication must be < 255 bytes\n"
-msgstr "Nama pengguna dan sandi untuk otentikasi SOCKS mesti < 255 byte\n"
+msgstr "Nama pengguna dan sandi untuk autentikasi SOCKS mesti < 255 byte\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/http.c#l1062
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/http.c#l1118
@@ -3069,34 +3365,34 @@ msgstr "Respon auth yang tak diharapkan dari proksi SOCKS: %02x %02x\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/http.c#l1083
 #: ../openconnect-strings.txt:1674
 msgid "Authenticated to SOCKS server using password\n"
-msgstr "Terotentikasi ke server SOCKS memakai sandi\n"
+msgstr "Terautentikasi ke server SOCKS memakai sandi\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/http.c#l1087
 #: ../openconnect-strings.txt:1677
 msgid "Password authentication to SOCKS server failed\n"
-msgstr "Otentikasi sandi ke server SOCKS gagal\n"
+msgstr "Autentikasi sandi ke server SOCKS gagal\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/http.c#l1143
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/http.c#l1150
 #: ../openconnect-strings.txt:1681
 msgid "SOCKS server requested GSSAPI authentication\n"
-msgstr "Server SOCKS meminta otentikasi GSSAPI\n"
+msgstr "Server SOCKS meminta autentikasi GSSAPI\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/http.c#l1156
 #: ../openconnect-strings.txt:1684
 msgid "SOCKS server requested password authentication\n"
-msgstr "Server SOCKS meminta otentikasi sandi\n"
+msgstr "Server SOCKS meminta autentikasi sandi\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/http.c#l1163
 #: ../openconnect-strings.txt:1687
 msgid "SOCKS server requires authentication\n"
-msgstr "Server SOCKS memerlukan otentikasi\n"
+msgstr "Server SOCKS memerlukan autentikasi\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/http.c#l1170
 #: ../openconnect-strings.txt:1690
 #, c-format
 msgid "SOCKS server requested unknown authentication type %02x\n"
-msgstr "Server SOCKS meminta otentikasi yang tak dikenal bertipe %02x\n"
+msgstr "Server SOCKS meminta autentikasi yang tak dikenal bertipe %02x\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/http.c#l1176
 #: ../openconnect-strings.txt:1693
@@ -3185,12 +3481,6 @@ msgstr "Kompatibel dengan Cisco AnyConnect SSL VPN, serta ocserv"
 msgid "Juniper Network Connect"
 msgstr "Juniper Network Connect"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/library.c#l130
-#: ../openconnect-strings.txt:1739
-#: ../properties/nm-openconnect-editor-plugin.c:459
-msgid "Compatible with Juniper Network Connect / Pulse Secure SSL VPN"
-msgstr "Kompatibel dengan VPN SSL Juniper Network Connect / Pulse Secure"
-
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/library.c#l148
 #: ../openconnect-strings.txt:1742
 msgid "Palo Alto Networks GlobalProtect"
@@ -3242,7 +3532,7 @@ msgstr ""
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/library.c#l1146
 #: ../openconnect-strings.txt:1768
 msgid "No form handler; cannot authenticate.\n"
-msgstr "Tak ada penangan formulir; tak bisa mengotentikasi.\n"
+msgstr "Tak ada penangan formulir; tak bisa mengautentikasi.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l340
 #: ../openconnect-strings.txt:1771
@@ -3394,7 +3684,7 @@ msgstr "Tata nama log masuk"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l804
 #: ../openconnect-strings.txt:1855
 msgid "Disable password/SecurID authentication"
-msgstr "Matikan otentikasi sandi/SecurID"
+msgstr "Matikan autentikasi sandi/SecurID"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l805
 #: ../openconnect-strings.txt:1858
@@ -3409,7 +3699,7 @@ msgstr "Baca kata sandi dari masukan standar"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l807
 #: ../openconnect-strings.txt:1864
 msgid "Choose authentication login selection"
-msgstr "Pilih otentikasi log masuk"
+msgstr "Pilih autentikasi log masuk"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l808
 #: ../openconnect-strings.txt:1867
@@ -3504,7 +3794,7 @@ msgstr "Tata server proksi"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l832
 #: ../openconnect-strings.txt:1921
 msgid "Set proxy authentication methods"
-msgstr "Atur metoda otentikasi proksi"
+msgstr "Atur metoda autentikasi proksi"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l833
 #: ../openconnect-strings.txt:1924
@@ -3559,7 +3849,7 @@ msgstr "Baca cookie dari masukan standar"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l846
 #: ../openconnect-strings.txt:1954
 msgid "Authenticate only and print login info"
-msgstr "Hanya otentikasi dan cetak info log masuk"
+msgstr "Hanya autentikasi dan cetak info log masuk"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l847
 #: ../openconnect-strings.txt:1957
@@ -3614,7 +3904,7 @@ msgstr "Keluaran lebih sedikit"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l863
 #: ../openconnect-strings.txt:1987
 msgid "Dump HTTP authentication traffic (implies --verbose)"
-msgstr "Curahkan trafik otentikasi HTTP (mengimplikasikan --verbose)"
+msgstr "Curahkan trafik autentikasi HTTP (mengimplikasikan --verbose)"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l864
 #: ../openconnect-strings.txt:1990
@@ -3764,7 +4054,7 @@ msgstr "Nonfungsikan pemakaian ulang koneksi HTTP"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l902
 #: ../openconnect-strings.txt:2077
 msgid "Do not attempt XML POST authentication"
-msgstr "Jangan coba otentikasi XML POST"
+msgstr "Jangan coba autentikasi XML POST"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l924
 #: ../openconnect-strings.txt:2080
@@ -4217,25 +4507,25 @@ msgstr "Galat saat berkomunikasi dengan pembantu ntlm_auth\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/ntlm.c#l265
 #: ../openconnect-strings.txt:2325
 msgid "Attempting HTTP NTLM authentication to proxy (single-sign-on)\n"
-msgstr "Mencoba otentikasi NTLM HTTP ke proksi (single-sign-on)\n"
+msgstr "Mencoba autentikasi NTLM HTTP ke proksi (single-sign-on)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/ntlm.c#l268
 #: ../openconnect-strings.txt:2328
 #, c-format
 msgid "Attempting HTTP NTLM authentication to server '%s' (single-sign-on)\n"
-msgstr "Mencoba otentikasi NTLM HTTP ke server '%s' (single-sign-on)\n"
+msgstr "Mencoba autentikasi NTLM HTTP ke server '%s' (single-sign-on)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/ntlm.c#l978
 #: ../openconnect-strings.txt:2331
 #, c-format
 msgid "Attempting HTTP NTLMv%d authentication to proxy\n"
-msgstr "Mencoba otentikasi NTLMv%d HTTP ke proksi\n"
+msgstr "Mencoba autentikasi NTLMv%d HTTP ke proksi\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/ntlm.c#l982
 #: ../openconnect-strings.txt:2334
 #, c-format
 msgid "Attempting HTTP NTLMv%d authentication to server '%s'\n"
-msgstr "Mencoba otentikasi NTLMv%d HTTP ke server '%s'\n"
+msgstr "Mencoba autentikasi NTLMv%d HTTP ke server '%s'\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/oath.c#l97
 #: ../openconnect-strings.txt:2337
@@ -5439,14 +5729,14 @@ msgstr "Mengirim token SSPI berukuran %lu byte\n"
 #: ../openconnect-strings.txt:3002
 #, c-format
 msgid "Failed to send SSPI authentication token to proxy: %s\n"
-msgstr "Gagal mengirim token otentikasi SSPI ke proksi: %s\n"
+msgstr "Gagal mengirim token autentikasi SSPI ke proksi: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/sspi.c#l229
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/sspi.c#l257
 #: ../openconnect-strings.txt:3006
 #, c-format
 msgid "Failed to receive SSPI authentication token from proxy: %s\n"
-msgstr "Gagal menerima token otentikasi SSPI dari proksi: %s\n"
+msgstr "Gagal menerima token autentikasi SSPI dari proksi: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/sspi.c#l235
 #: ../openconnect-strings.txt:3009
@@ -6066,295 +6356,6 @@ msgstr "menghitung perintah"
 msgid "Unrecognised response from Yubikey when generating tokencode\n"
 msgstr "Respons tak dikenal dari Yubikey ketika membuat kode token\n"
 
-#: ../properties/auth-helpers.c:58
-msgid "Choose a Certificate Authority certificate…"
-msgstr "Pilih sebuah sertifikat Certificate Authority…"
-
-#: ../properties/auth-helpers.c:74
-msgid "Choose your personal certificate…"
-msgstr "Pilih sertifikat pribadi Anda…"
-
-#: ../properties/auth-helpers.c:90
-msgid "Choose your private key…"
-msgstr "Pilih kunci privat Anda…"
-
-#: ../properties/auth-helpers.c:262
-msgid "PEM certificates (*.pem, *.crt, *.key)"
-msgstr "Sertifikat PEM (*.pem, *.crt, *.key)"
-
-#: ../properties/nm-openconnect-dialog.ui.h:1
-msgid "General"
-msgstr "Umum"
-
-#: ../properties/nm-openconnect-dialog.ui.h:2
-msgid "Select A File"
-msgstr "Pilih Berkas"
-
-#: ../properties/nm-openconnect-dialog.ui.h:3
-msgid "_VPN Protocol:"
-msgstr "Protokol _VPN:"
-
-#: ../properties/nm-openconnect-dialog.ui.h:4
-msgid "_Gateway:"
-msgstr "_Gateway:"
-
-#: ../properties/nm-openconnect-dialog.ui.h:5
-msgid "_Proxy:"
-msgstr "_Proksi:"
-
-#: ../properties/nm-openconnect-dialog.ui.h:6
-msgid "CA C_ertificate:"
-msgstr "S_ertifikat CA:"
-
-#: ../properties/nm-openconnect-dialog.ui.h:7
-msgid "Allow security scanner _trojan (CSD)"
-msgstr ""
-
-#: ../properties/nm-openconnect-dialog.ui.h:8
-msgid "Trojan (CSD) _Wrapper Script:"
-msgstr ""
-
-#: ../properties/nm-openconnect-dialog.ui.h:9
-msgid "Reported OS:"
-msgstr "OS yang dilaporkan:"
-
-#: ../properties/nm-openconnect-dialog.ui.h:10
-msgid "Common values: linux linux-64 win mac-intel android apple-ios"
-msgstr "Nilai umum: linux linux-64 win mac-intel android apple-ios"
-
-#: ../properties/nm-openconnect-dialog.ui.h:11
-msgid "Certificate Authentication"
-msgstr "Otentikasi Sertifikat"
-
-#: ../properties/nm-openconnect-dialog.ui.h:12
-msgid "_User Certificate:"
-msgstr "Sertifikat Pengg_una:"
-
-#: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Private _Key:"
-msgstr "_Kunci Pribadi:"
-
-#: ../properties/nm-openconnect-dialog.ui.h:14
-msgid "Use _FSID for key passphrase"
-msgstr "Gunakan _FSID untuk sandi kunci"
-
-#: ../properties/nm-openconnect-dialog.ui.h:15
-msgid "Prevent user from manually accepting invalid certificates"
-msgstr "Mencegah pengguna menerima sertifikat yang tidak valid secara manual"
-
-#: ../properties/nm-openconnect-dialog.ui.h:16
-msgid "Software Token Authentication"
-msgstr "Otentikasi Token Perangkat Lunak"
-
-#: ../properties/nm-openconnect-dialog.ui.h:17
-msgid "Token _Mode:"
-msgstr "_Mode Token:"
-
-#: ../properties/nm-openconnect-dialog.ui.h:18
-msgid "Token Sec_ret:"
-msgstr "_Rahasia Token:"
-
-#: ../properties/nm-openconnect-dialog.ui.h:19
-msgid "Disabled"
-msgstr "Dinonaktifkan"
-
-#: ../properties/nm-openconnect-dialog.ui.h:20
-msgid "RSA SecurID — read from ~/.stokenrc"
-msgstr "RSA SecurID — baca dari ~/.stokenrc"
-
-#: ../properties/nm-openconnect-dialog.ui.h:21
-msgid "RSA SecurID — manually entered"
-msgstr "RSA SecurID — dimasukkan secara manual"
-
-#: ../properties/nm-openconnect-dialog.ui.h:22
-msgid "TOTP — manually entered"
-msgstr "TOTP — dimasukkan secara manual"
-
-#: ../properties/nm-openconnect-dialog.ui.h:23
-msgid "HOTP — manually entered"
-msgstr "HOTP — dimasukkan secara manual"
-
-#: ../properties/nm-openconnect-dialog.ui.h:24
-msgid "Yubikey OATH"
-msgstr "OATH YubiKey"
-
-#: ../properties/nm-openconnect-editor-plugin.c:57
-#: ../properties/nm-openconnect-editor-plugin.c:60
-msgid "Multi-protocol VPN client (openconnect)"
-msgstr ""
-
-#: ../properties/nm-openconnect-editor-plugin.c:58
-msgid ""
-"Compatible with Cisco AnyConnect, Juniper Network Connect and Junos Pulse, "
-"and PAN GlobalProtect SSL VPNs."
-msgstr ""
-
-#: ../properties/nm-openconnect-editor-plugin.c:61
-msgid ""
-"Compatible with Cisco AnyConnect and Juniper Network Connect and Junos Pulse "
-"SSL VPNs."
-msgstr ""
-
-#: ../properties/nm-openconnect-editor-plugin.c:63
-msgid "Cisco AnyConnect Compatible VPN (openconnect)"
-msgstr "VPN Kompatibel AnyConnect Cisco (openconnect)"
-
-#: ../properties/nm-openconnect-editor-plugin.c:64
-msgid "Compatible with Cisco AnyConnect SSL VPN."
-msgstr "Kompatibel dengan VPN SSL AnyConnect Cisco."
-
-#: ../properties/nm-openconnect-editor-plugin.c:458
-msgid "Juniper Network Connect (openconnect)"
-msgstr "Juniper Network Connect (openconnect)"
-
-#: ../properties/nm-openconnect-editor-plugin.c:461
-msgid "PAN GlobalProtect (openconnect)"
-msgstr ""
-
-#: ../properties/nm-openconnect-editor-plugin.c:462
-msgid "Compatible with PAN GlobalProtect SSL VPN"
-msgstr ""
-
-#. we don't know this protocol by name, but it's configured in the .name file,
-#. * so just take it.
-#: ../properties/nm-openconnect-editor-plugin.c:466
-#, c-format
-msgid "Openconnect VPN (%s)"
-msgstr "VPN OpenConnect (%s)"
-
-#: ../properties/nm-openconnect-editor-plugin.c:467
-#, c-format
-msgid "Openconnect SSL VPN with %s protocol"
-msgstr "VPN SSL Openconnect dengan protokol %s"
-
-#: ../properties/nm-openconnect-editor.c:237
-msgid "Cisco AnyConnect"
-msgstr "AnyConnect Cisco"
-
-#: ../properties/nm-openconnect-editor.c:243
-msgid "Juniper/Pulse Network Connect"
-msgstr "Juniper/Pulse Network Connect"
-
-#: ../shared/nm-utils/nm-shared-utils.c:185
-#, c-format
-msgid "object class '%s' has no property named '%s'"
-msgstr "kelas objek '%s' tak punya properti bernama '%s'"
-
-#: ../shared/nm-utils/nm-shared-utils.c:192
-#, c-format
-msgid "property '%s' of object class '%s' is not writable"
-msgstr "properti '%s' dari kelas objek '%s' tidak dapat ditulisi"
-
-#: ../shared/nm-utils/nm-shared-utils.c:199
-#, c-format
-msgid ""
-"construct property \"%s\" for object '%s' can't be set after construction"
-msgstr ""
-"properti construct \"%s\" untuk objek '%s' tak bisa ditata setelah konstruksi"
-
-#: ../shared/nm-utils/nm-shared-utils.c:207
-#, c-format
-msgid "'%s::%s' is not a valid property name; '%s' is not a GObject subtype"
-msgstr "'%s::%s' bukan nama properti yang valid; '%s' bukan subtipe GObject"
-
-#: ../shared/nm-utils/nm-shared-utils.c:216
-#, c-format
-msgid "unable to set property '%s' of type '%s' from value of type '%s'"
-msgstr "tak bisa menata properti '%s' bertipe '%s' dari nilai bertipe '%s'"
-
-#: ../shared/nm-utils/nm-shared-utils.c:227
-#, c-format
-msgid ""
-"value \"%s\" of type '%s' is invalid or out of range for property '%s' of "
-"type '%s'"
-msgstr ""
-"nilai \"%s\" bertipe '%s' tak valid atau di luar jangkauan untuk properti "
-"'%s' bertipe '%s'"
-
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:69
-#, c-format
-msgid "unable to get editor plugin name: %s"
-msgstr ""
-
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:103
-#, c-format
-msgid "missing plugin file \"%s\""
-msgstr "kurang berkas pengaya \"%s\""
-
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:109
-#, c-format
-msgid "cannot load editor plugin: %s"
-msgstr "tak bisa memuat pengaya penyunting: %s"
-
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:118
-#, c-format
-msgid "cannot load factory %s from plugin: %s"
-msgstr "tak bisa memuat pabrik %s dari pengaya: %s"
-
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:144
-msgid "unknown error creating editor instance"
-msgstr "kesalahan tak diketahui saat membuat instansi penyunting"
-
-#: ../src/nm-openconnect-service.c:180
-#, c-format
-msgid "invalid integer property “%s” or out of range [%d -> %d]"
-msgstr "properti integer \"%s\" tidak valid atau diluar jangkauan [%d -> %d]"
-
-#: ../src/nm-openconnect-service.c:190
-#, c-format
-msgid "invalid boolean property “%s” (not yes or no)"
-msgstr "properti bool \"%s\" tidak valid (bukan yes atau no)"
-
-#: ../src/nm-openconnect-service.c:197
-#, c-format
-msgid "unhandled property “%s” type %s"
-msgstr "properti \"%s\" jenis %s tidak ditangani"
-
-#: ../src/nm-openconnect-service.c:210
-#, c-format
-msgid "property “%s” invalid or not supported"
-msgstr "properti \"%s\" tidak valid atau tidak didukung"
-
-#: ../src/nm-openconnect-service.c:226
-msgid "No VPN configuration options."
-msgstr "Tak ada opsi konfigurasi VPN."
-
-#: ../src/nm-openconnect-service.c:244
-msgid "No VPN secrets!"
-msgstr "Tak ada rahasia VPN!"
-
-#: ../src/nm-openconnect-service.c:414
-msgid "Could not find openconnect binary."
-msgstr "Tak bisa temukan biner openconnect."
-
-#: ../src/nm-openconnect-service.c:426
-msgid "No VPN gateway specified."
-msgstr "Gateway VPN tak dinyatakan."
-
-#: ../src/nm-openconnect-service.c:436
-msgid "No WebVPN cookie provided."
-msgstr "Tak diberikan cookie WebVPN."
-
-#: ../src/nm-openconnect-service.c:719
-msgid "Don’t quit when VPN connection terminates"
-msgstr "Jangan keluar ketika koneksi VPN berakhir"
-
-#: ../src/nm-openconnect-service.c:720
-msgid "Enable verbose debug logging (may expose passwords)"
-msgstr "Fungsikan pencatatan log awakutu rinci (mungkin mengungkap kata sandi)"
-
-#: ../src/nm-openconnect-service.c:721
-msgid "D-Bus name to use for this instance"
-msgstr "Nama D-Bus untuk dipakai bagi instansi ini"
-
-#: ../src/nm-openconnect-service.c:744
-msgid ""
-"nm-openconnect-service provides integrated Cisco AnyConnect SSL VPN "
-"capability to NetworkManager."
-msgstr ""
-"nm-openconnect-service menyediakan kapabilitas VPN SSL Cisco AnyConnect yang "
-"terintegrasi untuk NetworkManager."
-
 #~ msgid "Failed to set up encryption context for ESP packet:\n"
 #~ msgstr "Gagal menyiapkan konteks enkripsi bagi paket ESP:\n"
 
@@ -6389,7 +6390,7 @@ msgstr ""
 #~ msgstr "Ambil cookie webvpn saja; jangan menyambung"
 
 #~ msgid "Dump HTTP authentication traffic (implies --verbose"
-#~ msgstr "Curahkan trafik otentikasi HTTP (mengimplikasikan --verbose)"
+#~ msgstr "Curahkan trafik autentikasi HTTP (mengimplikasikan --verbose)"
 
 #~ msgid "Run SCRIPT instead of CSD binary"
 #~ msgstr "Jalankan SKRIP sebagai pengganti biner CSD"

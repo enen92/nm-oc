@@ -95,7 +95,7 @@ msgstr "C_onnecta"
 
 #: ../auth-dialog/main.c:1538
 msgid "Automatically start connecting next time"
-msgstr "Una altra vegada comenceu connectant automàticament"
+msgstr "La propera vegada comenceu connectant automàticament"
 
 #: ../auth-dialog/main.c:1557
 msgid "Select a host to fetch the login form"
@@ -326,13 +326,13 @@ msgstr "Error en trobar o analitzar el formulari web a la pàgina d'accés\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/auth-juniper.c#l675
 #: ../openconnect-strings.txt:128
 msgid "Encountered form with no ID\n"
-msgstr "S'ha trobat un formulari sense identificació\n"
+msgstr "S'ha trobat un formulari sense identificador\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/auth-juniper.c#l713
 #: ../openconnect-strings.txt:131
 #, c-format
 msgid "Unknown form ID '%s'\n"
-msgstr "Formulari amb identificació «%s» desconeguda\n"
+msgstr "Formulari amb identificador «%s» desconegut\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/auth-juniper.c#l716
 #: ../openconnect-strings.txt:134
@@ -816,12 +816,12 @@ msgstr "S'ha rebut paquet de dades descomprimides de %d bytes\n"
 #: ../openconnect-strings.txt:401
 #, c-format
 msgid "Received server disconnect: %02x '%s'\n"
-msgstr "S'ha rebut el servidor desconnectat: %02x «%s»\n"
+msgstr "S'ha rebut una desconnexió del servidor: %02x «%s»\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/cstp.c#l996
 #: ../openconnect-strings.txt:404
 msgid "Received server disconnect\n"
-msgstr "S'ha rebut el servidor desconnectat\n"
+msgstr "S'ha rebut una desconnexió del servidor\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/cstp.c#l1004
 #: ../openconnect-strings.txt:407
@@ -1432,7 +1432,7 @@ msgstr "MTU DTLS reduït a %d\n"
 msgid "DTLS session resume failed; possible MITM attack. Disabling DTLS.\n"
 msgstr ""
 "Ha fallat la continuació de la sessió DTLS; possible atac MITM. S'està "
-"deshabilitant DTLS.\n"
+"inhabilitant DTLS.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/gnutls-dtls.c#l405
 #: ../openconnect-strings.txt:736
@@ -1965,7 +1965,7 @@ msgstr "S'està afegint el suport CA «%s»\n"
 #: ../openconnect-strings.txt:1031
 msgid "Private key appears not to support RSA-PSS. Disabling TLSv1.3\n"
 msgstr ""
-"La clau privada sembla no suportar RSA-PSS. S'està deshabilitant TLSv1.3\n"
+"La clau privada sembla no suportar RSA-PSS. S'està inhabilitant TLSv1.3\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/gnutls.c#l1748
 #: ../openconnect-strings.txt:1034
@@ -2148,7 +2148,7 @@ msgstr "Cal PIN en %s"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/openssl-pkcs11.c#l202
 #: ../openconnect-strings.txt:1137
 msgid "Wrong PIN"
-msgstr "PIN dolent"
+msgstr "PIN incorrecte"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/gnutls.c#l2490
 #: ../openconnect-strings.txt:1140
@@ -2952,7 +2952,7 @@ msgstr "Aquesta versió d'OpenConnect ha sigut muntada sense suport GSSAPI\n"
 msgid "Proxy requested Basic authentication which is disabled by default\n"
 msgstr ""
 "El servidor intermediari ha demanat autenticació bàsica que està "
-"deshabilitada per defecte\n"
+"inhabilitada per defecte\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/http-auth.c#l243
 #: ../openconnect-strings.txt:1563
@@ -2960,7 +2960,7 @@ msgstr ""
 msgid ""
 "Server '%s' requested Basic authentication which is disabled by default\n"
 msgstr ""
-"El servidor «%s» ha demanat per autenticació bàsica que està deshabilitada "
+"El servidor «%s» ha demanat per autenticació bàsica que està inhabilitada "
 "per defecte\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/http-auth.c#l256
@@ -3497,7 +3497,7 @@ msgstr "Configura el nom d'usuari d'entrada"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l804
 #: ../openconnect-strings.txt:1855
 msgid "Disable password/SecurID authentication"
-msgstr "Deshabilita l'autenticació de la contrasenya/SecurID"
+msgstr "Inhabilita l'autenticació de la contrasenya/SecurID"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l805
 #: ../openconnect-strings.txt:1858
@@ -3562,12 +3562,12 @@ msgstr "Testimoni secret de programari"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l818
 #: ../openconnect-strings.txt:1894
 msgid "(NOTE: libstoken (RSA SecurID) disabled in this build)"
-msgstr "(NOTA: libstoken (RSA SecurID) deshabilitada en aquest muntatge)"
+msgstr "(NOTA: libstoken (RSA SecurID) inhabilitada en aquest muntatge)"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l821
 #: ../openconnect-strings.txt:1897
 msgid "(NOTE: Yubikey OATH disabled in this build)"
-msgstr "(NOTA: Yubikey OATH deshabilitada en aquest muntatge)"
+msgstr "(NOTA: Yubikey OATH inhabilitada en aquest muntatge)"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l824
 #: ../openconnect-strings.txt:1900
@@ -3587,7 +3587,7 @@ msgstr "No es requereix el certificat SSL del servidor per validar-se"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l827
 #: ../openconnect-strings.txt:1909
 msgid "Disable default system certificate authorities"
-msgstr "Deshabilita per defecte els certificats d'autoritats del sistema"
+msgstr "Inhabilita per defecte els certificats d'autoritats del sistema"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l828
 #: ../openconnect-strings.txt:1912
@@ -3612,7 +3612,7 @@ msgstr "Configura els mètodes d'autenticació del servidor intermediari"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l833
 #: ../openconnect-strings.txt:1924
 msgid "Disable proxy"
-msgstr "Deshabilita el servidor intermediari"
+msgstr "Inhabilita el servidor intermediari"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l834
 #: ../openconnect-strings.txt:1927
@@ -3623,7 +3623,7 @@ msgstr ""
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l836
 #: ../openconnect-strings.txt:1930
 msgid "(NOTE: libproxy disabled in this build)"
-msgstr "(NOTA: libproxy deshabilitat en aquest muntatge)"
+msgstr "(NOTA: libproxy inhabilitat en aquest muntatge)"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l838
 #: ../openconnect-strings.txt:1933
@@ -3785,7 +3785,7 @@ msgstr "Habilita la compressió amb estat (per defecte és sols sense estat)"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l880
 #: ../openconnect-strings.txt:2026
 msgid "Disable all compression"
-msgstr "Deshabilita tota la compressió"
+msgstr "Inhabilita tota la compressió"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l881
 #: ../openconnect-strings.txt:2029
@@ -3800,7 +3800,7 @@ msgstr "Requerida confidencialitat directa perfecta"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l883
 #: ../openconnect-strings.txt:2035
 msgid "Disable DTLS and ESP"
-msgstr "Deshabilita DTLS i ESP"
+msgstr "Inhabilita DTLS i ESP"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l884
 #: ../openconnect-strings.txt:2038
@@ -3865,7 +3865,7 @@ msgstr "Errors de programari del servidor"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l901
 #: ../openconnect-strings.txt:2074
 msgid "Disable HTTP connection re-use"
-msgstr "Deshabilita la reutilització de la connexió HTTP"
+msgstr "Inhabilita la reutilització de la connexió HTTP"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/main.c#l902
 #: ../openconnect-strings.txt:2077
@@ -4405,7 +4405,7 @@ msgstr "S'està generant el codi testimoni HOTP OATH\n"
 #: ../openconnect-strings.txt:2369
 #, c-format
 msgid "Invalid cookie '%s'\n"
-msgstr "Galeta no vàlida «%s»\n"
+msgstr "Galeta «%s» no vàlida\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/oncp.c#l160
 #: ../openconnect-strings.txt:2372
@@ -5837,7 +5837,7 @@ msgstr "Error en escriure al dispositiu TAP: %s\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/tun-win32.c#l423
 #: ../openconnect-strings.txt:3141
 msgid "Spawning tunnel scripts is not yet supported on Windows\n"
-msgstr "L'engendrat de scripts de túnel no està encara suportat en Windows\n"
+msgstr "La generació de scripts de túnel no està encara suportat en Windows\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/tun.c#l88
 #: ../openconnect-strings.txt:3144
@@ -5974,13 +5974,13 @@ msgstr "TUNSIFHEAD"
 #: ../openconnect-strings.txt:3213
 #, c-format
 msgid "socketpair failed: %s\n"
-msgstr "El parell sòcol ha fallat: %s\n"
+msgstr "«socketpair» ha fallat: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/tun.c#l484
 #: ../openconnect-strings.txt:3216
 #, c-format
 msgid "fork failed: %s\n"
-msgstr "La bifurcació ha fallat:  %s\n"
+msgstr "«fork» ha fallat: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/55a8fe3dfe:/tun.c#l488
 #: ../openconnect-strings.txt:3219

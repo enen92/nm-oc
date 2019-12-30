@@ -104,11 +104,11 @@ for a in po/*.po ; do
 	fi
 	rm -f $a.openconnect $a.merged $a.unmerged
 	msgattrib -F --no-fuzzy $a > $a.nmo
-	msgmerge -q -N -F $OPENCONNECT_DIR/$a -C $a.nmo $OPENCONNECT_BUILD_DIR/po/openconnect.pot > $OPENCONNECT_DIR/$a.merged
+	msgmerge -q -N -C $OPENCONNECT_DIR/$a -F $a.nmo $OPENCONNECT_BUILD_DIR/po/openconnect.pot > $OPENCONNECT_DIR/$a.merged
 	msgmerge -q -N -F $OPENCONNECT_DIR/$a $OPENCONNECT_BUILD_DIR/po/openconnect.pot > $OPENCONNECT_DIR/$a.unmerged
 	if ! cmp $OPENCONNECT_DIR/$a.merged $OPENCONNECT_DIR/$a.unmerged; then
 	    echo New changes for OpenConnect $a
-	    mv $OPENCONNECT_DIR/$a.merged $OPENCONNECT_DIR/$a
+	    msgattrib -F --no-fuzzy --no-obsolete $OPENCONNECT_DIR/$a.merged > $OPENCONNECT_DIR/$a
 	fi
 	rm -f $OPENCONNECT_DIR/$a.merged $OPENCONNECT_DIR/$a.unmerged $a.nmo
     fi

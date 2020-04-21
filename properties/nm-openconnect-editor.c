@@ -221,13 +221,14 @@ init_protocol_combo_options (GtkComboBox *protocol_combo)
 	GtkTreeIter iter;
 
 #if OPENCONNECT_CHECK_VER(5,5)
-	struct oc_vpn_proto *protos, *p;
-	openconnect_get_supported_protocols(&protos);
-	for (p=protos; p && p->name; p++) {
+	struct oc_vpn_proto *protos;
+	int i, n;
+	n = openconnect_get_supported_protocols(&protos);
+	for (i = 0; i < n; i++) {
 		gtk_list_store_append(protocol_combo_list, &iter);
 		gtk_list_store_set(protocol_combo_list, &iter,
-						   0, p->pretty_name,
-						   1, p->name,
+						   0, protos[i].pretty_name,
+						   1, protos[i].name,
 						   -1);
 	}
 	openconnect_free_supported_protocols(protos);

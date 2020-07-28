@@ -37,6 +37,7 @@
 #include <glib-unix.h>
 
 #include <webkit2/webkit2.h>
+#include <libsoup/soup.h>
 
 #include <gcr/gcr.h>
 
@@ -664,10 +665,14 @@ static void cookie_cb (GObject *source_obj, GAsyncResult *res, gpointer data)
 {
 	struct WebviewContext *ctx = (struct WebviewContext *)data;
 	WebKitCookieManager *cm = webkit_web_context_get_cookie_manager(webkit_web_context_get_default());
+	WebKitWebResource *resource = NULL;
+	WebKitURIResponse *response = NULL;
+	SoupMessageHeaders *headers =  NULL;
+	SoupMessageHeadersIter iter;
 	GList *cookies, *l;
-	char **cookie_array;
-	int result, i, num_cookies = 0;
-	const char *uri = webkit_web_view_get_uri(ctx->webview);
+	char **cookie_array = NULL, **headers_array = NULL;
+	int result, i, num_cookies = 0, num_headers = 0;
+	const char *name, *value, *uri = webkit_web_view_get_uri(ctx->webview);
 
 	cookies = webkit_cookie_manager_get_cookies_finish(cm, res, NULL);
 
@@ -675,8 +680,7 @@ static void cookie_cb (GObject *source_obj, GAsyncResult *res, gpointer data)
 		num_cookies++;
 	}
 
-	cookie_array = malloc(2 * sizeof(char*) * (num_cookies+1));
-	memset(cookie_array, 0, 2 * sizeof(char*) * (num_cookies+1));
+	cookie_array = calloc(2 * (num_cookies + 1), sizeof(char*) );
 
 	for (l = cookies, i = 0; l != NULL; l = l->next, i+=2) {
 		SoupCookie *cookie = (SoupCookie *)l->data;
@@ -685,16 +689,41 @@ static void cookie_cb (GObject *source_obj, GAsyncResult *res, gpointer data)
 	}
 	g_list_free_full(cookies, (GDestroyNotify)soup_cookie_free);
 
+	resource = webkit_web_view_get_main_resource(ctx->webview);
+	if (resource)
+		response = webkit_web_resource_get_response (resource);
+	if (response)
+		headers = webkit_uri_response_get_http_headers (response);
+
+	if (headers) {
+		for (soup_message_headers_iter_init (&iter, headers); soup_message_headers_iter_next (&iter, &name, &value);)
+			num_headers++;
+		headers_array = calloc(2 * (num_headers + 1), sizeof(char *));
+		if (headers_array)
+			for (i = 0, soup_message_headers_iter_init (&iter, headers); soup_message_headers_iter_next (&iter, &name, &value); i+=2) {
+				headers_array[i] = strdup(name);
+				headers_array[i+1] = strdup(value);
+			}
+	}
+
 	result = openconnect_webview_load_changed(ctx->vpninfo,
 						  &(struct oc_webview_result) {
 							  .uri = uri,
 							  .cookies = (const char **)cookie_array,
+							  .headers = (const char **)headers_array,
 						  });
 
-	for (i=0; i<num_cookies; i++) {
+	for (i = 0; cookie_array && i < 2 * (num_cookies + 1); i++) {
 		free(cookie_array[i]);
 	}
 	free(cookie_array);
+
+	for (i = 0; headers_array && i < 2 * (num_headers + 1); i++) {
+		free(headers_array[i]);
+	}
+	free(headers_array);
+	if (headers)
+		soup_message_headers_free (headers);
 
 	if (!result) {
 		g_mutex_lock(&ctx->mutex);

@@ -738,9 +738,25 @@ static gboolean open_webview_idle(gpointer data)
 	struct WebviewContext *ctx = (struct WebviewContext *)data;
 	auth_ui_data *ui_data = _ui_data; /* FIXME global */
 	WebKitWebView *webView;
+	WebKitWebsiteDataManager *dm = NULL;
+	WebKitCookieManager *cm = NULL;
+	GString *storage = NULL;
 
 	// Create a browser instance
 	webView = WEBKIT_WEB_VIEW(webkit_web_view_new());
+
+	dm = webkit_web_view_get_website_data_manager(webView);
+	if (dm)
+		cm = webkit_website_data_manager_get_cookie_manager(dm);
+	if (cm)
+		storage = g_string_new (g_get_user_data_dir());
+	if (storage)
+		storage = g_string_append(storage, "/openconnect_saml_cookies");
+	if (storage) {
+		webkit_cookie_manager_set_persistent_storage(cm, storage->str, WEBKIT_COOKIE_PERSISTENT_STORAGE_TEXT);
+		g_string_free(storage, TRUE);
+	}
+
 	g_signal_connect(webView, "load-changed", G_CALLBACK(load_changed_cb), ctx);
 	ctx->webview = webView;
 

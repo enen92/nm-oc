@@ -11,17 +11,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: network-manager-openconnect\n"
-"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/NetworkManager-openconnect/issues\n"
-"POT-Creation-Date: 2020-06-25 00:48+0000\n"
-"PO-Revision-Date: 2019-03-05 19:27+0100\n"
-"Last-Translator: Carles Ferrando Garcia <carles.ferrando@gamil.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/NetworkManager-"
+"openconnect/issues\n"
+"POT-Creation-Date: 2020-08-09 21:12+0000\n"
+"PO-Revision-Date: 2020-09-08 13:07+0200\n"
+"Last-Translator: Miquel-Àngel Burgos i Fradeja <miquel.angel.burgos@gmail."
+"com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.3\n"
 
 #: ../appdata/network-manager-openconnect.metainfo.xml.in.h:1
 msgid "OpenConnect VPN client"
@@ -252,8 +254,8 @@ msgstr ""
 
 #: ../properties/nm-openconnect-editor-plugin.c:61
 msgid ""
-"Compatible with Cisco AnyConnect and Juniper Network Connect and Junos Pulse"
-" SSL VPNs."
+"Compatible with Cisco AnyConnect and Juniper Network Connect and Junos Pulse "
+"SSL VPNs."
 msgstr ""
 "Compatible amb Cisco AnyConnect i Juniper Network Connect i Junos Pulse SSL "
 "VPNs."
@@ -302,7 +304,8 @@ msgstr "la propietat «%s» de l'objecte de classe «%s» no es pot escriure"
 
 #: ../shared/nm-utils/nm-shared-utils.c:199
 #, c-format
-msgid "construct property \"%s\" for object '%s' can't be set after construction"
+msgid ""
+"construct property \"%s\" for object '%s' can't be set after construction"
 msgstr ""
 "la propietat «%s» de construcció per a l'objecte «%s» no es pot establir "
 "després de la construcció"
@@ -367,12 +370,12 @@ msgstr "booleà no vàlid a la propietat «%s» (cal posar sí o no)"
 #: ../src/nm-openconnect-service.c:197
 #, c-format
 msgid "unhandled property “%s” type %s"
-msgstr "Propietat no gestionada «%s» del tipus %s"
+msgstr "propietat no gestionada «%s» del tipus %s"
 
 #: ../src/nm-openconnect-service.c:210
 #, c-format
 msgid "property “%s” invalid or not supported"
-msgstr "Propietat «%s» no vàlida o no suportada"
+msgstr "propietat «%s» no vàlida o no suportada"
 
 #: ../src/nm-openconnect-service.c:226
 msgid "No VPN configuration options."
@@ -412,347 +415,296 @@ msgid ""
 "nm-openconnect-service provides integrated Cisco AnyConnect SSL VPN "
 "capability to NetworkManager."
 msgstr ""
-"El nm-openconnect-service proporciona la capacitat VPN SSL AnyConnect Cisco "
-"amb el gestor de xarxa."
+"nm-openconnect-service proporciona la capacitat VPN SSL AnyConnect Cisco al "
+"gestor de xarxa."
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. globalprotect.c#l119
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-globalprotect.c#l119
 #: ../openconnect-strings.txt:14
-#, c-format, fuzzy
+#, c-format
 msgid "SAML %s authentication is required via %s\n"
-msgstr "L'autenticació SAML per cent és necessària a través de per cents"
+msgstr "L'autenticació SAML %s és necessària mitjançant %s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. globalprotect.c#l123
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-globalprotect.c#l123
 #: ../openconnect-strings.txt:17
-#, c-format, fuzzy
+#, c-format
 msgid "SAML %s authentication is required via external script.\n"
-msgstr "L'autenticació SAML és necessària a través d'un script extern."
+msgstr "L'autenticació SAML %s és necessària mitjançant un script extern.\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. globalprotect.c#l126
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-globalprotect.c#l126
 #: ../openconnect-strings.txt:20
-#, fuzzy
 msgid ""
 "When SAML authentication is complete, specify destination form field by "
 "appending :field_name to login URL.\n"
 msgstr ""
-"Quan s'ha completat l'autenticació SAML especifiqueu el camp de destinació "
-"afegint nom de camp a l'URL d'inici de sessió."
+"Quan ha finalitzat l'autenticació SAML, especifiqueu el camp del formulari "
+"de destinació afegint :nom_camp a l'URL d'inici de sessió.\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. globalprotect.c#l130
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-globalprotect.c#l130
 #: ../openconnect-strings.txt:25
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "Destination form field %s was specified; assuming SAML %s authentication is "
 "complete.\n"
 msgstr ""
-"S'ha especificat un valor de camp del formulari de destinació; s'ha "
-"completat l'autenticació SAML per cents."
+"S'ha especificat el camp del formulari de destinació %s; ha finalitzat "
+"l'autenticació SAML %s.\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. globalprotect.c#l143
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-globalprotect.c#l143
 #: ../openconnect-strings.txt:30
 msgid "Please enter your username and password"
 msgstr "Introduïu el vostre nom d'usuari i contrasenya"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. globalprotect.c#l152
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-globalprotect.c#l152
 #: ../openconnect-strings.txt:33
 msgid "Username"
 msgstr "Nom d'usuari"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. globalprotect.c#l167
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-globalprotect.c#l167
 #: ../openconnect-strings.txt:36
 msgid "Password"
 msgstr "Contrasenya"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. globalprotect.c#l234
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-globalprotect.c#l234
 #: ../openconnect-strings.txt:39
 msgid "Challenge: "
-msgstr "Desafiament:"
+msgstr "Desafiament: "
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. globalprotect.c#l354
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-globalprotect.c#l354
 #: ../openconnect-strings.txt:42
-#, c-format, fuzzy
+#, c-format
 msgid "GlobalProtect login returned unexpected argument value arg[%d]=%s\n"
 msgstr ""
-"L'inici de sessió GlobalProtect ha retornat un valor d'argument inesperat "
-"arg[%d]=%s"
+"L'inici de sessió GlobalProtect ha retornat el valor d'argument inesperat "
+"arg[%d]=%s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. globalprotect.c#l360
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-globalprotect.c#l360
 #: ../openconnect-strings.txt:45
 #, c-format
 msgid "GlobalProtect login returned %s=%s (expected %s)\n"
 msgstr "Nom d'usuari retornat GlobalProtect %s=%s (esperat %s)\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. globalprotect.c#l366
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-globalprotect.c#l366
 #: ../openconnect-strings.txt:48
 #, c-format
 msgid "GlobalProtect login returned empty or missing %s\n"
 msgstr "El nom d'usuari retornat GlobalProtect està buit o s'ha perdut %s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. globalprotect.c#l370
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-globalprotect.c#l370
 #: ../openconnect-strings.txt:51
 #, c-format
 msgid "GlobalProtect login returned %s=%s\n"
 msgstr "Nom d'usuari retornat GlobalProtect %s=%s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. globalprotect.c#l384
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-globalprotect.c#l384
 #: ../openconnect-strings.txt:54
-#, c-format, fuzzy
+#, c-format
 msgid ""
-"Please report %d unexpected values above (of which %d fatal) to "
-"<openconnect-devel@lists.infradead.org>\n"
+"Please report %d unexpected values above (of which %d fatal) to <openconnect-"
+"devel@lists.infradead.org>\n"
 msgstr ""
-"Si us plau informeu de valors inesperats per sobre (del qual el percentatge "
-"és fatal) a <openconnect-devel@lists.infradead.org>"
+"Informeu dels %d valors inesperats anteriors (dels quals %d fatals) a "
+"<openconnect-devel@lists.infradead.org>\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. globalprotect.c#l424
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-globalprotect.c#l424
 #: ../openconnect-strings.txt:59
 msgid "Please select GlobalProtect gateway."
 msgstr "Seleccioneu passarel·la Globalprotect."
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. globalprotect.c#l434
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-globalprotect.c#l434
 #: ../openconnect-strings.txt:62
 msgid "GATEWAY:"
 msgstr "PASSAREL·LA:"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. globalprotect.c#l457
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-globalprotect.c#l457
 #: ../openconnect-strings.txt:65
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "Ignoring portal's HIP report interval (%d minutes), because interval is "
 "already set to %d minutes.\n"
 msgstr ""
-"Ignorant l'interval de l'informe HIP del portal (%d minuts) perquè "
-"l'interval ja està establert a minuts per cent."
+"S'està ignorant l'interval de l'informe HIP del portal (%d minuts), perquè "
+"l'interval ja està establert a %d minuts.\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. globalprotect.c#l461
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-globalprotect.c#l461
 #: ../openconnect-strings.txt:70
-#, c-format, fuzzy
+#, c-format
 msgid "Portal set HIP report interval to %d minutes).\n"
-msgstr "Portal estableix l'interval de l'informe HIP a minuts per cent."
+msgstr "El portal estableix l'interval de l'informe HIP a %d minuts).\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. globalprotect.c#l501
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-globalprotect.c#l501
 #: ../openconnect-strings.txt:73
 #, c-format
 msgid "%d gateway servers available:\n"
 msgstr "%d servidors de passarel·la disponibles:\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. globalprotect.c#l522
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-globalprotect.c#l522
 #: ../openconnect-strings.txt:76
 #, c-format
 msgid "  %s (%s)\n"
 msgstr "  %s (%s)\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. globalprotect.c#l528
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-globalprotect.c#l528
 #: ../openconnect-strings.txt:79
-#, fuzzy
 msgid "GlobalProtect portal configuration lists no gateway servers.\n"
 msgstr ""
-"La configuració del portal GlobalProtect no llista servidors de passarel·la."
+"La configuració del portal GlobalProtect no llista cap servidor de "
+"passarel·la.\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. globalprotect.c#l605
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. juniper.c#l775
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-globalprotect.c#l605
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-juniper.c#l775
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth.c#l675
 #: ../openconnect-strings.txt:84
 msgid "Failed to generate OTP tokencode; disabling token\n"
 msgstr ""
-"Error en generar el codi de testimoni OTP; s'està inhabilitant el "
-"testimoni\n"
+"Error en generar el codi de testimoni OTP; s'està inhabilitant el testimoni\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. globalprotect.c#l701
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-globalprotect.c#l701
 #: ../openconnect-strings.txt:87
 msgid "Server is neither a GlobalProtect portal nor a gateway.\n"
 msgstr "El servidor no és ni un portal GlobalProtect ni una passarel·la.\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. globalprotect.c#l753
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-globalprotect.c#l753
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/oncp.c#l1287
 #: ../openconnect-strings.txt:91
 msgid "Logout failed.\n"
 msgstr "Sortida de sessió errònia.\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. globalprotect.c#l755
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-globalprotect.c#l755
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/oncp.c#l1289
 #: ../openconnect-strings.txt:95
 msgid "Logout successful.\n"
 msgstr "Sortida de sessió amb èxit.\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. juniper.c#l142
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-juniper.c#l142
 #: ../openconnect-strings.txt:98
 #, c-format
 msgid "Ignoring unknown form submit item '%s'\n"
 msgstr "S'està ignorant l'element desconegut «%s» enviat pel formulari\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. juniper.c#l153
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-juniper.c#l153
 #: ../openconnect-strings.txt:101
 #, c-format
 msgid "Ignoring unknown form input type '%s'\n"
 msgstr "S'està ignorant el tipus d'entrada desconeguda «%s» al formulari\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. juniper.c#l163
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-juniper.c#l163
 #: ../openconnect-strings.txt:104
 #, c-format
 msgid "Discarding duplicate option '%s'\n"
 msgstr "S'està descartant l'opció duplicada «%s»\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. juniper.c#l239
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-juniper.c#l239
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth.c#l414
 #: ../openconnect-strings.txt:108
 #, c-format
 msgid "Cannot handle form method='%s', action='%s'\n"
 msgstr "No es pot gestionar el mètode = «%s» al formulari, acció = «%s»\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. juniper.c#l270
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-juniper.c#l270
 #: ../openconnect-strings.txt:111
 #, c-format
 msgid "Unknown textarea field: '%s'\n"
 msgstr "Camp desconegut d'àrea de text: «%s»\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. juniper.c#l307
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-juniper.c#l307
 #: ../openconnect-strings.txt:114
 msgid "Failed to allocate memory for communication with TNCC\n"
 msgstr "Error en assignar memòria per comunicar-se amb TNCC\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. juniper.c#l312
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-juniper.c#l312
 #: ../openconnect-strings.txt:117
 msgid "Failed to send command to TNCC\n"
 msgstr "Error en enviar l'ordre d'inici a TNCC\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. juniper.c#l374
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-juniper.c#l374
 #: ../openconnect-strings.txt:120
 msgid "TNCC support not implemented yet on Windows\n"
 msgstr "El suport TNCC no està implementat encara en Windows\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. juniper.c#l388
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-juniper.c#l388
 #: ../openconnect-strings.txt:123
 msgid "No DSPREAUTH cookie; not attempting TNCC\n"
 msgstr "Sense la galeta DSPREAUTH; no s'intentarà TNCC\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. juniper.c#l438
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-juniper.c#l438
 #: ../openconnect-strings.txt:126
 #, c-format
 msgid "Failed to exec TNCC script %s: %s\n"
 msgstr "Error en executar el script TNCC %s: %s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. juniper.c#l455
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-juniper.c#l455
 #: ../openconnect-strings.txt:129
 msgid "Sent start; waiting for response from TNCC\n"
 msgstr "S'ha enviat l'inici; espereu la resposta des de TNCC\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. juniper.c#l462
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-juniper.c#l462
 #: ../openconnect-strings.txt:132
 msgid "Failed to read response from TNCC\n"
 msgstr "Error en llegir la resposta des de TNCC\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. juniper.c#l469
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-juniper.c#l469
 #: ../openconnect-strings.txt:135
 #, c-format
 msgid "Received unsuccessful %s response from TNCC\n"
 msgstr "S'ha rebut la resposta incorrecta %s des de TNCC\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. juniper.c#l475
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-juniper.c#l475
 #: ../openconnect-strings.txt:138
 msgid "TNCC response 200 OK\n"
 msgstr "Resposta TNCC 200 OK\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. juniper.c#l482
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-juniper.c#l482
 #: ../openconnect-strings.txt:141
 #, c-format
 msgid "Second line of TNCC response: '%s'\n"
 msgstr "Segona línia de la resposta TNCC: «%s»\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. juniper.c#l491
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-juniper.c#l491
 #: ../openconnect-strings.txt:144
 #, c-format
 msgid "Got new DSPREAUTH cookie from TNCC: %s\n"
 msgstr "S'ha obtingut la nova galeta DSPREAUTH des de TNCC: %s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. juniper.c#l504
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-juniper.c#l504
 #: ../openconnect-strings.txt:147
-#, c-format, fuzzy
+#, c-format
 msgid "Got reauth interval from TNCC: %d seconds\n"
-msgstr "S'ha obtingut un interval de recuperació des de segons TNCC per centd"
+msgstr "S'ha obtingut un interval de reautenticació de TNCC: %d segons\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. juniper.c#l517
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-juniper.c#l517
 #: ../openconnect-strings.txt:150
 #, c-format
 msgid "Unexpected non-empty line from TNCC after DSPREAUTH cookie: '%s'\n"
 msgstr ""
 "Línia no buida inesperada de TNCC després de la galeta DSPREAUTH:  «%s»\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. juniper.c#l524
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-juniper.c#l524
 #: ../openconnect-strings.txt:153
 msgid "Too many non-empty lines from TNCC after DSPREAUTH cookie\n"
 msgstr "Massa línies no buides de TNCC després de la galeta DSPREAUTH\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. juniper.c#l695
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-juniper.c#l695
 #: ../openconnect-strings.txt:156
 msgid "Failed to parse HTML document\n"
 msgstr "Error en analitzar el document d'HTML\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. juniper.c#l712
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-juniper.c#l712
 #: ../openconnect-strings.txt:159
 msgid "Failed to find or parse web form in login page\n"
 msgstr "Error en trobar o analitzar el formulari web a la pàgina d'accés\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. juniper.c#l720
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-juniper.c#l720
 #: ../openconnect-strings.txt:162
 msgid "Encountered form with no ID\n"
 msgstr "S'ha trobat un formulari sense identificador\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. juniper.c#l758
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-juniper.c#l758
 #: ../openconnect-strings.txt:165
 #, c-format
 msgid "Unknown form ID '%s'\n"
 msgstr "Formulari amb identificador «%s» desconegut\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
-#. juniper.c#l761
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-juniper.c#l761
 #: ../openconnect-strings.txt:168
 msgid "Dumping unknown HTML form:\n"
 msgstr "S'està bolcant el formulari HTML desconegut:\n"
@@ -851,8 +803,8 @@ msgstr "Perfil XML nou descarregat\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth.c#l1051
 #: ../openconnect-strings.txt:225
 msgid ""
-"Error: Running the 'Cisco Secure Desktop' trojan on this platform is not yet"
-" implemented.\n"
+"Error: Running the 'Cisco Secure Desktop' trojan on this platform is not yet "
+"implemented.\n"
 msgstr ""
 "Error: L'execució del cavall de Troia «Cisco Secure Desktop» no està "
 "implementada encara.\n"
@@ -903,10 +855,13 @@ msgstr ""
 #: ../openconnect-strings.txt:253
 msgid ""
 "Error: Server asked us to download and run a 'Cisco Secure Desktop' trojan.\n"
-"This facility is disabled by default for security reasons, so you may wish to enable it.\n"
+"This facility is disabled by default for security reasons, so you may wish "
+"to enable it.\n"
 msgstr ""
-"Error: El servidor us ha preguntat per descarregar i executar el cavall de Troia «Cisco Secure Desktop».\n"
-"Aquesta opció està desactivada per defecte per raons de seguretat, però podeu habilitar-la.\n"
+"Error: El servidor us ha preguntat per descarregar i executar el cavall de "
+"Troia «Cisco Secure Desktop».\n"
+"Aquesta opció està desactivada per defecte per raons de seguretat, però "
+"podeu habilitar-la.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth.c#l1074
 #: ../openconnect-strings.txt:259
@@ -976,8 +931,8 @@ msgstr "Resposta desconeguda des del servidor\n"
 #: ../openconnect-strings.txt:293
 msgid "Server requested SSL client certificate after one was provided\n"
 msgstr ""
-"El servidor ha demanat el certificat de client SSL després que el primer fou"
-" enviat\n"
+"El servidor ha demanat el certificat de client SSL després que el primer fou "
+"enviat\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth.c#l1381
 #: ../openconnect-strings.txt:296
@@ -993,11 +948,10 @@ msgstr "POST XML habilitat\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth.c#l1421
 #: ../openconnect-strings.txt:302
-#, fuzzy
 msgid "Couldn't fetch CSD stub. Proceeding anyway with CSD wrapper script.\n"
 msgstr ""
-"No s'ha pogut obtenir el stub del CSD. De totes maneres es procedeix amb "
-"l'script d'embolcall del CSD."
+"No s'ha pogut obtenir el stub del CSD. S'està procedint de totes maneres amb "
+"l'script d'embolcall del CSD.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth.c#l1446
 #: ../openconnect-strings.txt:305
@@ -1173,7 +1127,7 @@ msgstr "L'assignació de la memòria intermèdia de desinflat ha fallat\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/cstp.c#l779
 #: ../openconnect-strings.txt:399
 msgid "inflate failed\n"
-msgstr "La inflació ha fallat\n"
+msgstr "la inflació ha fallat\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/cstp.c#l802
 #: ../openconnect-strings.txt:402
@@ -1202,7 +1156,7 @@ msgstr "S'han rebut %s paquets de dades comprimides de %d bytes (eren %d)\n"
 #: ../openconnect-strings.txt:414
 #, c-format
 msgid "deflate failed %d\n"
-msgstr "La deflació ha fallat %d\n"
+msgstr "la deflació ha fallat %d\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/cstp.c#l920
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/dtls.c#l313
@@ -1271,7 +1225,7 @@ msgstr "S'ha rebut paquet comprimit! Mode desinflat\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/cstp.c#l1011
 #: ../openconnect-strings.txt:458
 msgid "received server terminate packet\n"
-msgstr "S'ha rebut servidor de paquet d'acabat\n"
+msgstr "s'ha rebut el paquet de terminació del servidor\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/cstp.c#l1018
 #: ../openconnect-strings.txt:461
@@ -1354,9 +1308,8 @@ msgstr "Envia paquet ADÉU: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/cstp.c#l1222
 #: ../openconnect-strings.txt:513
-#, fuzzy
 msgid "Short write writing BYE packet\n"
-msgstr "S'està escrivint un paquet BYE"
+msgstr "Escriptura incompleta escrivint un paquet BYE\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/digest.c#l252
 #: ../openconnect-strings.txt:516
@@ -1559,11 +1512,11 @@ msgstr ""
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/dtls.c#l645
 #: ../openconnect-strings.txt:622
-#, c-format, fuzzy
+#, c-format
 msgid "No response to size %u after %d tries; declare MTU is %u\n"
 msgstr ""
-"No hi ha cap resposta a la mida per centu després d'intents per cent; "
-"declarar que la MTU és per centu"
+"No hi ha cap resposta a la mida %u després de %d intents; declarar que la "
+"MTU és %u\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/dtls.c#l652
 #: ../openconnect-strings.txt:625
@@ -1589,15 +1542,13 @@ msgstr "S'ha detectat MTU de %d bytes (era %d)\n"
 msgid "No change in MTU after detection (was %d)\n"
 msgstr "Cap canvi al MTU després de la detecció (era %d)\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/esp-
-#. seqno.c#l61
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/esp-seqno.c#l61
 #: ../openconnect-strings.txt:637
 #, c-format
 msgid "Accepting expected ESP packet with seq %u\n"
 msgstr "S'està acceptant el paquet esperat ESP amb seqüència %u\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/esp-
-#. seqno.c#l91
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/esp-seqno.c#l91
 #: ../openconnect-strings.txt:640
 #, c-format
 msgid ""
@@ -1606,8 +1557,7 @@ msgstr ""
 "S'està acceptant el paquet ESP més tard del que s'esperava amb seqüència %u "
 "(s'esperava %<PRIu64>)\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/esp-
-#. seqno.c#l104
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/esp-seqno.c#l104
 #: ../openconnect-strings.txt:644
 #, c-format
 msgid "Discarding ancient ESP packet with seq %u (expected %<PRIu64>)\n"
@@ -1615,31 +1565,26 @@ msgstr ""
 "S'està descartant el paquet antic ESP amb seqüència %u (s'esperava "
 "%<PRIu64>)\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/esp-
-#. seqno.c#l109
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/esp-seqno.c#l109
 #: ../openconnect-strings.txt:647
 #, c-format
 msgid "Tolerating ancient ESP packet with seq %u (expected %<PRIu64>)\n"
 msgstr ""
-"S'està tolerant el paquet antic ESP amb seqüència %u (s'esperava "
-"%<PRIu64>)\n"
+"S'està tolerant el paquet antic ESP amb seqüència %u (s'esperava %<PRIu64>)\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/esp-
-#. seqno.c#l118
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/esp-seqno.c#l118
 #: ../openconnect-strings.txt:650
 #, c-format
 msgid "Discarding replayed ESP packet with seq %u\n"
 msgstr "S'està descartant el paquet repetit ESP amb seqüència %u\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/esp-
-#. seqno.c#l123
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/esp-seqno.c#l123
 #: ../openconnect-strings.txt:653
 #, c-format
 msgid "Tolerating replayed ESP packet with seq %u\n"
 msgstr "S'està tolerant el paquet repetit ESP amb seqüència %u\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/esp-
-#. seqno.c#l136
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/esp-seqno.c#l136
 #: ../openconnect-strings.txt:656
 #, c-format
 msgid "Accepting out-of-order ESP packet with seq %u (expected %<PRIu64>)\n"
@@ -1668,12 +1613,12 @@ msgstr "Autenticació ESP del tipus %s clau 0x%s\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/esp.c#l90
 #: ../openconnect-strings.txt:668
 msgid "incoming"
-msgstr "Entrant"
+msgstr "entrant"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/esp.c#l91
 #: ../openconnect-strings.txt:671
 msgid "outgoing"
-msgstr "Sortint"
+msgstr "sortint"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/esp.c#l93
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/esp.c#l147
@@ -1759,9 +1704,9 @@ msgstr "Keepalive no està implementat per a ESP\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/esp.c#l353
 #: ../openconnect-strings.txt:720
-#, c-format, fuzzy
+#, c-format
 msgid "Requeueing failed ESP send: %s\n"
-msgstr "Ha fallat el trasllat de la cua ESP"
+msgstr "S'està tornant a posar en cua l'enviament ESP que ha fallat: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/esp.c#l360
 #: ../openconnect-strings.txt:723
@@ -1785,71 +1730,60 @@ msgstr "No s'han pogut generar claus aleatòries per a ESP\n"
 msgid "Failed to generate initial IV for ESP\n"
 msgstr "No s'ha pogut generar el IV inicial per a ESP\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-
-#. dtls.c#l186
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-dtls.c#l186
 #: ../openconnect-strings.txt:735
 msgid "Deferring DTLS resumption until CSTP generates a PSK\n"
 msgstr "Posposa la reactivació de DTLS fins que CSTP generi un PSK \n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-
-#. dtls.c#l194
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-dtls.c#l194
 #: ../openconnect-strings.txt:738
 msgid "Failed to generate DTLS priority string\n"
 msgstr "Error en generar la cadena de prioritat DTLS\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-
-#. dtls.c#l202
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-
-#. dtls.c#l296
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-dtls.c#l202
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-dtls.c#l296
 #: ../openconnect-strings.txt:742
 #, c-format
 msgid "Failed to set DTLS priority: '%s': %s\n"
 msgstr "Error en establir la prioritat DTLS: «%s»: %s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-
-#. dtls.c#l223
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-dtls.c#l223
 #: ../openconnect-strings.txt:745
 #, c-format
 msgid "Failed to allocate credentials: %s\n"
 msgstr "Error en assignar credencials:  %s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-
-#. dtls.c#l236
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-dtls.c#l236
 #: ../openconnect-strings.txt:748
 #, c-format
 msgid "Failed to generate DTLS key: %s\n"
 msgstr "Error en generar la clau DTLS: %s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-
-#. dtls.c#l250
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-dtls.c#l250
 #: ../openconnect-strings.txt:751
 #, c-format
 msgid "Failed to set DTLS key: %s\n"
 msgstr "Error en establir la clau DTLS: %s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-
-#. dtls.c#l258
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-dtls.c#l258
 #: ../openconnect-strings.txt:754
 #, c-format
 msgid "Failed to set DTLS PSK credentials: %s\n"
 msgstr "Error en establir les credencials PSK DTLS: %s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-
-#. dtls.c#l286
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-dtls.c#l286
 #: ../openconnect-strings.txt:757
 #, c-format
 msgid "Unknown DTLS parameters for requested CipherSuite '%s'\n"
 msgstr "Paràmetres DTLS desconeguts en l'entorn de xifrat demanat «%s»\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-
-#. dtls.c#l312
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-dtls.c#l312
 #: ../openconnect-strings.txt:760
 #, c-format
 msgid "Failed to set DTLS session parameters: %s\n"
 msgstr "Error en establir els paràmetres de la sessió DTLS: %s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-
-#. dtls.c#l336
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-dtls.c#l336
 #: ../openconnect-strings.txt:763
 #, c-format
 msgid "GnuTLS used %d ClientHello random bytes; this should never happen\n"
@@ -1857,136 +1791,110 @@ msgstr ""
 "GnuTLS utilitzat per %d ClientHello bytes aleatoris; això mai hauria de "
 "passar\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-
-#. dtls.c#l354
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-dtls.c#l354
 #: ../openconnect-strings.txt:766
-#, fuzzy
 msgid "GnuTLS sent insecure ClientHello random. Upgrade to 3.6.13 or newer.\n"
 msgstr ""
-"GnuTLS ha enviat «ClientHello» insegur aleatori. Actualitzeu a 3.6.13 o més "
-"recent."
+"GnuTLS ha enviat un ClientHello aleatori. Actualitzeu a la 3.6.13 o més "
+"recent.\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-
-#. dtls.c#l370
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-dtls.c#l370
 #: ../openconnect-strings.txt:769
 #, c-format
 msgid "Failed to initialize DTLS: %s\n"
 msgstr "Error en inicialitzar DTLS: %s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-
-#. dtls.c#l417
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. dtls.c#l574
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-dtls.c#l417
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-dtls.c#l574
 #: ../openconnect-strings.txt:773
 #, c-format
 msgid "Peer MTU %d too small to allow DTLS\n"
 msgstr "Parell MTU %d massa petit per permetre DTLS\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-
-#. dtls.c#l426
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. dtls.c#l585
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-dtls.c#l426
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-dtls.c#l585
 #: ../openconnect-strings.txt:777
 #, c-format
 msgid "DTLS MTU reduced to %d\n"
 msgstr "MTU DTLS reduït a %d\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-
-#. dtls.c#l436
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. dtls.c#l594
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-dtls.c#l436
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-dtls.c#l594
 #: ../openconnect-strings.txt:781
 msgid "DTLS session resume failed; possible MITM attack. Disabling DTLS.\n"
 msgstr ""
 "Ha fallat la continuació de la sessió DTLS; possible atac MITM. S'està "
 "inhabilitant DTLS.\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-
-#. dtls.c#l449
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-dtls.c#l449
 #: ../openconnect-strings.txt:784
 #, c-format
 msgid "Failed to set DTLS MTU: %s\n"
 msgstr "Error en establir MTU DTLS: %s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-
-#. dtls.c#l460
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-dtls.c#l460
 #: ../openconnect-strings.txt:787
 #, c-format
 msgid "Established DTLS connection (using GnuTLS). Ciphersuite %s.\n"
 msgstr "Establerta la connexió DTLS (usant GnuTLS). Entorn de xifrat %s.\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-
-#. dtls.c#l466
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. dtls.c#l612
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-dtls.c#l466
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-dtls.c#l612
 #: ../openconnect-strings.txt:791
 #, c-format
 msgid "DTLS connection compression using %s.\n"
 msgstr "Compressió de connexió DTLS usant %s.\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-
-#. dtls.c#l481
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. dtls.c#l693
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. dtls.c#l697
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-dtls.c#l481
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-dtls.c#l693
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-dtls.c#l697
 #: ../openconnect-strings.txt:796
 msgid "DTLS handshake timed out\n"
 msgstr "L'encaixada DTLS ha expirat\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-
-#. dtls.c#l484
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-dtls.c#l484
 #: ../openconnect-strings.txt:799
 #, c-format
 msgid "DTLS handshake failed: %s\n"
 msgstr "Error d'encaixat DTLS: %s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-
-#. dtls.c#l488
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-dtls.c#l488
 #: ../openconnect-strings.txt:802
 msgid "(Is a firewall preventing you from sending UDP packets?)\n"
 msgstr "(Un tallafoc impedeix que envieu paquets UDP?)\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-
-#. esp.c#l56
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-esp.c#l56
 #: ../openconnect-strings.txt:805
 #, c-format
 msgid "Failed to initialise ESP cipher: %s\n"
 msgstr "Error en inicialitzar el xifrat de ESP: %s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-
-#. esp.c#l66
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-esp.c#l66
 #: ../openconnect-strings.txt:808
 #, c-format
 msgid "Failed to initialize ESP HMAC: %s\n"
 msgstr "Error en inicialitzar HMAC ESP: %s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-
-#. esp.c#l128
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-
-#. esp.c#l171
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-esp.c#l128
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-esp.c#l171
 #: ../openconnect-strings.txt:812
 #, c-format
 msgid "Failed to calculate HMAC for ESP packet: %s\n"
 msgstr "Error en calcular HMAC per al paquet ESP: %s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-
-#. esp.c#l135
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. esp.c#l166
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-esp.c#l135
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-esp.c#l166
 #: ../openconnect-strings.txt:816
 msgid "Received ESP packet with invalid HMAC\n"
 msgstr "S'ha rebut el paquet ESP amb una HMAC no vàlida\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-
-#. esp.c#l147
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-esp.c#l147
 #: ../openconnect-strings.txt:819
 #, c-format
 msgid "Decrypting ESP packet failed: %s\n"
 msgstr "El desxifrat del paquet ESP ha fallat: %s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-
-#. esp.c#l163
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-esp.c#l163
 #: ../openconnect-strings.txt:822
 #, c-format
 msgid "Failed to encrypt ESP packet: %s\n"
@@ -2213,8 +2121,7 @@ msgid "This binary built without PKCS#11 support\n"
 msgstr "Aquest binari està muntat sense suport de PKCS#11\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls.c#l999
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l411
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l411
 #: ../openconnect-strings.txt:953
 #, c-format
 msgid "Using PKCS#11 certificate %s\n"
@@ -2301,8 +2208,7 @@ msgid "Error importing PKCS#11 URL %s: %s\n"
 msgstr "Error en importar  PKCS#11 URL %s: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls.c#l1252
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l648
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l648
 #: ../openconnect-strings.txt:1000
 #, c-format
 msgid "Using PKCS#11 key %s\n"
@@ -2601,27 +2507,25 @@ msgstr "GnuTLS retorna no fatal durant la reencaixada:  %s\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls.c#l2299
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl.c#l1880
 #: ../openconnect-strings.txt:1170
-#, c-format, fuzzy
+#, c-format
 msgid "Connected to HTTPS on %s with ciphersuite %s\n"
-msgstr "Connectat a HTTPS sobre per cent amb xifratssuposats per cent"
+msgstr "Connectat a HTTPS a %s amb ciphersuite %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls.c#l2302
 #: ../openconnect-strings.txt:1173
-#, c-format, fuzzy
+#, c-format
 msgid "Renegotiated SSL on %s with ciphersuite %s\n"
-msgstr "SSL renegociat en els percentatges amb xifratssuposats en els totals"
+msgstr "SSL renegociat a %s amb ciphersuite %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls.c#l2456
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l203
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l203
 #: ../openconnect-strings.txt:1177
 #, c-format
 msgid "PIN required for %s"
 msgstr "Cal PIN en %s"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls.c#l2460
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l206
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l206
 #: ../openconnect-strings.txt:1181
 msgid "Wrong PIN"
 msgstr "PIN incorrecte"
@@ -2637,8 +2541,7 @@ msgid "Only a few tries left before locking!"
 msgstr "Només alguns intents abans de bloquejar-ho!"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls.c#l2470
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l210
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l210
 #: ../openconnect-strings.txt:1191
 msgid "Enter PIN:"
 msgstr "Introduïu el PIN:"
@@ -2842,7 +2745,7 @@ msgstr "Contrasenya TPM2 massa gran; s'està tallant\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls_tpm2_esys.c#l193
 #: ../openconnect-strings.txt:1299
 msgid "owner"
-msgstr "Propietari"
+msgstr "propietari"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls_tpm2_esys.c#l194
 #: ../openconnect-strings.txt:1302
@@ -2852,12 +2755,12 @@ msgstr "nul"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls_tpm2_esys.c#l195
 #: ../openconnect-strings.txt:1305
 msgid "endorsement"
-msgstr "Suport"
+msgstr "suport"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls_tpm2_esys.c#l196
 #: ../openconnect-strings.txt:1308
 msgid "platform"
-msgstr "Plataforma"
+msgstr "plataforma"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls_tpm2_esys.c#l200
 #: ../openconnect-strings.txt:1311
@@ -3108,23 +3011,24 @@ msgstr ""
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gpst.c#l593
 #: ../openconnect-strings.txt:1438
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "Potential IPv6-related GlobalProtect config tag <%s>: %s\n"
 "This build does not support GlobalProtect IPv6 due to a lack of\n"
 "of information on how it is configured. Please report this\n"
 "to <openconnect-devel@lists.infradead.org>.\n"
 msgstr ""
-"L'etiqueta de configuració GlobalProtect d'IPv6 potencial <%s>%s Aquesta "
-"construcció no suporta GlobalProtect IPv6 a causa de la falta d'informació "
-"sobre com es configura. Informeu d'això a <openconnect-"
-"devel@lists.infradead.org>."
+"Etiqueta de configuració GlobalProtect d'IPv6 potencial <%s>: %s\n"
+"Aquesta construcció no és compatible amb GlobalProtect IPv6 a causa de la "
+"falta\n"
+"d'informació sobre com es configura. Informeu-ne\n"
+"a <openconnect-devel@lists.infradead.org>.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gpst.c#l598
 #: ../openconnect-strings.txt:1445
-#, c-format, fuzzy
+#, c-format
 msgid "Unknown GlobalProtect config tag <%s>: %s\n"
-msgstr "Etiqueta de configuració de GlobalProtect desconeguda <%s> per cents"
+msgstr "Etiqueta de configuració de GlobalProtect desconeguda <%s>: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gpst.c#l658
 #: ../openconnect-strings.txt:1448
@@ -3171,29 +3075,30 @@ msgstr "S'ha obtingut la resposta inapropiada al GET-túnel HTTP: %.*s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gpst.c#l921
 #: ../openconnect-strings.txt:1472
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "WARNING: Server asked us to submit HIP report with md5sum %s.\n"
-"    VPN connectivity may be disabled or limited without HIP report submission.\n"
+"    VPN connectivity may be disabled or limited without HIP report "
+"submission.\n"
 "    %s\n"
 msgstr ""
-"AVÍS El servidor ens ha demanat que presentem un informe HIP amb md5sum per "
-"cents. La connectivitat VPN pot estar inhabilitada o limitada sense la "
-"tramesa d'informe HIP. per cents"
+"AVÍS: El servidor ens ha demanat que presentem un informe HIP amb el md5sum "
+"%s.\n"
+"    La connectivitat VPN pot ser inhabilitada o limitada sense la tramesa "
+"d'informe HIP.\n"
+"    %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gpst.c#l925
 #: ../openconnect-strings.txt:1479
-#, fuzzy
 msgid ""
 "However, running the HIP report submission script on this platform is not "
 "yet implemented."
 msgstr ""
-"No obstant això encara no s'ha implementat l'execució de l'script de tramesa"
-" de l'informe HIP en aquesta plataforma."
+"No obstant això, encara no s'ha implementat l'execució de l'script de "
+"tramesa de l'informe HIP en aquesta plataforma."
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gpst.c#l927
 #: ../openconnect-strings.txt:1484
-#, fuzzy
 msgid ""
 "You need to provide a --csd-wrapper argument with the HIP report submission "
 "script."
@@ -3207,7 +3112,8 @@ msgid ""
 "Error: Running the 'HIP Report' script on this platform is not yet "
 "implemented.\n"
 msgstr ""
-"Error: L'execució del script «'HIP Report» no està implementada encara.\n"
+"Error: L'execució del script «informe HIP» no està implementada encara en "
+"aquesta plataforma.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gpst.c#l966
 #: ../openconnect-strings.txt:1494
@@ -3290,9 +3196,9 @@ msgstr ""
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gpst.c#l1192
 #: ../openconnect-strings.txt:1537
-#, c-format, fuzzy
+#, c-format
 msgid "Received IPv%d data packet of %d bytes\n"
-msgstr "S'ha rebut un paquet de dades IPv%d de bytes per cent"
+msgstr "S'ha rebut un paquet de dades IPv%d de %d bytes\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gpst.c#l1197
 #: ../openconnect-strings.txt:1540
@@ -3309,15 +3215,13 @@ msgstr "Paquet desconegut. Segueix el bolcat de la capçalera:\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gpst.c#l1257
 #: ../openconnect-strings.txt:1547
-#, fuzzy
 msgid "GlobalProtect HIP check due\n"
-msgstr "Comprovació HIP de GlobalProtect"
+msgstr "Propera comprovació HIP de GlobalProtect\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gpst.c#l1269
 #: ../openconnect-strings.txt:1550
-#, fuzzy
 msgid "HIP check or report failed\n"
-msgstr "Ha fallat la comprovació o l'informe HIP"
+msgstr "Ha fallat la comprovació o l'informe HIP\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gpst.c#l1281
 #: ../openconnect-strings.txt:1553
@@ -3336,9 +3240,9 @@ msgstr "Envia petició GPST DPD/keepalive\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gpst.c#l1329
 #: ../openconnect-strings.txt:1562
-#, c-format, fuzzy
+#, c-format
 msgid "Sending IPv%d data packet of %d bytes\n"
-msgstr "S'està enviant el paquet de dades IPv%d de bytes per centd"
+msgstr "S'està enviant el paquet de dades IPv%d de %d bytes\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gpst.c#l1420
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/oncp.c#l1333
@@ -3482,47 +3386,40 @@ msgstr ""
 #, c-format
 msgid "SOCKS proxy demands protection unknown type 0x%02x\n"
 msgstr ""
-"Servidor intermediari SOCKS demana la  protecció del tipus desconegut "
-"0x%02x\n"
+"Servidor intermediari SOCKS demana la  protecció del tipus desconegut 0x"
+"%02x\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http-
-#. auth.c#l184
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http-auth.c#l184
 #: ../openconnect-strings.txt:1637
 msgid "Attempting HTTP Basic authentication to proxy\n"
 msgstr "S'està intentant l'autenticació bàsica HTTP al servidor intermediari\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http-
-#. auth.c#l186
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http-auth.c#l186
 #: ../openconnect-strings.txt:1640
 #, c-format
 msgid "Attempting HTTP Basic authentication to server '%s'\n"
 msgstr "S'està intentant l'autenticació bàsica HTTP al servidor «%s»\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http-
-#. auth.c#l213
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http-auth.c#l213
 #: ../openconnect-strings.txt:1643
-#, fuzzy, c-format
-#| msgid "Attempting HTTP Basic authentication to server '%s'\n"
+#, c-format
 msgid "Attempting HTTP Bearer authentication to server '%s'\n"
-msgstr "S'està intentant l'autenticació bàsica HTTP al servidor «%s»\n"
+msgstr "S'està intentant l'autenticació del portador HTTP al servidor «%s»\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http-
-#. auth.c#l227
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http-auth.c#l227
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http.c#l1324
 #: ../openconnect-strings.txt:1647
 msgid "This version of OpenConnect was built without GSSAPI support\n"
 msgstr "Aquesta versió d'OpenConnect ha sigut muntada sense suport GSSAPI\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http-
-#. auth.c#l268
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http-auth.c#l268
 #: ../openconnect-strings.txt:1650
 msgid "Proxy requested Basic authentication which is disabled by default\n"
 msgstr ""
 "El servidor intermediari ha demanat autenticació bàsica que està "
 "inhabilitada per defecte\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http-
-#. auth.c#l271
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http-auth.c#l271
 #: ../openconnect-strings.txt:1653
 #, c-format
 msgid ""
@@ -3531,8 +3428,7 @@ msgstr ""
 "El servidor «%s» ha demanat per autenticació bàsica que està inhabilitada "
 "per defecte\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http-
-#. auth.c#l284
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http-auth.c#l284
 #: ../openconnect-strings.txt:1657
 msgid "No more authentication methods to try\n"
 msgstr "No hi ha més mètodes d'autenticació per a provar\n"
@@ -3545,9 +3441,9 @@ msgstr "No hi ha memòria per assignar galetes\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http.c#l451
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http.c#l477
 #: ../openconnect-strings.txt:1664
-#, c-format, fuzzy
+#, c-format
 msgid "Error reading HTTP response: %s\n"
-msgstr "S'ha produït un error en llegir el percentatge de respostes HTTP"
+msgstr "S'ha produït un error en llegir la resposta HTTP: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http.c#l462
 #: ../openconnect-strings.txt:1667
@@ -3609,15 +3505,15 @@ msgstr "Error en recollir un fragment de capçalera\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http.c#l639
 #: ../openconnect-strings.txt:1698
-#, c-format, fuzzy
+#, c-format
 msgid "HTTP chunk length is negative (%ld)\n"
-msgstr "La longitud del tros HTTP és negativa (%ld)"
+msgstr "La longitud del tros HTTP és negativa (%ld)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http.c#l645
 #: ../openconnect-strings.txt:1701
-#, c-format, fuzzy
+#, c-format
 msgid "HTTP chunk length is too large (%ld)\n"
-msgstr "La longitud del tros HTTP és massa gran (%ld)"
+msgstr "La longitud del tros HTTP és massa gran (%ld)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http.c#l668
 #: ../openconnect-strings.txt:1704
@@ -3662,8 +3558,7 @@ msgstr "Sòcol HTTPS tancat pel parell; s'està reobrint\n"
 #: ../openconnect-strings.txt:1725
 #, c-format
 msgid "Retrying failed %s request on new connection\n"
-msgstr ""
-"S'està reintentant la sol·licitud %s fallada en una connexió nova\n"
+msgstr "S'està reintentant la sol·licitud %s fallada en una connexió nova\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http.c#l1124
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/oncp.c#l591
@@ -3737,8 +3632,8 @@ msgstr ""
 #, c-format
 msgid "Error writing auth request to SOCKS proxy: %s\n"
 msgstr ""
-"Error en escriure la sol·licitud d'autenticació per al servidor intermediari"
-" SOCKS: %s\n"
+"Error en escriure la sol·licitud d'autenticació per al servidor intermediari "
+"SOCKS: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http.c#l1221
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http.c#l1283
@@ -3795,15 +3690,16 @@ msgstr ""
 #: ../openconnect-strings.txt:1797
 #, c-format
 msgid "Requesting SOCKS proxy connection to %s:%d\n"
-msgstr "S'està sol·licitant connexió al servidor intermediari SOCKS per %s:%d\n"
+msgstr ""
+"S'està sol·licitant connexió al servidor intermediari SOCKS per %s:%d\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http.c#l1351
 #: ../openconnect-strings.txt:1800
 #, c-format
 msgid "Error writing connect request to SOCKS proxy: %s\n"
 msgstr ""
-"Error en escriure la sol·licitud de connexió al servidor intermediari SOCKS:"
-" %s\n"
+"Error en escriure la sol·licitud de connexió al servidor intermediari SOCKS: "
+"%s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http.c#l1359
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http.c#l1401
@@ -3818,8 +3714,7 @@ msgstr ""
 #, c-format
 msgid "Unexpected connect response from SOCKS proxy: %02x %02x...\n"
 msgstr ""
-"Resposta de connexió inesperada al servidor intermediari SOCKS:%02x "
-"%02x...\n"
+"Resposta de connexió inesperada al servidor intermediari SOCKS:%02x %02x...\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http.c#l1373
 #: ../openconnect-strings.txt:1810
@@ -3866,7 +3761,7 @@ msgstr "Tipus de servidor intermediari desconegut «%s»\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http.c#l1520
 #: ../openconnect-strings.txt:1831
-#, c-format, fuzzy
+#, c-format
 msgid "Failed to parse proxy '%s'\n"
 msgstr "Ha fallat l'anàlisi del servidor intermediari «%s»\n"
 
@@ -3892,9 +3787,8 @@ msgstr "Pulse Connect Secure"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/library.c#l172
 #: ../openconnect-strings.txt:1858
-#, fuzzy
 msgid "Compatible with Pulse Connect Secure SSL VPN"
-msgstr "VPN SSL segura compatible amb Pulse Connect"
+msgstr "Compatible amb VPN SSL segura Pulse Connect"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/library.c#l243
 #: ../openconnect-strings.txt:1861
@@ -3986,9 +3880,9 @@ msgstr ""
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l603
 #: ../openconnect-strings.txt:1909
-#, c-format, fuzzy
+#, c-format
 msgid "Using %s. Features present:"
-msgstr "Ús de percentatges. Característiques presents"
+msgstr "S'està utilitzant %s. Característiques presents:"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l615
 #: ../openconnect-strings.txt:1912
@@ -4144,10 +4038,8 @@ msgstr "Tipus de testimoni de programari: rsa, totp, hotp o oidc"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l827
 #: ../openconnect-strings.txt:2001
-#, fuzzy
-#| msgid "Software token secret"
 msgid "Software token secret or oidc token"
-msgstr "Testimoni secret de programari"
+msgstr "Testimoni de programari secret o testimoni oidc"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l829
 #: ../openconnect-strings.txt:2004
@@ -4208,8 +4100,7 @@ msgstr "Inhabilita el servidor intermediari"
 #: ../openconnect-strings.txt:2037
 msgid "Use libproxy to automatically configure proxy"
 msgstr ""
-"Utilitza libproxy per configurar de forma automàtica el servidor "
-"intermediari"
+"Utilitza libproxy per configurar de forma automàtica el servidor intermediari"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l847
 #: ../openconnect-strings.txt:2040
@@ -4228,10 +4119,8 @@ msgstr "Usa la IP quan et connectis a HOST"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l851
 #: ../openconnect-strings.txt:2049
-#, fuzzy
-#| msgid "copy TOS / TCLASS when using DTLS"
 msgid "Copy TOS / TCLASS field into DTLS and ESP packets"
-msgstr "copia TOS / TCLASS quan s'usa DTLS"
+msgstr "Copia el camp TOS / TCLASS als paquets DTLS i ESP"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l852
 #: ../openconnect-strings.txt:2052
@@ -4332,8 +4221,8 @@ msgstr "Usa IFNAME per la interfície de túnel"
 #: ../openconnect-strings.txt:2109
 msgid "Shell command line for using a vpnc-compatible config script"
 msgstr ""
-"Terminal de la línia d'ordres per utilitzar un vpnc compatible amb el script"
-" de configuració"
+"Terminal de la línia d'ordres per utilitzar un vpnc compatible amb el script "
+"de configuració"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l880
 #: ../openconnect-strings.txt:2112
@@ -4343,8 +4232,7 @@ msgstr "per defecte"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l882
 #: ../openconnect-strings.txt:2115
 msgid "Pass traffic to 'script' program, not tun"
-msgstr ""
-"Passa el trànsit a l'«script» del programa, no al controlador de xarxa"
+msgstr "Passa el trànsit a l'«script» del programa, no al controlador de xarxa"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l885
 #: ../openconnect-strings.txt:2118
@@ -4383,14 +4271,13 @@ msgstr "Inhabilita tota la compressió"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l892
 #: ../openconnect-strings.txt:2139
-#, fuzzy
 msgid "Set minimum Dead Peer Detection interval (in seconds)"
 msgstr "Estableix l'interval mínim de detecció de parells morts (en segons)"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l893
 #: ../openconnect-strings.txt:2142
 msgid "Require perfect forward secrecy"
-msgstr "Requerida confidencialitat directa perfecta"
+msgstr "Requereix una confidencialitat de redirecció perfecta"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l894
 #: ../openconnect-strings.txt:2145
@@ -4430,7 +4317,7 @@ msgstr "Tipus de sistema operatiu (linux,linux-64,win,...) per l'informe"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l902
 #: ../openconnect-strings.txt:2166
 msgid "reported version string during authentication"
-msgstr "Cadena de versió informada durant l'autenticació"
+msgstr "cadena de versió informada durant l'autenticació"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l903
 #: ../openconnect-strings.txt:2169
@@ -4454,9 +4341,9 @@ msgstr "Executa SCRIPT en lloc de binari troià"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l909
 #: ../openconnect-strings.txt:2181
-#, fuzzy
 msgid "Set minimum interval for rerunning trojan (in seconds)"
-msgstr "Estableix l'interval mínim per tornar a executar el troià (en segons)"
+msgstr ""
+"Estableix l'interval mínim per a tornar a executar el troià (en segons)"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l912
 #: ../openconnect-strings.txt:2184
@@ -4516,9 +4403,9 @@ msgstr "ID d'usuari no vàlid «%d»: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l1365
 #: ../openconnect-strings.txt:2214
-#, c-format, fuzzy
+#, c-format
 msgid "Unhandled autocomplete for option %d '--%s'. Please report.\n"
-msgstr "Autocompleta no gestionada per «--%s» d'opció. Informeu."
+msgstr "Autocompleció no gestionada per a l'opció %d «--%s». Informeu-ne.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l1414
 #: ../openconnect-strings.txt:2217
@@ -4594,7 +4481,8 @@ msgid ""
 "If this helps, please report to <openconnect-devel@lists.infradead.org>.\n"
 msgstr ""
 "Deshabiliteu la reutilització de totes les connexions HTTP degut a \n"
-"l'opció --no-http-keepalive. Si això ajuda, informeu <openconnect-devel@lists.infradead.org>.\n"
+"l'opció --no-http-keepalive. Si això ajuda, informeu <openconnect-"
+"devel@lists.infradead.org>.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l1681
 #: ../openconnect-strings.txt:2258
@@ -4603,7 +4491,8 @@ msgid ""
 "Fix your server's certificate or use --servercert to trust it.\n"
 msgstr ""
 "L'opció --no-cert-check era no segura i ha estat suprimida.\n"
-"Fixeu els vostres certificats dels servidors o useu --servercert per confiar-hi.\n"
+"Fixeu els vostres certificats dels servidors o useu --servercert per confiar-"
+"hi.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l1698
 #: ../openconnect-strings.txt:2263
@@ -4630,17 +4519,17 @@ msgstr "Identitat del sistema operatiu «%s» no vàlida\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l1791
 #: ../openconnect-strings.txt:2275
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "WARNING: You specified %s. This should not be\n"
 "         necessary; please report cases where a priority string\n"
 "         override is necessary to connect to a server\n"
 "         to <openconnect-devel@lists.infradead.org>.\n"
 msgstr ""
-"AVÍS Heu especificat els percentatges. Això no hauria de ser necessari; "
-"informeu dels casos en què una substitució de cadena prioritària és "
-"necessària per connectar a un servidor a <openconnect-"
-"devel@lists.infradead.org>."
+"AVÍS: Heu especificat %s. Això no hauria de ser\n"
+"         necessari; informeu dels casos en què una substitució de cadena\n"
+"         prioritària és necessària per a connectar amb un servidor\n"
+"         a <openconnect-devel@lists.infradead.org>.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l1813
 #: ../openconnect-strings.txt:2282
@@ -4689,7 +4578,7 @@ msgstr ""
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l1946
 #: ../openconnect-strings.txt:2306
 msgid "disabled"
-msgstr "Inhabilitat"
+msgstr "inhabilitat"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l1946
 #: ../openconnect-strings.txt:2309
@@ -4700,8 +4589,7 @@ msgstr "en progrés"
 #: ../openconnect-strings.txt:2312
 msgid "No --script argument provided; DNS and routing are not configured\n"
 msgstr ""
-"Cap argument --script proporcionat; DNS i encaminament no estan "
-"configurats\n"
+"Cap argument --script proporcionat; DNS i encaminament no estan configurats\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l1952
 #: ../openconnect-strings.txt:2315
@@ -4782,7 +4670,8 @@ msgstr ""
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l2126
 #: ../openconnect-strings.txt:2357
-msgid "To trust this server in future, perhaps add this to your command line:\n"
+msgid ""
+"To trust this server in future, perhaps add this to your command line:\n"
 msgstr ""
 "Per confiar en aquest servidor en el futur, potser afegiu això a la línia "
 "d'ordres:\n"
@@ -4798,20 +4687,20 @@ msgstr "    --servercert %s\n"
 #, c-format
 msgid "Enter '%s' to accept, '%s' to abort; anything else to view: "
 msgstr ""
-"Introduïu «%s» per acceptar, «%s» per avortar; qualsevol altra cosa per "
-"mostrar:"
+"Introduïu «%s» per a acceptar, «%s» per a avortar; qualsevol altra cosa per "
+"a veure: "
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l2133
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l2151
 #: ../openconnect-strings.txt:2368
 msgid "no"
-msgstr "No"
+msgstr "no"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l2133
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l2139
 #: ../openconnect-strings.txt:2372
 msgid "yes"
-msgstr "Sí"
+msgstr "sí"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l2160
 #: ../openconnect-strings.txt:2375
@@ -4856,9 +4745,8 @@ msgstr "El testimoni tou de la cadena és no vàlid\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l2515
 #: ../openconnect-strings.txt:2397
-#, fuzzy
 msgid "Can't open stoken file\n"
-msgstr "No s'ha pogut obrir el fitxer stoken"
+msgstr "No es pot obrir el fitxer stoken\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l2517
 #: ../openconnect-strings.txt:2400
@@ -4903,17 +4791,13 @@ msgstr "Errada general en Yubikey: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l2567
 #: ../openconnect-strings.txt:2424
-#, fuzzy
-#| msgid "Can't open ~/.stokenrc file\n"
 msgid "Can't open oidc file\n"
-msgstr "No es pot obrir el fitxer ~/.stokenrc\n"
+msgstr "No es pot obrir el fitxer oidc\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l2570
 #: ../openconnect-strings.txt:2427
-#, fuzzy
-#| msgid "General failure in libstoken\n"
 msgid "General failure in oidc token\n"
-msgstr "Errada general en libstoken\n"
+msgstr "Error general al testimoni oidc\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/mainloop.c#l127
 #: ../openconnect-strings.txt:2430
@@ -4979,8 +4863,8 @@ msgstr ""
 #, c-format
 msgid "Attempting HTTP NTLM authentication to server '%s' (single-sign-on)\n"
 msgstr ""
-"S'està intentant l'autenticació NTLM HTTP amb el servidor «%s» (inici-"
-"sessió-única)\n"
+"S'està intentant l'autenticació NTLM HTTP amb el servidor «%s» (inici-sessió-"
+"única)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/ntlm.c#l978
 #: ../openconnect-strings.txt:2466
@@ -5253,17 +5137,16 @@ msgstr ""
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/oncp.c#l647
 #: ../openconnect-strings.txt:2619
-#, fuzzy
 msgid ""
 "This seems to indicate that the server has disabled support for\n"
 "Juniper's older oNCP protocol, and only allows connections using\n"
 "the newer Junos Pulse protocol. This version of OpenConnect has\n"
 "EXPERIMENTAL support for Pulse using --prot=pulse\n"
 msgstr ""
-"Això sembla indicar que el servidor ha desactivat el suport per al protocol "
-"oNCP de Juniper i només permet connexions amb el protocol Junos Pulse més "
-"recent. Aquesta versió d'OpenConnect té suport EXPERIMENTAL per al Pulse "
-"usant --prot=pulse"
+"Això sembla indicar que el servidor ha desactivat la compatibilitat del\n"
+"protocol oNCP de Juniper i només permet connexions mitjançant\n"
+"el nou protocol Junos Pulse. Aquesta versió de l'OpenConnect té\n"
+"compatibilitat experimental amb el Pulse mitjançant --prot=pulse\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/oncp.c#l676
 #: ../openconnect-strings.txt:2626
@@ -5319,7 +5202,7 @@ msgstr "Error en negociar les claus ESP\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/oncp.c#l782
 #: ../openconnect-strings.txt:2653
 msgid "oNCP negotiation request outgoing:\n"
-msgstr "Sortida de la sol·licitud de negociació oNCP:\n"
+msgstr "Sol·licitud de negociació oNCP sortint:\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/oncp.c#l837
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l2710
@@ -5364,7 +5247,8 @@ msgstr "S'està rebent un missatge %d d'entrada KMP de mida %d (rebut %d)\n"
 #: ../openconnect-strings.txt:2679
 #, c-format
 msgid "Continuing to process KMP message %d now size %d (got %d)\n"
-msgstr "S'està continuant al missatge %d KMP de procés amb mida %d (rebut %d)\n"
+msgstr ""
+"S'està continuant al missatge %d KMP de procés amb mida %d (rebut %d)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/oncp.c#l1005
 #: ../openconnect-strings.txt:2682
@@ -5400,94 +5284,78 @@ msgstr "Paquet de sortida:\n"
 msgid "Sent ESP enable control packet\n"
 msgstr "S'ha enviat habilitació ESP de control de paquets\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openconnect-
-#. internal.h#l1186
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openconnect-
-#. internal.h#l1194
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openconnect-internal.h#l1186
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openconnect-internal.h#l1194
 #: ../openconnect-strings.txt:2702
 #, c-format
 msgid "ERROR: %s() called with invalid UTF-8 for '%s' argument\n"
 msgstr "ERROR: %s() cridada amb UTF-8 no vàlida de l'argument «%s»\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. dtls.c#l94
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-dtls.c#l94
 #: ../openconnect-strings.txt:2705
 #, c-format
 msgid "Unable to calculate DTLS overhead for %s\n"
 msgstr "No es pot calcular la sobrecarrega DTLS per a %s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. dtls.c#l210
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. dtls.c#l269
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-dtls.c#l210
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-dtls.c#l269
 #: ../openconnect-strings.txt:2709
 msgid "Failed to generate random key\n"
 msgstr "Error en generar claus aleatòries\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. dtls.c#l232
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-dtls.c#l232
 #: ../openconnect-strings.txt:2712
 #, c-format
 msgid "Failed to create SSL_SESSION ASN.1 for OpenSSL: %s\n"
 msgstr "Error en crear ASN.1 SSL_SESSION per a OpenSSL: %s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. dtls.c#l243
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-dtls.c#l243
 #: ../openconnect-strings.txt:2715
 msgid "OpenSSL failed to parse SSL_SESSION ASN.1\n"
 msgstr "OpenSSL ha fallat en analitzar ASN.1 SSL_SESSION\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. dtls.c#l259
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-dtls.c#l259
 #: ../openconnect-strings.txt:2718
 msgid "Initialise DTLSv1 session failed\n"
 msgstr "La inicialització de la sessió DTLSv1 ha fallat\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. dtls.c#l275
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-dtls.c#l275
 #: ../openconnect-strings.txt:2721
 msgid "Too large application ID size\n"
 msgstr "La mida de l'identificador és massa gran\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. dtls.c#l308
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-dtls.c#l308
 #: ../openconnect-strings.txt:2724
 msgid "PSK callback\n"
 msgstr "Crida de retorn PSK\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. dtls.c#l366
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-dtls.c#l366
 #: ../openconnect-strings.txt:2727
 msgid "Initialise DTLSv1 CTX failed\n"
 msgstr "La inicialització de CTX DTLSv1 ha fallat\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. dtls.c#l376
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-dtls.c#l376
 #: ../openconnect-strings.txt:2730
 msgid "Set DTLS CTX version failed\n"
 msgstr "L'establiment de la versió DTLS CTX ha fallat\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. dtls.c#l398
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-dtls.c#l398
 #: ../openconnect-strings.txt:2733
 msgid "Failed to generate DTLS key\n"
 msgstr "Error en generar la clau DTLS\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. dtls.c#l453
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-dtls.c#l453
 #: ../openconnect-strings.txt:2736
 msgid "Set DTLS cipher list failed\n"
 msgstr "La configuració de la llista de xifrat DTLS ha fallat\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. dtls.c#l479
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-dtls.c#l479
 #: ../openconnect-strings.txt:2739
 #, c-format
 msgid "DTLS cipher '%s' not found\n"
 msgstr "El xifrat DTLS  «%s» no es troba\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. dtls.c#l500
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-dtls.c#l500
 #: ../openconnect-strings.txt:2742
 #, c-format
 msgid ""
@@ -5501,30 +5369,25 @@ msgstr ""
 "Consulteu http://rt.openssl.org/Ticket/Display.html?id=1751\n"
 "Useu l'opció --no-dtls a la línia d'ordres per evitar aquest missatge\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. dtls.c#l533
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-dtls.c#l533
 #: ../openconnect-strings.txt:2749
 msgid "SSL_set_session() failed\n"
 msgstr "Ha fallat SSL_set_session() \n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. dtls.c#l606
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-dtls.c#l606
 #: ../openconnect-strings.txt:2752
 #, c-format
 msgid "Established DTLS connection (using OpenSSL). Ciphersuite %s-%s.\n"
 msgstr "Connexió DTLS establerta (utilitza OpenSSL). Ciphersuite %s-%s.\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. dtls.c#l643
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-dtls.c#l643
 #: ../openconnect-strings.txt:2755
-msgid ""
-"Your OpenSSL is older than the one you built against, so DTLS may fail!"
+msgid "Your OpenSSL is older than the one you built against, so DTLS may fail!"
 msgstr ""
 "La vostra OpenSSL és més antiga que una que heu muntat abans, per això DTLS "
 "pot fallar!"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. dtls.c#l694
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-dtls.c#l694
 #: ../openconnect-strings.txt:2758
 msgid ""
 "This is probably because your OpenSSL is broken\n"
@@ -5533,216 +5396,179 @@ msgstr ""
 "Això és degut al fet que el vostre OpenSSL està trencat\n"
 "Consulteu http://rt.openssl.org/Ticket/Display.html?id=2984\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. dtls.c#l701
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-dtls.c#l701
 #: ../openconnect-strings.txt:2763
 #, c-format
 msgid "DTLS handshake failed: %d\n"
 msgstr "L'encaixada DTLS ha fallat: %d\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. esp.c#l86
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-esp.c#l86
 #: ../openconnect-strings.txt:2766
 msgid "Failed to initialise ESP cipher:\n"
 msgstr "Error en inicialitzar el xifrat ESP:\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. esp.c#l100
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-esp.c#l100
 #: ../openconnect-strings.txt:2769
 msgid "Failed to initialize ESP HMAC\n"
 msgstr "Error en inicialitzar HMAC ESP\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. esp.c#l176
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-esp.c#l176
 #: ../openconnect-strings.txt:2772
 msgid "Failed to set up decryption context for ESP packet:\n"
 msgstr "Error en configurar el context de desxifrat per al paquet ESP:\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. esp.c#l184
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-esp.c#l184
 #: ../openconnect-strings.txt:2775
 msgid "Failed to decrypt ESP packet:\n"
 msgstr "Error en desxifrar el paquet ESP:\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. esp.c#l200
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-esp.c#l200
 #: ../openconnect-strings.txt:2778
 msgid "Failed to encrypt ESP packet:\n"
 msgstr "Error en xifrar el paquet ESP:\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l43
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l43
 #: ../openconnect-strings.txt:2781
 msgid "Failed to establish libp11 PKCS#11 context:\n"
 msgstr "Error en establir el context PKCS#11 libp11:\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l49
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l49
 #: ../openconnect-strings.txt:2784
 #, c-format
 msgid "Failed to load PKCS#11 provider module (%s):\n"
 msgstr "Error en carregar el mòdul que proporciona PKCS#11 (%s):\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l273
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l273
 #: ../openconnect-strings.txt:2787
 msgid "PIN locked\n"
 msgstr "PIN bloquejat\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l276
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l276
 #: ../openconnect-strings.txt:2790
 msgid "PIN expired\n"
 msgstr "PIN caducat\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l279
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l279
 #: ../openconnect-strings.txt:2793
 msgid "Another user already logged in\n"
 msgstr "Un altre usuari està realment connectat\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l283
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l283
 #: ../openconnect-strings.txt:2796
 msgid "Unknown error logging in to PKCS#11 token\n"
 msgstr "Error desconegut en registrar-se al testimoni PKCS#11\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l290
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l290
 #: ../openconnect-strings.txt:2799
 #, c-format
 msgid "Logged in to PKCS#11 slot '%s'\n"
 msgstr "Registrat en PKCS#11 ranura «%s»\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l304
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l304
 #: ../openconnect-strings.txt:2802
 #, c-format
 msgid "Failed to enumerate certs in PKCS#11 slot '%s'\n"
 msgstr "Error en enumerar certificats de PKCS#11 ranura «%s»\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l310
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l310
 #: ../openconnect-strings.txt:2805
 #, c-format
 msgid "Found %d certs in slot '%s'\n"
 msgstr "S'han trobat %d certificats a la ranura «%s»\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l346
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l569
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l346
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l569
 #: ../openconnect-strings.txt:2809
 #, c-format
 msgid "Failed to parse PKCS#11 URI '%s'\n"
 msgstr "Error en analitzar PKCS#11 URI «%s»\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l353
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l579
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l353
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l579
 #: ../openconnect-strings.txt:2813
 msgid "Failed to enumerate PKCS#11 slots\n"
 msgstr "Error en enumerar les ranures PKCS#11\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l387
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l621
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l387
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l621
 #: ../openconnect-strings.txt:2817
 #, c-format
 msgid "Logging in to PKCS#11 slot '%s'\n"
 msgstr "S'està registrant en PKCS#11 ranura «%s»\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l397
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l397
 #: ../openconnect-strings.txt:2820
 #, c-format
 msgid "Failed to find PKCS#11 cert '%s'\n"
 msgstr "Error en cercar el certificat  PKCS#11 «%s»\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l405
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l405
 #: ../openconnect-strings.txt:2823
 msgid "Certificate X.509 content not fetched by libp11\n"
 msgstr "Contingut del certificat X.509 no recuperat per libp11\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l416
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l416
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl.c#l730
 #: ../openconnect-strings.txt:2827
 msgid "Failed to install certificate in OpenSSL context\n"
 msgstr "Error en instal·lar el certificat al context OpenSSL\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l462
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l462
 #: ../openconnect-strings.txt:2830
 #, c-format
 msgid "Failed to enumerate keys in PKCS#11 slot '%s'\n"
 msgstr "Error en enumerar les claus al PKCS#11 ranura «%s»\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l468
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l468
 #: ../openconnect-strings.txt:2833
 #, c-format
 msgid "Found %d keys in slot '%s'\n"
 msgstr "S'han trobat %d claus a la ranura «%s»\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l501
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l501
 #: ../openconnect-strings.txt:2836
 msgid "Certificate has no public key\n"
 msgstr "El certificat no té clau pública\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l507
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l530
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l507
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l530
 #: ../openconnect-strings.txt:2840
 msgid "Certificate does not match private key\n"
 msgstr "El certificat no coincideix amb la clau privada\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l510
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l510
 #: ../openconnect-strings.txt:2843
 msgid "Checking EC key matches cert\n"
 msgstr "S'està comprovant la coincidència de la clau EC amb el certificat\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l514
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l514
 #: ../openconnect-strings.txt:2846
 msgid "Failed to allocate signature buffer\n"
 msgstr "Error en assignar la memòria intermèdia de la signatura\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l524
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l524
 #: ../openconnect-strings.txt:2849
 msgid "Failed to sign dummy data to validate EC key\n"
 msgstr "Error en signar les dates simulades per validar la clau EC\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l642
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l642
 #: ../openconnect-strings.txt:2852
 #, c-format
 msgid "Failed to find PKCS#11 key '%s'\n"
 msgstr "Error en cercar la clau PKCS#11 «%s»\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l653
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l653
 #: ../openconnect-strings.txt:2855
 msgid "Failed to instantiated private key from PKCS#11\n"
 msgstr "Error en instanciar la clau privada de PKCS#11\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l682
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l682
 #: ../openconnect-strings.txt:2858
 msgid "Add key from PKCS#11 failed\n"
 msgstr "L'afegit de la clau de PKCS#11 ha fallat\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l714
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
-#. pkcs11.c#l720
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l714
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l720
 #: ../openconnect-strings.txt:2862
 msgid "This version of OpenConnect was built without PKCS#11 support\n"
 msgstr "Aquesta versió d'OpenConnect ha sigut muntada sense suport PKCS#11\n"
@@ -6023,9 +5849,9 @@ msgstr "El certificat SSL i la clau no coincideixen\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl.c#l1727
 #: ../openconnect-strings.txt:3017
-#, c-format, fuzzy
+#, c-format
 msgid "Failed to set OpenSSL cipher list (\"%s\")\n"
-msgstr "No s'ha pogut establir la llista de xifratge OpenSSL («%s»)"
+msgstr "No s'ha pogut establir la llista de xifratge OpenSSL («%s»)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl.c#l1755
 #: ../openconnect-strings.txt:3020
@@ -6051,21 +5877,21 @@ msgstr "Error en calcular HMAC OATH\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl.c#l2119
 #: ../openconnect-strings.txt:3032
-#, c-format, fuzzy
+#, c-format
 msgid "EAP-TTLS negotiation with %s\n"
-msgstr "Negociació EAP-TTLS amb el percentatge"
+msgstr "Negociació EAP-TTLS amb %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl.c#l2130
 #: ../openconnect-strings.txt:3035
-#, c-format, fuzzy
+#, c-format
 msgid "EAP-TTLS connection failure %d\n"
-msgstr "Ha fallat la connexió EAP-TTLS percentd"
+msgstr "Ha fallat la connexió EAP-TTLS %d\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l283
 #: ../openconnect-strings.txt:3038
-#, c-format, fuzzy
+#, c-format
 msgid "Received internal Legacy IP address %s\n"
-msgstr "S'ha rebut l'adreça IP del llegat intern per cent"
+msgstr "S'ha rebut l'adreça IP antiga interna %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l331
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l348
@@ -6077,27 +5903,27 @@ msgstr "No s'ha pogut gestionar l'adreça IPv6\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l340
 #: ../openconnect-strings.txt:3047
-#, c-format, fuzzy
+#, c-format
 msgid "Received internal IPv6 address %s\n"
-msgstr "S'han rebut adreces IPv6 internes per cent"
+msgstr "S'ha rebut l'adreça IPv6 interna %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l382
 #: ../openconnect-strings.txt:3050
-#, c-format, fuzzy
+#, c-format
 msgid "Received IPv6 split include %s\n"
-msgstr "Divisió IPv6 rebuda inclou els percentatges"
+msgstr "S'ha rebut la inclusió de la divisió IPv6 %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l405
 #: ../openconnect-strings.txt:3053
-#, c-format, fuzzy
+#, c-format
 msgid "Received IPv6 split exclude %s\n"
-msgstr "Divisió IPv6 rebuda exclou els percentatges"
+msgstr "S'ha rebut l'exclusió de la divisió IPv6 %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l412
 #: ../openconnect-strings.txt:3056
-#, c-format, fuzzy
+#, c-format
 msgid "Unexpected length %d for attr 0x%x\n"
-msgstr "Longitud inesperada del per cent per a attr 0x%x"
+msgstr "Longitud inesperada %d de l'atribut 0x%x\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l463
 #: ../openconnect-strings.txt:3059
@@ -6119,46 +5945,42 @@ msgstr "Només ESP: %d\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l579
 #: ../openconnect-strings.txt:3068
-#, c-format, fuzzy
+#, c-format
 msgid "Unknown attr 0x%x len %d:%s\n"
-msgstr "Atr 0x%x len%d%s desconegut"
+msgstr "Es desconeix de l'atribut 0x%x la longitud %d:%s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l590
 #: ../openconnect-strings.txt:3071
-#, c-format, fuzzy
+#, c-format
 msgid "Read %d bytes of IF-T/TLS record\n"
-msgstr "Bytes llegits per cent del registre IF-T/TLS"
+msgstr "S'han llegit %d bytes del registre IF-T/TLS\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l607
 #: ../openconnect-strings.txt:3074
 msgid "Short write to IF-T/TLS\n"
-msgstr "Escriptura curta a IF-T/TLS\n"
+msgstr "Escriptura incompleta a IF-T/TLS\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l620
 #: ../openconnect-strings.txt:3077
-#, fuzzy
 msgid "Error creating IF-T packet\n"
-msgstr "S'ha produït un error en crear el paquet IF-T"
+msgstr "S'ha produït un error en crear el paquet IF-T\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l640
 #: ../openconnect-strings.txt:3080
-#, fuzzy
 msgid "Error creating EAP packet\n"
-msgstr "S'ha produït un error en crear el paquet EAP"
+msgstr "S'ha produït un error en crear el paquet EAP\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l675
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1486
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1549
 #: ../openconnect-strings.txt:3085
-#, fuzzy
 msgid "Unexpected IF-T/TLS authentication challenge:\n"
-msgstr "S'ha produït un repte inesperat d'autenticació IF-T/TLS"
+msgstr "S'ha produït un repte inesperat d'autenticació IF-T/TLS:\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l693
 #: ../openconnect-strings.txt:3088
-#, fuzzy
 msgid "Unexpected EAP-TTLS payload:\n"
-msgstr "Càrrega útil EAP-TTLS inesperada"
+msgstr "Càrrega útil EAP-TTLS inesperada:\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l726
 #: ../openconnect-strings.txt:3091
@@ -6174,22 +5996,19 @@ msgstr "AVP %d:%s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l795
 #: ../openconnect-strings.txt:3097
-#, fuzzy
 msgid "Enter Pulse user realm:"
-msgstr "Introduïu el reialme de l'usuari Pulse"
+msgstr "Introduïu el domini d'usuari Pulse:"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l800
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l843
 #: ../openconnect-strings.txt:3101
-#, fuzzy
 msgid "Realm:"
-msgstr "Reialme"
+msgstr "Domini:"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l838
 #: ../openconnect-strings.txt:3104
-#, fuzzy
 msgid "Choose Pulse user realm:"
-msgstr "Trieu el reialme de l'usuari Pulse"
+msgstr "Trieu el domini d'usuari Pulse:"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l854
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1616
@@ -6200,9 +6019,8 @@ msgstr "No s'ha pogut analitzar l'AVP\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l921
 #: ../openconnect-strings.txt:3112
-#, fuzzy
 msgid "Session limit reached. Choose session to kill:\n"
-msgstr "S'ha arribat al límit de sessió. Trieu la sessió per matar"
+msgstr "S'ha arribat al límit de sessions. Trieu una sessió a finalitzar:\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l926
 #: ../openconnect-strings.txt:3115
@@ -6234,7 +6052,7 @@ msgstr "Nom d'usuari secundari:"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1243
 #: ../openconnect-strings.txt:3132
 msgid "Username:"
-msgstr "Nom d'usuari"
+msgstr "Nom d'usuari:"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1061
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/stoken.c#l114
@@ -6265,7 +6083,7 @@ msgstr "Contrasenya nova:"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1146
 #: ../openconnect-strings.txt:3151
 msgid "Verify new password:"
-msgstr "Verifiqueu la contrasenya nova"
+msgstr "Confirmeu la contrasenya nova:"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1158
 #: ../openconnect-strings.txt:3154
@@ -6289,9 +6107,8 @@ msgstr "La contrasenya nova és massa llarga.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1233
 #: ../openconnect-strings.txt:3166
-#, fuzzy
 msgid "Token code request:"
-msgstr "Sol·licitud de codi de testimoni"
+msgstr "Sol·licitud de codi de testimoni:"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1257
 #: ../openconnect-strings.txt:3169
@@ -6300,9 +6117,8 @@ msgstr "Introduïu la resposta:"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1261
 #: ../openconnect-strings.txt:3172
-#, fuzzy
 msgid "Please enter your passcode:"
-msgstr "Introduïu el vostre codi d'accés"
+msgstr "Introduïu el vostre codi d'accés:"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1263
 #: ../openconnect-strings.txt:3175
@@ -6311,65 +6127,58 @@ msgstr "Introduïu la vostra informació de testimoni secundari:"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1403
 #: ../openconnect-strings.txt:3178
-#, fuzzy
 msgid "Error creating Pulse connection request\n"
-msgstr "S'ha produït un error en crear la sol·licitud de connexió Pulse"
+msgstr "S'ha produït un error en crear la sol·licitud de connexió Pulse\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1446
 #: ../openconnect-strings.txt:3181
-#, fuzzy
 msgid "Unexpected response to IF-T/TLS version negotiation:\n"
-msgstr "Resposta inesperada a la negociació de versions IF-T/TLS"
+msgstr "Resposta inesperada a la negociació de versió IF-T/TLS\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1451
 #: ../openconnect-strings.txt:3184
-#, c-format, fuzzy
+#, c-format
 msgid "IF-T/TLS version from server: %d\n"
-msgstr "Versió IF-T/TLS del servidor percentd"
+msgstr "Versió IF-T/TLS del servidor: %d\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1578
 #: ../openconnect-strings.txt:3187
-#, fuzzy
 msgid "Failed to establish EAP-TTLS session\n"
-msgstr "No s'ha pogut establir la sessió EAP-TTLS"
+msgstr "No s'ha pogut establir la sessió EAP-TTLS\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1701
 #: ../openconnect-strings.txt:3190
-#, fuzzy
 msgid ""
 "WARNING: Server provided certificate MD5 does not match its actual "
 "certificate.\n"
 msgstr ""
-"AVÍS El certificat proporcionat pel servidor MD5 no coincideix amb el seu "
-"certificat real."
+"AVÍS: El certificat proporcionat pel servidor MD5 no coincideix amb el "
+"certificat real.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1715
 #: ../openconnect-strings.txt:3195
-#, fuzzy
 msgid "Authentication failure: Account locked out\n"
-msgstr "Error d'autenticació el compte està bloquejat"
+msgstr "Error d'autenticació: el compte està bloquejat\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1718
 #: ../openconnect-strings.txt:3198
-#, c-format, fuzzy
+#, c-format
 msgid "Authentication failure: Code 0x%02x\n"
-msgstr "Error d'autenticació Codi 0x%02x"
+msgstr "Error d'autenticació: Codi 0x%02x\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1753
 #: ../openconnect-strings.txt:3201
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "Unknown D73 prompt value 0x%x. Will prompt for both username and password.\n"
 msgstr ""
-"Valor desconegut de sol·licitud D73 0x%x. Es preguntarà tant pel nom "
-"d'usuari com per la contrasenya."
+"Valor desconegut de sol·licitud D73 0x%x. Se sol·licitarà tant el nom "
+"d'usuari com la contrasenya.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1756
 #: ../openconnect-strings.txt:3205
-#, fuzzy
 msgid "Please report this value and the behaviour of the official client.\n"
-msgstr ""
-"Si us plau informeu d'aquest valor i del comportament del client oficial."
+msgstr "Informeu d'aquest valor i del comportament del client oficial.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1809
 #: ../openconnect-strings.txt:3208
@@ -6379,117 +6188,108 @@ msgstr "Error d'autenticació: %.*s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1819
 #: ../openconnect-strings.txt:3211
-#, fuzzy
 msgid ""
 "Pulse server requested Host Checker; not yet supported\n"
 "Try Juniper mode (--protocol=nc)\n"
 msgstr ""
-"El servidor Pulse ha sol·licitat el corrector d'amfitrions; encara no és "
-"compatible amb el mode Prova de Juniper (-protocol=nc)"
+"El servidor Pulse ha sol·licitat el comprovador d'amfitrions, que encara no "
+"és compatible\n"
+"Proveu el mode Juniper (--protocol=nc)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1839
 #: ../openconnect-strings.txt:3216
-#, fuzzy
 msgid "Unhandled Pulse authentication packet, or authentication failure\n"
-msgstr "Ha fallat l'autenticació Pulse"
+msgstr ""
+"No s'ha gestionat el paquet d'autenticació Pulse o ha fallat l'autenticació\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1855
 #: ../openconnect-strings.txt:3219
-#, fuzzy
 msgid "Pulse authentication cookie not accepted\n"
-msgstr "No s'ha acceptat la galeta d'autenticació Pulse"
+msgstr "No s'ha acceptat la galeta d'autenticació Pulse\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1861
 #: ../openconnect-strings.txt:3222
-#, fuzzy
 msgid "Pulse realm entry\n"
-msgstr "Entrada del reialme Pulse"
+msgstr "Entrada del domini Pulse\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1867
 #: ../openconnect-strings.txt:3225
-#, fuzzy
 msgid "Pulse realm choice\n"
-msgstr "Opcions del reialme del Pulse"
+msgstr "Opció del domini del Pulse\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1874
 #: ../openconnect-strings.txt:3228
-#, c-format, fuzzy
+#, c-format
 msgid "Pulse password auth request, code 0x%02x\n"
-msgstr "Pulse password auth sol·licit code 0x%02x"
+msgstr "Sol·licitud d'autenticació de contrasenya Pulse. Codi 0x%02x\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1887
 #: ../openconnect-strings.txt:3231
-#, c-format, fuzzy
+#, c-format
 msgid "Pulse password request with unknown code 0x%02x. Please report.\n"
 msgstr ""
-"Sol·licitud de contrasenya Pulse amb codi desconegut 0x%02x. Informeu."
+"Sol·licitud de contrasenya Pulse amb codi desconegut 0x%02x. Informeu-ne.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1896
 #: ../openconnect-strings.txt:3234
-#, fuzzy
 msgid "Pulse password general token code request\n"
-msgstr "Sol·licitud de codi de testimoni general de contrasenya del Pulse"
+msgstr "Sol·licitud de codi de testimoni general de contrasenya del Pulse\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1907
 #: ../openconnect-strings.txt:3237
-#, c-format, fuzzy
+#, c-format
 msgid "Pulse session limit, %d sessions\n"
-msgstr "Pulse sessió límit per cent"
+msgstr "Límit de sessions del Pulse. %d sessions\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1916
 #: ../openconnect-strings.txt:3240
-#, fuzzy
 msgid "Unhandled Pulse auth request\n"
-msgstr "Sol·licitud d'autenticació Pulse no gestionada"
+msgstr "Sol·licitud d'autenticació Pulse no gestionada\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1953
 #: ../openconnect-strings.txt:3243
-#, fuzzy
 msgid "Unexpected response instead of IF-T/TLS auth success:\n"
-msgstr "Resposta inesperada en lloc de l'autenticació IF-T/TLS"
+msgstr "Resposta inesperada en lloc d'autenticació correcta IF-T/TLS:\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l2016
 #: ../openconnect-strings.txt:3246
-#, fuzzy
 msgid "EAP-TTLS failure: Flushing output with pending input bytes\n"
-msgstr "Error EAP-TTLS Neteja la sortida amb bytes d'entrada pendents"
+msgstr ""
+"Error EAP-TTLS: s'està esborrant la sortida amb bytes d'entrada pendents\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l2039
 #: ../openconnect-strings.txt:3249
-#, fuzzy
 msgid "Error creating EAP-TTLS buffer\n"
-msgstr "S'ha produït un error en crear la memòria intermèdia EAP-TTLS"
+msgstr "S'ha produït un error en crear la memòria intermèdia EAP-TTLS\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l2088
 #: ../openconnect-strings.txt:3252
-#, c-format, fuzzy
+#, c-format
 msgid "Failed to read EAP-TTLS Acknowledge: %s\n"
-msgstr "No s'ha pogut llegir EAP-T el reconeixementTLS"
+msgstr "No s'ha pogut llegir el reconeixement EAP-TTLS: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l2096
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l2138
 #: ../openconnect-strings.txt:3256
-#, c-format, fuzzy
+#, c-format
 msgid "Read %d bytes of IF-T/TLS EAP-TTLS record\n"
-msgstr "Bytes de lectura de registres EAP-TTLS"
+msgstr "S'han llegit %d bytes del registre IF-T/TLS EAP-TTLS\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l2107
 #: ../openconnect-strings.txt:3259
-#, fuzzy
 msgid "Bad EAP-TTLS Acknowledge packet\n"
-msgstr "Paquet de reconeixement EAP-TTLS incorrecte"
+msgstr "Paquet de reconeixement EAP-TTLS incorrecte\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l2149
 #: ../openconnect-strings.txt:3262
-#, c-format, fuzzy
+#, c-format
 msgid "Bad EAP-TTLS packet (len %d, left %d)\n"
-msgstr "Paquet EAP-TTLS incorrecte (len%d esquerra)"
+msgstr "Paquet EAP-TTLS incorrecte (longitud %d, restant %d)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l2306
 #: ../openconnect-strings.txt:3265
-#, fuzzy
 msgid "Unexpected Pulse config packet:\n"
-msgstr "Paquet de configuració del Pulse inesperat"
+msgstr "Paquet de configuració del Pulse inesperat:\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l2363
 #: ../openconnect-strings.txt:3268
@@ -6509,15 +6309,13 @@ msgstr "Configuració ESP no vàlida\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l2521
 #: ../openconnect-strings.txt:3277
-#, fuzzy
 msgid "Bad IF-T/TLS packet when expecting configuration:\n"
-msgstr "El paquet IF-T/TLS és incorrecte en esperar la configuració"
+msgstr "Paquet IF-T/TLS incorrecte esperant la configuració:\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l2529
 #: ../openconnect-strings.txt:3280
-#, fuzzy
 msgid "Unexpected IF-T/TLS packet when expecting configuration.\n"
-msgstr "S'ha trobat un paquet IF-T/TLS inesperat en esperar la configuració."
+msgstr "S'ha trobat un paquet IF-T/TLS inesperat esperant la configuració.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l2680
 #: ../openconnect-strings.txt:3283
@@ -6527,21 +6325,19 @@ msgstr "S'ha rebut el paquet de dades de %d bytes\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l2702
 #: ../openconnect-strings.txt:3286
-#, fuzzy
 msgid "ESP rekey failed\n"
-msgstr "Ha fallat la reclau ESP"
+msgstr "Ha fallat la reclau ESP\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l2726
 #: ../openconnect-strings.txt:3289
-#, fuzzy
 msgid "Unknown Pulse packet\n"
-msgstr "Paquet Pulse desconegut"
+msgstr "Paquet Pulse desconegut\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l2904
 #: ../openconnect-strings.txt:3292
-#, c-format, fuzzy
+#, c-format
 msgid "Sending IF-T/TLS data packet of %d bytes\n"
-msgstr "S'està enviant un paquet de dades IF-T/TLS de bytes per centd"
+msgstr "S'està enviant un paquet de dades IF-T/TLS de %d bytes\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/script.c#l130
 #: ../openconnect-strings.txt:3295
@@ -6557,31 +6353,35 @@ msgstr "Descarta la divisió dolenta exclosa: «%s»\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/script.c#l161
 #: ../openconnect-strings.txt:3301
-#, c-format, fuzzy
-msgid "WARNING: Split include \"%s\" has host bits set, replacing with \"%s/%d\".\n"
+#, c-format
+msgid ""
+"WARNING: Split include \"%s\" has host bits set, replacing with \"%s/%d\".\n"
 msgstr ""
-"ADVERTIMENT la divisió inclou \"%s\" té els bits de l'amfitrió substituint "
-"per \"%s/%d\"."
+"Avís: la divisió inclou «%s» té els conjunt de bits de l'amfitrió. S'està "
+"substituint per «%s/%d».\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/script.c#l165
 #: ../openconnect-strings.txt:3305
-#, c-format, fuzzy
-msgid "WARNING: Split exclude \"%s\" has host bits set, replacing with \"%s/%d\".\n"
+#, c-format
+msgid ""
+"WARNING: Split exclude \"%s\" has host bits set, replacing with \"%s/%d\".\n"
 msgstr ""
-"ADVERTÈNCIA Divideix l'exclusió del \"%s\" té els bits de l'amfitrió "
-"substituint per \"%s/%d\"."
+"Avís: l'exclusió de la divisió «%s» té el conjunt de bits de l'amfitrió. "
+"S'està substituint per «%s/%d».\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/script.c#l272
 #: ../openconnect-strings.txt:3309
-#, c-format, fuzzy
+#, c-format
 msgid "Ignoring legacy network because address \"%s\" is invalid.\n"
-msgstr "Ignorant la xarxa antiga perquè l'adreça \"%s\" no és vàlida."
+msgstr "S'està ignorant la xarxa antiga perquè l'adreça «%s» no és vàlida.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/script.c#l277
 #: ../openconnect-strings.txt:3312
-#, c-format, fuzzy
+#, c-format
 msgid "Ignoring legacy network because netmask \"%s\" is invalid.\n"
-msgstr "Ignorant la xarxa antiga perquè la màscara de xarxa \"%s\" no és vàlida."
+msgstr ""
+"S'està ignorant la xarxa antiga perquè la màscara de xarxa «%s» no és "
+"vàlida.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/script.c#l553
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/script.c#l601
@@ -6784,7 +6584,7 @@ msgstr "Ha fallat select() per al sòcol d'ordres"
 #: ../openconnect-strings.txt:3422
 #, c-format
 msgid "openconnect_fopen_utf8() used with unsupported mode '%s'\n"
-msgstr "S'ha utilitzat openconnect_fopen_utf8() amb un mode no suportat «%s»\n"
+msgstr "openconnect_fopen_utf8() s'ha utilitzat amb un mode no admès «%s»\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/ssl.c#l955
 #: ../openconnect-strings.txt:3425
@@ -6806,9 +6606,9 @@ msgstr "El fitxer %s és buit\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/ssl.c#l975
 #: ../openconnect-strings.txt:3434
-#, c-format, fuzzy
+#, c-format
 msgid "File %s has suspicious size %zd\n"
-msgstr "El percentatge d'arxius té una mida sospitosa per centzd"
+msgstr "El fitxer %s té la mida sospitosa %zd\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/ssl.c#l984
 #: ../openconnect-strings.txt:3437
@@ -6894,8 +6694,8 @@ msgstr "S'està enviant el testimoni SSPI de %lu bytes\n"
 #, c-format
 msgid "Failed to send SSPI authentication token to proxy: %s\n"
 msgstr ""
-"Errada per enviar el testimoni d'autenticació SSPI al servidor intermediari:"
-" %s\n"
+"Errada per enviar el testimoni d'autenticació SSPI al servidor intermediari: "
+"%s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/sspi.c#l229
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/sspi.c#l257
@@ -6903,8 +6703,8 @@ msgstr ""
 #, c-format
 msgid "Failed to receive SSPI authentication token from proxy: %s\n"
 msgstr ""
-"Errada per rebre el testimoni d'autenticació SSPI del servidor intermediari:"
-" %s\n"
+"Errada per rebre el testimoni d'autenticació SSPI del servidor intermediari: "
+"%s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/sspi.c#l235
 #: ../openconnect-strings.txt:3486
@@ -7043,59 +6843,48 @@ msgstr "Format de PIN no vàlid; torneu a intentar.\n"
 msgid "Generating RSA token code\n"
 msgstr "S'està generant el codi de testimoni RSA\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-
-#. win32.c#l75
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-win32.c#l75
 #: ../openconnect-strings.txt:3558
 msgid "Error accessing registry key for network adapters\n"
 msgstr "Error en accedir a la clau de registre per als adaptadors de xarxa\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-
-#. win32.c#l101
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-win32.c#l101
 #: ../openconnect-strings.txt:3561
-#, c-format, fuzzy
+#, c-format
 msgid "Cannot read %s\\%s or is not string\n"
-msgstr "No es poden llegir els percentatges\\%s o no és una cadena"
+msgstr "No es pot llegir %s\\%s o no és una cadena\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-
-#. win32.c#l108
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-win32.c#l108
 #: ../openconnect-strings.txt:3564
-#, c-format, fuzzy
+#, c-format
 msgid "%s\\ComponentId is '%s' not '%s'\n"
-msgstr "per cents\\ComponentId és \"%s\" no \"%s\""
+msgstr "%s\\ComponentId és «%s», no «%s»\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-
-#. win32.c#l114
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-win32.c#l114
 #: ../openconnect-strings.txt:3567
 #, c-format
 msgid "Found %s at %s\n"
 msgstr "Trobat %s al %s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-
-#. win32.c#l131
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-win32.c#l131
 #: ../openconnect-strings.txt:3570
 #, c-format
 msgid "Cannot open registry key %s\n"
 msgstr "No es pot obrir la clau de registre %s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-
-#. win32.c#l142
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-win32.c#l142
 #: ../openconnect-strings.txt:3573
-#, c-format, fuzzy
+#, c-format
 msgid "Cannot read registry key %s\\%s or is not string\n"
-msgstr ""
-"No es pot llegir el percentatge de clau de registre\\%s o no és una cadena "
-"de text"
+msgstr "No es pot obrir la clau de registre %s\\%s o no és una cadena\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-
-#. win32.c#l158
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-win32.c#l158
 #: ../openconnect-strings.txt:3576
 msgid "No Windows-TAP adapters found. Is the driver installed?\n"
 msgstr ""
-"No s'han trobat adaptadors TAP per Windows. Està el controlador "
-"instal·lat?\n"
+"No s'han trobat adaptadors TAP per Windows. Està el controlador instal·lat?\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-
-#. win32.c#l192
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-win32.c#l192
 #: ../openconnect-strings.txt:3579
 #, c-format
 msgid ""
@@ -7105,43 +6894,37 @@ msgstr ""
 "GetAdapterIndex() ha fallat: %s\n"
 "Alternativament, s'utilitzarà GetAdaptersInfo()\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-
-#. win32.c#l206
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-win32.c#l206
 #: ../openconnect-strings.txt:3584
 #, c-format
 msgid "GetAdaptersInfo() failed: %s\n"
 msgstr "GetAdaptersInfo() ha fallat: %s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-
-#. win32.c#l241
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-win32.c#l241
 #: ../openconnect-strings.txt:3587
 #, c-format
 msgid "Ignoring non-matching TAP interface \"%s\"\n"
 msgstr "S'està ignorant la interfície TAP no concordant «%s»\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-
-#. win32.c#l252
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-win32.c#l252
 #: ../openconnect-strings.txt:3590
 #, c-format
 msgid "Failed to open %s\n"
 msgstr "Error en obrir %s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-
-#. win32.c#l257
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-win32.c#l257
 #: ../openconnect-strings.txt:3593
 #, c-format
 msgid "Opened tun device %s\n"
 msgstr "S'ha obert el dispositiu controlador de xarxa %s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-
-#. win32.c#l265
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-win32.c#l265
 #: ../openconnect-strings.txt:3596
 #, c-format
 msgid "Failed to obtain TAP driver version: %s\n"
 msgstr "Error en obtenir la versió del controlador TAP: %s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-
-#. win32.c#l271
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-win32.c#l271
 #: ../openconnect-strings.txt:3599
 #, c-format
 msgid "Error: TAP-Windows driver v9.9 or greater is required (found %ld.%ld)\n"
@@ -7149,71 +6932,60 @@ msgstr ""
 "Error: El controlador TAP de Windows  v9.9 o superior és requerit (s'ha "
 "trobat %ld.%ld)\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-
-#. win32.c#l292
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-win32.c#l292
 #: ../openconnect-strings.txt:3602
 #, c-format
 msgid "Failed to set TAP IP addresses: %s\n"
 msgstr "Error en configurar l'adreça IP TAP: %s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-
-#. win32.c#l304
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-
-#. win32.c#l430
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-win32.c#l304
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-win32.c#l430
 #: ../openconnect-strings.txt:3606
 #, c-format
 msgid "Failed to set TAP media status: %s\n"
 msgstr "Error en configurar l'estat del medi TAP: %s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-
-#. win32.c#l340
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-win32.c#l340
 #: ../openconnect-strings.txt:3609
 msgid "TAP device aborted connectivity. Disconnecting.\n"
 msgstr "El dispositiu TAP ha avortat la connectivitat. S'està desconnectant.\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-
-#. win32.c#l345
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-win32.c#l345
 #: ../openconnect-strings.txt:3612
 #, c-format
 msgid "Failed to read from TAP device: %s\n"
 msgstr "Error en llegir del dispositiu TAP: %s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-
-#. win32.c#l359
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-win32.c#l359
 #: ../openconnect-strings.txt:3615
 #, c-format
 msgid "Failed to complete read from TAP device: %s\n"
 msgstr "Error en completar la lectura des del dispositiu TAP: %s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-
-#. win32.c#l382
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-win32.c#l382
 #: ../openconnect-strings.txt:3618
 #, c-format
 msgid "Wrote %ld bytes to tun\n"
 msgstr "Escrits %ld bytes al controlador de xarxa\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-
-#. win32.c#l392
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-win32.c#l392
 #: ../openconnect-strings.txt:3621
 msgid "Waiting for tun write...\n"
 msgstr "S'està esperant l'escriptura del controlador de xarxa...\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-
-#. win32.c#l395
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-win32.c#l395
 #: ../openconnect-strings.txt:3624
 #, c-format
 msgid "Wrote %ld bytes to tun after waiting\n"
 msgstr "Escrits %ld bytes al controlador de xarxa després d'esperar\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-
-#. win32.c#l402
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-win32.c#l402
 #: ../openconnect-strings.txt:3627
 #, c-format
 msgid "Failed to write to TAP device: %s\n"
 msgstr "Error en escriure al dispositiu TAP: %s\n"
 
-#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-
-#. win32.c#l447
+#. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun-win32.c#l447
 #: ../openconnect-strings.txt:3630
 msgid "Spawning tunnel scripts is not yet supported on Windows\n"
 msgstr "La generació de scripts de túnel no està encara suportat en Windows\n"
@@ -7297,8 +7069,10 @@ msgid ""
 "To configure local networking, openconnect must be running as root\n"
 "See http://www.infradead.org/openconnect/nonroot.html for more information\n"
 msgstr ""
-"Per configurar la xarxa local, openconnect cal que sigui executat com a root\n"
-"Consulteu http://www.infradead.org/openconnect/nonroot.html per més informació\n"
+"Per configurar la xarxa local, openconnect cal que sigui executat com a "
+"root\n"
+"Consulteu http://www.infradead.org/openconnect/nonroot.html per més "
+"informació\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun.c#l322
 #: ../openconnect-strings.txt:3678
@@ -7349,9 +7123,9 @@ msgstr "TUNSIFHEAD"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun.c#l464
 #: ../openconnect-strings.txt:3702
-#, c-format, fuzzy
+#, c-format
 msgid "Failed to make tun socket nonblocking: %s\n"
-msgstr "No s'ha pogut fer que el sòcol «tun» no bloquegés el percentatge"
+msgstr "No s'ha pogut fer que el sòcol TUN no bloquegi: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/tun.c#l483
 #: ../openconnect-strings.txt:3705
@@ -7540,7 +7314,8 @@ msgstr "S'ha trobat %s/%s clau «%s» en «%s»\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/yubikey.c#l468
 #: ../openconnect-strings.txt:3804
 #, c-format
-msgid "Token '%s' not found on Yubikey '%s'. Searching for another Yubikey...\n"
+msgid ""
+"Token '%s' not found on Yubikey '%s'. Searching for another Yubikey...\n"
 msgstr ""
 "Testimoni «%s» no trobat en Yubikey «%s». S'està cercant una altra "
 "Yubikey...\n"
@@ -7549,8 +7324,8 @@ msgstr ""
 #: ../openconnect-strings.txt:3808
 msgid "Server is rejecting the Yubikey token; switching to manual entry\n"
 msgstr ""
-"El servidor està rebutjant el testimoni Yubikey, s'està canviant a l'entrada"
-" manual\n"
+"El servidor està rebutjant el testimoni Yubikey, s'està canviant a l'entrada "
+"manual\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/yubikey.c#l570
 #: ../openconnect-strings.txt:3811
@@ -7602,7 +7377,8 @@ msgstr ""
 #~ msgstr "No hi ha sols un xifrat DTLS\n"
 
 #~ msgid "Consider SPI 0x%x, seq %u against outgoing ESP setup\n"
-#~ msgstr "Considereu SPI 0x%x, seqüència %u contra configuració ESP de sortida\n"
+#~ msgstr ""
+#~ "Considereu SPI 0x%x, seqüència %u contra configuració ESP de sortida\n"
 
 #~ msgid "Failed to SHA1 input data for signing: %s\n"
 #~ msgstr "Error en l'entrada de dades SHA1 al signat: %s\n"
@@ -7636,8 +7412,8 @@ msgstr ""
 
 #~ msgid "Accepting later-than-expected ESP packet with seq %u (expected %u)\n"
 #~ msgstr ""
-#~ "S'està acceptant el paquet ESP més tard del que s'esperava amb seqüència %u "
-#~ "(s'esperava %u)\n"
+#~ "S'està acceptant el paquet ESP més tard del que s'esperava amb seqüència "
+#~ "%u (s'esperava %u)\n"
 
 #~ msgid "Password / SecurID"
 #~ msgstr "Contrasenya / SecurID"
@@ -7702,12 +7478,17 @@ msgstr ""
 
 #~ msgid ""
 #~ "WARNING: Server asked us to submit HIP report with md5sum %s.\n"
-#~ "VPN connectivity may be disabled or limited without HIP report submission.\n"
-#~ "You need to provide a --csd-wrapper argument with the HIP report submission script.\n"
+#~ "VPN connectivity may be disabled or limited without HIP report "
+#~ "submission.\n"
+#~ "You need to provide a --csd-wrapper argument with the HIP report "
+#~ "submission script.\n"
 #~ msgstr ""
-#~ "AVÍS: el servidor ens ha demanat que enviem un informe HIP amb md5sum %s. \n"
-#~ "La connectivitat VPN pot estar inhabilitada o limitada sense l'enviament d'informes HIP.\n"
-#~ "Heu de proporcionar un argument --csd-wrapper  amb l'script d'enviament d'informes HIP.\n"
+#~ "AVÍS: el servidor ens ha demanat que enviem un informe HIP amb md5sum "
+#~ "%s. \n"
+#~ "La connectivitat VPN pot estar inhabilitada o limitada sense l'enviament "
+#~ "d'informes HIP.\n"
+#~ "Heu de proporcionar un argument --csd-wrapper  amb l'script d'enviament "
+#~ "d'informes HIP.\n"
 
 #~ msgid "Unknown ESP %s algorithm: %s"
 #~ msgstr "Algoritme %s ESP desconegut: %s"
@@ -7720,13 +7501,15 @@ msgstr ""
 
 #~ msgid "Failed to set TLS priority string (\"%s\"): %s\n"
 #~ msgstr ""
-#~ "No s'ha pogut establir la cadena de caràcters de prioritat TLS («%s»): %s\n"
+#~ "No s'ha pogut establir la cadena de caràcters de prioritat TLS («%s»): "
+#~ "%s\n"
 
 #~ msgid "Got next CA '%s' from PKCS11\n"
 #~ msgstr "S'ha obtingut el següent CA «%s» de PKCS11\n"
 
 #~ msgid ""
-#~ "WARNING: GnuTLS returned incorrect issuer certs; authentication may fail!\n"
+#~ "WARNING: GnuTLS returned incorrect issuer certs; authentication may "
+#~ "fail!\n"
 #~ msgstr ""
 #~ "AVÍS: GnuTLS ha retornat un certificat emissor incorrecte; l'autenticació "
 #~ "pot haver fallat!\n"
@@ -7744,7 +7527,8 @@ msgstr ""
 #~ msgstr "S'ha rebut la sonda DPD MTU (%u bytes de %u)\n"
 
 #~ msgid "Timeout while waiting for DPD response; resending probe.\n"
-#~ msgstr "Temps mentre s'espera la resposta DPD; es torna a enviar el sondeig.\n"
+#~ msgstr ""
+#~ "Temps mentre s'espera la resposta DPD; es torna a enviar el sondeig.\n"
 
 #~ msgid "Timeout while waiting for DPD response; trying %d\n"
 #~ msgstr "Temps mentre s'espera la resposta DPD; s'està intentant %d\n"

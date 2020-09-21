@@ -7,7 +7,7 @@
 # facundo Dario Illanes <fdillanes@gmail.com>, 2013.
 # Ignacio Acevedo Carrera <zourer@gmail.com>, 2016.
 # Rodrigo <rodhos92@gmail.com>, 2018-2019.
-# Rodrigo Lledó <rodhos92@gmail.com>, 2019.
+# Rodrigo Lledó <rodhos92@gmail.com>, 2019-2020.
 # Daniel Mustieles <daniel.mustieles@gmail.com>, 2011-2020.
 #
 msgid ""
@@ -15,8 +15,8 @@ msgstr ""
 "Project-Id-Version: network-manager-openconnect.HEAD\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/NetworkManager-"
 "openconnect/issues\n"
-"POT-Creation-Date: 2020-04-29 13:14+0000\n"
-"PO-Revision-Date: 2020-05-14 17:56+0200\n"
+"POT-Creation-Date: 2020-09-09 15:48+0000\n"
+"PO-Revision-Date: 2020-09-21 08:42+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
 "Language: es_ES\n"
@@ -437,6 +437,8 @@ msgid ""
 "When SAML authentication is complete, specify destination form field by "
 "appending :field_name to login URL.\n"
 msgstr ""
+"Cuando se complete la autenticación SAML, especifique el campo del "
+"formulario de destino agregando: field_name a la URL de inicio de sesión.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-globalprotect.c#l130
 #: ../openconnect-strings.txt:25
@@ -445,6 +447,8 @@ msgid ""
 "Destination form field %s was specified; assuming SAML %s authentication is "
 "complete.\n"
 msgstr ""
+"Se especificó el campo del formulario de destino %s; asumiendo que la "
+"autenticación SAML %s está completa.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-globalprotect.c#l143
 #: ../openconnect-strings.txt:30
@@ -500,6 +504,8 @@ msgid ""
 "Please report %d unexpected values above (of which %d fatal) to <openconnect-"
 "devel@lists.infradead.org>\n"
 msgstr ""
+"Informe %d valores inesperados anteriores (de los cuales %d son fatales) a "
+"<openconnect-devel@lists.infradead.org>\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-globalprotect.c#l424
 #: ../openconnect-strings.txt:59
@@ -518,12 +524,14 @@ msgid ""
 "Ignoring portal's HIP report interval (%d minutes), because interval is "
 "already set to %d minutes.\n"
 msgstr ""
+"Ignorando el intervalo del informe HIP del portal (%d minutos), porque el "
+"intervalo ya está establecido en %d minutos.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-globalprotect.c#l461
 #: ../openconnect-strings.txt:70
 #, c-format
 msgid "Portal set HIP report interval to %d minutes).\n"
-msgstr ""
+msgstr "El portal estableció el intervalo de informe de HIP en %d minutos).\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-globalprotect.c#l501
 #: ../openconnect-strings.txt:73
@@ -606,7 +614,6 @@ msgstr "Falló al asignar memoria para la comunicación con TNCC\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-juniper.c#l312
 #: ../openconnect-strings.txt:117
-#| msgid "Failed to send start command to TNCC\n"
 msgid "Failed to send command to TNCC\n"
 msgstr "Falló al enviar el comando a TNCC\n"
 
@@ -663,7 +670,7 @@ msgstr "Se ha obtenido una nueva cookie DSPREAUTH de TNCC: %s\n"
 #: ../openconnect-strings.txt:147
 #, c-format
 msgid "Got reauth interval from TNCC: %d seconds\n"
-msgstr ""
+msgstr "Se obtuvo el intervalo de reautorización de TNCC: %d segundos\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-juniper.c#l517
 #: ../openconnect-strings.txt:150
@@ -890,10 +897,9 @@ msgstr "El script CSD «%s» salió anormalmente\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth.c#l1141
 #: ../openconnect-strings.txt:274
-#, fuzzy, c-format
-#| msgid "HIP script '%s' returned non-zero status: %d\n"
+#, c-format
 msgid "CSD script '%s' returned non-zero status: %d\n"
-msgstr "El script HIP «%s» devolvió un estado distinto de cero: %d\n"
+msgstr "El script CSD «%s» devolvió un estado distinto de cero: %d\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth.c#l1146
 #: ../openconnect-strings.txt:277
@@ -947,6 +953,8 @@ msgstr "POST XML activado\n"
 #: ../openconnect-strings.txt:302
 msgid "Couldn't fetch CSD stub. Proceeding anyway with CSD wrapper script.\n"
 msgstr ""
+"No se pudo recuperar el resguardo de CSD. Continuar de todos modos con el "
+"script de envoltura CSD.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth.c#l1446
 #: ../openconnect-strings.txt:305
@@ -1784,11 +1792,15 @@ msgstr "Falló al establecer los parámetros de sesión: %s\n"
 #, c-format
 msgid "GnuTLS used %d ClientHello random bytes; this should never happen\n"
 msgstr ""
+"GnuTLS utilizó %d bytes aleatorios de ClientHello; esto nunca debería "
+"suceder\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-dtls.c#l354
 #: ../openconnect-strings.txt:766
 msgid "GnuTLS sent insecure ClientHello random. Upgrade to 3.6.13 or newer.\n"
 msgstr ""
+"GnuTLS envió un ClientHello aleatorio inseguro. Actualice a 3.6.13 o más "
+"reciente.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls-dtls.c#l370
 #: ../openconnect-strings.txt:769
@@ -2508,9 +2520,9 @@ msgstr "Conectado a HTTPS en %s con ciphersuite %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls.c#l2302
 #: ../openconnect-strings.txt:1173
-#, fuzzy, c-format
+#, c-format
 msgid "Renegotiated SSL on %s with ciphersuite %s\n"
-msgstr "SSL renegociado en %s con ciphersuite %s"
+msgstr "SSL renegociado en %s con ciphersuite %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gnutls.c#l2456
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-pkcs11.c#l203
@@ -3070,6 +3082,10 @@ msgid ""
 "submission.\n"
 "    %s\n"
 msgstr ""
+"AVISO: El servidor nos solicitó enviar un informe HIP con md5sum %s.\n"
+"    La conectividad VPN se podría desactivar o limitar sin el envío de un "
+"informe HIP.\n"
+"    %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gpst.c#l925
 #: ../openconnect-strings.txt:1479
@@ -3077,6 +3093,8 @@ msgid ""
 "However, running the HIP report submission script on this platform is not "
 "yet implemented."
 msgstr ""
+"Sin embargo, aún no se ha implementado la ejecución del script de envío de "
+"informes HIP en esta plataforma."
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gpst.c#l927
 #: ../openconnect-strings.txt:1484
@@ -3084,6 +3102,8 @@ msgid ""
 "You need to provide a --csd-wrapper argument with the HIP report submission "
 "script."
 msgstr ""
+"Debe proporcionar un argumento --csd-wrapper con el script de envío del "
+"informe HIP."
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gpst.c#l937
 #: ../openconnect-strings.txt:1489
@@ -3195,7 +3215,7 @@ msgstr "Paquete desconocido. El volcado de la cabecera es el siguiente:\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gpst.c#l1257
 #: ../openconnect-strings.txt:1547
 msgid "GlobalProtect HIP check due\n"
-msgstr ""
+msgstr "Vencimiento de la verificación de GlobalProtect HIP\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gpst.c#l1269
 #: ../openconnect-strings.txt:1550
@@ -3356,7 +3376,7 @@ msgstr "El servidor SOCKS solicita un tipo de protección 0x%02x desconocido\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http-auth.c#l184
 #: ../openconnect-strings.txt:1637
 msgid "Attempting HTTP Basic authentication to proxy\n"
-msgstr "Intentando la autenticación HTTP Bacis en el proxy\n"
+msgstr "Intentando la autenticación HTTP básica en el proxy\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http-auth.c#l186
 #: ../openconnect-strings.txt:1640
@@ -3366,10 +3386,9 @@ msgstr "Intentando la autenticación HTTP básica en el servidor «%s»\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http-auth.c#l213
 #: ../openconnect-strings.txt:1643
-#, fuzzy, c-format
-#| msgid "Attempting HTTP Basic authentication to server '%s'\n"
+#, c-format
 msgid "Attempting HTTP Bearer authentication to server '%s'\n"
-msgstr "Intentando la autenticación HTTP básica en el servidor «%s»\n"
+msgstr "Intentando la autenticación HTTP portadora en el servidor «%s»\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http-auth.c#l227
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/http.c#l1324
@@ -3838,7 +3857,7 @@ msgstr ""
 #: ../openconnect-strings.txt:1909
 #, c-format
 msgid "Using %s. Features present:"
-msgstr ""
+msgstr "Usando %s. Características presentes:"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l615
 #: ../openconnect-strings.txt:1912
@@ -3989,13 +4008,11 @@ msgstr "La clave de frase de paso es un fsid de un sistema de archivos"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l826
 #: ../openconnect-strings.txt:1998
-#| msgid "Software token type: rsa, totp or hotp"
 msgid "Software token type: rsa, totp, hotp or oidc"
 msgstr "Tipo de testigo software: rsa, totp, hotp u oidc"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l827
 #: ../openconnect-strings.txt:2001
-#| msgid "Software token secret"
 msgid "Software token secret or oidc token"
 msgstr "Testigo software secreto o testigo oidc"
 
@@ -4078,7 +4095,6 @@ msgstr "Usar IP cuando al conectar a HOST"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l851
 #: ../openconnect-strings.txt:2049
-#| msgid "copy TOS / TCLASS when using DTLS"
 msgid "Copy TOS / TCLASS field into DTLS and ESP packets"
 msgstr "Copiar campo TOS / TCLASS en paquetes DTLS y ESP"
 
@@ -4233,6 +4249,7 @@ msgstr "Desactivar toda la compresión"
 #: ../openconnect-strings.txt:2139
 msgid "Set minimum Dead Peer Detection interval (in seconds)"
 msgstr ""
+"Establecer intervalo mínimo de detección de pares muertos (en segundos)"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l893
 #: ../openconnect-strings.txt:2142
@@ -4366,6 +4383,7 @@ msgstr "ID «%d» de usuario no válido: %s\n"
 #, c-format
 msgid "Unhandled autocomplete for option %d '--%s'. Please report.\n"
 msgstr ""
+"Autocompletar no controlado para la opción %d «--%s». Informe de esto.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l1414
 #: ../openconnect-strings.txt:2217
@@ -4444,8 +4462,7 @@ msgid ""
 msgstr ""
 "Desactivando todas las reutilizaciones de conexiones HTTP debido a la opción "
 "--no-http-keepalive.\n"
-"Si esto ayuda, por favor informe en <openconnect-devel@lists.infradead."
-"org>.\n"
+"Si esto ayuda, informe en <openconnect-devel@lists.infradead.org>.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l1681
 #: ../openconnect-strings.txt:2258
@@ -4488,6 +4505,11 @@ msgid ""
 "         override is necessary to connect to a server\n"
 "         to <openconnect-devel@lists.infradead.org>.\n"
 msgstr ""
+"AVISO: Especificó %s. Esto no debería ser\n"
+"         necesario; informe de casos en donde es\n"
+"         necesario sustituir una cadena de prioridad para\n"
+"         conectarse a un servidor\n"
+"         a <openconnect-devel@lists.infradead.org>.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l1813
 #: ../openconnect-strings.txt:2282
@@ -5095,6 +5117,10 @@ msgid ""
 "the newer Junos Pulse protocol. This version of OpenConnect has\n"
 "EXPERIMENTAL support for Pulse using --prot=pulse\n"
 msgstr ""
+"Esto parece indicar que el servidor ha desactivado el soporte para\n"
+"el Protocolo oNCP antiguo de Juniper, y solo permite conexiones usando\n"
+"el protocolo Junos Pulse más reciente. Esta versión de OpenConnect\n"
+"tiene soporte EXPERIMENTAL para Pulse usando --prot=pulse\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/oncp.c#l676
 #: ../openconnect-strings.txt:2626
@@ -6020,7 +6046,7 @@ msgstr "Contraseña secundaria:"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1132
 #: ../openconnect-strings.txt:3142
 msgid "Password expired. Please change password:"
-msgstr "La contraseña ha caducado. Por favor cámbiela:"
+msgstr "La contraseña ha caducado, cámbiela:"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1136
 #: ../openconnect-strings.txt:3145
@@ -6144,6 +6170,9 @@ msgid ""
 "Pulse server requested Host Checker; not yet supported\n"
 "Try Juniper mode (--protocol=nc)\n"
 msgstr ""
+"El servidor Pulse solicitó el «Comprobador de anfitrión»; aún no es "
+"compatible\n"
+"Pruebe el modo Juniper (--protocol=nc)\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1839
 #: ../openconnect-strings.txt:3216
@@ -6301,12 +6330,15 @@ msgstr "Descartar mala división que incluye: «%s»\n"
 msgid "Discard bad split exclude: \"%s\"\n"
 msgstr "Descartar mala división que excluye: «%s»\n"
 
+# A split tunnel configured to only tunnel traffic destined to a specific set of destinations is called a split-include tunnel. When configured to accept all traffic except traffic destined to a specific set of destinations, it is called a split-exclude tunnel.
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/script.c#l161
 #: ../openconnect-strings.txt:3301
 #, c-format
 msgid ""
 "WARNING: Split include \"%s\" has host bits set, replacing with \"%s/%d\".\n"
 msgstr ""
+"AVISO: La división que incluye «%s» tiene bits de anfitrión establecidos, "
+"reemplazándolos por «%s/%d».\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/script.c#l165
 #: ../openconnect-strings.txt:3305
@@ -6314,6 +6346,8 @@ msgstr ""
 msgid ""
 "WARNING: Split exclude \"%s\" has host bits set, replacing with \"%s/%d\".\n"
 msgstr ""
+"AVISO: La división que excluye «%s» tiene bits de anfitrión establecidos, "
+"reemplazándolos por «%s/%d».\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/script.c#l272
 #: ../openconnect-strings.txt:3309

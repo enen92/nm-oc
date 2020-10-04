@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: network-manager-openconnect master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/NetworkManager-"
 "openconnect/issues\n"
-"POT-Creation-Date: 2020-06-25 00:48+0000\n"
-"PO-Revision-Date: 2020-09-01 16:17+0700\n"
+"POT-Creation-Date: 2020-09-01 09:18+0000\n"
+"PO-Revision-Date: 2020-10-04 17:34+0700\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <gnome@i15n.org>\n"
 "Language: id\n"
@@ -3161,9 +3161,8 @@ msgstr "Paket tak dikenal. Dump header mengikuti:\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gpst.c#l1257
 #: ../openconnect-strings.txt:1547
-#, fuzzy
 msgid "GlobalProtect HIP check due\n"
-msgstr "Cek karena GlobalProtect HIP"
+msgstr "Saatnya pemeriksaan HIP GlobalProtect\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gpst.c#l1269
 #: ../openconnect-strings.txt:1550
@@ -3172,9 +3171,8 @@ msgstr "Cek atau laporan HIP gagal\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gpst.c#l1281
 #: ../openconnect-strings.txt:1553
-#, fuzzy
 msgid "GlobalProtect rekey due\n"
-msgstr "Globalprotect Pickering karena"
+msgstr "Saatnya rekey Globalprotect\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/gpst.c#l1286
 #: ../openconnect-strings.txt:1556
@@ -3692,9 +3690,8 @@ msgstr "Kompatibel dengan SSL VPN GlobalProtect Palo Alto Networks (PAN)"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/library.c#l171
 #: ../openconnect-strings.txt:1855
-#, fuzzy
 msgid "Pulse Connect Secure"
-msgstr "Aman Pulse Connect"
+msgstr "Pulse Connect Secure"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/library.c#l172
 #: ../openconnect-strings.txt:1858
@@ -4429,17 +4426,17 @@ msgstr "Identitas OS tidak sah \"%s\"\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l1791
 #: ../openconnect-strings.txt:2275
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "WARNING: You specified %s. This should not be\n"
 "         necessary; please report cases where a priority string\n"
 "         override is necessary to connect to a server\n"
 "         to <openconnect-devel@lists.infradead.org>.\n"
 msgstr ""
-"Peringatan: Anda ditentukan %s. Ini tidak boleh\n"
-"         diperlukan silakan laporkan kasus di mana string prioritas\n"
-"         yang diperlukan untuk menyambung ke server\n"
-"         ke <openconnect-devel@lists.infradead.org>."
+"Peringatan: Anda menyatakan %s. Ini mestinya tidak\n"
+"         perlu; silakan laporkan kasus dimana penimpaan string\n"
+"         prioritas diperlukan untuk menyambung ke server\n"
+"         ke <openconnect-devel@lists.infradead.org>.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l1813
 #: ../openconnect-strings.txt:2282
@@ -4531,9 +4528,8 @@ msgstr "Sesi diakhiri oleh server; keluar.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l2010
 #: ../openconnect-strings.txt:2333
-#, fuzzy
 msgid "User cancelled (SIGINT/SIGTERM); exiting.\n"
-msgstr "Pengguna dibatalkan (SIGINT/SIGTERM); Keluar."
+msgstr "Pengguna membatalkan (SIGINT/SIGTERM); keluar.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l2014
 #: ../openconnect-strings.txt:2336
@@ -4703,10 +4699,8 @@ msgstr "Tak bisa membuka berkas oidc\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l2570
 #: ../openconnect-strings.txt:2427
-#, fuzzy
-#| msgid "General failure in libstoken\n"
 msgid "General failure in oidc token\n"
-msgstr "Kegagalan umum dalam libstoken\n"
+msgstr "Kegagalan umum dalam token oidc\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/mainloop.c#l127
 #: ../openconnect-strings.txt:2430
@@ -5037,18 +5031,17 @@ msgstr "Respon server ke paket nama host salah 0x%02x\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/oncp.c#l647
 #: ../openconnect-strings.txt:2619
-#, fuzzy
 msgid ""
 "This seems to indicate that the server has disabled support for\n"
 "Juniper's older oNCP protocol, and only allows connections using\n"
 "the newer Junos Pulse protocol. This version of OpenConnect has\n"
 "EXPERIMENTAL support for Pulse using --prot=pulse\n"
 msgstr ""
-"Hal ini tampaknya menunjukkan bahwa server telah dinonaktifkan dukungan "
-"untuk\n"
-"Protokol oNCP Juniper yang lama, dan hanya memungkinkan koneksi menggunakan\n"
-"protokol junos Pulse yang lebih baru. Versi OpenConnect ini memiliki\n"
-"Dukungan EKSPERIMENTAL untuk Pulse menggunakan--Prot = Pulse"
+"Hal ini tampaknya menunjukkan bahwa server telah menonaktifkan\n"
+"dukungan untuk Protokol oNCP Juniper yang lama, dan hanya \n"
+"mengizinkan koneksi menggunakan protokol Junos Pulse yang lebih\n"
+"baru. Versi OpenConnect ini memiliki dukungan EKSPERIMENTAL untuk\n"
+"Pulse menggunakan --prot=pulse\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/oncp.c#l676
 #: ../openconnect-strings.txt:2626
@@ -5158,9 +5151,9 @@ msgstr "Paket data tak dikenal\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/oncp.c#l1063
 #: ../openconnect-strings.txt:2685
-#, fuzzy, c-format
+#, c-format
 msgid "Failed to set up ESP: %s\n"
-msgstr "Gagal untuk menyiapkan ESP: %s"
+msgstr "Gagal untuk menyiapkan ESP: %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/oncp.c#l1073
 #: ../openconnect-strings.txt:2688
@@ -5222,9 +5215,8 @@ msgstr "Inisialisasi sesi DTLSv1 gagal\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-dtls.c#l275
 #: ../openconnect-strings.txt:2721
-#, fuzzy
 msgid "Too large application ID size\n"
-msgstr "Ukuran ID aplikasi terlalu besar"
+msgstr "Ukuran ID aplikasi terlalu besar\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-dtls.c#l308
 #: ../openconnect-strings.txt:2724
@@ -5278,9 +5270,9 @@ msgstr "SSL_set_session() gagal\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-dtls.c#l606
 #: ../openconnect-strings.txt:2752
-#, fuzzy, c-format
+#, c-format
 msgid "Established DTLS connection (using OpenSSL). Ciphersuite %s-%s.\n"
-msgstr "Menjalin koneksi DTLS (menggunakan OpenSSL). Kamar ciphersuite %s- %s."
+msgstr "Koneksi DTLS terjalin (menggunakan OpenSSL). Ciphersuite %s-%s.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-dtls.c#l643
 #: ../openconnect-strings.txt:2755
@@ -5855,9 +5847,8 @@ msgstr "Baca %d byte dari record IF-T/TLS\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l607
 #: ../openconnect-strings.txt:3074
-#, fuzzy
 msgid "Short write to IF-T/TLS\n"
-msgstr "Menulis singkat ke IF-T/TLS"
+msgstr "Menulis singkat ke IF-T/TLS\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l620
 #: ../openconnect-strings.txt:3077
@@ -5873,15 +5864,13 @@ msgstr "Galat saat membuat paket EAP\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1486
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1549
 #: ../openconnect-strings.txt:3085
-#, fuzzy
 msgid "Unexpected IF-T/TLS authentication challenge:\n"
-msgstr "Tantangan otentikasi IF-T/TLS yang tak terduga:"
+msgstr "Tantangan otentikasi IF-T/TLS yang tak terduga:\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l693
 #: ../openconnect-strings.txt:3088
-#, fuzzy
 msgid "Unexpected EAP-TTLS payload:\n"
-msgstr "Beban EAP-TTLS yang tidak terduga:"
+msgstr "Payload EAP-TTLS yang tidak terduga:\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l726
 #: ../openconnect-strings.txt:3091
@@ -5908,9 +5897,8 @@ msgstr "Realm:"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l838
 #: ../openconnect-strings.txt:3104
-#, fuzzy
 msgid "Choose Pulse user realm:"
-msgstr "Pilih wilayah pengguna Pulse:"
+msgstr "Pilih realm pengguna Pulse:"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l854
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1616
@@ -5921,9 +5909,8 @@ msgstr "Gagal mengurai AVP\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l921
 #: ../openconnect-strings.txt:3112
-#, fuzzy
 msgid "Session limit reached. Choose session to kill:\n"
-msgstr "Batas sesi tercapai. Pilih sesi untuk membunuh:"
+msgstr "Batas sesi tercapai. Pilih sesi untuk dibunuh:\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l926
 #: ../openconnect-strings.txt:3115
@@ -6035,9 +6022,8 @@ msgstr "Galat saat membuat permintaan sambungan Pulse\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1446
 #: ../openconnect-strings.txt:3181
-#, fuzzy
 msgid "Unexpected response to IF-T/TLS version negotiation:\n"
-msgstr "Respons tak terduga untuk negosiasi versi IF-T/TLS:"
+msgstr "Respons tak terduga untuk negosiasi versi IF-T/TLS:\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1451
 #: ../openconnect-strings.txt:3184
@@ -6072,11 +6058,12 @@ msgstr "Kegagalan autentikasi: Kode 0x%02x\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1753
 #: ../openconnect-strings.txt:3201
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Unknown D73 prompt value 0x%x. Will prompt for both username and password.\n"
 msgstr ""
-"Unknown D73 nilai prompt 0x% x. Akan meminta kedua username dan password."
+"Nilai sapaan D73 yang tak dikenal 0x%x. Akan meminta nama pengguna dan kata "
+"sandi.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1756
 #: ../openconnect-strings.txt:3205
@@ -6100,9 +6087,8 @@ msgstr ""
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1839
 #: ../openconnect-strings.txt:3216
-#, fuzzy
 msgid "Unhandled Pulse authentication packet, or authentication failure\n"
-msgstr "Paket otentikasi pulsa tidak ditangani, atau kegagalan otentikasi"
+msgstr "Paket otentikasi Pulse tidak ditangani, atau kegagalan otentikasi\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l1855
 #: ../openconnect-strings.txt:3219
@@ -6212,15 +6198,13 @@ msgstr "Penyiapan ESP tidak valid\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l2521
 #: ../openconnect-strings.txt:3277
-#, fuzzy
 msgid "Bad IF-T/TLS packet when expecting configuration:\n"
-msgstr "Paket buruk jika-T/TLS saat mengharapkan konfigurasi:"
+msgstr "Paket IF-T/TLS yang buruk saat mengharapkan konfigurasi:\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l2529
 #: ../openconnect-strings.txt:3280
-#, fuzzy
 msgid "Unexpected IF-T/TLS packet when expecting configuration.\n"
-msgstr "Tak terduga jika-T/TLS paket ketika mengharapkan konfigurasi."
+msgstr "Paket IF-T/TLS yang tak diduga ketika mengharapkan konfigurasi.\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/pulse.c#l2680
 #: ../openconnect-strings.txt:3283
@@ -7225,13 +7209,3 @@ msgstr "menghitung perintah"
 #: ../openconnect-strings.txt:3820
 msgid "Unrecognised response from Yubikey when generating tokencode\n"
 msgstr "Respons tak dikenal dari Yubikey ketika membuat kode token\n"
-
-#~ msgid ""
-#~ "Ignoring portal's HIP report interval (%d minutes), because no HIP report "
-#~ "script provided.\n"
-#~ msgstr ""
-#~ "Mengabaikan interval laporan HIP portal (%d menit), karena tidak ada "
-#~ "skrip laporan HIP yang disediakan.\n"
-
-#~ msgid "Failed to send cookie to TNCC\n"
-#~ msgstr "Gagal mengirim cookie ke TNCC\n"

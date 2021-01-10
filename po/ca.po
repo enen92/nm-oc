@@ -640,7 +640,7 @@ msgstr "Camp desconegut d'àrea de text: «%s»\n"
 #. juniper.c#l307
 #: ../openconnect-strings.txt:114
 msgid "Failed to allocate memory for communication with TNCC\n"
-msgstr "Error en assignar memòria per comunicar-se amb TNCC\n"
+msgstr "Error en assignar memòria per a comunicar-se amb TNCC\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/auth-
 #. juniper.c#l312
@@ -4393,7 +4393,7 @@ msgstr "Inhabilita DTLS i ESP"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l895
 #: ../openconnect-strings.txt:2148
 msgid "OpenSSL ciphers to support for DTLS"
-msgstr "Xifrat OpenSSL per suportar a DTLS"
+msgstr "Xifrat OpenSSL per a suportar a DTLS"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l896
 #: ../openconnect-strings.txt:2151
@@ -4413,7 +4413,7 @@ msgstr "Capçalera HTTP de l'usuari-agent: camp"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l900
 #: ../openconnect-strings.txt:2160
 msgid "Local hostname to advertise to server"
-msgstr "Nom d'amfitrió local per publicitar al servidor"
+msgstr "Nom d'amfitrió local per a publicitar al servidor"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/main.c#l901
 #: ../openconnect-strings.txt:2163
@@ -4993,7 +4993,7 @@ msgstr "Cadena testimoni de base32 no vàlida\n"
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/oath.c#l112
 #: ../openconnect-strings.txt:2475
 msgid "Failed to allocate memory to decode OATH secret\n"
-msgstr "Error en assignar memòria per descodificar el secret OATH\n"
+msgstr "Error en assignar memòria per a descodificar el secret OATH\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/oath.c#l215
 #: ../openconnect-strings.txt:2478

@@ -5397,14 +5397,14 @@ msgstr "S'ha enviat habilitació ESP de control de paquets\n"
 #: ../openconnect-strings.txt:2702
 #, c-format
 msgid "ERROR: %s() called with invalid UTF-8 for '%s' argument\n"
-msgstr "ERROR: %s() cridada amb UTF-8 no vàlida de l'argument «%s»\n"
+msgstr "ERROR: %s() cridada amb UTF-8 no vàlida per a l'argument «%s»\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
 #. dtls.c#l94
 #: ../openconnect-strings.txt:2705
 #, c-format
 msgid "Unable to calculate DTLS overhead for %s\n"
-msgstr "No es pot calcular la sobrecarrega DTLS per a %s\n"
+msgstr "No es pot calcular la sobrecàrrega DTLS per a %s\n"
 
 #. http://git.infradead.org/users/dwmw2/openconnect.git/blob/f07242df8a:/openssl-
 #. dtls.c#l210

@@ -345,7 +345,7 @@ get_ip4_routes (void)
 
 			errno = 0;
 			tmp_prefix = strtol (tmp, NULL, 10);
-			if (errno || tmp_prefix <= 0 || tmp_prefix > 32) {
+			if (errno || tmp_prefix < 0 || tmp_prefix > 32) {
 				_LOGW ("Ignoring invalid static route prefix '%s'", tmp ? tmp : "NULL");
 				continue;
 			}
@@ -419,7 +419,7 @@ get_ip6_routes (void)
 
 			errno = 0;
 			tmp_prefix = strtol (tmp, NULL, 10);
-			if (errno || tmp_prefix <= 0 || tmp_prefix > 128) {
+			if (errno || tmp_prefix < 0 || tmp_prefix > 128) {
 				_LOGW ("Ignoring invalid static route prefix '%s'", tmp ? tmp : "NULL");
 				continue;
 			}

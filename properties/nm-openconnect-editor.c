@@ -513,6 +513,8 @@ update_connection (NMVpnEditor *iface,
 	                             NM_SETTING_SECRET_FLAG_NOT_SAVED, NULL);
 	nm_setting_set_secret_flags (NM_SETTING (s_vpn), "gateway",
 	                             NM_SETTING_SECRET_FLAG_NOT_SAVED, NULL);
+	nm_setting_set_secret_flags (NM_SETTING (s_vpn), "resolve",
+	                             NM_SETTING_SECRET_FLAG_NOT_SAVED, NULL);
 
 	/* These are purely internal data for the auth-dialog, and should be stored */
 	nm_setting_set_secret_flags (NM_SETTING (s_vpn), "xmlconfig",

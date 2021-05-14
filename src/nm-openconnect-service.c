@@ -102,6 +102,7 @@ static const ValidProperty valid_secrets[] = {
 	{ NM_OPENCONNECT_KEY_COOKIE,  G_TYPE_STRING, 0, 0 },
 	{ NM_OPENCONNECT_KEY_GATEWAY, G_TYPE_STRING, 0, 0 },
 	{ NM_OPENCONNECT_KEY_GWCERT,  G_TYPE_STRING, 0, 0 },
+	{ NM_OPENCONNECT_KEY_RESOLVE, G_TYPE_STRING, 0, 0 },
 	{ NULL,                       G_TYPE_NONE, 0, 0 }
 };
 
@@ -395,7 +396,7 @@ nm_openconnect_start_openconnect_binary (NMOpenconnectPlugin *plugin,
 	gint stdin_fd;
 	char csd_user_arg[60];
 	const char *props_vpn_gw, *props_cookie, *props_cacert, *props_mtu, *props_gwcert, *props_proxy;
-	const char *props_csd_enable, *props_csd_wrapper;
+	const char *props_csd_enable, *props_csd_wrapper, *props_resolve;
 	const char *protocol;
 
 	/* Find openconnect */
@@ -437,6 +438,7 @@ nm_openconnect_start_openconnect_binary (NMOpenconnectPlugin *plugin,
 		return -1;
 	}
 	props_gwcert = nm_setting_vpn_get_secret (s_vpn, NM_OPENCONNECT_KEY_GWCERT);
+	props_resolve = nm_setting_vpn_get_secret (s_vpn, NM_OPENCONNECT_KEY_RESOLVE);
 
 	props_cacert = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_CACERT);
 	props_mtu = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_MTU);
@@ -511,6 +513,11 @@ nm_openconnect_start_openconnect_binary (NMOpenconnectPlugin *plugin,
 	}
 
 	g_ptr_array_add (openconnect_argv, (gpointer) props_vpn_gw);
+
+	if (props_resolve && strlen(props_resolve)) {
+		g_ptr_array_add (openconnect_argv, (gpointer) "--resolve");
+		g_ptr_array_add (openconnect_argv, (gpointer) props_resolve);
+	}
 
 	if (gl.log_level >= LOG_INFO) {
 		g_ptr_array_add (openconnect_argv, (gpointer) "--verbose");

@@ -154,6 +154,7 @@ static void keyring_store_passwords(gpointer key, gpointer value, gpointer user_
 typedef struct auth_ui_data {
 	char *vpn_name;
 	char *vpn_uuid;
+	gboolean connect_urlpath;
 	GHashTable *options;
 	GHashTable *secrets;
 	GHashTable *success_secrets;
@@ -1084,6 +1085,9 @@ static int get_config (auth_ui_data *ui_data,
 #endif
 		return -EINVAL;
 
+	if (!g_strcmp0(protocol, "pulse"))
+		ui_data->connect_urlpath = TRUE;
+
 	cafile = g_hash_table_lookup (options, NM_OPENCONNECT_KEY_CACERT);
 	if (cafile)
 		openconnect_set_cafile(vpninfo, OC3DUP (cafile));
@@ -1294,6 +1298,66 @@ static void hash_table_merge (GHashTable *old_hash, GHashTable *new_hash)
 	g_hash_table_foreach_steal (old_hash, &hash_merge_one, new_hash);
 }
 
+
+static char *oc_server_url(auth_ui_data *ui_data)
+{
+#if OPENCONNECT_CHECK_VER(5,7)
+	return g_strdup(openconnect_get_connect_url(ui_data->vpninfo));
+#elif OPENCONNECT_CHECK_VER(5,3)
+	/* This is basically what OpenConnect does to create it for us,
+	 * in newer versions. Ideally we wouldn't have to get involved
+	 * in any of this, but for backward compatibiity we can tolerate
+	 * it because it lets us use the --resolve trick, and thus fix
+	 * things for users whose servers need SNI, without having to
+	 * upgrade openconnect first. */
+	const char *dnsname = openconnect_get_dnsname(ui_data->vpninfo);
+	int port = openconnect_get_port(ui_data->vpninfo);
+	const char *urlpath = NULL;
+
+	if (ui_data->connect_urlpath)
+		urlpath = openconnect_get_urlpath(ui_data->vpninfo);
+
+	if (port == 443)
+		return g_strdup_printf("https://%s/%s",
+				       dnsname, urlpath ? urlpath : "");
+	else
+		return g_strdup_printf("https://%s:%d/%s",
+				       dnsname, port, urlpath ? urlpath : "");
+#else
+	/* Prior to OpenConnect v7.07 (API 5.3) openconnect didn't have the
+	 * --resolve argument, so needs the IP address — which confusingly
+	 * is what it returns from openconnect_get_hostname() — in order to
+	 * ensure that it connects to the same server we authenticated to,
+	 * even when round robin or geo DNS would give a different lookup.
+	 *
+	 * This does mean that SNI-based proxies on the server end are going
+	 * to fail to find the right target, for older OpenConnect. */
+	return g_strdup_printf ("%s:%d",
+				openconnect_get_hostname(ui_data->vpninfo),
+				openconnect_get_port(ui_data->vpninfo));
+#endif
+}
+
+static char *oc_server_resolve(struct openconnect_info *vpninfo)
+{
+	/* Versions older than OpenConnect v7.07 (API 5.3) didn't
+	 * support the --resolve argument. Don't confuse them. */
+#if OPENCONNECT_CHECK_VER(5,3)
+	const char *ipaddr = openconnect_get_hostname(vpninfo);
+	const char *dnsname = openconnect_get_dnsname(vpninfo);
+
+	if (g_strcmp0(ipaddr, dnsname)) {
+		/* Strip the [] surrounding IPv6 literals. */
+		int l = strlen(ipaddr);
+		if (ipaddr[0] == '[' && ipaddr[l-1] == ']') {
+			ipaddr++;
+			l -=2;
+		}
+		return g_strdup_printf("%s:%.*s", dnsname, l, ipaddr);
+	}
+#endif
+	return NULL;
+}
 static gboolean cookie_obtained(auth_ui_data *ui_data)
 {
 	ui_data->getting_cookie = FALSE;
@@ -1331,10 +1395,14 @@ static gboolean cookie_obtained(auth_ui_data *ui_data)
 		/* Merge in the three *real* secrets that are actually used
 		   by nm-openconnect-service to make the connection */
 		key = g_strdup (NM_OPENCONNECT_KEY_GATEWAY);
-		value = g_strdup_printf ("%s:%d",
-					 openconnect_get_hostname(ui_data->vpninfo),
-					 openconnect_get_port(ui_data->vpninfo));
+		value = oc_server_url(ui_data);
 		g_hash_table_insert (ui_data->secrets, key, value);
+
+		value = oc_server_resolve(ui_data->vpninfo);
+		if (value) {
+			key = g_strdup (NM_OPENCONNECT_KEY_RESOLVE);
+			g_hash_table_insert (ui_data->secrets, key, value);
+		}
 
 		key = g_strdup (NM_OPENCONNECT_KEY_COOKIE);
 		value = g_strdup (openconnect_get_cookie (ui_data->vpninfo));

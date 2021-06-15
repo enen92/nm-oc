@@ -22,13 +22,13 @@ make po/openconnect.pot || exit 1
 popd
 
 COMMIT=$(echo $COMMIT | cut -c1-10)
-GITWEB=http://git.infradead.org/users/dwmw2/openconnect.git/blob/${COMMIT}:/
+GITWEB=https://git.infradead.org/users/dwmw2/openconnect.git/blob/${COMMIT}:/
 OUTFILE=openconnect-strings-$COMMIT.txt
 
 cat >$OUTFILE <<EOF
 This file contains strings from the OpenConnect VPN client, found at
-http://www.infradead.org/openconnect/ and browseable in gitweb at
-http://git.infradead.org/users/dwmw2/openconnect.git
+https://www.infradead.org/openconnect/ and browseable in gitweb at
+https://git.infradead.org/users/dwmw2/openconnect.git
 
 We do this because NetworkManager-openconnect authentication dialog
 uses a lot of strings from libopenconnect, which also need to be

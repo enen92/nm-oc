@@ -16,15 +16,15 @@ msgstr ""
 "Project-Id-Version: network-manager-openconnect.HEAD\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/NetworkManager-"
 "openconnect/issues\n"
-"POT-Creation-Date: 2021-07-28 14:31+0000\n"
-"PO-Revision-Date: 2021-08-16 09:14+0200\n"
+"POT-Creation-Date: 2021-08-16 07:16+0000\n"
+"PO-Revision-Date: 2021-09-01 13:44+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Gtranslator 40.0\n"
+"X-Generator: Poedit 3.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-DL-Team: es\n"
 "X-DL-Module: NetworkManager-openconnect\n"
@@ -428,7 +428,7 @@ msgstr ""
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l131
 #: ../openconnect-strings.txt:14
 msgid "No ANsession cookie found\n"
-msgstr ""
+msgstr "No se encontraron cookies de ANsession\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l159
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/http.c#l127
@@ -441,50 +441,50 @@ msgstr "Cookie «%s» no válida\n"
 #: ../openconnect-strings.txt:21
 #, c-format
 msgid "Found DNS server %s\n"
-msgstr ""
+msgstr "Se encontró el servidor DNS %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l392
 #: ../openconnect-strings.txt:24
 #, c-format
 msgid "Got search domain '%s'\n"
-msgstr ""
+msgstr "Se obtuvo el dominio de búsqueda «%s»\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l479
 #: ../openconnect-strings.txt:27
 #, c-format
 msgid "Unknown Array config element '%s'\n"
-msgstr ""
+msgstr "Elemento de configuración de matriz «%s» desconocido\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l518
 #: ../openconnect-strings.txt:30
 #, c-format
 msgid "Initial config: Speed tunnel %d, enc %d, DPD %d\n"
-msgstr ""
+msgstr "Config. inicial: túnel rápido %d, cif. %d, DPD %d\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l549
 #: ../openconnect-strings.txt:33
 msgid "Short write in Array JSON negotiation\n"
-msgstr ""
+msgstr "Escritura corta en la negociación JSON de matriz\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l558
 #: ../openconnect-strings.txt:36
 msgid "Failed to read Array JSON response\n"
-msgstr ""
+msgstr "Falló al leer la respuesta JSON de matriz\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l567
 #: ../openconnect-strings.txt:39
 msgid "Unexpected response to Array JSON request\n"
-msgstr ""
+msgstr "Respuesta inesperada a la solicitud JSON de matriz\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l580
 #: ../openconnect-strings.txt:42
 msgid "Failed to parse Array JSON response\n"
-msgstr ""
+msgstr "Falló al analizar la respuesta JSON de matriz\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l660
 #: ../openconnect-strings.txt:45
 msgid "Error creating array negotiation request\n"
-msgstr ""
+msgstr "Error al crear la solicitud de negociación de matriz\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l676
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/f5.c#l666
@@ -499,34 +499,34 @@ msgstr "Resultado %d del servidor inesperado\n"
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l699
 #: ../openconnect-strings.txt:55
 msgid "Error building Array DTLS negotiation packet\n"
-msgstr ""
+msgstr "Error al construir el paquete de negociación DTLS de matriz\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l717
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l764
 #: ../openconnect-strings.txt:59
 msgid "Short write in array negotiation\n"
-msgstr ""
+msgstr "Escritura corta en la negociación de matriz\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l727
 #: ../openconnect-strings.txt:62
 msgid "Failed to read UDP negotiation response\n"
-msgstr ""
+msgstr "Falló al leer la respuesta de negociación UDP\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l739
 #: ../openconnect-strings.txt:65
 #, c-format
 msgid "DTLS enabled on port %d\n"
-msgstr ""
+msgstr "DTLS activado en el puerto %d\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l751
 #: ../openconnect-strings.txt:68
 msgid "Refusing non-DTLS UDP tunnel\n"
-msgstr ""
+msgstr "Rechazando túnel UDP sin DTLS\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l773
 #: ../openconnect-strings.txt:71
 msgid "Failed to read ipff response\n"
-msgstr ""
+msgstr "Falló al leer la respuesta de ipff\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l826
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l1061
@@ -559,7 +559,7 @@ msgstr "Paquete corto recibido (%d bytes)\n"
 #: ../openconnect-strings.txt:98
 #, c-format
 msgid "Receive control packet of type %x:\n"
-msgstr ""
+msgstr "Recibir paquete de control de tipo %x:\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l860
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/pulse.c#l2661
@@ -598,27 +598,27 @@ msgstr "Renegociación fallida; intentando un túnel nuevo\n"
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l938
 #: ../openconnect-strings.txt:125
 msgid "TCP Dead Peer Detection detected dead peer!\n"
-msgstr ""
+msgstr "La detección de pares muertos de TCP detectó un par muerto.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l942
 #: ../openconnect-strings.txt:128
 msgid "TCP reconnect failed\n"
-msgstr ""
+msgstr "Falló la reconexión de TCP\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l958
 #: ../openconnect-strings.txt:131
 msgid "Send TCP DPD\n"
-msgstr ""
+msgstr "Enviar DPD de TCP\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l975
 #: ../openconnect-strings.txt:134
 msgid "Send TCP Keepalive\n"
-msgstr ""
+msgstr "Enviar Keepalive de TCP\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l991
 #: ../openconnect-strings.txt:137
 msgid "Sending DTLS off packet\n"
-msgstr ""
+msgstr "Enviando paquete sin DTLS\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l1001
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/cstp.c#l1181
@@ -645,7 +645,7 @@ msgstr "Falló al recibir el testigo de autenticación SSPI del proxy: %s\n"
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l1085
 #: ../openconnect-strings.txt:154
 msgid "DTLS session established\n"
-msgstr ""
+msgstr "Sesión DTLS establecida\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l1098
 #: ../openconnect-strings.txt:157
@@ -660,7 +660,7 @@ msgstr ""
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l1112
 #: ../openconnect-strings.txt:163
 msgid "Received unknown DTLS packet\n"
-msgstr ""
+msgstr "Se recibió un paquete DTLS desconocido\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l1120
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/ppp.c#l1747

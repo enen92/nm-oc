@@ -16,8 +16,8 @@ msgstr ""
 "Project-Id-Version: network-manager-openconnect.HEAD\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/NetworkManager-"
 "openconnect/issues\n"
-"POT-Creation-Date: 2021-09-02 10:51+0000\n"
-"PO-Revision-Date: 2021-09-02 14:22+0200\n"
+"POT-Creation-Date: 2021-09-02 12:24+0000\n"
+"PO-Revision-Date: 2021-09-03 15:53+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
 "Language: es_ES\n"
@@ -3600,6 +3600,8 @@ msgid ""
 "IPv6 gateway address in config XML (%s) differs from external gateway "
 "address (%s).\n"
 msgstr ""
+"La dirección de la puerta de enlace IPv6 en el XML de configuración (%s) "
+"difiere de la dirección de la puerta de enlace externa (%s).\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/gpst.c#l427
 #: ../openconnect-strings.txt:1779
@@ -3610,6 +3612,11 @@ msgid ""
 "<openconnect-devel@lists.infradead.org>, including any problems\n"
 "with ESP or other apparent loss of connectivity or performance.\n"
 msgstr ""
+"La dirección de configuración XML <connected-gw-ip> (%s) difiere de la "
+"dirección\n"
+"de la puerta de enlace externa (% s). Informe de esto a\n"
+"<openconnect-devel@lists.infradead.org>, incluido cualquier problema\n"
+"con ESP u otra pérdida aparente de conectividad o rendimiento.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/gpst.c#l505
 #: ../openconnect-strings.txt:1786
@@ -3645,6 +3652,8 @@ msgid ""
 "GlobalProtect IPv6 support is experimental. Please report results to "
 "<openconnect-devel@lists.infradead.org>.\n"
 msgstr ""
+"El soporte de GlobalProtect para IPv6 es experimental. Informe los "
+"resultados a <openconnect-devel@lists.infradead.org>.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/gpst.c#l597
 #: ../openconnect-strings.txt:1804
@@ -3652,6 +3661,8 @@ msgid ""
 "Did not receive ESP keys and matching gateway in GlobalProtect config; "
 "tunnel will be TLS only.\n"
 msgstr ""
+"No se recibieron claves ESP y la puerta de enlace coincidente en la "
+"configuración de GlobalProtect. El túnel será solo TLS.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/gpst.c#l664
 #: ../openconnect-strings.txt:1809
@@ -3774,6 +3785,7 @@ msgstr "El script HIP «%s» devolvió un estado distinto de cero: %d\n"
 #, c-format
 msgid "HIP script '%s' completed successfully (report is %d bytes).\n"
 msgstr ""
+"El script HIP «%s» se completó correctamente (el informe tiene %d bytes).\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/gpst.c#l967
 #: ../openconnect-strings.txt:1874
@@ -3896,7 +3908,7 @@ msgstr "Enviando paquete de datos IPv%d de %d bytes\n"
 #: ../openconnect-strings.txt:1939
 #, c-format
 msgid "ICMPv%d probe packet (seq %d) for GlobalProtect ESP:\n"
-msgstr ""
+msgstr "Paquete de rastreo ICMPv%d (sec %d) para GlobalProtect ESP:\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/gpst.c#l1498
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/oncp.c#l1268
@@ -4416,7 +4428,7 @@ msgstr "Compatible con la VPN Pulse Connect Secure SSL"
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/library.c#l197
 #: ../openconnect-strings.txt:2233
 msgid "F5 BIG-IP SSL VPN"
-msgstr ""
+msgstr "VPN SSL F5 BIG-IP"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/library.c#l198
 #: ../openconnect-strings.txt:2236
@@ -4444,17 +4456,17 @@ msgstr "PPP sobre TLS"
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/library.c#l238
 #: ../openconnect-strings.txt:2248
 msgid "Unauthenticated RFC1661/RFC1662 PPP over TLS, for testing"
-msgstr ""
+msgstr "RFC1661/RFC1662 PPP sin autenticar sobre TLS, para pruebas"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/library.c#l247
 #: ../openconnect-strings.txt:2251
 msgid "Array SSL VPN"
-msgstr ""
+msgstr "Matriz VPN SSL"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/library.c#l248
 #: ../openconnect-strings.txt:2254
 msgid "Compatible with Array Networks SSL VPN"
-msgstr ""
+msgstr "Compatible con redes de matriz VPN SSL"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/library.c#l321
 #: ../openconnect-strings.txt:2257
@@ -5066,7 +5078,7 @@ msgstr "No intentar autenticación XML POST"
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/main.c#l960
 #: ../openconnect-strings.txt:2607
 msgid "Allow use of the ancient, insecure 3DES and RC4 ciphers"
-msgstr ""
+msgstr "Permitir el uso de cifrados 3DES y RC4 antiguos e inseguros"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/main.c#l982
 #: ../openconnect-strings.txt:2610
@@ -5282,6 +5294,8 @@ msgid ""
 "Cannot enable insecure 3DES or RC4 ciphers, because the library\n"
 "%s no longer supports them.\n"
 msgstr ""
+"No se pueden activar cifrados 3DES o RC4 inseguros porque la biblioteca\n"
+"%s ya no los admite.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/main.c#l1763
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/main.c#l1783
@@ -5461,6 +5475,8 @@ msgid ""
 "Insecurely accepting certificate from VPN server \"%s\" because you ran with "
 "--servercert=ACCEPT.\n"
 msgstr ""
+"Aceptando certificado de forma insegura del servidor VPN «%s» porque lo "
+"ejecutó con --servercert=ACCEPT.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/main.c#l2324
 #: ../openconnect-strings.txt:2822
@@ -5475,6 +5491,8 @@ msgid ""
 "None of the %d fingerprint(s) specified via --servercert match server's "
 "certificate: %s\n"
 msgstr ""
+"Ninguna de las %d huellas digitales especificadas mediante --servercert "
+"coincide con el certificado del servidor: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/main.c#l2341
 #: ../openconnect-strings.txt:2830
@@ -5638,7 +5656,7 @@ msgstr "Retrasando túnel con motivo: %s\n"
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/mainloop.c#l245
 #: ../openconnect-strings.txt:2918
 msgid "Delaying cancel (immediate callback).\n"
-msgstr ""
+msgstr "Retrasando cancelar (devolución de llamada inmediata).\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/mainloop.c#l248
 #: ../openconnect-strings.txt:2921
@@ -5648,7 +5666,7 @@ msgstr "Retrasando cancelar.\n"
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/mainloop.c#l267
 #: ../openconnect-strings.txt:2924
 msgid "Delaying pause (immediate callback).\n"
-msgstr ""
+msgstr "Retrasando pausa (devolución de llamada inmediata).\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/mainloop.c#l270
 #: ../openconnect-strings.txt:2927
@@ -5687,7 +5705,7 @@ msgstr "Usando base_mtu de %d\n"
 #: ../openconnect-strings.txt:2945
 #, c-format
 msgid "After removing %s/IPv%d headers, MTU of %d\n"
-msgstr ""
+msgstr "Después de eliminar %s/IPv%d encabezados, MTU de %d\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/mtucalc.c#l115
 #: ../openconnect-strings.txt:2948
@@ -5696,6 +5714,8 @@ msgid ""
 "After removing protocol specific overhead (%d unpadded, %d padded, %d "
 "blocksize), MTU of %d\n"
 msgstr ""
+"Después de eliminar la sobrecarga específica del protocolo (%d sin relleno, "
+"%d con relleno, %d tamaño de bloque), MTU de %d\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/ntlm.c#l87
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/sspi.c#l114
@@ -5746,7 +5766,7 @@ msgstr "Intentando la autenticación HTTP NTLM v%d en el servidor «%s»\n"
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/nullppp.c#l84
 #: ../openconnect-strings.txt:2977
 msgid "Terminating because nullppp has reached network state.\n"
-msgstr ""
+msgstr "Terminando porque nullppp ha alcanzado el estado de red.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/oath.c#l104
 #: ../openconnect-strings.txt:2980
@@ -6246,7 +6266,7 @@ msgstr "SSL_set_session() falló\n"
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl-dtls.c#l592
 #: ../openconnect-strings.txt:3260
 msgid "Create DTLS dgram BIO failed"
-msgstr ""
+msgstr "Error al crear DTLS dgram BIO"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl-dtls.c#l677
 #: ../openconnect-strings.txt:3263
@@ -6386,7 +6406,7 @@ msgstr "libp11 no pudo obtener el contenido del certificado X.509\n"
 #: ../openconnect-strings.txt:3337
 #, c-format
 msgid "Using secondary PKCS#11 certificate %s\n"
-msgstr ""
+msgstr "Usando el certificado PKCS#11 secundario %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl-pkcs11.c#l459
 #: ../openconnect-strings.txt:3340
@@ -6408,7 +6428,7 @@ msgstr "El certificado no tiene clave pública\n"
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl-pkcs11.c#l500
 #: ../openconnect-strings.txt:3349
 msgid "Secondary certificate has no public key\n"
-msgstr ""
+msgstr "El certificado secundario no tiene clave pública\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl-pkcs11.c#l506
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl-pkcs11.c#l530
@@ -6420,7 +6440,7 @@ msgstr "El certificado no coincide con la clave privada\n"
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl-pkcs11.c#l531
 #: ../openconnect-strings.txt:3357
 msgid "Secondary certificate does not match private key\n"
-msgstr ""
+msgstr "El certificado secundario no coincide con la clave privada\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl-pkcs11.c#l510
 #: ../openconnect-strings.txt:3360
@@ -6447,17 +6467,18 @@ msgstr "No se pudo encontrar la clave PKCS#11 «%s»\n"
 #: ../openconnect-strings.txt:3372
 #, c-format
 msgid "Using secondary PKCS#11 key %s\n"
-msgstr ""
+msgstr "Usando la clave secundaria PKCS#11 %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl-pkcs11.c#l656
 #: ../openconnect-strings.txt:3375
 msgid "Failed to instantiate private key from PKCS#11\n"
-msgstr ""
+msgstr "No se pudo crear una instancia de la clave privada de PKCS#11\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl-pkcs11.c#l657
 #: ../openconnect-strings.txt:3378
 msgid "Failed to instantiate secondary private key from PKCS#11\n"
 msgstr ""
+"No se pudo crear una instancia de la clave privada secundaria de PKCS#11\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl-pkcs11.c#l713
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl-pkcs11.c#l719
@@ -6482,13 +6503,13 @@ msgstr "Falló al leer del socket SSL\n"
 #: ../openconnect-strings.txt:3392
 #, c-format
 msgid "Read error on %s session: %d\n"
-msgstr ""
+msgstr "Error de lectura en la sesión %s: %d\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl.c#l356
 #: ../openconnect-strings.txt:3395
 #, c-format
 msgid "Write error on %s session: %d\n"
-msgstr ""
+msgstr "Error de escritura en la sesión %s: %d\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl.c#l429
 #: ../openconnect-strings.txt:3398
@@ -6532,7 +6553,7 @@ msgstr "Falló el análisis PKCS#12 (vea los errores anteriores)\n"
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl.c#l637
 #: ../openconnect-strings.txt:3420
 msgid "Parse secondary PKCS#12 failed (see above errors)\n"
-msgstr ""
+msgstr "El análisis de PKCS#12 secundario falló (vea los errores anteriores)\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl.c#l654
 #: ../openconnect-strings.txt:3423
@@ -6542,7 +6563,7 @@ msgstr "PKCS#12 no contiene certificado\n"
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl.c#l655
 #: ../openconnect-strings.txt:3426
 msgid "Secondary PKCS#12 contained no certificate!\n"
-msgstr ""
+msgstr "¡El PKCS#12 secundario no contenía ningún certificado!\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl.c#l661
 #: ../openconnect-strings.txt:3429
@@ -6552,7 +6573,7 @@ msgstr "PKCS#12 no contiene clave privada\n"
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl.c#l662
 #: ../openconnect-strings.txt:3432
 msgid "Secondary PKCS#12 contained no private key!\n"
-msgstr ""
+msgstr "¡El PKCS#12 secundario no contenía una clave privada!\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl.c#l669
 #: ../openconnect-strings.txt:3435
@@ -6582,7 +6603,7 @@ msgstr "Falló al cargar la clave privada TPM\n"
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl.c#l727
 #: ../openconnect-strings.txt:3450
 msgid "Failed to load secondary TPM private key\n"
-msgstr ""
+msgstr "No se pudo cargar la clave privada secundaria de TPM\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl.c#l781
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl.c#l930
@@ -6595,7 +6616,7 @@ msgstr "Falló al abrir el archivo de certificado %s: %s\n"
 #: ../openconnect-strings.txt:3457
 #, c-format
 msgid "Failed to open secondary certificate file %s: %s\n"
-msgstr ""
+msgstr "Error al abrir el archivo de certificado secundario %s: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl.c#l792
 #: ../openconnect-strings.txt:3460
@@ -6613,6 +6634,8 @@ msgstr ""
 #: ../openconnect-strings.txt:3466
 msgid "Failed to process secondary supporting certs. Trying anyway...\n"
 msgstr ""
+"No se pudieron procesar los certificados de soporte secundarios. Intentando "
+"de todos modos…\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl.c#l837
 #: ../openconnect-strings.txt:3469
@@ -6634,6 +6657,8 @@ msgstr "Carga de la clave privada fallida (¿contraseña incorrecta?)\n"
 #: ../openconnect-strings.txt:3478
 msgid "Loading secondary private key failed (wrong passphrase?)\n"
 msgstr ""
+"Error al cargar la clave privada secundaria (¿frase de contraseña "
+"incorrecta?)\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl.c#l898
 #: ../openconnect-strings.txt:3481
@@ -6644,6 +6669,8 @@ msgstr "Falló al cargar la clave privada (vea los errores de arriba)\n"
 #: ../openconnect-strings.txt:3484
 msgid "Loading secondary private key failed (see above errors)\n"
 msgstr ""
+"Error al cargar la clave privada secundaria (consulte los errores "
+"anteriores)\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl.c#l953
 #: ../openconnect-strings.txt:3487
@@ -6659,18 +6686,18 @@ msgstr "Falló al abrir el archivo de clave privada %s: %s\n"
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl.c#l1015
 #: ../openconnect-strings.txt:3493
 msgid "Loading secondary private key failed\n"
-msgstr ""
+msgstr "Error al cargar la clave privada secundaria\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl.c#l1069
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl.c#l1084
 #: ../openconnect-strings.txt:3497
 msgid "Failed to decrypt secondary PKCS#8 certificate file\n"
-msgstr ""
+msgstr "No se pudo descifrar el archivo de certificado secundario PKCS#8\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl.c#l1079
 #: ../openconnect-strings.txt:3500
 msgid "Enter PKCS#8 secondary pass phrase:"
-msgstr ""
+msgstr "Introduzca la contraseña secundaria PKCS#8:"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl.c#l1104
 #: ../openconnect-strings.txt:3503
@@ -6680,7 +6707,7 @@ msgstr "Falló al convertir PKCS#8 a OpenSSL EVP_PKEY\n"
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl.c#l1105
 #: ../openconnect-strings.txt:3506
 msgid "Failed to convert secondary PKCS#8 to OpenSSL EVP_PKEY\n"
-msgstr ""
+msgstr "Error al convertir PKCS#8 secundario a OpenSSL EVP_PKEY\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl.c#l1115
 #: ../openconnect-strings.txt:3509
@@ -6780,7 +6807,7 @@ msgstr "Error en el campo notAfter del certificado del cliente\n"
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl.c#l1661
 #: ../openconnect-strings.txt:3559
 msgid "Error in secondary client cert notAfter field\n"
-msgstr ""
+msgstr "Error en el campo notAfter del certificado secundario de cliente\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl.c#l1676
 #: ../openconnect-strings.txt:3562
@@ -6846,12 +6873,12 @@ msgstr "Fallo de conexión EAP-TTLS: %d\n"
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/ppp.c#l113
 #: ../openconnect-strings.txt:3595
 msgid "HDLC initial flag sequence (0x7e) is missing\n"
-msgstr ""
+msgstr "Falta la secuencia de la bandera inicial de HDLC (0x7e)\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/ppp.c#l131
 #: ../openconnect-strings.txt:3598
 msgid "HDLC buffer ended without FCS and flag sequence (0x7e)\n"
-msgstr ""
+msgstr "El búfer HDLC finalizó sin FCS ni secuencia de banderas (0x7e)\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/ppp.c#l137
 #: ../openconnect-strings.txt:3601
@@ -6863,19 +6890,19 @@ msgstr "Testigo SSPI demasiado largo (%ld bytes)\n"
 #: ../openconnect-strings.txt:3604
 #, c-format
 msgid "Bad HDLC packet FCS %04x\n"
-msgstr ""
+msgstr "Paquete HDLC incorrecto FCS %04x\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/ppp.c#l154
 #: ../openconnect-strings.txt:3607
 #, c-format
 msgid "Un-HDLC'ed packet (%ld bytes -> %ld), FCS=0x%04x\n"
-msgstr ""
+msgstr "Paquete sin HDLC (%ld bytes -> %ld), FCS = 0x%04x\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/ppp.c#l318
 #: ../openconnect-strings.txt:3610
 #, c-format
 msgid "Current PPP state: %s (encap %s):\n"
-msgstr ""
+msgstr "Estado actual de PPP: %s (encap %s):\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/ppp.c#l320
 #: ../openconnect-strings.txt:3613
@@ -6883,6 +6910,8 @@ msgstr ""
 msgid ""
 "    in: asyncmap=0x%08x, lcp_opts=%d, lcp_magic=0x%08x, ipv4=%s, ipv6=%s\n"
 msgstr ""
+"    entrada: asyncmap=0x%08x, lcp_opts=%d, lcp_magic=0x%08x, ipv4=%s, ipv6="
+"%s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/ppp.c#l328
 #: ../openconnect-strings.txt:3617
@@ -6891,12 +6920,16 @@ msgid ""
 "   out: asyncmap=0x%08x, lcp_opts=%d, lcp_magic=0x%08x, ipv4=%s, ipv6=%s, "
 "solicit_peerns=%d, got_peerns=%d\n"
 msgstr ""
+"   salida: asyncmap=0x%08x, lcp_opts=%d, lcp_magic=0x%08x, ipv4=%s, ipv6=%s, "
+"solicit_peerns=%d, got_peerns=%d\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/ppp.c#l413
 #: ../openconnect-strings.txt:3622
 #, c-format
 msgid "Received MRU %d from server. Nak-offering larger MRU of %d (our MTU)\n"
 msgstr ""
+"Se recibió MRU %d del servidor. Nak ofrece un MRU más grande de %d (nuestro "
+"MTU)\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/ppp.c#l419
 #: ../openconnect-strings.txt:3625
@@ -6925,17 +6958,17 @@ msgstr "Recibida MTU %d desde el servidor\n"
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/ppp.c#l443
 #: ../openconnect-strings.txt:3637
 msgid "Received address and control field compression from server\n"
-msgstr ""
+msgstr "Dirección y compresión del campo de control recibida del servidor\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/ppp.c#l450
 #: ../openconnect-strings.txt:3640
 msgid "Received deprecated IP-Addresses from server, ignoring\n"
-msgstr ""
+msgstr "Se recibieron direcciones IP obsoletas del servidor, ignorando\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/ppp.c#l457
 #: ../openconnect-strings.txt:3643
 msgid "Received Van Jacobson TCP/IP compression from server\n"
-msgstr ""
+msgstr "Se recibió la compresión Van Jacobson TCP/IP del servidor\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/ppp.c#l465
 #: ../openconnect-strings.txt:3646
@@ -6960,6 +6993,8 @@ msgstr "Recibida MTU %d desde el servidor\n"
 #, c-format
 msgid "Received %ld extra bytes at end of Config-Request:\n"
 msgstr ""
+"Se recibieron %ld bytes adicionales al final de la solicitud de "
+"configuración:\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/ppp.c#l522
 #: ../openconnect-strings.txt:3658
@@ -6983,13 +7018,13 @@ msgstr "Recibida MTU %d desde el servidor\n"
 #: ../openconnect-strings.txt:3667
 #, c-format
 msgid "Requesting calculated MTU of %d\n"
-msgstr ""
+msgstr "Solicitando MTU calculado de %d\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/ppp.c#l631
 #: ../openconnect-strings.txt:3670
 #, c-format
 msgid "Sending our %s/id %d config request to server\n"
-msgstr ""
+msgstr "Enviando nuestra solicitud de configuración %s/id %d al servidor\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/ppp.c#l668
 #: ../openconnect-strings.txt:3673

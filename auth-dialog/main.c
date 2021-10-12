@@ -761,7 +761,7 @@ static gboolean open_webview_idle(gpointer data)
 	ctx->webview = webView;
 
 	// Put the browser area into the main window
-	gtk_widget_set_size_request(GTK_WIDGET(webView), 320, 240);
+	gtk_widget_set_size_request(GTK_WIDGET(webView), 640, 480);
 	gtk_box_pack_start(GTK_BOX(ui_data->ssl_box), GTK_WIDGET(webView), FALSE, FALSE, 0);
 	gtk_widget_show_all(ui_data->ssl_box);
 

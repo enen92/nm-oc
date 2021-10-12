@@ -775,6 +775,8 @@ static int open_webview(struct openconnect_info *vpninfo, const char *login_uri,
 {
 	struct WebviewContext ctx;
 
+	// Webview is incredibly slow with compositing enabled
+	g_setenv ("WEBKIT_DISABLE_COMPOSITING_MODE", "1", FALSE);
 	ctx.vpninfo = vpninfo;
 	ctx.privdata = privdata;
 	g_mutex_init(&ctx.mutex);

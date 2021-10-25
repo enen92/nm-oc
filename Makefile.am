@@ -110,7 +110,6 @@ properties_libnm_vpn_plugin_openconnect_la_SOURCES = \
 
 properties_libnm_vpn_plugin_openconnect_la_CFLAGS = \
 	-DNETWORKMANAGER_COMPILATION=NM_NETWORKMANAGER_COMPILATION_LIB_BASE \
-	-DNM_PLUGIN_DIR=\"$(NM_PLUGIN_DIR)\" \
 	$(properties_cppflags) \
 	$(LIBNM_CFLAGS)
 

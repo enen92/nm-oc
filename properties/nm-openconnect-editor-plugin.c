@@ -2,7 +2,7 @@
 /***************************************************************************
  * Copyright (C) 2005 David Zeuthen, <davidz@redhat.com>
  * Copyright (C) 2005 - 2008 Dan Williams, <dcbw@redhat.com>
- * Copyright (C) 2005 - 2011 Red Hat, Inc.
+ * Copyright (C) 2005 - 2021 Red Hat, Inc.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -523,7 +523,7 @@ get_editor (NMVpnEditorPlugin *iface, NMConnection *connection, GError **error)
 #ifdef NM_VPN_OLD
 		return nm_vpn_editor_new (connection, error);
 #else
-		return nm_vpn_plugin_utils_load_editor (NM_PLUGIN_DIR"/libnm-vpn-plugin-openconnect-editor.so",
+		return nm_vpn_plugin_utils_load_editor ("libnm-vpn-plugin-openconnect-editor.so",
 		                                        "nm_vpn_editor_factory_openconnect",
 		                                        _call_editor_factory,
 		                                        iface,

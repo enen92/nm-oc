@@ -69,6 +69,19 @@ plugin_LTLIBRARIES += properties/libnm-openconnect-properties.la
 endif
 endif
 
+properties/resources.h: properties/gresource.xml
+	$(AM_V_GEN) $(GLIB_COMPILE_RESOURCES) $< --target=$@ --sourcedir=$(srcdir)/properties --generate-header --internal
+
+properties/resources.c: properties/gresource.xml $(shell $(GLIB_COMPILE_RESOURCES) --sourcedir=$(srcdir)/properties --generate-dependencies $(srcdir)/properties/gresource.xml)
+	$(AM_V_GEN) $(GLIB_COMPILE_RESOURCES) $< --target=$@ --sourcedir=$(srcdir)/properties --generate-source --internal
+
+CLEANFILES += \
+	properties/resources.c \
+	properties/resources.h
+
+EXTRA_DIST += \
+	properties/gresource.xml
+
 plugin_sources = \
 	properties/nm-openconnect-editor-plugin.c \
 	properties/nm-openconnect-editor-plugin.h \
@@ -81,16 +94,10 @@ editor_sources = \
 	properties/nm-openconnect-editor.h
 	$(NULL)
 
-uidir = $(datadir)/gnome-vpn-properties/openconnect
-if WITH_GNOME
-ui_DATA = properties/nm-openconnect-dialog.ui
-endif
-
 properties_cppflags = \
 	$(GLIB_CFLAGS) \
 	$(OPENCONNECT_CFLAGS) \
 	-I$(top_srcdir)/shared \
-	-DUIDIR=\""$(uidir)"\" \
 	-DLOCALEDIR=\"$(datadir)/locale\"
 
 ###############################################################################
@@ -122,6 +129,10 @@ properties_libnm_vpn_plugin_openconnect_la_LDFLAGS = \
 properties_libnm_vpn_plugin_openconnect_editor_la_SOURCES = \
 	$(editor_sources)
 
+nodist_properties_libnm_vpn_plugin_openconnect_editor_la_SOURCES = \
+	properties/resources.h \
+	properties/resources.c
+
 properties_libnm_vpn_plugin_openconnect_editor_la_CFLAGS = \
 	-DNETWORKMANAGER_COMPILATION=NM_NETWORKMANAGER_COMPILATION_LIB_EDITOR \
 	$(properties_cppflags) \
@@ -142,6 +153,10 @@ properties_libnm_vpn_plugin_openconnect_editor_la_LDFLAGS = \
 properties_libnm_openconnect_properties_la_SOURCES = \
 	$(plugin_sources) \
 	$(editor_sources)
+
+nodist_properties_libnm_openconnect_properties_la_SOURCES = \
+	properties/resources.h \
+	properties/resources.c
 
 properties_libnm_openconnect_properties_la_CFLAGS = \
 	-DNM_VPN_OLD \

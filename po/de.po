@@ -8379,20 +8379,20 @@ msgid "Select A File"
 msgstr "Datei auswählen"
 
 #: ../properties/nm-openconnect-dialog.ui.h:3
-msgid "_VPN Protocol:"
-msgstr "_VPN-Protokoll:"
+msgid "_VPN Protocol"
+msgstr "_VPN-Protokoll"
 
 #: ../properties/nm-openconnect-dialog.ui.h:4
-msgid "_Gateway:"
-msgstr "_Gateway:"
+msgid "_Gateway"
+msgstr "_Gateway"
 
 #: ../properties/nm-openconnect-dialog.ui.h:5
-msgid "_Proxy:"
-msgstr "_Proxy:"
+msgid "_Proxy"
+msgstr "_Proxy"
 
 #: ../properties/nm-openconnect-dialog.ui.h:6
-msgid "CA C_ertificate:"
-msgstr "_CA-Zertifikat:"
+msgid "CA C_ertificate"
+msgstr "_CA-Zertifikat"
 
 # Wieso eigentlich?
 #: ../properties/nm-openconnect-dialog.ui.h:7
@@ -8400,12 +8400,12 @@ msgid "Allow security scanner _trojan (CSD)"
 msgstr "Sicherheitsscanner-_Trojaner erlauben (CSD)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:8
-msgid "Trojan (CSD) _Wrapper Script:"
-msgstr "Trojaner-CSD-_Wrapper-Skript:"
+msgid "Trojan (CSD) _Wrapper Script"
+msgstr "Trojaner-CSD-_Wrapper-Skript"
 
 #: ../properties/nm-openconnect-dialog.ui.h:9
-msgid "Reported OS:"
-msgstr "Ermitteltes Betriebssystem:"
+msgid "Reported OS"
+msgstr "Ermitteltes Betriebssystem"
 
 #: ../properties/nm-openconnect-dialog.ui.h:10
 msgid "Common values: linux linux-64 win mac-intel android apple-ios"
@@ -8416,12 +8416,12 @@ msgid "Certificate Authentication"
 msgstr "Zertifikat-Legitimierung"
 
 #: ../properties/nm-openconnect-dialog.ui.h:12
-msgid "_User Certificate:"
-msgstr "Ben_utzerzertifikat:"
+msgid "_User Certificate"
+msgstr "Ben_utzerzertifikat"
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Private _Key:"
-msgstr "Ge_heimer Schlüssel:"
+msgid "Private _Key"
+msgstr "Ge_heimer Schlüssel"
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
 msgid "Use _FSID for key passphrase"
@@ -8437,12 +8437,12 @@ msgid "Software Token Authentication"
 msgstr "Legitimierung über Software-Token"
 
 #: ../properties/nm-openconnect-dialog.ui.h:17
-msgid "Token _Mode:"
-msgstr "Token-Modus:"
+msgid "Token _Mode"
+msgstr "Token-Modus"
 
 #: ../properties/nm-openconnect-dialog.ui.h:18
-msgid "Token Sec_ret:"
-msgstr "Token-_Geheimnis:"
+msgid "Token Sec_ret"
+msgstr "Token-_Geheimnis"
 
 #: ../properties/nm-openconnect-dialog.ui.h:19
 msgid "Disabled"

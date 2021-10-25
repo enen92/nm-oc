@@ -8321,32 +8321,32 @@ msgid "Select A File"
 msgstr "Zvolte soubor"
 
 #: ../properties/nm-openconnect-dialog.ui.h:3
-msgid "_VPN Protocol:"
-msgstr "Protokol _VPN:"
+msgid "_VPN Protocol"
+msgstr "Protokol _VPN"
 
 #: ../properties/nm-openconnect-dialog.ui.h:4
-msgid "_Gateway:"
-msgstr "_Brána:"
+msgid "_Gateway"
+msgstr "_Brána"
 
 #: ../properties/nm-openconnect-dialog.ui.h:5
-msgid "_Proxy:"
-msgstr "_Proxy:"
+msgid "_Proxy"
+msgstr "_Proxy"
 
 #: ../properties/nm-openconnect-dialog.ui.h:6
-msgid "CA C_ertificate:"
-msgstr "Certifikát _CA:"
+msgid "CA C_ertificate"
+msgstr "Certifikát _CA"
 
 #: ../properties/nm-openconnect-dialog.ui.h:7
 msgid "Allow security scanner _trojan (CSD)"
 msgstr "Povolit  _trojského koně bezpečnostního skeneru (CSD)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:8
-msgid "Trojan (CSD) _Wrapper Script:"
-msgstr "_Obalující skript trojského koně (CSD):"
+msgid "Trojan (CSD) _Wrapper Script"
+msgstr "_Obalující skript trojského koně (CSD)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:9
-msgid "Reported OS:"
-msgstr "Reportovaný OS:"
+msgid "Reported OS"
+msgstr "Reportovaný OS"
 
 #: ../properties/nm-openconnect-dialog.ui.h:10
 msgid "Common values: linux linux-64 win mac-intel android apple-ios"
@@ -8357,11 +8357,11 @@ msgid "Certificate Authentication"
 msgstr "Autentizace certifikátem"
 
 #: ../properties/nm-openconnect-dialog.ui.h:12
-msgid "_User Certificate:"
-msgstr "Certifikát _uživatele:"
+msgid "_User Certificate"
+msgstr "Certifikát _uživatele"
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Private _Key:"
+msgid "Private _Key"
 msgstr "Soukromý _klíč"
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
@@ -8377,12 +8377,12 @@ msgid "Software Token Authentication"
 msgstr "Softwarový ověřovací tiket"
 
 #: ../properties/nm-openconnect-dialog.ui.h:17
-msgid "Token _Mode:"
-msgstr "Reži_m tiketu:"
+msgid "Token _Mode"
+msgstr "Reži_m tiketu"
 
 #: ../properties/nm-openconnect-dialog.ui.h:18
-msgid "Token Sec_ret:"
-msgstr "He_slo tiketu:"
+msgid "Token Sec_ret"
+msgstr "He_slo tiketu"
 
 #: ../properties/nm-openconnect-dialog.ui.h:19
 msgid "Disabled"
@@ -8406,7 +8406,7 @@ msgstr "HOTP – zadáno ručně"
 
 #: ../properties/nm-openconnect-dialog.ui.h:24
 msgid "Yubikey OATH"
-msgstr "Yubikey OATH:"
+msgstr "Yubikey OATH"
 
 #: ../properties/nm-openconnect-editor-plugin.c:57
 #: ../properties/nm-openconnect-editor-plugin.c:60

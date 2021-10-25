@@ -139,32 +139,32 @@ msgid "Select A File"
 msgstr "Виберіть файл"
 
 #: ../properties/nm-openconnect-dialog.ui.h:3
-msgid "_VPN Protocol:"
-msgstr "П_ротокол VPN:"
+msgid "_VPN Protocol"
+msgstr "П_ротокол VPN"
 
 #: ../properties/nm-openconnect-dialog.ui.h:4
-msgid "_Gateway:"
-msgstr "_Шлюз:"
+msgid "_Gateway"
+msgstr "_Шлюз"
 
 #: ../properties/nm-openconnect-dialog.ui.h:5
-msgid "_Proxy:"
-msgstr "_Проксі:"
+msgid "_Proxy"
+msgstr "_Проксі"
 
 #: ../properties/nm-openconnect-dialog.ui.h:6
-msgid "CA C_ertificate:"
-msgstr "С_ертифікат CA:"
+msgid "CA C_ertificate"
+msgstr "С_ертифікат CA"
 
 #: ../properties/nm-openconnect-dialog.ui.h:7
 msgid "Allow security scanner _trojan (CSD)"
 msgstr "Дозволити _троян сканування захисту (CSD)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:8
-msgid "Trojan (CSD) _Wrapper Script:"
-msgstr "Троянський (CSD) с_крипт-обгортка:"
+msgid "Trojan (CSD) _Wrapper Script"
+msgstr "Троянський (CSD) с_крипт-обгортка"
 
 #: ../properties/nm-openconnect-dialog.ui.h:9
-msgid "Reported OS:"
-msgstr "Повідомлена ОС:"
+msgid "Reported OS"
+msgstr "Повідомлена ОС"
 
 #: ../properties/nm-openconnect-dialog.ui.h:10
 msgid "Common values: linux linux-64 win mac-intel android apple-ios"
@@ -175,12 +175,12 @@ msgid "Certificate Authentication"
 msgstr "Розпізнавання за сертифікатом"
 
 #: ../properties/nm-openconnect-dialog.ui.h:12
-msgid "_User Certificate:"
-msgstr "Сертифікат _користувача:"
+msgid "_User Certificate"
+msgstr "Сертифікат _користувача"
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Private _Key:"
-msgstr "Закритий _ключ:"
+msgid "Private _Key"
+msgstr "Закритий _ключ"
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
 msgid "Use _FSID for key passphrase"
@@ -195,12 +195,12 @@ msgid "Software Token Authentication"
 msgstr "Програмне розпізнавання за ключем"
 
 #: ../properties/nm-openconnect-dialog.ui.h:17
-msgid "Token _Mode:"
-msgstr "_Режим ключа:"
+msgid "Token _Mode"
+msgstr "_Режим ключа"
 
 #: ../properties/nm-openconnect-dialog.ui.h:18
-msgid "Token Sec_ret:"
-msgstr "Р_еєстраційні дані ключа:"
+msgid "Token Sec_ret"
+msgstr "Р_еєстраційні дані ключа"
 
 #: ../properties/nm-openconnect-dialog.ui.h:19
 msgid "Disabled"

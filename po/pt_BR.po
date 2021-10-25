@@ -144,32 +144,32 @@ msgid "Select A File"
 msgstr "Selecione um arquivo"
 
 #: ../properties/nm-openconnect-dialog.ui.h:3
-msgid "_VPN Protocol:"
-msgstr "Protocolo _VPN:"
+msgid "_VPN Protocol"
+msgstr "Protocolo _VPN"
 
 #: ../properties/nm-openconnect-dialog.ui.h:4
-msgid "_Gateway:"
-msgstr "_Gateway:"
+msgid "_Gateway"
+msgstr "_Gateway"
 
 #: ../properties/nm-openconnect-dialog.ui.h:5
-msgid "_Proxy:"
-msgstr "_Proxy:"
+msgid "_Proxy"
+msgstr "_Proxy"
 
 #: ../properties/nm-openconnect-dialog.ui.h:6
-msgid "CA C_ertificate:"
-msgstr "C_ertificado da AC:"
+msgid "CA C_ertificate"
+msgstr "C_ertificado da AC"
 
 #: ../properties/nm-openconnect-dialog.ui.h:7
 msgid "Allow security scanner _trojan (CSD)"
 msgstr "Permitir _trojan (CSD) de scanner de segurança"
 
 #: ../properties/nm-openconnect-dialog.ui.h:8
-msgid "Trojan (CSD) _Wrapper Script:"
-msgstr "Script _wrapper de trojan (CSD):"
+msgid "Trojan (CSD) _Wrapper Script"
+msgstr "Script _wrapper de trojan (CSD)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:9
-msgid "Reported OS:"
-msgstr "SO relatado:"
+msgid "Reported OS"
+msgstr "SO relatado"
 
 #: ../properties/nm-openconnect-dialog.ui.h:10
 msgid "Common values: linux linux-64 win mac-intel android apple-ios"
@@ -180,12 +180,12 @@ msgid "Certificate Authentication"
 msgstr "Certificado de autenticação"
 
 #: ../properties/nm-openconnect-dialog.ui.h:12
-msgid "_User Certificate:"
-msgstr "Certificado do _usuário:"
+msgid "_User Certificate"
+msgstr "Certificado do _usuário"
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Private _Key:"
-msgstr "C_have privada:"
+msgid "Private _Key"
+msgstr "C_have privada"
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
 msgid "Use _FSID for key passphrase"
@@ -200,12 +200,12 @@ msgid "Software Token Authentication"
 msgstr "Autenticação por token de software"
 
 #: ../properties/nm-openconnect-dialog.ui.h:17
-msgid "Token _Mode:"
-msgstr "_Modo do token:"
+msgid "Token _Mode"
+msgstr "_Modo do token"
 
 #: ../properties/nm-openconnect-dialog.ui.h:18
-msgid "Token Sec_ret:"
-msgstr "Seg_redo do token:"
+msgid "Token Sec_ret"
+msgstr "Seg_redo do token"
 
 #: ../properties/nm-openconnect-dialog.ui.h:19
 msgid "Disabled"

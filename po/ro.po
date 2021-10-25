@@ -114,37 +114,37 @@ msgid "Select A File"
 msgstr "Alegere fișier"
 
 #: ../properties/nm-openconnect-dialog.ui.h:3
-msgid "_Gateway:"
-msgstr "_Gateway:"
+msgid "_Gateway"
+msgstr "_Gateway"
 
 #: ../properties/nm-openconnect-dialog.ui.h:4
-msgid "_Proxy:"
-msgstr "_Proxy:"
+msgid "_Proxy"
+msgstr "_Proxy"
 
 #: ../properties/nm-openconnect-dialog.ui.h:5
 #, fuzzy
-msgid "CA C_ertificate:"
-msgstr "Certificat _CA:"
+msgid "CA C_ertificate"
+msgstr "Certificat _CA"
 
 #: ../properties/nm-openconnect-dialog.ui.h:6
 msgid "Allow Cisco Secure Desktop _trojan"
 msgstr "Permite _troianul Cisco Secure Desktop"
 
 #: ../properties/nm-openconnect-dialog.ui.h:7
-msgid "CSD _Wrapper Script:"
-msgstr "Script _wrapper CSD:"
+msgid "CSD _Wrapper Script"
+msgstr "Script _wrapper CSD"
 
 #: ../properties/nm-openconnect-dialog.ui.h:8
 msgid "<b>Certificate Authentication</b>"
 msgstr "<b>Autentificare cu certificate</b>"
 
 #: ../properties/nm-openconnect-dialog.ui.h:9
-msgid "_User Certificate:"
-msgstr "Certificat _utilizator:"
+msgid "_User Certificate"
+msgstr "Certificat _utilizator"
 
 #: ../properties/nm-openconnect-dialog.ui.h:10
-msgid "Private _Key:"
-msgstr "C_heie privată:"
+msgid "Private _Key"
+msgstr "C_heie privată"
 
 #: ../properties/nm-openconnect-dialog.ui.h:11
 msgid "Use _FSID for key passphrase"
@@ -156,11 +156,11 @@ msgid "<b>Software Token Authentication</b>"
 msgstr "<b>Autentificare cu certificate</b>"
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Token _Mode:"
+msgid "Token _Mode"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
-msgid "Token Sec_ret:"
+msgid "Token Sec_ret"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:15

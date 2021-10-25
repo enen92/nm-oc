@@ -28,13 +28,11 @@
 typedef void (*ChangedCallback) (GtkWidget *widget, gpointer user_data);
 
 void tls_pw_init_auth_widget (GtkBuilder *builder,
-                              GtkSizeGroup *group,
                               NMSettingVpn *s_vpn,
                               ChangedCallback changed_cb,
                               gpointer user_data);
 
 void sk_init_auth_widget (GtkBuilder *builder,
-                          GtkSizeGroup *group,
                           NMSettingVpn *s_vpn,
                           ChangedCallback changed_cb,
                           gpointer user_data);

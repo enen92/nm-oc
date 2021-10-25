@@ -113,15 +113,15 @@ msgid "Select A File"
 msgstr "Elekti dosieron"
 
 #: ../properties/nm-openconnect-dialog.ui.h:3
-msgid "_Gateway:"
+msgid "_Gateway"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:4
-msgid "_Proxy:"
+msgid "_Proxy"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:5
-msgid "CA C_ertificate:"
+msgid "CA C_ertificate"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:6
@@ -129,7 +129,7 @@ msgid "Allow Cisco Secure Desktop _trojan"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:7
-msgid "CSD _Wrapper Script:"
+msgid "CSD _Wrapper Script"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:8
@@ -137,12 +137,12 @@ msgid "<b>Certificate Authentication</b>"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:9
-msgid "_User Certificate:"
+msgid "_User Certificate"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:10
-msgid "Private _Key:"
-msgstr "Privatan ŝ_losilo:"
+msgid "Private _Key"
+msgstr "Privatan ŝ_losilo"
 
 #: ../properties/nm-openconnect-dialog.ui.h:11
 msgid "Use _FSID for key passphrase"
@@ -153,11 +153,11 @@ msgid "<b>Software Token Authentication</b>"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Token _Mode:"
+msgid "Token _Mode"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
-msgid "Token Sec_ret:"
+msgid "Token Sec_ret"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:15

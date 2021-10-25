@@ -2,8 +2,8 @@
 /***************************************************************************
  *
  * Copyright (C) 2008 Dan Williams, <dcbw@redhat.com>
- * Copyright (C) 2008 - 2011 Red Hat, Inc.
  * Copyright (C) 2008 Tambet Ingo, <tambet@gmail.com>
+ * Copyright (C) 2008 - 2021 Red Hat, Inc.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -35,7 +35,6 @@
 
 void
 tls_pw_init_auth_widget (GtkBuilder *builder,
-                         GtkSizeGroup *group,
                          NMSettingVpn *s_vpn,
                          ChangedCallback changed_cb,
                          gpointer user_data)
@@ -45,12 +44,10 @@ tls_pw_init_auth_widget (GtkBuilder *builder,
 	GtkFileFilter *filter;
 
 	g_return_if_fail (builder != NULL);
-	g_return_if_fail (group != NULL);
 	g_return_if_fail (changed_cb != NULL);
 
 	widget = GTK_WIDGET (gtk_builder_get_object (builder, "ca_cert_chooser"));
 
-	gtk_size_group_add_widget (group, widget);
 	filter = tls_file_chooser_filter_new ();
 	gtk_file_chooser_add_filter (GTK_FILE_CHOOSER (widget), filter);
 	gtk_file_chooser_set_local_only (GTK_FILE_CHOOSER (widget), TRUE);
@@ -66,7 +63,6 @@ tls_pw_init_auth_widget (GtkBuilder *builder,
 
 	widget = GTK_WIDGET (gtk_builder_get_object (builder, "cert_user_cert_chooser"));
 
-	gtk_size_group_add_widget (group, widget);
 	filter = tls_file_chooser_filter_new ();
 	gtk_file_chooser_add_filter (GTK_FILE_CHOOSER (widget), filter);
 	gtk_file_chooser_set_local_only (GTK_FILE_CHOOSER (widget), TRUE);
@@ -82,7 +78,6 @@ tls_pw_init_auth_widget (GtkBuilder *builder,
 
 	widget = GTK_WIDGET (gtk_builder_get_object (builder, "cert_private_key_chooser"));
 
-	gtk_size_group_add_widget (group, widget);
 	filter = tls_file_chooser_filter_new ();
 	gtk_file_chooser_add_filter (GTK_FILE_CHOOSER (widget), filter);
 	gtk_file_chooser_set_local_only (GTK_FILE_CHOOSER (widget), TRUE);

@@ -118,37 +118,37 @@ msgid "Select A File"
 msgstr "Sélectionner un fichier"
 
 #: ../properties/nm-openconnect-dialog.ui.h:3
-msgid "_Gateway:"
-msgstr "_Passerelle :"
+msgid "_Gateway"
+msgstr "_Passerelle "
 
 #: ../properties/nm-openconnect-dialog.ui.h:4
-msgid "_Proxy:"
-msgstr "_Serveur mandataire :"
+msgid "_Proxy"
+msgstr "_Serveur mandataire "
 
 #: ../properties/nm-openconnect-dialog.ui.h:5
 #, fuzzy
-msgid "CA C_ertificate:"
-msgstr "Certificat de l'_AC :"
+msgid "CA C_ertificate"
+msgstr "Certificat de l'_AC "
 
 #: ../properties/nm-openconnect-dialog.ui.h:6
 msgid "Allow Cisco Secure Desktop _trojan"
 msgstr "Autoriser le _trojan Cisco Secure Desktop"
 
 #: ../properties/nm-openconnect-dialog.ui.h:7
-msgid "CSD _Wrapper Script:"
-msgstr "Script en_veloppant CSD :"
+msgid "CSD _Wrapper Script"
+msgstr "Script en_veloppant CSD "
 
 #: ../properties/nm-openconnect-dialog.ui.h:8
 msgid "<b>Certificate Authentication</b>"
 msgstr "<b>Authentification du certificat</b>"
 
 #: ../properties/nm-openconnect-dialog.ui.h:9
-msgid "_User Certificate:"
-msgstr "Certificat _utilisateur :"
+msgid "_User Certificate"
+msgstr "Certificat _utilisateur "
 
 #: ../properties/nm-openconnect-dialog.ui.h:10
-msgid "Private _Key:"
-msgstr "_Clé privée :"
+msgid "Private _Key"
+msgstr "_Clé privée "
 
 #: ../properties/nm-openconnect-dialog.ui.h:11
 msgid "Use _FSID for key passphrase"
@@ -160,11 +160,11 @@ msgid "<b>Software Token Authentication</b>"
 msgstr "<b>Authentification du certificat</b>"
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Token _Mode:"
+msgid "Token _Mode"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
-msgid "Token Sec_ret:"
+msgid "Token Sec_ret"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:15

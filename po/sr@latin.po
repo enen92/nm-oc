@@ -8290,32 +8290,32 @@ msgid "Select A File"
 msgstr "Izaberite datoteku"
 
 #: ../properties/nm-openconnect-dialog.ui.h:3
-msgid "_VPN Protocol:"
-msgstr "_VPN protokol:"
+msgid "_VPN Protocol"
+msgstr "_VPN protokol"
 
 #: ../properties/nm-openconnect-dialog.ui.h:4
-msgid "_Gateway:"
-msgstr "_Mrežni prolaz:"
+msgid "_Gateway"
+msgstr "_Mrežni prolaz"
 
 #: ../properties/nm-openconnect-dialog.ui.h:5
-msgid "_Proxy:"
-msgstr "_Posrednik:"
+msgid "_Proxy"
+msgstr "_Posrednik"
 
 #: ../properties/nm-openconnect-dialog.ui.h:6
-msgid "CA C_ertificate:"
-msgstr "Uverenje _izdavača uverenja:"
+msgid "CA C_ertificate"
+msgstr "Uverenje _izdavača uverenja"
 
 #: ../properties/nm-openconnect-dialog.ui.h:7
 msgid "Allow security scanner _trojan (CSD)"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:8
-msgid "Trojan (CSD) _Wrapper Script:"
+msgid "Trojan (CSD) _Wrapper Script"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:9
-msgid "Reported OS:"
-msgstr "Prijavljeni OS:"
+msgid "Reported OS"
+msgstr "Prijavljeni OS"
 
 #: ../properties/nm-openconnect-dialog.ui.h:10
 msgid "Common values: linux linux-64 win mac-intel android apple-ios"
@@ -8326,12 +8326,12 @@ msgid "Certificate Authentication"
 msgstr "Potvrđivanje identiteta uverenja"
 
 #: ../properties/nm-openconnect-dialog.ui.h:12
-msgid "_User Certificate:"
-msgstr "_Korisničko uverenje:"
+msgid "_User Certificate"
+msgstr "_Korisničko uverenje"
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Private _Key:"
-msgstr "_Lični ključ:"
+msgid "Private _Key"
+msgstr "_Lični ključ"
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
 msgid "Use _FSID for key passphrase"
@@ -8346,12 +8346,12 @@ msgid "Software Token Authentication"
 msgstr "Potvrđivanje identiteta softverskim modulom"
 
 #: ../properties/nm-openconnect-dialog.ui.h:17
-msgid "Token _Mode:"
-msgstr "_Režim modula:"
+msgid "Token _Mode"
+msgstr "_Režim modula"
 
 #: ../properties/nm-openconnect-dialog.ui.h:18
-msgid "Token Sec_ret:"
-msgstr "_Tajna modula:"
+msgid "Token Sec_ret"
+msgstr "_Tajna modula"
 
 #: ../properties/nm-openconnect-dialog.ui.h:19
 msgid "Disabled"

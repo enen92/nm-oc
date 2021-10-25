@@ -62,7 +62,6 @@ G_DEFINE_TYPE_EXTENDED (OpenconnectEditor, openconnect_editor, G_TYPE_OBJECT, 0,
 typedef struct {
 	GtkBuilder *builder;
 	GtkWidget *widget;
-	GtkSizeGroup *group;
 	GtkWindowGroup *window_group;
 	gboolean window_added;
 } OpenconnectEditorPrivate;
@@ -165,10 +164,25 @@ init_token_ui (OpenconnectEditor *self,
 	if (!init_token_mode_options (token_mode))
 		return TRUE;
 
-	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "token_vbox"));
+	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "token_label"));
 	g_return_val_if_fail (widget, FALSE);
+	gtk_widget_show (widget);
 
-	gtk_box_pack_start (GTK_BOX (priv->widget), widget, FALSE, FALSE, 0);
+	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "token_mode_label"));
+	g_return_val_if_fail (widget, FALSE);
+	gtk_widget_show (widget);
+
+	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "token_mode"));
+	g_return_val_if_fail (widget, FALSE);
+	gtk_widget_show (widget);
+
+	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "token_secret_label"));
+	g_return_val_if_fail (widget, FALSE);
+	gtk_widget_show (widget);
+
+	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "token_secret"));
+	g_return_val_if_fail (widget, FALSE);
+	gtk_widget_show (widget);
 
 	if (s_vpn) {
 		GtkTreeModel *model = gtk_combo_box_get_model (token_mode);
@@ -264,13 +278,6 @@ init_protocol_ui (OpenconnectEditor *self,
 	if (!init_protocol_combo_options (protocol_combo))
 		return TRUE;
 
-#if 0
-	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "token_vbox"));
-	if (!widget)
-		return FALSE;
-	gtk_box_pack_start (GTK_BOX (priv->widget), widget, FALSE, FALSE, 0);
-#endif
-
 	if (s_vpn) {
 		GtkTreeModel *model = gtk_combo_box_get_model (protocol_combo);
 		int active_option = 0;
@@ -310,12 +317,9 @@ init_editor_plugin (OpenconnectEditor *self, NMConnection *connection, GError **
 
 	s_vpn = nm_connection_get_setting_vpn (connection);
 
-	priv->group = gtk_size_group_new (GTK_SIZE_GROUP_HORIZONTAL);
-
 	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "gateway_entry"));
 	g_return_val_if_fail (widget, FALSE);
 
-	gtk_size_group_add_widget (priv->group, widget);
 	if (s_vpn) {
 		value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_GATEWAY);
 		if (value)
@@ -326,7 +330,6 @@ init_editor_plugin (OpenconnectEditor *self, NMConnection *connection, GError **
 	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "proxy_entry"));
 	g_return_val_if_fail (widget, FALSE);
 
-	gtk_size_group_add_widget (priv->group, widget);
 	if (s_vpn) {
 		value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_PROXY);
 		if (value)
@@ -390,7 +393,7 @@ init_editor_plugin (OpenconnectEditor *self, NMConnection *connection, GError **
 	if (init_protocol_ui (self, priv, s_vpn) == FALSE)
 		g_return_val_if_reached (FALSE);
 
-	tls_pw_init_auth_widget (priv->builder, priv->group, s_vpn, stuff_changed_cb, self);
+	tls_pw_init_auth_widget (priv->builder, s_vpn, stuff_changed_cb, self);
 
 	return TRUE;
 }
@@ -597,9 +600,6 @@ dispose (GObject *object)
 {
 	OpenconnectEditor *plugin = OPENCONNECT_EDITOR (object);
 	OpenconnectEditorPrivate *priv = OPENCONNECT_EDITOR_GET_PRIVATE (plugin);
-
-	if (priv->group)
-		g_object_unref (priv->group);
 
 	if (priv->window_group)
 		g_object_unref (priv->window_group);

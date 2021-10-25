@@ -118,24 +118,24 @@ msgid "Select A File"
 msgstr "ஒரு கோப்பினை தேர்ந்தெடு"
 
 #: ../properties/nm-openconnect-dialog.ui.h:3
-msgid "_Gateway:"
-msgstr "கேட்வே (_G):"
+msgid "_Gateway"
+msgstr "கேட்வே (_G)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:4
-msgid "_Proxy:"
+msgid "_Proxy"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:5
 #, fuzzy
-msgid "CA C_ertificate:"
-msgstr "CA சான்றிதழ்:"
+msgid "CA C_ertificate"
+msgstr "CA சான்றிதழ்"
 
 #: ../properties/nm-openconnect-dialog.ui.h:6
 msgid "Allow Cisco Secure Desktop _trojan"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:7
-msgid "CSD _Wrapper Script:"
+msgid "CSD _Wrapper Script"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:8
@@ -143,11 +143,11 @@ msgid "<b>Certificate Authentication</b>"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:9
-msgid "_User Certificate:"
+msgid "_User Certificate"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:10
-msgid "Private _Key:"
+msgid "Private _Key"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:11
@@ -160,11 +160,11 @@ msgid "<b>Software Token Authentication</b>"
 msgstr "<b>உறுதிப்படுத்து</b>"
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Token _Mode:"
+msgid "Token _Mode"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
-msgid "Token Sec_ret:"
+msgid "Token Sec_ret"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:15

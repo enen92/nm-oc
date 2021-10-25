@@ -49,6 +49,13 @@
 
 #include "auth-helpers.h"
 
+#if !GTK_CHECK_VERSION(4,0,0)
+#define gtk_editable_set_text(editable,text)		gtk_entry_set_text(GTK_ENTRY(editable), (text))
+#define gtk_editable_get_text(editable)			gtk_entry_get_text(GTK_ENTRY(editable))
+#define gtk_check_button_get_active(button)		gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(button))
+#define gtk_check_button_set_active(button, active)	gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(button), active)
+#endif
+
 /************** UI widget class **************/
 
 static void openconnect_editor_interface_init (NMVpnEditorInterface *iface_class);
@@ -80,7 +87,7 @@ check_validity (OpenconnectEditor *self, GError **error)
 	const char *str;
 
 	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "gateway_entry"));
-	str = gtk_entry_get_text (GTK_ENTRY (widget));
+	str = gtk_editable_get_text (GTK_EDITABLE (widget));
 	if (!str || !strlen (str)) {
 		g_set_error (error,
 		             NMV_EDITOR_PLUGIN_ERROR,
@@ -91,7 +98,7 @@ check_validity (OpenconnectEditor *self, GError **error)
 
 
 	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "proxy_entry"));
-	str = gtk_entry_get_text (GTK_ENTRY (widget));
+	str = gtk_editable_get_text (GTK_EDITABLE (widget));
 	if (str && str[0] &&
 		strncmp(str, "socks://", 8) && strncmp(str, "http://", 7)) {
 		g_set_error (error,
@@ -323,7 +330,7 @@ init_editor_plugin (OpenconnectEditor *self, NMConnection *connection, GError **
 	if (s_vpn) {
 		value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_GATEWAY);
 		if (value)
-			gtk_entry_set_text (GTK_ENTRY (widget), value);
+			gtk_editable_set_text (GTK_EDITABLE (widget), value);
 	}
 	g_signal_connect (G_OBJECT (widget), "changed", G_CALLBACK (stuff_changed_cb), self);
 
@@ -333,7 +340,7 @@ init_editor_plugin (OpenconnectEditor *self, NMConnection *connection, GError **
 	if (s_vpn) {
 		value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_PROXY);
 		if (value)
-			gtk_entry_set_text (GTK_ENTRY (widget), value);
+			gtk_editable_set_text (GTK_EDITABLE (widget), value);
 	}
 	g_signal_connect (G_OBJECT (widget), "changed", G_CALLBACK (stuff_changed_cb), self);
 
@@ -343,7 +350,7 @@ init_editor_plugin (OpenconnectEditor *self, NMConnection *connection, GError **
 	if (s_vpn) {
 		value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_PEM_PASSPHRASE_FSID);
 		if (value && !strcmp(value, "yes"))
-			gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON (widget), TRUE);
+			gtk_check_button_set_active (GTK_CHECK_BUTTON (widget), TRUE);
 	}
 	g_signal_connect (G_OBJECT (widget), "toggled", G_CALLBACK (stuff_changed_cb), self);
 
@@ -353,7 +360,7 @@ init_editor_plugin (OpenconnectEditor *self, NMConnection *connection, GError **
 	if (s_vpn) {
 		value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_PREVENT_INVALID_CERT);
 		if (value && !strcmp(value, "yes"))
-			gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON (widget), TRUE);
+			gtk_check_button_set_active (GTK_CHECK_BUTTON (widget), TRUE);
 	}
 	g_signal_connect (G_OBJECT (widget), "toggled", G_CALLBACK (stuff_changed_cb), self);
 
@@ -363,7 +370,7 @@ init_editor_plugin (OpenconnectEditor *self, NMConnection *connection, GError **
 	if (s_vpn) {
 		value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_CSD_ENABLE);
 		if (value && !strcmp(value, "yes"))
-			gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON (widget), TRUE);
+			gtk_check_button_set_active (GTK_CHECK_BUTTON (widget), TRUE);
 	}
 	g_signal_connect (G_OBJECT (widget), "toggled", G_CALLBACK (stuff_changed_cb), self);
 
@@ -373,7 +380,7 @@ init_editor_plugin (OpenconnectEditor *self, NMConnection *connection, GError **
 	if (s_vpn) {
 		value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_CSD_WRAPPER);
 		if (value)
-			gtk_entry_set_text (GTK_ENTRY (widget), value);
+			gtk_editable_set_text (GTK_EDITABLE (widget), value);
 	}
 	g_signal_connect (G_OBJECT (widget), "changed", G_CALLBACK (stuff_changed_cb), self);
 
@@ -383,7 +390,7 @@ init_editor_plugin (OpenconnectEditor *self, NMConnection *connection, GError **
 	if (s_vpn) {
 		value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_REPORTED_OS);
 		if (value)
-			gtk_entry_set_text (GTK_ENTRY (widget), value);
+			gtk_editable_set_text (GTK_EDITABLE (widget), value);
 	}
 	g_signal_connect (G_OBJECT (widget), "changed", G_CALLBACK (stuff_changed_cb), self);
 
@@ -444,34 +451,34 @@ update_connection (NMVpnEditor *iface,
 	}
 
 	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "gateway_entry"));
-	str = (char *) gtk_entry_get_text (GTK_ENTRY (widget));
+	str = (char *) gtk_editable_get_text (GTK_EDITABLE (widget));
 	if (str && strlen (str))
 		nm_setting_vpn_add_data_item (s_vpn, NM_OPENCONNECT_KEY_GATEWAY, str);
 
 	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "proxy_entry"));
-	str = (char *) gtk_entry_get_text (GTK_ENTRY (widget));
+	str = (char *) gtk_editable_get_text (GTK_EDITABLE (widget));
 	if (str && strlen (str))
 		nm_setting_vpn_add_data_item (s_vpn, NM_OPENCONNECT_KEY_PROXY, str);
 
 	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "fsid_button"));
-	str = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON (widget))?"yes":"no";
+	str = gtk_check_button_get_active (GTK_CHECK_BUTTON (widget))?"yes":"no";
 	nm_setting_vpn_add_data_item (s_vpn, NM_OPENCONNECT_KEY_PEM_PASSPHRASE_FSID, str);
 
 	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "prevent_invalid_cert_button"));
-	str = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON (widget))?"yes":"no";
+	str = gtk_check_button_get_active (GTK_CHECK_BUTTON (widget))?"yes":"no";
 	nm_setting_vpn_add_data_item (s_vpn, NM_OPENCONNECT_KEY_PREVENT_INVALID_CERT, str);
 
 	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "csd_button"));
-	str = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON (widget))?"yes":"no";
+	str = gtk_check_button_get_active (GTK_CHECK_BUTTON (widget))?"yes":"no";
 	nm_setting_vpn_add_data_item (s_vpn, NM_OPENCONNECT_KEY_CSD_ENABLE, str);
 
 	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "csd_wrapper_entry"));
-	str = (char *) gtk_entry_get_text (GTK_ENTRY (widget));
+	str = (char *) gtk_editable_get_text (GTK_EDITABLE (widget));
 	if (str && strlen (str))
 		nm_setting_vpn_add_data_item (s_vpn, NM_OPENCONNECT_KEY_CSD_WRAPPER, str);
 
 	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "reported_os"));
-	str = (char *) gtk_entry_get_text (GTK_ENTRY (widget));
+	str = (char *) gtk_editable_get_text (GTK_EDITABLE (widget));
 	if (str && strlen (str))
 		nm_setting_vpn_add_data_item (s_vpn, NM_OPENCONNECT_KEY_REPORTED_OS, str);
 

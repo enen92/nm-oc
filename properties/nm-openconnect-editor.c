@@ -2,7 +2,7 @@
 /***************************************************************************
  * Copyright (C) 2005 David Zeuthen, <davidz@redhat.com>
  * Copyright (C) 2005 - 2008 Dan Williams, <dcbw@redhat.com>
- * Copyright (C) 2005 - 2011 Red Hat, Inc.
+ * Copyright (C) 2005 - 2021 Red Hat, Inc.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -160,14 +160,14 @@ init_token_ui (OpenconnectEditor *self,
 	const char *value;
 
 	token_mode = GTK_COMBO_BOX (gtk_builder_get_object (priv->builder, "token_mode"));
-	if (!token_mode)
-		return FALSE;
+	g_return_val_if_fail (token_mode, FALSE);
+
 	if (!init_token_mode_options (token_mode))
 		return TRUE;
 
 	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "token_vbox"));
-	if (!widget)
-		return FALSE;
+	g_return_val_if_fail (widget, FALSE);
+
 	gtk_box_pack_start (GTK_BOX (priv->widget), widget, FALSE, FALSE, 0);
 
 	if (s_vpn) {
@@ -180,7 +180,7 @@ init_token_ui (OpenconnectEditor *self,
 			GtkTreeIter iter;
 
 			if (!gtk_tree_model_get_iter_first (model, &iter))
-				return FALSE;
+				g_return_val_if_reached (FALSE);
 			for (i = 0; ; i++) {
 				char *pref_value;
 
@@ -197,11 +197,11 @@ init_token_ui (OpenconnectEditor *self,
 	g_signal_connect (G_OBJECT (token_mode), "changed", G_CALLBACK (stuff_changed_cb), self);
 
 	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "token_secret"));
-	if (!widget)
-		return FALSE;
+	g_return_val_if_fail (widget, FALSE);
+
 	buffer = gtk_text_view_get_buffer (GTK_TEXT_VIEW (widget));
-	if (!buffer)
-		return FALSE;
+	g_return_val_if_fail (buffer, FALSE);
+
 	if (s_vpn) {
 		value = nm_setting_vpn_get_secret (s_vpn, NM_OPENCONNECT_KEY_TOKEN_SECRET);
 		if (!value)
@@ -313,8 +313,8 @@ init_editor_plugin (OpenconnectEditor *self, NMConnection *connection, GError **
 	priv->group = gtk_size_group_new (GTK_SIZE_GROUP_HORIZONTAL);
 
 	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "gateway_entry"));
-	if (!widget)
-		return FALSE;
+	g_return_val_if_fail (widget, FALSE);
+
 	gtk_size_group_add_widget (priv->group, widget);
 	if (s_vpn) {
 		value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_GATEWAY);
@@ -324,8 +324,8 @@ init_editor_plugin (OpenconnectEditor *self, NMConnection *connection, GError **
 	g_signal_connect (G_OBJECT (widget), "changed", G_CALLBACK (stuff_changed_cb), self);
 
 	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "proxy_entry"));
-	if (!widget)
-		return FALSE;
+	g_return_val_if_fail (widget, FALSE);
+
 	gtk_size_group_add_widget (priv->group, widget);
 	if (s_vpn) {
 		value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_PROXY);
@@ -335,8 +335,8 @@ init_editor_plugin (OpenconnectEditor *self, NMConnection *connection, GError **
 	g_signal_connect (G_OBJECT (widget), "changed", G_CALLBACK (stuff_changed_cb), self);
 
 	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "fsid_button"));
-	if (!widget)
-		return FALSE;
+	g_return_val_if_fail (widget, FALSE);
+
 	if (s_vpn) {
 		value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_PEM_PASSPHRASE_FSID);
 		if (value && !strcmp(value, "yes"))
@@ -345,8 +345,8 @@ init_editor_plugin (OpenconnectEditor *self, NMConnection *connection, GError **
 	g_signal_connect (G_OBJECT (widget), "toggled", G_CALLBACK (stuff_changed_cb), self);
 
 	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "prevent_invalid_cert_button"));
-	if (!widget)
-		return FALSE;
+	g_return_val_if_fail (widget, FALSE);
+
 	if (s_vpn) {
 		value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_PREVENT_INVALID_CERT);
 		if (value && !strcmp(value, "yes"))
@@ -355,8 +355,8 @@ init_editor_plugin (OpenconnectEditor *self, NMConnection *connection, GError **
 	g_signal_connect (G_OBJECT (widget), "toggled", G_CALLBACK (stuff_changed_cb), self);
 
 	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "csd_button"));
-	if (!widget)
-		return FALSE;
+	g_return_val_if_fail (widget, FALSE);
+
 	if (s_vpn) {
 		value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_CSD_ENABLE);
 		if (value && !strcmp(value, "yes"))
@@ -365,8 +365,8 @@ init_editor_plugin (OpenconnectEditor *self, NMConnection *connection, GError **
 	g_signal_connect (G_OBJECT (widget), "toggled", G_CALLBACK (stuff_changed_cb), self);
 
 	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "csd_wrapper_entry"));
-	if (!widget)
-		return FALSE;
+	g_return_val_if_fail (widget, FALSE);
+
 	if (s_vpn) {
 		value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_CSD_WRAPPER);
 		if (value)
@@ -375,8 +375,8 @@ init_editor_plugin (OpenconnectEditor *self, NMConnection *connection, GError **
 	g_signal_connect (G_OBJECT (widget), "changed", G_CALLBACK (stuff_changed_cb), self);
 
 	widget = GTK_WIDGET (gtk_builder_get_object (priv->builder, "reported_os"));
-	if (!widget)
-		return FALSE;
+	g_return_val_if_fail (widget, FALSE);
+
 	if (s_vpn) {
 		value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_REPORTED_OS);
 		if (value)
@@ -385,10 +385,10 @@ init_editor_plugin (OpenconnectEditor *self, NMConnection *connection, GError **
 	g_signal_connect (G_OBJECT (widget), "changed", G_CALLBACK (stuff_changed_cb), self);
 
 	if (init_token_ui (self, priv, s_vpn) == FALSE)
-		return FALSE;
+		g_return_val_if_reached (FALSE);
 
 	if (init_protocol_ui (self, priv, s_vpn) == FALSE)
-		return FALSE;
+		g_return_val_if_reached (FALSE);
 
 	tls_pw_init_auth_widget (priv->builder, priv->group, s_vpn, stuff_changed_cb, self);
 

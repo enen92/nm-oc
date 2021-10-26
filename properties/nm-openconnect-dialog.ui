@@ -106,40 +106,16 @@
       </packing>
     </child>
     <child>
-      <object class="GtkLabel" id="ca_cert_label">
+      <object class="NmaCertChooser" id="ca_chooser">
+        <property name="flags">13</property>
+        <property name="title">CA</property>
         <property name="visible">True</property>
-        <property name="label" translatable="yes">CA C_ertificate</property>
-        <property name="use_underline">True</property>
-        <property name="use_markup">False</property>
-        <property name="justify">GTK_JUSTIFY_LEFT</property>
-        <property name="wrap">False</property>
-        <property name="selectable">False</property>
-        <property name="xalign">1</property>
-        <property name="yalign">0.5</property>
-        <property name="mnemonic_widget">ca_cert_chooser</property>
-        <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-        <property name="width_chars">-1</property>
-        <property name="single_line_mode">False</property>
+        <property name="can-focus">False</property>
       </object>
       <packing>
-        <property name="left_attach">0</property>
-        <property name="top_attach">3</property>
-      </packing>
-    </child>
-    <child>
-      <object class="GtkFileChooserButton" id="ca_cert_chooser">
-        <property name="visible">True</property>
-        <property name="title" translatable="yes">Select A File</property>
-        <property name="action">GTK_FILE_CHOOSER_ACTION_OPEN</property>
-        <property name="local_only">True</property>
-        <property name="show_hidden">True</property>
-        <property name="do_overwrite_confirmation">False</property>
-        <property name="width_chars">-1</property>
-        <property name="hexpand">True</property>
-      </object>
-      <packing>
-        <property name="left_attach">1</property>
-        <property name="top_attach">3</property>
+        <property name="left-attach">0</property>
+        <property name="top-attach">3</property>
+        <property name="width">2</property>
       </packing>
     </child>
     <child>
@@ -302,77 +278,16 @@
       </packing>
     </child>
     <child>
-      <object class="GtkLabel" id="user_cert_label">
+      <object class="NmaCertChooser" id="cert_chooser">
+        <property name="flags">12</property>
+        <property name="title">User</property>
         <property name="visible">True</property>
-        <property name="label" translatable="yes">_User Certificate</property>
-        <property name="use_underline">True</property>
-        <property name="use_markup">False</property>
-        <property name="justify">GTK_JUSTIFY_LEFT</property>
-        <property name="wrap">False</property>
-        <property name="selectable">False</property>
-        <property name="xalign">1</property>
-        <property name="yalign">0.5</property>
-        <property name="mnemonic_widget">cert_user_cert_chooser</property>
-        <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-        <property name="width_chars">-1</property>
-        <property name="single_line_mode">False</property>
+        <property name="can-focus">False</property>
       </object>
       <packing>
-        <property name="left_attach">0</property>
-        <property name="top_attach">9</property>
-      </packing>
-    </child>
-    <child>
-      <object class="GtkFileChooserButton" id="cert_user_cert_chooser">
-        <property name="visible">True</property>
-        <property name="title" translatable="yes">Select A File</property>
-        <property name="action">GTK_FILE_CHOOSER_ACTION_OPEN</property>
-        <property name="local_only">True</property>
-        <property name="show_hidden">False</property>
-        <property name="do_overwrite_confirmation">False</property>
-        <property name="width_chars">-1</property>
-        <property name="hexpand">True</property>
-      </object>
-      <packing>
-        <property name="left_attach">1</property>
-        <property name="top_attach">9</property>
-      </packing>
-    </child>
-    <child>
-      <object class="GtkLabel" id="private_key_label">
-        <property name="visible">True</property>
-        <property name="label" translatable="yes">Private _Key</property>
-        <property name="use_underline">True</property>
-        <property name="use_markup">False</property>
-        <property name="justify">GTK_JUSTIFY_LEFT</property>
-        <property name="wrap">False</property>
-        <property name="selectable">False</property>
-        <property name="xalign">1</property>
-        <property name="yalign">0.5</property>
-        <property name="mnemonic_widget">cert_private_key_chooser</property>
-        <property name="ellipsize">PANGO_ELLIPSIZE_NONE</property>
-        <property name="width_chars">-1</property>
-        <property name="single_line_mode">False</property>
-      </object>
-      <packing>
-        <property name="left_attach">0</property>
-        <property name="top_attach">10</property>
-      </packing>
-    </child>
-    <child>
-      <object class="GtkFileChooserButton" id="cert_private_key_chooser">
-        <property name="visible">True</property>
-        <property name="title" translatable="yes">Select A File</property>
-        <property name="action">GTK_FILE_CHOOSER_ACTION_OPEN</property>
-        <property name="local_only">True</property>
-        <property name="show_hidden">False</property>
-        <property name="do_overwrite_confirmation">False</property>
-        <property name="width_chars">-1</property>
-        <property name="hexpand">True</property>
-      </object>
-      <packing>
-        <property name="left_attach">1</property>
-        <property name="top_attach">10</property>
+        <property name="left-attach">0</property>
+        <property name="top-attach">9</property>
+        <property name="width">2</property>
       </packing>
     </child>
     <child>
@@ -573,11 +488,8 @@
       <widget name="vpn_protocol_label"/>
       <widget name="gateway_label"/>
       <widget name="proxy_label"/>
-      <widget name="ca_cert_label"/>
       <widget name="csd_trojan_script_label"/>
       <widget name="reported_os_label"/>
-      <widget name="user_cert_label"/>
-      <widget name="private_key_label"/>
       <widget name="token_mode_label"/>
       <widget name="token_secret_label"/>
     </widgets>

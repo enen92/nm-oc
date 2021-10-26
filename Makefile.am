@@ -137,11 +137,13 @@ properties_libnm_vpn_plugin_openconnect_editor_la_CFLAGS = \
 	-DNETWORKMANAGER_COMPILATION=NM_NETWORKMANAGER_COMPILATION_LIB_EDITOR \
 	$(properties_cppflags) \
 	$(GTK_CFLAGS) \
-	$(LIBNM_CFLAGS)
+	$(LIBNM_CFLAGS) \
+	$(LIBNMA_CFLAGS)
 
 properties_libnm_vpn_plugin_openconnect_editor_la_LIBADD = \
 	$(GTK_LIBS) \
 	$(LIBNM_LIBS) \
+	$(LIBNMA_LIBS) \
 	$(OPENCONNECT_LIBS)
 
 properties_libnm_vpn_plugin_openconnect_editor_la_LDFLAGS = \

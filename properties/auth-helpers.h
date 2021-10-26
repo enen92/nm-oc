@@ -43,10 +43,6 @@ gboolean auth_widget_update_connection (GtkBuilder *builder,
                                         const char *contype,
                                         NMSettingVpn *s_vpn);
 
-GtkFileFilter *tls_file_chooser_filter_new (void);
-
-GtkFileFilter *sk_file_chooser_filter_new (void);
-
 GtkWidget *advanced_dialog_new (GHashTable *hash, const char *contype);
 
 GHashTable *advanced_dialog_new_hash_from_connection (NMConnection *connection, GError **error);

@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: network-manager-openconnect\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/NetworkManager-"
 "openconnect/issues\n"
-"POT-Creation-Date: 2021-06-27 16:04+0000\n"
-"PO-Revision-Date: 2021-10-02 00:27+0200\n"
+"POT-Creation-Date: 2021-10-01 22:32+0000\n"
+"PO-Revision-Date: 2021-10-06 18:25+0200\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -452,12 +452,12 @@ msgstr "Initial konfig: Speed tunnel %d, krypt %d, DPD %d\n"
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l549
 #: ../openconnect-strings.txt:33
 msgid "Short write in Array JSON negotiation\n"
-msgstr "Kort skrivning i ARRAY JSON-förhandling\n"
+msgstr "Kort skrivning i Array JSON-förhandling\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l558
 #: ../openconnect-strings.txt:36
 msgid "Failed to read Array JSON response\n"
-msgstr "Misslyckades med att läsa ARRAY JSON-svar\n"
+msgstr "Misslyckades med att läsa Array JSON-svar\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/array.c#l567
 #: ../openconnect-strings.txt:39
@@ -993,7 +993,7 @@ msgstr ""
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/auth-juniper.c#l530
 #: ../openconnect-strings.txt:361
 msgid "Encountered form with no 'name' or 'id'\n"
-msgstr "Stötte på formulär utan varken ”name” eller ”id”\n"
+msgstr "Stötte på formulär med varken ”name” eller ”id”\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/auth-juniper.c#l559
 #: ../openconnect-strings.txt:364
@@ -2363,13 +2363,13 @@ msgstr "Kunde inte extrahera tidsgräns för certifikat\n"
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl.c#l1664
 #: ../openconnect-strings.txt:1126
 msgid "Client certificate has expired at"
-msgstr "Klientcertifikat har passerat tidsgränsen"
+msgstr "Klientcertifikat har gått ut"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/gnutls.c#l373
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl.c#l1665
 #: ../openconnect-strings.txt:1130
 msgid "Secondary client certificate has expired at"
-msgstr "Sekundärt klientcertifikat har passerat tidsgränsen"
+msgstr "Sekundärt klientcertifikat har gått ut"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/gnutls.c#l375
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl.c#l1670
@@ -2896,7 +2896,7 @@ msgstr "certifikat inte aktiverat"
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/gnutls.c#l2104
 #: ../openconnect-strings.txt:1429
 msgid "certificate expired"
-msgstr "certifikat har överskridit tidsgräns"
+msgstr "certifikat har gått ut"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/gnutls.c#l2109
 #: ../openconnect-strings.txt:1432
@@ -3383,7 +3383,7 @@ msgstr "Ange lösenord för sekundär TPM2-nyckel:"
 #: ../openconnect-strings.txt:1697
 #, c-format
 msgid "TPM2 RSA sign function called for %d bytes, algo %s\n"
-msgstr "TPMv2 RSA-signaturfunktion anropad för %d byte, algo %s\n"
+msgstr "TPM2 RSA-signaturfunktion anropad för %d byte, algo %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/gnutls_tpm2_esys.c#l434
 #: ../openconnect-strings.txt:1700
@@ -4105,7 +4105,7 @@ msgstr "Fel vid hämtning av HTTP-svarskropp\n"
 #: ../openconnect-strings.txt:2084
 #, c-format
 msgid "Error in chunked decoding. Expected '', got: '%s'\n"
-msgstr "Fel i chunkavkodning. Förväntade '', fick: '%s'\n"
+msgstr "Fel i chunk-avkodning. Förväntade '', fick: '%s'\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/http.c#l475
 #: ../openconnect-strings.txt:2087
@@ -4174,7 +4174,7 @@ msgstr "anslutning vägras av målvärd"
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/http.c#l997
 #: ../openconnect-strings.txt:2123
 msgid "TTL expired"
-msgstr "TTL tidsgräns har överskridits"
+msgstr "TTL har gått ut"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/http.c#l998
 #: ../openconnect-strings.txt:2126
@@ -6011,7 +6011,7 @@ msgstr "Läs bara 1 byte från fältet för oNCP-längd\n"
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/oncp.c#l802
 #: ../openconnect-strings.txt:3172
 msgid "Server terminated connection (session expired)\n"
-msgstr "Servern avslutade anslutningen (sessionens tidsgräns passerades)\n"
+msgstr "Servern avslutade anslutningen (sessionen har gått ut)\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/oncp.c#l806
 #: ../openconnect-strings.txt:3175
@@ -6240,7 +6240,7 @@ msgstr "PIN-låst\n"
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl-pkcs11.c#l278
 #: ../openconnect-strings.txt:3301
 msgid "PIN expired\n"
-msgstr "PIN-tidsgräns överskriden\n"
+msgstr "PIN har gått ut\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/1aa1c52507:/openssl-pkcs11.c#l281
 #: ../openconnect-strings.txt:3304

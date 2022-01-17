@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: network-manager-openconnect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-15 10:02+0100\n"
-"PO-Revision-Date: 2017-08-13 10:32+0200\n"
+"PO-Revision-Date: 2022-01-18 18:59+0200\n"
 "Last-Translator: Miroslav Nikolić <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: srpski <gnome-sr@googlegroups.org>\n"
 "Language: sr\n"
@@ -1225,7 +1225,7 @@ msgstr "Šaljem paket zapakovanih podataka od %d bajta (beše %d)\n"
 #: ../openconnect-strings.txt:671
 #, c-format
 msgid "Send BYE packet: %s\n"
-msgstr "Poslah paket ODLSKA: %s\n"
+msgstr "Poslah paket ODLASKA: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/f036af620b:/cstp.c#l1228
 #: ../openconnect-strings.txt:674

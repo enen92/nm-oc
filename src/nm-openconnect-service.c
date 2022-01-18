@@ -494,7 +494,7 @@ nm_openconnect_start_openconnect_binary (NMOpenconnectPlugin *plugin,
 	if (props_csd_enable && !strcmp (props_csd_enable, "yes") && props_csd_wrapper) {
 		/* TODO: disable passing the script to openconnect.
 		 *
-		 * As we have priv->tun_name, openconnect will run as an unpriviledged user NM_OPENCONNECT_USER.
+		 * As we have priv->tun_name, openconnect will run as an unprivileged user NM_OPENCONNECT_USER.
 		 * However, it is still not safe to run untrusted scripts provided by the user.
 		 *
 		 * This needs a different solution, for now, just log a warning. */

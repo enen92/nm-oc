@@ -1744,7 +1744,9 @@ static void wait_for_quit (void)
 	do {
 		errno = 0;
 		n = read (0, &c, 1);
-		if (n == 0 || (n < 0 && errno == EAGAIN))
+		if (n == 0)
+			break;
+		if (n < 0 && errno == EAGAIN)
 			g_usleep (G_USEC_PER_SEC / 10);
 		else if (n == 1) {
 			g_string_append_c (str, c);

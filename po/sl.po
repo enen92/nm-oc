@@ -153,20 +153,20 @@ msgid "Select A File"
 msgstr "Izbor datoteke"
 
 #: ../properties/nm-openconnect-dialog.ui.h:3
-msgid "_VPN Protocol:"
-msgstr "_Protokol VPN:"
+msgid "_VPN Protocol"
+msgstr "_Protokol VPN"
 
 #: ../properties/nm-openconnect-dialog.ui.h:4
-msgid "_Gateway:"
-msgstr "_Prehod:"
+msgid "_Gateway"
+msgstr "_Prehod"
 
 #: ../properties/nm-openconnect-dialog.ui.h:5
-msgid "_Proxy:"
-msgstr "_Posredniški strežnik:"
+msgid "_Proxy"
+msgstr "_Posredniški strežnik"
 
 #: ../properties/nm-openconnect-dialog.ui.h:6
-msgid "CA C_ertificate:"
-msgstr "Potrdilo _CA:"
+msgid "CA C_ertificate"
+msgstr "Potrdilo _CA"
 
 #: ../properties/nm-openconnect-dialog.ui.h:7
 #, fuzzy
@@ -177,12 +177,12 @@ msgstr "Dovoli Cisco Secure Desktop _trojan"
 #: ../properties/nm-openconnect-dialog.ui.h:8
 #, fuzzy
 #| msgid "CSD _Wrapper Script:"
-msgid "Trojan (CSD) _Wrapper Script:"
-msgstr "Skript _ovijalnika CSD:"
+msgid "Trojan (CSD) _Wrapper Script"
+msgstr "Skript _ovijalnika CSD"
 
 #: ../properties/nm-openconnect-dialog.ui.h:9
-msgid "Reported OS:"
-msgstr "Objavljen OS:"
+msgid "Reported OS"
+msgstr "Objavljen OS"
 
 #: ../properties/nm-openconnect-dialog.ui.h:10
 msgid "Common values: linux linux-64 win mac-intel android apple-ios"
@@ -195,12 +195,12 @@ msgid "Certificate Authentication"
 msgstr "<b>Overitev potrdila</b>"
 
 #: ../properties/nm-openconnect-dialog.ui.h:12
-msgid "_User Certificate:"
-msgstr "_Uporabniško potrdilo:"
+msgid "_User Certificate"
+msgstr "_Uporabniško potrdilo"
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Private _Key:"
-msgstr "_Zasebni ključ:"
+msgid "Private _Key"
+msgstr "_Zasebni ključ"
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
 msgid "Use _FSID for key passphrase"
@@ -215,12 +215,12 @@ msgid "Software Token Authentication"
 msgstr "Overitev programskega žetona"
 
 #: ../properties/nm-openconnect-dialog.ui.h:17
-msgid "Token _Mode:"
-msgstr "_Način žetona:"
+msgid "Token _Mode"
+msgstr "_Način žetona"
 
 #: ../properties/nm-openconnect-dialog.ui.h:18
-msgid "Token Sec_ret:"
-msgstr "_Skrivnost žetona:"
+msgid "Token Sec_ret"
+msgstr "_Skrivnost žetona"
 
 #: ../properties/nm-openconnect-dialog.ui.h:19
 msgid "Disabled"

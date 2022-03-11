@@ -115,37 +115,37 @@ msgid "Select A File"
 msgstr "Chọn tập tin"
 
 #: ../properties/nm-openconnect-dialog.ui.h:3
-msgid "_Gateway:"
-msgstr "Cổ_ng:"
+msgid "_Gateway"
+msgstr "Cổ_ng"
 
 #: ../properties/nm-openconnect-dialog.ui.h:4
-msgid "_Proxy:"
-msgstr "Ủ_y nhiệm:"
+msgid "_Proxy"
+msgstr "Ủ_y nhiệm"
 
 #: ../properties/nm-openconnect-dialog.ui.h:5
 #, fuzzy
-msgid "CA C_ertificate:"
-msgstr "Chứng nhận C_A:"
+msgid "CA C_ertificate"
+msgstr "Chứng nhận C_A"
 
 #: ../properties/nm-openconnect-dialog.ui.h:6
 msgid "Allow Cisco Secure Desktop _trojan"
 msgstr "Cho phép Cisco Secure Desktop _trojan"
 
 #: ../properties/nm-openconnect-dialog.ui.h:7
-msgid "CSD _Wrapper Script:"
-msgstr "CSD _Wrapper Script:"
+msgid "CSD _Wrapper Script"
+msgstr "CSD _Wrapper Script"
 
 #: ../properties/nm-openconnect-dialog.ui.h:8
 msgid "<b>Certificate Authentication</b>"
 msgstr "<b>Xác thực chứng nhận</b>"
 
 #: ../properties/nm-openconnect-dialog.ui.h:9
-msgid "_User Certificate:"
-msgstr "_Chứng nhận người dùng:"
+msgid "_User Certificate"
+msgstr "_Chứng nhận người dùng"
 
 #: ../properties/nm-openconnect-dialog.ui.h:10
-msgid "Private _Key:"
-msgstr "_Khóa riêng:"
+msgid "Private _Key"
+msgstr "_Khóa riêng"
 
 #: ../properties/nm-openconnect-dialog.ui.h:11
 msgid "Use _FSID for key passphrase"
@@ -157,11 +157,11 @@ msgid "<b>Software Token Authentication</b>"
 msgstr "<b>Xác thực chứng nhận</b>"
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Token _Mode:"
+msgid "Token _Mode"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
-msgid "Token Sec_ret:"
+msgid "Token Sec_ret"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:15

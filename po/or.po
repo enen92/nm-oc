@@ -114,37 +114,37 @@ msgid "Select A File"
 msgstr "ଗୋଟିଏ ଫାଇଲ ବାଛନ୍ତୁ"
 
 #: ../properties/nm-openconnect-dialog.ui.h:3
-msgid "_Gateway:"
-msgstr "ପ୍ରବେଶ ଦ୍ୱାର (_G):"
+msgid "_Gateway"
+msgstr "ପ୍ରବେଶ ଦ୍ୱାର (_G)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:4
-msgid "_Proxy:"
-msgstr "ପ୍ରକ୍ସି (_P):"
+msgid "_Proxy"
+msgstr "ପ୍ରକ୍ସି (_P)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:5
 #, fuzzy
-msgid "CA C_ertificate:"
-msgstr "CA ପ୍ରମାଣପତ୍ର (_C):"
+msgid "CA C_ertificate"
+msgstr "CA ପ୍ରମାଣପତ୍ର (_C)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:6
 msgid "Allow Cisco Secure Desktop _trojan"
 msgstr "Cisco ସୁରକ୍ଷିତ ଡେସ୍କଟପ ଟ୍ରଜାନକୁ ଅନୁମତି ଦିଅନ୍ତୁ (_t)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:7
-msgid "CSD _Wrapper Script:"
-msgstr "CSD ରାପର ସ୍କ୍ରିପ୍ଟ (_W):"
+msgid "CSD _Wrapper Script"
+msgstr "CSD ରାପର ସ୍କ୍ରିପ୍ଟ (_W)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:8
 msgid "<b>Certificate Authentication</b>"
 msgstr "<b>ପ୍ରମାଣପତ୍ର ବୈଧିକରଣ</b>"
 
 #: ../properties/nm-openconnect-dialog.ui.h:9
-msgid "_User Certificate:"
-msgstr "ଚାଳକ ପ୍ରମାଣପତ୍ର (_U):"
+msgid "_User Certificate"
+msgstr "ଚାଳକ ପ୍ରମାଣପତ୍ର (_U)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:10
-msgid "Private _Key:"
-msgstr "ବ୍ୟକ୍ତିଗତ କି (_K):"
+msgid "Private _Key"
+msgstr "ବ୍ୟକ୍ତିଗତ କି (_K)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:11
 msgid "Use _FSID for key passphrase"
@@ -156,11 +156,11 @@ msgid "<b>Software Token Authentication</b>"
 msgstr "<b>ପ୍ରମାଣପତ୍ର ବୈଧିକରଣ</b>"
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Token _Mode:"
+msgid "Token _Mode"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
-msgid "Token Sec_ret:"
+msgid "Token Sec_ret"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:15

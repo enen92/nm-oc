@@ -117,16 +117,16 @@ msgid "Select A File"
 msgstr "Seleziona un file"
 
 #: ../properties/nm-openconnect-dialog.ui.h:3
-msgid "_Gateway:"
-msgstr "_Gateway:"
+msgid "_Gateway"
+msgstr "_Gateway"
 
 #: ../properties/nm-openconnect-dialog.ui.h:4
-msgid "_Proxy:"
-msgstr "_Proxy:"
+msgid "_Proxy"
+msgstr "_Proxy"
 
 #: ../properties/nm-openconnect-dialog.ui.h:5
-msgid "CA C_ertificate:"
-msgstr "C_ertificato Autorità Certificazione:"
+msgid "CA C_ertificate"
+msgstr "C_ertificato Autorità Certificazione"
 
 # [NdT] sembra strano anche a me, però si capisce meglio
 #       leggendo http://www.infradead.org/openconnect.html
@@ -136,20 +136,20 @@ msgid "Allow Cisco Secure Desktop _trojan"
 msgstr "Consentire il _trojan di Cisco Secure Desktop"
 
 #: ../properties/nm-openconnect-dialog.ui.h:7
-msgid "CSD _Wrapper Script:"
-msgstr "Script _wrapper CSD:"
+msgid "CSD _Wrapper Script"
+msgstr "Script _wrapper CSD"
 
 #: ../properties/nm-openconnect-dialog.ui.h:8
 msgid "<b>Certificate Authentication</b>"
 msgstr "<b>Autenticazione del certificato</b>"
 
 #: ../properties/nm-openconnect-dialog.ui.h:9
-msgid "_User Certificate:"
-msgstr "Certificato _utente:"
+msgid "_User Certificate"
+msgstr "Certificato _utente"
 
 #: ../properties/nm-openconnect-dialog.ui.h:10
-msgid "Private _Key:"
-msgstr "C_hiave privata:"
+msgid "Private _Key"
+msgstr "C_hiave privata"
 
 # [NdT] FSID dovrebbe essere FileSystemID
 #: ../properties/nm-openconnect-dialog.ui.h:11
@@ -161,12 +161,12 @@ msgid "<b>Software Token Authentication</b>"
 msgstr "<b>Autenticazione token software</b>"
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Token _Mode:"
-msgstr "_Modalità gettone:"
+msgid "Token _Mode"
+msgstr "_Modalità gettone"
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
-msgid "Token Sec_ret:"
-msgstr "Se_greto token:"
+msgid "Token Sec_ret"
+msgstr "Se_greto token"
 
 #: ../properties/nm-openconnect-dialog.ui.h:15
 msgid "Disabled"

@@ -8267,31 +8267,31 @@ msgid "Select A File"
 msgstr "Επιλέξτε αρχείο"
 
 #: ../properties/nm-openconnect-dialog.ui.h:3
-msgid "_VPN Protocol:"
+msgid "_VPN Protocol"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:4
-msgid "_Gateway:"
-msgstr "_Πύλη:"
+msgid "_Gateway"
+msgstr "_Πύλη"
 
 #: ../properties/nm-openconnect-dialog.ui.h:5
-msgid "_Proxy:"
-msgstr "_Διαμεσολαβητής:"
+msgid "_Proxy"
+msgstr "_Διαμεσολαβητής"
 
 #: ../properties/nm-openconnect-dialog.ui.h:6
-msgid "CA C_ertificate:"
-msgstr "Π_ιστοποιητικό CA:"
+msgid "CA C_ertificate"
+msgstr "Π_ιστοποιητικό CA"
 
 #: ../properties/nm-openconnect-dialog.ui.h:7
 msgid "Allow security scanner _trojan (CSD)"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:8
-msgid "Trojan (CSD) _Wrapper Script:"
+msgid "Trojan (CSD) _Wrapper Script"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:9
-msgid "Reported OS:"
+msgid "Reported OS"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:10
@@ -8303,12 +8303,12 @@ msgid "Certificate Authentication"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:12
-msgid "_User Certificate:"
-msgstr "Πιστοποιητικό _χρήστη:"
+msgid "_User Certificate"
+msgstr "Πιστοποιητικό _χρήστη"
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Private _Key:"
-msgstr "Ιδιωτικό _κλειδί:"
+msgid "Private _Key"
+msgstr "Ιδιωτικό _κλειδί"
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
 msgid "Use _FSID for key passphrase"
@@ -8323,12 +8323,12 @@ msgid "Software Token Authentication"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:17
-msgid "Token _Mode:"
-msgstr "_Λειτουργία διακριτικού:"
+msgid "Token _Mode"
+msgstr "_Λειτουργία διακριτικού"
 
 #: ../properties/nm-openconnect-dialog.ui.h:18
-msgid "Token Sec_ret:"
-msgstr "_Μυστικό διακριτικού:"
+msgid "Token Sec_ret"
+msgstr "_Μυστικό διακριτικού"
 
 #: ../properties/nm-openconnect-dialog.ui.h:19
 msgid "Disabled"

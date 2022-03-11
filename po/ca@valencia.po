@@ -112,24 +112,24 @@ msgid "Select A File"
 msgstr "Seleccioneu un fitxer"
 
 #: ../properties/nm-openconnect-dialog.ui.h:3
-msgid "_Gateway:"
-msgstr "_Passarel·la:"
+msgid "_Gateway"
+msgstr "_Passarel·la"
 
 #: ../properties/nm-openconnect-dialog.ui.h:4
-msgid "_Proxy:"
+msgid "_Proxy"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:5
 #, fuzzy
-msgid "CA C_ertificate:"
-msgstr "Certificat d'autoritat de certificació:"
+msgid "CA C_ertificate"
+msgstr "Certificat d'autoritat de certificació"
 
 #: ../properties/nm-openconnect-dialog.ui.h:6
 msgid "Allow Cisco Secure Desktop _trojan"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:7
-msgid "CSD _Wrapper Script:"
+msgid "CSD _Wrapper Script"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:8
@@ -139,13 +139,13 @@ msgstr "<b>Autenticació</b>"
 
 #: ../properties/nm-openconnect-dialog.ui.h:9
 #, fuzzy
-msgid "_User Certificate:"
-msgstr "Certificat d'usuari:"
+msgid "_User Certificate"
+msgstr "Certificat d'usuari"
 
 #: ../properties/nm-openconnect-dialog.ui.h:10
 #, fuzzy
-msgid "Private _Key:"
-msgstr "Clau privada:"
+msgid "Private _Key"
+msgstr "Clau privada"
 
 #: ../properties/nm-openconnect-dialog.ui.h:11
 msgid "Use _FSID for key passphrase"
@@ -157,11 +157,11 @@ msgid "<b>Software Token Authentication</b>"
 msgstr "<b>Autenticació</b>"
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Token _Mode:"
+msgid "Token _Mode"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
-msgid "Token Sec_ret:"
+msgid "Token Sec_ret"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:15

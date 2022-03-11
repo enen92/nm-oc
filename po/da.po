@@ -8394,32 +8394,32 @@ msgid "Select A File"
 msgstr "Vælg en fil"
 
 #: ../properties/nm-openconnect-dialog.ui.h:3
-msgid "_VPN Protocol:"
-msgstr "_VPN-protokol:"
+msgid "_VPN Protocol"
+msgstr "_VPN-protokol"
 
 #: ../properties/nm-openconnect-dialog.ui.h:4
-msgid "_Gateway:"
-msgstr "Gate_way:"
+msgid "_Gateway"
+msgstr "Gate_way"
 
 #: ../properties/nm-openconnect-dialog.ui.h:5
-msgid "_Proxy:"
-msgstr "_Proxy:"
+msgid "_Proxy"
+msgstr "_Proxy"
 
 #: ../properties/nm-openconnect-dialog.ui.h:6
-msgid "CA C_ertificate:"
-msgstr "_CA-certifikat:"
+msgid "CA C_ertificate"
+msgstr "_CA-certifikat"
 
 #: ../properties/nm-openconnect-dialog.ui.h:7
 msgid "Allow security scanner _trojan (CSD)"
 msgstr "Tillad sikkerhedsskannertro_janer (CSD)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:8
-msgid "Trojan (CSD) _Wrapper Script:"
-msgstr "_Omslagsscript for trojaner (CSD):"
+msgid "Trojan (CSD) _Wrapper Script"
+msgstr "_Omslagsscript for trojaner (CSD)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:9
-msgid "Reported OS:"
-msgstr "Rapporteret OS:"
+msgid "Reported OS"
+msgstr "Rapporteret OS"
 
 #: ../properties/nm-openconnect-dialog.ui.h:10
 msgid "Common values: linux linux-64 win mac-intel android apple-ios"
@@ -8430,12 +8430,12 @@ msgid "Certificate Authentication"
 msgstr "Godkendelse af certifikat"
 
 #: ../properties/nm-openconnect-dialog.ui.h:12
-msgid "_User Certificate:"
-msgstr "Br_ugercertifikat:"
+msgid "_User Certificate"
+msgstr "Br_ugercertifikat"
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Private _Key:"
-msgstr "Privat _nøgle:"
+msgid "Private _Key"
+msgstr "Privat _nøgle"
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
 msgid "Use _FSID for key passphrase"
@@ -8450,12 +8450,12 @@ msgid "Software Token Authentication"
 msgstr "Symbolgodkendelse i software"
 
 #: ../properties/nm-openconnect-dialog.ui.h:17
-msgid "Token _Mode:"
-msgstr "_Symboltilstand:"
+msgid "Token _Mode"
+msgstr "_Symboltilstand"
 
 #: ../properties/nm-openconnect-dialog.ui.h:18
-msgid "Token Sec_ret:"
-msgstr "S_ymbolhemmelighed:"
+msgid "Token Sec_ret"
+msgstr "S_ymbolhemmelighed"
 
 #: ../properties/nm-openconnect-dialog.ui.h:19
 msgid "Disabled"

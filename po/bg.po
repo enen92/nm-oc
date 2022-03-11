@@ -115,24 +115,24 @@ msgid "Select A File"
 msgstr "Избор на файл"
 
 #: ../properties/nm-openconnect-dialog.ui.h:3
-msgid "_Gateway:"
-msgstr "_Шлюз:"
+msgid "_Gateway"
+msgstr "_Шлюз"
 
 #: ../properties/nm-openconnect-dialog.ui.h:4
-msgid "_Proxy:"
-msgstr "Сървър-_посредник:"
+msgid "_Proxy"
+msgstr "Сървър-_посредник"
 
 #: ../properties/nm-openconnect-dialog.ui.h:5
 #, fuzzy
-msgid "CA C_ertificate:"
-msgstr "Сер_тификат на удостоверител:"
+msgid "CA C_ertificate"
+msgstr "Сер_тификат на удостоверител"
 
 #: ../properties/nm-openconnect-dialog.ui.h:6
 msgid "Allow Cisco Secure Desktop _trojan"
 msgstr "Включване на _троянския кон на Cisco Secure Desktop (CSD)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:7
-msgid "CSD _Wrapper Script:"
+msgid "CSD _Wrapper Script"
 msgstr "_Скрипт за CSD"
 
 #: ../properties/nm-openconnect-dialog.ui.h:8
@@ -140,12 +140,12 @@ msgid "<b>Certificate Authentication</b>"
 msgstr "<b>Удостоверител</b>"
 
 #: ../properties/nm-openconnect-dialog.ui.h:9
-msgid "_User Certificate:"
-msgstr "Потребителски _сертификат:"
+msgid "_User Certificate"
+msgstr "Потребителски _сертификат"
 
 #: ../properties/nm-openconnect-dialog.ui.h:10
-msgid "Private _Key:"
-msgstr "Частен _ключ:"
+msgid "Private _Key"
+msgstr "Частен _ключ"
 
 #: ../properties/nm-openconnect-dialog.ui.h:11
 msgid "Use _FSID for key passphrase"
@@ -157,11 +157,11 @@ msgid "<b>Software Token Authentication</b>"
 msgstr "<b>Удостоверител</b>"
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Token _Mode:"
+msgid "Token _Mode"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
-msgid "Token Sec_ret:"
+msgid "Token Sec_ret"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:15

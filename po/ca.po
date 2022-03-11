@@ -142,32 +142,32 @@ msgid "Select A File"
 msgstr "Seleccioneu un fitxer"
 
 #: ../properties/nm-openconnect-dialog.ui.h:3
-msgid "_VPN Protocol:"
-msgstr "Protocol _VPN:"
+msgid "_VPN Protocol"
+msgstr "Protocol _VPN"
 
 #: ../properties/nm-openconnect-dialog.ui.h:4
-msgid "_Gateway:"
-msgstr "_Passarel·la:"
+msgid "_Gateway"
+msgstr "_Passarel·la"
 
 #: ../properties/nm-openconnect-dialog.ui.h:5
-msgid "_Proxy:"
-msgstr "_Servidor intermediari:"
+msgid "_Proxy"
+msgstr "_Servidor intermediari"
 
 #: ../properties/nm-openconnect-dialog.ui.h:6
-msgid "CA C_ertificate:"
-msgstr "Certificat _CA:"
+msgid "CA C_ertificate"
+msgstr "Certificat _CA"
 
 #: ../properties/nm-openconnect-dialog.ui.h:7
 msgid "Allow security scanner _trojan (CSD)"
 msgstr "Permet escàner de seguretat _troià (CSD)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:8
-msgid "Trojan (CSD) _Wrapper Script:"
-msgstr "Script _embolcall del troià (CSD):"
+msgid "Trojan (CSD) _Wrapper Script"
+msgstr "Script _embolcall del troià (CSD)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:9
-msgid "Reported OS:"
-msgstr "SO informat:"
+msgid "Reported OS"
+msgstr "SO informat"
 
 #: ../properties/nm-openconnect-dialog.ui.h:10
 msgid "Common values: linux linux-64 win mac-intel android apple-ios"
@@ -178,12 +178,12 @@ msgid "Certificate Authentication"
 msgstr "Certificat d'autenticació"
 
 #: ../properties/nm-openconnect-dialog.ui.h:12
-msgid "_User Certificate:"
-msgstr "Certificat d'_usuari:"
+msgid "_User Certificate"
+msgstr "Certificat d'_usuari"
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Private _Key:"
-msgstr "_Clau privada:"
+msgid "Private _Key"
+msgstr "_Clau privada"
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
 msgid "Use _FSID for key passphrase"
@@ -198,12 +198,12 @@ msgid "Software Token Authentication"
 msgstr "Programari d'autenticació de testimoni"
 
 #: ../properties/nm-openconnect-dialog.ui.h:17
-msgid "Token _Mode:"
-msgstr "_Mode testimoni:"
+msgid "Token _Mode"
+msgstr "_Mode testimoni"
 
 #: ../properties/nm-openconnect-dialog.ui.h:18
-msgid "Token Sec_ret:"
-msgstr "Testimoni sec_ret:"
+msgid "Token Sec_ret"
+msgstr "Testimoni sec_ret"
 
 #: ../properties/nm-openconnect-dialog.ui.h:19
 msgid "Disabled"

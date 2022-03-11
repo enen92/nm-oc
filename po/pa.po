@@ -8213,32 +8213,32 @@ msgid "Select A File"
 msgstr "ਫਾਇਲ ਚੁਣੋ"
 
 #: ../properties/nm-openconnect-dialog.ui.h:3
-msgid "_VPN Protocol:"
+msgid "_VPN Protocol"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:4
-msgid "_Gateway:"
-msgstr "ਗੇਟਵੇ(_G):"
+msgid "_Gateway"
+msgstr "ਗੇਟਵੇ(_G)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:5
-msgid "_Proxy:"
-msgstr "ਪਰਾਕਸੀ(_P):"
+msgid "_Proxy"
+msgstr "ਪਰਾਕਸੀ(_P)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:6
 #, fuzzy
-msgid "CA C_ertificate:"
-msgstr "_CA ਸਰਟੀਫਿਕੇਟ:"
+msgid "CA C_ertificate"
+msgstr "_CA ਸਰਟੀਫਿਕੇਟ"
 
 #: ../properties/nm-openconnect-dialog.ui.h:7
 msgid "Allow security scanner _trojan (CSD)"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:8
-msgid "Trojan (CSD) _Wrapper Script:"
+msgid "Trojan (CSD) _Wrapper Script"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:9
-msgid "Reported OS:"
+msgid "Reported OS"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:10
@@ -8250,12 +8250,12 @@ msgid "Certificate Authentication"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:12
-msgid "_User Certificate:"
-msgstr "ਯੂਜ਼ਰ ਸਰਟੀਫਿਕੇਟ(_U):"
+msgid "_User Certificate"
+msgstr "ਯੂਜ਼ਰ ਸਰਟੀਫਿਕੇਟ(_U)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Private _Key:"
-msgstr "ਪ੍ਰਾਈਵੇਟ ਕੁੰਜੀ(_K):"
+msgid "Private _Key"
+msgstr "ਪ੍ਰਾਈਵੇਟ ਕੁੰਜੀ(_K)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
 msgid "Use _FSID for key passphrase"
@@ -8270,11 +8270,11 @@ msgid "Software Token Authentication"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:17
-msgid "Token _Mode:"
+msgid "Token _Mode"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:18
-msgid "Token Sec_ret:"
+msgid "Token Sec_ret"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:19

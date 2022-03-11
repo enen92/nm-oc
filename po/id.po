@@ -140,32 +140,32 @@ msgid "Select A File"
 msgstr "Pilih Berkas"
 
 #: ../properties/nm-openconnect-dialog.ui.h:3
-msgid "_VPN Protocol:"
-msgstr "Protokol _VPN:"
+msgid "_VPN Protocol"
+msgstr "Protokol _VPN"
 
 #: ../properties/nm-openconnect-dialog.ui.h:4
-msgid "_Gateway:"
-msgstr "_Gateway:"
+msgid "_Gateway"
+msgstr "_Gateway"
 
 #: ../properties/nm-openconnect-dialog.ui.h:5
-msgid "_Proxy:"
-msgstr "_Proksi:"
+msgid "_Proxy"
+msgstr "_Proksi"
 
 #: ../properties/nm-openconnect-dialog.ui.h:6
-msgid "CA C_ertificate:"
-msgstr "S_ertifikat CA:"
+msgid "CA C_ertificate"
+msgstr "S_ertifikat CA"
 
 #: ../properties/nm-openconnect-dialog.ui.h:7
 msgid "Allow security scanner _trojan (CSD)"
 msgstr "Izinkan _trojan pemindai keamanan (CSD)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:8
-msgid "Trojan (CSD) _Wrapper Script:"
-msgstr "Skrip _Pembungkus Trojan (CSD):"
+msgid "Trojan (CSD) _Wrapper Script"
+msgstr "Skrip _Pembungkus Trojan (CSD)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:9
-msgid "Reported OS:"
-msgstr "OS yang dilaporkan:"
+msgid "Reported OS"
+msgstr "OS yang dilaporkan"
 
 #: ../properties/nm-openconnect-dialog.ui.h:10
 msgid "Common values: linux linux-64 win mac-intel android apple-ios"
@@ -176,12 +176,12 @@ msgid "Certificate Authentication"
 msgstr "Autentikasi Sertifikat"
 
 #: ../properties/nm-openconnect-dialog.ui.h:12
-msgid "_User Certificate:"
-msgstr "Sertifikat Pengg_una:"
+msgid "_User Certificate"
+msgstr "Sertifikat Pengg_una"
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Private _Key:"
-msgstr "_Kunci Pribadi:"
+msgid "Private _Key"
+msgstr "_Kunci Pribadi"
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
 msgid "Use _FSID for key passphrase"
@@ -196,12 +196,12 @@ msgid "Software Token Authentication"
 msgstr "Autentikasi Token Perangkat Lunak"
 
 #: ../properties/nm-openconnect-dialog.ui.h:17
-msgid "Token _Mode:"
-msgstr "_Mode Token:"
+msgid "Token _Mode"
+msgstr "_Mode Token"
 
 #: ../properties/nm-openconnect-dialog.ui.h:18
-msgid "Token Sec_ret:"
-msgstr "_Rahasia Token:"
+msgid "Token Sec_ret"
+msgstr "_Rahasia Token"
 
 #: ../properties/nm-openconnect-dialog.ui.h:19
 msgid "Disabled"

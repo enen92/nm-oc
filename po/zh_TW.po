@@ -111,15 +111,15 @@ msgid "Select A File"
 msgstr "選擇一個檔案"
 
 #: ../properties/nm-openconnect-dialog.ui.h:3
-msgid "_Gateway:"
-msgstr "通訊閘(_G):"
+msgid "_Gateway"
+msgstr "通訊閘(_G)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:4
-msgid "_Proxy:"
-msgstr "代理伺服器(_P):"
+msgid "_Proxy"
+msgstr "代理伺服器(_P)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:5
-msgid "CA C_ertificate:"
+msgid "CA C_ertificate"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:6
@@ -127,20 +127,20 @@ msgid "Allow Cisco Secure Desktop _trojan"
 msgstr "允許 Cisco Secure Desk_top 程式"
 
 #: ../properties/nm-openconnect-dialog.ui.h:7
-msgid "CSD _Wrapper Script:"
-msgstr "CSD 包裹命令稿(_W):"
+msgid "CSD _Wrapper Script"
+msgstr "CSD 包裹命令稿(_W)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:8
 msgid "<b>Certificate Authentication</b>"
 msgstr "<b>憑證驗證</b>"
 
 #: ../properties/nm-openconnect-dialog.ui.h:9
-msgid "_User Certificate:"
-msgstr "使用者憑證(_U):"
+msgid "_User Certificate"
+msgstr "使用者憑證(_U)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:10
-msgid "Private _Key:"
-msgstr "私密金鑰(_K):"
+msgid "Private _Key"
+msgstr "私密金鑰(_K)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:11
 msgid "Use _FSID for key passphrase"
@@ -151,11 +151,11 @@ msgid "<b>Software Token Authentication</b>"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Token _Mode:"
+msgid "Token _Mode"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
-msgid "Token Sec_ret:"
+msgid "Token Sec_ret"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:15

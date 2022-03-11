@@ -114,37 +114,37 @@ msgid "Select A File"
 msgstr "এটা নথিপত্ৰ বাচি লওক"
 
 #: ../properties/nm-openconnect-dialog.ui.h:3
-msgid "_Gateway:"
-msgstr "গেটৱে (_G):"
+msgid "_Gateway"
+msgstr "গেটৱে (_G)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:4
-msgid "_Proxy:"
-msgstr "প্ৰক্সি (_P):"
+msgid "_Proxy"
+msgstr "প্ৰক্সি (_P)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:5
 #, fuzzy
-msgid "CA C_ertificate:"
-msgstr "CA প্ৰমাণপত্ৰ (_C):"
+msgid "CA C_ertificate"
+msgstr "CA প্ৰমাণপত্ৰ (_C)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:6
 msgid "Allow Cisco Secure Desktop _trojan"
 msgstr "Cisco সুৰক্ষীত ডেস্কটপ ট্ৰজানৰ অনুমতি দিয়ক (_t)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:7
-msgid "CSD _Wrapper Script:"
-msgstr "CSD _Wrapper লিপি:"
+msgid "CSD _Wrapper Script"
+msgstr "CSD _Wrapper লিপি"
 
 #: ../properties/nm-openconnect-dialog.ui.h:8
 msgid "<b>Certificate Authentication</b>"
 msgstr "<b>প্ৰমাণপত্ৰ প্ৰমাণীকৰণ</b>"
 
 #: ../properties/nm-openconnect-dialog.ui.h:9
-msgid "_User Certificate:"
-msgstr "ব্যৱহাৰকাৰীৰ প্ৰমাণপত্ৰ (_U):"
+msgid "_User Certificate"
+msgstr "ব্যৱহাৰকাৰীৰ প্ৰমাণপত্ৰ (_U)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:10
-msgid "Private _Key:"
-msgstr "ব্যক্তিগত চাবি (_K):"
+msgid "Private _Key"
+msgstr "ব্যক্তিগত চাবি (_K)"
 
 #: ../properties/nm-openconnect-dialog.ui.h:11
 msgid "Use _FSID for key passphrase"
@@ -156,11 +156,11 @@ msgid "<b>Software Token Authentication</b>"
 msgstr "<b>প্ৰমাণপত্ৰ প্ৰমাণীকৰণ</b>"
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Token _Mode:"
+msgid "Token _Mode"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
-msgid "Token Sec_ret:"
+msgid "Token Sec_ret"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:15

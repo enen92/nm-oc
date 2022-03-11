@@ -118,37 +118,37 @@ msgid "Select A File"
 msgstr "Faili valimine"
 
 #: ../properties/nm-openconnect-dialog.ui.h:3
-msgid "_Gateway:"
-msgstr "_Gateway:"
+msgid "_Gateway"
+msgstr "_Gateway"
 
 #: ../properties/nm-openconnect-dialog.ui.h:4
-msgid "_Proxy:"
-msgstr "_Proksi:"
+msgid "_Proxy"
+msgstr "_Proksi"
 
 #: ../properties/nm-openconnect-dialog.ui.h:5
 #, fuzzy
-msgid "CA C_ertificate:"
-msgstr "Sertifitseerimis_keskuse sert:"
+msgid "CA C_ertificate"
+msgstr "Sertifitseerimis_keskuse sert"
 
 #: ../properties/nm-openconnect-dialog.ui.h:6
 msgid "Allow Cisco Secure Desktop _trojan"
 msgstr "Cisco Secure Desktop _trooja lubatud"
 
 #: ../properties/nm-openconnect-dialog.ui.h:7
-msgid "CSD _Wrapper Script:"
-msgstr "CSD _põimskript:"
+msgid "CSD _Wrapper Script"
+msgstr "CSD _põimskript"
 
 #: ../properties/nm-openconnect-dialog.ui.h:8
 msgid "<b>Certificate Authentication</b>"
 msgstr "<b>Sertifikaadiga autentimine</b>"
 
 #: ../properties/nm-openconnect-dialog.ui.h:9
-msgid "_User Certificate:"
-msgstr "Kasutaja _sertifikaat:"
+msgid "_User Certificate"
+msgstr "Kasutaja _sertifikaat"
 
 #: ../properties/nm-openconnect-dialog.ui.h:10
-msgid "Private _Key:"
-msgstr "Privaat_võti:"
+msgid "Private _Key"
+msgstr "Privaat_võti"
 
 #: ../properties/nm-openconnect-dialog.ui.h:11
 msgid "Use _FSID for key passphrase"
@@ -160,11 +160,11 @@ msgid "<b>Software Token Authentication</b>"
 msgstr "<b>Sertifikaadiga autentimine</b>"
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Token _Mode:"
+msgid "Token _Mode"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
-msgid "Token Sec_ret:"
+msgid "Token Sec_ret"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:15

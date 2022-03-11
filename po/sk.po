@@ -7050,32 +7050,32 @@ msgid "Select A File"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:3
-msgid "_VPN Protocol:"
-msgstr "Protokol _VPN:"
+msgid "_VPN Protocol"
+msgstr "Protokol _VPN"
 
 #: ../properties/nm-openconnect-dialog.ui.h:4
-msgid "_Gateway:"
-msgstr "_Brána:"
+msgid "_Gateway"
+msgstr "_Brána"
 
 #: ../properties/nm-openconnect-dialog.ui.h:5
-msgid "_Proxy:"
-msgstr "_Proxy:"
+msgid "_Proxy"
+msgstr "_Proxy"
 
 #: ../properties/nm-openconnect-dialog.ui.h:6
-msgid "CA C_ertificate:"
-msgstr "C_ertifikát CA:"
+msgid "CA C_ertificate"
+msgstr "C_ertifikát CA"
 
 #: ../properties/nm-openconnect-dialog.ui.h:7
 msgid "Allow security scanner _trojan (CSD)"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:8
-msgid "Trojan (CSD) _Wrapper Script:"
+msgid "Trojan (CSD) _Wrapper Script"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:9
-msgid "Reported OS:"
-msgstr "Ohlásený OS:"
+msgid "Reported OS"
+msgstr "Ohlásený OS"
 
 #: ../properties/nm-openconnect-dialog.ui.h:10
 msgid "Common values: linux linux-64 win mac-intel android apple-ios"
@@ -7086,12 +7086,12 @@ msgid "Certificate Authentication"
 msgstr "Overenie totožnosti certifikátu"
 
 #: ../properties/nm-openconnect-dialog.ui.h:12
-msgid "_User Certificate:"
-msgstr "_Používateľský certifikát:"
+msgid "_User Certificate"
+msgstr "_Používateľský certifikát"
 
 #: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Private _Key:"
-msgstr "Súkromný _kľúč:"
+msgid "Private _Key"
+msgstr "Súkromný _kľúč"
 
 #: ../properties/nm-openconnect-dialog.ui.h:14
 msgid "Use _FSID for key passphrase"
@@ -7106,11 +7106,11 @@ msgid "Software Token Authentication"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:17
-msgid "Token _Mode:"
+msgid "Token _Mode"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:18
-msgid "Token Sec_ret:"
+msgid "Token Sec_ret"
 msgstr ""
 
 #: ../properties/nm-openconnect-dialog.ui.h:19

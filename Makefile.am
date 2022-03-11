@@ -95,6 +95,11 @@ CLEANFILES += \
 EXTRA_DIST += \
 	properties/gresource.xml
 
+# Include a prebuilt file in tarball, to avoid hitting
+# https://gitlab.gnome.org/GNOME/gtk/-/merge_requests/4415
+EXTRA_DIST += \
+	gtk4/nm-openconnect-dialog.ui
+
 plugin_sources = \
 	properties/nm-openconnect-editor-plugin.c \
 	properties/nm-openconnect-editor-plugin.h \

@@ -1,7 +1,7 @@
 AC_PREREQ(2.52)
 
 AC_INIT(NetworkManager-openconnect,
-        1.2.8,
+        1.2.9,
         https://gitlab.gnome.org/GNOME/NetworkManager-openconnect/issues,
         NetworkManager-openconnect)
 AM_INIT_AUTOMAKE([no-dist-gzip dist-xz])

@@ -473,6 +473,8 @@ main (int argc, char *argv[])
 	struct in_addr temp_addr;
 	char *bus_path;
 	gboolean has_ip4 = FALSE, has_ip6 = FALSE;
+	gboolean not_ipv4_never_default = FALSE;
+	gboolean not_ipv6_never_default = FALSE;
 
 #if !GLIB_CHECK_VERSION (2, 35, 0)
 	g_type_init ();
@@ -600,7 +602,13 @@ main (int argc, char *argv[])
 	/* IPv4 Netmask */
 	tmp = getenv ("INTERNAL_IP4_NETMASK");
 	if (tmp && inet_pton (AF_INET, tmp, &temp_addr) > 0) {
-		val = g_variant_new_uint32 (nm_utils_ip4_netmask_to_prefix (temp_addr.s_addr));
+		uint32_t prefix = nm_utils_ip4_netmask_to_prefix (temp_addr.s_addr);
+		/* If the netmask is the default route, rewrite to /32 and avoid adding NEVER_DEFAULT */
+		if(prefix == 0) {
+			prefix = 32;
+			not_ipv4_never_default = TRUE;
+		}
+		val = g_variant_new_uint32 (prefix);
 		g_variant_builder_add (&ip4builder, "{sv}", NM_VPN_PLUGIN_IP4_CONFIG_PREFIX, val);
 	}
 
@@ -642,9 +650,10 @@ main (int argc, char *argv[])
 	val = get_ip4_routes ();
 	if (val) {
 		g_variant_builder_add (&ip4builder, "{sv}", NM_VPN_PLUGIN_IP4_CONFIG_ROUTES, val);
-		/* If routes-to-include were provided, that means no default route */
-		g_variant_builder_add (&ip4builder, "{sv}", NM_VPN_PLUGIN_IP4_CONFIG_NEVER_DEFAULT,
-		                       g_variant_new_boolean (TRUE));
+		/* If routes-to-include were provided, that means no default route, unless it was set as netmask */
+		if(!not_ipv4_never_default)
+			g_variant_builder_add (&ip4builder, "{sv}", NM_VPN_PLUGIN_IP4_CONFIG_NEVER_DEFAULT,
+								   g_variant_new_boolean (TRUE));
 	}
 
 	/* Default domain */
@@ -678,7 +687,13 @@ main (int argc, char *argv[])
 	if (tmp)
 		tmp = strchr (tmp, '/');
 	if (tmp) {
-		val = g_variant_new_uint32 (strtol (tmp + 1, NULL, 10));
+		uint32_t prefix = strtol (tmp + 1, NULL, 10);
+		/* If the netmask is the default route, rewrite to /128 and avoid adding NEVER_DEFAULT */
+		if(prefix == 0) {
+			prefix = 128;
+			not_ipv6_never_default = TRUE;
+		}
+		val = g_variant_new_uint32 (prefix);
 		g_variant_builder_add (&ip6builder, "{sv}", NM_VPN_PLUGIN_IP6_CONFIG_PREFIX, val);
 	}
 
@@ -686,9 +701,10 @@ main (int argc, char *argv[])
 	val = get_ip6_routes ();
 	if (val) {
 		g_variant_builder_add (&ip6builder, "{sv}", NM_VPN_PLUGIN_IP6_CONFIG_ROUTES, val);
-		/* If routes-to-include were provided, that means no default route */
-		g_variant_builder_add (&ip6builder, "{sv}", NM_VPN_PLUGIN_IP6_CONFIG_NEVER_DEFAULT,
-		                       g_variant_new_boolean (TRUE));
+		/* If routes-to-include were provided, that means no default route, unless it was set as netmask */
+		if(!not_ipv6_never_default)
+			g_variant_builder_add (&ip6builder, "{sv}", NM_VPN_PLUGIN_IP6_CONFIG_NEVER_DEFAULT,
+								   g_variant_new_boolean (TRUE));
 	}
 
 	ip4config = g_variant_builder_end (&ip4builder);

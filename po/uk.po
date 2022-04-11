@@ -7,17 +7,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: network-manager-openconnect\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-11 17:05+0200\n"
-"PO-Revision-Date: 2022-02-20 19:32+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/NetworkManager-openconnec"
+"t/issues\n"
+"POT-Creation-Date: 2022-04-11 15:43+0000\n"
+"PO-Revision-Date: 2022-04-11 21:45+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
+"=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Lokalize 20.12.0\n"
 
 #: ../appdata/network-manager-openconnect.metainfo.xml.in.h:1
@@ -114,6 +115,272 @@ msgstr "Зберігати паролі"
 #: ../auth-dialog/main.c:1662
 msgid "Log"
 msgstr "Журнал"
+
+#: ../properties/nm-openconnect-dialog.ui.h:1
+msgid "General"
+msgstr "Загальне"
+
+#: ../properties/nm-openconnect-dialog.ui.h:2
+msgid "_VPN Protocol"
+msgstr "П_ротокол VPN"
+
+#: ../properties/nm-openconnect-dialog.ui.h:3
+msgid "_Gateway"
+msgstr "_Шлюз"
+
+#: ../properties/nm-openconnect-dialog.ui.h:4
+msgid "_Proxy"
+msgstr "_Проксі"
+
+#: ../properties/nm-openconnect-dialog.ui.h:5
+msgid "Allow security scanner _trojan (CSD)"
+msgstr "Дозволити _троян сканування захисту (CSD)"
+
+#: ../properties/nm-openconnect-dialog.ui.h:6
+msgid "Trojan (CSD) _Wrapper Script"
+msgstr "Троянський (CSD) с_крипт-обгортка"
+
+#: ../properties/nm-openconnect-dialog.ui.h:7
+msgid "Reported OS"
+msgstr "Повідомлена ОС"
+
+#: ../properties/nm-openconnect-dialog.ui.h:8
+msgid "Common values: linux linux-64 win mac-intel android apple-ios"
+msgstr "Типові значення: linux linux-64 win mac-intel android apple-ios"
+
+#: ../properties/nm-openconnect-dialog.ui.h:9
+msgid "Certificate Authentication"
+msgstr "Розпізнавання за сертифікатом"
+
+#: ../properties/nm-openconnect-dialog.ui.h:10
+msgid "Use _FSID for key passphrase"
+msgstr "_Використовувати FSID як парольну фразу ключа"
+
+#: ../properties/nm-openconnect-dialog.ui.h:11
+msgid "Prevent user from manually accepting invalid certificates"
+msgstr "Заборонити користувачеві приймати вручну некоректні сертифікати"
+
+#: ../properties/nm-openconnect-dialog.ui.h:12
+msgid "Software Token Authentication"
+msgstr "Програмне розпізнавання за ключем"
+
+#: ../properties/nm-openconnect-dialog.ui.h:13
+msgid "Token _Mode"
+msgstr "_Режим ключа"
+
+#: ../properties/nm-openconnect-dialog.ui.h:14
+msgid "Token Sec_ret"
+msgstr "Р_еєстраційні дані ключа"
+
+#: ../properties/nm-openconnect-dialog.ui.h:15
+msgid "Disabled"
+msgstr "Вимкнено"
+
+#: ../properties/nm-openconnect-dialog.ui.h:16
+msgid "RSA SecurID — read from ~/.stokenrc"
+msgstr "RSA SecurID — читання з ~/.stokenrc"
+
+#: ../properties/nm-openconnect-dialog.ui.h:17
+msgid "RSA SecurID — manually entered"
+msgstr "RSA SecurID — введене вручну"
+
+#: ../properties/nm-openconnect-dialog.ui.h:18
+msgid "TOTP — manually entered"
+msgstr "TOTP — введене вручну"
+
+#: ../properties/nm-openconnect-dialog.ui.h:19
+msgid "HOTP — manually entered"
+msgstr "HOTP — введене вручну"
+
+#: ../properties/nm-openconnect-dialog.ui.h:20
+msgid "Yubikey OATH"
+msgstr "OATH Yubikey"
+
+#: ../properties/nm-openconnect-editor.c:259
+msgid "Cisco AnyConnect"
+msgstr "AnyConnect від Cisco"
+
+#: ../properties/nm-openconnect-editor.c:265
+msgid "Juniper/Pulse Network Connect"
+msgstr "Мережеве з’єднання Juniper/Pulse"
+
+#: ../properties/nm-openconnect-editor-plugin.c:57
+#: ../properties/nm-openconnect-editor-plugin.c:60
+msgid "Multi-protocol VPN client (openconnect)"
+msgstr "Клієнт VPN із підтримкою багатьох протоколів (openconnect)"
+
+#: ../properties/nm-openconnect-editor-plugin.c:58
+msgid ""
+"Compatible with Cisco AnyConnect, Juniper Network Connect and Junos Pulse, "
+"and PAN GlobalProtect SSL VPNs."
+msgstr ""
+"Сумісний із VPN SSL Cisco AnyConnect, Juniper Network Connect, Junos Pulse "
+"та PAN GlobalProtect."
+
+#: ../properties/nm-openconnect-editor-plugin.c:61
+msgid ""
+"Compatible with Cisco AnyConnect and Juniper Network Connect and Junos Pulse "
+"SSL VPNs."
+msgstr ""
+"Сумісний із VPN SSL Cisco AnyConnect, Juniper Network Connect та Junos Pulse."
+
+#: ../properties/nm-openconnect-editor-plugin.c:63
+msgid "Cisco AnyConnect Compatible VPN (openconnect)"
+msgstr "Сумісна з Cisco AnyConnect VPN (openconnect)"
+
+#: ../properties/nm-openconnect-editor-plugin.c:64
+msgid "Compatible with Cisco AnyConnect SSL VPN."
+msgstr "SSL VPN, сумісна з Cisco AnyConnect."
+
+#. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/library.c#l124
+#: ../properties/nm-openconnect-editor-plugin.c:105
+#: ../openconnect-strings.txt:2313
+msgid "Cisco AnyConnect or openconnect"
+msgstr "Cisco AnyConnect або openconnect"
+
+#. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/library.c#l125
+#: ../properties/nm-openconnect-editor-plugin.c:106
+#: ../openconnect-strings.txt:2316
+msgid "Compatible with Cisco AnyConnect SSL VPN, as well as ocserv"
+msgstr "VPN SSL, сумісна з Cisco AnyConnect, а також ocserv"
+
+#. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/library.c#l144
+#: ../properties/nm-openconnect-editor-plugin.c:110
+#: ../openconnect-strings.txt:2319
+msgid "Juniper Network Connect"
+msgstr "Juniper Network Connect"
+
+#. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/library.c#l145
+#: ../properties/nm-openconnect-editor-plugin.c:111
+#: ../openconnect-strings.txt:2322
+msgid "Compatible with Juniper Network Connect"
+msgstr "Сумісна із Juniper Network Connect"
+
+#: ../shared/nm-utils/nm-shared-utils.c:185
+#, c-format
+msgid "object class '%s' has no property named '%s'"
+msgstr "у класі об’єктів «%s» немає властивості із назвою «%s»"
+
+#: ../shared/nm-utils/nm-shared-utils.c:192
+#, c-format
+msgid "property '%s' of object class '%s' is not writable"
+msgstr "властивість «%s» класу об’єктів «%s» є непридатною до запису"
+
+#: ../shared/nm-utils/nm-shared-utils.c:199
+#, c-format
+msgid ""
+"construct property \"%s\" for object '%s' can't be set after construction"
+msgstr ""
+"властивість construct «%s» об’єкта «%s» не можна встановлювати після побудови"
+
+#: ../shared/nm-utils/nm-shared-utils.c:207
+#, c-format
+msgid "'%s::%s' is not a valid property name; '%s' is not a GObject subtype"
+msgstr "«%s::%s» не є коректною назвою властивості; «%s» не є підтипом GObject"
+
+#: ../shared/nm-utils/nm-shared-utils.c:216
+#, c-format
+msgid "unable to set property '%s' of type '%s' from value of type '%s'"
+msgstr ""
+"не вдалося встановити значення властивості «%s» типу «%s» на основі значення "
+"типу «%s»"
+
+#: ../shared/nm-utils/nm-shared-utils.c:227
+#, c-format
+msgid ""
+"value \"%s\" of type '%s' is invalid or out of range for property '%s' of "
+"type '%s'"
+msgstr ""
+"значення «%s» типу «%s» є некоректним для властивості «%s» типу «%s» або не "
+"належить до припустимого діапазону значень"
+
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:69
+#, c-format
+msgid "unable to get editor plugin name: %s"
+msgstr "не вдалося отримати назву додатка до редактора: %s"
+
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:103
+#, c-format
+msgid "missing plugin file \"%s\""
+msgstr "не вистачає файла додатка «%s»"
+
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:109
+#, c-format
+msgid "cannot load editor plugin: %s"
+msgstr "не вдалося завантажити додаток до редактора: %s"
+
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:118
+#, c-format
+msgid "cannot load factory %s from plugin: %s"
+msgstr "не вдалося завантажити обробник %s з додатка: %s"
+
+#: ../shared/nm-utils/nm-vpn-plugin-utils.c:144
+msgid "unknown error creating editor instance"
+msgstr "невідома помилка під час створення екземпляра редактора"
+
+#: ../src/nm-openconnect-service.c:181
+#, c-format
+msgid "invalid integer property “%s” or out of range [%d -> %d]"
+msgstr ""
+"некоректна цілочисельна властивість «%s» або має значення поза припустимим "
+"діапазоном [%d -> %d]"
+
+#: ../src/nm-openconnect-service.c:191
+#, c-format
+msgid "invalid boolean property “%s” (not yes or no)"
+msgstr ""
+"некоректна булева властивість «%s» (має значення, яке відрізняється від "
+"«yes» або «no»)"
+
+#: ../src/nm-openconnect-service.c:198
+#, c-format
+msgid "unhandled property “%s” type %s"
+msgstr "непридатна до обробки властивість «%s» типу %s"
+
+#: ../src/nm-openconnect-service.c:211
+#, c-format
+msgid "property “%s” invalid or not supported"
+msgstr "властивість «%s» є некоректною або її підтримки не передбачено"
+
+#: ../src/nm-openconnect-service.c:227
+msgid "No VPN configuration options."
+msgstr "Немає параметрів налаштування VPN."
+
+#: ../src/nm-openconnect-service.c:245
+msgid "No VPN secrets!"
+msgstr "Немає реєстраційних даних VPN!"
+
+#: ../src/nm-openconnect-service.c:415
+msgid "Could not find openconnect binary."
+msgstr "Не вдалося знайти виконуваного файла openconnect."
+
+#: ../src/nm-openconnect-service.c:427
+msgid "No VPN gateway specified."
+msgstr "Не вказаною шлюзу VPN."
+
+#: ../src/nm-openconnect-service.c:437
+msgid "No WebVPN cookie provided."
+msgstr "Не вказано куки WebVPN."
+
+#: ../src/nm-openconnect-service.c:726
+msgid "Don’t quit when VPN connection terminates"
+msgstr "Не виходити, якщо розірвано з'єднання VPN"
+
+#: ../src/nm-openconnect-service.c:727
+msgid "Enable verbose debug logging (may expose passwords)"
+msgstr "Увімкнути докладний журнал діагностики (можливе виведення паролів)"
+
+#: ../src/nm-openconnect-service.c:728
+msgid "D-Bus name to use for this instance"
+msgstr "Назва D-Bus для використання для цього екземпляра"
+
+#: ../src/nm-openconnect-service.c:751
+msgid ""
+"nm-openconnect-service provides integrated Cisco AnyConnect SSL VPN "
+"capability to NetworkManager."
+msgstr ""
+"nm-openconnect-service NetworkManager доступ до інтегрованих можливостей "
+"застарілого VPN SSL AnyConnect."
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/array.c#l130
 #: ../openconnect-strings.txt:14
@@ -528,6 +795,8 @@ msgstr "Спроба входу до GlobalProtect призвела до пов�
 #, c-format
 msgid "Please report %d unexpected values above (of which %d fatal) to <%s>\n"
 msgstr ""
+"Будь ласка, повідомте про %d неочікуваних значення вище (з яких %d є "
+"критичним) до <%s>\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/auth-globalprotect.c#l445
 #: ../openconnect-strings.txt:265
@@ -1809,7 +2078,7 @@ msgstr "навіть якщо початкову IP-адресу буде змі
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/fortinet.c#l403
 #: ../openconnect-strings.txt:967
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Server reports that reconnect-after-drop is not allowed. OpenConnect will "
 "not\n"
@@ -1820,7 +2089,7 @@ msgstr ""
 "повторно\n"
 "встановити з'єднання при виявленні непрацездатного вузла. Якщо повторне "
 "з'єднання ПРАЦЮЄ,\n"
-"будь ласка, повідомте про це на адресу <%s>.\n"
+"будь ласка, повідомте про це на адресу <%s>\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/fortinet.c#l419
 #: ../openconnect-strings.txt:974
@@ -1865,10 +2134,14 @@ msgid ""
 "    without reauthentication. If automatic reconnection does work, please\n"
 "    report results to <%s>\n"
 msgstr ""
+"Попередження: сервер Fortinet не вмикає і не вимикає повторне з'єднання\n"
+"    без повторного розпізнавання. Якщо автоматичне повторне з'єднання"
+" працює,\n"
+"    будь ласка, повідомте результати за адресою <%s>\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/fortinet.c#l559
 #: ../openconnect-strings.txt:1000
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Server did not send <auth-ses tun-connect-without-reauth=\"0/1\"/>. "
 "OpenConnect will\n"
@@ -1881,8 +2154,7 @@ msgstr ""
 "не зможе повторно встановити з'єднання, якщо буде виявлено непрацездатний "
 "вузол. Якщо\n"
 "повторне з'єднання ПРАЦЮЄ,\n"
-"будь ласка, повідомте про це на адресу <openconnect-devel@lists.infradead."
-"org>\n"
+"будь ласка, повідомте про це на адресу <%s>\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/fortinet.c#l619
 #: ../openconnect-strings.txt:1008
@@ -2885,66 +3157,66 @@ msgstr "Встановлено сеанс EAP-TTLS\n"
 #: ../openconnect-strings.txt:1564
 #, c-format
 msgid "Failed to generate STRAP key: %s\n"
-msgstr ""
+msgstr "Не вдалося створити ключ STRAP: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/gnutls.c#l2873
 #: ../openconnect-strings.txt:1567
 #, c-format
 msgid "Failed to generate STRAP DH key: %s\n"
-msgstr ""
+msgstr "Не вдалося створити ключ DH STRAP: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/gnutls.c#l2906
 #: ../openconnect-strings.txt:1570
 #, c-format
 msgid "Failed to decode server DH key: %s\n"
-msgstr ""
+msgstr "Не вдалося декодувати ключ DH сервера: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/gnutls.c#l2918
 #: ../openconnect-strings.txt:1573
 #, c-format
 msgid "Failed to export DH private key parameters: %s\n"
-msgstr ""
+msgstr "Не вдалося експортувати параметри закритого ключа DH: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/gnutls.c#l2924
 #: ../openconnect-strings.txt:1576
 #, c-format
 msgid "Failed to export server DH key parameters: %s\n"
-msgstr ""
+msgstr "Не вдалося експортувати параметри ключа DH сервера: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/gnutls.c#l2932
 #: ../openconnect-strings.txt:1579
 #, c-format
 msgid "HPKE uses unsupported EC curve (%d, %d)\n"
-msgstr ""
+msgstr "У HPKE використано непідтримувану еліптичну криву (%d, %d)\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/gnutls.c#l2945
 #: ../openconnect-strings.txt:1582
 msgid "Failed to create ECC public point for ECDH\n"
-msgstr ""
+msgstr "Не вдалося створити відкриту точку ECC для ECDH\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/gnutls.c#l2990
 #: ../openconnect-strings.txt:1585
 #, c-format
 msgid "HKDF extract failed: %s\n"
-msgstr ""
+msgstr "Помилка видобування HKDF: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/gnutls.c#l3002
 #: ../openconnect-strings.txt:1588
 #, c-format
 msgid "HKDF expand failed: %s\n"
-msgstr ""
+msgstr "Помилка розгортання HKDF: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/gnutls.c#l3021
 #: ../openconnect-strings.txt:1591
 #, c-format
 msgid "Failed to init AES-256-GCM cipher: %s\n"
-msgstr ""
+msgstr "Не вдалося ініціалізувати шифр AES-256-GCM: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/gnutls.c#l3030
 #: ../openconnect-strings.txt:1594
 #, c-format
 msgid "SSO token decryption failed: %s\n"
-msgstr ""
+msgstr "невдала спроба розшифрування жетона SSO: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/gnutls_tpm.c#l56
 #: ../openconnect-strings.txt:1597
@@ -3472,13 +3744,12 @@ msgstr "Невідомий теґ налаштовування GlobalProtect <%s
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/gpst.c#l571
 #: ../openconnect-strings.txt:1876
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "GlobalProtect IPv6 support is experimental. Please report results to <%s>.\n"
 msgstr ""
 "Підтримка IPv6 у GlobalProtect є експериментальною. Будь ласка, повідомте "
-"про результати використання на адресу <openconnect-devel@lists.infradead."
-"org>.\n"
+"про результати використання на адресу <%s>.\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/gpst.c#l594
 #: ../openconnect-strings.txt:1880
@@ -3869,52 +4140,52 @@ msgstr "Проксі-сервер SOCKS вимагає захисту невід
 #: ../openconnect-strings.txt:2090
 #, c-format
 msgid "Failed to listen on local port 29786: %s\n"
-msgstr ""
+msgstr "Не вдалося почати очікування на дані на локальному порту 29786: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/hpke.c#l114
 #: ../openconnect-strings.txt:2093
 #, c-format
 msgid "Spawning external browser '%s'\n"
-msgstr ""
+msgstr "Відкриття зовнішнього переглядача «%s»\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/hpke.c#l122
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/main.c#l906
 #: ../openconnect-strings.txt:2097
 msgid "Spawn browser"
-msgstr ""
+msgstr "Відкрити переглядач"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/hpke.c#l131
 #: ../openconnect-strings.txt:2100
 #, c-format
 msgid "Failed to spawn external browser for %s\n"
-msgstr ""
+msgstr "Не вдалося відкрити зовнішній переглядач для %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/hpke.c#l146
 #: ../openconnect-strings.txt:2103
 msgid "Accepted incoming external-browser connection on port 29786\n"
-msgstr ""
+msgstr "Прийнято вхідне з'єднання від зовнішнього переглядача на порту 29786\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/hpke.c#l153
 #: ../openconnect-strings.txt:2106
 msgid "Invalid incoming external-browser request\n"
-msgstr ""
+msgstr "Некоректний вхідний запит щодо зовнішнього переглядача\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/hpke.c#l229
 #: ../openconnect-strings.txt:2109
 #, c-format
 msgid "Got encrypted SSO token of %d bytes\n"
-msgstr ""
+msgstr "Отримано зашифрований жетон SSO з %d байтів\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/hpke.c#l297
 #: ../openconnect-strings.txt:2112
 #, c-format
 msgid "Failed to decode SSO token at %d:\n"
-msgstr ""
+msgstr "Не вдалося декодувати жетон SSO у %d:\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/hpke.c#l324
 #: ../openconnect-strings.txt:2115
 msgid "SSO token not alphanumeric\n"
-msgstr ""
+msgstr "Жетон SSO не складається з літер та цифр\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/http-auth.c#l69
 #: ../openconnect-strings.txt:2118
@@ -4290,30 +4561,6 @@ msgstr "Не вдалося обробити запис проксі-серве�
 msgid "Only http or socks(5) proxies supported\n"
 msgstr "Передбачено підтримку лише проксі-серверів http або socks(5)\n"
 
-#. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/library.c#l124
-#: ../openconnect-strings.txt:2313
-#: ../properties/nm-openconnect-editor-plugin.c:105
-msgid "Cisco AnyConnect or openconnect"
-msgstr "Cisco AnyConnect або openconnect"
-
-#. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/library.c#l125
-#: ../openconnect-strings.txt:2316
-#: ../properties/nm-openconnect-editor-plugin.c:106
-msgid "Compatible with Cisco AnyConnect SSL VPN, as well as ocserv"
-msgstr "VPN SSL, сумісна з Cisco AnyConnect, а також ocserv"
-
-#. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/library.c#l144
-#: ../openconnect-strings.txt:2319
-#: ../properties/nm-openconnect-editor-plugin.c:110
-msgid "Juniper Network Connect"
-msgstr "Juniper Network Connect"
-
-#. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/library.c#l145
-#: ../openconnect-strings.txt:2322
-#: ../properties/nm-openconnect-editor-plugin.c:111
-msgid "Compatible with Juniper Network Connect"
-msgstr "Сумісна із Juniper Network Connect"
-
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/library.c#l165
 #: ../openconnect-strings.txt:2325
 msgid "Palo Alto Networks GlobalProtect"
@@ -4470,7 +4717,7 @@ msgstr ""
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/library.c#l1637
 #: ../openconnect-strings.txt:2408
 msgid "No SSO handler\n"
-msgstr ""
+msgstr "Немає обробника SSO\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/main.c#l392
 #: ../openconnect-strings.txt:2411
@@ -4575,7 +4822,7 @@ msgstr "fgets (stdin)"
 #: ../openconnect-strings.txt:2466
 #, c-format
 msgid "WARNING: Cannot set handler for signal %d: %s\n"
-msgstr ""
+msgstr "УВАГА! Не вдалося встановити обробник для сигналу %d: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/main.c#l852
 #: ../openconnect-strings.txt:2469
@@ -4592,7 +4839,7 @@ msgstr "Спроба отримати пам'ять для шляху до ск�
 #: ../openconnect-strings.txt:2475
 #, c-format
 msgid "Main Spawning external browser '%s'\n"
-msgstr ""
+msgstr "Основне відкриття зовнішнього переглядача «%s»\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/main.c#l915
 #: ../openconnect-strings.txt:2478
@@ -4698,7 +4945,7 @@ msgstr "Встановити пароль до ключа або пінкод SR
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/main.c#l964
 #: ../openconnect-strings.txt:2537
 msgid "Set external browser executable"
-msgstr ""
+msgstr "Встановити виконуваний файл зовнішнього переглядача"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/main.c#l965
 #: ../openconnect-strings.txt:2540
@@ -4784,7 +5031,7 @@ msgstr "(Зауваження: у цій збірці libproxy вимкнено)
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/main.c#l989
 #: ../openconnect-strings.txt:2588
 msgid "Reconnection retry timeout (default is 300 seconds)"
-msgstr ""
+msgstr "Час очікування на повторне з'єднання (типовим є час у 300 секунд)"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/main.c#l990
 #: ../openconnect-strings.txt:2591
@@ -6866,37 +7113,37 @@ msgstr "Критична помилка з'єднання EAP-TTLS %d\n"
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/openssl.c#l2287
 #: ../openconnect-strings.txt:3736
 msgid "Failed to create prime256v1 EC group\n"
-msgstr ""
+msgstr "Не вдалося створити групу EC prime256v1\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/openssl.c#l2294
 #: ../openconnect-strings.txt:3739
 msgid "Failed to generate STRAP key"
-msgstr ""
+msgstr "Не вдалося створити ключ STRAP"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/openssl.c#l2304
 #: ../openconnect-strings.txt:3742
 msgid "Failed to generate STRAP DH key\n"
-msgstr ""
+msgstr "Не вдалося створити ключ DH STRAP\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/openssl.c#l2338
 #: ../openconnect-strings.txt:3745
 msgid "Failed to decode server DH key\n"
-msgstr ""
+msgstr "Не вдалося декодувати ключ DH сервера\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/openssl.c#l2348
 #: ../openconnect-strings.txt:3748
 msgid "Failed to compute DH secret\n"
-msgstr ""
+msgstr "Не вдалося обчислити ключ DH\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/openssl.c#l2371
 #: ../openconnect-strings.txt:3751
 msgid "HKDF key derivation failed\n"
-msgstr ""
+msgstr "Не вдалося виконати обчислення ключа HKDF\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/openssl.c#l2392
 #: ../openconnect-strings.txt:3754
 msgid "SSO token decryption failed\n"
-msgstr ""
+msgstr "невдала спроба розшифрування жетона SSO\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/ppp.c#l113
 #: ../openconnect-strings.txt:3757
@@ -7863,18 +8110,18 @@ msgstr "З'єднання сокетів скасовано\n"
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/ssl.c#l191
 #: ../openconnect-strings.txt:4275
 msgid "Failed select() for socket accept"
-msgstr ""
+msgstr "Помилка select() для прийняття сокета"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/ssl.c#l196
 #: ../openconnect-strings.txt:4278
 msgid "Socket accept cancelled\n"
-msgstr ""
+msgstr "Скасовано прийняття сокета\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/ssl.c#l207
 #: ../openconnect-strings.txt:4281
 #, c-format
 msgid "Failed to accept local connection: %s\n"
-msgstr ""
+msgstr "Не вдалося прийняти локальне з'єднання: %s\n"
 
 #. https://git.infradead.org/users/dwmw2/openconnect.git/blob/07386df8c6:/ssl.c#l252
 #: ../openconnect-strings.txt:4284
@@ -9060,248 +9307,6 @@ msgstr "команда обчислення"
 #: ../openconnect-strings.txt:4907
 msgid "Unrecognised response from Yubikey when generating tokencode\n"
 msgstr "Нерозпізнана відповідь від Yubikey під час створення коду ключа\n"
-
-#: ../properties/nm-openconnect-dialog.ui.h:1
-msgid "General"
-msgstr "Загальне"
-
-#: ../properties/nm-openconnect-dialog.ui.h:2
-msgid "_VPN Protocol"
-msgstr "П_ротокол VPN"
-
-#: ../properties/nm-openconnect-dialog.ui.h:3
-msgid "_Gateway"
-msgstr "_Шлюз"
-
-#: ../properties/nm-openconnect-dialog.ui.h:4
-msgid "_Proxy"
-msgstr "_Проксі"
-
-#: ../properties/nm-openconnect-dialog.ui.h:5
-msgid "Allow security scanner _trojan (CSD)"
-msgstr "Дозволити _троян сканування захисту (CSD)"
-
-#: ../properties/nm-openconnect-dialog.ui.h:6
-msgid "Trojan (CSD) _Wrapper Script"
-msgstr "Троянський (CSD) с_крипт-обгортка"
-
-#: ../properties/nm-openconnect-dialog.ui.h:7
-msgid "Reported OS"
-msgstr "Повідомлена ОС"
-
-#: ../properties/nm-openconnect-dialog.ui.h:8
-msgid "Common values: linux linux-64 win mac-intel android apple-ios"
-msgstr "Типові значення: linux linux-64 win mac-intel android apple-ios"
-
-#: ../properties/nm-openconnect-dialog.ui.h:9
-msgid "Certificate Authentication"
-msgstr "Розпізнавання за сертифікатом"
-
-#: ../properties/nm-openconnect-dialog.ui.h:10
-msgid "Use _FSID for key passphrase"
-msgstr "_Використовувати FSID як парольну фразу ключа"
-
-#: ../properties/nm-openconnect-dialog.ui.h:11
-msgid "Prevent user from manually accepting invalid certificates"
-msgstr "Заборонити користувачеві приймати вручну некоректні сертифікати"
-
-#: ../properties/nm-openconnect-dialog.ui.h:12
-msgid "Software Token Authentication"
-msgstr "Програмне розпізнавання за ключем"
-
-#: ../properties/nm-openconnect-dialog.ui.h:13
-msgid "Token _Mode"
-msgstr "_Режим ключа"
-
-#: ../properties/nm-openconnect-dialog.ui.h:14
-msgid "Token Sec_ret"
-msgstr "Р_еєстраційні дані ключа"
-
-#: ../properties/nm-openconnect-dialog.ui.h:15
-msgid "Disabled"
-msgstr "Вимкнено"
-
-#: ../properties/nm-openconnect-dialog.ui.h:16
-msgid "RSA SecurID — read from ~/.stokenrc"
-msgstr "RSA SecurID — читання з ~/.stokenrc"
-
-#: ../properties/nm-openconnect-dialog.ui.h:17
-msgid "RSA SecurID — manually entered"
-msgstr "RSA SecurID — введене вручну"
-
-#: ../properties/nm-openconnect-dialog.ui.h:18
-msgid "TOTP — manually entered"
-msgstr "TOTP — введене вручну"
-
-#: ../properties/nm-openconnect-dialog.ui.h:19
-msgid "HOTP — manually entered"
-msgstr "HOTP — введене вручну"
-
-#: ../properties/nm-openconnect-dialog.ui.h:20
-msgid "Yubikey OATH"
-msgstr "OATH Yubikey"
-
-#: ../properties/nm-openconnect-editor-plugin.c:57
-#: ../properties/nm-openconnect-editor-plugin.c:60
-msgid "Multi-protocol VPN client (openconnect)"
-msgstr "Клієнт VPN із підтримкою багатьох протоколів (openconnect)"
-
-#: ../properties/nm-openconnect-editor-plugin.c:58
-msgid ""
-"Compatible with Cisco AnyConnect, Juniper Network Connect and Junos Pulse, "
-"and PAN GlobalProtect SSL VPNs."
-msgstr ""
-"Сумісний із VPN SSL Cisco AnyConnect, Juniper Network Connect, Junos Pulse "
-"та PAN GlobalProtect."
-
-#: ../properties/nm-openconnect-editor-plugin.c:61
-msgid ""
-"Compatible with Cisco AnyConnect and Juniper Network Connect and Junos Pulse "
-"SSL VPNs."
-msgstr ""
-"Сумісний із VPN SSL Cisco AnyConnect, Juniper Network Connect та Junos Pulse."
-
-#: ../properties/nm-openconnect-editor-plugin.c:63
-msgid "Cisco AnyConnect Compatible VPN (openconnect)"
-msgstr "Сумісна з Cisco AnyConnect VPN (openconnect)"
-
-#: ../properties/nm-openconnect-editor-plugin.c:64
-msgid "Compatible with Cisco AnyConnect SSL VPN."
-msgstr "SSL VPN, сумісна з Cisco AnyConnect."
-
-#: ../properties/nm-openconnect-editor.c:259
-msgid "Cisco AnyConnect"
-msgstr "AnyConnect від Cisco"
-
-#: ../properties/nm-openconnect-editor.c:265
-msgid "Juniper/Pulse Network Connect"
-msgstr "Мережеве з’єднання Juniper/Pulse"
-
-#: ../shared/nm-utils/nm-shared-utils.c:185
-#, c-format
-msgid "object class '%s' has no property named '%s'"
-msgstr "у класі об’єктів «%s» немає властивості із назвою «%s»"
-
-#: ../shared/nm-utils/nm-shared-utils.c:192
-#, c-format
-msgid "property '%s' of object class '%s' is not writable"
-msgstr "властивість «%s» класу об’єктів «%s» є непридатною до запису"
-
-#: ../shared/nm-utils/nm-shared-utils.c:199
-#, c-format
-msgid ""
-"construct property \"%s\" for object '%s' can't be set after construction"
-msgstr ""
-"властивість construct «%s» об’єкта «%s» не можна встановлювати після побудови"
-
-#: ../shared/nm-utils/nm-shared-utils.c:207
-#, c-format
-msgid "'%s::%s' is not a valid property name; '%s' is not a GObject subtype"
-msgstr "«%s::%s» не є коректною назвою властивості; «%s» не є підтипом GObject"
-
-#: ../shared/nm-utils/nm-shared-utils.c:216
-#, c-format
-msgid "unable to set property '%s' of type '%s' from value of type '%s'"
-msgstr ""
-"не вдалося встановити значення властивості «%s» типу «%s» на основі значення "
-"типу «%s»"
-
-#: ../shared/nm-utils/nm-shared-utils.c:227
-#, c-format
-msgid ""
-"value \"%s\" of type '%s' is invalid or out of range for property '%s' of "
-"type '%s'"
-msgstr ""
-"значення «%s» типу «%s» є некоректним для властивості «%s» типу «%s» або не "
-"належить до припустимого діапазону значень"
-
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:69
-#, c-format
-msgid "unable to get editor plugin name: %s"
-msgstr "не вдалося отримати назву додатка до редактора: %s"
-
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:103
-#, c-format
-msgid "missing plugin file \"%s\""
-msgstr "не вистачає файла додатка «%s»"
-
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:109
-#, c-format
-msgid "cannot load editor plugin: %s"
-msgstr "не вдалося завантажити додаток до редактора: %s"
-
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:118
-#, c-format
-msgid "cannot load factory %s from plugin: %s"
-msgstr "не вдалося завантажити обробник %s з додатка: %s"
-
-#: ../shared/nm-utils/nm-vpn-plugin-utils.c:144
-msgid "unknown error creating editor instance"
-msgstr "невідома помилка під час створення екземпляра редактора"
-
-#: ../src/nm-openconnect-service.c:181
-#, c-format
-msgid "invalid integer property “%s” or out of range [%d -> %d]"
-msgstr ""
-"некоректна цілочисельна властивість «%s» або має значення поза припустимим "
-"діапазоном [%d -> %d]"
-
-#: ../src/nm-openconnect-service.c:191
-#, c-format
-msgid "invalid boolean property “%s” (not yes or no)"
-msgstr ""
-"некоректна булева властивість «%s» (має значення, яке відрізняється від "
-"«yes» або «no»)"
-
-#: ../src/nm-openconnect-service.c:198
-#, c-format
-msgid "unhandled property “%s” type %s"
-msgstr "непридатна до обробки властивість «%s» типу %s"
-
-#: ../src/nm-openconnect-service.c:211
-#, c-format
-msgid "property “%s” invalid or not supported"
-msgstr "властивість «%s» є некоректною або її підтримки не передбачено"
-
-#: ../src/nm-openconnect-service.c:227
-msgid "No VPN configuration options."
-msgstr "Немає параметрів налаштування VPN."
-
-#: ../src/nm-openconnect-service.c:245
-msgid "No VPN secrets!"
-msgstr "Немає реєстраційних даних VPN!"
-
-#: ../src/nm-openconnect-service.c:415
-msgid "Could not find openconnect binary."
-msgstr "Не вдалося знайти виконуваного файла openconnect."
-
-#: ../src/nm-openconnect-service.c:427
-msgid "No VPN gateway specified."
-msgstr "Не вказаною шлюзу VPN."
-
-#: ../src/nm-openconnect-service.c:437
-msgid "No WebVPN cookie provided."
-msgstr "Не вказано куки WebVPN."
-
-#: ../src/nm-openconnect-service.c:726
-msgid "Don’t quit when VPN connection terminates"
-msgstr "Не виходити, якщо розірвано з'єднання VPN"
-
-#: ../src/nm-openconnect-service.c:727
-msgid "Enable verbose debug logging (may expose passwords)"
-msgstr "Увімкнути докладний журнал діагностики (можливе виведення паролів)"
-
-#: ../src/nm-openconnect-service.c:728
-msgid "D-Bus name to use for this instance"
-msgstr "Назва D-Bus для використання для цього екземпляра"
-
-#: ../src/nm-openconnect-service.c:751
-msgid ""
-"nm-openconnect-service provides integrated Cisco AnyConnect SSL VPN "
-"capability to NetworkManager."
-msgstr ""
-"nm-openconnect-service NetworkManager доступ до інтегрованих можливостей "
-"застарілого VPN SSL AnyConnect."
 
 #~ msgid "Choose a Certificate Authority certificate…"
 #~ msgstr "Виберіть сертифікат служби сертифікації (CA)…"

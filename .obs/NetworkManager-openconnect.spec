@@ -13,6 +13,7 @@ Name:      network-manager-openconnect
 Version:   1.2.9
 Release:   1%{?dist}
 License:   GPL-2.0-or-later and LGPL-2.0-only
+Group:     Productivity/Networking/Other
 URL:       http://www.gnome.org/projects/NetworkManager/
 Source:    https://download.gnome.org/sources/NetworkManager-openconnect/1.2/network-manager-openconnect-%{version}.tar.gz
 

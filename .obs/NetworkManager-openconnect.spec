@@ -41,7 +41,7 @@ Requires(pre): %{_sbindir}/useradd
 Requires(pre): %{_sbindir}/groupadd
 
 # Name used in Fedora
-Conflicts: NetworkManager-openconnect
+Provides: NetworkManager-openconnect = %{version}
 
 %global __provides_exclude ^libnm-.*\\.so
 
@@ -53,7 +53,7 @@ with NetworkManager and the GNOME desktop
 Summary: NetworkManager VPN plugin for OpenConnect - GNOME files
 
 Requires: %{name}%{?_isa} = %{version}-%{release}
-Obsoletes: NetworkManager-openconnect < 1.2.3-0
+Provides: NetworkManager-openconnect-gnome = %{version}
 
 %description gnome
 This package contains software for integrating VPN capabilities with

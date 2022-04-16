@@ -20,11 +20,6 @@
   <!-- extract debian packaging -->
   <service name="extract_file" mode="buildtime">
     <param name="archive">*.tar</param>
-    <param name="files">*/.obs/network-manager-openconnect.dsc</param>
-    <param name="outfilename">network-manager-openconnect.dsc</param>
-  </service>
-  <service name="extract_file" mode="buildtime">
-    <param name="archive">*.tar</param>
     <param name="files">*/.obs/debian/changelog</param>
     <param name="outfilename">debian.changelog</param>
   </service>

@@ -12,7 +12,7 @@ Summary:   NetworkManager VPN plugin for openconnect
 Name:      network-manager-openconnect
 Version:   1.2.9
 Release:   1%{?dist}
-License:   GPLv2+ and LGPLv2
+License:   GPL-2.0-or-later and LGPL-2.0-only
 URL:       http://www.gnome.org/projects/NetworkManager/
 Source:    https://download.gnome.org/sources/NetworkManager-openconnect/1.2/network-manager-openconnect-%{version}.tar.gz
 

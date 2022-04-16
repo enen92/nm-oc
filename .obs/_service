@@ -11,7 +11,7 @@
     <param name="changesgenerate">enable</param>
     <param name="filename">network-manager-openconnect</param>
     <param name="extract">.obs/network-manager-openconnect.dsc</param>
-    <param name="extract">.obs/NetworkManager-openconnect.spec</param>
+    <param name="extract">.obs/network-manager-openconnect.spec</param>
   </service>
 
   <!-- recreate the tarball, as it's expected by debian build tools -->

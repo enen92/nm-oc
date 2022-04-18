@@ -12,7 +12,8 @@ Summary:   NetworkManager VPN plugin for openconnect
 Name:      network-manager-openconnect
 Version:   1.2.9
 Release:   1%{?dist}
-License:   GPLv2+ and LGPLv2
+License:   GPL-2.0-or-later and LGPL-2.0-only
+Group:     Productivity/Networking/Other
 URL:       http://www.gnome.org/projects/NetworkManager/
 Source:    https://download.gnome.org/sources/NetworkManager-openconnect/1.2/network-manager-openconnect-%{version}.tar.gz
 
@@ -41,7 +42,7 @@ Requires(pre): %{_sbindir}/useradd
 Requires(pre): %{_sbindir}/groupadd
 
 # Name used in Fedora
-Conflicts: NetworkManager-openconnect
+Provides: NetworkManager-openconnect = %{version}
 
 %global __provides_exclude ^libnm-.*\\.so
 
@@ -53,7 +54,7 @@ with NetworkManager and the GNOME desktop
 Summary: NetworkManager VPN plugin for OpenConnect - GNOME files
 
 Requires: %{name}%{?_isa} = %{version}-%{release}
-Obsoletes: NetworkManager-openconnect < 1.2.3-0
+Provides: NetworkManager-openconnect-gnome = %{version}
 
 %description gnome
 This package contains software for integrating VPN capabilities with

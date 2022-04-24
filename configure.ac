@@ -72,7 +72,7 @@ dnl GNOME support
 dnl
 AC_ARG_WITH(gnome, AS_HELP_STRING([--without-gnome], [Build NetworkManager-openconnect without GNOME support, e.g. vpn service only]), [], [with_gnome_specified=no])
 AC_ARG_WITH(gtk4, AS_HELP_STRING([--with-gtk4], [Build NetworkManager-openconnect with libnma-gtk4 support]), [], [with_gtk4_specified=no])
-AC_ARG_WITH(libnm-glib, AS_HELP_STRING([--with-libnm-glib], [Build NetworkManager-openconnect with libnm-glib comatibility (depreacted)]), [], [with_libnm_glib_specified=no])
+AC_ARG_WITH(libnm-glib, AS_HELP_STRING([--with-libnm-glib], [Build NetworkManager-openconnect with libnm-glib compatibility (deprecated)]), [], [with_libnm_glib_specified=no])
 if test "$with_libnm_glib_specified" != no -a "$with_libnm_glib" != no; then
 	if test "$with_gnome_specified" != no -a "$with_gnome" == no; then
 		AC_MSG_ERROR(Building --with-libnm-glib conflicts with --without-gnome)

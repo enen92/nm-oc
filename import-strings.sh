@@ -27,7 +27,7 @@ OUTFILE=openconnect-strings-$COMMIT.txt
 
 cat >$OUTFILE <<EOF
 This file contains strings from the OpenConnect VPN client, found at
-https://www.infradead.org/openconnect/ and browseable in gitweb at
+https://www.infradead.org/openconnect/ and browsable in gitweb at
 https://git.infradead.org/users/dwmw2/openconnect.git
 
 We do this because NetworkManager-openconnect authentication dialog

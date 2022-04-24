@@ -22,6 +22,7 @@
       pkgconfig
       libxml2-devel
       openconnect-devel
+      webkit2gtk3-devel
 
 # Disable fetching Git, run after the tarball is rolled
 .dist: &dist

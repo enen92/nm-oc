@@ -236,6 +236,7 @@ endif
 auth_dialog_nm_openconnect_auth_dialog_CPPFLAGS = \
 	$(LIBNM_CFLAGS) \
 	$(GLIB_CFLAGS) \
+	$(WEBKIT_CFLAGS) \
 	$(GTK_CFLAGS) \
 	$(GCR_CFLAGS) \
 	$(OPENCONNECT_CFLAGS) \
@@ -250,6 +251,7 @@ auth_dialog_nm_openconnect_auth_dialog_SOURCES = \
 
 auth_dialog_nm_openconnect_auth_dialog_LDADD = \
 	$(GTK_LIBS) \
+	$(WEBKIT_LIBS) \
 	$(GCR_LIBS) \
 	$(LIBNM_LIBS) \
 	$(OPENCONNECT_LIBS) \

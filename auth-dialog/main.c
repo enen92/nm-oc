@@ -36,6 +36,9 @@
 #include <gtk/gtk.h>
 #include <glib-unix.h>
 
+#include <webkit2/webkit2.h>
+#include <libsoup/soup.h>
+
 #include <gcr/gcr.h>
 
 #include <libsecret/secret.h>
@@ -421,7 +424,7 @@ static gboolean ui_add_select (ui_fragment_data *data)
 	if (g_queue_peek_tail(ui_data->form_entries) == data)
 		gtk_widget_grab_focus (combo);
 	g_signal_connect(G_OBJECT(combo), "changed", G_CALLBACK(combo_changed), data);
-	/* Hook up the 'show' signal to ensure that we override prompts on 
+	/* Hook up the 'show' signal to ensure that we override prompts on
 	   UI elements which may be coming later. */
 	g_signal_connect(G_OBJECT(combo), "show", G_CALLBACK(combo_changed), data);
 
@@ -540,7 +543,7 @@ static gboolean ui_form (struct oc_auth_form *form)
 		data = g_slice_new0 (ui_fragment_data);
 		data->ui_data = ui_data;
 		data->opt = opt;
-		
+
 		if (opt->type == OC_FORM_OPT_PASSWORD ||
 		    opt->type == OC_FORM_OPT_TEXT) {
 			g_mutex_lock (&ui_data->form_mutex);
@@ -590,7 +593,7 @@ static gboolean ui_form (struct oc_auth_form *form)
 	}
 
 	form_autosubmit (ui_data);
-	
+
 	return ui_show(ui_data);
 }
 
@@ -628,6 +631,170 @@ static gboolean set_initial_authgroup (auth_ui_data *ui_data, struct oc_auth_for
 	}
 	return FALSE;
 }
+
+#if OPENCONNECT_CHECK_VER(5,7)
+
+struct WebviewContext {
+	struct openconnect_info *vpninfo;
+	WebKitWebView *webview;
+	const char *login_uri;
+	void *privdata;
+	GMutex mutex;
+	GCond cv;
+	int done;
+};
+
+static void cookie_cb (GObject *source_obj, GAsyncResult *res, gpointer data);
+
+static void load_changed_cb (WebKitWebView *web_view, WebKitLoadEvent load_event, struct WebviewContext *ctx)
+{
+	WebKitCookieManager *cm;
+	const char *uri;
+
+	if (load_event != WEBKIT_LOAD_FINISHED) {
+		return;
+	}
+
+	cm = webkit_web_context_get_cookie_manager(webkit_web_context_get_default());
+	uri = webkit_web_view_get_uri(web_view);
+
+	webkit_cookie_manager_get_cookies(cm, uri, NULL, cookie_cb, ctx);
+}
+
+static void cookie_cb (GObject *source_obj, GAsyncResult *res, gpointer data)
+{
+	struct WebviewContext *ctx = (struct WebviewContext *)data;
+	WebKitCookieManager *cm = webkit_web_context_get_cookie_manager(webkit_web_context_get_default());
+	WebKitWebResource *resource = NULL;
+	WebKitURIResponse *response = NULL;
+	SoupMessageHeaders *headers =  NULL;
+	SoupMessageHeadersIter iter;
+	GList *cookies, *l;
+	char **cookie_array = NULL, **headers_array = NULL;
+	int result, i, num_cookies = 0, num_headers = 0;
+	const char *name, *value, *uri = webkit_web_view_get_uri(ctx->webview);
+
+	cookies = webkit_cookie_manager_get_cookies_finish(cm, res, NULL);
+
+	for (l = cookies; l != NULL; l = l->next) {
+		num_cookies++;
+	}
+
+	cookie_array = calloc(2 * (num_cookies + 1), sizeof(char*) );
+
+	for (l = cookies, i = 0; l != NULL; l = l->next, i+=2) {
+		SoupCookie *cookie = (SoupCookie *)l->data;
+                cookie_array[i] = strdup(cookie->name);
+                cookie_array[i+1] = strdup(cookie->value);
+	}
+	g_list_free_full(cookies, (GDestroyNotify)soup_cookie_free);
+
+	resource = webkit_web_view_get_main_resource(ctx->webview);
+	if (resource)
+		response = webkit_web_resource_get_response (resource);
+	if (response)
+		headers = webkit_uri_response_get_http_headers (response);
+
+	if (headers) {
+		for (soup_message_headers_iter_init (&iter, headers); soup_message_headers_iter_next (&iter, &name, &value);)
+			num_headers++;
+		headers_array = calloc(2 * (num_headers + 1), sizeof(char *));
+		if (headers_array)
+			for (i = 0, soup_message_headers_iter_init (&iter, headers); soup_message_headers_iter_next (&iter, &name, &value); i+=2) {
+				headers_array[i] = strdup(name);
+				headers_array[i+1] = strdup(value);
+			}
+	}
+
+	result = openconnect_webview_load_changed(ctx->vpninfo,
+						  &(struct oc_webview_result) {
+							  .uri = uri,
+							  .cookies = (const char **)cookie_array,
+							  .headers = (const char **)headers_array,
+						  });
+
+	for (i = 0; cookie_array && i < 2 * (num_cookies + 1); i++) {
+		free(cookie_array[i]);
+	}
+	free(cookie_array);
+
+	for (i = 0; headers_array && i < 2 * (num_headers + 1); i++) {
+		free(headers_array[i]);
+	}
+	free(headers_array);
+	if (headers)
+		soup_message_headers_free (headers);
+
+	if (!result) {
+		g_mutex_lock(&ctx->mutex);
+		ctx->done = 1;
+		g_cond_signal(&ctx->cv);
+		g_mutex_unlock(&ctx->mutex);
+	}
+}
+
+static gboolean open_webview_idle(gpointer data)
+{
+	struct WebviewContext *ctx = (struct WebviewContext *)data;
+	auth_ui_data *ui_data = _ui_data; /* FIXME global */
+	WebKitWebView *webView;
+	WebKitWebsiteDataManager *dm = NULL;
+	WebKitCookieManager *cm = NULL;
+	GString *storage = NULL;
+
+	// Create a browser instance
+	webView = WEBKIT_WEB_VIEW(webkit_web_view_new());
+
+	dm = webkit_web_view_get_website_data_manager(webView);
+	if (dm)
+		cm = webkit_website_data_manager_get_cookie_manager(dm);
+	if (cm)
+		storage = g_string_new (g_get_user_data_dir());
+	if (storage)
+		storage = g_string_append(storage, "/openconnect_saml_cookies");
+	if (storage) {
+		webkit_cookie_manager_set_persistent_storage(cm, storage->str, WEBKIT_COOKIE_PERSISTENT_STORAGE_TEXT);
+		g_string_free(storage, TRUE);
+	}
+
+	g_signal_connect(webView, "load-changed", G_CALLBACK(load_changed_cb), ctx);
+	ctx->webview = webView;
+
+	// Put the browser area into the main window
+	gtk_widget_set_size_request(GTK_WIDGET(webView), 640, 480);
+	gtk_box_pack_start(GTK_BOX(ui_data->ssl_box), GTK_WIDGET(webView), FALSE, FALSE, 0);
+	gtk_widget_show_all(ui_data->ssl_box);
+
+	// Load a web page into the browser instance
+	webkit_web_view_load_uri(webView, ctx->login_uri);
+
+	return FALSE;
+}
+
+static int open_webview(struct openconnect_info *vpninfo, const char *login_uri, void *privdata)
+{
+	struct WebviewContext ctx;
+
+	// Webview is incredibly slow with compositing enabled
+	g_setenv ("WEBKIT_DISABLE_COMPOSITING_MODE", "1", FALSE);
+	ctx.vpninfo = vpninfo;
+	ctx.privdata = privdata;
+	g_mutex_init(&ctx.mutex);
+	g_cond_init(&ctx.cv);
+	ctx.login_uri = login_uri;
+	ctx.done = 0;
+
+	g_mutex_lock(&ctx.mutex);
+	g_idle_add(open_webview_idle, &ctx);
+	while (!ctx.done) {
+		g_cond_wait(&ctx.cv, &ctx.mutex);
+	}
+	g_mutex_unlock(&ctx.mutex);
+
+	return 0;
+}
+
+#endif // OPENCONNECT_CHECK_VER(5,7)
 
 static int nm_process_auth_form (void *cbdata, struct oc_auth_form *form)
 {
@@ -755,29 +922,29 @@ static void cert_dialog_connect_clicked (GtkButton *btn, GtkDialog *dlg)
 static gboolean user_validate_cert(cert_data *data)
 {
 	auth_ui_data *ui_data = _ui_data; /* FIXME global */
-	
+
 	char *prevent_invalid_cert;
 	gboolean invalid_cert_allowed;
-	
+
 	GtkWidget *dlg;
 	char *title;
-	
+
 	GtkWidget *vbox, *hbox, *expander_hbox;
-	
+
 	char *warning_label_text;
 	GtkWidget *warning_label;
-	
+
 	unsigned char *der_cert;
 	int der_cert_size;
 	GcrCertificate *cert;
 	GcrCertificateWidget *cert_widget;
-	
+
 	GtkWidget *cancel_button;
 	GtkWidget *security_expander;
 	GtkWidget *connect_button;
-	
+
 	int result;
-	
+
 	title = get_title(data->ui_data->vpn_name);
 	dlg = gtk_dialog_new();
 	gtk_window_set_modal(GTK_WINDOW(dlg), true);
@@ -789,7 +956,7 @@ static gboolean user_validate_cert(cert_data *data)
 	gtk_box_pack_start(GTK_BOX (gtk_dialog_get_content_area(GTK_DIALOG (dlg))), vbox, TRUE, TRUE, 0);
 	gtk_container_set_border_width(GTK_CONTAINER(vbox), 8);
 	gtk_widget_show(vbox);
-	
+
 	warning_label_text = g_strconcat(_("<b>The certificate may be invalid or untrusted!</b>\n"),
 									 _("<b>Reason: "), data->reason, ".</b>",
 									 NULL);
@@ -800,36 +967,36 @@ static gboolean user_validate_cert(cert_data *data)
 	gtk_label_set_line_wrap(GTK_LABEL(warning_label), true);
 	gtk_widget_show(warning_label);
 	g_free(warning_label_text);
-	
+
 	der_cert_size = openconnect_get_peer_cert_DER(data->ui_data->vpninfo, &der_cert);
 	cert = gcr_simple_certificate_new_static(der_cert, der_cert_size);
 	cert_widget = gcr_certificate_widget_new(cert);
 	gtk_box_pack_start(GTK_BOX(vbox), GTK_WIDGET(cert_widget), FALSE, FALSE, 0);
 	gtk_widget_show(GTK_WIDGET(cert_widget));
-	
+
 	hbox = gtk_box_new(GTK_ORIENTATION_HORIZONTAL, 4);
 	gtk_box_pack_start(GTK_BOX(vbox), hbox, FALSE, FALSE, 0);
 	gtk_widget_show(hbox);
-	
+
 	cancel_button = gtk_button_new_with_mnemonic(_("_Cancel"));
 	gtk_box_pack_start(GTK_BOX(hbox), cancel_button, FALSE, FALSE, 0);
 	g_signal_connect(cancel_button, "clicked", G_CALLBACK(cert_dialog_cancel_clicked), dlg);
 	gtk_widget_show(cancel_button);
-	
+
 	prevent_invalid_cert = g_hash_table_lookup(ui_data->options,
-							NM_OPENCONNECT_KEY_PREVENT_INVALID_CERT);									
+							NM_OPENCONNECT_KEY_PREVENT_INVALID_CERT);
 	invalid_cert_allowed = prevent_invalid_cert ? !strcmp(prevent_invalid_cert, "no") : TRUE;
-	
+
 	if (invalid_cert_allowed) {
 		security_expander = gtk_expander_new(_("I really know what I am doing"));
 		gtk_box_pack_start(GTK_BOX(vbox), security_expander, FALSE, FALSE, 0);
 		gtk_widget_show(security_expander);
-	
+
 		expander_hbox = gtk_box_new(GTK_ORIENTATION_HORIZONTAL, 0);
 		gtk_container_add(GTK_CONTAINER(security_expander), expander_hbox);
 		gtk_container_set_border_width(GTK_CONTAINER(expander_hbox), 0);
 		gtk_widget_show(expander_hbox);
-	
+
 		connect_button = gtk_button_new_with_label(_("Connect anyway"));
 		gtk_box_pack_start(GTK_BOX(expander_hbox), connect_button, FALSE, FALSE, 0);
 		gtk_widget_set_margin_start(connect_button, 12);
@@ -1073,7 +1240,7 @@ static int get_config (auth_ui_data *ui_data,
 
 		openconnect_set_xmlsha1 (vpninfo, (char *)sha1_text, strlen(sha1_text) + 1);
 		g_checksum_free(sha1);
-		
+
 		parse_xmlconfig (config_str);
 	}
 
@@ -1721,9 +1888,13 @@ static auth_ui_data *init_ui_data (char *vpn_name, GHashTable *options, GHashTab
 							   nm_process_auth_form, write_progress,
 							   ui_data);
 
+#if OPENCONNECT_CHECK_VER(5,7)
+	openconnect_set_webview_callback(ui_data->vpninfo, open_webview);
+#endif
+
 #if OPENCONNECT_CHECK_VER(1,4)
 	openconnect_set_cancel_fd (ui_data->vpninfo, ui_data->cancel_pipes[0]);
-#endif  
+#endif
 
 #if 0
 	ui_data->vpninfo->proxy_factory = px_proxy_factory_new();

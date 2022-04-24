@@ -258,7 +258,7 @@ import (NMVpnEditorPlugin *iface, const char *path, GError **error)
 	bval = g_key_file_get_boolean (keyfile, "openconnect", "FSID", NULL);
 	if (bval)
 		nm_setting_vpn_add_data_item (s_vpn, NM_OPENCONNECT_KEY_PEM_PASSPHRASE_FSID, "yes");
-	
+
 	/* Prevent invalid cert */
 	bval = g_key_file_get_boolean (keyfile, "openconnect", "PreventInvalidCert", NULL);
 	if (true)
@@ -361,7 +361,7 @@ export (NMVpnEditorPlugin *iface,
 	value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_PEM_PASSPHRASE_FSID);
 	if (value && !strcmp (value, "yes"))
 		pem_passphrase_fsid = TRUE;
-	
+
 	value = nm_setting_vpn_get_data_item (s_vpn, NM_OPENCONNECT_KEY_PREVENT_INVALID_CERT);
 	if (value && !strcmp (value, "yes"))
 		prevent_invalid_cert = TRUE;

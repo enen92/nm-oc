@@ -305,7 +305,7 @@ split_dns_list_to_gvariant (const char *str)
 }
 
 static GVariant *
-get_ip4_routes (void)
+get_ip4_routes (gboolean *defaultroute)
 {
 	GVariantBuilder builder;
 	GVariant *value;
@@ -362,6 +362,14 @@ get_ip4_routes (void)
 			prefix = nm_utils_ip4_netmask_to_prefix (netmask.s_addr);
 		}
 
+		/* If there is an explicit default route in the includes, let the
+		 * caller know now to set the 'never default' flag. */
+		if (!prefix) {
+			*defaultroute = true;
+			continue;
+		}
+
+
 		g_variant_builder_init (&array, G_VARIANT_TYPE ("au"));
 		g_variant_builder_add_value (&array, g_variant_new_uint32 (network.s_addr));
 		g_variant_builder_add_value (&array, g_variant_new_uint32 (prefix));
@@ -380,7 +388,7 @@ get_ip4_routes (void)
 }
 
 static GVariant *
-get_ip6_routes (void)
+get_ip6_routes (gboolean *defaultroute)
 {
 	GVariant *value = NULL;
 	GPtrArray *routes;
@@ -426,6 +434,13 @@ get_ip6_routes (void)
 			prefix = (guint32) tmp_prefix;
 		} else {
 			_LOGW ("Ignoring static route %d with no prefix length", i);
+			continue;
+		}
+
+		/* If there is an explicit default route in the includes, let the
+		 * caller know now to set the 'never default' flag. */
+		if (!prefix) {
+			*defaultroute = true;
 			continue;
 		}
 
@@ -647,7 +662,7 @@ main (int argc, char *argv[])
 	}
 
 	/* Routes */
-	val = get_ip4_routes ();
+	val = get_ip4_routes (&not_ipv4_never_default);
 	if (val) {
 		g_variant_builder_add (&ip4builder, "{sv}", NM_VPN_PLUGIN_IP4_CONFIG_ROUTES, val);
 		/* If routes-to-include were provided, that means no default route, unless it was set as netmask */
@@ -698,7 +713,7 @@ main (int argc, char *argv[])
 	}
 
 	/* Routes */
-	val = get_ip6_routes ();
+	val = get_ip6_routes (&not_ipv6_never_default);
 	if (val) {
 		g_variant_builder_add (&ip6builder, "{sv}", NM_VPN_PLUGIN_IP6_CONFIG_ROUTES, val);
 		/* If routes-to-include were provided, that means no default route, unless it was set as netmask */

@@ -58,6 +58,7 @@ fedora34_dist:
       autoconf automake make
       libnma-devel
     - sh autogen.sh
+    - touch gtk4/nm-openconnect-dialog.ui
     - make -j dist
   artifacts:
     paths:

@@ -6,6 +6,8 @@
 
 .fedora_deps: &fedora_deps
   before_script:
+    - dnf -y install 'dnf-command(copr)'
+    - dnf -y copr enable dwmw2/openconnect
     - dnf -y install
       file
       findutils

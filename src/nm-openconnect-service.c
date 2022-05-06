@@ -478,6 +478,7 @@ nm_openconnect_start_openconnect_binary (NMOpenconnectPlugin *plugin,
 	}
 
 	g_ptr_array_add (openconnect_argv, (gpointer) "--syslog");
+	g_ptr_array_add (openconnect_argv, (gpointer) "--dump");
 	g_ptr_array_add (openconnect_argv, (gpointer) "--cookie-on-stdin");
 
 	g_ptr_array_add (openconnect_argv, (gpointer) "--script");
